@@ -9,3 +9,5 @@
 | 2026-10-15 | 本聊天Codex | 文档细化 | V6.1三份Word、每成员16轮详细任务及每日图表/验收/交接，创新与开源专项审查 | S0，未执行研发任务 | Word文档与tmp/word_plan/verification.json；逐页渲染受缺少转换器阻塞 |
 
 | 2026-10-16 | 本聊天Codex | Git执行计划细化 | 新增教程、忽略模板、32条每日Git动作及四份V6.2 Word | 仍为S0，未创建或上传仓库 | verification_V6.2.json；内容结构通过，渲染受阻 |
+
+| 2026-10-16 | 本聊天Codex，用户完成账号授权 | Git实际配置 | 本地main、origin、忽略规则、用户确认提交身份、首次commit/push及远程SHA核对 | S0，第一台同步完成；第二台待接入 | 首次SHA f3c32affbdffcc8a0f5e85d29fd06b13c6f34dd5；sessions/20261016_git_initial_setup.md |

@@ -12,10 +12,12 @@
 - 本仓库设置pull.ff=only，HTTPS使用OpenSSL后端，保留证书验证。
 - 受限工具账户与用户账户不同导致Git所有者检查失败；仅为D:/AIC算法主题赛添加safe.directory例外后，git status可正常执行。
 
-认证经过：受限进程的Windows凭据存储不可用。已使用正常用户进程启动Git远程访问，正在等待GitHub登录授权，尚未取得完成结果。
+认证经过：受限进程的Windows凭据存储不可用，改用正常用户进程。用户完成GitHub授权后，git ls-remote origin成功返回，确认远程初始为空。
 
-尚未完成：用户提交署名/邮箱确认、首次commit与push、远程SHA核对、队友邀请与第二台电脑接入。
+已完成后续：按用户确认设置本仓库提交署名MeaOneill与用户提供邮箱；创建首次提交并push -u origin main，建立上游跟踪。未将密钥、个人数据库、tmp和赛事原始PDF纳入首次提交。
 
-当前没有提交SHA，不得声称已上传或双机接力通过。未记录密码、token或其他访问凭据。
+首次提交SHA：f3c32affbdffcc8a0f5e85d29fd06b13c6f34dd5。
+验证：git ls-remote origin refs/heads/main返回相同SHA；git status -sb为main...origin/main且没有文件修改。首次版本共30个文件，内容为计划、Word、README与忽略规则。
+未完成：队友邀请、第二台电脑clone及反向push演练。第一台同步通过不代表双机接力已经验收。未记录密码、token或其他访问凭据。
 
-下一步：用户提供提交身份并完成所需浏览器授权后，审查/暂存计划与Word文件，首次commit、push并核对远程main。
+下一步：本次实际结果日志另作提交并同步；队友方便后接受邀请，按05教程clone同一仓库并执行双机验证。研发仍从D01真实仓库任务与数据契约开始。
