@@ -52,5 +52,10 @@
   "artifact_audit": "experiments/A/A-D03-audit02/audit.json",
   "release_gate": "experiments/A/A-D03-closeout/release_gate.json",
   "next_task": "B-D03",
-  "independent_human_review": "NOT_REVIEWED"
+  "independent_human_review": "NOT_REVIEWED",
+  "finished_at": "2026-10-16T20:44:59.024042+08:00",
+  "business_checkpoint": "bfc756e61e8490647ae4a0228af476fd8c277834",
+  "next_step_allowed": true,
+  "final_engineering_gate": "PASSED",
+  "joint_G1_closed_loop_complete": false
 }

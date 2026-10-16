@@ -1,0 +1,15 @@
+{
+  "source_spans_verified": 947,
+  "nodes": 193,
+  "edges": {
+    "imports": 55,
+    "call_unknown": 563,
+    "contains": 136
+  },
+  "hard_teaching_edges": 0,
+  "synthetic_cycle_preserved": true,
+  "png_svg_pairs_verified": 3,
+  "input_hashes_verified": true,
+  "evidence_type": "development_validation",
+  "independent_review": "NOT_REVIEWED"
+}

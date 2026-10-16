@@ -8,7 +8,7 @@
 | D01-B | 2026-10-15 | B | 成员B / 糯糯 / Codex Agent B | READY_FOR_REVIEW | task/B-D01-foundation / 54613cf136d788bde7c46454d3d7b9e29f295a9b | 2026-10-16：check02及local-replay02通过；最终同步见docs/B回执 |
 | D02-A | 2026-10-16 | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D02-graph / 9d911895 | 2026-10-16T16:47:19.722142+08:00；31测试与图源自审通过，未独立审核 |
 | D02-B | 2026-10-16 | B | 成员B / 糯糯 / Codex Agent B | READY_FOR_REVIEW | task/B-D02-evaluation / 30069ce468a52b68a0d3bfb62bb49b1cce0f2104 | 60测试/14夹具/57负例及逐题AI复核通过；允许A-D03开发，正式实验另验 |
-| D03-A | 2026-10-17（10/16执行） | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D03-planner / fc648532 | 103测试/41负例；放行见release_gate，未独立人类审核 |
+| D03-A | 2026-10-17（10/16执行） | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D03-planner / fc648532 | 103测试复测/41负例；已放行B-D03，偶发超时已披露；未人类审 |
 | D03-B | 2026-10-17 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D04-A | 2026-10-18 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D04-B | 2026-10-18 | B | 待认领 | TODO | 未建立 | 未执行 |

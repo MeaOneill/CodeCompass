@@ -1,0 +1,42 @@
+{
+  "checkpoint_commit": "bfc756e61e8490647ae4a0228af476fd8c277834",
+  "same_committed_copy": "D:\\AIC算法主题赛\\tmp\\A-D03-checkpoint-bfc756e61e84",
+  "timestamp": "2026-10-16T20:43:53.711551+08:00",
+  "no_parallel_git": true,
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=tmp/pytest-A-D03-checkpoint-repeat01"
+      ],
+      "cwd": "D:\\AIC算法主题赛\\tmp\\A-D03-checkpoint-bfc756e61e84",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 21.19348109999555,
+      "raw_log": "experiments/A/A-D03-closeout/checkpoint_repeat_1.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/B/test_evaluation_d02.py::test_candidate_import_exception_is_execution_error",
+        "-q",
+        "--basetemp=tmp/pytest-A-D03-import-repeat01"
+      ],
+      "cwd": "D:\\AIC算法主题赛\\tmp\\A-D03-checkpoint-bfc756e61e84",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 3.139418899998418,
+      "raw_log": "experiments/A/A-D03-closeout/checkpoint_repeat_2.log"
+    }
+  ],
+  "all_passed": true,
+  "initial_failure_preserved": "experiments/A/A-D03-closeout/checkpoint_replay_initial_failure.json",
+  "changed_B_timeout": false
+}

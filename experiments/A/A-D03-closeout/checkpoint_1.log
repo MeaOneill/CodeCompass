@@ -1,0 +1,22 @@
+........................................................................ [ 69%]
+F..............................                                          [100%]
+================================== FAILURES ===================================
+_____________ test_candidate_import_exception_is_execution_error ______________
+
+tmp_path = WindowsPath('D:/AIC算法主题赛/tmp/A-D03-checkpoint-bfc756e61e84/tmp/pytest-A-D03-checkpoint/test_candidate_import_exceptio0')
+
+    def test_candidate_import_exception_is_execution_error(tmp_path):
+        folder = create_fixture('task_001', tmp_path / 'import-failure')
+        p = folder / 'candidate.py'
+        p.write_text(p.read_text(encoding='utf-8').replace('def chunked_iter(src, size, count=None, **kw):', 'def chunked_iter(src, size, count=(1/0), **kw):'), encoding='utf-8')
+        result = grade('task_001', folder)
+>       assert result['status'] == 'EXECUTION_ERROR' and result['success'] is False
+E       AssertionError: assert ('TIMEOUT' == 'EXECUTION_ERROR'
+E         
+E         - EXECUTION_ERROR
+E         + TIMEOUT)
+
+tests\B\test_evaluation_d02.py:77: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/B/test_evaluation_d02.py::test_candidate_import_exception_is_execution_error
+1 failed, 102 passed in 20.43s
