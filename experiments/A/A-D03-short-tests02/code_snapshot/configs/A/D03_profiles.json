@@ -1,0 +1,22 @@
+{
+  "is_simulated": true,
+  "profiles": [
+    {
+      "id": "sim_unknown",
+      "label": "模拟：无独立能力证据",
+      "known_concepts": []
+    },
+    {
+      "id": "sim_evidence",
+      "label": "模拟：基础与接口知识有独立题证据",
+      "known_concepts": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "boltons.wrapper_compatibility",
+        "python.type_validation"
+      ]
+    }
+  ],
+  "passes_per_known_concept": 10,
+  "evidence_generation": "deterministic fixture records, never human observations"
+}

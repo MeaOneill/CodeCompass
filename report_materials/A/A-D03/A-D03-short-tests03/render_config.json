@@ -1,0 +1,48 @@
+{
+  "run_id": "A-D03-short-tests03",
+  "source_json": "experiments/A/A-D03-short-tests03/summary.json",
+  "source_sha256": "4c95994ae01ffb9818ca3ecaa9b10fd36143dcba9feb1e94558afe8f3fb6f7ae",
+  "script": "scripts/A/draw_d03.py",
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+  "seed": null,
+  "kind": "development_route_cases_not_effect_results",
+  "command": [
+    "python",
+    "scripts/A/draw_d03.py",
+    "--run-id",
+    "A-D03-short-tests03"
+  ],
+  "figures": [
+    {
+      "figure_id": "task_001_paired_routes",
+      "size_px": [
+        2500,
+        1760
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 71,
+      "review": "pending"
+    },
+    {
+      "figure_id": "task_002_paired_routes",
+      "size_px": [
+        2500,
+        1760
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 71,
+      "review": "pending"
+    },
+    {
+      "figure_id": "failure_budget_route",
+      "size_px": [
+        2500,
+        1300
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 22,
+      "review": "pending"
+    }
+  ]
+}

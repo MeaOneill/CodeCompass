@@ -168,3 +168,9 @@ Schema检查类型/必填/枚举/范围/格式；本轮验证脚本检查实际�
 | reviewer | `{"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}` |
 | contribution_preparation | `{"type": "string", "minLength": 1}` |
 | answer_access | `{"type": "string", "minLength": 1}` |
+
+## A-D03兼容扩展 1.1.0（开发用）
+
+旧schemas/contracts.schema.json保持1.0.0，不修改B现有加载器。新增schemas/contracts-1.1.schema.json接受旧1.0.0与1.1.0，Task的origin.kind兼容新增source_behavior_adapted/team_designed_debug（新kind必须1.1.0）；用于如实表达B真实行为设计题目，避免错误称upstream TODO。七对象数量/原字段不变。
+
+D03带明确proxy_cost的任务/单元覆盖文件在benchmarks/dev/D03；不回填旧D01空成本以假装早期已冻结。plan_request入口采用扩展schema与真实字节/span校验，见scripts/A/README_D03.md。Beta ledger是内部状态0.1.0，不冒称第八个共享数据对象；B负责持久化迁移与原子性。正式题目/教学边/成本标定未冻结。

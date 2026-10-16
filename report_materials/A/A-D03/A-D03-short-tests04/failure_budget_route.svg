@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1300" viewBox="0 0 2500 1300">
+  <rect width="2500" height="1300" fill="white" />
+  <text x="65" y="81.4" fill="#203344" font-size="46" font-family="Microsoft YaHei, sans-serif">失败案例：任务1只给20代理单位预算</text>
+  <text x="65" y="147.0" fill="#203344" font-size="30" font-family="Microsoft YaHei, sans-serif">模拟：无能力证据｜两方法均未找到完整路线｜NO_FEASIBLE_FOUND 不是无解证明</text>
+  <text x="65" y="310.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">B0 固定文档顺序</text>
+  <text x="65" y="361.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 0</text>
+  <text x="65" y="407.5" fill="#a63c28" font-size="25" font-family="Microsoft YaHei, sans-serif">未找到完整可行路线</text>
+  <rect x="440" y="270" width="1910" height="210" rx="14" fill="#fff4f0" stroke="#a63c28" stroke-width="3" />
+  <text x="455" y="309.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">空路线：固定顺序第一项就超出预算</text>
+  <text x="455" y="342.6" fill="#a63c28" font-size="24" font-family="Microsoft YaHei, sans-serif">本次选入材料的代理成本为 0；这是固定前缀的截断结果</text>
+  <text x="455" y="378.6" fill="#a63c28" font-size="24" font-family="Microsoft YaHei, sans-serif">没有声称任务成功</text>
+  <text x="65" y="590.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">初版闭包增量贪心</text>
+  <text x="65" y="641.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 16</text>
+  <text x="65" y="687.5" fill="#a63c28" font-size="25" font-family="Microsoft YaHei, sans-serif">未找到完整可行路线</text>
+  <rect x="440" y="550" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="455" y="589.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">迭代协议检查</text>
+  <text x="455" y="622.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_iterable</text>
+  <text x="455" y="658.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L61-76</text>
+  <text x="455" y="694.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 16</text>
+  <text x="455" y="730.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：目标缺口材料</text>
+  <rect x="65" y="850" width="2300" height="220" rx="14" fill="#fff4f0" stroke="#a63c28" stroke-width="3" />
+  <text x="80" y="889.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">必须保留的未完成项</text>
+  <text x="80" y="922.6" fill="#a63c28" font-size="24" font-family="Microsoft YaHei, sans-serif">本次只覆盖 1 / 6 个目标概念；还有目标缺口。</text>
+  <text x="80" y="958.6" fill="#a63c28" font-size="24" font-family="Microsoft YaHei, sans-serif">完整目标材料的增量成本超过剩余预算，不把部分建议记为成功。</text>
+  <text x="80" y="994.6" fill="#a63c28" font-size="24" font-family="Microsoft YaHei, sans-serif">另保留一个合成反例：贪心未找到路线，但已知另一条路线可行。</text>
+  <text x="65" y="1159.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">源码版本：4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d｜完整失败原因在原始结果。</text>
+  <text x="65" y="1214.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">开发短测；无真人学习数据；不要求算法必须胜过基线才能通过工程G1。</text>
+</svg>

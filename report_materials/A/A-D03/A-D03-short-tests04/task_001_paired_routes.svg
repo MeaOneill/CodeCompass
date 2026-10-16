@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1760" viewBox="0 0 2500 1760">
+  <rect width="2500" height="1760" fill="white" />
+  <text x="65" y="81.4" fill="#203344" font-size="46" font-family="Microsoft YaHei, sans-serif">任务1：给惰性分块增加 count 限制</text>
+  <text x="65" y="147.0" fill="#203344" font-size="30" font-family="Microsoft YaHei, sans-serif">开发短测｜真实固定源码任务 + 明确模拟画像｜不是学习效果或真人成功率</text>
+  <text x="65" y="237.9" fill="#203344" font-size="31" font-family="Microsoft YaHei, sans-serif">模拟画像一：没有独立能力证据</text>
+  <text x="65" y="310.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">B0 固定文档顺序</text>
+  <text x="65" y="361.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 80</text>
+  <text x="65" y="407.5" fill="#245880" font-size="25" font-family="Microsoft YaHei, sans-serif">结构可行</text>
+  <rect x="440" y="270" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="455" y="309.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">列表包装器兼容</text>
+  <text x="455" y="342.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked</text>
+  <text x="455" y="378.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L286-306</text>
+  <text x="455" y="414.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 21</text>
+  <text x="455" y="450.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <rect x="1100" y="270" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1115" y="309.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">惰性分块与填充</text>
+  <text x="1115" y="342.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked_iter</text>
+  <text x="1115" y="378.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L316-358</text>
+  <text x="1115" y="414.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 43</text>
+  <text x="1115" y="450.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <line x1="1030" y1="375" x2="1100" y2="375" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1100,375 1085,367 1085,383" fill="#4c687d" />
+  <rect x="1760" y="270" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1775" y="309.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">迭代协议检查</text>
+  <text x="1775" y="342.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_iterable</text>
+  <text x="1775" y="378.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L61-76</text>
+  <text x="1775" y="414.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 16</text>
+  <text x="1775" y="450.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <line x1="1690" y1="375" x2="1760" y2="375" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1760,375 1745,367 1745,383" fill="#4c687d" />
+  <text x="65" y="590.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">初版闭包增量贪心</text>
+  <text x="65" y="641.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 80</text>
+  <text x="65" y="687.5" fill="#245880" font-size="25" font-family="Microsoft YaHei, sans-serif">结构可行</text>
+  <rect x="440" y="550" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="455" y="589.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">惰性分块与填充</text>
+  <text x="455" y="622.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked_iter</text>
+  <text x="455" y="658.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L316-358</text>
+  <text x="455" y="694.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 43</text>
+  <text x="455" y="730.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：目标缺口材料</text>
+  <rect x="1100" y="550" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1115" y="589.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">迭代协议检查</text>
+  <text x="1115" y="622.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_iterable</text>
+  <text x="1115" y="658.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L61-76</text>
+  <text x="1115" y="694.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 16</text>
+  <text x="1115" y="730.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：目标缺口材料</text>
+  <line x1="1030" y1="655" x2="1100" y2="655" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1100,655 1085,647 1085,663" fill="#4c687d" />
+  <rect x="1760" y="550" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1775" y="589.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">列表包装器兼容</text>
+  <text x="1775" y="622.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked</text>
+  <text x="1775" y="658.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L286-306</text>
+  <text x="1775" y="694.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 21</text>
+  <text x="1775" y="730.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：目标缺口材料</text>
+  <line x1="1690" y1="655" x2="1760" y2="655" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1760,655 1745,647 1745,663" fill="#4c687d" />
+  <text x="65" y="819.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">未知能力不跳过；两方法使用相同材料和预算 100。</text>
+  <text x="65" y="917.9" fill="#203344" font-size="31" font-family="Microsoft YaHei, sans-serif">模拟画像二：四类基础知识各有10条模拟独立题通过记录</text>
+  <text x="65" y="990.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">B0 固定文档顺序</text>
+  <text x="65" y="1041.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 80</text>
+  <text x="65" y="1087.5" fill="#245880" font-size="25" font-family="Microsoft YaHei, sans-serif">结构可行</text>
+  <rect x="440" y="950" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="455" y="989.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">列表包装器兼容</text>
+  <text x="455" y="1022.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked</text>
+  <text x="455" y="1058.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L286-306</text>
+  <text x="455" y="1094.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 21</text>
+  <text x="455" y="1130.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <rect x="1100" y="950" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1115" y="989.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">惰性分块与填充</text>
+  <text x="1115" y="1022.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked_iter</text>
+  <text x="1115" y="1058.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L316-358</text>
+  <text x="1115" y="1094.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 43</text>
+  <text x="1115" y="1130.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <line x1="1030" y1="1055" x2="1100" y2="1055" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1100,1055 1085,1047 1085,1063" fill="#4c687d" />
+  <rect x="1760" y="950" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1775" y="989.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">迭代协议检查</text>
+  <text x="1775" y="1022.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_iterable</text>
+  <text x="1775" y="1058.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L61-76</text>
+  <text x="1775" y="1094.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 16</text>
+  <text x="1775" y="1130.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：固定文档前缀</text>
+  <line x1="1690" y1="1055" x2="1760" y2="1055" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1760,1055 1745,1047 1745,1063" fill="#4c687d" />
+  <text x="65" y="1270.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">初版闭包增量贪心</text>
+  <text x="65" y="1321.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">代理成本 43</text>
+  <text x="65" y="1367.5" fill="#245880" font-size="25" font-family="Microsoft YaHei, sans-serif">结构可行</text>
+  <rect x="440" y="1230" width="590" height="210" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="455" y="1269.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">惰性分块与填充</text>
+  <text x="455" y="1302.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">u_chunked_iter</text>
+  <text x="455" y="1338.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">iterutils.py L316-358</text>
+  <text x="455" y="1374.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共同代理成本 43</text>
+  <text x="455" y="1410.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">选入：目标缺口材料</text>
+  <text x="65" y="1499.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">证据覆盖概念：迭代协议、缺省语义、包装器兼容、类型校验；不表示真人已掌握。</text>
+  <text x="65" y="1580.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">每个节点都有固定源码行号；完整选择原因与证据ID见本run的逐步复核表。</text>
+  <text x="65" y="1634.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">真实教学边仍为 soft；诊断未实现。代理成本 = 固定源码闭区间行数，不能换算为分钟。</text>
+  <text x="65" y="1682.5" fill="#203344" font-size="25" font-family="Microsoft YaHei, sans-serif">boltons 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d | A-D03-short-tests04</text>
+</svg>

@@ -120,6 +120,87 @@
       "unit": null,
       "sample_size": null,
       "limitations": "结构示意；没有独立人类审核、算法/学习效果或调用绑定解析。"
+    },
+    {
+      "figure_id": "D03_task_001_paired_routes",
+      "kind": "development_route_diagram",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "run_id": "A-D03-short-tests04",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "code_commit": null,
+      "sources": [
+        "experiments/A/A-D03-short-tests04/summary.json",
+        "report_materials/A/A-D03/A-D03-short-tests04/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d03.py",
+      "render_command": "python scripts/A/draw_d03.py --run-id A-D03-short-tests04",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/task_001_paired_routes.png",
+          "sha256": "f02430fa1f74046341d100c17257bc8ca64eec76dcb377995ab62f63a4191ed1"
+        },
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/task_001_paired_routes.svg",
+          "sha256": "58e7d09dded9dbc88c0fb7e5ec15eec662e985563a604280151d08cac16bbdca"
+        }
+      ],
+      "unit": "proxy_cost (inclusive fixed source lines), not minutes",
+      "sample_size": null,
+      "limitations": "two explicitly simulated profiles, two real dev task definitions; no independent task outcome, no human learning/time measurement; real teaching edges soft"
+    },
+    {
+      "figure_id": "D03_task_002_paired_routes",
+      "kind": "development_route_diagram",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "run_id": "A-D03-short-tests04",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "code_commit": null,
+      "sources": [
+        "experiments/A/A-D03-short-tests04/summary.json",
+        "report_materials/A/A-D03/A-D03-short-tests04/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d03.py",
+      "render_command": "python scripts/A/draw_d03.py --run-id A-D03-short-tests04",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/task_002_paired_routes.png",
+          "sha256": "3b5762f471d16aa788ae47b84aa1efe05c19aa058cfdf2b6fea21242837d78a6"
+        },
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/task_002_paired_routes.svg",
+          "sha256": "987c5510085c392d0a70f098bc52b6ccb736d27afa84a2c6f4e117d77804d711"
+        }
+      ],
+      "unit": "proxy_cost (inclusive fixed source lines), not minutes",
+      "sample_size": null,
+      "limitations": "two explicitly simulated profiles, two real dev task definitions; no independent task outcome, no human learning/time measurement; real teaching edges soft"
+    },
+    {
+      "figure_id": "D03_failure_budget_route",
+      "kind": "development_route_diagram",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "run_id": "A-D03-short-tests04",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "code_commit": null,
+      "sources": [
+        "experiments/A/A-D03-short-tests04/summary.json",
+        "report_materials/A/A-D03/A-D03-short-tests04/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d03.py",
+      "render_command": "python scripts/A/draw_d03.py --run-id A-D03-short-tests04",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/failure_budget_route.png",
+          "sha256": "8a582a728b2c8aa3fc87ee9aab00d1e52afd1fe1144b70ad8f70ef5408aa297d"
+        },
+        {
+          "path": "report_materials/A/A-D03/A-D03-short-tests04/failure_budget_route.svg",
+          "sha256": "bd327f27867dba7e100845662d9156ff8b8a0f607a1dea4e688c53fedfa53f4c"
+        }
+      ],
+      "unit": "proxy_cost (inclusive fixed source lines), not minutes",
+      "sample_size": null,
+      "limitations": "two explicitly simulated profiles, two real dev task definitions; no independent task outcome, no human learning/time measurement; real teaching edges soft"
     }
   ]
 }

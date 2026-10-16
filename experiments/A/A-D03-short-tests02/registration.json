@@ -1,0 +1,36 @@
+{
+  "run_id": "A-D03-short-tests02",
+  "task_id": "A-D03",
+  "evidence_type": "development_validation",
+  "is_simulated": true,
+  "code_commit": null,
+  "base_commit": "fc6485329691efda2662e21116d8f23e329b4d96",
+  "actor": "Codex Agent A",
+  "model_id": null,
+  "machine": "LAPTOP-LUQPS3EV",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "started_at": "2026-10-16T12:20:57.407889+00:00",
+  "finished_at": "2026-10-16T12:20:58.378428+00:00",
+  "elapsed_seconds": 0.9702939999988303,
+  "command": [
+    "scripts/A/run_d03.py",
+    "--run-id",
+    "A-D03-short-tests02"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "checks": {
+    "paired_real_tasks": 2,
+    "simulated_profiles": 2,
+    "real_task_method_outputs": 10,
+    "boundary_checks": 5,
+    "all_expected_conditions_passed": true,
+    "human_profiles": 0,
+    "formal_experiments": 0,
+    "diagnostics": "NOT_IMPLEMENTED",
+    "method": "B2-initial greedy; not beam/Ours or an optimality claim"
+  },
+  "api_cost": null,
+  "metrics": null,
+  "independent_review": "NOT_REVIEWED"
+}

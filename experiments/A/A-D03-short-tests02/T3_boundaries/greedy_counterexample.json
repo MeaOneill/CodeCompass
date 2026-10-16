@@ -1,0 +1,231 @@
+{
+  "is_fixture": true,
+  "scope": "T3 synthetic structural boundary test",
+  "name": "greedy_counterexample",
+  "request": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanningRequest",
+    "is_fixture": true,
+    "request_id": "T3-greedy_counterexample",
+    "snapshot_id": "boltons-4e5faa3d7e40",
+    "task_id": "structural_greedy_counterexample",
+    "learner_state": [],
+    "budget": 5,
+    "cost_unit": "proxy_cost",
+    "config_version": "A-D03-dev-0.1",
+    "target_concept_ids": [
+      "x",
+      "y"
+    ],
+    "unit_ids": [
+      "a",
+      "b",
+      "c"
+    ],
+    "prior_plan_id": null
+  },
+  "units": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "a",
+      "source_spans": [],
+      "concept_ids": [
+        "x"
+      ],
+      "base_cost": 2,
+      "cost_unit": "proxy_cost",
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "b",
+      "source_spans": [],
+      "concept_ids": [
+        "x",
+        "y"
+      ],
+      "base_cost": 5,
+      "cost_unit": "proxy_cost",
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "c",
+      "source_spans": [],
+      "concept_ids": [
+        "y"
+      ],
+      "base_cost": 4,
+      "cost_unit": "proxy_cost",
+      "prerequisites": []
+    }
+  ],
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "T3-greedy_counterexample-greedy",
+    "request_id": "T3-greedy_counterexample",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 0.5
+    },
+    "unmet_constraints": [
+      "uncovered target: y",
+      "b: requires incremental proxy_cost=5, remaining=3",
+      "c: requires incremental proxy_cost=4, remaining=3",
+      "Greedy search did not find a complete feasible route; this is not an infeasibility proof"
+    ],
+    "estimated_cost": 2,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=2; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "detail": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x",
+          "y"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "incremental_cost": 2,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "incremental_cost": 5,
+            "new_goal_gain": 2
+          },
+          {
+            "root": "c",
+            "bundle": [
+              "c"
+            ],
+            "incremental_cost": 4,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "pending_goals": [
+          "y"
+        ],
+        "blocked_candidates": [
+          "b: requires incremental proxy_cost=5, remaining=3",
+          "c: requires incremental proxy_cost=4, remaining=3"
+        ],
+        "candidates": []
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  },
+  "audit": {
+    "structurally_valid": true,
+    "goal_complete": false,
+    "violations": [],
+    "replayed_proxy_cost": 2,
+    "covered_concepts": [
+      "x"
+    ],
+    "not_a_learning_success_measure": true
+  },
+  "expected_status": "NO_FEASIBLE_FOUND",
+  "known_feasible_witness": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "T3-greedy_counterexample-greedy",
+    "request_id": "T3-greedy_counterexample",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 5,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=2; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "witness_audit": {
+    "structurally_valid": true,
+    "goal_complete": true,
+    "violations": [],
+    "replayed_proxy_cost": 5,
+    "covered_concepts": [
+      "x",
+      "y"
+    ],
+    "not_a_learning_success_measure": true
+  }
+}

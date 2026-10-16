@@ -1,0 +1,20 @@
+当前：A-D03核心算法独立CLI演示；正式UI尚未接入。
+任务：滑动窗口size边界防护
+画像：模拟：无独立能力证据（明确模拟，不是真人）
+预算：100 代理单位，不是分钟
+
+B0 固定文档路线：FEASIBLE
+路线：u_windowed_iter → u_iterable → u_positive_int
+代理成本：60
+  u_windowed_iter | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=39; source=boltons/iterutils.py:L472-510; selection intentionally ignores profile
+  u_iterable | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile
+  u_positive_int | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=5; source=boltons/iterutils.py:L309-313; selection intentionally ignores profile
+
+初版闭包增量贪心：FEASIBLE
+路线：u_positive_int → u_iterable → u_windowed_iter
+代理成本：60
+  u_positive_int | TARGET_MATERIAL for u_positive_int; bundle new-goal gain=1, incremental proxy_cost=5; own proxy_cost=5; source=boltons/iterutils.py:L309-313; soft edges do not create hard constraints
+  u_iterable | TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints
+  u_windowed_iter | TARGET_MATERIAL for u_windowed_iter; bundle new-goal gain=2, incremental proxy_cost=39; own proxy_cost=39; source=boltons/iterutils.py:L472-510; soft edges do not create hard constraints
+
+独立任务成功/真人用时：未测量；诊断：尚未实现。

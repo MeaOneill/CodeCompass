@@ -45,3 +45,9 @@
 # Preserve native SVG serialization and raw command logs byte-for-byte.
 /report_materials/A/**/*.svg -text whitespace=cr-at-eol
 /experiments/A/**/*.log -text whitespace=-blank-at-eof,-blank-at-eol
+
+# Preserve A-D03 exact frozen inputs and CSV bytes across Git checkouts.
+/configs/A/** text eol=lf
+/docs/requests/A-* text eol=lf
+/experiments/A/A-D03-*/code_snapshot/** -text whitespace=-blank-at-eol
+/experiments/A/A-D03-*/routes.csv -text whitespace=cr-at-eol

@@ -1,0 +1,114 @@
+{
+  "task_id": "A-D03",
+  "timestamp": "2026-10-16T20:36:50.765751+08:00",
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=tmp/pytest-A-D03-final02"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 15.817894400002842,
+      "raw_log": "experiments/A/A-D03-verification02/1.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.9667984999978216,
+      "raw_log": "experiments/A/A-D03-verification02/2.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.1820255000056932,
+      "raw_log": "experiments/A/A-D03-verification02/3.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/check_d02.py",
+        "--run-id",
+        "A-D02-20261016-graph02"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 2.641250400003628,
+      "raw_log": "experiments/A/A-D03-verification02/4.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d03.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.8062580000041635,
+      "raw_log": "experiments/A/A-D03-verification02/5.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d03.py",
+        "--task",
+        "task_002",
+        "--profile",
+        "sim_unknown"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.6833352999965427,
+      "raw_log": "experiments/A/A-D03-verification02/6.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d03.py",
+        "--profile",
+        "sim_unknown",
+        "--budget",
+        "20"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.8918806000001496,
+      "raw_log": "experiments/A/A-D03-verification02/7.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d03.py",
+        "--budget",
+        "-1"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 2.0222635000027367,
+      "raw_log": "experiments/A/A-D03-verification02/8.log"
+    }
+  ],
+  "all_passed": true
+}

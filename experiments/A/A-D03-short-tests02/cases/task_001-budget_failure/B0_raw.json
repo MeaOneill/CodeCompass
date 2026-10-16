@@ -1,0 +1,14 @@
+{
+  "status": "ROUTE_PREFIX",
+  "ordered_units": [],
+  "reading_order_only": [
+    "u_chunked",
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "estimated_cost": 0,
+  "unmet_constraints": [
+    "fixed route truncated by budget"
+  ],
+  "cost_unit": "proxy_cost"
+}

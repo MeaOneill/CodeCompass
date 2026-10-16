@@ -1,0 +1,6 @@
+{
+  "expected_rejection": true,
+  "error_type": "PlanningInputError",
+  "message": "base_cost missing/invalid; never fill with zero",
+  "no_success_plan_created": true
+}

@@ -1,0 +1,148 @@
+{
+  "is_fixture": true,
+  "scope": "T3 synthetic structural boundary test",
+  "name": "cycle",
+  "request": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanningRequest",
+    "is_fixture": true,
+    "request_id": "T3-cycle",
+    "snapshot_id": "boltons-4e5faa3d7e40",
+    "task_id": "structural_cycle",
+    "learner_state": [],
+    "budget": 100,
+    "cost_unit": "proxy_cost",
+    "config_version": "A-D03-dev-0.1",
+    "target_concept_ids": [
+      "x"
+    ],
+    "unit_ids": [
+      "a",
+      "b"
+    ],
+    "prior_plan_id": null
+  },
+  "units": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "a",
+      "source_spans": [],
+      "concept_ids": [
+        "x"
+      ],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "prerequisites": [
+        {
+          "unit_id": "b",
+          "relation_type": "teaching_prerequisite",
+          "hard": true,
+          "provenance": {
+            "kind": "fixture",
+            "review_status": "approved",
+            "reviewer": "SYNTHETIC_REVIEW_NOT_A_PERSON",
+            "evidence": [
+              "fixture-only:structural-constraint"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "b",
+      "source_spans": [],
+      "concept_ids": [
+        "y"
+      ],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "prerequisites": [
+        {
+          "unit_id": "a",
+          "relation_type": "teaching_prerequisite",
+          "hard": true,
+          "provenance": {
+            "kind": "fixture",
+            "review_status": "approved",
+            "reviewer": "SYNTHETIC_REVIEW_NOT_A_PERSON",
+            "evidence": [
+              "fixture-only:structural-constraint"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "T3-cycle-greedy",
+    "request_id": "T3-cycle",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: x",
+      "a: prerequisite cycle (a -> b -> a)",
+      "Greedy search did not find a complete feasible route; this is not an infeasibility proof"
+    ],
+    "estimated_cost": 0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "detail": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x"
+        ],
+        "blocked_candidates": [
+          "a: prerequisite cycle (a -> b -> a)"
+        ],
+        "candidates": []
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  },
+  "audit": {
+    "structurally_valid": true,
+    "goal_complete": false,
+    "violations": [],
+    "replayed_proxy_cost": 0,
+    "covered_concepts": [],
+    "not_a_learning_success_measure": true
+  },
+  "expected_status": "NO_FEASIBLE_FOUND"
+}

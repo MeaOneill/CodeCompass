@@ -1,0 +1,132 @@
+{
+  "gate": {
+    "boltons.chunk_postprocess": {
+      "concept_id": "boltons.chunk_postprocess",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "boltons.wrapper_compatibility": {
+      "concept_id": "boltons.wrapper_compatibility",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.generator_laziness": {
+      "concept_id": "python.generator_laziness",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.islice_consumption": {
+      "concept_id": "python.islice_consumption",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "candidate_attempts": [
+    {
+      "iteration": 1,
+      "pending_goals": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_chunked",
+          "bundle": [
+            "u_chunked"
+          ],
+          "incremental_cost": 21,
+          "new_goal_gain": 1
+        },
+        {
+          "root": "u_chunked_iter",
+          "bundle": [
+            "u_chunked_iter"
+          ],
+          "incremental_cost": 43,
+          "new_goal_gain": 4
+        },
+        {
+          "root": "u_iterable",
+          "bundle": [
+            "u_iterable"
+          ],
+          "incremental_cost": 16,
+          "new_goal_gain": 1
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "pending_goals": [
+        "boltons.wrapper_compatibility",
+        "python.iterator_protocol"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_chunked",
+          "bundle": [
+            "u_chunked"
+          ],
+          "incremental_cost": 21,
+          "new_goal_gain": 1
+        },
+        {
+          "root": "u_iterable",
+          "bundle": [
+            "u_iterable"
+          ],
+          "incremental_cost": 16,
+          "new_goal_gain": 1
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "pending_goals": [
+        "boltons.wrapper_compatibility"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_chunked",
+          "bundle": [
+            "u_chunked"
+          ],
+          "incremental_cost": 21,
+          "new_goal_gain": 1
+        }
+      ]
+    }
+  ],
+  "method": "B2-initial-closure-gain-greedy",
+  "diagnostics_implemented": false,
+  "optimality_claim": false
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "README.md",
+    "docs/A/A-D03_成果与自行验收.md",
+    "docs/A/G1算法可行性与创新审查.md",
+    "docs/A/每日验收规则.md",
+    "docs/A/handoffs/A-D03.md",
+    "scripts/A/README_D03.md",
+    "report_materials/A/A-D03/A-D03-short-tests04/逐步复核.md"
+  ],
+  "broken_links": [],
+  "pending_release_gate": true
+}

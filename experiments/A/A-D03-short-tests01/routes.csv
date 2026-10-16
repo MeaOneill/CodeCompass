@@ -1,0 +1,11 @@
+case_id,task_id,profile,method,status,route,proxy_cost,covered,required,is_simulated,independent_task_success
+task_001-sim_unknown,task_001,sim_unknown,B0,FEASIBLE,u_chunked -> u_chunked_iter -> u_iterable,80,6,6,True,NOT_MEASURED
+task_001-sim_unknown,task_001,sim_unknown,B2_initial,FEASIBLE,u_chunked_iter -> u_iterable -> u_chunked,80,6,6,True,NOT_MEASURED
+task_001-sim_evidence,task_001,sim_evidence,B0,FEASIBLE,u_chunked -> u_chunked_iter -> u_iterable,80,6,6,True,NOT_MEASURED
+task_001-sim_evidence,task_001,sim_evidence,B2_initial,FEASIBLE,u_chunked_iter,43,6,6,True,NOT_MEASURED
+task_002-sim_unknown,task_002,sim_unknown,B0,FEASIBLE,u_windowed_iter -> u_iterable -> u_positive_int,60,4,4,True,NOT_MEASURED
+task_002-sim_unknown,task_002,sim_unknown,B2_initial,FEASIBLE,u_positive_int -> u_iterable -> u_windowed_iter,60,4,4,True,NOT_MEASURED
+task_002-sim_evidence,task_002,sim_evidence,B0,FEASIBLE,u_windowed_iter -> u_iterable -> u_positive_int,60,4,4,True,NOT_MEASURED
+task_002-sim_evidence,task_002,sim_evidence,B2_initial,FEASIBLE,u_windowed_iter,39,4,4,True,NOT_MEASURED
+task_001-budget_failure,task_001,sim_unknown,B0,NO_FEASIBLE_FOUND,,0,0,6,True,NOT_MEASURED
+task_001-budget_failure,task_001,sim_unknown,B2_initial,NO_FEASIBLE_FOUND,u_iterable,16,1,6,True,NOT_MEASURED

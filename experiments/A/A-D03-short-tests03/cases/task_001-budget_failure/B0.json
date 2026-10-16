@@ -1,0 +1,85 @@
+{
+  "case_id": "task_001-budget_failure",
+  "task_id": "task_001",
+  "profile_id": "sim_unknown",
+  "profile_label": "模拟：无独立能力证据",
+  "method": "B0",
+  "is_simulated": true,
+  "evidence_type": "development_short_test",
+  "budget": 20,
+  "cost_unit": "proxy_cost",
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "task_001-budget_failure-B0",
+    "request_id": "task_001-budget_failure",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: boltons.chunk_postprocess",
+      "uncovered target: boltons.wrapper_compatibility",
+      "uncovered target: python.generator_laziness",
+      "uncovered target: python.islice_consumption",
+      "uncovered target: python.iterator_protocol",
+      "uncovered target: python.keyword_presence",
+      "B0 fixed prefix did not yield a complete route within the same budget"
+    ],
+    "estimated_cost": 0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "audit": {
+    "structurally_valid": true,
+    "goal_complete": false,
+    "violations": [],
+    "replayed_proxy_cost": 0,
+    "covered_concepts": [],
+    "not_a_learning_success_measure": true
+  },
+  "independent_task_success": null,
+  "human_elapsed_minutes": null,
+  "formal_study_result": false,
+  "sources": {
+    "u_iterable": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      }
+    ],
+    "u_chunked_iter": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      }
+    ],
+    "u_chunked": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      }
+    ]
+  }
+}

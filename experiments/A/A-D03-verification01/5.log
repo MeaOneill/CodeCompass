@@ -1,0 +1,18 @@
+当前：A-D03核心算法独立CLI演示；正式UI尚未接入。
+任务：为boltons.chunked_iter增加惰性count限制
+画像：模拟：基础与接口知识有独立题证据（明确模拟，不是真人）
+预算：100 代理单位，不是分钟
+
+B0 固定文档路线：FEASIBLE
+路线：u_chunked → u_chunked_iter → u_iterable
+代理成本：80
+  u_chunked | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile
+  u_chunked_iter | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile
+  u_iterable | B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile
+
+初版闭包增量贪心：FEASIBLE
+路线：u_chunked_iter
+代理成本：43
+  u_chunked_iter | TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=3, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints
+
+独立任务成功/真人用时：未测量；诊断：尚未实现。

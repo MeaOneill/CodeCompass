@@ -1,0 +1,96 @@
+{
+  "gate": {
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.iterator_protocol:e0",
+        "sim_evidence:python.iterator_protocol:e1",
+        "sim_evidence:python.iterator_protocol:e2",
+        "sim_evidence:python.iterator_protocol:e3",
+        "sim_evidence:python.iterator_protocol:e4",
+        "sim_evidence:python.iterator_protocol:e5",
+        "sim_evidence:python.iterator_protocol:e6",
+        "sim_evidence:python.iterator_protocol:e7",
+        "sim_evidence:python.iterator_protocol:e8",
+        "sim_evidence:python.iterator_protocol:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.keyword_presence:e0",
+        "sim_evidence:python.keyword_presence:e1",
+        "sim_evidence:python.keyword_presence:e2",
+        "sim_evidence:python.keyword_presence:e3",
+        "sim_evidence:python.keyword_presence:e4",
+        "sim_evidence:python.keyword_presence:e5",
+        "sim_evidence:python.keyword_presence:e6",
+        "sim_evidence:python.keyword_presence:e7",
+        "sim_evidence:python.keyword_presence:e8",
+        "sim_evidence:python.keyword_presence:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.tee": {
+      "concept_id": "python.tee",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.type_validation": {
+      "concept_id": "python.type_validation",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.type_validation:e0",
+        "sim_evidence:python.type_validation:e1",
+        "sim_evidence:python.type_validation:e2",
+        "sim_evidence:python.type_validation:e3",
+        "sim_evidence:python.type_validation:e4",
+        "sim_evidence:python.type_validation:e5",
+        "sim_evidence:python.type_validation:e6",
+        "sim_evidence:python.type_validation:e7",
+        "sim_evidence:python.type_validation:e8",
+        "sim_evidence:python.type_validation:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    }
+  },
+  "candidate_attempts": [
+    {
+      "iteration": 1,
+      "pending_goals": [
+        "python.tee"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_windowed_iter",
+          "bundle": [
+            "u_windowed_iter"
+          ],
+          "incremental_cost": 39,
+          "new_goal_gain": 1
+        }
+      ]
+    }
+  ],
+  "method": "B2-initial-closure-gain-greedy",
+  "diagnostics_implemented": false,
+  "optimality_claim": false
+}

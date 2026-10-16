@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "PlanningRequest",
+  "is_fixture": true,
+  "request_id": "task_002-sim_evidence",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "task_id": "task_002",
+  "learner_state": [
+    {
+      "concept_id": "boltons.wrapper_compatibility",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:boltons.wrapper_compatibility:e0",
+        "sim_evidence:boltons.wrapper_compatibility:e1",
+        "sim_evidence:boltons.wrapper_compatibility:e2",
+        "sim_evidence:boltons.wrapper_compatibility:e3",
+        "sim_evidence:boltons.wrapper_compatibility:e4",
+        "sim_evidence:boltons.wrapper_compatibility:e5",
+        "sim_evidence:boltons.wrapper_compatibility:e6",
+        "sim_evidence:boltons.wrapper_compatibility:e7",
+        "sim_evidence:boltons.wrapper_compatibility:e8",
+        "sim_evidence:boltons.wrapper_compatibility:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1
+    },
+    {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.iterator_protocol:e0",
+        "sim_evidence:python.iterator_protocol:e1",
+        "sim_evidence:python.iterator_protocol:e2",
+        "sim_evidence:python.iterator_protocol:e3",
+        "sim_evidence:python.iterator_protocol:e4",
+        "sim_evidence:python.iterator_protocol:e5",
+        "sim_evidence:python.iterator_protocol:e6",
+        "sim_evidence:python.iterator_protocol:e7",
+        "sim_evidence:python.iterator_protocol:e8",
+        "sim_evidence:python.iterator_protocol:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1
+    },
+    {
+      "concept_id": "python.keyword_presence",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.keyword_presence:e0",
+        "sim_evidence:python.keyword_presence:e1",
+        "sim_evidence:python.keyword_presence:e2",
+        "sim_evidence:python.keyword_presence:e3",
+        "sim_evidence:python.keyword_presence:e4",
+        "sim_evidence:python.keyword_presence:e5",
+        "sim_evidence:python.keyword_presence:e6",
+        "sim_evidence:python.keyword_presence:e7",
+        "sim_evidence:python.keyword_presence:e8",
+        "sim_evidence:python.keyword_presence:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1
+    },
+    {
+      "concept_id": "python.type_validation",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.type_validation:e0",
+        "sim_evidence:python.type_validation:e1",
+        "sim_evidence:python.type_validation:e2",
+        "sim_evidence:python.type_validation:e3",
+        "sim_evidence:python.type_validation:e4",
+        "sim_evidence:python.type_validation:e5",
+        "sim_evidence:python.type_validation:e6",
+        "sim_evidence:python.type_validation:e7",
+        "sim_evidence:python.type_validation:e8",
+        "sim_evidence:python.type_validation:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1
+    }
+  ],
+  "budget": 100,
+  "cost_unit": "proxy_cost",
+  "config_version": "A-D03-dev-0.1",
+  "target_concept_ids": [
+    "python.iterator_protocol",
+    "python.tee",
+    "python.keyword_presence",
+    "python.type_validation"
+  ],
+  "unit_ids": [
+    "u_iterable",
+    "u_windowed_iter",
+    "u_positive_int"
+  ],
+  "prior_plan_id": null
+}
