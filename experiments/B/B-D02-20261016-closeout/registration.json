@@ -1,0 +1,16 @@
+{
+  "task_id": "B-D02",
+  "captured_at": "2026-10-16T17:32:06.900111+08:00",
+  "development_checks_passed": true,
+  "raw_files_hashed": 135,
+  "real_events_schema_validated": 2,
+  "public_replay_checkpoint": "e87c736700a107c8b97e01674e6f7a96c017a4a2",
+  "public_replay_exit_code": 0,
+  "private_answers_replayed_in_clone": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "whole_task_gate_passed": false,
+  "next_day_allowed": false,
+  "formal_experiments": 0,
+  "model_id": null,
+  "cost": null
+}

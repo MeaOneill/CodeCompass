@@ -1,0 +1,1 @@
+{"technical_checks_passed": true, "tests": 58, "whole_task_gate_passed": false, "next_day_allowed": false, "exit_code": 2}

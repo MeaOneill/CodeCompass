@@ -1,0 +1,7 @@
+task_001 reference PENDING_HUMAN_REVIEW automated_score= 7 success= None
+task_001 original FAILED_AUTOMATED automated_score= 0 success= False
+task_002 reference PENDING_HUMAN_REVIEW automated_score= 7 success= None
+task_002 original FAILED_AUTOMATED automated_score= 4 success= False
+B0 shared exit= 2 expected= 2
+B0 source_lines_proposal exit= 0 expected= 0
+Open C:\CodeCompass\CodeCompass\tmp\B-D02-20261016-public-replay01\experiments\B\B-D02-20261016-public-replay01-demo\demo_summary.json

@@ -1,0 +1,92 @@
+{
+  "run_id": "B-D02-20261016-public-replay01",
+  "task_id": "B-D02",
+  "code_checkpoint": "e87c736700a107c8b97e01674e6f7a96c017a4a2",
+  "branch": "task/B-D02-evaluation",
+  "scope": "same_machine_public_only_fresh_local_clone_existing_locked_venv",
+  "private_key_copied": false,
+  "held_out_answers_replayed": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "whole_task_gate_passed": false,
+  "commands": [
+    {
+      "name": "clone",
+      "command": [
+        "git",
+        "clone",
+        "--no-local",
+        "--single-branch",
+        "--branch",
+        "task/B-D02-evaluation",
+        "C:\\CodeCompass\\CodeCompass",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D02-20261016-public-replay01"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "sha",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "sample",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A",
+        "tests/B",
+        "-q",
+        "--basetemp=tmp/pytest-receiver"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "demo",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/demo_d02.py",
+        "--run-id",
+        "B-D02-20261016-public-replay01-demo"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d02.py",
+        "--run-id",
+        "B-D02-20261016-public-replay01-audit"
+      ],
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "expectation_met": true
+    }
+  ],
+  "exit_code": 0
+}
