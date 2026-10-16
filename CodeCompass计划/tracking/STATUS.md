@@ -29,3 +29,7 @@ V6.2更新：Git逐步教程与32张角色任务卡已补齐；最新Word见Word
 ## A-D01实际研发更新 2026-10-16
 
 A-D01 READY_FOR_REVIEW；docs/A/状态.md与docs/A/handoffs/A-D01.md为本轮入口。七对象契约、1道dev任务、固定源码和自检已交付；独立复核/时长预演/算法实验未完成。正式实验仍0。分支codex/A-D01-contracts；B-D01待接管，准确同步SHA见本轮通知。
+
+## A-D02实际更新 2026-10-16
+
+A-D02开发已交付，READY_FOR_REVIEW；入口docs/A/状态.md与handoffs/A-D02.md。真实固定源图和4方法核对、F01/F02首版完成；正式实验0，B-D02未接管。

@@ -1,0 +1,54 @@
+[
+  {
+    "from": "u_iterable",
+    "to": "u_chunked_iter",
+    "kind": "teaching_prerequisite",
+    "hard": false,
+    "provenance": {
+      "kind": "teaching_judgment",
+      "evidence": [
+        "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+      ],
+      "proposed_by": "Codex Agent A",
+      "review_status": "pending",
+      "reviewer": null,
+      "confidence": null
+    },
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      }
+    ],
+    "note": "AI提议与B工程反馈；无独立人类审核，保持soft"
+  },
+  {
+    "from": "u_chunked_iter",
+    "to": "u_chunked",
+    "kind": "teaching_prerequisite",
+    "hard": false,
+    "provenance": {
+      "kind": "teaching_judgment",
+      "evidence": [
+        "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+      ],
+      "proposed_by": "Codex Agent A",
+      "review_status": "pending",
+      "reviewer": null,
+      "confidence": null
+    },
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      }
+    ],
+    "note": "AI提议与B工程反馈；无独立人类审核，保持soft"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "boltons/iterutils.py",
+    "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+    "bytes": 59341,
+    "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "snapshot_id": "boltons-4e5faa3d7e40",
+    "status": "parsed",
+    "diagnostic": null
+  },
+  {
+    "path": "tests/test_iterutils.py",
+    "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+    "bytes": 21913,
+    "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "snapshot_id": "boltons-4e5faa3d7e40",
+    "status": "parsed",
+    "diagnostic": null
+  }
+]

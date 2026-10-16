@@ -1,0 +1,105 @@
+{
+  "is_fixture": true,
+  "task_id": "task_001",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "label": "controlled synthetic structure only; not empirical learning results",
+  "units": [
+    {
+      "id": "shared",
+      "concept_ids": [
+        "iterator"
+      ],
+      "base_cost": 1
+    },
+    {
+      "id": "material_A",
+      "concept_ids": [
+        "chunk_behavior"
+      ],
+      "base_cost": 2
+    },
+    {
+      "id": "material_B",
+      "concept_ids": [
+        "chunk_behavior"
+      ],
+      "base_cost": 3
+    },
+    {
+      "id": "goal",
+      "concept_ids": [
+        "compatible_count"
+      ],
+      "base_cost": 2
+    },
+    {
+      "id": "cycle_X",
+      "concept_ids": [
+        "fixture_X"
+      ],
+      "base_cost": 1
+    },
+    {
+      "id": "cycle_Y",
+      "concept_ids": [
+        "fixture_Y"
+      ],
+      "base_cost": 1
+    }
+  ],
+  "fixture_mastered_concepts": [
+    "iterator"
+  ],
+  "teaching_edges": [
+    {
+      "from": "shared",
+      "to": "material_A",
+      "hard": false,
+      "review_status": "fixture_pending"
+    },
+    {
+      "from": "shared",
+      "to": "material_B",
+      "hard": false,
+      "review_status": "fixture_pending"
+    },
+    {
+      "from": "material_A",
+      "to": "goal",
+      "hard": false,
+      "review_status": "fixture_pending"
+    },
+    {
+      "from": "material_B",
+      "to": "goal",
+      "hard": false,
+      "review_status": "fixture_pending"
+    },
+    {
+      "from": "cycle_X",
+      "to": "cycle_Y",
+      "hard": false,
+      "review_status": "fixture_pending"
+    },
+    {
+      "from": "cycle_Y",
+      "to": "cycle_X",
+      "hard": false,
+      "review_status": "fixture_pending"
+    }
+  ],
+  "alternative_materials": [
+    [
+      "material_A",
+      "material_B"
+    ]
+  ],
+  "cost_unit": "proxy_cost",
+  "cost_status": "invented_for_fixture_only_not_calibrated",
+  "cycle_components": [
+    [
+      "cycle_X",
+      "cycle_Y"
+    ]
+  ]
+}

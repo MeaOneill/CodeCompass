@@ -1,0 +1,64 @@
+{
+  "run_id": "A-D02-20261016-verification",
+  "task_id": "A-D02",
+  "evidence_type": "development_validation",
+  "code_commit": null,
+  "formal_experiments": 0,
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A",
+        "tests/B",
+        "-q",
+        "--basetemp=tmp/pytest-A-D02-final"
+      ],
+      "started_at": "2026-10-16T08:43:55.885996+00:00",
+      "finished_at": "2026-10-16T08:43:57.975440+00:00",
+      "elapsed_seconds": 2.088980000000447,
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D02-20261016-verification/1.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "started_at": "2026-10-16T08:43:57.975440+00:00",
+      "finished_at": "2026-10-16T08:43:58.616216+00:00",
+      "elapsed_seconds": 0.6409144999997807,
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D02-20261016-verification/2.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "started_at": "2026-10-16T08:43:58.616216+00:00",
+      "finished_at": "2026-10-16T08:43:59.552339+00:00",
+      "elapsed_seconds": 0.9361343000018678,
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D02-20261016-verification/3.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/check_d02.py",
+        "--run-id",
+        "A-D02-20261016-graph02"
+      ],
+      "started_at": "2026-10-16T08:43:59.552339+00:00",
+      "finished_at": "2026-10-16T08:44:00.190843+00:00",
+      "elapsed_seconds": 0.6378306000005978,
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D02-20261016-verification/4.log"
+    }
+  ]
+}

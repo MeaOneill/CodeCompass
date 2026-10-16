@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1390" viewBox="0 0 2200 1390">
+  <rect x="0" y="0" width="2200" height="1390" fill="white" />
+  <text x="65" y="81.52" fill="#172a38" font-family="Arial, sans-serif" font-size="44">F01  CodeCompass architecture and implementation boundary</text>
+  <text x="65" y="137.41" fill="#172a38" font-family="Arial, sans-serif" font-size="27">A-D02 | task_001 | structure diagram; no learning-effect results</text>
+  <polyline points="470,295 650,295" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="650,295 635.5928463623571,301.9594485457797 635.5928463623571,288.0405514542203" fill="#245880" />
+  <polyline points="260,400 260,500" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="260,500 253.04055145422032,485.5928463623572 266.9594485457797,485.5928463623572" fill="#245880" />
+  <polyline points="260,680 260,770" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="260,770 253.04055145422032,755.5928463623571 266.9594485457797,755.5928463623571" fill="#245880" />
+  <polyline points="470,850 550,850 550,180 1300,180 1300,255 1390,255" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1390,255 1375.5928463623572,261.9594485457797 1375.5928463623572,248.04055145422032" fill="#555b64" />
+  <polyline points="1170,295 1390,295" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1390,295 1375.5928463623572,301.9594485457797 1375.5928463623572,288.0405514542203" fill="#555b64" />
+  <polyline points="1170,565 1280,565 1280,350 1390,350" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1390,350 1375.5928463623572,356.9594485457797 1375.5928463623572,343.0405514542203" fill="#555b64" />
+  <polyline points="1170,835 1320,835 1320,390 1390,390" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1390,390 1375.5928463623572,396.9594485457797 1375.5928463623572,383.0405514542203" fill="#555b64" />
+  <polyline points="1660,410 1660,520" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1660,520 1653.0405514542203,505.5928463623572 1666.9594485457797,505.5928463623572" fill="#555b64" />
+  <polyline points="1660,680 1660,790" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1660,790 1653.0405514542203,775.5928463623571 1666.9594485457797,775.5928463623571" fill="#555b64" />
+  <polyline points="1660,950 1660,1050" fill="none" stroke="#555b64" stroke-width="3" stroke-dasharray="8 8" />
+  <polygon points="1660,1050 1653.0405514542203,1035.5928463623572 1666.9594485457797,1035.5928463623572" fill="#555b64" />
+  <rect x="65" y="220" width="405" height="180" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="83" y="259.58" fill="#245880" font-family="Arial, sans-serif" font-size="26">Third-party fixed source</text>
+  <text x="83" y="295.46" fill="#245880" font-family="Arial, sans-serif" font-size="26">boltons / BSD-3-Clause</text>
+  <text x="83" y="331.34" fill="#245880" font-family="Arial, sans-serif" font-size="26">4 original files available</text>
+  <rect x="650" y="220" width="520" height="180" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="668" y="259.58" fill="#245880" font-family="Arial, sans-serif" font-size="26">Support 1: source graph</text>
+  <text x="668" y="295.46" fill="#245880" font-family="Arial, sans-serif" font-size="26">AST + source hashes: built</text>
+  <text x="668" y="331.34" fill="#245880" font-family="Arial, sans-serif" font-size="26">Teaching candidates: pending</text>
+  <rect x="1390" y="220" width="680" height="190" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="1408" y="259.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Main: content + order planner</text>
+  <text x="1408" y="295.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Ability / goal / prerequisite / budget</text>
+  <text x="1408" y="331.34" fill="#555b64" font-family="Arial, sans-serif" font-size="26">PLANNED - no algorithm run</text>
+  <rect x="65" y="500" width="405" height="180" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="83" y="539.58" fill="#245880" font-family="Arial, sans-serif" font-size="26">B: package + read-only CLI</text>
+  <text x="83" y="575.46" fill="#245880" font-family="Arial, sans-serif" font-size="26">Built and rechecked</text>
+  <text x="83" y="611.34" fill="#245880" font-family="Arial, sans-serif" font-size="26">UI and persistence planned</text>
+  <rect x="650" y="490" width="520" height="170" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="668" y="529.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Support 2: learning cost</text>
+  <text x="668" y="565.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">PLANNED / proxy_cost</text>
+  <text x="668" y="601.34" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Real costs remain null</text>
+  <rect x="65" y="770" width="405" height="180" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="83" y="809.58" fill="#245880" font-family="Arial, sans-serif" font-size="26">Task 001 + rubric</text>
+  <text x="83" y="845.46" fill="#245880" font-family="Arial, sans-serif" font-size="26">Real upstream TODO</text>
+  <text x="83" y="881.34" fill="#245880" font-family="Arial, sans-serif" font-size="26">Human pilot not run</text>
+  <rect x="650" y="760" width="520" height="170" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="668" y="799.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Support 3: ability + memory</text>
+  <text x="668" y="835.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Evidence schema available</text>
+  <text x="668" y="871.34" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Model / persistence planned</text>
+  <rect x="1390" y="520" width="680" height="160" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="1408" y="559.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Traceable route and feedback</text>
+  <text x="1408" y="595.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">PLANNED / fixture is not a real plan</text>
+  <rect x="1390" y="790" width="680" height="160" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="1408" y="829.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">B independent task evaluator</text>
+  <text x="1408" y="865.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">PLANNED - separate from planner score</text>
+  <rect x="1390" y="1050" width="680" height="160" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="1408" y="1089.58" fill="#555b64" font-family="Arial, sans-serif" font-size="26">Support 4: Issue preparation</text>
+  <text x="1408" y="1125.46" fill="#555b64" font-family="Arial, sans-serif" font-size="26">PLANNED - no community submission</text>
+  <text x="65" y="1052.41" fill="#172a38" font-family="Arial, sans-serif" font-size="27">Team work: source provenance, contracts, task design;</text>
+  <text x="65" y="1089.67" fill="#172a38" font-family="Arial, sans-serif" font-size="27">planner mechanisms still require implementation and evidence.</text>
+  <text x="65" y="1157.41" fill="#172a38" font-family="Arial, sans-serif" font-size="27">AI: drafting / coding / self-check. Human review is pending.</text>
+  <text x="65" y="1194.67" fill="#172a38" font-family="Arial, sans-serif" font-size="27">Third-party source is preserved separately and attributed.</text>
+  <text x="65" y="1280.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">Solid blue: implemented input flow. Dashed gray: planned interfaces. No API/model service is connected.</text>
+  <text x="65" y="1329.92" fill="#172a38" font-family="Arial, sans-serif" font-size="24">Source commit: 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d</text>
+</svg>

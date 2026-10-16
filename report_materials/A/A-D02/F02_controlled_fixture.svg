@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1270" viewBox="0 0 2200 1270">
+  <rect x="0" y="0" width="2200" height="1270" fill="white" />
+  <text x="65" y="81.52" fill="#172a38" font-family="Arial, sans-serif" font-size="44">F02 supplement  Controlled graph for task_001</text>
+  <text x="65" y="142.41" fill="#172a38" font-family="Arial, sans-serif" font-size="27">SYNTHETIC FIXTURE: shared prerequisite, alternative materials, prior mastery, and cycle detection.</text>
+  <polyline points="450,410 700,300" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="700,300 689.6157543644241,312.1724049628668 684.0100770376582,299.432229220217" fill="#9a4a12" />
+  <polyline points="450,410 700,560" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="700,560 684.0653609391476,558.5552585005071 691.2265744129875,546.619902710774" fill="#9a4a12" />
+  <polyline points="1150,300 1410,410" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="1410,410 1394.0198038510116,410.79582098480574 1399.4431627862239,397.97697259248616" fill="#9a4a12" />
+  <polyline points="1150,560 1410,410" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="1410,410 1400.9985238853176,423.2277521808054 1394.0429384808547,411.1714041464029" fill="#9a4a12" />
+  <rect x="65" y="320" width="385" height="180" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="83" y="358.75" fill="#9a4a12" font-family="Arial, sans-serif" font-size="25">shared: iterator</text>
+  <text x="83" y="393.25" fill="#9a4a12" font-family="Arial, sans-serif" font-size="25">Fixture mastered concept</text>
+  <text x="83" y="427.75" fill="#9a4a12" font-family="Arial, sans-serif" font-size="25">Not a human learner</text>
+  <rect x="700" y="225" width="450" height="150" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="718" y="264.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">material_A</text>
+  <text x="718" y="300.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Covers chunk_behavior</text>
+  <rect x="700" y="485" width="450" height="150" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="718" y="524.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">material_B</text>
+  <text x="718" y="560.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Same concept, alternative</text>
+  <rect x="1410" y="320" width="660" height="180" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="1428" y="359.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">goal: compatible_count</text>
+  <text x="1428" y="395.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Two candidate learning materials</text>
+  <text x="1428" y="431.34" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">No planner execution</text>
+  <polyline points="650,885 1400,885" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="1400,885 1385.5928463623572,891.9594485457797 1385.5928463623572,878.0405514542203" fill="#9a4a12" />
+  <polyline points="1400,965 650,965" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="650,965 664.4071536376429,958.0405514542203 664.4071536376429,971.9594485457797" fill="#9a4a12" />
+  <rect x="220" y="835" width="430" height="180" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="238" y="874.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">cycle_X</text>
+  <text x="238" y="910.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Fixture pending edge</text>
+  <rect x="1400" y="835" width="430" height="180" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="1418" y="874.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">cycle_Y</text>
+  <text x="1418" y="910.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Fixture pending edge</text>
+  <text x="65" y="1091.58" fill="#172a38" font-family="Arial, sans-serif" font-size="26">Detected SCC: cycle_X, cycle_Y. Preserve for review; do not delete an edge to force a DAG.</text>
+  <text x="65" y="1140.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">All teaching edges here are fixture/soft. Proxy costs are invented only for structural tests, not measured minutes.</text>
+  <text x="65" y="1189.92" fill="#172a38" font-family="Arial, sans-serif" font-size="24">Source commit: 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d | task_001 | synthetic structure, not an empirical result</text>
+</svg>

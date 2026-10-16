@@ -36,6 +36,90 @@
       "unit": null,
       "sample_size": null,
       "limitations": "仅结构素材，无算法效果；A-D02补渲染入口和PNG/SVG。"
+    },
+    {
+      "figure_id": "F01_architecture",
+      "kind": "structure_diagram",
+      "status": "A_self_visual_reviewed_B_pending",
+      "run_id": "A-D02-20261016-graph02",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "sources": [
+        "experiments/A/A-D02-20261016-graph02/task_001_local_graph.json",
+        "experiments/A/A-D02-20261016-graph02/controlled_fixture.json",
+        "report_materials/A/A-D02/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d02.py",
+      "render_command": "python scripts/A/draw_d02.py --run-id A-D02-20261016-graph02",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D02/F01_architecture.png",
+          "sha256": "06d58b483ac20d12c99da89cf4415b240ac3eac6e41647292e4184e831761243"
+        },
+        {
+          "path": "report_materials/A/A-D02/F01_architecture.svg",
+          "sha256": "74df7be4fff7b1b6cf1a7840831c858c9be3f90879a4191f07b5ddfaa32759ee"
+        }
+      ],
+      "caption": "系统主算法/四支撑、源码输入与实际实现边界；未实现节点显式planned",
+      "unit": null,
+      "sample_size": null,
+      "limitations": "结构示意；没有独立人类审核、算法/学习效果或调用绑定解析。"
+    },
+    {
+      "figure_id": "F02_source_graph",
+      "kind": "structure_diagram",
+      "status": "A_self_visual_reviewed_B_pending",
+      "run_id": "A-D02-20261016-graph02",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "sources": [
+        "experiments/A/A-D02-20261016-graph02/task_001_local_graph.json",
+        "experiments/A/A-D02-20261016-graph02/controlled_fixture.json",
+        "report_materials/A/A-D02/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d02.py",
+      "render_command": "python scripts/A/draw_d02.py --run-id A-D02-20261016-graph02",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D02/F02_source_graph.png",
+          "sha256": "f33eec4e3ac01c4b2b813c1fae7831db01fcb7b9fc336911b4fabcdb1f0139ab"
+        },
+        {
+          "path": "report_materials/A/A-D02/F02_source_graph.svg",
+          "sha256": "af0deb8e558939662234daca06d855d1089f04f7639d813193107eaa99c3c0f1"
+        }
+      ],
+      "caption": "task_001四函数/模块/itertools声明；未知调用和待审核教学软边分层",
+      "unit": null,
+      "sample_size": null,
+      "limitations": "结构示意；没有独立人类审核、算法/学习效果或调用绑定解析。"
+    },
+    {
+      "figure_id": "F02_controlled_fixture",
+      "kind": "structure_diagram",
+      "status": "A_self_visual_reviewed_B_pending",
+      "run_id": "A-D02-20261016-graph02",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "sources": [
+        "experiments/A/A-D02-20261016-graph02/task_001_local_graph.json",
+        "experiments/A/A-D02-20261016-graph02/controlled_fixture.json",
+        "report_materials/A/A-D02/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d02.py",
+      "render_command": "python scripts/A/draw_d02.py --run-id A-D02-20261016-graph02",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D02/F02_controlled_fixture.png",
+          "sha256": "5f7c4b65c5aff33ddeb2e4b98b02f6c902b906a245c5b6e306333097dae370cc"
+        },
+        {
+          "path": "report_materials/A/A-D02/F02_controlled_fixture.svg",
+          "sha256": "396c0bf925c3495318fd059fdc32161c4f0425af7c98c0f8ecf23f10c3dbc1e0"
+        }
+      ],
+      "caption": "合成共享前置/替代材料/已掌握/环；无真人或效果量",
+      "unit": null,
+      "sample_size": null,
+      "limitations": "结构示意；没有独立人类审核、算法/学习效果或调用绑定解析。"
     }
   ]
 }

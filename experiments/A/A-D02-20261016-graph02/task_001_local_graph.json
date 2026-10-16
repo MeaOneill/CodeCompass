@@ -1,0 +1,580 @@
+{
+  "task_id": "task_001",
+  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "repo_url": "https://github.com/mahmoud/boltons",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "selection_rule": "task.source_spans对应四函数、模块、import itertools声明与函数内调用语法；非完整跨模块图",
+  "nodes": [
+    {
+      "id": "boltons/iterutils.py::_validate_positive_int@309",
+      "kind": "function",
+      "name": "_validate_positive_int",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 309,
+        "end_line": 313,
+        "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+      }
+    },
+    {
+      "id": "boltons/iterutils.py::chunked@286",
+      "kind": "function",
+      "name": "chunked",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      }
+    },
+    {
+      "id": "boltons/iterutils.py::chunked_iter@316",
+      "kind": "function",
+      "name": "chunked_iter",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      }
+    },
+    {
+      "id": "boltons/iterutils.py::import@47:0:0",
+      "kind": "import_reference",
+      "name": "itertools",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 47,
+        "end_line": 47,
+        "content_hash": "6abd45136639991239f4e6e89f9ee993f93a9ee766477a4704bbd4b861415957"
+      },
+      "module": null,
+      "level": 0,
+      "alias": null
+    },
+    {
+      "id": "boltons/iterutils.py::is_iterable@61",
+      "kind": "function",
+      "name": "is_iterable",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      }
+    },
+    {
+      "id": "boltons/iterutils.py::module",
+      "kind": "module",
+      "name": "boltons/iterutils.py",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 1,
+        "end_line": 1659,
+        "content_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "kind": "imports",
+      "from": "boltons/iterutils.py::module",
+      "to": "boltons/iterutils.py::import@47:0:0",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 47,
+        "end_line": 47,
+        "content_hash": "6abd45136639991239f4e6e89f9ee993f93a9ee766477a4704bbd4b861415957"
+      },
+      "provenance": "static_ast",
+      "resolution": "declaration_only",
+      "module": null,
+      "symbol": "itertools",
+      "level": 0,
+      "alias": null,
+      "id": "edge_000005"
+    },
+    {
+      "kind": "contains",
+      "from": "boltons/iterutils.py::module",
+      "to": "boltons/iterutils.py::is_iterable@61",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      },
+      "provenance": "static_ast",
+      "resolution": "syntactic_fact",
+      "id": "edge_000017"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::is_iterable@61",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 73,
+        "end_line": 73,
+        "content_hash": "c29843d5cbfc852bfe54c0e96563775a9ee7dfae7a2aeb06876e0f6e1eff72e9"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "iter",
+      "column": 8,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000018"
+    },
+    {
+      "kind": "contains",
+      "from": "boltons/iterutils.py::module",
+      "to": "boltons/iterutils.py::chunked@286",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      },
+      "provenance": "static_ast",
+      "resolution": "syntactic_fact",
+      "id": "edge_000060"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked@286",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 302,
+        "end_line": 302,
+        "content_hash": "3e716d0dacd9edd4e8d2c253f779e7dd0c659ee0a7d42cc17267e9a557d3f424"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "chunked_iter",
+      "column": 17,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000061"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked@286",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 304,
+        "end_line": 304,
+        "content_hash": "ab5021074d48d80f81114ae452044fb6bd108716d93b869bbd3e50511e58e893"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "list",
+      "column": 15,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000062"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked@286",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 306,
+        "end_line": 306,
+        "content_hash": "3f3bc20b2fc7e9524ba471de79b98cb47a061be066d61cea3131a66e2eb5aa3b"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "list",
+      "column": 15,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000063"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked@286",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 306,
+        "end_line": 306,
+        "content_hash": "3f3bc20b2fc7e9524ba471de79b98cb47a061be066d61cea3131a66e2eb5aa3b"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "itertools.islice",
+      "column": 20,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000064"
+    },
+    {
+      "kind": "contains",
+      "from": "boltons/iterutils.py::module",
+      "to": "boltons/iterutils.py::_validate_positive_int@309",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 309,
+        "end_line": 313,
+        "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+      },
+      "provenance": "static_ast",
+      "resolution": "syntactic_fact",
+      "id": "edge_000065"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::_validate_positive_int@309",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 310,
+        "end_line": 310,
+        "content_hash": "39e3407feca5ca5f17dc890eabdf3db5118e86335908047ab8683f5dff242f95"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "int",
+      "column": 12,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000066"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::_validate_positive_int@309",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 312,
+        "end_line": 312,
+        "content_hash": "d12c184f4c4ddf649b1c920e6fb30afca740f504e1cd01ea47e3cf220efdef7a"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "ValueError",
+      "column": 14,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000067"
+    },
+    {
+      "kind": "contains",
+      "from": "boltons/iterutils.py::module",
+      "to": "boltons/iterutils.py::chunked_iter@316",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      },
+      "provenance": "static_ast",
+      "resolution": "syntactic_fact",
+      "id": "edge_000068"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 330,
+        "end_line": 330,
+        "content_hash": "2d3a0365ab8e83350b258d0a0a46942dc709f2990cd2236f75dcddeeb82dc1e3"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "is_iterable",
+      "column": 11,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000069"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 331,
+        "end_line": 331,
+        "content_hash": "a6f076715e5b732cf7942a6c77449641948146b2a3eb36a61979e72b39ed1b81"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "TypeError",
+      "column": 14,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000070"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 332,
+        "end_line": 332,
+        "content_hash": "36b54dd9d6c9b5304103aad6e2bea158cc79a0d7618c05388ed6f899623ca57e"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "_validate_positive_int",
+      "column": 11,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000071"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 335,
+        "end_line": 335,
+        "content_hash": "ca44f156c7a94bb441092e94f744575e9dfa4c31151aae9c035a38a64c38432a"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "kw.pop",
+      "column": 19,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000072"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 340,
+        "end_line": 340,
+        "content_hash": "a9762d220c2645c8c191f348a38690b41434c3846dff21c0d78819dc34c97130"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "ValueError",
+      "column": 14,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000073"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 340,
+        "end_line": 340,
+        "content_hash": "a9762d220c2645c8c191f348a38690b41434c3846dff21c0d78819dc34c97130"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "kw.keys",
+      "column": 66,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000074"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 345,
+        "end_line": 345,
+        "content_hash": "689c203808216033739a64cb2bd21afdc5fd797648d4263266f6d62e0ade8c53"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "isinstance",
+      "column": 7,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000076"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 347,
+        "end_line": 347,
+        "content_hash": "54b8d23ecf18d94831c9bc51860c5f4902ffc2b3077c5e62eb276854588b6f51"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "isinstance",
+      "column": 11,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000081"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 349,
+        "end_line": 349,
+        "content_hash": "dc3783d6eed7a6914d21233354ad818fd9c502c32e1d28f468a3925911a9ce08"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "iter",
+      "column": 15,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000084"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 351,
+        "end_line": 351,
+        "content_hash": "13c16929d1003dc567abe880675a1dde5ffed365988e02f21944b0e171d2aa20"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "list",
+      "column": 20,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000085"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 351,
+        "end_line": 351,
+        "content_hash": "13c16929d1003dc567abe880675a1dde5ffed365988e02f21944b0e171d2aa20"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "itertools.islice",
+      "column": 25,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000086"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 354,
+        "end_line": 354,
+        "content_hash": "66d88f3432ac1335cbcc631eb2ef8359214f97ffc6c21c5945d6bd383b35b655"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "len",
+      "column": 13,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000087"
+    },
+    {
+      "kind": "call_unknown",
+      "from": "boltons/iterutils.py::chunked_iter@316",
+      "to": null,
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 357,
+        "end_line": 357,
+        "content_hash": "7e8d77a2b8e1b7a846e1b170b143d6f3e92b8ce29cd35e28f72ebaafba19ede1"
+      },
+      "provenance": "static_ast",
+      "resolution": "unknown",
+      "expression": "postprocess",
+      "column": 14,
+      "reason": "Syntax identifies a call expression; target binding is not resolved",
+      "id": "edge_000088"
+    }
+  ],
+  "teaching_edges": [
+    {
+      "from": "u_iterable",
+      "to": "u_chunked_iter",
+      "kind": "teaching_prerequisite",
+      "hard": false,
+      "provenance": {
+        "kind": "teaching_judgment",
+        "evidence": [
+          "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "note": "AI提议与B工程反馈；无独立人类审核，保持soft"
+    },
+    {
+      "from": "u_chunked_iter",
+      "to": "u_chunked",
+      "kind": "teaching_prerequisite",
+      "hard": false,
+      "provenance": {
+        "kind": "teaching_judgment",
+        "evidence": [
+          "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ],
+      "note": "AI提议与B工程反馈；无独立人类审核，保持soft"
+    }
+  ],
+  "model_candidate_edges": []
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "KnowLP_html",
+    "url": "https://arxiv.org/html/2506.22303v2",
+    "retrieved_at": "2026-10-16T08:35:39.508288+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/KnowLP_html.html",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "f09db58a400e0ff68043390931daa446bc7494a1b686c218c8abbbfcfb9b8a34",
+    "bytes": 217610
+  },
+  {
+    "source_id": "U_GLAD_html",
+    "url": "https://arxiv.org/html/2604.14613v1",
+    "retrieved_at": "2026-10-16T08:35:40.092850+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/U_GLAD_html.html",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "93c6a0f71959e224b76ea86e195c9ad9404f73cb7d5e400e08af21c47630e9ec",
+    "bytes": 159204
+  },
+  {
+    "source_id": "GraphCodeBERT_html",
+    "url": "https://arxiv.org/html/2009.08366",
+    "retrieved_at": "2026-10-16T08:35:40.712402+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/GraphCodeBERT_html.html",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "ed42dbd55decfcee69daca28f1dec4277624a7bc21b5c6474bf4dba8b911b916",
+    "bytes": 245820
+  },
+  {
+    "source_id": "code2vec_pdf",
+    "url": "https://arxiv.org/pdf/1803.09473",
+    "retrieved_at": "2026-10-16T08:35:41.381170+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/code2vec_pdf.pdf",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "7d9a89cc56224529019bd44a2b30d8a5d822f3fe0e22756b509a5ae63582dfd0",
+    "bytes": 3477478
+  },
+  {
+    "source_id": "KnowLP_commit",
+    "url": "https://api.github.com/repos/chanllon/KnowLP/commits/HEAD",
+    "retrieved_at": "2026-10-16T08:35:42.131443+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/KnowLP_commit.json",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "61d5bf088d06745f3ccbf2b142090c4d9de1ee20024730a3d4b5208698ceb9b8",
+    "bytes": 8756,
+    "repository_commit": "a9f0a2c2c565fa91e3f0b1aa00d688cc2f96922b",
+    "commit_html_url": "https://github.com/chanllon/KnowLP/commit/a9f0a2c2c565fa91e3f0b1aa00d688cc2f96922b"
+  },
+  {
+    "source_id": "GraphCodeBERT_commit",
+    "url": "https://api.github.com/repos/microsoft/CodeBERT/commits/HEAD",
+    "retrieved_at": "2026-10-16T08:35:42.896228+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/GraphCodeBERT_commit.json",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "887f9e288d71a62ac9a43201e2ba9dffb48f7d5c28077154f0fa3620b881d602",
+    "bytes": 5878,
+    "repository_commit": "c0de43d3aaf38e89290f1efb771f8de845e7a489",
+    "commit_html_url": "https://github.com/microsoft/CodeBERT/commit/c0de43d3aaf38e89290f1efb771f8de845e7a489"
+  },
+  {
+    "source_id": "code2vec_commit",
+    "url": "https://api.github.com/repos/tech-srl/code2vec/commits/HEAD",
+    "retrieved_at": "2026-10-16T08:35:43.851981+00:00",
+    "exit_code": 0,
+    "error": null,
+    "cache_path": "tmp/A-D02-literature/code2vec_commit.json",
+    "redistribution": "local_reference_cache_only_not_in_git",
+    "sha256": "c37d638deb086e6c48ba35d57c32a88a0453fcf0465195bea679d8ec9fb16324",
+    "bytes": 9711,
+    "repository_commit": "77637c59f779a11dd77e33a1d0f2faca9c42c146",
+    "commit_html_url": "https://github.com/tech-srl/code2vec/commit/77637c59f779a11dd77e33a1d0f2faca9c42c146"
+  },
+  {
+    "source_id": "GraphCodeBERT_root_README_attempt",
+    "url": "https://raw.githubusercontent.com/microsoft/CodeBERT/c0de43d3aaf38e89290f1efb771f8de845e7a489/GraphCodeBERT/README.md",
+    "exit_code": 22,
+    "error": "HTTP404; actual implementation has per-task README; resolved via fixed Git tree",
+    "retrieved_at": "2026-10-16T08:40:20.773478+00:00"
+  },
+  {
+    "source_id": "KnowLP_README",
+    "url": "https://raw.githubusercontent.com/chanllon/KnowLP/a9f0a2c2c565fa91e3f0b1aa00d688cc2f96922b/README.md",
+    "repository_commit": "a9f0a2c2c565fa91e3f0b1aa00d688cc2f96922b",
+    "sha256": "1617a6facbdcdc01031c4cae770a54d4fa14fb299c5721f7ddb3922b4b64bd7e",
+    "bytes": 1521,
+    "exit_code": 0,
+    "retrieved_at": "2026-10-16T08:40:20.774981+00:00",
+    "execution_status": "NOT_RUN; static README review only"
+  },
+  {
+    "source_id": "code2vec_README",
+    "url": "https://raw.githubusercontent.com/tech-srl/code2vec/77637c59f779a11dd77e33a1d0f2faca9c42c146/README.md",
+    "repository_commit": "77637c59f779a11dd77e33a1d0f2faca9c42c146",
+    "sha256": "00b86127c12e98efe195071673c58bb9ff9718d995e490f9ea3d1f73f41a1329",
+    "bytes": 21050,
+    "exit_code": 0,
+    "retrieved_at": "2026-10-16T08:40:20.774981+00:00",
+    "execution_status": "NOT_RUN; static README review only"
+  },
+  {
+    "source_id": "GraphCodeBERT_README",
+    "url": "https://raw.githubusercontent.com/microsoft/CodeBERT/c0de43d3aaf38e89290f1efb771f8de845e7a489/GraphCodeBERT/codesearch/README.md",
+    "repository_commit": "c0de43d3aaf38e89290f1efb771f8de845e7a489",
+    "sha256": "ab87948c2d1644338190876d0b5a1199521027705e518ad0fa36a374850f5eaf",
+    "bytes": 4659,
+    "exit_code": 0,
+    "retrieved_at": "2026-10-16T08:40:20.791174+00:00",
+    "execution_status": "NOT_RUN; static README review only"
+  }
+]

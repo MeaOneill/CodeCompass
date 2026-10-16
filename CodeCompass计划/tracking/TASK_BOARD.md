@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|
 | D01-A | 2026-10-15（10/16补做） | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D01-contracts / fd7b3e6 | 认领 2026-10-16T13:42:31.873649+08:00；docs/A/session.json |
 | D01-B | 2026-10-15 | B | 成员B / 糯糯 / Codex Agent B | READY_FOR_REVIEW | task/B-D01-foundation / 54613cf136d788bde7c46454d3d7b9e29f295a9b | 2026-10-16：check02及local-replay02通过；最终同步见docs/B回执 |
-| D02-A | 2026-10-16 | A | 待认领 | TODO | 未建立 | 未执行 |
+| D02-A | 2026-10-16 | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D02-graph / 9d911895 | 2026-10-16T16:47:19.722142+08:00；31测试与图源自审通过，未独立审核 |
 | D02-B | 2026-10-16 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D03-A | 2026-10-17 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D03-B | 2026-10-17 | B | 待认领 | TODO | 未建立 | 未执行 |

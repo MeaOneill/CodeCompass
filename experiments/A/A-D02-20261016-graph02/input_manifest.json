@@ -1,0 +1,34 @@
+[
+  {
+    "path": "benchmarks/dev/task_001.json",
+    "sha256": "3725a1d28dd59b4211c1868962c8aadb05efd4fbdfe120f7d7c8913081c737fd"
+  },
+  {
+    "path": "benchmarks/dev/task_001_units.json",
+    "sha256": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660"
+  },
+  {
+    "path": "benchmarks/sources/boltons/snapshot.json",
+    "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+  },
+  {
+    "path": "src/codecompass/graph/__init__.py",
+    "sha256": "3d4689984b85e3addb6542da8f1f541a8cae55078cda83544185aed6c9873a52"
+  },
+  {
+    "path": "src/codecompass/graph/extract.py",
+    "sha256": "3881c9727ad5e9cf6750bb47850adfc375e6f3a030b11703ef4be3b240fffeea"
+  },
+  {
+    "path": "src/codecompass/graph/pedagogy.py",
+    "sha256": "47725b790acfecfccb42f0b7b9e2a42e1707f8b40738800dcbb17423904e38e0"
+  },
+  {
+    "path": "src/codecompass/graph/provenance.py",
+    "sha256": "83b28c8d15b4f7d64ddf4742a6325525e40199f62636cbea32036dbee62b3d96"
+  },
+  {
+    "path": "scripts/A/run_d02.py",
+    "sha256": "6018cf02b1c6a80344615ece71f0bfd58b2b281d204e8a2e0dadff716d604d0f"
+  }
+]

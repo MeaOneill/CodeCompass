@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1460" viewBox="0 0 2200 1460">
+  <rect x="0" y="0" width="2200" height="1460" fill="white" />
+  <text x="65" y="81.52" fill="#172a38" font-family="Arial, sans-serif" font-size="44">F02  Fixed-source syntax and teaching candidates</text>
+  <text x="65" y="136.57999999999998" fill="#172a38" font-family="Arial, sans-serif" font-size="26">boltons | task_001 | commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d</text>
+  <text x="65" y="185.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">Selection: task.source_spans functions, their module, import itertools, and call expressions inside the functions.</text>
+  <polyline points="1100,335 1100,395 285,395 285,480" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="285,480 278.0405514542203,465.5928463623572 291.9594485457797,465.5928463623572" fill="#245880" />
+  <polyline points="1100,335 1100,395 820,395 820,480" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="820,480 813.0405514542203,465.5928463623572 826.9594485457797,465.5928463623572" fill="#245880" />
+  <polyline points="1100,335 1100,395 1355,395 1355,480" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="1355,480 1348.0405514542203,465.5928463623572 1361.9594485457797,465.5928463623572" fill="#245880" />
+  <polyline points="1100,335 1100,395 1890,395 1890,480" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="1890,480 1883.0405514542203,465.5928463623572 1896.9594485457797,465.5928463623572" fill="#245880" />
+  <polyline points="750,285 625,285" fill="none" stroke="#245880" stroke-width="3" />
+  <polygon points="625,285 639.4071536376429,278.0405514542203 639.4071536376429,291.9594485457797" fill="#245880" />
+  <rect x="65" y="235" width="560" height="100" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="83" y="276.24" fill="#245880" font-family="Arial, sans-serif" font-size="28">import itertools  |  L47</text>
+  <rect x="750" y="235" width="700" height="100" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="768" y="276.24" fill="#245880" font-family="Arial, sans-serif" font-size="28">iterutils.py :: module  [static AST]</text>
+  <rect x="65" y="480" width="455" height="165" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="83" y="518.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">chunked</text>
+  <text x="83" y="553.25" fill="#245880" font-family="Arial, sans-serif" font-size="25">L286-306</text>
+  <text x="83" y="587.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">Source span + hash verified</text>
+  <rect x="600" y="480" width="455" height="165" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="618" y="518.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">chunked_iter</text>
+  <text x="618" y="553.25" fill="#245880" font-family="Arial, sans-serif" font-size="25">L316-358</text>
+  <text x="618" y="587.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">Source span + hash verified</text>
+  <rect x="1135" y="480" width="455" height="165" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="1153" y="518.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">is_iterable</text>
+  <text x="1153" y="553.25" fill="#245880" font-family="Arial, sans-serif" font-size="25">L61-76</text>
+  <text x="1153" y="587.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">Source span + hash verified</text>
+  <rect x="1670" y="480" width="455" height="165" rx="15" fill="#f3f7fa" stroke="#245880" stroke-width="3" />
+  <text x="1688" y="518.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">_validate_positive_int</text>
+  <text x="1688" y="553.25" fill="#245880" font-family="Arial, sans-serif" font-size="25">L309-313</text>
+  <text x="1688" y="587.75" fill="#245880" font-family="Arial, sans-serif" font-size="25">Source span + hash verified</text>
+  <text x="65" y="724.9" fill="#172a38" font-family="Arial, sans-serif" font-size="30">Call syntax is located, but runtime targets are NOT inferred:</text>
+  <rect x="65" y="765" width="2070" height="135" rx="15" fill="#f8f8f8" stroke="#555b64" stroke-width="3" />
+  <text x="83" y="805.41" fill="#555b64" font-family="Arial, sans-serif" font-size="27">chunked: chunked_iter(...) at L302 | chunked_iter: is_iterable(...) at L330, _validate_positive_int(...) at L332</text>
+  <text x="83" y="842.67" fill="#555b64" font-family="Arial, sans-serif" font-size="27">These are call_unknown records with to=null, not resolved runtime edges.</text>
+  <polyline points="520,1060 720,1060" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="720,1060 705.5928463623571,1066.9594485457797 705.5928463623571,1053.0405514542203" fill="#9a4a12" />
+  <polyline points="1260,1060 1460,1060" fill="none" stroke="#9a4a12" stroke-width="3" stroke-dasharray="14 9" />
+  <polygon points="1460,1060 1445.5928463623572,1066.9594485457797 1445.5928463623572,1053.0405514542203" fill="#9a4a12" />
+  <rect x="65" y="990" width="455" height="145" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="83" y="1029.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">u_iterable</text>
+  <text x="83" y="1065.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Source-backed reading unit</text>
+  <rect x="720" y="990" width="540" height="145" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="738" y="1029.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">u_chunked_iter</text>
+  <text x="738" y="1065.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Pending teaching suggestion</text>
+  <rect x="1460" y="990" width="675" height="145" rx="15" fill="#fff8f1" stroke="#9a4a12" stroke-width="3" />
+  <text x="1478" y="1029.58" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">u_chunked</text>
+  <text x="1478" y="1065.46" fill="#9a4a12" font-family="Arial, sans-serif" font-size="26">Soft only; no human approval</text>
+  <text x="65" y="1210.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">Static contains: solid blue | Teaching suggestion: dashed orange | Model candidate: dotted purple (none)</text>
+  <text x="65" y="1260.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">Imports are declarations, not runtime execution or teaching prerequisites. Full AST output includes 2 Python files.</text>
+  <text x="65" y="1310.75" fill="#172a38" font-family="Arial, sans-serif" font-size="25">Teaching edges are stored separately. No unreviewed edge enters hard constraints.</text>
+  <text x="65" y="1379.92" fill="#172a38" font-family="Arial, sans-serif" font-size="24">Structure only | source: experiments/A/A-D02-20261016-graph02 | no result metrics</text>
+</svg>

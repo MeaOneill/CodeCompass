@@ -19,3 +19,7 @@
 ## A-D01 2026-10-16
 
 成员A / Codex Agent A / LAPTOP-LUQPS3EV完成首轮契约/真实任务地基，自审通过、未独立审核。见docs/A/开发日志.md和experiments/A/A-D01-20261016-foundation；失败记录保留，正式实验0。
+
+## A-D02实际更新 2026-10-16
+
+A-D02实际AST/来源校验与分层关系图实现，自审31测试通过，947span及3对图像验证。完整命令在experiments/A，独立人类审阅未进行。

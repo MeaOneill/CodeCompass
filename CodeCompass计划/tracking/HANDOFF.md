@@ -29,3 +29,7 @@
 ## A-D01交接 2026-10-16
 
 新业务交接见docs/A/handoffs/A-D01.md。父基线fd7b3e695b21ae5cb23845a808d58f07bdf0039f，任务分支codex/A-D01-contracts，不在main；B先fetch核对最终通知SHA并运行只读契约验证。此前setup同步结论保持，不能代替B-D01业务验收。
+
+## A-D02实际更新 2026-10-16
+
+A-D02→B-D02交接见docs/A/handoffs/A-D02.md。分支codex/A-D02-graph以B-D01提交9d911895为前置，不从main猜测依赖；先运行graph/契约验证，再独立实现任务评价。

@@ -1,0 +1,52 @@
+{
+  "run_id": "A-D02-20261016-graph02",
+  "task_id": "task_001",
+  "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_graph": "experiments/A/A-D02-20261016-graph02/task_001_local_graph.json",
+  "fixture": "experiments/A/A-D02-20261016-graph02/controlled_fixture.json",
+  "backend": "Python Pillow + native SVG",
+  "font": "Arial",
+  "seed": null,
+  "evidence_type": "structure_diagram",
+  "command": [
+    "python",
+    "scripts/A/draw_d02.py",
+    "--run-id",
+    "A-D02-20261016-graph02"
+  ],
+  "figures": [
+    {
+      "figure_id": "F01_architecture",
+      "text_blocks_checked": 35,
+      "dimensions_px": [
+        2200,
+        1390
+      ],
+      "dpi": 300,
+      "svg_native_vector": true,
+      "visual_review": "pending"
+    },
+    {
+      "figure_id": "F02_source_graph",
+      "text_blocks_checked": 30,
+      "dimensions_px": [
+        2200,
+        1460
+      ],
+      "dpi": 300,
+      "svg_native_vector": true,
+      "visual_review": "pending"
+    },
+    {
+      "figure_id": "F02_controlled_fixture",
+      "text_blocks_checked": 19,
+      "dimensions_px": [
+        2200,
+        1270
+      ],
+      "dpi": 300,
+      "svg_native_vector": true,
+      "visual_review": "pending"
+    }
+  ]
+}

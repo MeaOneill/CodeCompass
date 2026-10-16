@@ -1,0 +1,146 @@
+[
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/code_snapshot/run_d02.py",
+    "sha256": "b599e25a786b1b95c3ab63eb21c80d46aa58567c8c33b178bc64399f7083110f"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/controlled_fixture.json",
+    "sha256": "13a8a2ad4b945e56b69b9bd8bc6997947235e835d8807fbd4cd232ae626a06b8"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/edges.json",
+    "sha256": "ec0c3b37803ef81110f70356a30d73d290de16a973ab1e973747f0272ac5ae51"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/input_manifest.json",
+    "sha256": "0de00aa126a85d241cfdd45152fe79f89373729b4b5eda14ec162ada6c0ee312"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/nodes.json",
+    "sha256": "0eaf9376b71b3902a3c0c1647d81a2933c90ab11a307a63b23989afb5a70c64f"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/registration.json",
+    "sha256": "62871d10590ef29b3b4d73051b0d556c552bb6c1e5360dda76919509622151b8"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/source_manifest.json",
+    "sha256": "7577d3a7743667a37357217877add4a035cd7e6ea87f0123e32b27a570bccb82"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/task_001_local_graph.json",
+    "sha256": "70af0476abd215f66ba45acc9fa93f0d830ef613124889597eaca796a74e5c46"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph01/teaching_edges.json",
+    "sha256": "8cd508d8393d1ab73fa32f84f83716f3fc40948a0fb8888d68d561c793df9e77"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/controlled_fixture.json",
+    "sha256": "13a8a2ad4b945e56b69b9bd8bc6997947235e835d8807fbd4cd232ae626a06b8"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/delivery_inputs.json",
+    "sha256": "a37469b8c3eebef4e6e2391bee6356964d9b580393a803dbbdb9caa26afa5f29"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/edges.json",
+    "sha256": "ec0c3b37803ef81110f70356a30d73d290de16a973ab1e973747f0272ac5ae51"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/events.jsonl",
+    "sha256": "94f4f89b9d45724dde66e29773b8a07b7fe5e3064fe4424af5f540a304b353f1"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/input_manifest.json",
+    "sha256": "919ec893e231b6869b7de1a9a730761d9f2822a583c16405782e582d8a75a814"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/nodes.json",
+    "sha256": "0eaf9376b71b3902a3c0c1647d81a2933c90ab11a307a63b23989afb5a70c64f"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/registration.json",
+    "sha256": "cd57e815e04c89ac637f232a3dd9cb6720ce3733bdba389b1fc78733c8282c20"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/source_manifest.json",
+    "sha256": "7577d3a7743667a37357217877add4a035cd7e6ea87f0123e32b27a570bccb82"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/task_001_local_graph.json",
+    "sha256": "88fb4555fc41e05e2d52b4cc09a375f258d7ee25621156c07762cfa6808f5b18"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-graph02/teaching_edges.json",
+    "sha256": "8cd508d8393d1ab73fa32f84f83716f3fc40948a0fb8888d68d561c793df9e77"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-preflight/1.log",
+    "sha256": "35475b83fd88b0a94ad3685ff63fb9e94c3c96c2309f44d24af9e46e8fd892de"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-preflight/2.log",
+    "sha256": "8f26c2bf25eaf4a23beec515da50a11be50c6d253beba192142224bdecbc7c6f"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-preflight/3.log",
+    "sha256": "a10f75b992f2f250449978aa5040718b580021919b995d4757300e84e5c3a219"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-preflight/registration.json",
+    "sha256": "ffe36f8a1a1532fa7fce08bcbb4dcfa9f1b0d771deebd14b3a903359892c968b"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-verification/1.log",
+    "sha256": "164051a904a1725f99475aaf8560b0b7323278dacb5bfdfefe55e13a9214c5cb"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-verification/2.log",
+    "sha256": "35475b83fd88b0a94ad3685ff63fb9e94c3c96c2309f44d24af9e46e8fd892de"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-verification/3.log",
+    "sha256": "a10f75b992f2f250449978aa5040718b580021919b995d4757300e84e5c3a219"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-verification/4.log",
+    "sha256": "28a7bab8f056645bd42605947f0c2406d4dc7f987bcc53c4959fd2081b79df42"
+  },
+  {
+    "path": "experiments/A/A-D02-20261016-verification/registration.json",
+    "sha256": "f1117ae9113116a2592e07fc014d10cfb5cd8abd19fd26702672726a919cd67b"
+  },
+  {
+    "path": "report_materials/A/A-D02/F01_architecture.png",
+    "sha256": "06d58b483ac20d12c99da89cf4415b240ac3eac6e41647292e4184e831761243"
+  },
+  {
+    "path": "report_materials/A/A-D02/F01_architecture.svg",
+    "sha256": "74df7be4fff7b1b6cf1a7840831c858c9be3f90879a4191f07b5ddfaa32759ee"
+  },
+  {
+    "path": "report_materials/A/A-D02/F02_controlled_fixture.png",
+    "sha256": "5f7c4b65c5aff33ddeb2e4b98b02f6c902b906a245c5b6e306333097dae370cc"
+  },
+  {
+    "path": "report_materials/A/A-D02/F02_controlled_fixture.svg",
+    "sha256": "396c0bf925c3495318fd059fdc32161c4f0425af7c98c0f8ecf23f10c3dbc1e0"
+  },
+  {
+    "path": "report_materials/A/A-D02/F02_source_graph.png",
+    "sha256": "f33eec4e3ac01c4b2b813c1fae7831db01fcb7b9fc336911b4fabcdb1f0139ab"
+  },
+  {
+    "path": "report_materials/A/A-D02/F02_source_graph.svg",
+    "sha256": "af0deb8e558939662234daca06d855d1089f04f7639d813193107eaa99c3c0f1"
+  },
+  {
+    "path": "report_materials/A/A-D02/render_config.json",
+    "sha256": "24a7c2a25b74d317f505c2b7acd36384c8009da0d34d92cbaa13e44c57384048"
+  },
+  {
+    "path": "report_materials/A/A-D02/visual_qa.json",
+    "sha256": "b70bcb9193df076e47717f7c5783d5b4bff311d8d94d352aa6a2cf3566c7b846"
+  }
+]

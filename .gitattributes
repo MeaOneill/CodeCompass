@@ -24,3 +24,18 @@
 /report_materials/B/*.png -text
 /experiments/B/** -text whitespace=-blank-at-eol
 /pytest.ini text eol=lf
+
+# A-D02 native image outputs retain binary bytes.
+/report_materials/A/**/*.png -text
+/tests/A/** text eol=lf
+/experiments/A/A-D02-20261016-graph01/code_snapshot/** -text
+/docs/A/** text eol=lf
+/docs/references/** text eol=lf
+/docs/related_work.md text eol=lf
+/docs/graph_format.md text eol=lf
+/docs/teaching_dependencies.md text eol=lf
+/docs/joint/A-* text eol=lf
+
+# Preserve native SVG serialization and raw command logs byte-for-byte.
+/report_materials/A/**/*.svg -text whitespace=cr-at-eol
+/experiments/A/**/*.log -text whitespace=-blank-at-eof,-blank-at-eol

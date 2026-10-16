@@ -1,0 +1,2483 @@
+[
+  {
+    "id": "boltons/iterutils.py::GUIDerator.__init__@1473",
+    "kind": "function",
+    "name": "GUIDerator.__init__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1473,
+      "end_line": 1480,
+      "content_hash": "31f7c8a7118d8d3ea649d8a5966a67b687b25454ac8b399304f7208b3b734264"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::GUIDerator.__iter__@1491",
+    "kind": "function",
+    "name": "GUIDerator.__iter__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1491,
+      "end_line": 1492,
+      "content_hash": "b411eeeaeb7c31dcc00d11f3d2ffa0121a9dcd494b3205fb77d56e48c0fbdc38"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::GUIDerator.__next__@1494",
+    "kind": "function",
+    "name": "GUIDerator.__next__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1494,
+      "end_line": 1499,
+      "content_hash": "0e2f37eef83133beeeda83d30cd238c9e18b33afed955df0d5a9879d3f9b8323"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::GUIDerator.reseed@1482",
+    "kind": "function",
+    "name": "GUIDerator.reseed",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1482,
+      "end_line": 1489,
+      "content_hash": "cb5dfb896c5b90323bea77bd9007ed9cd6d7922d4a3967cd36abb6456730c706"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::GUIDerator@1452",
+    "kind": "class",
+    "name": "GUIDerator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1452,
+      "end_line": 1501,
+      "content_hash": "5e2efe9a1734c04759f6870a9b3d489d683565045a362d766eb92bf771a8e012"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::PathAccessError.__init__@1310",
+    "kind": "function",
+    "name": "PathAccessError.__init__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1310,
+      "end_line": 1313,
+      "content_hash": "c00ca60e1cdb4d6116dc71d36f38443b892a0a42461c14b7b97352e70d39caf8"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::PathAccessError.__repr__@1315",
+    "kind": "function",
+    "name": "PathAccessError.__repr__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1315,
+      "end_line": 1317,
+      "content_hash": "94b9caaff22856216559eabfa27270dd0ba05ff2b39a25d2fce22552d9c23f99"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::PathAccessError.__str__@1319",
+    "kind": "function",
+    "name": "PathAccessError.__str__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1319,
+      "end_line": 1321,
+      "content_hash": "80087e884d6f02cf54670051c7b9f2f792467344a3162053dfb1a195c35b2194"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::PathAccessError@1304",
+    "kind": "class",
+    "name": "PathAccessError",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1304,
+      "end_line": 1321,
+      "content_hash": "8152b470fa3cbacd9097cec0691a061d46444cc10cfd6a326bbd8c4d4263c645"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::SequentialGUIDerator.__next__@1537",
+    "kind": "function",
+    "name": "SequentialGUIDerator.__next__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1537,
+      "end_line": 1540,
+      "content_hash": "56177668f61d81e6e6523a214a5e0e8ad5e44d9f6b90cd64e28b168901583b55"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::SequentialGUIDerator.reseed@1531",
+    "kind": "function",
+    "name": "SequentialGUIDerator.reseed",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1531,
+      "end_line": 1535,
+      "content_hash": "6b07b318a4d131acb4807eeb64dfae24e9e6b2757c1074b18c1fb52b641ec69c"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::SequentialGUIDerator@1504",
+    "kind": "class",
+    "name": "SequentialGUIDerator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1504,
+      "end_line": 1542,
+      "content_hash": "5ff8df66f4c3878faf944df896811c509d20dca00f49bf75a9be24e36f82f326"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::_validate_positive_int@309",
+    "kind": "function",
+    "name": "_validate_positive_int",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 309,
+      "end_line": 313,
+      "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::backoff@567",
+    "kind": "function",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 567,
+      "end_line": 581,
+      "content_hash": "1e37a019dab6b7807ea55b5dd48a79607efa709e22abcd1b02fb4d7a867e6f68"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::backoff_iter@584",
+    "kind": "function",
+    "name": "backoff_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 584,
+      "end_line": 681,
+      "content_hash": "c2680c317b89e6ad39eb76bf9acace0c8b7bdd4ea1c8eaf8b65338419d5cc549"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::bucketize.key_func@740",
+    "kind": "function",
+    "name": "bucketize.key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 740,
+      "end_line": 740,
+      "content_hash": "28b6b05f4a8e09f45c8f4065e2aff649b3152b0b341193b03e7f9a8c723aae0e"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::bucketize.key_func@744",
+    "kind": "function",
+    "name": "bucketize.key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 744,
+      "end_line": 744,
+      "content_hash": "f691c45d3432766829eeecf4883a4a57e7d5fbc555e0ceac6b836cfc0e9272e7"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::bucketize.value_transform@749",
+    "kind": "function",
+    "name": "bucketize.value_transform",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 749,
+      "end_line": 749,
+      "content_hash": "5480c610c5427e4323bc307f9dd8e2c19402827330c4430fe5065c8d7d2bcc5e"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::bucketize.value_transform@754",
+    "kind": "function",
+    "name": "bucketize.value_transform",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 754,
+      "end_line": 754,
+      "content_hash": "28619afc0e93007fe90e93640c849ab09fbeaff9be00d23b8a01117557218263"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::bucketize@684",
+    "kind": "function",
+    "name": "bucketize",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 684,
+      "end_line": 761,
+      "content_hash": "16b977114a4d74345e75038a5ecbbde9eb4b59b8281fba3ff096398107f71b9c"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunk_ranges@361",
+    "kind": "function",
+    "name": "chunk_ranges",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 361,
+      "end_line": 412,
+      "content_hash": "3965b19ac73f761003eca613cc7ffe9d5ae25549ff36e1ab27bf0e1b10042024"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunked@286",
+    "kind": "function",
+    "name": "chunked",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 286,
+      "end_line": 306,
+      "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunked_iter.postprocess@344",
+    "kind": "function",
+    "name": "chunked_iter.postprocess",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 344,
+      "end_line": 344,
+      "content_hash": "7f425b7e05ed9bc1306f9336a9e05e39c4fd0ee8a751574185794fc858c442bb"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunked_iter.postprocess@346",
+    "kind": "function",
+    "name": "chunked_iter.postprocess",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 346,
+      "end_line": 346,
+      "content_hash": "d1ab663c6ff1f41fb5736958655ab522ad5b223206d958c36faea5822209e2b4"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunked_iter.postprocess@348",
+    "kind": "function",
+    "name": "chunked_iter.postprocess",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 348,
+      "end_line": 348,
+      "content_hash": "248a5a20e1a35c57bceda7bb1e77142133a81dde52de4323e1ae545318b776c7"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::chunked_iter@316",
+    "kind": "function",
+    "name": "chunked_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 316,
+      "end_line": 358,
+      "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::default_enter@1059",
+    "kind": "function",
+    "name": "default_enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1059,
+      "end_line": 1072,
+      "content_hash": "bd8e15cfaa5a367007166f577e6bba2a65fa4740b2085bc2064d1e42758ddff8"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::default_exit@1075",
+    "kind": "function",
+    "name": "default_exit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1075,
+      "end_line": 1095,
+      "content_hash": "a0477854b813ac0c9d4c127b7bd01eb169a34a77af6f9aefe0ab4273e9f07481"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::default_visit@1050",
+    "kind": "function",
+    "name": "default_visit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1050,
+      "end_line": 1052,
+      "content_hash": "4923243778546049c12b072b888e6f1913df08a4d3d11ebb9e765ef0ae972aee"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::first@968",
+    "kind": "function",
+    "name": "first",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 968,
+      "end_line": 994,
+      "content_hash": "67e90628203ec0d3f1f9f36d4a1dd89e133db101e54451de25ab501a97727fc9"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::flatten@1012",
+    "kind": "function",
+    "name": "flatten",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1012,
+      "end_line": 1020,
+      "content_hash": "138c9caa1790e505729f806ae5e55a97962ff03ee5e143825a6c32aa5234a96f"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::flatten_iter@997",
+    "kind": "function",
+    "name": "flatten_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 997,
+      "end_line": 1009,
+      "content_hash": "0ec95a2564a4a8573be1fdcdb81bf1d155842b4014a9906ed6fbb64e7d0b19ae"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::frange@536",
+    "kind": "function",
+    "name": "frange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 536,
+      "end_line": 564,
+      "content_hash": "ae504396b9c0d8f86e1cf15c27ff2355b45a33afa76651bdfb029a8a2e0de7e8"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::get_path@1324",
+    "kind": "function",
+    "name": "get_path",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1324,
+      "end_line": 1382,
+      "content_hash": "a4c0c978e2517a88fad2e0509945d2505c37d584770abfd869e6fd63419796d4"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::import@1477:8:0",
+    "kind": "import_reference",
+    "name": "hashlib",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1477,
+      "end_line": 1477,
+      "content_hash": "5bcd11a547544c2d524f1e5afce05f6448e21b864cdb9685372ddbad444901fe"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@1483:8:0",
+    "kind": "import_reference",
+    "name": "socket",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1483,
+      "end_line": 1483,
+      "content_hash": "8972da08bd4b678b1f2411d3790ade3bca4870ed5cf80100482d77965129d6b5"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@42:0:0",
+    "kind": "import_reference",
+    "name": "os",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 42,
+      "end_line": 42,
+      "content_hash": "3727adff524e0616022eadd8f4af21a0778b29fc4c77bdfefd1afce2cbf5e4b7"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@43:0:0",
+    "kind": "import_reference",
+    "name": "math",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 43,
+      "end_line": 43,
+      "content_hash": "085ea91d7cfeb4f5695793f882c7463cbfdf7be9f98e6c5133847a245bbea366"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@44:0:0",
+    "kind": "import_reference",
+    "name": "time",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 44,
+      "end_line": 44,
+      "content_hash": "7b2ddb8a2e64c6166feedaf30ee50ac62165fe149fdd8b0d7b777ebee21ca34d"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@45:0:0",
+    "kind": "import_reference",
+    "name": "codecs",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 45,
+      "end_line": 45,
+      "content_hash": "fb876f788611e0e66d200b4b50c96797b259cc0cefc69d737cbf9b5418d7e720"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@46:0:0",
+    "kind": "import_reference",
+    "name": "random",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 46,
+      "end_line": 46,
+      "content_hash": "b8e31083fd6da528c7af924800ae9f4590f285192bac3d6a746e581be3d54bb0"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@47:0:0",
+    "kind": "import_reference",
+    "name": "itertools",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 47,
+      "end_line": 47,
+      "content_hash": "6abd45136639991239f4e6e89f9ee993f93a9ee766477a4704bbd4b861415957"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@48:0:0",
+    "kind": "import_reference",
+    "name": "zip_longest",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 48,
+      "end_line": 48,
+      "content_hash": "0fbd7b04acaa5f2ea43d598d04783d04d774d6a2ecdb96336150af88bb129429"
+    },
+    "module": "itertools",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@49:0:0",
+    "kind": "import_reference",
+    "name": "Mapping",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 49,
+      "end_line": 49,
+      "content_hash": "572568757dfb6a5f489b1cb2a6a19693d3f5b54b7ffb4b0a434260b0147a98b5"
+    },
+    "module": "collections.abc",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@49:0:1",
+    "kind": "import_reference",
+    "name": "Sequence",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 49,
+      "end_line": 49,
+      "content_hash": "572568757dfb6a5f489b1cb2a6a19693d3f5b54b7ffb4b0a434260b0147a98b5"
+    },
+    "module": "collections.abc",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@49:0:2",
+    "kind": "import_reference",
+    "name": "Set",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 49,
+      "end_line": 49,
+      "content_hash": "572568757dfb6a5f489b1cb2a6a19693d3f5b54b7ffb4b0a434260b0147a98b5"
+    },
+    "module": "collections.abc",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@49:0:3",
+    "kind": "import_reference",
+    "name": "ItemsView",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 49,
+      "end_line": 49,
+      "content_hash": "572568757dfb6a5f489b1cb2a6a19693d3f5b54b7ffb4b0a434260b0147a98b5"
+    },
+    "module": "collections.abc",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@49:0:4",
+    "kind": "import_reference",
+    "name": "Iterable",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 49,
+      "end_line": 49,
+      "content_hash": "572568757dfb6a5f489b1cb2a6a19693d3f5b54b7ffb4b0a434260b0147a98b5"
+    },
+    "module": "collections.abc",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::import@53:4:0",
+    "kind": "import_reference",
+    "name": "make_sentinel",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 53,
+      "end_line": 53,
+      "content_hash": "c15c06e263f51652397ef0f7c72e55ab9769fb1cb0508db2a15ac89ba771e3bd"
+    },
+    "module": "typeutils",
+    "level": 1,
+    "alias": null
+  },
+  {
+    "id": "boltons/iterutils.py::is_collection@95",
+    "kind": "function",
+    "name": "is_collection",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 95,
+      "end_line": 106,
+      "content_hash": "878a46eae5a3ba4c35dd2f466d18c4fcec898e0d348c2d1e41f305e7253f59b9"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::is_iterable@61",
+    "kind": "function",
+    "name": "is_iterable",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 61,
+      "end_line": 76,
+      "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::is_scalar@79",
+    "kind": "function",
+    "name": "is_scalar",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 79,
+      "end_line": 92,
+      "content_hash": "5746c3391834d9b768aa28808ef29cd595eea70365296e29bf8e10bd2b8dcdcd"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::lstrip@193",
+    "kind": "function",
+    "name": "lstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 193,
+      "end_line": 202,
+      "content_hash": "9107a584145781cbdd0df95539c8e20c6c2db3f5b6abccc62f6c6a0e7a4fec64"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::lstrip_iter@205",
+    "kind": "function",
+    "name": "lstrip_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 205,
+      "end_line": 220,
+      "content_hash": "5e58ed230846a7d16be8fa20da310c002309933f42cf072dc51bcc4d84b43e2e"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::module",
+    "kind": "module",
+    "name": "boltons/iterutils.py",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1,
+      "end_line": 1659,
+      "content_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::one@933",
+    "kind": "function",
+    "name": "one",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 933,
+      "end_line": 965,
+      "content_hash": "10c91108ef13efd5247c7f30b75a71ccaea800c4b15f3d712b578e37ee5fcb7a"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::pairwise@415",
+    "kind": "function",
+    "name": "pairwise",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 415,
+      "end_line": 436,
+      "content_hash": "ac481983a1e492688de2925b3c3daf0809c06950e098917e8f81eb4c8e87aba8"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::pairwise_iter@439",
+    "kind": "function",
+    "name": "pairwise_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 439,
+      "end_line": 461,
+      "content_hash": "ba1b224841c3a1c69ce0362be63d6b4a02171ccc410887c9b5de264fe66513ce"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::partition._make_key_func@799",
+    "kind": "function",
+    "name": "partition._make_key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 799,
+      "end_line": 804,
+      "content_hash": "06f515bc781c0e12ff9f52d48fd5ceb05f6182fbb4adcbf74d589bd41fc790cc"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::partition@764",
+    "kind": "function",
+    "name": "partition",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 764,
+      "end_line": 817,
+      "content_hash": "e83686e858eec356c02b0f0638e784a27751c06c5680d5e617200b41d82ca6bf"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::redundant.key_func@909",
+    "kind": "function",
+    "name": "redundant.key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 909,
+      "end_line": 909,
+      "content_hash": "28b6b05f4a8e09f45c8f4065e2aff649b3152b0b341193b03e7f9a8c723aae0e"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::redundant@870",
+    "kind": "function",
+    "name": "redundant",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 870,
+      "end_line": 930,
+      "content_hash": "e8f619cfe365e86ed5c8de8d8baae6aa21baf38fbef8513073b68f60f9a86446"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::remap@1098",
+    "kind": "function",
+    "name": "remap",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1098,
+      "end_line": 1301,
+      "content_hash": "54595abdd5d50207dd98f18b9bdc0e4cbcc2357d36749d05095182e9a67a0111"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::research._enter@1432",
+    "kind": "function",
+    "name": "research._enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1432,
+      "end_line": 1439,
+      "content_hash": "a60a0c12b9ce5836d2b254b333dd53cdf22894e58e07aeb8618a9d9f69bc2ea4"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::research@1385",
+    "kind": "function",
+    "name": "research",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1385,
+      "end_line": 1442,
+      "content_hash": "cf32a28b072b71698fbc534c561f29345da2602c8f542d69d4e7ece25a8deb20"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::rstrip@223",
+    "kind": "function",
+    "name": "rstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 223,
+      "end_line": 232,
+      "content_hash": "33871e33be2aef656a3ac0ea51f3d3ffee7dfe79d354383fb91b2d17a154d5d4"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::rstrip_iter@235",
+    "kind": "function",
+    "name": "rstrip_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 235,
+      "end_line": 259,
+      "content_hash": "90fb8144eac54049b0f388317dc0fbb3fe0b5d3782467bbd40d215b3427bb130"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::same@1023",
+    "kind": "function",
+    "name": "same",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1023,
+      "end_line": 1047,
+      "content_hash": "a4316f525744f9bf6349a7250ff21d5c63e48e950e1c7155d726e3944b46c1f2"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::soft_sorted@1549",
+    "kind": "function",
+    "name": "soft_sorted",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1549,
+      "end_line": 1595,
+      "content_hash": "2d88f0b0bcc0e4f46303b09268400cf04733d6dfc81bb30380a22e09aef1c895"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::split@109",
+    "kind": "function",
+    "name": "split",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 109,
+      "end_line": 118,
+      "content_hash": "fd789592e0ba8c329413c39afb72f97da0efa3e1b09df2f6aa049cd04246f03c"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::split_iter.sep_func@168",
+    "kind": "function",
+    "name": "split_iter.sep_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 168,
+      "end_line": 168,
+      "content_hash": "e35aff1c2ff942c11e15dd2175417aa3a5bb26494af1929bb7ea1ffe0775c34f"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::split_iter.sep_func@170",
+    "kind": "function",
+    "name": "split_iter.sep_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 170,
+      "end_line": 170,
+      "content_hash": "da8d49cd45f16ff1ecb0ef77a3548ed7bd178d074399370a6d4d79b758052240"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::split_iter.sep_func@176",
+    "kind": "function",
+    "name": "split_iter.sep_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 176,
+      "end_line": 176,
+      "content_hash": "9978d65f6a04d12787f841f708ec6002d1e0855e1e3981c9fb88d28ec6bd8ac1"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::split_iter@121",
+    "kind": "function",
+    "name": "split_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 121,
+      "end_line": 190,
+      "content_hash": "a0462c40b6b3f08a862e91978e9c699fbfdcb7a6cba0b9c4e137effbf7c0ca2f"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::strip@262",
+    "kind": "function",
+    "name": "strip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 262,
+      "end_line": 271,
+      "content_hash": "56758312ef34236c3cb35ad68bef1da6431884679f4da99e337d595ce960067c"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::strip_iter@274",
+    "kind": "function",
+    "name": "strip_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 274,
+      "end_line": 283,
+      "content_hash": "56230bc91948548d42638271a24cda9c24b28a2804fafc8e86f28a23c5b46e7f"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::unique@820",
+    "kind": "function",
+    "name": "unique",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 820,
+      "end_line": 831,
+      "content_hash": "c8d45978e0532b6ef16c5b674b21d5e9416e6f128c33913aff8fb087a9da8887"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::unique_iter.key_func@854",
+    "kind": "function",
+    "name": "unique_iter.key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 854,
+      "end_line": 854,
+      "content_hash": "5a1c906ccf49b4f0cc696556b17a96f1d1d67d61e1fba829db693f8a254a6027"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::unique_iter.key_func@858",
+    "kind": "function",
+    "name": "unique_iter.key_func",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 858,
+      "end_line": 858,
+      "content_hash": "28b6b05f4a8e09f45c8f4065e2aff649b3152b0b341193b03e7f9a8c723aae0e"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::unique_iter@834",
+    "kind": "function",
+    "name": "unique_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 834,
+      "end_line": 867,
+      "content_hash": "7041e8903018c5880d849f65889fcdaf0dc02d697d0b10cb6055196235f63492"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::untyped_sorted._Wrapper.__init__@1619",
+    "kind": "function",
+    "name": "untyped_sorted._Wrapper.__init__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1619,
+      "end_line": 1620,
+      "content_hash": "85ccb9b80021cffc8066d638555025cf0a8b2f812a2b3183b89a86e60a692199"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::untyped_sorted._Wrapper.__lt__@1622",
+    "kind": "function",
+    "name": "untyped_sorted._Wrapper.__lt__",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1622,
+      "end_line": 1630,
+      "content_hash": "60802c6393a29474e2ff16a10912ca10896c813dc7b3f0ef00619cbd082cd107"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::untyped_sorted._Wrapper@1616",
+    "kind": "class",
+    "name": "untyped_sorted._Wrapper",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1616,
+      "end_line": 1630,
+      "content_hash": "0fb47ddf78825cddd37a05210c6676144070e3f29d1d50a9d85a14852a829a30"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::untyped_sorted@1598",
+    "kind": "function",
+    "name": "untyped_sorted",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 1598,
+      "end_line": 1636,
+      "content_hash": "31bced20968b3eaefbee13dcfc176a873c0da343cab5ff1145983d3c62b2edeb"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::windowed@464",
+    "kind": "function",
+    "name": "windowed",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 464,
+      "end_line": 469,
+      "content_hash": "071be10d549fe558dc96c5cc44ad6799e5f3c303d0a8c8d43c17821b39c95883"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::windowed_iter@472",
+    "kind": "function",
+    "name": "windowed_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 472,
+      "end_line": 510,
+      "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+    }
+  },
+  {
+    "id": "boltons/iterutils.py::xfrange@513",
+    "kind": "function",
+    "name": "xfrange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 513,
+      "end_line": 533,
+      "content_hash": "ac65a55a71f752de441afd75c30fe484eb90c4ff60d06131b56b8851c3d5dfb1"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestFirst.test_default_value@46",
+    "kind": "function",
+    "name": "TestFirst.test_default_value",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 46,
+      "end_line": 56,
+      "content_hash": "22bcf571181a98f189c302e815f845d07cf3fd37cee7a2cb0a4dc51395941159"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestFirst.test_empty_iterables@37",
+    "kind": "function",
+    "name": "TestFirst.test_empty_iterables",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 37,
+      "end_line": 44,
+      "content_hash": "7bf9470acc12fb436a4c930557233a4458f2e85b53c7454875674b33b9ed8a7c"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestFirst.test_selection@58",
+    "kind": "function",
+    "name": "TestFirst.test_selection",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 58,
+      "end_line": 69,
+      "content_hash": "70566ff491df7bf1ca77ad81d77abb8da147dcb67d4bcda18c02b87366ae4b66"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestFirst@36",
+    "kind": "class",
+    "name": "TestFirst",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 36,
+      "end_line": 69,
+      "content_hash": "e99b2214b620433a432b24b834783416390903aa0673cfdd3b1db4612875fa21"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestGetPath.test_depth_one@372",
+    "kind": "function",
+    "name": "TestGetPath.test_depth_one",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 372,
+      "end_line": 379,
+      "content_hash": "2a286cdb5addd8e40b756db49baed3672def404b3edd83e374e22011935f0df3"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestGetPath.test_depth_two@381",
+    "kind": "function",
+    "name": "TestGetPath.test_depth_two",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 381,
+      "end_line": 384,
+      "content_hash": "4846330476e355a9a5f8e1e4f30d1ff5d4ce1326016959de41c12aa535ea0834"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestGetPath@371",
+    "kind": "class",
+    "name": "TestGetPath",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 371,
+      "end_line": 384,
+      "content_hash": "70a158fa1c08e79ae96fc2518f79dec75a468dd668185b51c492070ffe10c021"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_add_length.exit@301",
+    "kind": "function",
+    "name": "TestRemap.test_add_length.exit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 301,
+      "end_line": 307,
+      "content_hash": "20c84a734daba75dd6dd81b56a0830a9e7c8b78645a6fa2717ae7943ff61c2c4"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_add_length@300",
+    "kind": "function",
+    "name": "TestRemap.test_add_length",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 300,
+      "end_line": 322,
+      "content_hash": "3c6fbb68edff60bd9ccb57b1e8ae5c7f219ec0d521668a7dcd27846e8f14b9cd"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_basic_clone@75",
+    "kind": "function",
+    "name": "TestRemap.test_basic_clone",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 75,
+      "end_line": 80,
+      "content_hash": "50ca5614b7e85b7e49bbb59bb30e134fe6c26533b0995e4108592e9ec3264bc4"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_basic_upper@92",
+    "kind": "function",
+    "name": "TestRemap.test_basic_upper",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 92,
+      "end_line": 97,
+      "content_hash": "95635ebfc478913a4c60de65ebe655a3429f0aa763cbb67fe6e15ae6c8a396e1"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_collector_pattern.enter@278",
+    "kind": "function",
+    "name": "TestRemap.test_collector_pattern.enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 278,
+      "end_line": 283,
+      "content_hash": "408db7357c406b04d9367a26f316691c64511fc349911befbb0a9794c7c5918f"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_collector_pattern@275",
+    "kind": "function",
+    "name": "TestRemap.test_collector_pattern",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 275,
+      "end_line": 298,
+      "content_hash": "50d985b6024b4445270fb17250b7f5c4d2f6bef2ad50ed65d080a7f0a9469dcf"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_dict_to_omd.enter@229",
+    "kind": "function",
+    "name": "TestRemap.test_dict_to_omd.enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 229,
+      "end_line": 232,
+      "content_hash": "80c62b8a1105dfe1029dc2350a08904a2050d129f091b268f4744c6ea7b1134b"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_dict_to_omd@228",
+    "kind": "function",
+    "name": "TestRemap.test_dict_to_omd",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 228,
+      "end_line": 244,
+      "content_hash": "131010beebe8b29aa6cccef3e9f40512c7a8185daefb9fac323c705a510a9748"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_drop_nones@217",
+    "kind": "function",
+    "name": "TestRemap.test_drop_nones",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 217,
+      "end_line": 226,
+      "content_hash": "7ba9b906c4838b1f17e7307accbd1e77c4da634bfb0fb124db7945ef4910124e"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_duperef@132",
+    "kind": "function",
+    "name": "TestRemap.test_duperef",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 132,
+      "end_line": 137,
+      "content_hash": "10a00355bc8c06ab4207ac3631fb1ccaf812302ca6ee6efcfc1d043e23bbe7d0"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_empty@82",
+    "kind": "function",
+    "name": "TestRemap.test_empty",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 82,
+      "end_line": 85,
+      "content_hash": "6965b8fdbc2d5158fc83436638fea52b553be0164a144a5f7b3e6144d56c2efe"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_item_drop@99",
+    "kind": "function",
+    "name": "TestRemap.test_item_drop",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 99,
+      "end_line": 102,
+      "content_hash": "140df3ed030331ac6824c54a90a2f572eff7d392e308b776265142f4a118c5dd"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_namedtuple@139",
+    "kind": "function",
+    "name": "TestRemap.test_namedtuple",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 139,
+      "end_line": 157,
+      "content_hash": "1fc087bcfa6a535c16bb9e9282017b1249d74ed87e7a9159184bfe761aab3fa5"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_noncallables@104",
+    "kind": "function",
+    "name": "TestRemap.test_noncallables",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 104,
+      "end_line": 110,
+      "content_hash": "665526d284ec4e9b2c5fd5f4b5c96921a647adcc7644f37f8b75016508022612"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_path.enter@182",
+    "kind": "function",
+    "name": "TestRemap.test_path.enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 182,
+      "end_line": 185,
+      "content_hash": "52624f6ada6e2b631e2485c04492ee4678a5bae801545b74e3fe8d663c28bf05"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_path.exit@197",
+    "kind": "function",
+    "name": "TestRemap.test_path.exit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 197,
+      "end_line": 200,
+      "content_hash": "3f70b0884fa563c44eccef7e61852eda75548477961175fdf264cc38c82f44cf"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_path.visit@167",
+    "kind": "function",
+    "name": "TestRemap.test_path.visit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 167,
+      "end_line": 170,
+      "content_hash": "060950e483238a5b803386dcad36fe63ecf755519613de341e4956bb23637bba"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_path@159",
+    "kind": "function",
+    "name": "TestRemap.test_path",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 159,
+      "end_line": 205,
+      "content_hash": "02543f66a8fffb80bfa83a563ff3342d876f65ef95182942ebdc7aae7a821090"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_prepop.enter@332",
+    "kind": "function",
+    "name": "TestRemap.test_prepop.enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 332,
+      "end_line": 339,
+      "content_hash": "d2a29ce8940ffb85d2ca70143d4d1068227bb2952a1592e51b97f9b73d61af2e"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_prepop@324",
+    "kind": "function",
+    "name": "TestRemap.test_prepop",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 324,
+      "end_line": 348,
+      "content_hash": "ae014488c8dd394efdffa12482564f926111fe2490ce2b0fbb8956cb9e398f94"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_remap_file@358",
+    "kind": "function",
+    "name": "TestRemap.test_remap_file",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 358,
+      "end_line": 368,
+      "content_hash": "66252c0f4941b2ade2e4d3e115522bcefcd6682cb9cca179461aee3a7bae15ad"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_remap_set@350",
+    "kind": "function",
+    "name": "TestRemap.test_remap_set",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 350,
+      "end_line": 356,
+      "content_hash": "96b285534b8e319e160125e8eb3e9ba2b71ef26bb2bbd6d7bbf3e95e0dcb1b73"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_reraise_visit@207",
+    "kind": "function",
+    "name": "TestRemap.test_reraise_visit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 207,
+      "end_line": 215,
+      "content_hash": "dd5eb863297ece198a8098e52c170a3870b3129e836fa5169f4251f791bcfefa"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_root_selfref@121",
+    "kind": "function",
+    "name": "TestRemap.test_root_selfref",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 121,
+      "end_line": 130,
+      "content_hash": "a9bc2c18ce4b207d56e0a3d044961fd063ee6e7d58fc4a26337ae3857a58a163"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_sort_all_lists.exit@247",
+    "kind": "function",
+    "name": "TestRemap.test_sort_all_lists.exit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 247,
+      "end_line": 252,
+      "content_hash": "3d7d35e60a4fa11fd2f14195ec3f1871dff20b8772b4947f015cc191b91deffe"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_sort_all_lists@246",
+    "kind": "function",
+    "name": "TestRemap.test_sort_all_lists",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 246,
+      "end_line": 273,
+      "content_hash": "cc04923c369eef8888db72e2ada8b5ef09a2d265fb06cf33fe3d45531010cb65"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_sub_selfref@112",
+    "kind": "function",
+    "name": "TestRemap.test_sub_selfref",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 112,
+      "end_line": 119,
+      "content_hash": "e97368f672867812a13560a6c5e6168baa8320c5f59c749918fac7a1584f91eb"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap.test_unremappable@87",
+    "kind": "function",
+    "name": "TestRemap.test_unremappable",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 87,
+      "end_line": 90,
+      "content_hash": "5ec5eda2728d38394dc6238a74588f66c498801a8b9db6214bbbfb7dba5ef688"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestRemap@72",
+    "kind": "class",
+    "name": "TestRemap",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 72,
+      "end_line": 368,
+      "content_hash": "47b120aee807c6eceeace34b38a6bed531162a1db47b197a6d419709809535b0"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestSplit.test_maxsplit_zero_returns_unsplit_values@29",
+    "kind": "function",
+    "name": "TestSplit.test_maxsplit_zero_returns_unsplit_values",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 29,
+      "end_line": 33,
+      "content_hash": "5d6a86b3a2e4a801b122c3743be41e2438f7ad711c357a396d039db0a7034787"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::TestSplit@28",
+    "kind": "class",
+    "name": "TestSplit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 28,
+      "end_line": 33,
+      "content_hash": "0e2d965fc2f9b9712010c2ae2928f0425309d658faf52b2f79329acb73dd3e87"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::import@17:0:0",
+    "kind": "import_reference",
+    "name": "namedtuple",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 17,
+      "end_line": 17,
+      "content_hash": "33d6db37d5dc99f2a4c7504111f030a1e12ad83b53f71bbe1460bbea4c2e154e"
+    },
+    "module": "boltons.namedutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@1:0:0",
+    "kind": "import_reference",
+    "name": "os",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 1,
+      "end_line": 1,
+      "content_hash": "3727adff524e0616022eadd8f4af21a0778b29fc4c77bdfefd1afce2cbf5e4b7"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@3:0:0",
+    "kind": "import_reference",
+    "name": "pytest",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 3,
+      "end_line": 3,
+      "content_hash": "675a8302c62190746cd8fc229c6186f11fb5314218b20d1b742920301a495b75"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@428:4:0",
+    "kind": "import_reference",
+    "name": "SimpleNamespace",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 428,
+      "end_line": 428,
+      "content_hash": "c13cedd80a383918e75878808c8ab429ae639f85b951d9c8c0d8c5793557416f"
+    },
+    "module": "types",
+    "level": 0,
+    "alias": "NS"
+  },
+  {
+    "id": "tests/test_iterutils.py::import@449:4:0",
+    "kind": "import_reference",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 449,
+      "end_line": 449,
+      "content_hash": "eeb319eab98474c4a571c6289064df14d6ff11c89c63cf47fc8442355e8b03c3"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@457:4:0",
+    "kind": "import_reference",
+    "name": "backoff_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 457,
+      "end_line": 457,
+      "content_hash": "eb9a419741fd3ddc043392fde037471bbdc75be98db001cf4d9610f2d5ba1561"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@468:4:0",
+    "kind": "import_reference",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 468,
+      "end_line": 468,
+      "content_hash": "eeb319eab98474c4a571c6289064df14d6ff11c89c63cf47fc8442355e8b03c3"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@478:4:0",
+    "kind": "import_reference",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 478,
+      "end_line": 478,
+      "content_hash": "eeb319eab98474c4a571c6289064df14d6ff11c89c63cf47fc8442355e8b03c3"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@493:4:0",
+    "kind": "import_reference",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 493,
+      "end_line": 493,
+      "content_hash": "eeb319eab98474c4a571c6289064df14d6ff11c89c63cf47fc8442355e8b03c3"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@508:4:0",
+    "kind": "import_reference",
+    "name": "backoff",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 508,
+      "end_line": 508,
+      "content_hash": "eeb319eab98474c4a571c6289064df14d6ff11c89c63cf47fc8442355e8b03c3"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@534:4:0",
+    "kind": "import_reference",
+    "name": "string",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 534,
+      "end_line": 534,
+      "content_hash": "678912793c8580315f6e0d8ca5ec02c1dc23573c52569d9b210e010833e0e31a"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@535:4:0",
+    "kind": "import_reference",
+    "name": "GUIDerator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 535,
+      "end_line": 535,
+      "content_hash": "02eb430ac5dcc7d8d77ee4a60888e8bb98858370a58ea39871bcc7f3faae4a64"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@554:4:0",
+    "kind": "import_reference",
+    "name": "string",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 554,
+      "end_line": 554,
+      "content_hash": "678912793c8580315f6e0d8ca5ec02c1dc23573c52569d9b210e010833e0e31a"
+    },
+    "module": null,
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@555:4:0",
+    "kind": "import_reference",
+    "name": "SequentialGUIDerator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 555,
+      "end_line": 555,
+      "content_hash": "36aa70fd971ddbc763922705ea4edc7a70b5634a0f97e4d99293c1420d0c1d6d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": "GUIDerator"
+  },
+  {
+    "id": "tests/test_iterutils.py::import@576:4:0",
+    "kind": "import_reference",
+    "name": "chunked",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 576,
+      "end_line": 576,
+      "content_hash": "91477946c424b589201f194e37cf6c6f8709c0fcd27951c1dc36db024ed51e47"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@582:4:0",
+    "kind": "import_reference",
+    "name": "chunk_ranges",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 582,
+      "end_line": 582,
+      "content_hash": "6f0c1735df01dc0e4829c066ece379389485817e68bf9839a7a46faa0acb596c"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@598:4:0",
+    "kind": "import_reference",
+    "name": "lstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 598,
+      "end_line": 598,
+      "content_hash": "ca3ef529d1d004f1c99f67b3cb1638060f85ce28accefd86656a9f59b56be51c"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@5:0:0",
+    "kind": "import_reference",
+    "name": "OMD",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 5,
+      "end_line": 5,
+      "content_hash": "c8ae0edc50a5d98c2484b0bd54d3ce1b11da0fab88589e6bebca8a572cc02f16"
+    },
+    "module": "boltons.dictutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@607:4:0",
+    "kind": "import_reference",
+    "name": "rstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 607,
+      "end_line": 607,
+      "content_hash": "f2dc4ddf6a969fda4abcd4db3622e168cb08a3e97b36c704d8ad3ab7f0b890e9"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@615:4:0",
+    "kind": "import_reference",
+    "name": "strip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 615,
+      "end_line": 615,
+      "content_hash": "3ebb399fb6168214b934c111c26e6af019a3aeb52081e8b16506bfa5249f0d66"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@646:4:0",
+    "kind": "import_reference",
+    "name": "partition",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 646,
+      "end_line": 646,
+      "content_hash": "3fae3f91dfc1f1d1ebf6e3a6a65bc36bfbf14c07e79746c29524350549bfd0fa"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@654:4:0",
+    "kind": "import_reference",
+    "name": "partition",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 654,
+      "end_line": 654,
+      "content_hash": "3fae3f91dfc1f1d1ebf6e3a6a65bc36bfbf14c07e79746c29524350549bfd0fa"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@666:4:0",
+    "kind": "import_reference",
+    "name": "xfrange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 666,
+      "end_line": 666,
+      "content_hash": "a8686d769ee43e6d1ac9ec5ca4dc9ce1f06d8a41f498705d39440f85a8184552"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@672:4:0",
+    "kind": "import_reference",
+    "name": "xfrange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 672,
+      "end_line": 672,
+      "content_hash": "a8686d769ee43e6d1ac9ec5ca4dc9ce1f06d8a41f498705d39440f85a8184552"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@679:4:0",
+    "kind": "import_reference",
+    "name": "frange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 679,
+      "end_line": 679,
+      "content_hash": "3205846992a1334883a8a1f75d7ecaf990a60254baf209424211ccd592d00a3f"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@686:4:0",
+    "kind": "import_reference",
+    "name": "frange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 686,
+      "end_line": 686,
+      "content_hash": "1feb6adb61f75d381b41d751417b9af9069dece236ca4db6ff2b21fafd32ddd8"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@686:4:1",
+    "kind": "import_reference",
+    "name": "xfrange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 686,
+      "end_line": 686,
+      "content_hash": "1feb6adb61f75d381b41d751417b9af9069dece236ca4db6ff2b21fafd32ddd8"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@694:4:0",
+    "kind": "import_reference",
+    "name": "frange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 694,
+      "end_line": 694,
+      "content_hash": "1feb6adb61f75d381b41d751417b9af9069dece236ca4db6ff2b21fafd32ddd8"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@694:4:1",
+    "kind": "import_reference",
+    "name": "xfrange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 694,
+      "end_line": 694,
+      "content_hash": "1feb6adb61f75d381b41d751417b9af9069dece236ca4db6ff2b21fafd32ddd8"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:0",
+    "kind": "import_reference",
+    "name": "first",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:1",
+    "kind": "import_reference",
+    "name": "split",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:10",
+    "kind": "import_reference",
+    "name": "get_path",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:2",
+    "kind": "import_reference",
+    "name": "pairwise",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:3",
+    "kind": "import_reference",
+    "name": "pairwise_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:4",
+    "kind": "import_reference",
+    "name": "windowed",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:5",
+    "kind": "import_reference",
+    "name": "windowed_iter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:6",
+    "kind": "import_reference",
+    "name": "remap",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:7",
+    "kind": "import_reference",
+    "name": "research",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:8",
+    "kind": "import_reference",
+    "name": "default_enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::import@6:0:9",
+    "kind": "import_reference",
+    "name": "default_exit",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 6,
+      "end_line": 16,
+      "content_hash": "ea720d6336e346bb939c860c2373f4a9662aa0908f21e741d65973883b7aae3d"
+    },
+    "module": "boltons.iterutils",
+    "level": 0,
+    "alias": null
+  },
+  {
+    "id": "tests/test_iterutils.py::module",
+    "kind": "module",
+    "name": "tests/test_iterutils.py",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 1,
+      "end_line": 699,
+      "content_hash": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_basic@448",
+    "kind": "function",
+    "name": "test_backoff_basic",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 448,
+      "end_line": 453,
+      "content_hash": "5a1f3060b88c038574617181c078b4760a0fb9fb8c9f749f6a0d6adc88e189d6"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_constant_factor@492",
+    "kind": "function",
+    "name": "test_backoff_constant_factor",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 492,
+      "end_line": 504,
+      "content_hash": "c6cf7ae39bfd00db25ab91b7fdebf640ce07ef3cddec10c69f63a66d454894c2"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_jitter@507",
+    "kind": "function",
+    "name": "test_backoff_jitter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 507,
+      "end_line": 530,
+      "content_hash": "7896dd61916c4a2a336ecf4cb92f07da3d85d28afdfd1231d93a236e87dcfa9d"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_repeat@456",
+    "kind": "function",
+    "name": "test_backoff_repeat",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 456,
+      "end_line": 464,
+      "content_hash": "1ed7b86b72819a63eededdaef5f2a0aec9a8f8c3a7853dd9ff8eff0299ad4401"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_validation@477",
+    "kind": "function",
+    "name": "test_backoff_validation",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 477,
+      "end_line": 489,
+      "content_hash": "8786755e3167e68eb008804fb83dab06f32d8c51b38403b18fca3aec40737121"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_backoff_zero_start@467",
+    "kind": "function",
+    "name": "test_backoff_zero_start",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 467,
+      "end_line": 474,
+      "content_hash": "59aefdc77ba8b7fc0197b6b9591b60e794638cfad4c4479276dc8926ca076ed3"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_chunk_ranges@581",
+    "kind": "function",
+    "name": "test_chunk_ranges",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 581,
+      "end_line": 594,
+      "content_hash": "db898da8f4866869854de9cecc77ac7d34b0cc946f4afee5e0981faafb66c6eb"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_chunked_bytes@574",
+    "kind": "function",
+    "name": "test_chunked_bytes",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 574,
+      "end_line": 578,
+      "content_hash": "05cd4e5c3450e2917864c33a89bc7f6b363e0df1e55e5f998778dd14aedd649c"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_frange_inexact_boundary_counts@678",
+    "kind": "function",
+    "name": "test_frange_inexact_boundary_counts",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 678,
+      "end_line": 682,
+      "content_hash": "d8d32072bbd4dcf928460674637daf270d371af4dab9df0f739cf1a7c15af493"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_frange_xfrange_zero_step@693",
+    "kind": "function",
+    "name": "test_frange_xfrange_zero_step",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 693,
+      "end_line": 699,
+      "content_hash": "138ea9352a91286045075800bec1424be08550ac8b4679511588dbed2b1b489f"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_guiderator@533",
+    "kind": "function",
+    "name": "test_guiderator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 533,
+      "end_line": 550,
+      "content_hash": "1e6aa1aae56d880bc90e1de35f2ed444eb8bc07451f92b5dc347779e513ef193"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_lstrip@597",
+    "kind": "function",
+    "name": "test_lstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 597,
+      "end_line": 602,
+      "content_hash": "2dd9c2da61893122dd83909c453c1105d649ce822b37df39762ad99e5d113f03"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_pairwise_filled@622",
+    "kind": "function",
+    "name": "test_pairwise_filled",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 622,
+      "end_line": 630,
+      "content_hash": "1a5978c07e00938e0cc636c08345a68b595c28a2fda3e00ffa1550fa518939de"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_partition_default@645",
+    "kind": "function",
+    "name": "test_partition_default",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 645,
+      "end_line": 650,
+      "content_hash": "df07177072afee2e9f24ab2ad4a76af7929abccd6233a0767b3542e5af4ece9d"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_partition_multiple@653",
+    "kind": "function",
+    "name": "test_partition_multiple",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 653,
+      "end_line": 660,
+      "content_hash": "2826e4a0d3aa0c3b02a6b5ea7f72aeea3ac5935c91e2866fde3c385c3899b75c"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_research.broken_query@398",
+    "kind": "function",
+    "name": "test_research.broken_query",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 398,
+      "end_line": 399,
+      "content_hash": "e82b400b397947d08e9a67f7e59e3a2424156239dc6a108ad0e2755cdaa0b380"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_research@387",
+    "kind": "function",
+    "name": "test_research",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 387,
+      "end_line": 423,
+      "content_hash": "345ba55e2655f1896a5f35983dba1661f642c97db599bf2bd9b2a3eaceab56cc"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_research_custom_enter.custom_enter@437",
+    "kind": "function",
+    "name": "test_research_custom_enter.custom_enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 437,
+      "end_line": 440,
+      "content_hash": "88302f917797e97281e3016ed0beec26d580e6958c3346eadea0b680f38ac3c8"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_research_custom_enter.query@434",
+    "kind": "function",
+    "name": "test_research_custom_enter.query",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 434,
+      "end_line": 435,
+      "content_hash": "6bc69ce218275265efb7f8972f64dfb38f15299d19772616cc24e170d13ddef5"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_research_custom_enter@426",
+    "kind": "function",
+    "name": "test_research_custom_enter",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 426,
+      "end_line": 444,
+      "content_hash": "7d9b69d47d2a410a32b5be0d37bf0722ec37db94f7d2135675c6a85435dd2246"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_rstrip@606",
+    "kind": "function",
+    "name": "test_rstrip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 606,
+      "end_line": 611,
+      "content_hash": "9fd88b9f0bdd8aa065e86c87f6f68b1423a8c67ffb945e5f427416e7effcfdbc"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_seqguiderator@553",
+    "kind": "function",
+    "name": "test_seqguiderator",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 553,
+      "end_line": 571,
+      "content_hash": "09b4ef9b58139f489747ab2ff90dbdaf4e7a13b7697b1c5decc7561d89481e49"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_strip@614",
+    "kind": "function",
+    "name": "test_strip",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 614,
+      "end_line": 619,
+      "content_hash": "1f9a6774fd89622b4112e26e4aebba60fdc07a536c4f15ac9253e04d7a4085c3"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_windowed_filled@633",
+    "kind": "function",
+    "name": "test_windowed_filled",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 633,
+      "end_line": 642,
+      "content_hash": "f3fdf5c5791363846a417567a78fb2f74c385a0c6ec0e6f2c888658928444adf"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_xfrange_descending@665",
+    "kind": "function",
+    "name": "test_xfrange_descending",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 665,
+      "end_line": 668,
+      "content_hash": "1879d71da3cda297d6882e397acd243f750693458ab6fcaea1184d79bd719d35"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_xfrange_matches_frange@685",
+    "kind": "function",
+    "name": "test_xfrange_matches_frange",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 685,
+      "end_line": 690,
+      "content_hash": "06c0c39dea877a728a7856182279c035616731884183faa078f359908063a14b"
+    }
+  },
+  {
+    "id": "tests/test_iterutils.py::test_xfrange_wrong_direction@671",
+    "kind": "function",
+    "name": "test_xfrange_wrong_direction",
+    "source_span": {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "tests/test_iterutils.py",
+      "start_line": 671,
+      "end_line": 675,
+      "content_hash": "b6f3e740659d353135d9a7e0c5c9d68efda7cd338fb563958867c0d3c9f9b8e8"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "docs/references/A-D02-source_provenance.json",
+    "sha256": "280d40ca43c861d9de22f43ae7b27ff0e00ccac613dddebcbdf044106f4b7123"
+  },
+  {
+    "path": "docs/related_work.md",
+    "sha256": "6882a372fbe905fac2c5a16aa94d6db0ed79306294a785a97e4f57f760a71d5f"
+  },
+  {
+    "path": "report_materials/A/A-D02/render_config.json",
+    "sha256": "24a7c2a25b74d317f505c2b7acd36384c8009da0d34d92cbaa13e44c57384048"
+  },
+  {
+    "path": "scripts/A/check_d02.py",
+    "sha256": "482259d358d2bcb27648845c722d7c9e3a3e4fdcd98aeacf05b1743b8178f0e5"
+  },
+  {
+    "path": "scripts/A/collect_d02_sources.py",
+    "sha256": "212ec8268819cd26033ffa9ce8a58762cb1a10c95c5c99f7fa7ce141c359067e"
+  },
+  {
+    "path": "scripts/A/draw_d02.py",
+    "sha256": "017f8215e14c5aa2a923b5646d8e7e68008918ea584bb3d549e340709e8accfe"
+  },
+  {
+    "path": "scripts/A/run_d02.py",
+    "sha256": "6018cf02b1c6a80344615ece71f0bfd58b2b281d204e8a2e0dadff716d604d0f"
+  },
+  {
+    "path": "src/codecompass/graph/__init__.py",
+    "sha256": "3d4689984b85e3addb6542da8f1f541a8cae55078cda83544185aed6c9873a52"
+  },
+  {
+    "path": "src/codecompass/graph/extract.py",
+    "sha256": "3881c9727ad5e9cf6750bb47850adfc375e6f3a030b11703ef4be3b240fffeea"
+  },
+  {
+    "path": "src/codecompass/graph/pedagogy.py",
+    "sha256": "47725b790acfecfccb42f0b7b9e2a42e1707f8b40738800dcbb17423904e38e0"
+  },
+  {
+    "path": "src/codecompass/graph/provenance.py",
+    "sha256": "83b28c8d15b4f7d64ddf4742a6325525e40199f62636cbea32036dbee62b3d96"
+  },
+  {
+    "path": "tests/A/test_graph_d02.py",
+    "sha256": "2e5f270d3c79e5d0f171e09115d36182b265d61a6dcaa521803c107063c6cefe"
+  }
+]
