@@ -13,11 +13,13 @@
   "learner_version": "0.1.0",
   "config_version": "A-D03-dev-0.1",
   "technical_checks_passed": true,
-  "recovery_check": "PENDING_COMMITTED_COPY",
-  "next_day_allowed": false,
+  "recovery_check": "PASSED_SAME_MACHINE_COMMITTED_CLONE",
+  "next_day_allowed": true,
   "formal_study_ready": false,
   "formal_experiments": 0,
   "independent_human_review": "NOT_REVIEWED",
-  "git_sync": "PENDING_CHECKPOINT_PUSH",
-  "verification": "experiments/B/B-D03-verification01/registration.json"
+  "git_sync": "CHECKPOINT_HEAD_REMOTE_EQUAL",
+  "verification": "experiments/B/B-D03-verification01/registration.json",
+  "verified_checkpoint": "8ed3226ec2f585eb9cfa3d584a1eaacfd900c008",
+  "last_heartbeat": "2026-10-16T15:28:28.510192+00:00"
 }

@@ -1,0 +1,6 @@
+{
+  "observed": "first completion-event draft rejected by shared schema due to unrecognized evidence_type",
+  "exit_code": 1,
+  "repair": "used existing development_validation enum; validated before staging; A schema unchanged",
+  "not_a_runtime_learner_failure": true
+}

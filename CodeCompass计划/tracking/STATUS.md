@@ -41,3 +41,5 @@ A-D02开发已交付，READY_FOR_REVIEW；入口docs/A/状态.md与handoffs/A-D0
 最终收尾 2026-10-16T20:44:59.024042+08:00：业务检查点HEAD=remote=bfc756e61e8490647ae4a0228af476fd8c277834；提交归档字节校验与103测试复测/来源/路线/CLI通过（见A-D03-closeout）。严格工程子关卡通过，允许进入下一步B-D03；完整G1 T3、持久化/重启/Issue仍未完成，不批准跳A-D04。原始失败保留：归档首轮1项B评分器5秒TIMEOUT、102通过；同版完整复测103通过、单项再过，未改B时限，原因未确认，作为非阻断A算法的运行风险交接B。人类审核未进行。收尾回执提交后的精确最终HEAD以最终通知为准。
 
 B署名 B-D03 2026-10-16T15:08:49.943358+00:00：Owner成员B/糯糯；机器糯糯；Executor Codex Agent B；分支codex/B-D03-integration；base cf02b664aea81f91aa8e7423a8aa891367c73b7e。READY_FOR_REVIEW，108回归测试/10命令期待通过；最终恢复及同步待收尾。新ledger持久化/重启/Issue准备/G1见docs/B/handoffs/B-D03.md；不变更A Owner或旧main，不将模拟回答当真人。
+
+B署名B-D03收尾 2026-10-16T15:28:28.510192+00:00：READY_FOR_REVIEW，G1工程通过，允许进入A-D04。检查点8ed3226ec2f585eb9cfa3d584a1eaacfd900c008=remote；同机新clone108测试/10命令通过。精确最终回执SHA见通知，A异机接收/人类审核未确认，未合main。下一棒先核对B-D03交接命令后推进搜索，不从旧main开始。

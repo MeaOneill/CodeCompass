@@ -1,0 +1,22 @@
+{
+  "verified_commit": "8ed3226ec2f585eb9cfa3d584a1eaacfd900c008",
+  "copy_kind": "fresh same-machine local git clone; same locked Python env reused",
+  "machine": "糯糯",
+  "time": "2026-10-16T15:28:28.510192+00:00",
+  "tests": "108 passed",
+  "commands": 10,
+  "all_expected_exits": true,
+  "source_and_figure_byte_checks": 48,
+  "preserved_user_files_unchanged": true,
+  "independent_machine_replay": false,
+  "private_key_copied": false,
+  "sqlite_copied": false,
+  "failures_retained": [
+    "first CSV index check failed at 1128050; fixed by exact re-normalization in 8ed3226",
+    "initial relative-path render/audit01 failed; resolved and rerendered",
+    "first local clone denied by Windows sandbox; escalated local clone succeeded"
+  ],
+  "engineering_passed": true,
+  "formal_study_ready": false,
+  "exit_code": 0
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "A-D03",
+  "source_run": "A-D03-short-tests04",
+  "audit_run": "B-D03-replay02-A-replay",
+  "engineering_passed": true,
+  "negative_mutations_rejected": 41,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "next_step_allowed_pending_sync": false,
+  "remaining_engineering_items": [
+    "fresh committed-copy replay and remote SHA verification"
+  ],
+  "exit_code": 0
+}

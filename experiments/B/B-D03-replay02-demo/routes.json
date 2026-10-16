@@ -1,0 +1,749 @@
+[
+  {
+    "stage": "initial",
+    "is_simulated": true,
+    "plan": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-initial-greedy",
+      "request_id": "B-D03-replay02-demo-initial",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked_iter",
+          "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_iterable",
+          "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_chunked",
+          "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "B0": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-initial-B0",
+      "request_id": "B-D03-replay02-demo-initial",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_iterable",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "source_spans": {
+      "u_iterable": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "u_chunked_iter": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "u_chunked": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "correct",
+    "is_simulated": true,
+    "plan": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-correct-greedy",
+      "request_id": "B-D03-replay02-demo-correct",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked_iter",
+          "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_iterable",
+          "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_chunked",
+          "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "B0": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-correct-B0",
+      "request_id": "B-D03-replay02-demo-correct",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_iterable",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "source_spans": {
+      "u_iterable": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "u_chunked_iter": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "u_chunked": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "incorrect",
+    "is_simulated": true,
+    "plan": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-incorrect-greedy",
+      "request_id": "B-D03-replay02-demo-incorrect",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked_iter",
+          "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_iterable",
+          "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_chunked",
+          "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "B0": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-incorrect-B0",
+      "request_id": "B-D03-replay02-demo-incorrect",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_iterable",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "source_spans": {
+      "u_iterable": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "u_chunked_iter": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "u_chunked": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "duplicate_and_reading",
+    "is_simulated": true,
+    "plan": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-duplicate_and_reading-greedy",
+      "request_id": "B-D03-replay02-demo-duplicate_and_reading",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked_iter",
+          "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_iterable",
+          "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_chunked",
+          "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "B0": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-duplicate_and_reading-B0",
+      "request_id": "B-D03-replay02-demo-duplicate_and_reading",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_iterable",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "source_spans": {
+      "u_iterable": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "u_chunked_iter": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "u_chunked": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ]
+    }
+  },
+  {
+    "stage": "distinct_simulated_items",
+    "is_simulated": true,
+    "plan": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-distinct_simulated_items-greedy",
+      "request_id": "B-D03-replay02-demo-distinct_simulated_items",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked_iter",
+        "u_chunked"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 64,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": null,
+          "reason": "EVIDENCE_GATE skip python.iterator_protocol; lower=0.841159 >= 0.7; no reading is counted as mastery",
+          "evidence_ids": [
+            "sim-B03-0",
+            "sim-B03-1",
+            "sim-B03-10",
+            "sim-B03-11",
+            "sim-B03-12",
+            "sim-B03-13",
+            "sim-B03-14",
+            "sim-B03-15",
+            "sim-B03-16",
+            "sim-B03-17",
+            "sim-B03-18",
+            "sim-B03-19",
+            "sim-B03-20",
+            "sim-B03-21",
+            "sim-B03-22",
+            "sim-B03-3",
+            "sim-B03-4",
+            "sim-B03-5",
+            "sim-B03-6",
+            "sim-B03-7",
+            "sim-B03-8",
+            "sim-B03-9"
+          ]
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_chunked",
+          "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "B0": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "B-D03-replay02-demo-distinct_simulated_items-B0",
+      "request_id": "B-D03-replay02-demo-distinct_simulated_items",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "covered_concept_ids": [
+          "boltons.chunk_postprocess",
+          "boltons.wrapper_compatibility",
+          "python.generator_laziness",
+          "python.islice_consumption",
+          "python.iterator_protocol",
+          "python.keyword_presence"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 80,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "u_chunked",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 2,
+          "unit_id": "u_chunked_iter",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+          "evidence_ids": []
+        },
+        {
+          "step": 3,
+          "unit_id": "u_iterable",
+          "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "source_spans": {
+      "u_iterable": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "u_chunked_iter": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "u_chunked": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        }
+      ]
+    }
+  }
+]

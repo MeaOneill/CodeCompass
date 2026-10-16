@@ -2,8 +2,16 @@
   "task": "B-D03",
   "branch": "codex/B-D03-integration",
   "base_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
-  "status": "PENDING_COMMITTED_COPY_AND_PUSH",
-  "verified_head": null,
-  "remote_sha": null,
-  "A_machine_acceptance": "NOT_CONFIRMED"
+  "verified_head": "8ed3226ec2f585eb9cfa3d584a1eaacfd900c008",
+  "remote_sha": "8ed3226ec2f585eb9cfa3d584a1eaacfd900c008",
+  "checked_time": "2026-10-16T15:28:28.510192+00:00",
+  "status": "CHECKPOINT_REMOTE_VERIFIED",
+  "business_gate": "PASSED_G1_ENGINEERING",
+  "state": "READY_FOR_REVIEW",
+  "next_day_allowed": true,
+  "next_task": "A-D04",
+  "independent_human_review": "NOT_REVIEWED",
+  "A_machine_acceptance": "NOT_CONFIRMED",
+  "main_merged": false,
+  "final_delivery_head": "Subsequent receipt commit; resolve current branch HEAD and verify remote. Exact final SHA in final task notification."
 }

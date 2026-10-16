@@ -1,0 +1,8 @@
+usage: demo_d03.py [-h] --run-id RUN_ID [--snapshot SNAPSHOT]
+
+B-D03：模拟独立短测→真实持久化/进程恢复→真实源码路线→公开Issue固定快照。无需用户做题。
+
+options:
+  -h, --help           show this help message and exit
+  --run-id RUN_ID
+  --snapshot SNAPSHOT
