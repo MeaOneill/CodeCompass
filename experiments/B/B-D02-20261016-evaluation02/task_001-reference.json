@@ -1,0 +1,81 @@
+{
+  "task_id": "task_001",
+  "evidence_type": "development_validation",
+  "submission_hash": "f332c4073486da2fd4b6301257b736abf649d1e6655a43e6cf01e77b0307ee2b",
+  "files": {
+    "candidate.py": "eda2740aa6b1ef4498f35d82168aadee4d7fb0b88b353ad465137411ea535878",
+    "explanation.md": "75812ffe0f384b610ff9593ac32e44efd81a64f6492fd11f03a64010214e2e5c",
+    "regression_tests.py": "bc8cd99610fc21773ab9ec2927ace38a0a0553ebdf460298565172bbb13a5b55",
+    "patch.diff": "19af1737e45faeafd6f317f849126c39f3cdd37610471b6e8a00de7605861ebd",
+    "commands_and_elapsed.json": "37e44804b15cc587e999b9111d4be85ec7591c77b03f78e572d1e9eaab55e356"
+  },
+  "status": "PENDING_HUMAN_REVIEW",
+  "criteria": {
+    "R1": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R2": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R3": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R4": {
+      "score": 1,
+      "max_score": 1,
+      "passed": true
+    },
+    "R5": {
+      "score": null,
+      "max_score": 2,
+      "passed": null,
+      "owner": "independent human blind to method"
+    },
+    "R6": {
+      "score": null,
+      "max_score": 1,
+      "passed": null,
+      "owner": "independent human checks regression tests and command log"
+    }
+  },
+  "total_score": null,
+  "automated_score": 7,
+  "success": null,
+  "human_review": "NOT_REVIEWED",
+  "elapsed_seconds": 0.22058990000004997,
+  "error": null,
+  "worker_exit_code": 0,
+  "worker_stdout": "",
+  "worker_stderr": "",
+  "worker_result": {
+    "task_id": "task_001",
+    "criteria": {
+      "R1": {
+        "passed": true,
+        "error": null
+      },
+      "R2": {
+        "passed": true,
+        "error": null
+      },
+      "R3": {
+        "passed": true,
+        "error": null
+      },
+      "R4": {
+        "passed": true,
+        "error": null
+      }
+    },
+    "import_error": null
+  },
+  "is_fixture": true,
+  "fixture_kind": "reference",
+  "learner_result": false
+}

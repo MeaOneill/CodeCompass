@@ -1,0 +1,49 @@
+{
+  "evidence_type": "development_validation",
+  "basis": "B manually authored keys checked against fixed original functions, not graph",
+  "private_key_sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+  "checks": [
+    {
+      "task_id": "task_003",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_004",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_005",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_006",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_007",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_008",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_009",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_010",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_011",
+      "behavior_key_matches_fixed_source": true
+    },
+    {
+      "task_id": "task_012",
+      "behavior_key_matches_fixed_source": true
+    }
+  ],
+  "exit_code": 0,
+  "human_semantic_review": "NOT_REVIEWED"
+}

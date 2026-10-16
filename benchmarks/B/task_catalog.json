@@ -1,0 +1,990 @@
+{
+  "record_type": "evaluation_catalog_not_planning_contract",
+  "version": "B-D02-0.1",
+  "plan": {
+    "target_dev": 8,
+    "target_test": 16,
+    "fallback_dev": 4,
+    "fallback_test": 8
+  },
+  "scope_decision": "One fixed repository with iterutils dev / strutils held-out module. 12 evaluation specifications; human approval and pilot pending, not 12 finalized tasks.",
+  "formal_freeze": false,
+  "tasks": [
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_001",
+      "split": "dev",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "iterutils",
+      "functions": [
+        "chunked",
+        "chunked_iter"
+      ],
+      "task_type": "local_modification",
+      "title": "惰性count限制",
+      "prompt": "完整要求沿用benchmarks/dev/task_001.json；仅修改chunked_iter，提交candidate.py及解释/补丁/回归测试/命令时间记录。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 286,
+          "end_line": 306,
+          "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+        },
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 316,
+          "end_line": 358,
+          "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+        }
+      ],
+      "required_concept_ids": [
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.keyword_presence"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "R1",
+          "description": "输出限制与边界",
+          "points": 2,
+          "acceptance": [
+            "None与上游输出一致",
+            "count=0不消费",
+            "count=1/2截断",
+            "大count自然结束"
+          ],
+          "critical": true
+        },
+        {
+          "criterion_id": "R2",
+          "description": "惰性与消费边界",
+          "points": 2,
+          "acceptance": [
+            "构造时consumed=0",
+            "计数迭代器range(10),size=3,count=2完整迭代后consumed=6",
+            "无限迭代器count=2可终止"
+          ],
+          "critical": true
+        },
+        {
+          "criterion_id": "R3",
+          "description": "填充与API兼容",
+          "points": 2,
+          "acceptance": [
+            "fill未传短尾不填充",
+            "fill=None短尾补None",
+            "空源无伪块",
+            "str/bytes类型保持且chunked(...,count=2)回归通过"
+          ],
+          "critical": true
+        },
+        {
+          "criterion_id": "R4",
+          "description": "输入校验",
+          "points": 1,
+          "acceptance": [
+            "负count ValueError",
+            "bool/float/str count TypeError",
+            "原非法size及未知kw仍报错"
+          ],
+          "critical": false
+        },
+        {
+          "criterion_id": "R5",
+          "description": "源码解释",
+          "points": 2,
+          "acceptance": [
+            "指出chunked的islice与chunked_iter的yield消费差异并给行号",
+            "解释kw中fill是否存在决定填充，None不是缺省哨兵"
+          ],
+          "critical": true
+        },
+        {
+          "criterion_id": "R6",
+          "description": "贡献准备",
+          "points": 1,
+          "acceptance": [
+            "提交最小修改和回归测试，不接规划器评分",
+            "给出实际命令、失败与兼容说明"
+          ],
+          "critical": false
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "candidate.py + patch.diff + regression_tests.py + explanation.md + commands_and_elapsed.json",
+      "evaluator": "scripts/B/evaluation/grade.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_002",
+      "split": "dev",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "iterutils",
+      "functions": [
+        "windowed_iter",
+        "windowed",
+        "pairwise"
+      ],
+      "task_type": "debug",
+      "title": "滑动窗口size边界防护",
+      "prompt": "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 472,
+          "end_line": 510,
+          "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+        },
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 464,
+          "end_line": 469,
+          "content_hash": "071be10d549fe558dc96c5cc44ad6799e5f3c303d0a8c8d43c17821b39c95883"
+        },
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 415,
+          "end_line": 436,
+          "content_hash": "ac481983a1e492688de2925b3c3daf0809c06950e098917e8f81eb4c8e87aba8"
+        }
+      ],
+      "required_concept_ids": [
+        "python.iterator_protocol",
+        "python.tee",
+        "python.keyword_presence",
+        "python.type_validation"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "R1",
+          "points": 3,
+          "description": "严格类型/正值拒绝",
+          "critical": true
+        },
+        {
+          "criterion_id": "R2",
+          "points": 2,
+          "description": "原窗口/空源/短源/size1兼容",
+          "critical": true
+        },
+        {
+          "criterion_id": "R3",
+          "points": 2,
+          "description": "fill/end哨兵和无限源前缀兼容",
+          "critical": true
+        },
+        {
+          "criterion_id": "R4",
+          "points": 2,
+          "description": "人类盲评源码解释与行号",
+          "critical": true
+        },
+        {
+          "criterion_id": "R6",
+          "points": 1,
+          "description": "人类复核补丁、回归用例和实际命令",
+          "critical": false
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "candidate.py + patch.diff + regression_tests.py + explanation.md + commands_and_elapsed.json",
+      "evaluator": "scripts/B/evaluation/grade.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_003",
+      "split": "dev",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "iterutils",
+      "functions": [
+        "unique_iter"
+      ],
+      "task_type": "locate_explain",
+      "title": "稳定去重与key定位",
+      "prompt": "给answer.json的outputs填写plain=list(unique_iter(['a','A','a','b']))、casefold=list(unique_iter(['a','A','a','b'], key=str.lower))、length=list(unique_iter(['hi','ok','hey','bye'], key=len))。在source_spans引用本题函数，explanation解释seen的键和输出对象区别、保持首次顺序和哈希限制。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 834,
+          "end_line": 867,
+          "content_hash": "7041e8903018c5880d849f65889fcdaf0dc02d697d0b10cb6055196235f63492"
+        }
+      ],
+      "required_concept_ids": [
+        "python.hash_set",
+        "python.key_function",
+        "python.generator_laziness"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_004",
+      "split": "dev",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "iterutils",
+      "functions": [
+        "get_path"
+      ],
+      "task_type": "debug",
+      "title": "默认值与路径索引调试",
+      "prompt": "root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 1324,
+          "end_line": 1382,
+          "content_hash": "a4c0c978e2517a88fad2e0509945d2505c37d584770abfd869e6fd63419796d4"
+        }
+      ],
+      "required_concept_ids": [
+        "python.eafp",
+        "python.exception_translation",
+        "python.sentinel_default"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_005",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "camel2under",
+        "under2camel"
+      ],
+      "task_type": "locate_explain",
+      "title": "缩写与分隔符转换定位",
+      "prompt": "填写outputs：acronym=camel2under('HTTPServer2Thing')，simple=under2camel('parse_http_body')，underscores=under2camel('__edge__')。引用正则使用位置；解释缩写边界和空片段的处理，不假定两个函数总互逆。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 69,
+          "end_line": 76,
+          "content_hash": "6b2f66636ce79ccb949bef5d9d235026c4c4cab0278912329880500cb4d6cfca"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 79,
+          "end_line": 86,
+          "content_hash": "63afce8d4355e3f27e3b3cfe901cfd9d28a414ee3b6af59f70ec9ecd8c40a3fa"
+        }
+      ],
+      "required_concept_ids": [
+        "python.regex_boundary",
+        "python.string_transform"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_006",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "slugify",
+        "split_punct_ws",
+        "asciify"
+      ],
+      "task_type": "debug",
+      "title": "slug返回类型与标点边界",
+      "prompt": "填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 89,
+          "end_line": 112,
+          "content_hash": "fdd9a40dec6fd833b93d283b1902d6f1a9cabb680d92ad8aa92452ddb748160c"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 115,
+          "end_line": 123,
+          "content_hash": "05407cd674a22da2a77cdf69b0cddb80e3902a275c65fd900781958406f06eef"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 416,
+          "end_line": 446,
+          "content_hash": "0199ada8698cc26b3fc6f0fdfcc282c56778be4116f61315c5aadd484594cff7"
+        }
+      ],
+      "required_concept_ids": [
+        "python.regex_split",
+        "python.bytes_text",
+        "python.conditional_precedence"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_007",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "ordinalize"
+      ],
+      "task_type": "locate_explain",
+      "title": "序数词teen例外与后缀",
+      "prompt": "填写outputs：teens=[ordinalize(n) for n in (11,12,13,21,112)]，suffix=ordinalize(23,ext_only=True)，text=ordinalize('abc')。定位teen分支；解释数值先转字符串及不以数字结尾的行为。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 150,
+          "end_line": 183,
+          "content_hash": "a2486bdd4f029d069a695da05f9174eff4cb51d4088d529f641f10106bd4ef89"
+        }
+      ],
+      "required_concept_ids": [
+        "python.string_index",
+        "python.branch_exception"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_008",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "strip_ansi"
+      ],
+      "task_type": "locate_explain",
+      "title": "ANSI清理与bytes边界",
+      "prompt": "填写outputs：text=strip_ansi('A\\x1b[31mB\\x1b[0mC')（转义序列为真实ESC），bytes=list(strip_ansi(b'X\\x1b[1mY\\x1b[0m'))，plain=strip_ansi('plain')。解释文本与字节实现路径及函数支持边界，不声称清理任意终端协议。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 378,
+          "end_line": 413,
+          "content_hash": "6d4914e1d13aff2a2762205b9acedff755f934ab3bd47d27450985adb6728c40"
+        }
+      ],
+      "required_concept_ids": [
+        "python.escape_sequence",
+        "python.bytes_text"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_009",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "gzip_bytes",
+        "gunzip_bytes"
+      ],
+      "task_type": "locate_explain",
+      "title": "gzip往返与字节约定",
+      "prompt": "对data=b'open-source navigation'，填写outputs：roundtrip=list(gunzip_bytes(gzip_bytes(data)))，empty=list(gunzip_bytes(gzip_bytes(b'')))，type_name=type(gzip_bytes(data)).__name__。解释BytesIO与压缩级别；不要把压缩后完整字节串当稳定跨版本金标准。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 645,
+          "end_line": 664,
+          "content_hash": "e9c4678cc16b2cb9fd09a75cab255939ecd4858bedda74bcc6d85058d73c6408"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 630,
+          "end_line": 642,
+          "content_hash": "647ffbc1cf0b5f84ae802999f7145c8b261643f563440d4df0ae599cbd6fe688"
+        }
+      ],
+      "required_concept_ids": [
+        "python.bytes_io",
+        "python.compression_roundtrip"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_010",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "iter_splitlines",
+        "indent"
+      ],
+      "task_type": "debug",
+      "title": "换行尾空行与缩进调试",
+      "prompt": "填写outputs：lines=list(iter_splitlines('a\\r\\nb\\n'))，empty=list(iter_splitlines(''))，indented=indent('a\\n\\nb\\n','> ')。输入中的转义为真实换行。解释末尾空行和key=bool如何影响空行缩进及连接符。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 672,
+          "end_line": 701,
+          "content_hash": "fbf8f8702d84678b942140ff66ed8f3646a8b02125a979cfd8bc124ca906ca95"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 704,
+          "end_line": 717,
+          "content_hash": "1893942058ed4e562a86e93e866595b09db15f0807d33f283dd96b3c8666d62e"
+        }
+      ],
+      "required_concept_ids": [
+        "python.regex_group",
+        "python.generator_boundary",
+        "python.predicate"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_011",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "parse_int_list",
+        "format_int_list"
+      ],
+      "task_type": "debug",
+      "title": "整数区间解析与重复保留",
+      "prompt": "填写outputs：reverse=parse_int_list('5-3,1')，duplicates=parse_int_list('2,1,2')，formatted=format_int_list([1,2,3,5])，empty=parse_int_list('')。解释排序不等于去重、反向范围取min/max及区间闭端点。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 886,
+          "end_line": 920,
+          "content_hash": "99031fe9ec1ca78f406234f5d5897dbb75bac7697679fbf81d7976051c8ccff3"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 923,
+          "end_line": 1010,
+          "content_hash": "5076a6a0d757f2bb000b3ac79b57680b603185a4555b25e2192ce30b3015e868"
+        }
+      ],
+      "required_concept_ids": [
+        "python.range_closed",
+        "python.sorting_duplicates",
+        "python.branch_parse"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    },
+    {
+      "record_type": "EvaluationTaskSpec",
+      "evaluation_version": "B-D02-0.1",
+      "task_id": "task_012",
+      "split": "test_candidate",
+      "repo_url": "https://github.com/mahmoud/boltons",
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "license": "BSD-3-Clause",
+      "module": "strutils",
+      "functions": [
+        "removeprefix",
+        "human_readable_list"
+      ],
+      "task_type": "locate_explain",
+      "title": "前缀切片与自然语言列表",
+      "prompt": "填写outputs：prefix=removeprefix('foobar','foo')，not_chars=removeprefix('barfoo','foo')，two=human_readable_list(['a','b'])，three=human_readable_list(['a','b','c'],oxford=False)。解释精确前缀与lstrip字符集合的区别，并定位两元素及oxford分支。",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 1288,
+          "end_line": 1300,
+          "content_hash": "698ddf18659645a3a5c2a0da8c41e82f2a852db0c906f40e9acc80c51682195f"
+        },
+        {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 1302,
+          "end_line": 1329,
+          "content_hash": "bb655656e3aecc3e0716cbc30c51612c1625360b11ac82fb2f87bd318d53de4b"
+        }
+      ],
+      "required_concept_ids": [
+        "python.prefix_slice",
+        "python.branch_formatting"
+      ],
+      "concept_basis": "B authored from source behavior; not generated from A graph or Ours path",
+      "time_limit_minutes": 25,
+      "timing_status": "NOT_PILOTED",
+      "difficulty": "Python基础，局部API阅读/调试；难度未预演",
+      "allowed_context": [
+        "固定版本源码",
+        "统一Python标准库资料",
+        "同方法同预算学习材料"
+      ],
+      "prohibited_help": [
+        "终测阶段禁止解答型AI和他人帮助",
+        "评分key不得提供给规划或模型"
+      ],
+      "rubric": [
+        {
+          "criterion_id": "outputs",
+          "points": 6,
+          "description": "全部预先指定输出与独立key逐项一致；整组全有或全无",
+          "critical": true
+        },
+        {
+          "criterion_id": "source",
+          "points": 2,
+          "description": "固定commit的相关函数闭区间、path与hash准确",
+          "critical": true
+        },
+        {
+          "criterion_id": "explanation",
+          "points": 2,
+          "description": "人类盲于方法按问题中机制要求审核，每项覆盖才满分",
+          "critical": true
+        }
+      ],
+      "max_score": 10,
+      "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+      "submission_format": "answer.json: {outputs: object, source_spans: 本题相关固定源片段, explanation: string}",
+      "evaluator": "scripts/B/evaluation/grade_response.py",
+      "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED",
+      "human_reviewer": null,
+      "frozen": false
+    }
+  ]
+}

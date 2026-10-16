@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "B development method run envelope draft",
+  "description": "Method-neutral development record; PlanResult remains A-owned. No successful-learning claim from a route.",
+  "type": "object",
+  "required": ["schema", "run_id", "task_id", "method", "status", "evidence_type", "config_hash", "data_hash", "code_commit", "elapsed_seconds", "exit_code", "independent_task_success"],
+  "properties": {
+    "schema": {"const": "B-unified-run-0.1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "method": {"enum": ["B0", "B1", "B2", "Ours"]},
+    "status": {"enum": ["ROUTE_PREFIX", "INPUT_INCOMPLETE", "TIMEOUT", "ERROR", "NOT_RUN"]},
+    "evidence_type": {"enum": ["development_validation", "synthetic", "real_repository_offline", "human"]},
+    "config_hash": {"anyOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+    "data_hash": {"anyOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"type": "null"}]},
+    "code_commit": {"anyOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"type": "null"}]},
+    "elapsed_seconds": {"anyOf": [{"type": "number", "minimum": 0}, {"type": "null"}]},
+    "exit_code": {"anyOf": [{"type": "integer"}, {"type": "null"}]},
+    "independent_task_success": {"type": ["boolean", "null"]}
+  },
+  "additionalProperties": true
+}

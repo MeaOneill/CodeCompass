@@ -1,0 +1,72 @@
+{
+  "task_id": "task_002",
+  "evidence_type": "development_validation",
+  "submission_hash": "96adcb1ca66f42e267aaa4202f5437da7b1cf7a334968f78583045ad2937c8bb",
+  "files": {
+    "candidate.py": "b25feaf18db754b747e7e7c0889d4983424c9265aba37c0a3c00f6cff6483b5a",
+    "explanation.md": "75812ffe0f384b610ff9593ac32e44efd81a64f6492fd11f03a64010214e2e5c",
+    "regression_tests.py": "bc8cd99610fc21773ab9ec2927ace38a0a0553ebdf460298565172bbb13a5b55",
+    "patch.diff": "0bdcd4206611a3cc8229aad7f650825e7517e117f703697be3311879f5b080df",
+    "commands_and_elapsed.json": "37e44804b15cc587e999b9111d4be85ec7591c77b03f78e572d1e9eaab55e356"
+  },
+  "status": "PENDING_HUMAN_REVIEW",
+  "criteria": {
+    "R1": {
+      "score": 3,
+      "max_score": 3,
+      "passed": true
+    },
+    "R2": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R3": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R4": {
+      "score": null,
+      "max_score": 2,
+      "passed": null,
+      "owner": "independent human blind to method"
+    },
+    "R6": {
+      "score": null,
+      "max_score": 1,
+      "passed": null,
+      "owner": "independent human checks regression tests and command log"
+    }
+  },
+  "total_score": null,
+  "automated_score": 7,
+  "success": null,
+  "human_review": "NOT_REVIEWED",
+  "elapsed_seconds": 0.21947899999941,
+  "error": null,
+  "worker_exit_code": 0,
+  "worker_stdout": "",
+  "worker_stderr": "",
+  "worker_result": {
+    "task_id": "task_002",
+    "criteria": {
+      "R1": {
+        "passed": true,
+        "error": null
+      },
+      "R2": {
+        "passed": true,
+        "error": null
+      },
+      "R3": {
+        "passed": true,
+        "error": null
+      }
+    },
+    "import_error": null
+  },
+  "is_fixture": true,
+  "fixture_kind": "reference",
+  "learner_result": false
+}

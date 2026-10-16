@@ -1,0 +1,19 @@
+{
+  "record_type": "private_evaluator_key_receipt",
+  "sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+  "bytes": 2977,
+  "version": "B-D02-private-0.1",
+  "task_ids": [
+    "task_005",
+    "task_006",
+    "task_007",
+    "task_008",
+    "task_009",
+    "task_010",
+    "task_011",
+    "task_012"
+  ],
+  "storage": "B local only; restricted transfer pending; key is excluded from Git",
+  "review_status": "NOT_HUMAN_REVIEWED",
+  "formal_freeze": false
+}

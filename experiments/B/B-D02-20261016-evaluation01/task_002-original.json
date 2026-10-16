@@ -1,0 +1,72 @@
+{
+  "task_id": "task_002",
+  "evidence_type": "development_validation",
+  "submission_hash": "001723f86c8e0b40beab188132903b2fd8f5db1b97214df8daf2caa39599576c",
+  "files": {
+    "candidate.py": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+    "explanation.md": "75812ffe0f384b610ff9593ac32e44efd81a64f6492fd11f03a64010214e2e5c",
+    "regression_tests.py": "bc8cd99610fc21773ab9ec2927ace38a0a0553ebdf460298565172bbb13a5b55",
+    "patch.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "commands_and_elapsed.json": "37e44804b15cc587e999b9111d4be85ec7591c77b03f78e572d1e9eaab55e356"
+  },
+  "status": "FAILED_AUTOMATED",
+  "criteria": {
+    "R1": {
+      "score": 0,
+      "max_score": 3,
+      "passed": false
+    },
+    "R2": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R3": {
+      "score": 2,
+      "max_score": 2,
+      "passed": true
+    },
+    "R4": {
+      "score": null,
+      "max_score": 2,
+      "passed": null,
+      "owner": "independent human blind to method"
+    },
+    "R6": {
+      "score": null,
+      "max_score": 1,
+      "passed": null,
+      "owner": "independent human checks regression tests and command log"
+    }
+  },
+  "total_score": null,
+  "automated_score": 4,
+  "success": false,
+  "human_review": "NOT_REVIEWED",
+  "elapsed_seconds": 0.20612769999934244,
+  "error": null,
+  "worker_exit_code": 0,
+  "worker_stdout": "",
+  "worker_stderr": "",
+  "worker_result": {
+    "task_id": "task_002",
+    "criteria": {
+      "R1": {
+        "passed": false,
+        "error": "Traceback (most recent call last):\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 104, in main\n    fn()\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 74, in validation\n    raises(ValueError, lambda: list(m.windowed_iter([1, 2], size)))\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 26, in raises\n    raise AssertionError('Expected ' + kind.__name__)\nAssertionError: Expected ValueError\n"
+      },
+      "R2": {
+        "passed": true,
+        "error": null
+      },
+      "R3": {
+        "passed": true,
+        "error": null
+      }
+    },
+    "import_error": null
+  },
+  "is_fixture": true,
+  "fixture_kind": "original",
+  "learner_result": false
+}

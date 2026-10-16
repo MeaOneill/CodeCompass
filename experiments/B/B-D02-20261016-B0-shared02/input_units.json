@@ -1,0 +1,133 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "object_type": "LearningUnit",
+    "is_fixture": false,
+    "id": "u_iterable",
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      }
+    ],
+    "concept_ids": [
+      "python.iterator_protocol"
+    ],
+    "prerequisites": [],
+    "provenance": {
+      "kind": "static_source",
+      "evidence": [
+        "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+      ],
+      "proposed_by": "Codex Agent A",
+      "review_status": "pending",
+      "reviewer": null,
+      "confidence": null
+    },
+    "base_cost": null,
+    "cost_unit": "proxy_cost",
+    "cost_basis": null
+  },
+  {
+    "schema_version": "1.0.0",
+    "object_type": "LearningUnit",
+    "is_fixture": false,
+    "id": "u_chunked_iter",
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      }
+    ],
+    "concept_ids": [
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.keyword_presence",
+      "boltons.chunk_postprocess"
+    ],
+    "prerequisites": [
+      {
+        "unit_id": "u_iterable",
+        "relation_type": "teaching_prerequisite",
+        "hard": false,
+        "provenance": {
+          "kind": "teaching_judgment",
+          "evidence": [
+            "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+          ],
+          "proposed_by": "Codex Agent A",
+          "review_status": "pending",
+          "reviewer": null,
+          "confidence": null
+        }
+      }
+    ],
+    "provenance": {
+      "kind": "static_source",
+      "evidence": [
+        "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+      ],
+      "proposed_by": "Codex Agent A",
+      "review_status": "pending",
+      "reviewer": null,
+      "confidence": null
+    },
+    "base_cost": null,
+    "cost_unit": "proxy_cost",
+    "cost_basis": null
+  },
+  {
+    "schema_version": "1.0.0",
+    "object_type": "LearningUnit",
+    "is_fixture": false,
+    "id": "u_chunked",
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      }
+    ],
+    "concept_ids": [
+      "boltons.wrapper_compatibility"
+    ],
+    "prerequisites": [
+      {
+        "unit_id": "u_chunked_iter",
+        "relation_type": "teaching_prerequisite",
+        "hard": false,
+        "provenance": {
+          "kind": "teaching_judgment",
+          "evidence": [
+            "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+          ],
+          "proposed_by": "Codex Agent A",
+          "review_status": "pending",
+          "reviewer": null,
+          "confidence": null
+        }
+      }
+    ],
+    "provenance": {
+      "kind": "static_source",
+      "evidence": [
+        "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+      ],
+      "proposed_by": "Codex Agent A",
+      "review_status": "pending",
+      "reviewer": null,
+      "confidence": null
+    },
+    "base_cost": null,
+    "cost_unit": "proxy_cost",
+    "cost_basis": null
+  }
+]

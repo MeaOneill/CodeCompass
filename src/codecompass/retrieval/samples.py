@@ -42,7 +42,12 @@ def contract_validator(root):
 
 
 def load_object(root, relative):
-    data = read_json(safe_path(root, relative))
+    target = safe_path(root, relative)
+    public_prefixes = ('schemas/examples/', 'benchmarks/dev/', 'benchmarks/sources/')
+    resolved_relative = target.relative_to(Path(root).resolve()).as_posix()
+    if not relative.startswith(public_prefixes) or not resolved_relative.startswith(public_prefixes):
+        raise ValueError('Object is outside application-readable sample/source paths')
+    data = read_json(target)
     contract_validator(root).validate(data)
     return data
 

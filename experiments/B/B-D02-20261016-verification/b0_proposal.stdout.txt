@@ -1,0 +1,48 @@
+{
+  "status": "ROUTE_PREFIX",
+  "ordered_units": [
+    "u_iterable",
+    "u_chunked_iter",
+    "u_chunked"
+  ],
+  "reading_order_only": [
+    "u_iterable",
+    "u_chunked_iter",
+    "u_chunked"
+  ],
+  "estimated_cost": 80,
+  "unmet_constraints": [],
+  "cost_unit": "proxy_cost",
+  "method": "B0",
+  "task_id": "task_001",
+  "run_id": "B-D02-20261016-B0-lines02",
+  "schema": "B-unified-run-0.1",
+  "evidence_type": "development_validation",
+  "is_fixture": false,
+  "requested_budget": 100.0,
+  "config_version": "B0-fixed-source-reading-0.1",
+  "config_hash": "8cedb16f53269a041174767162a96979f5cf1e2a6b2c7661cae9fd5ddc718ebc",
+  "data_hash": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660",
+  "code_commit": null,
+  "elapsed_seconds": 0.2136785000002419,
+  "independent_task_success": null,
+  "model_id": null,
+  "seed": null,
+  "api_cost": null,
+  "reason_trace": [
+    "先读is_iterable协议检查，再读生成器消费及填充，最后读列表包装器与count截断。",
+    "按固定源码阅读顺序编制，未读取或调用Ours输出、A图谱来生成路线。",
+    "只截断固定前缀，不做内容选择或能力门控；各方法未来必须使用相同成本/预算。",
+    "当前base_cost=null，禁止补零，因此真实任务仅输出无成本阅读顺序，预算基线运行记INPUT_INCOMPLETE。",
+    "本次显式使用B的source_lines_proposal：固定源码行数代理，非共享成本验收、非分钟或学习效果。"
+  ],
+  "exit_code": 0,
+  "cost_policy": "source_lines_proposal",
+  "measured_static_proxy_costs": {
+    "u_iterable": 16,
+    "u_chunked_iter": 43,
+    "u_chunked": 21
+  },
+  "shared_cost_policy_approved": false,
+  "formal_comparison_eligible": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "RepoSnapshot",
+  "is_fixture": false,
+  "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+  "url": "https://github.com/mahmoud/boltons",
+  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "license": "BSD-3-Clause",
+  "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+  "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+  "hash_scope": "selected_files_manifest_sha256",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+      "bytes": 1497,
+      "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+    },
+    {
+      "path": "boltons/strutils.py",
+      "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "bytes": 47294,
+      "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+    },
+    {
+      "path": "tests/test_strutils.py",
+      "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+      "bytes": 16253,
+      "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+    }
+  ],
+  "license_path": "LICENSE",
+  "snapshot_scope": "partial_source_bundle",
+  "complete_checkout_included": false
+}

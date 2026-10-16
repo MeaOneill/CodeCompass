@@ -1,0 +1,15 @@
+{
+  "record_type": "independent_evaluation_keys",
+  "access": "dev_public",
+  "basis": "B manually specified behavioral outputs, verified against fixed original source; not A graph or planner",
+  "tasks": {
+    "task_003": {
+      "outputs": {"plain": ["a", "A", "b"], "casefold": ["a", "b"], "length": ["hi", "hey"]},
+      "human_checklist": ["seen stores keys, yield retains original item", "first occurrence order", "keys must be hashable"]
+    },
+    "task_004": {
+      "outputs": {"null": null, "missing": "MISSING", "string_index": 20, "empty_path": {"x": 1}},
+      "human_checklist": ["None can be present value", "TypeError triggers numeric index conversion", "missing path with no default raises PathAccessError"]
+    }
+  }
+}

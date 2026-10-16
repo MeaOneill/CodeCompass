@@ -1,0 +1,51 @@
+{
+  "record_type": "developer_fixture_demo_not_human_results",
+  "rows": [
+    {
+      "task_id": "task_001",
+      "fixture": "reference",
+      "status": "PENDING_HUMAN_REVIEW",
+      "automated_score": 7,
+      "human_score": null,
+      "success": null
+    },
+    {
+      "task_id": "task_001",
+      "fixture": "original",
+      "status": "FAILED_AUTOMATED",
+      "automated_score": 0,
+      "human_score": null,
+      "success": false
+    },
+    {
+      "task_id": "task_002",
+      "fixture": "reference",
+      "status": "PENDING_HUMAN_REVIEW",
+      "automated_score": 7,
+      "human_score": null,
+      "success": null
+    },
+    {
+      "task_id": "task_002",
+      "fixture": "original",
+      "status": "FAILED_AUTOMATED",
+      "automated_score": 4,
+      "human_score": null,
+      "success": false
+    },
+    {
+      "method": "B0",
+      "cost_policy": "shared",
+      "exit_code": 2,
+      "expected_exit_code": 2
+    },
+    {
+      "method": "B0",
+      "cost_policy": "source_lines_proposal",
+      "exit_code": 0,
+      "expected_exit_code": 0
+    }
+  ],
+  "whole_task_gate_passed": false,
+  "review": "NOT_HUMAN_REVIEWED"
+}

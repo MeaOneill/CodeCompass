@@ -1,0 +1,23 @@
+{
+  "record_type": "closeout_environment_observation",
+  "captured_at": "2026-10-16T17:29:18.691976+08:00",
+  "machine": "糯糯",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "jsonschema": "4.23.0",
+    "pytest": "9.1.1",
+    "Pillow": "12.3.0",
+    "pip": "25.0.1"
+  },
+  "new_packages_installed_today": false,
+  "hardware": "D01 observed environment referenced; not remeasured today",
+  "model_id": null,
+  "metrics": null,
+  "dependency_commit": "30069ce468a52b68a0d3bfb62bb49b1cce0f2104",
+  "note": "Measured at closeout; not backdated into original raw runs.",
+  "api_credentials_configured_by_this_task": false,
+  "existing_api_credentials_availability": null,
+  "model_api_availability": "NOT_TESTED"
+}

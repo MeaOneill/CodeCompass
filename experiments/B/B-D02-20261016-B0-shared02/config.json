@@ -1,0 +1,14 @@
+{
+  "version": "B0-fixed-source-reading-0.1",
+  "compiler": "Codex Agent B, engineering judgment; not yet human-authored/approved",
+  "compiled_before_ours_implementation": true,
+  "routes": {"task_001": ["u_iterable", "u_chunked_iter", "u_chunked"]},
+  "rationale": [
+    "先读is_iterable协议检查，再读生成器消费及填充，最后读列表包装器与count截断。",
+    "按固定源码阅读顺序编制，未读取或调用Ours输出、A图谱来生成路线。",
+    "只截断固定前缀，不做内容选择或能力门控；各方法未来必须使用相同成本/预算。",
+    "当前base_cost=null，禁止补零，因此真实任务仅输出无成本阅读顺序，预算基线运行记INPUT_INCOMPLETE。"
+  ],
+  "human_review": "NOT_REVIEWED",
+  "limitations": "Agent-authored fixed-route candidate, not claimed as a completed human B0 baseline. A must integrate shared costs."
+}

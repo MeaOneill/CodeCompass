@@ -1,0 +1,81 @@
+{
+  "task_id": "task_001",
+  "evidence_type": "development_validation",
+  "submission_hash": "001723f86c8e0b40beab188132903b2fd8f5db1b97214df8daf2caa39599576c",
+  "files": {
+    "candidate.py": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+    "explanation.md": "75812ffe0f384b610ff9593ac32e44efd81a64f6492fd11f03a64010214e2e5c",
+    "regression_tests.py": "bc8cd99610fc21773ab9ec2927ace38a0a0553ebdf460298565172bbb13a5b55",
+    "patch.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "commands_and_elapsed.json": "37e44804b15cc587e999b9111d4be85ec7591c77b03f78e572d1e9eaab55e356"
+  },
+  "status": "FAILED_AUTOMATED",
+  "criteria": {
+    "R1": {
+      "score": 0,
+      "max_score": 2,
+      "passed": false
+    },
+    "R2": {
+      "score": 0,
+      "max_score": 2,
+      "passed": false
+    },
+    "R3": {
+      "score": 0,
+      "max_score": 2,
+      "passed": false
+    },
+    "R4": {
+      "score": 0,
+      "max_score": 1,
+      "passed": false
+    },
+    "R5": {
+      "score": null,
+      "max_score": 2,
+      "passed": null,
+      "owner": "independent human blind to method"
+    },
+    "R6": {
+      "score": null,
+      "max_score": 1,
+      "passed": null,
+      "owner": "independent human checks regression tests and command log"
+    }
+  },
+  "total_score": null,
+  "automated_score": 0,
+  "success": false,
+  "human_review": "NOT_REVIEWED",
+  "elapsed_seconds": 0.2119568000016443,
+  "error": null,
+  "worker_exit_code": 0,
+  "worker_stdout": "",
+  "worker_stderr": "",
+  "worker_result": {
+    "task_id": "task_001",
+    "criteria": {
+      "R1": {
+        "passed": false,
+        "error": "Traceback (most recent call last):\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 104, in main\n    fn()\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 36, in bounds\n    equal(list(m.chunked_iter(range(4), 3, count=None)), [[0, 1, 2], [3]])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\CodeCompass\\CodeCompass\\tmp\\B-D02-20261016-evaluation01\\task_001-original\\candidate.py\", line 340, in chunked_iter\n    raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\nValueError: got unexpected keyword arguments: dict_keys(['count'])\n"
+      },
+      "R2": {
+        "passed": false,
+        "error": "Traceback (most recent call last):\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 104, in main\n    fn()\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 50, in laziness\n    equal(list(gen), [[0, 1, 2], [3, 4, 5]])\n          ^^^^^^^^^\n  File \"C:\\CodeCompass\\CodeCompass\\tmp\\B-D02-20261016-evaluation01\\task_001-original\\candidate.py\", line 340, in chunked_iter\n    raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\nValueError: got unexpected keyword arguments: dict_keys(['count'])\n"
+      },
+      "R3": {
+        "passed": false,
+        "error": "Traceback (most recent call last):\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 104, in main\n    fn()\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 55, in compatibility\n    equal(list(m.chunked_iter(range(4), 3, count=2)), [[0, 1, 2], [3]])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\CodeCompass\\CodeCompass\\tmp\\B-D02-20261016-evaluation01\\task_001-original\\candidate.py\", line 340, in chunked_iter\n    raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\nValueError: got unexpected keyword arguments: dict_keys(['count'])\n"
+      },
+      "R4": {
+        "passed": false,
+        "error": "Traceback (most recent call last):\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 104, in main\n    fn()\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 65, in validation\n    raises(TypeError, lambda: list(m.chunked_iter([], 3, count=value)))\n  File \"C:\\CodeCompass\\CodeCompass\\scripts\\B\\evaluation\\worker.py\", line 23, in raises\n    fn()\nValueError: got unexpected keyword arguments: dict_keys(['count'])\n"
+      }
+    },
+    "import_error": null
+  },
+  "is_fixture": true,
+  "fixture_kind": "original",
+  "learner_result": false
+}

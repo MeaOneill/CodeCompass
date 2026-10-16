@@ -35,5 +35,6 @@ secrets*.json
 /关于举办*.pdf
 # A downloaded third-party repository is an input, not our project history.
 /third_party/checkouts/
+/private_evaluation/
 # Do not ignore all experiment logs, CSV/JSON, figures or reports.
 # Review their size, identity data and redistribution rights before staging.

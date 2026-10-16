@@ -42,5 +42,17 @@
         "sha256": "eb9890d8dd5af9a40e00e64c9a44a0d656fbf6cc0893422c2221900adadc72ed"
       }
     ]
+  },
+  {
+    "task_id": "B-D02",
+    "figure_ids": [
+      "T01-inventory",
+      "B0-task001-route"
+    ],
+    "manifest": "report_materials/B/B-D02/figure_manifest.json",
+    "run_id": "B-D02-20261016-evaluation04",
+    "type": "inventory_and_source_reading_route",
+    "human_sample_size": 0,
+    "limits": "candidate specs, no approved/piloted/frozen task set; not learning effect"
   }
 ]

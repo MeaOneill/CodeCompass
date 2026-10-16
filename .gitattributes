@@ -22,8 +22,14 @@
 /docs/joint/B-D01-integration.md text eol=lf
 /report_materials/B/** text eol=lf
 /report_materials/B/*.png -text
+/report_materials/B/**/*.png -text
 /experiments/B/** -text whitespace=-blank-at-eol
 /pytest.ini text eol=lf
+/benchmarks/B/** text eol=lf
+/benchmarks/sources/boltons_B_D02/** -text whitespace=-blank-at-eol
+/configs/B/** text eol=lf
+/docs/requests/B-D02-evaluation-interface.md text eol=lf
+/docs/joint/B-D02-integration.md text eol=lf
 
 # A-D02 native image outputs retain binary bytes.
 /report_materials/A/**/*.png -text

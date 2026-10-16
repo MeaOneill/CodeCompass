@@ -1,0 +1,122 @@
+{
+  "run_id": "B-D02-20261016-evaluation02",
+  "task_id": "B-D02",
+  "actor": "Codex Agent B",
+  "owner": "成员B / 糯糯",
+  "machine": "糯糯",
+  "model_id": null,
+  "code_commit": null,
+  "dependency_commit": "30069ce468a52b68a0d3bfb62bb49b1cce0f2104",
+  "evidence_type": "development_validation",
+  "started_at": "2026-10-16T09:19:30.832838+00:00",
+  "finished_at": "2026-10-16T09:19:42.210805+00:00",
+  "elapsed_seconds": 11.377735199999734,
+  "private_key_sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+  "source_spans_verified": 22,
+  "fixture_checks": [
+    {
+      "task_id": "task_001",
+      "fixture": "reference",
+      "expected_status": "PENDING_HUMAN_REVIEW",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_001",
+      "fixture": "original",
+      "expected_status": "FAILED_AUTOMATED",
+      "actual_status": "FAILED_AUTOMATED",
+      "passed": true
+    },
+    {
+      "task_id": "task_002",
+      "fixture": "reference",
+      "expected_status": "PENDING_HUMAN_REVIEW",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_002",
+      "fixture": "original",
+      "expected_status": "FAILED_AUTOMATED",
+      "actual_status": "FAILED_AUTOMATED",
+      "passed": true
+    },
+    {
+      "task_id": "task_003",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_004",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_005",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_006",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_007",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_008",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_009",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_010",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_011",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    },
+    {
+      "task_id": "task_012",
+      "fixture": "response_key",
+      "actual_status": "PENDING_HUMAN_REVIEW",
+      "passed": true
+    }
+  ],
+  "pytest_command": [
+    "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/A",
+    "tests/B",
+    "-q",
+    "--basetemp",
+    "C:\\CodeCompass\\CodeCompass\\tmp\\pytest-B-D02-20261016-evaluation02"
+  ],
+  "pytest_exit_code": 0,
+  "metrics": null,
+  "api_cost": null,
+  "formal_experiments": 0,
+  "human_review": "NOT_REVIEWED",
+  "exit_code": 0
+}

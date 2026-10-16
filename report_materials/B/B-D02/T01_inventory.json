@@ -1,0 +1,28 @@
+{
+  "record_type": "inventory_not_effect_results",
+  "rows": [
+    {
+      "split": "dev",
+      "planned_target": 8,
+      "candidate_specs": 4,
+      "evaluator_implemented": 4,
+      "human_approved": 0,
+      "piloted": 0,
+      "formally_frozen": 0,
+      "module": "iterutils"
+    },
+    {
+      "split": "test_candidate",
+      "planned_target": 16,
+      "candidate_specs": 8,
+      "evaluator_implemented": 8,
+      "human_approved": 0,
+      "piloted": 0,
+      "formally_frozen": 0,
+      "module": "strutils"
+    }
+  ],
+  "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source": "benchmarks/B/task_catalog.json",
+  "limitation": "Candidate specifications do not count as human-approved tasks; no participant outcomes."
+}

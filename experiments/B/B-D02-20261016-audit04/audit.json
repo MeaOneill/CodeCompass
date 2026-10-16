@@ -1,0 +1,134 @@
+{
+  "task_id": "B-D02",
+  "evidence_type": "development_validation",
+  "audit_type": "same_Agent_strict_self_audit_not_independent_human_review",
+  "regression_tests_passed": 58,
+  "checks": [
+    {
+      "check": "candidate count 4 dev / 8 module-held-out",
+      "passed": true
+    },
+    {
+      "check": "module split disjoint",
+      "passed": true
+    },
+    {
+      "check": "22 real source spans verified",
+      "passed": true
+    },
+    {
+      "check": "BSD license preserved exactly",
+      "passed": true
+    },
+    {
+      "check": "A-owned protected inputs unchanged",
+      "passed": true
+    },
+    {
+      "check": "private key excluded from Git",
+      "passed": true
+    },
+    {
+      "check": "app object reader refuses private path before reading",
+      "passed": true
+    },
+    {
+      "check": "app/src imports no evaluator",
+      "passed": true
+    },
+    {
+      "check": "cumulative regression suite passes",
+      "passed": true
+    },
+    {
+      "check": "14 dev fixture expectations pass, no human success invented",
+      "passed": true
+    },
+    {
+      "check": "held-out fixture used registered private key hash",
+      "passed": true
+    },
+    {
+      "check": "B-D02-20261016-B0-shared02 preserves no learning-success claim",
+      "passed": true
+    },
+    {
+      "check": "B-D02-20261016-B0-lines02 preserves no learning-success claim",
+      "passed": true
+    },
+    {
+      "check": "shared null-cost input fails explicitly",
+      "passed": true
+    },
+    {
+      "check": "explicit measured line proxy returns fixed route",
+      "passed": true
+    },
+    {
+      "check": "figure hash benchmarks/B/task_catalog.json",
+      "passed": true
+    },
+    {
+      "check": "figure hash configs/B/B0_fixed.json",
+      "passed": true
+    },
+    {
+      "check": "figure hash scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/T01_inventory.json",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/T01_inventory.csv",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/B0_task001_route.png",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/B0_task001_route.svg",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/T01_inventory.png",
+      "passed": true
+    },
+    {
+      "check": "figure hash report_materials/B/B-D02/T01_inventory.svg",
+      "passed": true
+    },
+    {
+      "check": "T01_inventory PNG 300dpi",
+      "passed": true
+    },
+    {
+      "check": "T01_inventory native vector text, no raster embed",
+      "passed": true
+    },
+    {
+      "check": "B0_task001_route PNG 300dpi",
+      "passed": true
+    },
+    {
+      "check": "B0_task001_route native vector text, no raster embed",
+      "passed": true
+    }
+  ],
+  "technical_checks_passed": true,
+  "whole_task_gate_passed": false,
+  "next_day_allowed": false,
+  "blockers": [
+    "12 candidate specifications are not a human-approved/piloted 4/8 task set; difficulty, concepts and actual timing remain unverified.",
+    "B0 fixed-route candidate still lacks an independently human-confirmed route.",
+    "New task origins need A contract integration; evaluation specs are not yet planner CodeTask objects.",
+    "Shared costs remain undefined; source_lines_proposal is not an approved common formal-comparison cost."
+  ],
+  "human_reviewed_tasks": 0,
+  "pilot_count": 0,
+  "frozen_tasks": 0,
+  "formal_experiments": 0,
+  "exit_code": 2
+}

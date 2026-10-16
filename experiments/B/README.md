@@ -13,3 +13,13 @@
 配置追溯：check01/02使用工作树pytest.ini，第一次默认临时目录，第二次实际命令显式传--basetemp。原input_manifest未单列根pytest.ini，其配置差异由保留命令/失败日志及开发日志追溯；恢复演练以完整实际Git检查点（含pytest.ini与hash锁）为权威。未来捕获应将根配置也纳入输入清单，此限制不隐去。
 
 收尾实际复验：B-D01-20261016-local-replay02=exit0（检查点c0e673b，8命令、18测试）。首次local-replay=exit1保留；closeout派生4条真实事件经校验，raw_manifest保留原始结果hash，不将B环境或接收演练称正式实验。
+
+## B-D02运行登记
+
+preflight：指定A前置31测试/样例/947span通过。response-keycheck01：10份行为key对固定原函数核对通过，不作学习评分。evaluation01/02/03：候选22span、14开发夹具，累计测试分别53/54/57通过，全部development_validation。B0-shared01/02：缺成本INPUT_INCOMPLETE/exit2；B0-lines01/02：显式行数成本提案ROUTE_PREFIX/exit0，formal_comparison_eligible=false。01为探索输出，02另存输入/配置；不覆写旧记录。
+
+verification捕获CLI/pip/A图/两种B0/首版严格审计，预期exit2的缺依赖和整体验收未过不当成功实验。audit01/02/03技术检查通过，whole_task_gate_passed=false且next_day_allowed=false；57不是任务或人数。public-demo01可由用户复跑，无需私有key。评分器成功夹具仍PENDING_HUMAN_REVIEW，真实人类评分/预演/正式实验均未发生。
+
+私有输入key与含答案夹具不在Git；公开结果保留其hash和门禁，不能宣称另机已持有。新clone公开恢复与closeout的原始hash/事件记录收尾追加。每次用新run_id，不删除失败或覆盖原始结果。
+
+最终复检evaluation04=58累计测试、14开发夹具、22span；audit04工程通过/整体未过(exit2)。添加候选导入异常、完善响应人类回执和公开演示状态门禁后运行，旧记录保留。环境快照另存B-D02-20261016-environment，标记收尾时检测而非伪填旧运行时点。
