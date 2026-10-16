@@ -1,0 +1,26 @@
+[
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/events.jsonl",
+    "sha256": "0f47c384343a0d5847dfec6a89c950393309d9591a9ee307c2fa287d0d7cffa8"
+  },
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/input_manifest.json",
+    "sha256": "d406f5d355e766477f415b498e78116e9b0bf00eccfa5e10582a1310a8fdf554"
+  },
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/registration.json",
+    "sha256": "cd1a543026ac1e8a1600d82502322d7dd3b47e5d92203f383febb737761fd253"
+  },
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/validation.json",
+    "sha256": "eb8906358bb563abc05cd0c7fcbd1c58d3503860615f1a2222c58bca7b43b3bd"
+  },
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/validation_final.json",
+    "sha256": "52efc730c5e7637f9a1a3b7b2f78270eb5842ab32953f59ae47f8c8c522c0cae"
+  },
+  {
+    "path": "experiments/A/A-D01-20261016-foundation/validation_retry1.json",
+    "sha256": "3402e6ad911dd17b44962a14a5c0232b09c9762c6f0c48c1d8304aeff2482c42"
+  }
+]

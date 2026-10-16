@@ -1,0 +1,12 @@
+flowchart LR
+  S[Third-party fixed source / available] --> G[Source graph / planned]
+  G --> T[Task and teaching candidates / available]
+  E[Independent evidence / schema only] --> L[Learner model / planned]
+  T --> P[Team content and order planner / planned]
+  L --> P
+  C[Proxy costs / unknown] --> P
+  P --> R[Traceable route / planned]
+  R --> V[B independent evaluator / planned]
+  V --> E
+  R --> I[B issue preparation / planned]
+  AI[AI assistance / authoring only] -. human review required .-> T

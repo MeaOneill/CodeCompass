@@ -1,0 +1,110 @@
+{
+  "task_id": "task_001",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "selection_rule": "任务直接引用函数，非完整依赖图",
+  "nodes": [
+    {
+      "id": "chunked",
+      "kind": "static_source",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 286,
+        "end_line": 306,
+        "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+      }
+    },
+    {
+      "id": "chunked_iter",
+      "kind": "static_source",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 316,
+        "end_line": 358,
+        "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+      }
+    },
+    {
+      "id": "is_iterable",
+      "kind": "static_source",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      }
+    },
+    {
+      "id": "_validate_positive_int",
+      "kind": "static_source",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 309,
+        "end_line": 313,
+        "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+      }
+    }
+  ],
+  "static_edges": [
+    {
+      "from": "chunked",
+      "to": "chunked_iter",
+      "relation": "direct_name_call",
+      "line": 302
+    },
+    {
+      "from": "chunked_iter",
+      "to": "is_iterable",
+      "relation": "direct_name_call",
+      "line": 330
+    },
+    {
+      "from": "chunked_iter",
+      "to": "_validate_positive_int",
+      "relation": "direct_name_call",
+      "line": 332
+    }
+  ],
+  "teaching_edges": [
+    {
+      "from": "u_iterable",
+      "to": "u_chunked_iter",
+      "unit_id": "u_iterable",
+      "relation_type": "teaching_prerequisite",
+      "hard": false,
+      "provenance": {
+        "kind": "teaching_judgment",
+        "evidence": [
+          "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      }
+    },
+    {
+      "from": "u_chunked_iter",
+      "to": "u_chunked",
+      "unit_id": "u_chunked_iter",
+      "relation_type": "teaching_prerequisite",
+      "hard": false,
+      "provenance": {
+        "kind": "teaching_judgment",
+        "evidence": [
+          "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      }
+    }
+  ],
+  "review_status": "pending",
+  "model_edges": []
+}

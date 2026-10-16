@@ -25,3 +25,7 @@ V6.2更新：Git逐步教程与32张角色任务卡已补齐；最新Word见Word
 最新验证：用户已确认提交身份并完成GitHub授权，首次上传成功；本地HEAD与远程main均为f3c32affbdffcc8a0f5e85d29fd06b13c6f34dd5，工作区当时干净。上述“待授权/尚无commit”属于首次上传前的历史记录。本条日志随后单独提交同步，不改变软件仍未开发的事实。
 
 双机最新验证：成员B已接受邀请，远程task/setup-b-sync为4fd1221f3ba29a5b78051ed7f90f92c636e0733a。本机已fetch核对：仅新增docs/environment_B.md，署名及基线一致。双机Git接力通过，B分支本轮未合并。此前“队友邀请/第二台待接入”均为历史状态。GitHub网络通过本机既有系统代理恢复，仓库级代理配置已记录；之前待推送日志随本轮补推。
+
+## A-D01实际研发更新 2026-10-16
+
+A-D01 READY_FOR_REVIEW；docs/A/状态.md与docs/A/handoffs/A-D01.md为本轮入口。七对象契约、1道dev任务、固定源码和自检已交付；独立复核/时长预演/算法实验未完成。正式实验仍0。分支codex/A-D01-contracts；B-D01待接管，准确同步SHA见本轮通知。

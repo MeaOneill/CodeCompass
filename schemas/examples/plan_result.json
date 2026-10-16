@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "is_fixture": true,
+  "object_type": "PlanResult",
+  "plan_id": "fixture_plan",
+  "request_id": "fixture_request",
+  "status": "FEASIBLE",
+  "ordered_units": [
+    "u_iterable"
+  ],
+  "coverage": {
+    "required_concept_ids": [
+      "python.iterator_protocol"
+    ],
+    "covered_concept_ids": [
+      "python.iterator_protocol"
+    ],
+    "ratio": 1
+  },
+  "unmet_constraints": [],
+  "estimated_cost": 1,
+  "cost_unit": "proxy_cost",
+  "reason_trace": [
+    {
+      "step": 1,
+      "unit_id": "u_iterable",
+      "reason": "手写序列化夹具；成本为夹具值，没有运行规划器",
+      "evidence_ids": []
+    }
+  ],
+  "proof_path": null
+}

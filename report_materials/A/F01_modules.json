@@ -1,0 +1,16 @@
+{
+  "task_id": "A-D01",
+  "kind": "structure_draft",
+  "main_algorithm": "能力/教学先修约束下联合选择内容和顺序",
+  "support_modules": [
+    "源码认知图",
+    "学习成本",
+    "动态能力与记忆",
+    "Issue贡献推荐"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "run_id": null,
+  "implementation_status": "not_implemented",
+  "ai_boundary": "AI辅助起草与自检，核心实现/效果待团队审核验证",
+  "third_party_boundary": "boltons unmodified BSD-3-Clause bundle"
+}

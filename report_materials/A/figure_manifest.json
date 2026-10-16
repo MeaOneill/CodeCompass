@@ -1,0 +1,41 @@
+{
+  "owner": "A",
+  "figures": [
+    {
+      "figure_id": "F01",
+      "kind": "structure_material",
+      "status": "draft_pending_B_review",
+      "sources": [
+        "report_materials/A/F01.mmd",
+        "report_materials/A/F01_modules.json"
+      ],
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "run_id": null,
+      "plot_entrypoint": null,
+      "render_command": null,
+      "exports": [],
+      "caption": "主算法/四支撑/AI与第三方边界，planned均未实现",
+      "unit": null,
+      "sample_size": null,
+      "limitations": "仅结构素材，无算法效果；A-D02补渲染入口和PNG/SVG。"
+    },
+    {
+      "figure_id": "F02",
+      "kind": "structure_material",
+      "status": "draft_pending_B_review",
+      "sources": [
+        "report_materials/A/F02_sources.json",
+        "benchmarks/dev/task_001_units.json"
+      ],
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "run_id": null,
+      "plot_entrypoint": null,
+      "render_command": null,
+      "exports": [],
+      "caption": "真实源码定位与待审核教学边分别存储",
+      "unit": null,
+      "sample_size": null,
+      "limitations": "仅结构素材，无算法效果；A-D02补渲染入口和PNG/SVG。"
+    }
+  ]
+}

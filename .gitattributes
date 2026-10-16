@@ -1,0 +1,12 @@
+/schemas/** text eol=lf
+/benchmarks/** text eol=lf
+/benchmarks/sources/boltons/LICENSE -text
+/benchmarks/sources/boltons/boltons/** -text
+/benchmarks/sources/boltons/tests/** -text
+/benchmarks/sources/boltons/pyproject.toml -text
+/experiments/A/** text eol=lf
+/report_materials/A/** text eol=lf
+/scripts/A/** text eol=lf
+/src/codecompass/graph/** text eol=lf
+/src/codecompass/learner/** text eol=lf
+/src/codecompass/planner/** text eol=lf

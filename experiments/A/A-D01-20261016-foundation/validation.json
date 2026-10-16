@@ -1,0 +1,18 @@
+{
+  "run_id": "A-D01-20261016-foundation",
+  "task_id": "A-D01",
+  "evidence_type": "development_validation",
+  "started_at": "2026-10-16T05:49:56.421878+00:00",
+  "finished_at": "2026-10-16T05:49:56.544275+00:00",
+  "machine": "LAPTOP-LUQPS3EV",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "scripts/A/validate_d01.py",
+    "--output",
+    "experiments/A/A-D01-20261016-foundation/validation.json"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.2253573999987566,
+  "error": "AssertionError('invalid timestamp')",
+  "details": {}
+}

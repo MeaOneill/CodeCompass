@@ -1,0 +1,21 @@
+{
+  "run_id": "A-D01-20261016-foundation",
+  "task_id": "A-D01",
+  "evidence_type": "development_validation",
+  "split": "dev",
+  "code_commit": null,
+  "base_commit": "fd7b3e695b21ae5cb23845a808d58f07bdf0039f",
+  "code_snapshot_manifest": "experiments/A/A-D01-20261016-foundation/input_manifest.json",
+  "data_hash": "d406f5d355e766477f415b498e78116e9b0bf00eccfa5e10582a1310a8fdf554",
+  "config_hash": "6476bc3aa2e6999870dda1e821fc77d72bdf5d14e3fb78c4f65f0a82a4a781f2",
+  "prompt_hash": null,
+  "seed": null,
+  "model_id": null,
+  "method": null,
+  "cost": null,
+  "metrics": null,
+  "is_simulation": false,
+  "human_participants": null,
+  "formal_experiments": 0,
+  "note": "代码运行当时未提交，code_commit=null；源码/脚本内容hash可恢复。schema夹具不属于模拟学习实验。失败和修复均保留。"
+}

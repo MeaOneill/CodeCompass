@@ -1,0 +1,90 @@
+[
+  {
+    "path": "benchmarks/dev/task_001.json",
+    "sha256": "3725a1d28dd59b4211c1868962c8aadb05efd4fbdfe120f7d7c8913081c737fd"
+  },
+  {
+    "path": "benchmarks/dev/task_001_units.json",
+    "sha256": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660"
+  },
+  {
+    "path": "benchmarks/sources/boltons/boltons/iterutils.py",
+    "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510"
+  },
+  {
+    "path": "benchmarks/sources/boltons/LICENSE",
+    "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3"
+  },
+  {
+    "path": "benchmarks/sources/boltons/pyproject.toml",
+    "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04"
+  },
+  {
+    "path": "benchmarks/sources/boltons/snapshot.json",
+    "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+  },
+  {
+    "path": "benchmarks/sources/boltons/tests/test_iterutils.py",
+    "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263"
+  },
+  {
+    "path": "benchmarks/sources/candidates.json",
+    "sha256": "b2d7661a226156d445c82641c404f16d369c786c8f9a9eff68fbcd533aff0433"
+  },
+  {
+    "path": "report_materials/A/F01.mmd",
+    "sha256": "33bfe456806baeafb710976cddf1604e3d41f9036816cbb2bcaf1da66c9a818b"
+  },
+  {
+    "path": "report_materials/A/F01_modules.json",
+    "sha256": "3f04f9ea5e3d009b31f628891915b51c0d72368a9f192e88361cc7a5b8a3e92d"
+  },
+  {
+    "path": "report_materials/A/F02_sources.json",
+    "sha256": "86c75089a8d5fe7b46680ac37970e33b5347495cb2f30ab63a304dd064c37958"
+  },
+  {
+    "path": "report_materials/A/figure_manifest.json",
+    "sha256": "d043e85b314ee0bd6da3bbab600996fb6b7b736c0fbbf42e70cbff4f8290909a"
+  },
+  {
+    "path": "schemas/contracts.schema.json",
+    "sha256": "6476bc3aa2e6999870dda1e821fc77d72bdf5d14e3fb78c4f65f0a82a4a781f2"
+  },
+  {
+    "path": "schemas/examples/code_task.json",
+    "sha256": "3725a1d28dd59b4211c1868962c8aadb05efd4fbdfe120f7d7c8913081c737fd"
+  },
+  {
+    "path": "schemas/examples/experiment_event.json",
+    "sha256": "5f373ba320597015963f93732235b6fd55c9e3c7eb15050554c5ffefb4ec38d9"
+  },
+  {
+    "path": "schemas/examples/learner_evidence.json",
+    "sha256": "e3a34cde32e44425c47fb172e31f9bd176c65f3e206a049e1ff7f4edd7e4c3a1"
+  },
+  {
+    "path": "schemas/examples/learning_unit.json",
+    "sha256": "97faf3eb6fdf31716ead9e8f7bc1c45f6125c3abade6b2fb25d4733254e174a1"
+  },
+  {
+    "path": "schemas/examples/plan_result.json",
+    "sha256": "2c0a2a2574adaac9a78634321b8d50bcb04e47cce6a7a07951ea276f669f5497"
+  },
+  {
+    "path": "schemas/examples/planning_request.json",
+    "sha256": "fa27227e5006805d2a8e36a48c6eb6162fc93214213c14465817bd5a5ab40088"
+  },
+  {
+    "path": "schemas/examples/repo_snapshot.json",
+    "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+  },
+  {
+    "path": "scripts/A/requirements-d01-validation.txt",
+    "sha256": "8c0ce83d6c441ac2cec6c78fe537c2b3c96f5cfc1627c0353979d58710299b97"
+  },
+  {
+    "path": "scripts/A/validate_d01.py",
+    "sha256": "d2a8ce9f1b489628708fe031be31048d0ed6a739bd208e0e24e3f322dcd48781"
+  }
+]
