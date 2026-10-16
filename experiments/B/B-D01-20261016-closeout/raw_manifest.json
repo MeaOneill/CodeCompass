@@ -378,10 +378,5 @@
     "path": "experiments/B/B-D01-20261016-local-replay02/venv.stdout.txt",
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "bytes": 0
-  },
-  {
-    "path": "experiments/B/README.md",
-    "sha256": "858bad27cb2194148fd1f59815eba6aacfd8eff9aba28494573979461e368870",
-    "bytes": 2156
   }
 ]

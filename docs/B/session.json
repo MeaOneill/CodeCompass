@@ -8,11 +8,13 @@
   "base_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
   "contracts_version": "1.0.0",
   "status": "READY_FOR_REVIEW",
-  "last_heartbeat": "2026-10-16T14:25:40.796650+08:00",
+  "last_heartbeat": "2026-10-16T14:26:39.797459+08:00",
   "validation": "experiments/B/B-D01-20261016-check02/registration.json",
   "independent_human_review": "NOT_REVIEWED",
   "formal_experiments": 0,
-  "git_sync": "PENDING_FINAL_PUSH",
+  "git_sync": "CHECKPOINT_REMOTE_VERIFIED",
   "business_checkpoint": "c0e673bff0473e487b49b9a13ae3b353399c1110",
-  "local_replay": "experiments/B/B-D01-20261016-local-replay02/registration.json"
+  "local_replay": "experiments/B/B-D01-20261016-local-replay02/registration.json",
+  "verified_checkpoint_commit": "04776f6188bdd13b057012eb5dfa29a8c62a4d6b",
+  "remote_checkpoint_commit": "04776f6188bdd13b057012eb5dfa29a8c62a4d6b"
 }
