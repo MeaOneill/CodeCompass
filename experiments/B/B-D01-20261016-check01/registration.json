@@ -1,0 +1,113 @@
+{
+  "run_id": "B-D01-20261016-check01",
+  "task_id": "B-D01",
+  "actor": "Codex Agent B",
+  "owner": "member B / local Git identity",
+  "machine": "糯糯",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+  "code_commit": null,
+  "dependency_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
+  "worktree_content_manifest": "input_manifest.json",
+  "data_hash": "3e155977867c35eb47d58908e6d3420c5c4551ffa073f9d062071da6b9570001",
+  "evidence_type": "development_validation",
+  "formal_experiment": false,
+  "model_id": null,
+  "seed": null,
+  "metrics": null,
+  "cost": null,
+  "checks": [
+    {
+      "name": "help",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "--help"
+      ],
+      "started_at": "2026-10-16T06:11:59.341116+00:00",
+      "finished_at": "2026-10-16T06:12:00.969942+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 1.6264756999999008,
+      "stdout": "help.stdout.txt",
+      "stderr": "help.stderr.txt"
+    },
+    {
+      "name": "imports",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-c",
+        "import codecompass,codecompass.retrieval,codecompass.issues,app; print(\"imports OK\")"
+      ],
+      "started_at": "2026-10-16T06:12:00.969942+00:00",
+      "finished_at": "2026-10-16T06:12:01.133075+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 0.16080520000014076,
+      "stdout": "imports.stdout.txt",
+      "stderr": "imports.stderr.txt"
+    },
+    {
+      "name": "sample",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "started_at": "2026-10-16T06:12:01.133075+00:00",
+      "finished_at": "2026-10-16T06:12:02.306840+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 1.169496600000457,
+      "stdout": "sample.stdout.txt",
+      "stderr": "sample.stderr.txt"
+    },
+    {
+      "name": "a_contract_review",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/A/validate_d01.py",
+        "--output",
+        "experiments/B/B-D01-20261016-check01/a_contract_review.json"
+      ],
+      "started_at": "2026-10-16T06:12:02.306840+00:00",
+      "finished_at": "2026-10-16T06:12:04.102024+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 1.7912805000005392,
+      "stdout": "a_contract_review.stdout.txt",
+      "stderr": "a_contract_review.stderr.txt"
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/B",
+        "-q"
+      ],
+      "started_at": "2026-10-16T06:12:04.102024+00:00",
+      "finished_at": "2026-10-16T06:12:09.815769+00:00",
+      "exit_code": 1,
+      "elapsed_seconds": 5.709297199999128,
+      "stdout": "pytest.stdout.txt",
+      "stderr": "pytest.stderr.txt"
+    },
+    {
+      "name": "pip_check",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "started_at": "2026-10-16T06:12:09.815769+00:00",
+      "finished_at": "2026-10-16T06:12:11.823743+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 2.003290399999969,
+      "stdout": "pip_check.stdout.txt",
+      "stderr": "pip_check.stderr.txt"
+    }
+  ],
+  "exit_code": 1,
+  "independent_human_review": "NOT_REVIEWED"
+}

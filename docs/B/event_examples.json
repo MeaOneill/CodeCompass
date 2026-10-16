@@ -1,0 +1,162 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "is_fixture": true,
+    "object_type": "ExperimentEvent",
+    "event_id": "fixture_B_started",
+    "run_id": "fixture_B_session_failure",
+    "actor": {
+      "role": "B",
+      "owner": "fixture_owner",
+      "executor": "fixture_executor",
+      "machine": "fixture_machine",
+      "model_id": null
+    },
+    "code_commit": null,
+    "data_hash": null,
+    "config_hash": null,
+    "timestamp": "2026-10-16T00:00:00+08:00",
+    "event_type": "started",
+    "payload": {
+      "task_id": "fixture_task",
+      "evidence_type": "synthetic",
+      "command": [
+        "fixture_command"
+      ],
+      "exit_code": null,
+      "elapsed_seconds": null,
+      "raw_result_path": null,
+      "error": null,
+      "resume_from": null,
+      "metrics": null
+    }
+  },
+  {
+    "schema_version": "1.0.0",
+    "is_fixture": true,
+    "object_type": "ExperimentEvent",
+    "event_id": "fixture_B_paused",
+    "run_id": "fixture_B_session_failure",
+    "actor": {
+      "role": "B",
+      "owner": "fixture_owner",
+      "executor": "fixture_executor",
+      "machine": "fixture_machine",
+      "model_id": null
+    },
+    "code_commit": null,
+    "data_hash": null,
+    "config_hash": null,
+    "timestamp": "2026-10-16T00:01:00+08:00",
+    "event_type": "paused",
+    "payload": {
+      "task_id": "fixture_task",
+      "evidence_type": "synthetic",
+      "command": [
+        "fixture_command"
+      ],
+      "exit_code": null,
+      "elapsed_seconds": null,
+      "raw_result_path": null,
+      "error": null,
+      "resume_from": "fixture_checkpoint",
+      "metrics": null
+    }
+  },
+  {
+    "schema_version": "1.0.0",
+    "is_fixture": true,
+    "object_type": "ExperimentEvent",
+    "event_id": "fixture_B_resumed",
+    "run_id": "fixture_B_session_failure",
+    "actor": {
+      "role": "B",
+      "owner": "fixture_owner",
+      "executor": "fixture_executor",
+      "machine": "fixture_machine",
+      "model_id": null
+    },
+    "code_commit": null,
+    "data_hash": null,
+    "config_hash": null,
+    "timestamp": "2026-10-16T00:02:00+08:00",
+    "event_type": "resumed",
+    "payload": {
+      "task_id": "fixture_task",
+      "evidence_type": "synthetic",
+      "command": [
+        "fixture_command"
+      ],
+      "exit_code": null,
+      "elapsed_seconds": null,
+      "raw_result_path": null,
+      "error": null,
+      "resume_from": "fixture_checkpoint",
+      "metrics": null
+    }
+  },
+  {
+    "schema_version": "1.0.0",
+    "is_fixture": true,
+    "object_type": "ExperimentEvent",
+    "event_id": "fixture_B_failed",
+    "run_id": "fixture_B_session_failure",
+    "actor": {
+      "role": "B",
+      "owner": "fixture_owner",
+      "executor": "fixture_executor",
+      "machine": "fixture_machine",
+      "model_id": null
+    },
+    "code_commit": null,
+    "data_hash": null,
+    "config_hash": null,
+    "timestamp": "2026-10-16T00:03:00+08:00",
+    "event_type": "failed",
+    "payload": {
+      "task_id": "fixture_task",
+      "evidence_type": "synthetic",
+      "command": [
+        "fixture_command"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": null,
+      "raw_result_path": null,
+      "error": "fixture_error",
+      "resume_from": null,
+      "metrics": null
+    }
+  },
+  {
+    "schema_version": "1.0.0",
+    "is_fixture": true,
+    "object_type": "ExperimentEvent",
+    "event_id": "fixture_B_succeeded",
+    "run_id": "fixture_B_separate_success",
+    "actor": {
+      "role": "B",
+      "owner": "fixture_owner",
+      "executor": "fixture_executor",
+      "machine": "fixture_machine",
+      "model_id": null
+    },
+    "code_commit": null,
+    "data_hash": null,
+    "config_hash": null,
+    "timestamp": "2026-10-16T00:04:00+08:00",
+    "event_type": "succeeded",
+    "payload": {
+      "task_id": "fixture_task",
+      "evidence_type": "synthetic",
+      "command": [
+        "fixture_command"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": null,
+      "raw_result_path": null,
+      "error": null,
+      "resume_from": null,
+      "metrics": null
+    }
+  }
+]

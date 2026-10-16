@@ -10,3 +10,17 @@
 /src/codecompass/graph/** text eol=lf
 /src/codecompass/learner/** text eol=lf
 /src/codecompass/planner/** text eol=lf
+/app/** text eol=lf
+/src/codecompass/__init__.py text eol=lf
+/src/codecompass/retrieval/** text eol=lf
+/src/codecompass/issues/** text eol=lf
+/tests/B/** text eol=lf
+/scripts/B/** text eol=lf
+/docs/B/** text eol=lf
+/docs/environment_B.md text eol=lf
+/docs/requests/B-D01-interface-review.md text eol=lf
+/docs/joint/B-D01-integration.md text eol=lf
+/report_materials/B/** text eol=lf
+/report_materials/B/*.png -text
+/experiments/B/** -text whitespace=-blank-at-eol
+/pytest.ini text eol=lf

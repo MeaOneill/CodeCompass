@@ -1,0 +1,16 @@
+{
+  "task_id": "B-D01",
+  "owner": "成员B / Git署名糯糯",
+  "executor": "Codex Agent B",
+  "model_id": null,
+  "machine": "糯糯 (PowerShell COMPUTERNAME)",
+  "branch": "task/B-D01-foundation",
+  "base_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
+  "contracts_version": "1.0.0",
+  "status": "IN_PROGRESS",
+  "last_heartbeat": "2026-10-16T14:19:11.146779+08:00",
+  "validation": "experiments/B/B-D01-20261016-check02/registration.json",
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_experiments": 0,
+  "git_sync": "NOT_PUSHED_THIS_ROUND"
+}

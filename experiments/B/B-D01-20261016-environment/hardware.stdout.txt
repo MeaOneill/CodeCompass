@@ -1,0 +1,23 @@
+{
+    "cpu":  {
+                "Name":  "13th Gen Intel(R) Core(TM) i7-1360P",
+                "NumberOfCores":  12,
+                "NumberOfLogicalProcessors":  16
+            },
+    "os":  {
+               "Caption":  "Microsoft Windows 11 家庭版 中文版",
+               "Version":  "10.0.26200",
+               "OSArchitecture":  "64-bit",
+               "TotalVisibleMemorySize":  16454352
+           },
+    "display":  [
+                    {
+                        "Name":  "GameViewer Virtual Display Adapter",
+                        "AdapterRAM":  null
+                    },
+                    {
+                        "Name":  "Intel(R) Iris(R) Xe Graphics",
+                        "AdapterRAM":  2147479552
+                    }
+                ]
+}

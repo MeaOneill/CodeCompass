@@ -1,0 +1,4 @@
+fd7b3e695b21ae5cb23845a808d58f07bdf0039f	HEAD
+54613cf136d788bde7c46454d3d7b9e29f295a9b	refs/heads/codex/A-D01-contracts
+fd7b3e695b21ae5cb23845a808d58f07bdf0039f	refs/heads/main
+4fd1221f3ba29a5b78051ed7f90f92c636e0733a	refs/heads/task/setup-b-sync

@@ -1,0 +1,71 @@
+{
+  "captured_at": "2026-10-16T06:15:43.440885+00:00",
+  "machine": "糯糯",
+  "owner": "member B",
+  "executor": "Codex Agent B",
+  "model_id": null,
+  "python_executable": "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+  "python_version": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine_architecture": "AMD64",
+  "logical_cpu": 16,
+  "disk_usage_bytes": {
+    "total": 1000315285504,
+    "used": 615348056064,
+    "free": 384967229440
+  },
+  "packages": {
+    "jsonschema": "4.23.0",
+    "pytest": "9.1.1",
+    "Pillow": "12.3.0",
+    "pip": "25.0.1"
+  },
+  "probes": {
+    "git_version": {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0
+    },
+    "origin_refs": {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin"
+      ],
+      "exit_code": 0
+    },
+    "pip_check": {
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    "pip_freeze": {
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0
+    },
+    "hardware": {
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-Command",
+        "@{os=(Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,OSArchitecture,TotalVisibleMemorySize);cpu=(Get-CimInstance Win32_Processor | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors);display=(Get-CimInstance Win32_VideoController | Select-Object Name,AdapterRAM)} | ConvertTo-Json -Depth 5; if(-not $?){exit 1}"
+      ],
+      "exit_code": 0
+    }
+  },
+  "cuda_runtime": null,
+  "gpu_compute_test": "NOT_RUN",
+  "model_api": "NOT_CONFIGURED_NOT_TESTED",
+  "other_machine_hardware": null
+}

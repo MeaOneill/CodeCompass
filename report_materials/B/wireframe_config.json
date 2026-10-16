@@ -1,0 +1,95 @@
+{
+  "figure_id": "F01-B-D01-wireframe",
+  "task_id": "B-D01",
+  "evidence_type": "design_not_measurement",
+  "run_id": null,
+  "dependency_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
+  "schema_version": "1.0.0",
+  "width": 1800,
+  "height": 1210,
+  "dpi": 300,
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "cards": [
+    [
+      "仓库导入",
+      [
+        "boltons · BSD-3-Clause",
+        "固定 commit + 采集时间 + 文件 hash",
+        "局部源码包；校验失败停止"
+      ]
+    ],
+    [
+      "任务选择",
+      [
+        "task_001 · count 惰性扩展",
+        "25 分钟为设计目标，未预演",
+        "独立评分与应用输入隔离"
+      ]
+    ],
+    [
+      "短测与证据",
+      [
+        "题目 ID / 匿名用户 / 独立性",
+        "未实现；不显示掌握率",
+        "重复作答不能重复累计证据"
+      ]
+    ],
+    [
+      "路径与约束",
+      [
+        "调用 A planner；当前未实现",
+        "成本 null 不得补零",
+        "理由 / 未覆盖 / 失败状态"
+      ]
+    ],
+    [
+      "源码依据",
+      [
+        "iterutils.py:286–306 / 316–358",
+        "固定版本字节与闭区间 hash",
+        "只读校验已实现；不执行源码"
+      ]
+    ],
+    [
+      "反馈与恢复",
+      [
+        "独立测验 → learner → 重规划",
+        "旧路径 / 新路径 / 触发原因",
+        "暂停检查点；当前为格式设计"
+      ]
+    ],
+    [
+      "长期记忆",
+      [
+        "计划 SQLite；用户库不入 Git",
+        "重启核对 run_id / 输入 hash",
+        "未实现持久化与恢复服务"
+      ]
+    ],
+    [
+      "Issue 准备",
+      [
+        "计划 GitHub API + 抓取时间",
+        "TODO 并非已确认开放 Issue",
+        "当前无候选，不生成假链接"
+      ]
+    ]
+  ],
+  "dependencies": [
+    "已实现：CLI → B retrieval → A schema 1.0.0 + 固定任务 / 四文件源码包（只读）",
+    "A 待实现：graph / learner / planner；模型解释可选，不能替代路径算法",
+    "B 计划：SQLite 匿名证据 / 事件 / 路径；GitHub API 在线 Issue；模型接口可禁用",
+    "固定快照：用于断网复现；在线抓取：用于发现与时效核验，缓存必须标日期",
+    "保存边界：小型任务 / 源码许可 / 配置进 Git；用户数据库 / 密钥 / 终测答案隔离",
+    "错误入口：hash 不符 → 停止；API 失败 → 记录；暂停 → 检查点；未知值不冒充测量"
+  ],
+  "source_records": [
+    "docs/B/user_flow.md",
+    "docs/contracts.md",
+    "benchmarks/dev/task_001.json",
+    "benchmarks/sources/boltons/snapshot.json"
+  ],
+  "image_sha256": "eb9890d8dd5af9a40e00e64c9a44a0d656fbf6cc0893422c2221900adadc72ed",
+  "command": "python scripts/B/draw_d01.py",
+  "limits": "Design only; no implemented GUI, no human/effect results."
+}

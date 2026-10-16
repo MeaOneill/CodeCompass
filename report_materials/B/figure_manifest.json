@@ -1,0 +1,46 @@
+[
+  {
+    "figure_id": "F01-B-D01-wireframe",
+    "task_id": "B-D01",
+    "run_id": null,
+    "evidence_type": "design_not_measurement",
+    "dependency_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
+    "source_version": "A contracts 1.0.0; B working tree hashes below",
+    "command": "python scripts/B/draw_d01.py",
+    "caption": "固定版本源码任务的页面流程与F01存储/API依赖设计；CLI已实现，其余边界在图中标记。",
+    "units": null,
+    "sample_size": null,
+    "conclusion_boundary": "Design only; no implemented GUI, no human/effect results.",
+    "visual_review": "Codex Agent B viewed PNG; no clipping/garbled text observed; not human independent review",
+    "files": [
+      {
+        "path": "docs/B/user_flow.md",
+        "sha256": "0caf5decb44b22c9a26856fcc76e8e979f57752b15e39303147ee874bbdbd828"
+      },
+      {
+        "path": "docs/contracts.md",
+        "sha256": "27f1c134b7cfd42d00b891cf3ec19be6d43df67e833d3d6d23fc209d9068a658"
+      },
+      {
+        "path": "benchmarks/dev/task_001.json",
+        "sha256": "3725a1d28dd59b4211c1868962c8aadb05efd4fbdfe120f7d7c8913081c737fd"
+      },
+      {
+        "path": "benchmarks/sources/boltons/snapshot.json",
+        "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+      },
+      {
+        "path": "scripts/B/draw_d01.py",
+        "sha256": "348f7a0350c38fadf2bb2a8e42f275df74b9c0f2c46c6f7b241e441f566d7f07"
+      },
+      {
+        "path": "report_materials/B/wireframe_config.json",
+        "sha256": "f56c2d702b4eccc8ec68fa8963cf9112f2951f7ed30311fdd439deedfc9cb7e4"
+      },
+      {
+        "path": "report_materials/B/B-D01_wireframe.png",
+        "sha256": "eb9890d8dd5af9a40e00e64c9a44a0d656fbf6cc0893422c2221900adadc72ed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "run_id": "B-D01-20261016-check02",
+  "task_id": "A-D01",
+  "evidence_type": "development_validation",
+  "started_at": "2026-10-16T06:14:56.998922+00:00",
+  "finished_at": "2026-10-16T06:14:57.126781+00:00",
+  "machine": "糯糯",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "command": [
+    "scripts/A/validate_d01.py",
+    "--output",
+    "experiments/B/B-D01-20261016-check02/a_contract_review.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.5088838000001488,
+  "error": null,
+  "details": {
+    "schema_examples_passed": 7,
+    "negative_inputs_rejected": [
+      "missing commit",
+      "invalid SHA",
+      "unknown field",
+      "unknown cost allowed only as null",
+      "negative budget",
+      "null budget",
+      "minutes are not proxy units",
+      "invalid planner status",
+      "invalid timestamp",
+      "invalid outcome",
+      "missing fixture marker",
+      "wrong schema version"
+    ],
+    "source_spans_checked": 11,
+    "source_files_verified": 4,
+    "static_edges_verified": 3,
+    "upstream_behavior_smoke": [
+      "original chunked count",
+      "original short tail",
+      "original explicit None padding",
+      "original strings",
+      "original bytes",
+      "original empty input",
+      "original construction lazy",
+      "original first next consumes one chunk",
+      "original count not supported: expected pre-task failure"
+    ],
+    "independent_evaluator": "NOT_IMPLEMENTED_BY_A",
+    "task_human_pilot": "NOT_RUN",
+    "planner": "NOT_RUN",
+    "independent_review": "NOT_REVIEWED",
+    "formal_experiments": 0
+  }
+}

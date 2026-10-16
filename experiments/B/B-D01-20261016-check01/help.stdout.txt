@@ -1,0 +1,15 @@
+usage: __main__.py [-h] [--root ROOT] {check-sample,validate-object} ...
+
+CodeCompass B-D01: read-only contract and fixed-source validation. Planner/UI
+not implemented.
+
+positional arguments:
+  {check-sample,validate-object}
+    check-sample        Verify real task_001, pinned source hashes and line
+                        spans without executing source
+    validate-object     Validate one local object against A contract 1.0.0;
+                        fixtures remain fixtures
+
+options:
+  -h, --help            show this help message and exit
+  --root ROOT           Checkout containing schemas and benchmarks
