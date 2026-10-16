@@ -16,12 +16,14 @@
   "next_day_allowed": false,
   "validation": "experiments/B/B-D02-20261016-evaluation04/registration.json",
   "audit": "experiments/B/B-D02-20261016-audit05/audit.json",
-  "last_heartbeat": "2026-10-16T17:32:06.900111+08:00",
+  "last_heartbeat": "2026-10-16T17:32:49.808145+08:00",
   "independent_human_review": "NOT_REVIEWED",
   "formal_experiments": 0,
   "private_key_sync": "B_LOCAL_ONLY_NOT_SHARED",
-  "git_sync": "NOT_PUSHED_THIS_ROUND",
+  "git_sync": "CHECKPOINT_REMOTE_VERIFIED",
   "public_replay_checkpoint": "e87c736700a107c8b97e01674e6f7a96c017a4a2",
   "public_replay": "experiments/B/B-D02-20261016-public-replay01/registration.json",
-  "public_replay_exit_code": 0
+  "public_replay_exit_code": 0,
+  "verified_checkpoint_commit": "80f5ae9a4e61b9784b8a2f392b7e21d9a2c77648",
+  "remote_checkpoint_commit": "80f5ae9a4e61b9784b8a2f392b7e21d9a2c77648"
 }

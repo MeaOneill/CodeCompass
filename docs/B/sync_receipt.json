@@ -1,14 +1,17 @@
 {
-  "branch": "task/B-D01-foundation",
-  "base_commit": "54613cf136d788bde7c46454d3d7b9e29f295a9b",
-  "verified_checkpoint_commit": "04776f6188bdd13b057012eb5dfa29a8c62a4d6b",
-  "remote_checkpoint_commit": "04776f6188bdd13b057012eb5dfa29a8c62a4d6b",
+  "task_id": "B-D02",
+  "branch": "task/B-D02-evaluation",
+  "base_commit": "30069ce468a52b68a0d3bfb62bb49b1cce0f2104",
+  "verified_checkpoint_commit": "80f5ae9a4e61b9784b8a2f392b7e21d9a2c77648",
+  "remote_checkpoint_commit": "80f5ae9a4e61b9784b8a2f392b7e21d9a2c77648",
   "push_exit_code": 0,
-  "verified_at": "2026-10-16T14:26:39.797459+08:00",
-  "status": "READY_FOR_REVIEW",
+  "verified_at": "2026-10-16T17:32:49.808145+08:00",
+  "status": "PAUSED",
+  "technical_checks_passed": true,
+  "whole_task_gate_passed": false,
+  "next_day_allowed": false,
   "independent_human_review": "NOT_REVIEWED",
+  "private_keys_synced": false,
   "A_final_fetch_confirmation": "PENDING",
-  "local_replay_checkpoint": "c0e673bff0473e487b49b9a13ae3b353399c1110",
-  "local_replay_exit_code": 0,
-  "note": "This receipt is a later documentation commit. Its final HEAD/remote SHA are supplied in the final notification, avoiding self-referential hashes."
+  "note": "Later documentation receipt; final HEAD/remote are in the final task notification. No main merge or whole-task pass."
 }
