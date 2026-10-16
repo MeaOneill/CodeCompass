@@ -1,0 +1,93 @@
+{
+  "run_id": "B-D02-20261016-autonomous-replay01",
+  "task_id": "B-D02",
+  "code_checkpoint": "bd7bb007f7e45c9b591d1a9106f256450771bd80",
+  "branch": "task/B-D02-evaluation",
+  "scope": "same_machine_public_only_fresh_local_clone_existing_locked_venv",
+  "private_key_copied": false,
+  "held_out_answers_replayed": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "engineering_task_gate_passed": true,
+  "formal_study_ready": false,
+  "commands": [
+    {
+      "name": "clone",
+      "command": [
+        "git",
+        "clone",
+        "--no-local",
+        "--single-branch",
+        "--branch",
+        "task/B-D02-evaluation",
+        "C:\\CodeCompass\\CodeCompass",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D02-20261016-autonomous-replay01"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "sha",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "sample",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A",
+        "tests/B",
+        "-q",
+        "--basetemp=tmp/pytest-receiver"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "demo",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/demo_d02.py",
+        "--run-id",
+        "B-D02-20261016-autonomous-replay01-demo"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    },
+    {
+      "name": "audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d02.py",
+        "--run-id",
+        "B-D02-20261016-autonomous-replay01-audit"
+      ],
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "expectation_met": true
+    }
+  ],
+  "exit_code": 0
+}

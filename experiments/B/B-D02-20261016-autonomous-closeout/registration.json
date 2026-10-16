@@ -1,0 +1,16 @@
+{
+  "task_id": "B-D02",
+  "at": "2026-10-16T19:31:57.654744+08:00",
+  "acceptance_scope": "D02 engineering deliverables, not formal human-study validation",
+  "engineering_task_passed": true,
+  "next_day_allowed": true,
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "source_checkpoint": "bd7bb007f7e45c9b591d1a9106f256450771bd80",
+  "public_restore_exit_code": 0,
+  "regression_tests": 60,
+  "negative_quality_challenges": 57,
+  "AI_reviewed_tasks": 12,
+  "private_answers_replayed_in_public_clone": false,
+  "raw_files_hashed": 58
+}

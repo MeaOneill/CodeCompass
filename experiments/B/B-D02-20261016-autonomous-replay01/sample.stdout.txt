@@ -1,0 +1,42 @@
+{
+  "task_id": "task_001",
+  "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "units": 3,
+  "schema_version": "1.0.0",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 286,
+      "end_line": 306,
+      "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 316,
+      "end_line": 358,
+      "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 61,
+      "end_line": 76,
+      "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 309,
+      "end_line": 313,
+      "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+    }
+  ],
+  "planner": "NOT_IMPLEMENTED",
+  "base_costs": [
+    null,
+    null,
+    null
+  ]
+}
