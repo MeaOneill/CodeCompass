@@ -17,4 +17,6 @@ $env:PYTHONPATH = 'src'
 
 锁定流程：只在隔离环境安装→pip check→真实smoke/pytest→pip freeze保存B草案→pip download到忽略的tmp wheel目录→保存wheel SHA256→在第二个隔离环境用`--no-index --find-links`重装并检查。普通freeze不等于跨平台/供应链hash锁；本轮wheel清单只对应Windows CPython 3.12，不承诺Linux可直接用。A确认后整合公共锁；新增依赖先提交请求，不改全局包。不把本机全局已有networkx当项目依赖。
 
+本轮实际生成的`requirements-d01-win-py312.hashes.txt`可使用`pip install --require-hashes -r ...`安装。离线时另加`--no-index --find-links tmp/B-D01-wheels`；该缓存不随Git发送，异机先下载同版wheel并核对hash。源包和其他平台wheel需重新核验，不能删hash来冒称等价安装。
+
 运行入口CLI不导入或执行上游代码；A只读校验入口额外执行已固定的上游行为smoke，其范围另列。testpaths目前仅tests/B，A添加测试入口时由A集成，现有A脚本不受此配置替代。

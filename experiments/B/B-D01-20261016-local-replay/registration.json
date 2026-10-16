@@ -1,0 +1,183 @@
+{
+  "task_id": "B-D01",
+  "evidence_type": "development_validation",
+  "source_checkpoint": "a3d176d208a16702be11c4b6832aeeb86600b866",
+  "branch": "task/B-D01-foundation",
+  "receiver_same_machine": true,
+  "remote_used": false,
+  "offline_install_network_disabled_by_pip": true,
+  "wheel_hashes": [
+    {
+      "name": "attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "name": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "name": "iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7"
+    },
+    {
+      "name": "jsonschema-4.23.0-py3-none-any.whl",
+      "sha256": "fbadb6f8b144a8f8cf9f0b89ba94501d143e50411a1278633f56a7acf7fd5566"
+    },
+    {
+      "name": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+    },
+    {
+      "name": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "name": "pillow-12.3.0-cp312-cp312-win_amd64.whl",
+      "sha256": "a2b55dd6b2a4c4b7d87ffa56bdb33fdc5fdb9a462173861a7bc097f17d91cb09"
+    },
+    {
+      "name": "pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec"
+    },
+    {
+      "name": "pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "name": "pytest-9.1.1-py3-none-any.whl",
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c"
+    },
+    {
+      "name": "referencing-0.37.0-py3-none-any.whl",
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+    },
+    {
+      "name": "rpds_py-2026.9.1-cp312-cp312-win_amd64.whl",
+      "sha256": "5ce8943f79c2210f7abcc28e86367b03b28d95027fd01c46d2472373ae70c86f"
+    },
+    {
+      "name": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    }
+  ],
+  "commands": [
+    {
+      "name": "clone",
+      "command": [
+        "git",
+        "clone",
+        "--no-local",
+        "--single-branch",
+        "--branch",
+        "task/B-D01-foundation",
+        "C:\\CodeCompass\\CodeCompass",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass",
+      "started_at": "2026-10-16T06:21:37.945262+00:00",
+      "elapsed_seconds": 0.8877947999999378,
+      "exit_code": 0
+    },
+    {
+      "name": "receiver_sha",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:21:38.834286+00:00",
+      "elapsed_seconds": 0.06485859999975219,
+      "exit_code": 0
+    },
+    {
+      "name": "venv",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "venv",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass",
+      "started_at": "2026-10-16T06:21:38.899183+00:00",
+      "elapsed_seconds": 26.288857199999256,
+      "exit_code": 0
+    },
+    {
+      "name": "offline_install",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--require-hashes",
+        "--find-links",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-wheels",
+        "-r",
+        "scripts/B/requirements-d01-win-py312.hashes.txt"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:22:05.187721+00:00",
+      "elapsed_seconds": 36.81009080000058,
+      "exit_code": 0
+    },
+    {
+      "name": "pip_check",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:22:41.998171+00:00",
+      "elapsed_seconds": 1.5708440999997038,
+      "exit_code": 0
+    },
+    {
+      "name": "help",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "--help"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:22:43.568394+00:00",
+      "elapsed_seconds": 1.3755959999998595,
+      "exit_code": 0
+    },
+    {
+      "name": "sample",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:22:44.943990+00:00",
+      "elapsed_seconds": 0.8364459999993414,
+      "exit_code": 0
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/B",
+        "-q",
+        "--basetemp",
+        "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver\\tmp\\pytest-receiver"
+      ],
+      "cwd": "C:\\CodeCompass\\CodeCompass\\tmp\\B-D01-receiver",
+      "started_at": "2026-10-16T06:22:45.780645+00:00",
+      "elapsed_seconds": 2.1131902999995873,
+      "exit_code": 1
+    }
+  ],
+  "exit_code": 1,
+  "independent_human_review": "NOT_REVIEWED"
+}

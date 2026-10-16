@@ -1,5 +1,6 @@
 """Local Git receiver rehearsal plus offline dependency reinstall; not a second PC."""
 import datetime
+import argparse
 import hashlib
 import json
 import os
@@ -12,10 +13,15 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
-    out = ROOT / 'experiments/B/B-D01-20261016-local-replay'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--run-id', default='B-D01-20261016-local-replay')
+    args = parser.parse_args()
+    if not args.run_id.replace('-', '').replace('_', '').isalnum():
+        parser.error('Use letters, digits, hyphens and underscores in run-id')
+    out = ROOT / 'experiments/B' / args.run_id
     out.mkdir(parents=True, exist_ok=False)
-    clone = ROOT / 'tmp/B-D01-receiver'
-    venv = ROOT / 'tmp/B-D01-receiver-venv'
+    clone = ROOT / 'tmp' / (args.run_id + '-receiver')
+    venv = ROOT / 'tmp' / (args.run_id + '-venv')
     if clone.exists() or venv.exists():
         raise FileExistsError('Receiver paths already exist; preserve them and use a new rehearsal ID')
     head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
@@ -46,7 +52,7 @@ def main():
         print(name, code, flush=True)
         if code:
             break
-    result = {'task_id': 'B-D01', 'evidence_type': 'development_validation', 'source_checkpoint': head, 'branch': branch, 'receiver_same_machine': True, 'remote_used': False, 'offline_install_network_disabled_by_pip': True, 'wheel_hashes': [{'name': f.name, 'sha256': hashlib.sha256(f.read_bytes()).hexdigest()} for f in sorted((ROOT / 'tmp/B-D01-wheels').glob('*.whl'))], 'commands': records, 'exit_code': int(len(records) != len(commands) or any(r['exit_code'] for r in records)), 'independent_human_review': 'NOT_REVIEWED'}
+    result = {'run_id': args.run_id, 'task_id': 'B-D01', 'evidence_type': 'development_validation', 'source_checkpoint': head, 'branch': branch, 'receiver_same_machine': True, 'remote_used': False, 'offline_install_network_disabled_by_pip': True, 'wheel_hashes': [{'name': f.name, 'sha256': hashlib.sha256(f.read_bytes()).hexdigest()} for f in sorted((ROOT / 'tmp/B-D01-wheels').glob('*.whl'))], 'commands': records, 'exit_code': int(len(records) != len(commands) or any(r['exit_code'] for r in records)), 'independent_human_review': 'NOT_REVIEWED'}
     (out / 'registration.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return result['exit_code']
 
