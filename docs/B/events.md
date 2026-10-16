@@ -9,3 +9,5 @@ paused/resumed必须有resume_from，它是仓库相对检查点引用；接收�
 当前没有完整会话状态机或持久化运行服务。跨事件顺序、event_id幂等、计时累加/暂停恢复的端到端验证留到采集实现日；本轮验证单事件格式和非法状态拒绝。暂停总时长、恢复父事件和不可变检查点hash需要字段扩展，已在B-D01接口请求登记，由A升版；本轮不偷偷增加additionalProperties。
 
 真实命令记录在experiments/B对应registration和stdout/stderr；工作树未提交时code_commit=null，内容版本用input_manifest hash识别。正式数据/配置/代码hash齐全才进入正式实验；本轮不是正式实验。
+
+收尾真实events.jsonl只记录实际发生的开发运行started与succeeded/failed；没有真实暂停/恢复就不造相应事件。五种格式夹具始终保留在docs/B/event_examples.json并标is_fixture=true。

@@ -5,7 +5,7 @@
 | ID | 日期 | 角色 | Owner | 状态 | 分支/base | 最后检查点 |
 |---|---|---|---|---|---|---|
 | D01-A | 2026-10-15（10/16补做） | A | 成员A / Codex Agent A / LAPTOP-LUQPS3EV | READY_FOR_REVIEW | codex/A-D01-contracts / fd7b3e6 | 认领 2026-10-16T13:42:31.873649+08:00；docs/A/session.json |
-| D01-B | 2026-10-15 | B | 成员B / 糯糯 / Codex Agent B | IN_PROGRESS | task/B-D01-foundation / 54613cf136d788bde7c46454d3d7b9e29f295a9b | 2026-10-16：check02通过，恢复与同步待收尾；见docs/B |
+| D01-B | 2026-10-15 | B | 成员B / 糯糯 / Codex Agent B | READY_FOR_REVIEW | task/B-D01-foundation / 54613cf136d788bde7c46454d3d7b9e29f295a9b | 2026-10-16：check02及local-replay02通过；最终同步见docs/B回执 |
 | D02-A | 2026-10-16 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D02-B | 2026-10-16 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D03-A | 2026-10-17 | A | 待认领 | TODO | 未建立 | 未执行 |

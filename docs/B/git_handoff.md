@@ -23,4 +23,6 @@ A接管后应在自己的A-D02分支继续，基于B已核对提交或经负责�
 
 本地演练入口scripts/B/replay_handoff.py：从实际Git检查点本地clone到忽略目录，核对SHA，在独立venv中用本地wheel --no-index安装，运行help、源码校验和pytest。原始证据保存在experiments/B/B-D01-20261016-local-replay。它验证同机接收/断网依赖安装，不能冒称异机验收或A已接管。
 
+复跑必须传新的`--run-id`，例如B-D01-20261016-local-replay02，输出、接收克隆与隔离环境均使用新路径。首轮新克隆pytest缺tmp父目录错误已保留；修复后复验以02登记为准。脚本不删除既有输出，不启动远程或修改main。
+
 正式双机缺项：A对本轮最终SHA fetch与确认、A-D02接管登记、人类独立审核和指定集成人合main；A机CPU/内存/显卡未提供。20261016_member_B_sync_review历史记录已证明旧setup分支反向写入，本轮不重复接受邀请或clone覆盖现有仓库。当前受限shell连接代理失败，已授权的外层网络执行fetch成功；不修改代理/TLS配置。

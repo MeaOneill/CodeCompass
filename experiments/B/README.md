@@ -11,3 +11,5 @@
 启动观察（早于捕获脚本，来自本轮工具实际输出，不补造逐命令退出码）：普通git fetch/ls-remote提示127.0.0.1:7890无法连接，直连覆盖测试提示getaddrinfo thread failed；初次venv ensurepip返回1、无pip；受限CIM无法访问资源。随后授权外层fetch/安装/CIM成功。日志不含令牌；未更改全局代理/身份/依赖。原始失败pytest traceback包含用户本机路径，仅供团队开发记录，不直接作为匿名评审截图。
 
 配置追溯：check01/02使用工作树pytest.ini，第一次默认临时目录，第二次实际命令显式传--basetemp。原input_manifest未单列根pytest.ini，其配置差异由保留命令/失败日志及开发日志追溯；恢复演练以完整实际Git检查点（含pytest.ini与hash锁）为权威。未来捕获应将根配置也纳入输入清单，此限制不隐去。
+
+收尾实际复验：B-D01-20261016-local-replay02=exit0（检查点c0e673b，8命令、18测试）。首次local-replay=exit1保留；closeout派生4条真实事件经校验，raw_manifest保留原始结果hash，不将B环境或接收演练称正式实验。
