@@ -1,0 +1,11 @@
+{
+  "checkpoint_commit": "16bd0bd00c0a5a363ce4d6872f30ec21edf8d5c7",
+  "remote_checkpoint_commit": "16bd0bd00c0a5a363ce4d6872f30ec21edf8d5c7",
+  "branch": "codex/A-D01-contracts",
+  "verified_at": "2026-10-16T13:56:20.184559+08:00",
+  "push_exit_code": 0,
+  "replay_exit_code": 0,
+  "independent_review": "NOT_REVIEWED",
+  "status": "READY_FOR_REVIEW",
+  "note": "本回执的后续文档提交以最终通知SHA为准；checkpoint代码/契约内容不变。"
+}

@@ -1,5 +1,9 @@
 [
   {
+    "path": "experiments/A/A-D01-20261016-foundation/checkpoint_replay.json",
+    "sha256": "d6a1315630d01af0d27be3d9dd31bc5483d427a6cc3cd8611d76d8c7c194c8c1"
+  },
+  {
     "path": "experiments/A/A-D01-20261016-foundation/events.jsonl",
     "sha256": "0f47c384343a0d5847dfec6a89c950393309d9591a9ee307c2fa287d0d7cffa8"
   },

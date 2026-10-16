@@ -15,9 +15,11 @@
   "freeze_list_preexisting": false,
   "initial_worktree_clean": true,
   "formal_experiments": 0,
-  "last_heartbeat": "2026-10-16T13:53:01.661866+08:00",
+  "last_heartbeat": "2026-10-16T13:56:20.184559+08:00",
   "independent_review": "NOT_REVIEWED",
-  "git_sync": "PENDING_FINAL_PUSH",
+  "git_sync": "CHECKPOINT_REMOTE_VERIFIED",
   "finished_at": "2026-10-16T13:54:44.140624+08:00",
-  "validation_result": "experiments/A/A-D01-20261016-foundation/validation_final.json"
+  "validation_result": "experiments/A/A-D01-20261016-foundation/validation_final.json",
+  "checkpoint_commit": "16bd0bd00c0a5a363ce4d6872f30ec21edf8d5c7",
+  "remote_checkpoint_commit": "16bd0bd00c0a5a363ce4d6872f30ec21edf8d5c7"
 }
