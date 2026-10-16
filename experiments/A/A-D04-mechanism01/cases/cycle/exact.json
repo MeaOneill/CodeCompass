@@ -1,0 +1,80 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "cycle-exact-dp",
+    "request_id": "cycle",
+    "status": "INFEASIBLE_PROVEN",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: x",
+      "COMPLETE_EXACT_ENUMERATION: no reachable budget-admissible target-covering subset"
+    ],
+    "estimated_cost": 0.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": "certificate.json"
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "p": {
+        "concept_id": "p",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "7e309e20e1928ffc666856a160262bbe56512b809e67b26c069102e1dd9af1f2",
+      "unit_ids": [
+        "a",
+        "b"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0
+      ],
+      "reachable_masks_hash": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97",
+      "reachable_count": 1,
+      "transition_count": 0,
+      "optimal_route": null,
+      "optimal_cost": null,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": false,
+    "scope_units": 2,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": false,
+      "replayed_cost": 0.0,
+      "certificate_audit": {
+        "valid": true,
+        "feasible": false,
+        "optimal_cost": null,
+        "reachable_count": 1,
+        "reason": null
+      },
+      "not_a_learning_success_measure": true
+    }
+  }
+}

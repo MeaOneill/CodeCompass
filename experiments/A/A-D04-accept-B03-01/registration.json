@@ -1,0 +1,24 @@
+{
+  "run_id": "A-D04-accept-B03-01",
+  "task": "B-D03",
+  "actual_time": "2026-10-16T15:38:42.747664+00:00",
+  "planned_day": "2026-10-17",
+  "owner": "成员B / 糯糯",
+  "executor": "Codex Agent B",
+  "machine": "LAPTOP-LUQPS3EV",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "scripts/B/demo_d03.py",
+    "--run-id",
+    "A-D04-accept-B03-01"
+  ],
+  "source_head": "5b3db98407ea47e1f26c7ff4cd7594cb42305aea",
+  "dependency_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+  "contracts": "1.1.0 compatible",
+  "ledger_version": "0.1.0",
+  "response_kind": "SIMULATED",
+  "issue_kind": "REAL_PUBLIC_SNAPSHOT",
+  "formal_experiments": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "exit_code": 0
+}

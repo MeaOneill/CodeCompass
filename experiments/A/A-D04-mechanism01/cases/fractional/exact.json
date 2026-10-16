@@ -1,0 +1,97 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "fractional-exact-dp",
+    "request_id": "fractional",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "a",
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 0.30000000000000004,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=0.1; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "b",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=0.2; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "55c4b9e99901998b70e8e864004799e870b33baa55538f5e27b699de030ba586",
+      "unit_ids": [
+        "a",
+        "b"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reachable_masks_hash": "f2f991d74dfbb2edf7f4475dcb7d82989de00a71e44bb11d4a6fbb49442577b6",
+      "reachable_count": 4,
+      "transition_count": 4,
+      "optimal_route": [
+        "a",
+        "b"
+      ],
+      "optimal_cost": 0.30000000000000004,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": true,
+    "scope_units": 2,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 0.30000000000000004,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

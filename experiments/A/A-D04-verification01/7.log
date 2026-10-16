@@ -1,0 +1,9 @@
+A-D04独立CLI：机制夹具与模拟证据；不是正式UI或真人学习实验。
+案例：cost_gap；目标：x,y；预算：10 proxy_cost（不是分钟）
+
+exact: FEASIBLE | 路线=b | 选入代理成本=5
+独立合法性重放：True
+
+B2: FEASIBLE | 路线=a → c | 选入代理成本=6
+独立合法性重放：True
+输入未通过检查：beam_width must be a positive integer

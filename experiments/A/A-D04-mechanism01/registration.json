@@ -1,0 +1,31 @@
+{
+  "run_id": "A-D04-mechanism01",
+  "task_id": "A-D04",
+  "machine": "LAPTOP-LUQPS3EV",
+  "executor": "Codex Agent A",
+  "model_id": null,
+  "started_at": "2026-10-16T15:45:44.074487+00:00",
+  "finished_at": "2026-10-16T15:45:49.287641+00:00",
+  "elapsed_seconds": 5.213091800003895,
+  "command": [
+    "python",
+    "scripts/A/run_d04.py",
+    "--run-id",
+    "A-D04-mechanism01"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "code_commit": null,
+  "base_commit": "5b3db98407ea47e1f26c7ff4cd7594cb42305aea",
+  "is_simulated": true,
+  "human_profiles": 0,
+  "formal_study_ready": false,
+  "counts": {
+    "comparisons": 54,
+    "synthetic_graphs": 14,
+    "real_tasks": 2,
+    "simulated_profiles": 2,
+    "status_examples": 4,
+    "width_runs": 16
+  }
+}

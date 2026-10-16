@@ -1,0 +1,44 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "empty_goal-greedy",
+    "request_id": "empty_goal",
+    "status": "FEASIBLE",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [],
+      "covered_concept_ids": [],
+      "ratio": null
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "details": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 0.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

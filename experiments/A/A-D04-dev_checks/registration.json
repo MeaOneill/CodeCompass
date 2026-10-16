@@ -1,0 +1,15 @@
+{
+  "commands": [
+    {
+      "command": "python -m pytest tests/A/test_search_d04.py -q --basetemp=tmp/pytest-A-D04-unit01",
+      "exit_code": 0,
+      "passed": 32
+    },
+    {
+      "command": "python -m pytest tests/A/test_search_d04.py -q --basetemp=tmp/pytest-A-D04-unit02",
+      "exit_code": 0,
+      "passed": 34
+    }
+  ],
+  "note": "development stages; exact script entry authored under tmp; no failed check discarded"
+}

@@ -1,0 +1,57 @@
+{
+  "task_id": "A-D04",
+  "base_commit": "5b3db98407ea47e1f26c7ff4cd7594cb42305aea",
+  "machine": "LAPTOP-LUQPS3EV",
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=tmp/pytest-A-D04-preflight"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D04-preflight01/1.log",
+      "elapsed_seconds": 17.380211000003328
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/B/demo_d03.py",
+        "--run-id",
+        "A-D04-accept-B03-01"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D04-preflight01/2.log",
+      "elapsed_seconds": 2.6461546999998973
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/B/audit_d03.py",
+        "--source",
+        "experiments/B/B-D03-integration02",
+        "--figures",
+        "report_materials/B/B-D03-final",
+        "--output",
+        "experiments/A/A-D04-B03-accept01.json"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D04-preflight01/3.log",
+      "elapsed_seconds": 0.8312542999992729
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-D04-preflight01/4.log",
+      "elapsed_seconds": 2.1946210999958566
+    }
+  ],
+  "all_passed": true
+}

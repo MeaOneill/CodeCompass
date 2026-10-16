@@ -1,0 +1,22 @@
+{
+  "state_version": "0.1.0",
+  "pseudonymous_user_id": "sim-anon-B03-01",
+  "is_simulated": true,
+  "records": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearnerEvidence",
+      "is_fixture": true,
+      "evidence_id": "sim-B03-0",
+      "pseudonymous_user_id": "sim-anon-B03-01",
+      "concept_id": "python.iterator_protocol",
+      "item_id": "sim-independent-item-0",
+      "outcome": "pass",
+      "timestamp": "2026-10-16T15:38:41.942026+00:00",
+      "project": "boltons-4e5faa3d7e40",
+      "evidence_type": "independent_quiz",
+      "attempt_id": "sim-attempt-0",
+      "independent": true
+    }
+  ]
+}

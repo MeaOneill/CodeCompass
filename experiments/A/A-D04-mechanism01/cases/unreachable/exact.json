@@ -1,0 +1,80 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "unreachable-exact-dp",
+    "request_id": "unreachable",
+    "status": "INFEASIBLE_PROVEN",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "missing"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: missing",
+      "COMPLETE_EXACT_ENUMERATION: no reachable budget-admissible target-covering subset"
+    ],
+    "estimated_cost": 0.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": "certificate.json"
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "missing": {
+        "concept_id": "missing",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "90661c653ff096c4aff6e348b3610f0c2271e43ba476ebfcb9297102e2c7b777",
+      "unit_ids": [
+        "a"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        1
+      ],
+      "reachable_masks_hash": "463f2998327eb3a694145e6014444480b2235be84aa6cfd57871cc64f1cd816c",
+      "reachable_count": 2,
+      "transition_count": 1,
+      "optimal_route": null,
+      "optimal_cost": null,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": false,
+    "scope_units": 1,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": false,
+      "replayed_cost": 0.0,
+      "certificate_audit": {
+        "valid": true,
+        "feasible": false,
+        "optimal_cost": null,
+        "reachable_count": 2,
+        "reason": null
+      },
+      "not_a_learning_success_measure": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "PlanResult",
+  "is_fixture": true,
+  "plan_id": "A-D04-accept-B03-01-distinct_simulated_items-B0",
+  "request_id": "A-D04-accept-B03-01-distinct_simulated_items",
+  "status": "FEASIBLE",
+  "ordered_units": [
+    "u_chunked",
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "coverage": {
+    "required_concept_ids": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "covered_concept_ids": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "ratio": 1.0
+  },
+  "unmet_constraints": [],
+  "estimated_cost": 80,
+  "cost_unit": "proxy_cost",
+  "reason_trace": [
+    {
+      "step": 1,
+      "unit_id": "u_chunked",
+      "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+      "evidence_ids": []
+    },
+    {
+      "step": 2,
+      "unit_id": "u_chunked_iter",
+      "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+      "evidence_ids": []
+    },
+    {
+      "step": 3,
+      "unit_id": "u_iterable",
+      "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+      "evidence_ids": []
+    }
+  ],
+  "proof_path": null
+}

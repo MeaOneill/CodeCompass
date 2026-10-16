@@ -1,0 +1,148 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "cost_gap-beam",
+    "request_id": "cost_gap",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 5.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "b",
+        "reason": "beam: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=5; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "beam",
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 1,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "events": [
+      {
+        "event": "expand",
+        "depth": 0,
+        "route": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "route": [
+              "a"
+            ],
+            "cost": 2.0
+          },
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "route": [
+              "b"
+            ],
+            "cost": 5.0
+          },
+          {
+            "root": "c",
+            "bundle": [
+              "c"
+            ],
+            "route": [
+              "c"
+            ],
+            "cost": 4.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 0,
+        "retained": [
+          [
+            "b"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 2,
+          "dropped_routes": [
+            [
+              "a"
+            ],
+            [
+              "c"
+            ]
+          ]
+        }
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 1,
+        "retained": [],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      }
+    ],
+    "expansions": 3,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": true,
+    "optimality_claim": false,
+    "truncated": true,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 5.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

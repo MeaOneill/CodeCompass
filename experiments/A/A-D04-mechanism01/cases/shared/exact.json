@@ -1,0 +1,114 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "shared-exact-dp",
+    "request_id": "shared",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "s",
+      "a",
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 5.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "s",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=1; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "a",
+        "reason": "exact-dp: selected material; hard prerequisites=['s']; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "b",
+        "reason": "exact-dp: selected material; hard prerequisites=['s']; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "p": {
+        "concept_id": "p",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "2736326ae75f6571f94de72de720e7a029557a30f911e2c4aac17347a36114aa",
+      "unit_ids": [
+        "a",
+        "b",
+        "s"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reachable_masks_hash": "85f4699a13b8b46c99afe84c1f2c8d8ec82c43ae9735c31d2b9c91074ddc3188",
+      "reachable_count": 5,
+      "transition_count": 5,
+      "optimal_route": [
+        "s",
+        "a",
+        "b"
+      ],
+      "optimal_cost": 5.0,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": true,
+    "scope_units": 3,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 5.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

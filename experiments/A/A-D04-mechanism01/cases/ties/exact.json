@@ -1,0 +1,79 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "ties-exact-dp",
+    "request_id": "ties",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 1.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=1; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "5a806807c6cea86085f99d5888656348a9bf0ccf0582bb922270b53fc29edfdf",
+      "unit_ids": [
+        "a",
+        "b"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        1,
+        2
+      ],
+      "reachable_masks_hash": "434026bd98ff2d8a2fb346c89ae9de006d1e2a6862832b6b3cd86e51de36d5c5",
+      "reachable_count": 3,
+      "transition_count": 2,
+      "optimal_route": [
+        "a"
+      ],
+      "optimal_cost": 1.0,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": true,
+    "scope_units": 2,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 1.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

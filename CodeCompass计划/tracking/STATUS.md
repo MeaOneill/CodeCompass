@@ -43,3 +43,7 @@ A-D02开发已交付，READY_FOR_REVIEW；入口docs/A/状态.md与handoffs/A-D0
 B署名 B-D03 2026-10-16T15:08:49.943358+00:00：Owner成员B/糯糯；机器糯糯；Executor Codex Agent B；分支codex/B-D03-integration；base cf02b664aea81f91aa8e7423a8aa891367c73b7e。READY_FOR_REVIEW，108回归测试/10命令期待通过；最终恢复及同步待收尾。新ledger持久化/重启/Issue准备/G1见docs/B/handoffs/B-D03.md；不变更A Owner或旧main，不将模拟回答当真人。
 
 B署名B-D03收尾 2026-10-16T15:28:28.510192+00:00：READY_FOR_REVIEW，G1工程通过，允许进入A-D04。检查点8ed3226ec2f585eb9cfa3d584a1eaacfd900c008=remote；同机新clone108测试/10命令通过。精确最终回执SHA见通知，A异机接收/人类审核未确认，未合main。下一棒先核对B-D03交接命令后推进搜索，不从旧main开始。
+
+## A-D04实际记录 2026-10-16T23:54:32.889329+08:00（覆盖早期阶段描述）
+
+A从B03=5b3db98407ea47e1f26c7ff4cd7594cb42305aea接管，分支codex/A-D04-search，READY_FOR_REVIEW。新增beam/精确DP/独立证书与统一比较，强B2字节不变；142测试/206负例/54结果/4状态/16宽度通过。可见入口docs/A/A-D04_成果与自行验收.md，算法algorithm.md，B-D04具体第一动作见A交接。提交归档/远程完成前不放行，最终看release_gate。真实任务平局、真人/正式实验0、GUI/诊断/切换目标未实现，未人类审。

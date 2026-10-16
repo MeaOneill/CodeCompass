@@ -201,6 +201,84 @@
       "unit": "proxy_cost (inclusive fixed source lines), not minutes",
       "sample_size": null,
       "limitations": "two explicitly simulated profiles, two real dev task definitions; no independent task outcome, no human learning/time measurement; real teaching edges soft"
+    },
+    {
+      "figure_id": "F03_search_framework",
+      "kind": "mechanism_correctness_validation",
+      "run_id": "A-D04-mechanism01",
+      "code_commit": null,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d (only real-task rows)",
+      "sources": [
+        "experiments/A/A-D04-mechanism01/summary.json",
+        "report_materials/A/A-D04/A-D04-mechanism01/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d04.py",
+      "render_command": "python scripts/A/draw_d04.py --run-id A-D04-mechanism01",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/F03_search_framework.png",
+          "sha256": "53dfa6f7155f19ffd63bfa12a8d8e5da1e1f60f8f81345030ac1834fbe73d3fc"
+        },
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/F03_search_framework.svg",
+          "sha256": "3624990998edc9cf9b8c192550c0bb11e9106153b943932005f907f73ad8347a"
+        }
+      ],
+      "unit": "proxy_cost; not minutes",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "limitations": "14 structural fixtures and 2 real-task definitions with simulated profiles; no human outcomes; beam not generally optimal; real tasks tie"
+    },
+    {
+      "figure_id": "exact_B2_beam_table",
+      "kind": "mechanism_correctness_validation",
+      "run_id": "A-D04-mechanism01",
+      "code_commit": null,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d (only real-task rows)",
+      "sources": [
+        "experiments/A/A-D04-mechanism01/summary.json",
+        "report_materials/A/A-D04/A-D04-mechanism01/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d04.py",
+      "render_command": "python scripts/A/draw_d04.py --run-id A-D04-mechanism01",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/exact_B2_beam_table.png",
+          "sha256": "3e521937f0b65cf306d0518c940374bff14754460122b8be8857fd89d9630abd"
+        },
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/exact_B2_beam_table.svg",
+          "sha256": "d08b51964c465f02738858dc641514ea59dff8ef18c372e84a54837d98e3715e"
+        }
+      ],
+      "unit": "proxy_cost; not minutes",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "limitations": "14 structural fixtures and 2 real-task definitions with simulated profiles; no human outcomes; beam not generally optimal; real tasks tie"
+    },
+    {
+      "figure_id": "beam_decision_trace",
+      "kind": "mechanism_correctness_validation",
+      "run_id": "A-D04-mechanism01",
+      "code_commit": null,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d (only real-task rows)",
+      "sources": [
+        "experiments/A/A-D04-mechanism01/summary.json",
+        "report_materials/A/A-D04/A-D04-mechanism01/render_config.json"
+      ],
+      "plot_entrypoint": "scripts/A/draw_d04.py",
+      "render_command": "python scripts/A/draw_d04.py --run-id A-D04-mechanism01",
+      "exports": [
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/beam_decision_trace.png",
+          "sha256": "0feb101d8d03c96891c5c8ae2eb860147906b61eab4d70ee801b872b54ba7248"
+        },
+        {
+          "path": "report_materials/A/A-D04/A-D04-mechanism01/beam_decision_trace.svg",
+          "sha256": "74cd93573f20b0df253d42cbd605b485f6a38b176143e23bf912d1f15c28d757"
+        }
+      ],
+      "unit": "proxy_cost; not minutes",
+      "status": "A_agent_visual_reviewed_B_pending",
+      "limitations": "14 structural fixtures and 2 real-task definitions with simulated profiles; no human outcomes; beam not generally optimal; real tasks tie"
     }
   ]
 }

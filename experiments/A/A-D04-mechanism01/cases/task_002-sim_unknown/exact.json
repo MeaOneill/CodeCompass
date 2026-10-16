@@ -1,0 +1,128 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "D04-task_002-sim_unknown-exact-dp",
+    "request_id": "D04-task_002-sim_unknown",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "u_iterable",
+      "u_positive_int",
+      "u_windowed_iter"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "covered_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 60.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "u_iterable",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L61-76; proxy_cost=16; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "u_positive_int",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L309-313; proxy_cost=5; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "u_windowed_iter",
+        "reason": "exact-dp: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L472-510; proxy_cost=39; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "exact-subset-dp",
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "e7993af3c61b7e2a8b450a1af86fab1e07c12f500152c272d72327a7cd928ca8",
+      "unit_ids": [
+        "u_iterable",
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reachable_masks_hash": "29101ebf1ead685029508789eee51c4d4fff65524064d8e32a48efded7036982",
+      "reachable_count": 8,
+      "transition_count": 12,
+      "optimal_route": [
+        "u_iterable",
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "optimal_cost": 60.0,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "optimality_claim": true,
+    "scope_units": 3,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 60.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

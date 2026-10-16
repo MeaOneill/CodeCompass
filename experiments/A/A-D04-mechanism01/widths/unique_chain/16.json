@@ -1,0 +1,178 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "unique_chain-beam",
+    "request_id": "unique_chain",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "s",
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 3.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "s",
+        "reason": "beam: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=1; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "a",
+        "reason": "beam: selected material; hard prerequisites=['s']; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "beam",
+    "gate": {
+      "p": {
+        "concept_id": "p",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "events": [
+      {
+        "event": "expand",
+        "depth": 0,
+        "route": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "s",
+              "a"
+            ],
+            "route": [
+              "s",
+              "a"
+            ],
+            "cost": 3.0
+          },
+          {
+            "root": "s",
+            "bundle": [
+              "s"
+            ],
+            "route": [
+              "s"
+            ],
+            "cost": 1.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 0,
+        "retained": [
+          [
+            "s",
+            "a"
+          ],
+          [
+            "s"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "s"
+        ],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "route": [
+              "s",
+              "a"
+            ],
+            "cost": 3.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "deduplicate",
+        "route": [
+          "s",
+          "a"
+        ],
+        "retained_route": [
+          "s",
+          "a"
+        ]
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 1,
+        "retained": [],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      }
+    ],
+    "expansions": 3,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": true,
+    "optimality_claim": false,
+    "truncated": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 3.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

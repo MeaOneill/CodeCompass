@@ -1,0 +1,209 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "greedy_failure-beam",
+    "request_id": "greedy_failure",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 0.5
+    },
+    "unmet_constraints": [
+      "uncovered target: y",
+      "BOUNDED_SEARCH_FINISHED"
+    ],
+    "estimated_cost": 2.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "beam: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "beam",
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 1,
+      "candidate_limit": 1,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "events": [
+      {
+        "event": "expand",
+        "depth": 0,
+        "route": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "route": [
+              "a"
+            ],
+            "cost": 2.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [
+            "b",
+            "c"
+          ],
+          "count": 2
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 0,
+        "retained": [
+          [
+            "a"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "a"
+        ],
+        "candidates": [],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": [
+          {
+            "root": "b",
+            "reason": "budget",
+            "required_cost": 7.0
+          },
+          {
+            "root": "c",
+            "reason": "budget",
+            "required_cost": 6.0
+          }
+        ]
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 1,
+        "retained": [],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      }
+    ],
+    "expansions": 1,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": false,
+    "optimality_claim": false,
+    "truncated": true,
+    "certificate": {
+      "format": "complete-subset-dp-v1",
+      "complete": true,
+      "input_hash": "ce0621d52b351d73cc229aaa5594f17d6a7c5225bd360f1e262dcf11e1b32b26",
+      "unit_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "budget_epsilon": 1e-09,
+      "reachable_masks": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "reachable_masks_hash": "ca8a14cb45debb6fffa1c76881462e20eead3ded310bd1a13005d260b7dede8f",
+      "reachable_count": 4,
+      "transition_count": 3,
+      "optimal_route": [
+        "b"
+      ],
+      "optimal_cost": 5.0,
+      "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+    },
+    "exact_feasible_witness": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanResult",
+      "is_fixture": true,
+      "plan_id": "greedy_failure-exact-dp",
+      "request_id": "greedy_failure",
+      "status": "FEASIBLE",
+      "ordered_units": [
+        "b"
+      ],
+      "coverage": {
+        "required_concept_ids": [
+          "x",
+          "y"
+        ],
+        "covered_concept_ids": [
+          "x",
+          "y"
+        ],
+        "ratio": 1.0
+      },
+      "unmet_constraints": [],
+      "estimated_cost": 5.0,
+      "cost_unit": "proxy_cost",
+      "reason_trace": [
+        {
+          "step": 1,
+          "unit_id": "b",
+          "reason": "exact-dp: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=5; soft edges are not constraints",
+          "evidence_ids": []
+        }
+      ],
+      "proof_path": null
+    },
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": false,
+      "replayed_cost": 2.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

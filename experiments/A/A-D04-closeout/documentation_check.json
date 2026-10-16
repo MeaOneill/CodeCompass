@@ -1,0 +1,10 @@
+{
+  "files": [
+    "README.md",
+    "docs/A/A-D04_成果与自行验收.md",
+    "docs/A/algorithm.md",
+    "scripts/A/README_D04.md"
+  ],
+  "broken_links": [],
+  "release_gate_pending": true
+}

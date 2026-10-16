@@ -1,0 +1,28 @@
+{
+  "format": "complete-subset-dp-v1",
+  "complete": true,
+  "input_hash": "2736326ae75f6571f94de72de720e7a029557a30f911e2c4aac17347a36114aa",
+  "unit_ids": [
+    "a",
+    "b",
+    "s"
+  ],
+  "budget_epsilon": 1e-09,
+  "reachable_masks": [
+    0,
+    4,
+    5,
+    6,
+    7
+  ],
+  "reachable_masks_hash": "85f4699a13b8b46c99afe84c1f2c8d8ec82c43ae9735c31d2b9c91074ddc3188",
+  "reachable_count": 5,
+  "transition_count": 5,
+  "optimal_route": [
+    "s",
+    "a",
+    "b"
+  ],
+  "optimal_cost": 5.0,
+  "claim_scope": "only this fixed candidate set, evidence gate, hard graph, nonnegative proxy costs and budget+1e-9"
+}

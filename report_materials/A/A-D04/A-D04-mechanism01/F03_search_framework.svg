@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1400" viewBox="0 0 2500 1400">
+  <rect width="2500" height="1400" fill="white" />
+  <text x="65" y="81.4" fill="#203344" font-size="46" font-family="Microsoft YaHei, sans-serif">F03：状态、约束与搜索决策框架</text>
+  <text x="65" y="146.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">机制正确性验证｜固定证据与同一候选池｜B2保留原实现｜没有真人学习效果结论</text>
+  <rect x="65" y="235" width="740" height="230" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="80" y="274.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">输入与证据门控</text>
+  <text x="80" y="307.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">固定源 / 硬教学边 / 成本</text>
+  <text x="80" y="343.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共享画像：未知不跳过</text>
+  <text x="80" y="379.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">模型下界与阈值沿用D03</text>
+  <rect x="885" y="235" width="740" height="230" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="900" y="274.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">beam 状态与扩展</text>
+  <text x="900" y="307.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">已选集合 + 路线 + 覆盖</text>
+  <text x="900" y="343.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">加入先修闭包，扣增量成本</text>
+  <text x="900" y="379.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">共享前置计一次，预算 + 1e-9</text>
+  <line x1="805" y1="350" x2="885" y2="350" stroke="#4c687d" stroke-width="3" />
+  <polygon points="885,350 870,342 870,358" fill="#4c687d" />
+  <rect x="1705" y="235" width="740" height="230" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1720" y="274.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">去重与确定性截断</text>
+  <text x="1720" y="307.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">同集合保留字典序代表</text>
+  <text x="1720" y="343.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">宽度16 / 候选上限50</text>
+  <text x="1720" y="379.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">丢弃ID与路线写入原始日志</text>
+  <line x1="1625" y1="350" x2="1705" y2="350" stroke="#4c687d" stroke-width="3" />
+  <polygon points="1705,350 1690,342 1690,358" fill="#4c687d" />
+  <rect x="65" y="580" width="740" height="265" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="80" y="619.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">B2：闭包增益/成本贪心</text>
+  <text x="80" y="652.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">与beam同池 / 同证据 / 同成本</text>
+  <text x="80" y="688.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">原core.py文件hash保持不变</text>
+  <text x="80" y="724.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">不因beam结果调整基线</text>
+  <text x="80" y="760.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">唯一链与真实任务的平局保留</text>
+  <rect x="885" y="580" width="740" height="265" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="900" y="619.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">精确DP：仅限 n &lt;= 12</text>
+  <text x="900" y="652.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">枚举全部预算内可达子集</text>
+  <text x="900" y="688.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">精确成本 / 无解仅限当前输入</text>
+  <text x="900" y="724.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">反向递推校验器独立重算</text>
+  <text x="900" y="760.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">不推广一般全局最优</text>
+  <rect x="1705" y="580" width="730" height="265" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="1720" y="619.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">独立合法性与证书检查</text>
+  <text x="1720" y="652.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">逐步重放先修 / 预算 / 覆盖</text>
+  <text x="1720" y="688.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">不调用beam / greedy / exact</text>
+  <text x="1720" y="724.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">检查输入hash与全部可达子集</text>
+  <text x="1720" y="760.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">拒绝伪成功 / 篡改证书</text>
+  <rect x="65" y="965" width="2370" height="225" rx="14" fill="#f2f7fb" stroke="#245880" stroke-width="3" />
+  <text x="80" y="1004.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">结果状态：FEASIBLE / NO_FEASIBLE_FOUND / TIMEOUT / INFEASIBLE_PROVEN</text>
+  <text x="80" y="1037.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">启发式未找到：只表示本次有界搜索失败；截断 / 超时都没有最优性结论。</text>
+  <text x="80" y="1073.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">精确证明：仅完成全部子集枚举且独立证书验证后使用，范围是固定候选、证据、图和预算。</text>
+  <text x="80" y="1109.6" fill="#245880" font-size="24" font-family="Microsoft YaHei, sans-serif">诊断、切换惩罚、真人成本标定未实现；仅比较非负代理成本。</text>
+  <text x="65" y="1283.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">配置、证书、原始搜索日志和源码快照：A-D04-mechanism01</text>
+</svg>

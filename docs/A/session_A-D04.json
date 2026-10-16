@@ -1,0 +1,19 @@
+{
+  "task_id": "A-D04",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "LAPTOP-LUQPS3EV",
+  "model_id": null,
+  "planned_date": "2026-10-18",
+  "actual_started_at": "2026-10-16T23:38:23.427351+08:00",
+  "base_commit": "5b3db98407ea47e1f26c7ff4cd7594cb42305aea",
+  "branch": "codex/A-D04-search",
+  "status": "READY_FOR_REVIEW",
+  "previous_handoff": "docs/B/handoffs/B-D03.md",
+  "formal_study_ready": false,
+  "updated_at": "2026-10-16T23:54:32.889329+08:00",
+  "verification": "experiments/A/A-D04-verification01/registration.json",
+  "artifact_audit": "experiments/A/A-D04-audit01/audit.json",
+  "next_task": "B-D04",
+  "independent_human_review": "NOT_REVIEWED"
+}

@@ -1,0 +1,117 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "fractional-greedy",
+    "request_id": "fractional",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "a",
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 0.30000000000000004,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=0.1; own proxy_cost=0.1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "b",
+        "reason": "TARGET_MATERIAL for b; bundle new-goal gain=1, incremental proxy_cost=0.2; own proxy_cost=0.2; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x",
+          "y"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "incremental_cost": 0.1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "incremental_cost": 0.2,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "pending_goals": [
+          "y"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "incremental_cost": 0.2,
+            "new_goal_gain": 1
+          }
+        ]
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 0.30000000000000004,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

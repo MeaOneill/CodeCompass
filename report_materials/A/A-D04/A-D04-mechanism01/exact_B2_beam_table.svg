@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1950" viewBox="0 0 2500 1950">
+  <rect width="2500" height="1950" fill="white" />
+  <text x="65" y="75.5" fill="#203344" font-size="45" font-family="Microsoft YaHei, sans-serif">小图精确 / 强B2 / beam 比较表</text>
+  <text x="65" y="136.1" fill="#203344" font-size="29" font-family="Microsoft YaHei, sans-serif">机制验证；14个结构夹具 + 两真实任务×两模拟画像；代理单位，不是分钟</text>
+  <text x="65" y="215.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">案例</text>
+  <text x="830" y="215.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">精确可行成本</text>
+  <text x="1280" y="215.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">B2可行成本</text>
+  <text x="1720" y="215.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">beam可行成本</text>
+  <text x="2160" y="215.2" fill="#203344" font-size="28" font-family="Microsoft YaHei, sans-serif">B2差距</text>
+  <text x="65" y="283.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">shared</text>
+  <text x="830" y="284.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="1280" y="284.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="1720" y="284.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="2160" y="284.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="357.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">greedy_failure</text>
+  <text x="830" y="358.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="1280" y="358.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="1720" y="358.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="2160" y="358.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">—</text>
+  <text x="65" y="431.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">cost_gap</text>
+  <text x="830" y="432.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="1280" y="432.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">6</text>
+  <text x="1720" y="432.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">5</text>
+  <text x="2160" y="432.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">1</text>
+  <text x="65" y="505.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">unique_chain</text>
+  <text x="830" y="506.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">3</text>
+  <text x="1280" y="506.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">3</text>
+  <text x="1720" y="506.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">3</text>
+  <text x="2160" y="506.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="579.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">cycle</text>
+  <text x="830" y="580.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">证明无解</text>
+  <text x="1280" y="580.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="1720" y="580.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="2160" y="580.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">—</text>
+  <text x="65" y="653.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">cycle_escape</text>
+  <text x="830" y="654.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">2</text>
+  <text x="1280" y="654.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="1720" y="654.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">2</text>
+  <text x="2160" y="654.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">—</text>
+  <text x="65" y="727.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">budget_short</text>
+  <text x="830" y="728.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">证明无解</text>
+  <text x="1280" y="728.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="1720" y="728.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="2160" y="728.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">—</text>
+  <text x="65" y="801.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">unreachable</text>
+  <text x="830" y="802.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">证明无解</text>
+  <text x="1280" y="802.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="1720" y="802.3" fill="#a63c28" font-size="27" font-family="Microsoft YaHei, sans-serif">未找到</text>
+  <text x="2160" y="802.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">—</text>
+  <text x="65" y="875.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">mastered</text>
+  <text x="830" y="876.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">2</text>
+  <text x="1280" y="876.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">2</text>
+  <text x="1720" y="876.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">2</text>
+  <text x="2160" y="876.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="949.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">zero_cost</text>
+  <text x="830" y="950.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="1280" y="950.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="1720" y="950.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="2160" y="950.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1023.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">fractional</text>
+  <text x="830" y="1024.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0.3</text>
+  <text x="1280" y="1024.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0.3</text>
+  <text x="1720" y="1024.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0.3</text>
+  <text x="2160" y="1024.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1097.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">ties</text>
+  <text x="830" y="1098.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">1</text>
+  <text x="1280" y="1098.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">1</text>
+  <text x="1720" y="1098.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">1</text>
+  <text x="2160" y="1098.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1171.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">twelve_units</text>
+  <text x="830" y="1172.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">12</text>
+  <text x="1280" y="1172.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">12</text>
+  <text x="1720" y="1172.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">12</text>
+  <text x="2160" y="1172.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1245.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">empty_goal</text>
+  <text x="830" y="1246.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="1280" y="1246.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="1720" y="1246.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="2160" y="1246.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1319.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">task_001-sim_unknown</text>
+  <text x="830" y="1320.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">80</text>
+  <text x="1280" y="1320.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">80</text>
+  <text x="1720" y="1320.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">80</text>
+  <text x="2160" y="1320.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1393.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">task_001-sim_evidence</text>
+  <text x="830" y="1394.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">43</text>
+  <text x="1280" y="1394.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">43</text>
+  <text x="1720" y="1394.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">43</text>
+  <text x="2160" y="1394.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1467.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">task_002-sim_unknown</text>
+  <text x="830" y="1468.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">60</text>
+  <text x="1280" y="1468.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">60</text>
+  <text x="1720" y="1468.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">60</text>
+  <text x="2160" y="1468.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1541.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">task_002-sim_evidence</text>
+  <text x="830" y="1542.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">39</text>
+  <text x="1280" y="1542.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">39</text>
+  <text x="1720" y="1542.3" fill="#245880" font-size="27" font-family="Microsoft YaHei, sans-serif">39</text>
+  <text x="2160" y="1542.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">0</text>
+  <text x="65" y="1684.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">代价差距 = 可行路线成本 - 同输入精确最小成本；无可行路线不填0，也不参与差距。</text>
+  <text x="65" y="1734.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">真实任务现有候选的可替代空间有限，本轮成本均相同；受控反例不代表总体学习收益。</text>
+  <text x="65" y="1784.3" fill="#203344" font-size="27" font-family="Microsoft YaHei, sans-serif">beam全部保持 optimality_claim=false；即使本表等于精确解，也不保证一般图最优。</text>
+  <text x="65" y="1863.4" fill="#203344" font-size="26" font-family="Microsoft YaHei, sans-serif">A-D04-mechanism01 | 完整JSON / CSV / 输入与证明见同run目录</text>
+</svg>

@@ -1,0 +1,148 @@
+{
+  "task_id": "A-D04",
+  "timestamp": "2026-10-16T23:49:54.950282+08:00",
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=tmp/pytest-A-D04-final"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 12.311246099998243,
+      "raw_log": "experiments/A/A-D04-verification01/1.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.0378378000023076,
+      "raw_log": "experiments/A/A-D04-verification01/2.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py",
+        "--case",
+        "unique_chain"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.0022909000035725,
+      "raw_log": "experiments/A/A-D04-verification01/3.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py",
+        "--case",
+        "greedy_failure",
+        "--beam-width",
+        "1",
+        "--candidate-limit",
+        "1",
+        "--certify-small"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.023941699997522,
+      "raw_log": "experiments/A/A-D04-verification01/4.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py",
+        "--case",
+        "unreachable",
+        "--certify-small"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.4002322999949683,
+      "raw_log": "experiments/A/A-D04-verification01/5.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py",
+        "--time-limit",
+        "0"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.8810075000001234,
+      "raw_log": "experiments/A/A-D04-verification01/6.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py",
+        "--beam-width",
+        "0"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 1.2075524999963818,
+      "raw_log": "experiments/A/A-D04-verification01/7.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/audit_d03.py",
+        "--source-run",
+        "A-D03-short-tests04",
+        "--run-id",
+        "A-D04-D03-regression01"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 2.522135299994261,
+      "raw_log": "experiments/A/A-D04-verification01/8.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/B/audit_d03.py",
+        "--source",
+        "experiments/B/B-D03-integration02",
+        "--figures",
+        "report_materials/B/B-D03-final",
+        "--output",
+        "experiments/A/A-D04-B03-regression01.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.7088376999963657,
+      "raw_log": "experiments/A/A-D04-verification01/9.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.369400700001279,
+      "raw_log": "experiments/A/A-D04-verification01/10.log"
+    }
+  ],
+  "all_passed": true
+}

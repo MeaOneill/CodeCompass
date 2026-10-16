@@ -1,0 +1,54 @@
+{
+  "run_id": "A-D04-mechanism01",
+  "kind": "mechanism_correctness_not_learning_effect",
+  "audience": "competition engineering report draft",
+  "publisher": null,
+  "source_json": "experiments/A/A-D04-mechanism01/summary.json",
+  "source_sha256": "3d1f9341394a0ba0b70bdac0c0d7851e05ab8fe78db58702bfc58b97f68bb8e5",
+  "script": "scripts/A/draw_d04.py",
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+  "transformations": "no exclusions, no normalization, exact gaps only for feasible outcomes; missing is never zero",
+  "unit": "proxy_cost; not minutes",
+  "human_n": 0,
+  "seed": null,
+  "command": [
+    "python",
+    "scripts/A/draw_d04.py",
+    "--run-id",
+    "A-D04-mechanism01"
+  ],
+  "figures": [
+    {
+      "figure_id": "F03_search_framework",
+      "size_px": [
+        2500,
+        1400
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 34,
+      "review": "pending"
+    },
+    {
+      "figure_id": "exact_B2_beam_table",
+      "size_px": [
+        2500,
+        1950
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 101,
+      "review": "pending"
+    },
+    {
+      "figure_id": "beam_decision_trace",
+      "size_px": [
+        2500,
+        1360
+      ],
+      "dpi": 300,
+      "text_bounds_checked": 22,
+      "review": "pending"
+    }
+  ],
+  "skill": "scientific-visualization; referenced publication_guidelines.md absent; core guardrails applied"
+}

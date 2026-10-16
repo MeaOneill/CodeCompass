@@ -1,0 +1,138 @@
+{
+  "gate": {
+    "boltons.chunk_postprocess": {
+      "concept_id": "boltons.chunk_postprocess",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "boltons.wrapper_compatibility": {
+      "concept_id": "boltons.wrapper_compatibility",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.generator_laziness": {
+      "concept_id": "python.generator_laziness",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.islice_consumption": {
+      "concept_id": "python.islice_consumption",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 22,
+      "beta": 2,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1",
+        "sim-B03-10",
+        "sim-B03-11",
+        "sim-B03-12",
+        "sim-B03-13",
+        "sim-B03-14",
+        "sim-B03-15",
+        "sim-B03-16",
+        "sim-B03-17",
+        "sim-B03-18",
+        "sim-B03-19",
+        "sim-B03-20",
+        "sim-B03-21",
+        "sim-B03-22",
+        "sim-B03-3",
+        "sim-B03-4",
+        "sim-B03-5",
+        "sim-B03-6",
+        "sim-B03-7",
+        "sim-B03-8",
+        "sim-B03-9"
+      ],
+      "lower_bound": 0.8411590335001071,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "candidate_attempts": [
+    {
+      "iteration": 1,
+      "pending_goals": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.keyword_presence"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_chunked",
+          "bundle": [
+            "u_chunked"
+          ],
+          "incremental_cost": 21,
+          "new_goal_gain": 1
+        },
+        {
+          "root": "u_chunked_iter",
+          "bundle": [
+            "u_chunked_iter"
+          ],
+          "incremental_cost": 43,
+          "new_goal_gain": 4
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "pending_goals": [
+        "boltons.wrapper_compatibility"
+      ],
+      "blocked_candidates": [],
+      "candidates": [
+        {
+          "root": "u_chunked",
+          "bundle": [
+            "u_chunked"
+          ],
+          "incremental_cost": 21,
+          "new_goal_gain": 1
+        }
+      ]
+    }
+  ],
+  "method": "B2-initial-closure-gain-greedy",
+  "diagnostics_implemented": false,
+  "optimality_claim": false,
+  "replay_audit": {
+    "structurally_valid": true,
+    "goal_complete": true,
+    "violations": [],
+    "replayed_proxy_cost": 64,
+    "covered_concepts": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "not_a_learning_success_measure": true
+  }
+}

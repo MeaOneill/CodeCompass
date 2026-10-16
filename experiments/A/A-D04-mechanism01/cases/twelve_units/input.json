@@ -1,0 +1,346 @@
+{
+  "case_id": "twelve_units",
+  "is_simulated": true,
+  "units": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u00",
+      "concept_ids": [
+        "c00"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u01",
+      "concept_ids": [
+        "c01"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u02",
+      "concept_ids": [
+        "c02"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u03",
+      "concept_ids": [
+        "c03"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u04",
+      "concept_ids": [
+        "c04"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u05",
+      "concept_ids": [
+        "c05"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u06",
+      "concept_ids": [
+        "c06"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u07",
+      "concept_ids": [
+        "c07"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u08",
+      "concept_ids": [
+        "c08"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u09",
+      "concept_ids": [
+        "c09"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u10",
+      "concept_ids": [
+        "c10"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "u11",
+      "concept_ids": [
+        "c11"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    }
+  ],
+  "request": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanningRequest",
+    "is_fixture": true,
+    "request_id": "twelve_units",
+    "snapshot_id": "synthetic-D04",
+    "task_id": "twelve_units",
+    "learner_state": [],
+    "budget": 12,
+    "cost_unit": "proxy_cost",
+    "config_version": "D04-mechanism-v1",
+    "target_concept_ids": [
+      "c00",
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c10",
+      "c11"
+    ],
+    "unit_ids": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "u07",
+      "u08",
+      "u09",
+      "u10",
+      "u11"
+    ],
+    "prior_plan_id": null
+  },
+  "state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "simulation-D04",
+    "is_simulated": true,
+    "records": []
+  },
+  "config": {
+    "version": "D04-mechanism-v1",
+    "threshold": 0.7,
+    "quantile": 0.1
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "D04-task_002-sim_unknown-beam",
+    "request_id": "D04-task_002-sim_unknown",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "u_iterable",
+      "u_positive_int",
+      "u_windowed_iter"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "covered_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 60.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "u_iterable",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L61-76; proxy_cost=16; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "u_positive_int",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L309-313; proxy_cost=5; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "u_windowed_iter",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L472-510; proxy_cost=39; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "details": {
+    "method": "beam",
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "events": [
+      {
+        "event": "expand",
+        "depth": 0,
+        "route": [],
+        "candidates": [
+          {
+            "root": "u_positive_int",
+            "bundle": [
+              "u_positive_int"
+            ],
+            "route": [
+              "u_positive_int"
+            ],
+            "cost": 5.0
+          },
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_iterable"
+            ],
+            "cost": 16.0
+          },
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "route": [
+              "u_windowed_iter"
+            ],
+            "cost": 39.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 0,
+        "retained": [
+          [
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int"
+          ],
+          [
+            "u_iterable"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_windowed_iter"
+        ],
+        "candidates": [
+          {
+            "root": "u_positive_int",
+            "bundle": [
+              "u_positive_int"
+            ],
+            "route": [
+              "u_windowed_iter",
+              "u_positive_int"
+            ],
+            "cost": 44.0
+          },
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_windowed_iter",
+              "u_iterable"
+            ],
+            "cost": 55.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_positive_int"
+        ],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_positive_int",
+              "u_iterable"
+            ],
+            "cost": 21.0
+          },
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "route": [
+              "u_positive_int",
+              "u_windowed_iter"
+            ],
+            "cost": 44.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_iterable"
+        ],
+        "candidates": [
+          {
+            "root": "u_positive_int",
+            "bundle": [
+              "u_positive_int"
+            ],
+            "route": [
+              "u_iterable",
+              "u_positive_int"
+            ],
+            "cost": 21.0
+          },
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "route": [
+              "u_iterable",
+              "u_windowed_iter"
+            ],
+            "cost": 55.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 1,
+        "retained": [
+          [
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_positive_int"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_positive_int",
+              "u_windowed_iter",
+              "u_iterable"
+            ],
+            "cost": 60.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_iterable",
+          "u_windowed_iter"
+        ],
+        "candidates": [
+          {
+            "root": "u_positive_int",
+            "bundle": [
+              "u_positive_int"
+            ],
+            "route": [
+              "u_iterable",
+              "u_windowed_iter",
+              "u_positive_int"
+            ],
+            "cost": 60.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "candidates": [
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "route": [
+              "u_iterable",
+              "u_positive_int",
+              "u_windowed_iter"
+            ],
+            "cost": 60.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 2,
+        "retained": [
+          [
+            "u_iterable",
+            "u_positive_int",
+            "u_windowed_iter"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 3,
+        "retained": [],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      }
+    ],
+    "expansions": 12,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": true,
+    "optimality_claim": false,
+    "truncated": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 60.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

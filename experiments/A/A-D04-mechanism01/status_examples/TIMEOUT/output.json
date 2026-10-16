@@ -1,0 +1,68 @@
+{
+  "result": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "cost_gap-beam",
+    "request_id": "cost_gap",
+    "status": "TIMEOUT",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: x",
+      "uncovered target: y",
+      "WALL_CLOCK_TIMEOUT"
+    ],
+    "estimated_cost": 0.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "details": {
+    "method": "beam",
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 0.0
+    },
+    "events": [],
+    "expansions": 0,
+    "termination": "WALL_CLOCK_TIMEOUT",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": false,
+    "optimality_claim": false,
+    "truncated": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": false,
+      "replayed_cost": 0.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  }
+}

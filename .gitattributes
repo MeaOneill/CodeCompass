@@ -57,3 +57,6 @@
 /report_materials/B/B-D03-final/*.csv -text whitespace=cr-at-eol
 /docs/requests/B-D03-* text eol=lf
 /docs/joint/B-D03-* text eol=lf
+
+/experiments/A/A-D04-*/code_snapshot/** -text whitespace=-blank-at-eol
+/experiments/A/A-D04-*/comparison.csv -text whitespace=cr-at-eol

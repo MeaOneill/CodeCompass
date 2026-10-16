@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "PlanResult",
+  "is_fixture": true,
+  "plan_id": "A-D04-accept-B03-01-incorrect-greedy",
+  "request_id": "A-D04-accept-B03-01-incorrect",
+  "status": "FEASIBLE",
+  "ordered_units": [
+    "u_chunked_iter",
+    "u_iterable",
+    "u_chunked"
+  ],
+  "coverage": {
+    "required_concept_ids": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "covered_concept_ids": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "ratio": 1.0
+  },
+  "unmet_constraints": [],
+  "estimated_cost": 80,
+  "cost_unit": "proxy_cost",
+  "reason_trace": [
+    {
+      "step": 1,
+      "unit_id": "u_chunked_iter",
+      "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+      "evidence_ids": []
+    },
+    {
+      "step": 2,
+      "unit_id": "u_iterable",
+      "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+      "evidence_ids": []
+    },
+    {
+      "step": 3,
+      "unit_id": "u_chunked",
+      "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+      "evidence_ids": []
+    }
+  ],
+  "proof_path": null
+}
