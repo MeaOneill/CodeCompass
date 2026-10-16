@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-17T00:00:23.434011+08:00",
+  "final_committed_link_checks_passed": true,
+  "files": [
+    "README.md",
+    "docs/A/A-D04_成果与自行验收.md",
+    "docs/A/algorithm.md",
+    "scripts/A/README_D04.md"
+  ],
+  "links_checked": 17,
+  "initial_delivery_check": {
+    "command": "python tmp/final_sync_d04.py",
+    "exit_code": 1,
+    "observed": "after successful final push and remote equality, clean-tree assertion found ?? scripts/A/README_D04.md",
+    "original_tool_session_id": 68396,
+    "classification": "documentation omission; algorithm unchanged"
+  },
+  "correction": "README included in commit 8ed2b88; final Git archive links checked, no missing files",
+  "remaining": "final push and remote/clean-tree check"
+}
