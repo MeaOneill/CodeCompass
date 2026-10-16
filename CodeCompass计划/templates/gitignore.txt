@@ -1,0 +1,39 @@
+# Copy to project-root .gitignore only after checking existing rules.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+/data/raw/
+/data/private/
+/data/cache/
+/models/
+/tmp/
+/CodeCompass计划/archive/
+~$*
+*.tmp
+*.bak
+# Reference competition PDFs remain local by default.
+/附件*.pdf
+/关于举办*.pdf
+# A downloaded third-party repository is an input, not our project history.
+/third_party/checkouts/
+# Do not ignore all experiment logs, CSV/JSON, figures or reports.
+# Review their size, identity data and redistribution rights before staging.
