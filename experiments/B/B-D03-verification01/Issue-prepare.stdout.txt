@@ -1,0 +1,8 @@
+固定快照获取时间：2026-10-16T14:59:14.062900+00:00
+开放候选：2；历史关闭：0
+553 https://github.com/mahmoud/boltons/issues/553 | boltons/iterutils.py
+  仅模块词命中，待核查复现/版本；不代表适合初学者或已提交贡献。
+551 https://github.com/mahmoud/boltons/issues/551 | boltons/iterutils.py
+  仅模块词命中，待核查复现/版本；不代表适合初学者或已提交贡献。
+下一步：核查原Issue及固定版本，准备复现/测试；当前不向社区发送内容。
+C:\CodeCompass\CodeCompass\experiments\B\B-D03-verification01\issue_prepare.json

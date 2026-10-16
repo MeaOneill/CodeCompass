@@ -1,0 +1,39 @@
+{
+  "version": "A-D03-dev-0.1",
+  "cost_unit": "proxy_cost",
+  "cost_policy": "fixed-inclusive-source-lines-v1",
+  "budget": 100,
+  "quantile": 0.1,
+  "threshold": 0.7,
+  "methods": [
+    "B0-pinned-document-prefix",
+    "B2-initial-closure-gain-greedy"
+  ],
+  "routes": {
+    "task_001": [
+      "u_chunked",
+      "u_chunked_iter",
+      "u_iterable"
+    ],
+    "task_002": [
+      "u_windowed_iter",
+      "u_iterable",
+      "u_positive_int"
+    ]
+  },
+  "documentation": {
+    "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+    "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+  },
+  "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+  "diagnostics_implemented": false,
+  "formal_study_ready": false,
+  "human_cost_calibration": null,
+  "unit_costs": {
+    "u_iterable": 16,
+    "u_chunked_iter": 43,
+    "u_chunked": 21,
+    "u_windowed_iter": 39,
+    "u_positive_int": 5
+  }
+}

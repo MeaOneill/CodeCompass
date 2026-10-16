@@ -54,5 +54,101 @@
     "type": "inventory_and_source_reading_route",
     "human_sample_size": 0,
     "limits": "12 individually AI-engineering-reviewed specs; no human pilot/frozen test/effect claim"
+  },
+  {
+    "figure_id": "F04_capability",
+    "run_id": "B-D03-integration02",
+    "task": "B-D03",
+    "png": "report_materials/B/B-D03-final/F04_capability.png",
+    "svg": "report_materials/B/B-D03-final/F04_capability.svg",
+    "dependency_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+    "caption": "模拟能力模型记录",
+    "unit": "model probability",
+    "human_sample_size": 0,
+    "effect_result": false,
+    "visual_review": "Codex Agent B viewed full PNG: readable labels, no clipping; not independent human review",
+    "command": "python scripts/B/draw_d03.py --source C:\\CodeCompass\\CodeCompass\\experiments\\B\\B-D03-integration02 --output C:\\CodeCompass\\CodeCompass\\report_materials\\B\\B-D03-final",
+    "files": [
+      {
+        "path": "experiments/B/B-D03-integration02/capability.json",
+        "sha256": "d291d41fdc2d8539ec6f64902fadcc914531cec2f0a8db6566ea2a34a6a216a4"
+      },
+      {
+        "path": "experiments/B/B-D03-integration02/events.json",
+        "sha256": "dc3eaaeb43cb9ab1a25f634be8b3f38e0aa28e5c5e7fcb61bce6a6efdda010ef"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/F04_capability.png",
+        "sha256": "4b992be584a4cd1dca36a92b7014b7dcb9ddf201fa810ff26348d5b0af0dbf80"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/F04_capability.svg",
+        "sha256": "7c6e75a1bdf0a4cc3756bebe7624ee373b135b0d475f0030c6c64cb4fdff3c0a"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/render_config.json",
+        "sha256": "0267492b3b33a6b50068a3c41384bcb94a1ea307943320d222a3b9d60cb40ebe"
+      },
+      {
+        "path": "scripts/B/draw_d03.py",
+        "sha256": "533ce9a7988c9218428bceb3bc8a2e4d04cd7871ea6d41a524f2690f4e0980ce"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/capability.csv",
+        "sha256": "54706deea149d24a0340e9bf80db8978c2e5ce6c798d7e04b171e72f1616f5d6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11_issue_case",
+    "run_id": "B-D03-integration02",
+    "task": "B-D03",
+    "png": "report_materials/B/B-D03-final/F11_issue_case.png",
+    "svg": "report_materials/B/B-D03-final/F11_issue_case.svg",
+    "dependency_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+    "caption": "真实公开Issue快照与未确认模块候选；CLI信息排版，非GUI截图",
+    "unit": null,
+    "human_sample_size": 0,
+    "effect_result": false,
+    "visual_review": "Codex Agent B viewed full PNG: readable labels, no clipping; not independent human review",
+    "command": "python scripts/B/draw_d03.py --source C:\\CodeCompass\\CodeCompass\\experiments\\B\\B-D03-integration02 --output C:\\CodeCompass\\CodeCompass\\report_materials\\B\\B-D03-final",
+    "files": [
+      {
+        "path": "experiments/B/B-D03-integration02/issue_snapshot.json",
+        "sha256": "bf19204b5e1e8d4161aaca3e47dd3fa2fdcb512c94acc2f7dbb60a73c8b2b0a7"
+      },
+      {
+        "path": "experiments/B/B-D03-integration02/issue_matches.json",
+        "sha256": "2594bd312e4beb5cb66187f8e1f6971e0016d8f860176f9d519374a66ac8e553"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/F11_issue_case.png",
+        "sha256": "a44b292425a5b4cac662d6b35e457376a225e938fa48712db1d5f610037d90eb"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/F11_issue_case.svg",
+        "sha256": "b32e05b3cfdccae517dbbfec62a8ff19adc095df7baa4dd0226671fd2b83dbb2"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/render_config.json",
+        "sha256": "0267492b3b33a6b50068a3c41384bcb94a1ea307943320d222a3b9d60cb40ebe"
+      },
+      {
+        "path": "scripts/B/draw_d03.py",
+        "sha256": "533ce9a7988c9218428bceb3bc8a2e4d04cd7871ea6d41a524f2690f4e0980ce"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D03-final/capability.csv",
+        "sha256": "54706deea149d24a0340e9bf80db8978c2e5ce6c798d7e04b171e72f1616f5d6"
+      }
+    ]
   }
 ]

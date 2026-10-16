@@ -1,0 +1,37 @@
+{
+  "state_version": "0.1.0",
+  "pseudonymous_user_id": "sim-anon-B03-01",
+  "is_simulated": true,
+  "records": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearnerEvidence",
+      "is_fixture": true,
+      "evidence_id": "sim-B03-0",
+      "pseudonymous_user_id": "sim-anon-B03-01",
+      "concept_id": "python.iterator_protocol",
+      "item_id": "sim-independent-item-0",
+      "outcome": "pass",
+      "timestamp": "2026-10-16T15:05:55.069980+00:00",
+      "project": "boltons-4e5faa3d7e40",
+      "evidence_type": "independent_quiz",
+      "attempt_id": "sim-attempt-0",
+      "independent": true
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearnerEvidence",
+      "is_fixture": true,
+      "evidence_id": "sim-B03-1",
+      "pseudonymous_user_id": "sim-anon-B03-01",
+      "concept_id": "python.iterator_protocol",
+      "item_id": "sim-independent-item-1",
+      "outcome": "fail",
+      "timestamp": "2026-10-16T15:05:55.184481+00:00",
+      "project": "boltons-4e5faa3d7e40",
+      "evidence_type": "independent_quiz",
+      "attempt_id": "sim-attempt-1",
+      "independent": true
+    }
+  ]
+}

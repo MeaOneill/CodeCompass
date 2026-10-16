@@ -25,3 +25,5 @@ verification捕获CLI/pip/A图/两种B0/首版严格审计，预期exit2的缺�
 最终复检evaluation04=58累计测试、14开发夹具、22span；audit04工程通过/整体未过(exit2)。添加候选导入异常、完善响应人类回执和公开演示状态门禁后运行，旧记录保留。环境快照另存B-D02-20261016-environment，标记收尾时检测而非伪填旧运行时点。
 
 自主收尾：quality01/02各执行57项负例挑战，识别全部；质量02补齐task001完整源码/概念并逐题给出AI难度理由。evaluation05/06累计60测试、14夹具期待通过；06验证24span。B0-shared03仍预期缺成本exit2，lines03基于固定README/RST顺序运行。autonomous-audit01按D02开发范围验收exit0/next_day_allowed=true，formal_study_ready=false；此前将真人预演混入开发门禁的记录不删除。
+
+B-D03：integration02为现行数据源（真实源码/任务 + 模拟回答 + 真实公开Issue）；preflight01是A交付重放输出；verification01记录10命令退出与stdout/stderr，A固定输出由B原样移至其A-replay子目录；audit01保留失败、audit02为修复后审计。integration01为早期代码记录，不作当前通过证据。无正式实验或真人数据，SQLite在忽略tmp。

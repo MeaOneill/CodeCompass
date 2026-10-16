@@ -1,0 +1,107 @@
+{
+  "run_id": "B-D03-integration01",
+  "is_simulated": true,
+  "concept_id": "python.iterator_protocol",
+  "stages": [
+    {
+      "stage": "initial",
+      "concept_id": "python.iterator_protocol",
+      "a": 1,
+      "b": 1,
+      "mean": 0.5,
+      "lower_q10": 0.09999999999999999,
+      "upper_q90": 0.8999999999999999,
+      "evidence_ids": [],
+      "source_status": "SIMULATED",
+      "unknown": true,
+      "is_simulated": true
+    },
+    {
+      "stage": "correct",
+      "concept_id": "python.iterator_protocol",
+      "a": 2,
+      "b": 1,
+      "mean": 0.6666666666666666,
+      "lower_q10": 0.3162277660168379,
+      "upper_q90": 0.9486832980505138,
+      "evidence_ids": [
+        "sim-B03-0"
+      ],
+      "source_status": "SIMULATED",
+      "unknown": false,
+      "is_simulated": true
+    },
+    {
+      "stage": "incorrect",
+      "concept_id": "python.iterator_protocol",
+      "a": 2,
+      "b": 2,
+      "mean": 0.5,
+      "lower_q10": 0.19580010565909164,
+      "upper_q90": 0.8041998943409079,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1"
+      ],
+      "source_status": "SIMULATED",
+      "unknown": false,
+      "is_simulated": true
+    },
+    {
+      "stage": "duplicate_and_reading",
+      "concept_id": "python.iterator_protocol",
+      "a": 2,
+      "b": 2,
+      "mean": 0.5,
+      "lower_q10": 0.19580010565909164,
+      "upper_q90": 0.8041998943409079,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1"
+      ],
+      "source_status": "SIMULATED",
+      "unknown": false,
+      "is_simulated": true
+    },
+    {
+      "stage": "distinct_simulated_items",
+      "concept_id": "python.iterator_protocol",
+      "a": 22,
+      "b": 2,
+      "mean": 0.9166666666666666,
+      "lower_q10": 0.8411590335001071,
+      "upper_q90": 0.9766343597352488,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1",
+        "sim-B03-10",
+        "sim-B03-11",
+        "sim-B03-12",
+        "sim-B03-13",
+        "sim-B03-14",
+        "sim-B03-15",
+        "sim-B03-16",
+        "sim-B03-17",
+        "sim-B03-18",
+        "sim-B03-19",
+        "sim-B03-20",
+        "sim-B03-21",
+        "sim-B03-22",
+        "sim-B03-3",
+        "sim-B03-4",
+        "sim-B03-5",
+        "sim-B03-6",
+        "sim-B03-7",
+        "sim-B03-8",
+        "sim-B03-9"
+      ],
+      "source_status": "SIMULATED",
+      "unknown": false,
+      "is_simulated": true
+    }
+  ],
+  "uncertainty": "Beta model central Q10-Q90; not calibrated real mastery",
+  "restart_equal": true,
+  "users_isolated": true,
+  "simulation_isolated": true
+}

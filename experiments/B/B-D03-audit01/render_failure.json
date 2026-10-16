@@ -1,0 +1,9 @@
+{
+  "command": "python scripts/B/draw_d03.py --source experiments/B/B-D03-integration02 --output report_materials/B/B-D03",
+  "observed_failure": "ValueError: relative output path is not in absolute ROOT subpath",
+  "individual_exit_code": "not separately captured in the original combined shell invocation",
+  "audit_exit_code": 1,
+  "repair": "resolve input/output Path before relative_to; new export and audit02 passed",
+  "partial_outputs": "render_partial",
+  "historical_record": true
+}

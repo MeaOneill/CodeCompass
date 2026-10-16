@@ -1,0 +1,491 @@
+{
+  "task": "B-D03",
+  "engineering_passed": true,
+  "checks": [
+    {
+      "check": "current bytes src/codecompass/app/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/app/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/app/evidence_store.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/app/evidence_store.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/issues/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/issues/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/issues/candidates.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/issues/candidates.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes scripts/B/demo_d03.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes scripts/B/demo_d03.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes scripts/B/issues_d03.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes scripts/B/issues_d03.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes tests/B/test_d03_storage_issues.py",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes tests/B/test_d03_storage_issues.py",
+      "passed": true
+    },
+    {
+      "check": "current bytes schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "current bytes benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "current bytes benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "current bytes benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "current bytes configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "frozen bytes configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "no invented human evidence",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-0",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-1",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-repeat-new-attempt",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-2",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-3",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-4",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-5",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-6",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-7",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-8",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-9",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-10",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-11",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-12",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-13",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-14",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-15",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-16",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-17",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-18",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-19",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-20",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-21",
+      "passed": true
+    },
+    {
+      "check": "pure A evidence replay sim-B03-22",
+      "passed": true
+    },
+    {
+      "check": "process restore exactly equals replay",
+      "passed": true
+    },
+    {
+      "check": "fresh process exited zero",
+      "passed": true
+    },
+    {
+      "check": "initial prior unknown",
+      "passed": true
+    },
+    {
+      "check": "correct a increments",
+      "passed": true
+    },
+    {
+      "check": "incorrect b increments",
+      "passed": true
+    },
+    {
+      "check": "duplicate and reading no inflation",
+      "passed": true
+    },
+    {
+      "check": "probability/uncertainty initial",
+      "passed": true
+    },
+    {
+      "check": "probability/uncertainty correct",
+      "passed": true
+    },
+    {
+      "check": "probability/uncertainty incorrect",
+      "passed": true
+    },
+    {
+      "check": "probability/uncertainty duplicate_and_reading",
+      "passed": true
+    },
+    {
+      "check": "probability/uncertainty distinct_simulated_items",
+      "passed": true
+    },
+    {
+      "check": "real source u_iterable",
+      "passed": true
+    },
+    {
+      "check": "soft teaching edges u_iterable",
+      "passed": true
+    },
+    {
+      "check": "real source u_chunked_iter",
+      "passed": true
+    },
+    {
+      "check": "soft teaching edges u_chunked_iter",
+      "passed": true
+    },
+    {
+      "check": "real source u_chunked",
+      "passed": true
+    },
+    {
+      "check": "soft teaching edges u_chunked",
+      "passed": true
+    },
+    {
+      "check": "real source u_windowed_iter",
+      "passed": true
+    },
+    {
+      "check": "soft teaching edges u_windowed_iter",
+      "passed": true
+    },
+    {
+      "check": "real source u_positive_int",
+      "passed": true
+    },
+    {
+      "check": "soft teaching edges u_positive_int",
+      "passed": true
+    },
+    {
+      "check": "request uses persisted ledger initial",
+      "passed": true
+    },
+    {
+      "check": "route legal initial",
+      "passed": true
+    },
+    {
+      "check": "B0 legal initial",
+      "passed": true
+    },
+    {
+      "check": "request uses persisted ledger correct",
+      "passed": true
+    },
+    {
+      "check": "route legal correct",
+      "passed": true
+    },
+    {
+      "check": "B0 legal correct",
+      "passed": true
+    },
+    {
+      "check": "request uses persisted ledger incorrect",
+      "passed": true
+    },
+    {
+      "check": "route legal incorrect",
+      "passed": true
+    },
+    {
+      "check": "B0 legal incorrect",
+      "passed": true
+    },
+    {
+      "check": "request uses persisted ledger duplicate_and_reading",
+      "passed": true
+    },
+    {
+      "check": "route legal duplicate_and_reading",
+      "passed": true
+    },
+    {
+      "check": "B0 legal duplicate_and_reading",
+      "passed": true
+    },
+    {
+      "check": "request uses persisted ledger distinct_simulated_items",
+      "passed": true
+    },
+    {
+      "check": "route legal distinct_simulated_items",
+      "passed": true
+    },
+    {
+      "check": "B0 legal distinct_simulated_items",
+      "passed": true
+    },
+    {
+      "check": "distinct simulated evidence changes actual route",
+      "passed": true
+    },
+    {
+      "check": "B0 fixed across states",
+      "passed": true
+    },
+    {
+      "check": "real Issues with capture time and partial query boundary",
+      "passed": true
+    },
+    {
+      "check": "Issue match replay",
+      "passed": true
+    },
+    {
+      "check": "no recommendation accuracy invented",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes experiments/B/B-D03-integration02/capability.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes experiments/B/B-D03-integration02/events.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/F04_capability.png",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/F04_capability.svg",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/render_config.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes scripts/B/draw_d03.py",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "300dpi F04_capability",
+      "passed": true
+    },
+    {
+      "check": "native SVG F04_capability",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes experiments/B/B-D03-integration02/issue_snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes experiments/B/B-D03-integration02/issue_matches.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/F11_issue_case.png",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/F11_issue_case.svg",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes report_materials/B/B-D03-final/render_config.json",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes scripts/B/draw_d03.py",
+      "passed": true
+    },
+    {
+      "check": "figure/source bytes scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "300dpi F11_issue_case",
+      "passed": true
+    },
+    {
+      "check": "native SVG F11_issue_case",
+      "passed": true
+    }
+  ],
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "real_participants": 0,
+  "scope": "G1 engineering feasibility only",
+  "exit_code": 0
+}

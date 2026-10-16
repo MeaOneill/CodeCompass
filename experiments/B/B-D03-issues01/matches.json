@@ -1,0 +1,147 @@
+{
+  "snapshot_retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+  "is_fixture": false,
+  "candidates": [
+    {
+      "number": 553,
+      "url": "https://github.com/mahmoud/boltons/issues/553",
+      "title": "redundant ignores callable keys with a false boolean value",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [
+        "boltons/iterutils.py"
+      ],
+      "candidate_concept_gaps": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "relevance_label": "UNREVIEWED_TOKEN_MATCH",
+      "reason": "Module token in public title/body; semantic relevance and version applicability need review.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "OPEN_REVIEW_CANDIDATE_NOT_CONFIRMED"
+    },
+    {
+      "number": 551,
+      "url": "https://github.com/mahmoud/boltons/issues/551",
+      "title": "untyped_sorted repeats key evaluation and skips singleton key errors",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [
+        "boltons/iterutils.py"
+      ],
+      "candidate_concept_gaps": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "relevance_label": "UNREVIEWED_TOKEN_MATCH",
+      "reason": "Module token in public title/body; semantic relevance and version applicability need review.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "OPEN_REVIEW_CANDIDATE_NOT_CONFIRMED"
+    }
+  ],
+  "historical": [],
+  "unmatched": [
+    {
+      "number": 581,
+      "url": "https://github.com/mahmoud/boltons/issues/581",
+      "title": "SpooledStringIO.rollover() skips unread text after readline()",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [],
+      "candidate_concept_gaps": [],
+      "relevance_label": "NO_MODULE_TOKEN_MATCH",
+      "reason": "No covered module token in this limited snapshot.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "UNMATCHED"
+    },
+    {
+      "number": 579,
+      "url": "https://github.com/mahmoud/boltons/issues/579",
+      "title": "Security issue submission",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [],
+      "candidate_concept_gaps": [],
+      "relevance_label": "NO_MODULE_TOKEN_MATCH",
+      "reason": "No covered module token in this limited snapshot.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "UNMATCHED"
+    },
+    {
+      "number": 566,
+      "url": "https://github.com/mahmoud/boltons/issues/566",
+      "title": "dt_to_timestamp misclassifies custom timezone awareness",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [],
+      "candidate_concept_gaps": [],
+      "relevance_label": "NO_MODULE_TOKEN_MATCH",
+      "reason": "No covered module token in this limited snapshot.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "UNMATCHED"
+    },
+    {
+      "number": 565,
+      "url": "https://github.com/mahmoud/boltons/issues/565",
+      "title": "MultiReplace loses flags on precompiled regular expressions",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [],
+      "candidate_concept_gaps": [],
+      "relevance_label": "NO_MODULE_TOKEN_MATCH",
+      "reason": "No covered module token in this limited snapshot.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "UNMATCHED"
+    },
+    {
+      "number": 311,
+      "url": "https://github.com/mahmoud/boltons/issues/311",
+      "title": "Feature request: intersection and union of lists of ranges",
+      "state_at_capture": "open",
+      "retrieved_at": "2026-10-16T14:59:14.062900+00:00",
+      "is_fixture": false,
+      "source_mode": "FIXED_PUBLIC_SNAPSHOT",
+      "modules": [],
+      "candidate_concept_gaps": [],
+      "relevance_label": "NO_MODULE_TOKEN_MATCH",
+      "reason": "No covered module token in this limited snapshot.",
+      "version_gap": "Issue current state is separate from pinned source commit; reproduction not performed.",
+      "community_submission": false,
+      "disposition": "UNMATCHED"
+    }
+  ],
+  "no_suitable_reason": null,
+  "independent_relevance_labels": 0,
+  "recommendation_accuracy": null,
+  "formal_study_result": false
+}

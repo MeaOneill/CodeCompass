@@ -1,0 +1,11 @@
+initial: a=1 b=1 模型均值=0.5000 Q10..Q90=0.1000..0.9000 路线=['u_chunked_iter', 'u_iterable', 'u_chunked']
+correct: a=2 b=1 模型均值=0.6667 Q10..Q90=0.3162..0.9487 路线=['u_chunked_iter', 'u_iterable', 'u_chunked']
+incorrect: a=2 b=2 模型均值=0.5000 Q10..Q90=0.1958..0.8042 路线=['u_chunked_iter', 'u_iterable', 'u_chunked']
+duplicate_and_reading: a=2 b=2 模型均值=0.5000 Q10..Q90=0.1958..0.8042 路线=['u_chunked_iter', 'u_iterable', 'u_chunked']
+distinct_simulated_items: a=22 b=2 模型均值=0.9167 Q10..Q90=0.8412..0.9766 路线=['u_chunked_iter', 'u_chunked']
+重启恢复一致；用户/模拟数据隔离通过。回答全部为模拟，真人回答0。
+Issue固定快照：2026-10-16T14:59:14.062900+00:00
+开放模块候选=2 历史关闭=0；相关性未独立标注，无推荐准确率。
+OPEN #553 https://github.com/mahmoud/boltons/issues/553 modules=['boltons/iterutils.py'] gaps=['boltons.chunk_postprocess', 'boltons.wrapper_compatibility', 'python.generator_laziness', 'python.islice_consumption', 'python.keyword_presence']
+OPEN #551 https://github.com/mahmoud/boltons/issues/551 modules=['boltons/iterutils.py'] gaps=['boltons.chunk_postprocess', 'boltons.wrapper_compatibility', 'python.generator_laziness', 'python.islice_consumption', 'python.keyword_presence']
+B-D03工程演示完成。真实学习效果/准确率：未测。C:\CodeCompass\CodeCompass\experiments\B\B-D03-verification01-demo

@@ -1,0 +1,9 @@
+usage: issues_d03.py [-h] {fetch,prepare} ...
+
+只读Issue抓取/固定快照匹配；生成贡献准备信息，不发布内容。
+
+positional arguments:
+  {fetch,prepare}
+
+options:
+  -h, --help       show this help message and exit

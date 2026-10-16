@@ -1,0 +1,956 @@
+{
+  "task_id": "A-D03",
+  "source_run": "A-D03-short-tests04",
+  "audit_run": "B-D03-verification01-A-replay",
+  "engineering_passed": true,
+  "checks": [
+    {
+      "check": "current input hash src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash scripts/A/prepare_d03.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash scripts/A/prepare_d03.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash scripts/B/b0.py",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash scripts/B/b0.py",
+      "passed": true
+    },
+    {
+      "check": "current input hash schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash configs/A/D03_profiles.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash configs/A/D03_profiles.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "current input hash benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+      "passed": true
+    },
+    {
+      "check": "frozen input hash benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+      "passed": true
+    },
+    {
+      "check": "two tasks by two profiles and two methods plus preserved failure pair",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "B0 unchanged public implementation ('task_001-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B0') #0",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B0') #1",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B0') #2",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B0') #3",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B2_initial') #4",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B2_initial') #5",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B2_initial') #6",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_unknown', 'B2_initial') #7",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "B0 unchanged public implementation ('task_001-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B0') #8",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B0') #9",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B0') #10",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B0') #11",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B2_initial') #12",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B2_initial') #13",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B2_initial') #14",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-sim_evidence', 'B2_initial') #15",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_windowed_iter ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_windowed_iter ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_positive_int ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_positive_int ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "B0 unchanged public implementation ('task_002-sim_unknown', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B0') #16",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B0') #17",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B0') #18",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B0') #19",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_windowed_iter ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_windowed_iter ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_positive_int ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_positive_int ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_002-sim_unknown', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B2_initial') #20",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B2_initial') #21",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B2_initial') #22",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_unknown', 'B2_initial') #23",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_windowed_iter ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_windowed_iter ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_positive_int ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_positive_int ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "B0 unchanged public implementation ('task_002-sim_evidence', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B0') #24",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B0') #25",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B0') #26",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B0') #27",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_windowed_iter ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_windowed_iter ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_positive_int ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_positive_int ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_002-sim_evidence', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B2_initial') #28",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B2_initial') #29",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B2_initial') #30",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_002-sim_evidence', 'B2_initial') #31",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "B0 unchanged public implementation ('task_001-budget_failure', 'B0')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B0') #32",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B0') #33",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B0') #34",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B0') #35",
+      "passed": true
+    },
+    {
+      "check": "unique case method ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "goals match independent B task specification ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same actual candidate pool ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "all profiles explicitly simulated ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no fabricated human/task success ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_iterable ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_iterable ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked_iter ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked_iter ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "same measured source cost u_chunked ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "no unreviewed real hard edges u_chunked ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "gate independently recomputed ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "route replay valid ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "saved and replay audit agree ('task_001-budget_failure', 'B2_initial')",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B2_initial') #36",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B2_initial') #37",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B2_initial') #38",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B2_initial') #39",
+      "passed": true
+    },
+    {
+      "check": "mutated route rejected ('task_001-budget_failure', 'B2_initial') #40",
+      "passed": true
+    },
+    {
+      "check": "ability input leads to an explainable actual decision difference task_001",
+      "passed": true
+    },
+    {
+      "check": "ability input leads to an explainable actual decision difference task_002",
+      "passed": true
+    },
+    {
+      "check": "all five A-only boundary checks retained",
+      "passed": true
+    },
+    {
+      "check": "greedy failure alongside valid feasible witness is disclosed",
+      "passed": true
+    },
+    {
+      "check": "shared prerequisite counted once",
+      "passed": true
+    },
+    {
+      "check": "diagnostics not claimed",
+      "passed": true
+    },
+    {
+      "check": "no formal study claimed",
+      "passed": true
+    },
+    {
+      "check": "figure source hash",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi task_001_paired_routes",
+      "passed": true
+    },
+    {
+      "check": "native SVG task_001_paired_routes",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi task_002_paired_routes",
+      "passed": true
+    },
+    {
+      "check": "native SVG task_002_paired_routes",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi failure_budget_route",
+      "passed": true
+    },
+    {
+      "check": "native SVG failure_budget_route",
+      "passed": true
+    }
+  ],
+  "negative_mutations_rejected": 41,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "next_step_allowed_pending_sync": false,
+  "remaining_engineering_items": [
+    "fresh committed-copy replay and remote SHA verification"
+  ],
+  "exit_code": 0
+}

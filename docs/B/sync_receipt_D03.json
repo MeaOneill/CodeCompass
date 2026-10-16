@@ -1,0 +1,9 @@
+{
+  "task": "B-D03",
+  "branch": "codex/B-D03-integration",
+  "base_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+  "status": "PENDING_COMMITTED_COPY_AND_PUSH",
+  "verified_head": null,
+  "remote_sha": null,
+  "A_machine_acceptance": "NOT_CONFIRMED"
+}

@@ -1,0 +1,160 @@
+{
+  "task": "B-D03",
+  "run_id": "B-D03-verification01",
+  "time": "2026-10-16T15:05:59.644637+00:00",
+  "source_head": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+  "commands": [
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/pytest.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/pytest.stderr.txt"
+    },
+    {
+      "name": "A-demo",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d03.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/A-demo.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/A-demo.stderr.txt"
+    },
+    {
+      "name": "A-audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d03.py",
+        "--source-run",
+        "A-D03-short-tests04",
+        "--run-id",
+        "B-D03-verification01-A-replay"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/A-audit.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/A-audit.stderr.txt"
+    },
+    {
+      "name": "B-demo",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/demo_d03.py",
+        "--run-id",
+        "B-D03-verification01-demo"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/B-demo.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/B-demo.stderr.txt"
+    },
+    {
+      "name": "B-audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d03.py",
+        "--source",
+        "experiments/B/B-D03-integration02",
+        "--figures",
+        "report_materials/B/B-D03-final",
+        "--output",
+        "experiments\\B\\B-D03-verification01\\audit.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/B-audit.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/B-audit.stderr.txt"
+    },
+    {
+      "name": "Issue-prepare",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/issues_d03.py",
+        "prepare",
+        "--snapshot",
+        "experiments/B/B-D03-issues01/snapshot.json",
+        "--output",
+        "experiments\\B\\B-D03-verification01\\issue_prepare.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/Issue-prepare.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/Issue-prepare.stderr.txt"
+    },
+    {
+      "name": "B-help",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/demo_d03.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/B-help.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/B-help.stderr.txt"
+    },
+    {
+      "name": "Issue-help",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/issues_d03.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/Issue-help.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/Issue-help.stderr.txt"
+    },
+    {
+      "name": "invalid-run-id",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/demo_d03.py",
+        "--run-id",
+        "../escape"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/invalid-run-id.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/invalid-run-id.stderr.txt"
+    },
+    {
+      "name": "missing-snapshot",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/issues_d03.py",
+        "prepare",
+        "--snapshot",
+        "tmp/never-existed-snapshot.json",
+        "--output",
+        "experiments\\B\\B-D03-verification01\\must_not_exist.json"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "stdout": "experiments/B/B-D03-verification01/missing-snapshot.stdout.txt",
+      "stderr": "experiments/B/B-D03-verification01/missing-snapshot.stderr.txt"
+    }
+  ],
+  "engineering_passed": true,
+  "exit_code": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false
+}

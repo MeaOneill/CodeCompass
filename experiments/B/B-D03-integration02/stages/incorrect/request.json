@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "PlanningRequest",
+  "is_fixture": true,
+  "request_id": "B-D03-integration02-incorrect",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "task_id": "task_001",
+  "learner_state": [
+    {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 2,
+      "beta": 2,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1"
+      ],
+      "lower_bound": 0.19580010565909164,
+      "quantile": 0.1
+    }
+  ],
+  "budget": 100,
+  "cost_unit": "proxy_cost",
+  "config_version": "A-D03-dev-0.1",
+  "target_concept_ids": [
+    "boltons.chunk_postprocess",
+    "boltons.wrapper_compatibility",
+    "python.generator_laziness",
+    "python.islice_consumption",
+    "python.iterator_protocol",
+    "python.keyword_presence"
+  ],
+  "unit_ids": [
+    "u_iterable",
+    "u_chunked_iter",
+    "u_chunked"
+  ],
+  "prior_plan_id": null
+}

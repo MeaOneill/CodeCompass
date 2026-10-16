@@ -1,0 +1,92 @@
+[
+  {
+    "path": "src/codecompass/app/__init__.py",
+    "sha256": "2639d0db20e6947593346502f3d9aafc5454403cb5cbc8919ab4b5645a9563c9",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/app/__init__.py"
+  },
+  {
+    "path": "src/codecompass/app/evidence_store.py",
+    "sha256": "5537f4aac70368afb95e9bddd89809654a59105e29cdb5767bd1cd23c4098a98",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/app/evidence_store.py"
+  },
+  {
+    "path": "src/codecompass/issues/__init__.py",
+    "sha256": "ea2e51c821f305a38005a4b96f79762191b244e0fc0e1a7c6d7b7cf3c70ba7d7",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/issues/__init__.py"
+  },
+  {
+    "path": "src/codecompass/issues/candidates.py",
+    "sha256": "411e35805baa83f321e6c92bd875f34670f1cc919f41a16d23eace2424ba79f0",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/issues/candidates.py"
+  },
+  {
+    "path": "src/codecompass/learner/__init__.py",
+    "sha256": "36d2056f2f15877b6b2d2943ddee1eda9dd8efc151bdcb24e45f1be816ebe560",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/learner/__init__.py"
+  },
+  {
+    "path": "src/codecompass/learner/model.py",
+    "sha256": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/learner/model.py"
+  },
+  {
+    "path": "src/codecompass/planner/__init__.py",
+    "sha256": "496b8b146907f5af88607284a410f50733a92c4a7bfeb1bd77bdf9d28450e6fa",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/planner/__init__.py"
+  },
+  {
+    "path": "src/codecompass/planner/core.py",
+    "sha256": "9354b2192c7b7bdfcf1648ca4cadcd86f62f825dd66ab2205611846b681bb63a",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/planner/core.py"
+  },
+  {
+    "path": "src/codecompass/planner/service.py",
+    "sha256": "1f475c506b3ea5040965dc4af64d47ad7559262b8db027c39c9a09e04af158c6",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/planner/service.py"
+  },
+  {
+    "path": "src/codecompass/planner/validate.py",
+    "sha256": "1ed234d541060fa24989f85e2582507cac02e428878777613bb99b9bd619aad3",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/src/codecompass/planner/validate.py"
+  },
+  {
+    "path": "scripts/B/demo_d03.py",
+    "sha256": "162de5910e4392b98cc272656b7504807dbdb83fb30f99f7f2fda8a52806806a",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/scripts/B/demo_d03.py"
+  },
+  {
+    "path": "scripts/B/issues_d03.py",
+    "sha256": "f479fac3c3dbf58ee45211b005ce68da4824fd58796294cb3490994df736a689",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/scripts/B/issues_d03.py"
+  },
+  {
+    "path": "tests/B/test_d03_storage_issues.py",
+    "sha256": "f5be31751a1c07179d26cc3398abf7f55fe408501abe8088b07730ee9f7f4717",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/tests/B/test_d03_storage_issues.py"
+  },
+  {
+    "path": "schemas/contracts-1.1.schema.json",
+    "sha256": "fc379758617fb7dd22fe0d3361a2c8b9e4ff65c42a14e37cfc456d76f2f97181",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/schemas/contracts-1.1.schema.json"
+  },
+  {
+    "path": "benchmarks/dev/D03/task_001.json",
+    "sha256": "186f627b41aa87bb227e3e718ea9b93d93dc938a994410bd3515d04aa49a71e0",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/benchmarks/dev/D03/task_001.json"
+  },
+  {
+    "path": "benchmarks/dev/D03/units.json",
+    "sha256": "0d1cd3053b0fab3382e0a55f7aadc836dd83db76d74edd61faca2cb819ea9784",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/benchmarks/dev/D03/units.json"
+  },
+  {
+    "path": "benchmarks/sources/boltons/snapshot.json",
+    "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/benchmarks/sources/boltons/snapshot.json"
+  },
+  {
+    "path": "configs/A/D03_common.json",
+    "sha256": "4fb43e8c8f4e241bb08270f5ff02e261c8ef179bafca20f171f866c174baa3a6",
+    "frozen_copy": "experiments/B/B-D03-verification01-demo/code_snapshot/configs/A/D03_common.json"
+  }
+]

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="48" y="63" font-family="Microsoft YaHei,sans-serif" font-size="38" fill="#243c59">F11 | 真实 Issue 固定快照与贡献准备 CLI</text>
+<text x="48" y="117" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">实际输出信息的案例排版 · 非GUI截图 · 无社区提交 · 无推荐准确率</text>
+<text x="48" y="170" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">抓取时间（UTC）：2026-10-16T14:59:14.062900+00:00</text>
+<text x="48" y="223" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">本页源：7条公开Issue；开放模块词候选 2；历史关闭 0。</text>
+<rect x="48" y="285" width="1700" height="215" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="72" y="329" font-family="Microsoft YaHei,sans-serif" font-size="28" fill="#243c59">OPEN #553 | redundant ignores callable keys with a false boolean value</text>
+<text x="72" y="383" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">https://github.com/mahmoud/boltons/issues/553</text>
+<text x="72" y="435" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">模块命中：boltons/iterutils.py；仅词匹配，相关性未独立审核。</text>
+<text x="72" y="479" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">候选函数不在当前 chunked 路线；需补函数阅读/复现/测试，再决定是否贡献。</text>
+<rect x="48" y="525" width="1700" height="215" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="72" y="569" font-family="Microsoft YaHei,sans-serif" font-size="28" fill="#243c59">OPEN #551 | untyped_sorted repeats key evaluation and skips singleton key errors</text>
+<text x="72" y="623" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">https://github.com/mahmoud/boltons/issues/551</text>
+<text x="72" y="675" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">模块命中：boltons/iterutils.py；仅词匹配，相关性未独立审核。</text>
+<text x="72" y="719" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">候选函数不在当前 chunked 路线；需补函数阅读/复现/测试，再决定是否贡献。</text>
+<text x="48" y="847" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">缺口：当前路线覆盖 chunked/is_iterable，不等于已掌握 redundant 或 untyped_sorted。</text>
+<text x="48" y="907" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">下一步：重查原链接状态 → 核对固定commit → 隔离复现/回归 → 检查贡献规范与重叠PR。</text>
+<text x="48" y="966" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">在线抓取只发生在记录时间；后续运行读取固定快照。公开Issue可变化，页面匹配不是适配确认。</text>
+<text x="48" y="1024" font-family="Microsoft YaHei,sans-serif" font-size="24" fill="#243c59">来源：B-D03-integration02 / issue_snapshot.json + issue_matches.json；不包含用户身份和私有答案。</text>
+</svg>

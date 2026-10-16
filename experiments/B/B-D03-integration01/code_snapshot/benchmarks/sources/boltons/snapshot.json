@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "RepoSnapshot",
+  "is_fixture": false,
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "url": "https://github.com/mahmoud/boltons",
+  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "license": "BSD-3-Clause",
+  "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+  "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+  "hash_scope": "selected_files_manifest_sha256",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+      "bytes": 1497,
+      "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+    },
+    {
+      "path": "boltons/iterutils.py",
+      "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+      "bytes": 59341,
+      "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+      "bytes": 1820,
+      "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+    },
+    {
+      "path": "tests/test_iterutils.py",
+      "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+      "bytes": 21913,
+      "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+    }
+  ],
+  "license_path": "LICENSE",
+  "snapshot_scope": "partial_source_bundle",
+  "complete_checkout_included": false
+}

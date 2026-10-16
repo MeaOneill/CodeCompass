@@ -1,0 +1,76 @@
+[
+  {
+    "concept_id": "boltons.chunk_postprocess",
+    "a": 1,
+    "b": 1,
+    "mean": 0.5,
+    "lower_q10": 0.09999999999999999,
+    "upper_q90": 0.8999999999999999,
+    "evidence_ids": [],
+    "source_status": "SIMULATED",
+    "unknown": true,
+    "is_simulated": true
+  },
+  {
+    "concept_id": "boltons.wrapper_compatibility",
+    "a": 1,
+    "b": 1,
+    "mean": 0.5,
+    "lower_q10": 0.09999999999999999,
+    "upper_q90": 0.8999999999999999,
+    "evidence_ids": [],
+    "source_status": "SIMULATED",
+    "unknown": true,
+    "is_simulated": true
+  },
+  {
+    "concept_id": "python.generator_laziness",
+    "a": 1,
+    "b": 1,
+    "mean": 0.5,
+    "lower_q10": 0.09999999999999999,
+    "upper_q90": 0.8999999999999999,
+    "evidence_ids": [],
+    "source_status": "SIMULATED",
+    "unknown": true,
+    "is_simulated": true
+  },
+  {
+    "concept_id": "python.islice_consumption",
+    "a": 1,
+    "b": 1,
+    "mean": 0.5,
+    "lower_q10": 0.09999999999999999,
+    "upper_q90": 0.8999999999999999,
+    "evidence_ids": [],
+    "source_status": "SIMULATED",
+    "unknown": true,
+    "is_simulated": true
+  },
+  {
+    "concept_id": "python.iterator_protocol",
+    "a": 2,
+    "b": 1,
+    "mean": 0.6666666666666666,
+    "lower_q10": 0.3162277660168379,
+    "upper_q90": 0.9486832980505138,
+    "evidence_ids": [
+      "sim-B03-0"
+    ],
+    "source_status": "SIMULATED",
+    "unknown": false,
+    "is_simulated": true
+  },
+  {
+    "concept_id": "python.keyword_presence",
+    "a": 1,
+    "b": 1,
+    "mean": 0.5,
+    "lower_q10": 0.09999999999999999,
+    "upper_q90": 0.8999999999999999,
+    "evidence_ids": [],
+    "source_status": "SIMULATED",
+    "unknown": true,
+    "is_simulated": true
+  }
+]

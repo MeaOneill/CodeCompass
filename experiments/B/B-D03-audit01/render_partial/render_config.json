@@ -1,0 +1,14 @@
+{
+  "run_id": "B-D03-integration02",
+  "source": "experiments/B/B-D03-integration02",
+  "font": "Microsoft YaHei",
+  "width": 1800,
+  "height": 1100,
+  "dpi": 300,
+  "audience": "competition report provisional development material",
+  "uncertainty": "model Beta posterior Q10-Q90, central 80%, not calibrated mastery",
+  "transformations": "No filtering/normalization/smoothing; show all five named stages of one simulated ledger",
+  "sample": "1 simulated ledger, 22 distinct accepted simulated items (21 pass / 1 fail); humans 0",
+  "publisher_requirements": "not applicable / not claimed",
+  "seed": null
+}

@@ -51,3 +51,9 @@
 /docs/requests/A-* text eol=lf
 /experiments/A/A-D03-*/code_snapshot/** -text whitespace=-blank-at-eol
 /experiments/A/A-D03-*/routes.csv -text whitespace=cr-at-eol
+
+# B-D03 persistence and exact numeric source bytes for reproducible restoration.
+/src/codecompass/app/** text eol=lf
+/report_materials/B/B-D03-final/*.csv -text whitespace=cr-at-eol
+/docs/requests/B-D03-* text eol=lf
+/docs/joint/B-D03-* text eol=lf

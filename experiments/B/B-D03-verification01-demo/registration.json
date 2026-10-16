@@ -1,0 +1,24 @@
+{
+  "run_id": "B-D03-verification01-demo",
+  "task": "B-D03",
+  "actual_time": "2026-10-16T15:05:55.810246+00:00",
+  "planned_day": "2026-10-17",
+  "owner": "成员B / 糯糯",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "command": [
+    "scripts/B/demo_d03.py",
+    "--run-id",
+    "B-D03-verification01-demo"
+  ],
+  "source_head": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+  "dependency_commit": "cf02b664aea81f91aa8e7423a8aa891367c73b7e",
+  "contracts": "1.1.0 compatible",
+  "ledger_version": "0.1.0",
+  "response_kind": "SIMULATED",
+  "issue_kind": "REAL_PUBLIC_SNAPSHOT",
+  "formal_experiments": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "exit_code": 0
+}

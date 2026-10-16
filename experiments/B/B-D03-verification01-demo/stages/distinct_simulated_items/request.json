@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "PlanningRequest",
+  "is_fixture": true,
+  "request_id": "B-D03-verification01-demo-distinct_simulated_items",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "task_id": "task_001",
+  "learner_state": [
+    {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 22,
+      "beta": 2,
+      "evidence_ids": [
+        "sim-B03-0",
+        "sim-B03-1",
+        "sim-B03-10",
+        "sim-B03-11",
+        "sim-B03-12",
+        "sim-B03-13",
+        "sim-B03-14",
+        "sim-B03-15",
+        "sim-B03-16",
+        "sim-B03-17",
+        "sim-B03-18",
+        "sim-B03-19",
+        "sim-B03-20",
+        "sim-B03-21",
+        "sim-B03-22",
+        "sim-B03-3",
+        "sim-B03-4",
+        "sim-B03-5",
+        "sim-B03-6",
+        "sim-B03-7",
+        "sim-B03-8",
+        "sim-B03-9"
+      ],
+      "lower_bound": 0.8411590335001071,
+      "quantile": 0.1
+    }
+  ],
+  "budget": 100,
+  "cost_unit": "proxy_cost",
+  "config_version": "A-D03-dev-0.1",
+  "target_concept_ids": [
+    "boltons.chunk_postprocess",
+    "boltons.wrapper_compatibility",
+    "python.generator_laziness",
+    "python.islice_consumption",
+    "python.iterator_protocol",
+    "python.keyword_presence"
+  ],
+  "unit_ids": [
+    "u_iterable",
+    "u_chunked_iter",
+    "u_chunked"
+  ],
+  "prior_plan_id": null
+}

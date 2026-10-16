@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="48" y="63" font-family="Microsoft YaHei,sans-serif" font-size="38" fill="#243c59">F04 | 能力证据存储与不确定性：开发示例</text>
+<text x="48" y="114" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">模拟回答 · 非真人结果 · 固定概念 python.iterator_protocol · A learner 0.1.0</text>
+<text x="48" y="165" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">点 = a/(a+b)；横线 = Beta 模型 Q10—Q90；范围统一 0—1；不是实测掌握率。</text>
+<text x="48" y="254" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">初测前（未知）</text>
+<text x="48" y="290" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">a=1, b=1</text>
+<line x1="595.0" y1="250" x2="1355.0" y2="250" stroke="#17496b" stroke-width="5"/>
+<line x1="595.0" y1="239" x2="595.0" y2="261" stroke="#385779" stroke-width="3"/>
+<line x1="1355.0" y1="239" x2="1355.0" y2="261" stroke="#385779" stroke-width="3"/>
+<circle cx="975.0" cy="250" r="9" fill="#17496b"/>
+<text x="1490" y="257" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">0.500</text>
+<text x="1490" y="290" font-family="Microsoft YaHei,sans-serif" font-size="22" fill="#243c59">[0.100, 0.900]</text>
+<text x="48" y="372" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">一道模拟题答对</text>
+<text x="48" y="408" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">a=2, b=1</text>
+<line x1="800.416377715996" y1="368" x2="1401.2491331479882" y2="368" stroke="#17496b" stroke-width="5"/>
+<line x1="800.416377715996" y1="357" x2="800.416377715996" y2="379" stroke="#385779" stroke-width="3"/>
+<line x1="1401.2491331479882" y1="357" x2="1401.2491331479882" y2="379" stroke="#385779" stroke-width="3"/>
+<circle cx="1133.3333333333333" cy="368" r="9" fill="#17496b"/>
+<text x="1490" y="375" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">0.667</text>
+<text x="1490" y="408" font-family="Microsoft YaHei,sans-serif" font-size="22" fill="#243c59">[0.316, 0.949]</text>
+<text x="48" y="490" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">另一道模拟题答错</text>
+<text x="48" y="526" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">a=2, b=2</text>
+<line x1="686.0101003761371" y1="486" x2="1263.9898996238626" y2="486" stroke="#17496b" stroke-width="5"/>
+<line x1="686.0101003761371" y1="475" x2="686.0101003761371" y2="497" stroke="#385779" stroke-width="3"/>
+<line x1="1263.9898996238626" y1="475" x2="1263.9898996238626" y2="497" stroke="#385779" stroke-width="3"/>
+<circle cx="975.0" cy="486" r="9" fill="#17496b"/>
+<text x="1490" y="493" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">0.500</text>
+<text x="1490" y="526" font-family="Microsoft YaHei,sans-serif" font-size="22" fill="#243c59">[0.196, 0.804]</text>
+<text x="48" y="608" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">重答同题 + 阅读</text>
+<text x="48" y="644" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">a=2, b=2</text>
+<line x1="686.0101003761371" y1="604" x2="1263.9898996238626" y2="604" stroke="#17496b" stroke-width="5"/>
+<line x1="686.0101003761371" y1="593" x2="686.0101003761371" y2="615" stroke="#385779" stroke-width="3"/>
+<line x1="1263.9898996238626" y1="593" x2="1263.9898996238626" y2="615" stroke="#385779" stroke-width="3"/>
+<circle cx="975.0" cy="604" r="9" fill="#17496b"/>
+<text x="1490" y="611" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">0.500</text>
+<text x="1490" y="644" font-family="Microsoft YaHei,sans-serif" font-size="22" fill="#243c59">[0.196, 0.804]</text>
+<text x="48" y="726" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">再加20道不同模拟题</text>
+<text x="48" y="762" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">a=22, b=2</text>
+<line x1="1299.1010818251018" y1="722" x2="1427.8026417484864" y2="722" stroke="#17496b" stroke-width="5"/>
+<line x1="1299.1010818251018" y1="711" x2="1299.1010818251018" y2="733" stroke="#385779" stroke-width="3"/>
+<line x1="1427.8026417484864" y1="711" x2="1427.8026417484864" y2="733" stroke="#385779" stroke-width="3"/>
+<circle cx="1370.8333333333333" cy="722" r="9" fill="#17496b"/>
+<text x="1490" y="729" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">0.917</text>
+<text x="1490" y="762" font-family="Microsoft YaHei,sans-serif" font-size="22" fill="#243c59">[0.841, 0.977]</text>
+<line x1="500" y1="820" x2="1450" y2="820" stroke="#385779" stroke-width="3"/>
+<line x1="500.0" y1="814" x2="500.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="482.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">0.0</text>
+<line x1="690.0" y1="814" x2="690.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="672.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">0.2</text>
+<line x1="880.0" y1="814" x2="880.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="862.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">0.4</text>
+<line x1="1070.0" y1="814" x2="1070.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="1052.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">0.6</text>
+<line x1="1260.0" y1="814" x2="1260.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="1242.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">0.8</text>
+<line x1="1450.0" y1="814" x2="1450.0" y2="829" stroke="#385779" stroke-width="3"/>
+<text x="1432.0" y="861" font-family="Microsoft YaHei,sans-serif" font-size="23" fill="#243c59">1.0</text>
+<text x="48" y="946" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">同题重答和阅读不改变 a/b；新进程读取结果与原状态逐字一致；不同用户及模拟/真实模式隔离。</text>
+<text x="48" y="1000" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">1 个模拟账户、22 个独立模拟题目；无真实答题者。区间是模型内不确定性，不是学习效果区间。</text>
+<text x="48" y="1054" font-family="Microsoft YaHei,sans-serif" font-size="24" fill="#243c59">来源：B-D03-integration02 / capability.json + events.json；未校准、未作推荐准确率评估。</text>
+</svg>
