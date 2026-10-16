@@ -1,0 +1,14 @@
+{
+  "task_id": "A-D04",
+  "timestamp": "2026-10-16T23:58:27.136532+08:00",
+  "branch": "codex/A-D04-search",
+  "business_checkpoint": "63bce32b16eb7601f09baa671aa0f2767102087c",
+  "remote_business_checkpoint": "63bce32b16eb7601f09baa671aa0f2767102087c",
+  "fresh_committed_archive_replay": "PASSED",
+  "recomputed_summary_equal": true,
+  "next_step_allowed": "B-D04",
+  "release_gate": "experiments/A/A-D04-closeout/release_gate.json",
+  "merged_main": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "final_receipt_commit": "accurate final SHA printed after final receipt push; no self-referential SHA"
+}

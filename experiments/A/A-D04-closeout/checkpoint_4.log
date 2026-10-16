@@ -1,0 +1,14 @@
+A-D04独立CLI：机制夹具与模拟证据；不是正式UI或真人学习实验。
+案例：cost_gap；目标：x,y；预算：10 proxy_cost（不是分钟）
+
+exact: FEASIBLE | 路线=b | 选入代理成本=5
+独立合法性重放：True
+
+B2: FEASIBLE | 路线=a → c | 选入代理成本=6
+独立合法性重放：True
+
+beam: FEASIBLE | 路线=b | 选入代理成本=5
+独立合法性重放：True
+候选/beam截断：False；最优性声明：False；终止：BOUNDED_SEARCH_FINISHED
+
+完整输入/精确证书/逐步搜索事件见保存的A-D04-mechanism01；正式学习效果未测。

@@ -1,0 +1,12 @@
+{
+  "original_root": "experiments/B/A-D04-accept-B03-01",
+  "current_root": "experiments/A/A-D04-accept-B03-01",
+  "raw_files_unchanged": true,
+  "resolved_frozen_hashes_verified": 18,
+  "actual_execution_task": "A-D04 acceptance of B-D03",
+  "actual_owner": "成员A",
+  "actual_executor": "Codex Agent A",
+  "actual_machine": "LAPTOP-LUQPS3EV",
+  "raw_registration_attribution_note": "B demo hardcodes owner/executor/task/planned_day; these are script template labels, not the real actor for this acceptance replay. Actual execution attribution is this wrapper and docs/A/session_A-D04.json.",
+  "timestamp": "2026-10-16T23:57:09.317359+08:00"
+}
