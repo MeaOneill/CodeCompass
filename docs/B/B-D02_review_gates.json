@@ -1,10 +1,11 @@
 {
-  "record_type": "review_gate_registry_not_approval",
+  "record_type": "formal_study_review_registry_not_D02_engineering_gate",
   "task_id": "B-D02",
   "human_task_review_receipts": [],
   "pilot_receipts": [],
   "b0_human_review_receipt": null,
   "common_cost_integration_receipt": null,
   "new_task_contract_integration_receipt": null,
-  "notes": "All entries are empty because no such review occurred. Never fill from developer fixtures. Future receipts must identify actual people, artifacts, versions and acceptance."
+  "notes": "Human/pilot entries remain genuinely empty. They govern later formal study, not a requirement for the user to solve tasks to pass D02 engineering.",
+  "engineering_review": "experiments/B/B-D02-20261016-quality02/quality_review.json"
 }

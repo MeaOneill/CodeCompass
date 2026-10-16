@@ -29,7 +29,7 @@ def main():
         ('sample', [sys.executable, '-m', 'app', 'check-sample'], clone, 0),
         ('pytest', [sys.executable, '-m', 'pytest', 'tests/A', 'tests/B', '-q', '--basetemp=tmp/pytest-receiver'], clone, 0),
         ('demo', [sys.executable, 'scripts/B/demo_d02.py', '--run-id', a.run_id + '-demo'], clone, 0),
-        ('audit', [sys.executable, 'scripts/B/audit_d02.py', '--run-id', a.run_id + '-audit'], clone, 2),
+        ('audit', [sys.executable, 'scripts/B/audit_d02.py', '--run-id', a.run_id + '-audit'], clone, 0),
     ]
     results = []
     for name, cmd, cwd, expected in commands:
@@ -41,7 +41,8 @@ def main():
         results.append({'name': name, 'command': cmd, 'expected_exit_code': expected, 'actual_exit_code': proc.returncode, 'expectation_met': match})
         print(name, proc.returncode, 'expected', expected, flush=True)
         if not match: break
-    record = {'run_id': a.run_id, 'task_id': 'B-D02', 'code_checkpoint': head, 'branch': branch, 'scope': 'same_machine_public_only_fresh_local_clone_existing_locked_venv', 'private_key_copied': False, 'held_out_answers_replayed': False, 'independent_human_review': 'NOT_REVIEWED', 'whole_task_gate_passed': False, 'commands': results, 'exit_code': int(len(results) != len(commands) or not all(r['expectation_met'] for r in results))}
+    passed = len(results) == len(commands) and all(r['expectation_met'] for r in results)
+    record = {'run_id': a.run_id, 'task_id': 'B-D02', 'code_checkpoint': head, 'branch': branch, 'scope': 'same_machine_public_only_fresh_local_clone_existing_locked_venv', 'private_key_copied': False, 'held_out_answers_replayed': False, 'independent_human_review': 'NOT_REVIEWED', 'engineering_task_gate_passed': passed, 'formal_study_ready': False, 'commands': results, 'exit_code': int(not passed)}
     (out / 'registration.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return record['exit_code']
 

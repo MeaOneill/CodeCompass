@@ -75,3 +75,12 @@ def test_candidate_import_exception_is_execution_error(tmp_path):
     p.write_text(p.read_text(encoding='utf-8').replace('def chunked_iter(src, size, count=None, **kw):', 'def chunked_iter(src, size, count=(1/0), **kw):'), encoding='utf-8')
     result = grade('task_001', folder)
     assert result['status'] == 'EXECUTION_ERROR' and result['success'] is False
+
+
+def test_custom_fill_regression_rejected(tmp_path):
+    folder = create_fixture('task_002', tmp_path / 'bad-custom-fill')
+    p = folder / 'candidate.py'
+    p.write_text(p.read_text(encoding='utf-8').replace('fillvalue=fill)', 'fillvalue=None)'), encoding='utf-8')
+    result = grade('task_002', folder)
+    assert result['status'] == 'FAILED_AUTOMATED'
+    assert result['criteria']['R3']['passed'] is False

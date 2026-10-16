@@ -1,7 +1,7 @@
 {
   "task_id": "B-D02",
   "evidence_type": "inventory_and_reading_route_not_learning_effect",
-  "run_id": "B-D02-20261016-evaluation04",
+  "run_id": "B-D02-20261016-evaluation06",
   "source_commit": "30069ce468a52b68a0d3bfb62bb49b1cce0f2104",
   "command": "python scripts/B/draw_d02_materials.py",
   "config": {
@@ -13,41 +13,49 @@
   "inputs": [
     {
       "path": "benchmarks/B/task_catalog.json",
-      "sha256": "6b62dac415f8aebbca19ca9527a3788ecbc65839d4d36d8d8d9eb09738ef96e2"
+      "sha256": "6e11f3f4ed05435a69e056d72e98827d8c57dc70a0d17d00f0f7c74b2fc544be"
     },
     {
       "path": "configs/B/B0_fixed.json",
-      "sha256": "8cedb16f53269a041174767162a96979f5cf1e2a6b2c7661cae9fd5ddc718ebc"
+      "sha256": "38c124ff7e5b37b2b979043f59b87970031cd4b48618be3462297a265d714259"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/docs/README.md",
+      "sha256": "125d653ce15f442d8cafb2b43b4ddc01f443807a4a782e035528cfd75c4388f9"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+      "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
     },
     {
       "path": "scripts/B/draw_d02_materials.py",
-      "sha256": "69d85d586710b18d77f2f9e1bfed3819cea12749cf2b5cf1cf34b853d37a9908"
+      "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
     },
     {
       "path": "report_materials/B/B-D02/T01_inventory.json",
-      "sha256": "f700c6378727662571228aad529d319c01f3e1d9829bf86622cb943bc9ac880b"
+      "sha256": "2ddc06a37d592d892afefbeda30b1568b7a8c08f14dda55f9338a3c2ddd17bb8"
     },
     {
       "path": "report_materials/B/B-D02/T01_inventory.csv",
-      "sha256": "748986bff0b7231deb71e9d9fe9afb541ed0ca26396ecc02e3409e6e885557a9"
+      "sha256": "bfda906e95b69e0d00d6e2cc7a6883e01803c7ad3052c4d57701f714a3008811"
     }
   ],
   "outputs": [
     {
       "path": "report_materials/B/B-D02/B0_task001_route.png",
-      "sha256": "b82ce5359d171c7507fdb9dd01a05eb827c4298bae75bd8cc173c49ab797dc4c"
+      "sha256": "3786ec8bf1612003f5904013a9a855026b61690128b3bc8fb56f6d2557317a1c"
     },
     {
       "path": "report_materials/B/B-D02/B0_task001_route.svg",
-      "sha256": "87cc6bc6c554fa68b674af19bedce028f754d8958570d2f186cbeaba62a0d0ce"
+      "sha256": "f5fc2ef05fb1b241aa832aafd1302cf84f74dbac9822d1693e3caaac71ea2c33"
     },
     {
       "path": "report_materials/B/B-D02/T01_inventory.png",
-      "sha256": "f06f05d917830fa6d1dcce58fc0e9f4e11b405fbf78b4323134ca46b444e97bd"
+      "sha256": "0bc07b4c52b74fbd19cabaf43e6310d746ffe8966e154b1f51b7f2a95e471e56"
     },
     {
       "path": "report_materials/B/B-D02/T01_inventory.svg",
-      "sha256": "a6e23c0aaa67f91307181c62bf5c0378d2605dce45765487cd7e550508451c64"
+      "sha256": "1188bc3deb2d9b41e4452998113034331ee6204b68d83da314be179352c46783"
     }
   ],
   "limits": "No human approval, pilot or effect study. Explicit source-line B0 cost proposal awaits common-cost integration."

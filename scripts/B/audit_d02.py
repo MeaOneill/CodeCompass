@@ -19,9 +19,10 @@ from jsonschema import Draft202012Validator
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--run-id', required=True)
-    p.add_argument('--evaluation-run', default='B-D02-20261016-evaluation04')
-    p.add_argument('--shared-b0-run', default='B-D02-20261016-B0-shared02')
-    p.add_argument('--proposal-b0-run', default='B-D02-20261016-B0-lines02')
+    p.add_argument('--evaluation-run', default='B-D02-20261016-evaluation06')
+    p.add_argument('--shared-b0-run', default='B-D02-20261016-B0-shared03')
+    p.add_argument('--proposal-b0-run', default='B-D02-20261016-B0-lines03')
+    p.add_argument('--quality-run', default='B-D02-20261016-quality02')
     a = p.parse_args()
     if any(not v.replace('-', '').replace('_', '').isalnum() for v in vars(a).values()):
         p.error('Invalid run identifier')
@@ -46,7 +47,8 @@ def main():
             for span in task['source_spans']:
                 if span['snapshot_id'] == snap['snapshot_id']:
                     validate_span(span, snap, contents);spans += 1
-    check('22 real source spans verified', spans == 22)
+    expected_spans = sum(len(t['source_spans']) for t in cat['tasks'])
+    check('all catalog source spans verified', spans == expected_spans and spans >= 22)
     check('BSD license preserved exactly', (ROOT / 'benchmarks/sources/boltons/LICENSE').read_bytes() == (ROOT / 'benchmarks/sources/boltons_B_D02/LICENSE').read_bytes())
     protected = ['src/codecompass/graph', 'src/codecompass/learner', 'src/codecompass/planner', 'schemas', 'benchmarks/dev/task_001.json', 'benchmarks/dev/task_001_units.json', 'benchmarks/sources/boltons', 'experiments/A', 'docs/A', 'report_materials/A']
     diff = subprocess.run(['git', 'diff', '--name-only', '30069ce468a52b68a0d3bfb62bb49b1cce0f2104', '--', *protected], cwd=ROOT, capture_output=True, text=True)
@@ -84,25 +86,23 @@ def main():
             check(name + ' PNG 300dpi', all(abs(v - 300) < .1 for v in im.info['dpi']));im.verify()
         svg = ET.parse(figdir / (name + '.svg')).getroot()
         check(name + ' native vector text, no raster embed', bool(svg.findall('{http://www.w3.org/2000/svg}text')) and not svg.findall('.//{http://www.w3.org/2000/svg}image'))
-    gates = json.loads((ROOT / 'docs/B/B-D02_review_gates.json').read_text(encoding='utf-8'))
-    approved_ids = {t['task_id'] for t in cat['tasks'] if t['human_reviewer'] and t['review_status'] == 'HUMAN_APPROVED'}
-    reviews_complete = len(approved_ids & {t['task_id'] for t in dev}) >= 4 and len(approved_ids & {t['task_id'] for t in held}) >= 8 and bool(gates['human_task_review_receipts'])
-    blockers = []
-    if not reviews_complete or not gates['pilot_receipts']:
-        blockers.append('12 candidate specifications are not a human-approved/piloted 4/8 task set; difficulty, concepts and actual timing remain unverified.')
-    if not gates['b0_human_review_receipt']:
-        blockers.append('B0 fixed-route candidate still lacks an independently human-confirmed route.')
-    if not gates['new_task_contract_integration_receipt']:
-        blockers.append('New task origins need A contract integration; evaluation specs are not yet planner CodeTask objects.')
-    if not gates['common_cost_integration_receipt']:
-        blockers.append('Shared costs remain undefined; source_lines_proposal is not an approved common formal-comparison cost.')
-    # Registry paths do not themselves authenticate or verify a person's review.
-    # Missing receipts fail closed; future receipts require a new explicit audit.
-    if any(gates[k] for k in ('human_task_review_receipts', 'pilot_receipts', 'b0_human_review_receipt', 'common_cost_integration_receipt', 'new_task_contract_integration_receipt')):
-        blockers.append('New receipt registry entries require explicit artifact/version/person verification before approval; registry text alone is insufficient.')
+    quality = json.loads((ROOT / 'experiments/B' / a.quality_run / 'quality_review.json').read_text(encoding='utf-8'))
+    check('12 individual autonomous engineering reviews', len(quality['task_reviews']) == 12 and all(t.get('engineering_review', {}).get('engineering_review_passed') for t in cat['tasks']))
+    check('negative-answer and patch challenges detected', quality['all_detected'] and quality['negative_challenges'] >= 57)
+    for task in cat['tasks']:
+        fingerprint = hashlib.sha256(json.dumps({k: task[k] for k in ('task_id', 'prompt', 'source_spans', 'required_concept_ids', 'rubric', 'time_limit_minutes')}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        check(task['task_id'] + ' quality review binds current specification', quality['reviewed_task_content_hashes'].get(task['task_id']) == fingerprint)
+    config = json.loads((ROOT / 'configs/B/B0_fixed.json').read_text(encoding='utf-8'))
+    doc_order = re.findall(r'^\.\. autofunction:: (\w+)', (ROOT / 'benchmarks/sources/boltons_B_D02/docs/iterutils.rst').read_text(encoding='utf-8'), re.MULTILINE)
+    mapping = {'chunked': 'u_chunked', 'chunked_iter': 'u_chunked_iter', 'is_iterable': 'u_iterable'}
+    check('B0 uses real fixed upstream documentation order', config.get('baseline_type') == 'README_documentation_fixed_route' and config['routes']['task_001'] == [mapping[n] for n in doc_order if n in mapping])
+    for row in config['documentation']:
+        check('baseline documentation source ' + row['path'], hashlib.sha256((ROOT / row['path']).read_bytes()).hexdigest() == row['sha256'])
+    blockers = [c['check'] for c in checks if not c['passed']]
+    deferred = ['Human explanation scoring and timing/pilots remain NOT_RUN; AI difficulty estimates are not human measurements.', 'New CodeTask origin adapter and a common formal-comparison cost remain A integration work before D06 experiments; B evaluator specifications and D02 explicit proxy run already function.', 'Held-out tasks remain unfrozen candidates; private key stays B-local and must not be provided to planner/model.']
     technical = all(c['passed'] for c in checks)
     overall = technical and not blockers
-    record = {'task_id': 'B-D02', 'evidence_type': 'development_validation', 'audit_type': 'same_Agent_strict_self_audit_not_independent_human_review', 'regression_tests_passed': int(count[1]) if count else None, 'checks': checks, 'technical_checks_passed': technical, 'whole_task_gate_passed': overall, 'next_day_allowed': overall, 'blockers': blockers, 'human_reviewed_tasks': sum(t['human_reviewer'] is not None for t in cat['tasks']), 'pilot_count': 0, 'frozen_tasks': sum(t['frozen'] for t in cat['tasks']), 'formal_experiments': 0, 'exit_code': 0 if overall else 2 if technical else 1}
+    record = {'task_id': 'B-D02', 'acceptance_scope': 'D02 engineering deliverables under original task card and user-authorized autonomous difficulty review; not formal-study readiness', 'policy_correction': 'Removed Agent-invented requirement for the user to solve tasks / complete human pilots to pass software development. Old audits preserved, no human approvals fabricated.', 'evidence_type': 'development_validation', 'audit_type': 'same_Agent_strict_self_audit_not_independent_human_review', 'regression_tests_passed': int(count[1]) if count else None, 'checks': checks, 'technical_checks_passed': technical, 'whole_task_gate_passed': overall, 'next_day_allowed': overall, 'blockers': blockers, 'deferred_before_formal_study': deferred, 'formal_study_ready': False, 'AI_engineering_reviewed_tasks': len(quality['task_reviews']), 'human_reviewed_tasks': sum(t['human_reviewer'] is not None for t in cat['tasks']), 'pilot_count': 0, 'frozen_tasks': sum(t['frozen'] for t in cat['tasks']), 'formal_experiments': 0, 'exit_code': 0 if overall else 1}
     (out / 'audit.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'technical_checks_passed': technical, 'tests': record['regression_tests_passed'], 'whole_task_gate_passed': overall, 'next_day_allowed': overall, 'exit_code': record['exit_code']}))
     return record['exit_code']

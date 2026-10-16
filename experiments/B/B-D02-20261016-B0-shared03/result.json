@@ -1,0 +1,41 @@
+{
+  "status": "INPUT_INCOMPLETE",
+  "ordered_units": [],
+  "reading_order_only": [
+    "u_chunked",
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "estimated_cost": null,
+  "unmet_constraints": [
+    "base_cost missing; no budget-feasible claim"
+  ],
+  "cost_unit": "proxy_cost",
+  "method": "B0",
+  "task_id": "task_001",
+  "run_id": "B-D02-20261016-B0-shared03",
+  "schema": "B-unified-run-0.1",
+  "evidence_type": "development_validation",
+  "is_fixture": false,
+  "requested_budget": 100.0,
+  "config_version": "B0-upstream-document-order-0.2",
+  "config_hash": "38c124ff7e5b37b2b979043f59b87970031cd4b48618be3462297a265d714259",
+  "data_hash": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660",
+  "code_commit": null,
+  "elapsed_seconds": 0.15554939999856288,
+  "independent_task_success": null,
+  "model_id": null,
+  "seed": null,
+  "api_cost": null,
+  "reason_trace": [
+    "固定README列出chunked/windowed并链接iterutils文档；固定版本RST以autofunction列出文档顺序。",
+    "在同一三个候选单元中按上游文档出现顺序读取：chunked、chunked_iter、is_iterable；不是为Ours表现挑选路线。",
+    "只按固定顺序取预算内前缀，不做能力门控；静态行数成本仅作D02开发代理，正式对照需所有方法同成本。",
+    "默认shared仍保留null成本输入拒绝；显式source_lines_proposal不修改A共享单元。"
+  ],
+  "exit_code": 2,
+  "cost_policy": "shared",
+  "measured_static_proxy_costs": null,
+  "shared_cost_policy_approved": false,
+  "formal_comparison_eligible": false
+}

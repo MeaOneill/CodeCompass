@@ -1,3 +1,3 @@
-split,planned_target,candidate_specs,evaluator_implemented,human_approved,piloted,formally_frozen,module
-dev,8,4,4,0,0,0,iterutils
-test_candidate,16,8,8,0,0,0,strutils
+split,planned_target,candidate_specs,evaluator_implemented,AI_engineering_reviewed,human_approved,piloted,formally_frozen,module
+dev,8,4,4,4,0,0,0,iterutils
+test_candidate,16,8,8,8,0,0,0,strutils

@@ -1,0 +1,18 @@
+{
+  "task_id": "task_004",
+  "evidence_type": "development_validation",
+  "answer_sha256": "bb7a4573a0b592d982027e3a927807caf0f8ae62eab93691411ef654a3f81d0d",
+  "key_sha256": "2c1526738ec8a69e704f938250e5c148678a1337492e6f4b891c3cb4f6af25fb",
+  "outputs_passed": true,
+  "source_passed": true,
+  "automated_score": 8,
+  "explanation_present": true,
+  "human_explanation_score": null,
+  "total_score": null,
+  "learner_elapsed_seconds": null,
+  "success": null,
+  "status": "PENDING_HUMAN_REVIEW",
+  "human_review": "NOT_REVIEWED",
+  "is_fixture": true,
+  "learner_result": false
+}

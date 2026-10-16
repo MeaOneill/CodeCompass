@@ -1,0 +1,527 @@
+{
+  "task_id": "B-D02",
+  "review_scope": "engineering_task_quality_not_human_learning_validation",
+  "source_of_authority": "User explicitly authorizes autonomous difficulty judgment; D02 card requires runnable tasks/rubrics, not user solving tasks.",
+  "reviewed_task_content_hashes": {
+    "task_001": "a18294f2d27c2104b685cc49a1a770da82082d88d37856278ed7d3483b892fcd",
+    "task_002": "7df5065a843204159905f3b751787baf04b4c6e5bc47ff8920a409531822475a",
+    "task_003": "09c0fc1ba305fbabddee2e0559c6ba52843cbe908cee053a3054b04c489a9150",
+    "task_004": "92e4fa891756ede7f78bdf5bc99e58cdeb05b73fead2abfc8311090c3d8b7358",
+    "task_005": "0aacf33170ed10694245ff4fbf46bc00ae77a4608bdea81942275f800d917143",
+    "task_006": "75f772761b89c3f1d79eb7f85fd15d505f2805f8c0b59c15f47011d7439e1ec7",
+    "task_007": "dc85a64c6342a69e558041e637726474d63cfec270456239b88a7cfb12f71a2e",
+    "task_008": "4ac854ded85b9d7cbda24db7caa3e221c95b85cb1a2a16c1e3f4a3d26e511676",
+    "task_009": "ace0cdb3860ec8dfff054b81c45a9dbd6449e3087e7e1c8a8abf30d094d8fb07",
+    "task_010": "b5fb5d226af874dfb5210d5aef54ce80fc8509dd4b89e30ca8afebb041bd9b34",
+    "task_011": "0e75ff5c0b70c235ceb88270a87a09ad751a6f30deb3f11679a874e0ac30c8fe",
+    "task_012": "4bbe4f56dbca420b1a08b4142efd5a1ddd5243cab205bede8b19adee7a2f5b95"
+  },
+  "checks": [
+    {
+      "task_id": "task_003",
+      "mutation": "wrong_output_plain",
+      "detected": true
+    },
+    {
+      "task_id": "task_003",
+      "mutation": "wrong_output_casefold",
+      "detected": true
+    },
+    {
+      "task_id": "task_003",
+      "mutation": "wrong_output_length",
+      "detected": true
+    },
+    {
+      "task_id": "task_003",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_003",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "wrong_output_null",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "wrong_output_missing",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "wrong_output_string_index",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "wrong_output_empty_path",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_004",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_005",
+      "mutation": "wrong_output_acronym",
+      "detected": true
+    },
+    {
+      "task_id": "task_005",
+      "mutation": "wrong_output_simple",
+      "detected": true
+    },
+    {
+      "task_id": "task_005",
+      "mutation": "wrong_output_underscores",
+      "detected": true
+    },
+    {
+      "task_id": "task_005",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_005",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "wrong_output_normal",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "wrong_output_empty",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "wrong_output_punct",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "wrong_output_ascii_bytes",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_006",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_007",
+      "mutation": "wrong_output_teens",
+      "detected": true
+    },
+    {
+      "task_id": "task_007",
+      "mutation": "wrong_output_suffix",
+      "detected": true
+    },
+    {
+      "task_id": "task_007",
+      "mutation": "wrong_output_text",
+      "detected": true
+    },
+    {
+      "task_id": "task_007",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_007",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_008",
+      "mutation": "wrong_output_text",
+      "detected": true
+    },
+    {
+      "task_id": "task_008",
+      "mutation": "wrong_output_bytes",
+      "detected": true
+    },
+    {
+      "task_id": "task_008",
+      "mutation": "wrong_output_plain",
+      "detected": true
+    },
+    {
+      "task_id": "task_008",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_008",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_009",
+      "mutation": "wrong_output_roundtrip",
+      "detected": true
+    },
+    {
+      "task_id": "task_009",
+      "mutation": "wrong_output_empty",
+      "detected": true
+    },
+    {
+      "task_id": "task_009",
+      "mutation": "wrong_output_type_name",
+      "detected": true
+    },
+    {
+      "task_id": "task_009",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_009",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_010",
+      "mutation": "wrong_output_lines",
+      "detected": true
+    },
+    {
+      "task_id": "task_010",
+      "mutation": "wrong_output_empty",
+      "detected": true
+    },
+    {
+      "task_id": "task_010",
+      "mutation": "wrong_output_indented",
+      "detected": true
+    },
+    {
+      "task_id": "task_010",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_010",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "wrong_output_reverse",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "wrong_output_duplicates",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "wrong_output_formatted",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "wrong_output_empty",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_011",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "wrong_output_prefix",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "wrong_output_not_chars",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "wrong_output_two",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "wrong_output_three",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "wrong_source_hash",
+      "detected": true
+    },
+    {
+      "task_id": "task_012",
+      "mutation": "missing_outputs",
+      "detected": true
+    },
+    {
+      "task_id": "task_002",
+      "mutation": "accept_bool_size",
+      "detected": true
+    },
+    {
+      "task_id": "task_002",
+      "mutation": "accept_zero_size",
+      "detected": true
+    },
+    {
+      "task_id": "task_002",
+      "mutation": "ignore_custom_fill",
+      "detected": true
+    }
+  ],
+  "negative_challenges": 57,
+  "all_detected": true,
+  "task_reviews": [
+    {
+      "task_id": "task_001",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "较难",
+      "difficulty_reason": "需要同时控制生成器惰性、count边界、输入消费和包装器兼容，难点不只是新增参数。",
+      "assumed_prerequisites": [
+        "函数与参数",
+        "迭代器",
+        "生成器/yield",
+        "itertools.islice"
+      ],
+      "fairness_and_rubric_check": "适合已学过生成器的Python使用者；不能将只学过基本语法视为同等基础。",
+      "source_lines_to_inspect": 85,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_002",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "修改局限于入口类型校验，但必须保持tee窗口、默认哨兵和调用包装器兼容。",
+      "assumed_prerequisites": [
+        "异常类型",
+        "bool与int关系",
+        "迭代器",
+        "默认参数哨兵"
+      ],
+      "fairness_and_rubric_check": "理解tee可阅读标准库资料；要求明确只接受内置int，避免校验歧义。",
+      "source_lines_to_inspect": 67,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_003",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "需区分保存的key与实际yield对象，不能只背集合去重。",
+      "assumed_prerequisites": [
+        "集合哈希",
+        "key回调",
+        "生成器"
+      ],
+      "fairness_and_rubric_check": "三个输入各测试顺序、大小写键与长度键，解释项检查机制而非只抄输出。",
+      "source_lines_to_inspect": 34,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_004",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "需跟踪嵌套访问、异常转译以及缺省值与实际None的区别。",
+      "assumed_prerequisites": [
+        "字典/列表",
+        "异常处理",
+        "默认值哨兵"
+      ],
+      "fairness_and_rubric_check": "缺路径、数字字符串索引、空路径分别检查不同分支，不把None都当失败。",
+      "source_lines_to_inspect": 59,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_005",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "较易",
+      "difficulty_reason": "局部正则和split/join转换，修改规模小但需注意缩写边界。",
+      "assumed_prerequisites": [
+        "字符串操作",
+        "正则基础"
+      ],
+      "fairness_and_rubric_check": "两个转换不是严格互逆，解释项必须指出边界。",
+      "source_lines_to_inspect": 16,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_006",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "分支优先级、标点与空串、字节/文本返回类型同时出现。",
+      "assumed_prerequisites": [
+        "条件表达式",
+        "bytes/str",
+        "正则分割"
+      ],
+      "fairness_and_rubric_check": "题面用字节列表表示ascii结果，避免JSON无法表达bytes的歧义。",
+      "source_lines_to_inspect": 64,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_007",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "较易",
+      "difficulty_reason": "单函数字符串末位和teen例外分支，有明确可定位机制。",
+      "assumed_prerequisites": [
+        "字符串索引",
+        "字典查找",
+        "分支"
+      ],
+      "fairness_and_rubric_check": "输入列表覆盖teen、常规后缀与非数字文本，不能只测试21。",
+      "source_lines_to_inspect": 34,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_008",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "同一功能有文本与字节路径，需识别ANSI支持范围。",
+      "assumed_prerequisites": [
+        "转义序列",
+        "bytes/str"
+      ],
+      "fairness_and_rubric_check": "题面明确是真实ESC字符；评分不要求声称处理任意终端控制协议。",
+      "source_lines_to_inspect": 36,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_009",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "较易",
+      "difficulty_reason": "两函数往返关系和BytesIO，比完整压缩格式分析简单。",
+      "assumed_prerequisites": [
+        "字节流",
+        "函数组合",
+        "压缩基础"
+      ],
+      "fairness_and_rubric_check": "只检验往返与类型，不把受环境影响的压缩字节串作为金标准。",
+      "source_lines_to_inspect": 33,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_010",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "生成器末尾空行与缩进谓词存在边界交互。",
+      "assumed_prerequisites": [
+        "生成器",
+        "正则捕获",
+        "谓词"
+      ],
+      "fairness_and_rubric_check": "题面明确真实换行；多个输出检验空串、尾空行和缩进连接。",
+      "source_lines_to_inspect": 44,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_011",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "中等",
+      "difficulty_reason": "需要区分区间闭端点、排序和去重，观察分支组合。",
+      "assumed_prerequisites": [
+        "range",
+        "排序",
+        "字符串解析"
+      ],
+      "fairness_and_rubric_check": "明确反向范围与重复保留，不预设文档描述等于去重。",
+      "source_lines_to_inspect": 123,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    },
+    {
+      "task_id": "task_012",
+      "reviewer": "Codex Agent B",
+      "reviewer_kind": "AI_engineering_self_review",
+      "difficulty_estimate": "较易",
+      "difficulty_reason": "精确前缀切片及列表长度分支，源码范围局部。",
+      "assumed_prerequisites": [
+        "切片",
+        "startswith",
+        "字符串拼接"
+      ],
+      "fairness_and_rubric_check": "不将removeprefix等同lstrip；两元素和oxford分支各有独立要求。",
+      "source_lines_to_inspect": 41,
+      "elapsed_learning_minutes": null,
+      "human_pilot": "NOT_RUN",
+      "human_review": "NOT_REVIEWED",
+      "engineering_review_passed": true
+    }
+  ],
+  "exit_code": 0
+}

@@ -26,3 +26,15 @@ def test_bad_budget_and_duplicate_rejected():
     with pytest.raises(ValueError): fixed_order(units([1]), ['0'], -1, 'proxy_cost')
     with pytest.raises(ValueError): fixed_order(units([1]), ['0', '0'], 2, 'proxy_cost')
     with pytest.raises(ValueError): fixed_order(units([1]), ['0'], float('nan'), 'proxy_cost')
+
+
+def test_real_fixed_route_matches_pinned_document_order():
+    import json, re
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[2]
+    config = json.loads((root / 'configs/B/B0_fixed.json').read_text(encoding='utf-8'))
+    doc = (root / 'benchmarks/sources/boltons_B_D02/docs/iterutils.rst').read_text(encoding='utf-8')
+    mapping = {'chunked': 'u_chunked', 'chunked_iter': 'u_chunked_iter', 'is_iterable': 'u_iterable'}
+    expected = [mapping[n] for n in re.findall(r'^\.\. autofunction:: (\w+)', doc, re.MULTILINE) if n in mapping]
+    assert config['routes']['task_001'] == expected
+    assert config['baseline_type'] == 'README_documentation_fixed_route'

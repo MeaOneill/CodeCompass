@@ -50,9 +50,9 @@
       "B0-task001-route"
     ],
     "manifest": "report_materials/B/B-D02/figure_manifest.json",
-    "run_id": "B-D02-20261016-evaluation04",
+    "run_id": "B-D02-20261016-evaluation06",
     "type": "inventory_and_source_reading_route",
     "human_sample_size": 0,
-    "limits": "candidate specs, no approved/piloted/frozen task set; not learning effect"
+    "limits": "12 individually AI-engineering-reviewed specs; no human pilot/frozen test/effect claim"
   }
 ]

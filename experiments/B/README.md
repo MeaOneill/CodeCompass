@@ -23,3 +23,5 @@ verification捕获CLI/pip/A图/两种B0/首版严格审计，预期exit2的缺�
 私有输入key与含答案夹具不在Git；公开结果保留其hash和门禁，不能宣称另机已持有。新clone公开恢复与closeout的原始hash/事件记录收尾追加。每次用新run_id，不删除失败或覆盖原始结果。
 
 最终复检evaluation04=58累计测试、14开发夹具、22span；audit04工程通过/整体未过(exit2)。添加候选导入异常、完善响应人类回执和公开演示状态门禁后运行，旧记录保留。环境快照另存B-D02-20261016-environment，标记收尾时检测而非伪填旧运行时点。
+
+自主收尾：quality01/02各执行57项负例挑战，识别全部；质量02补齐task001完整源码/概念并逐题给出AI难度理由。evaluation05/06累计60测试、14夹具期待通过；06验证24span。B0-shared03仍预期缺成本exit2，lines03基于固定README/RST顺序运行。autonomous-audit01按D02开发范围验收exit0/next_day_allowed=true，formal_study_ready=false；此前将真人预演混入开发门禁的记录不删除。

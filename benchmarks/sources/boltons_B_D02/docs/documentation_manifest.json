@@ -1,0 +1,16 @@
+[
+  {
+    "upstream_path": "README.md",
+    "url": "https://raw.githubusercontent.com/mahmoud/boltons/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/README.md",
+    "saved_path": "benchmarks/sources/boltons_B_D02/docs/README.md",
+    "sha256": "125d653ce15f442d8cafb2b43b4ddc01f443807a4a782e035528cfd75c4388f9",
+    "retrieved_at": "2026-10-16T11:22:45.803345+00:00"
+  },
+  {
+    "upstream_path": "docs/iterutils.rst",
+    "url": "https://raw.githubusercontent.com/mahmoud/boltons/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/docs/iterutils.rst",
+    "saved_path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+    "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6",
+    "retrieved_at": "2026-10-16T11:22:46.252976+00:00"
+  }
+]

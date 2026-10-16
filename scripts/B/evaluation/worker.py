@@ -83,7 +83,9 @@ def checks_002(m):
 
     def sentinel():
         equal(list(m.windowed_iter(range(3), 2, fill=None)), [(0, 1), (1, 2), (2, None)])
+        equal(list(m.windowed_iter(range(3), 2, fill=-1)), [(0, 1), (1, 2), (2, -1)])
         equal(m.pairwise([1, 2], end=None), [(1, 2), (2, None)])
+        equal(m.pairwise([1, 2], end=-99), [(1, 2), (2, -99)])
         equal(m.windowed([1, 2, 3], 2), [(1, 2), (2, 3)])
         equal(list(itertools.islice(m.windowed_iter(itertools.count(), 2), 2)), [(0, 1), (1, 2)])
     return {'R1': validation, 'R2': normal, 'R3': sentinel}

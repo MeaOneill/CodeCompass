@@ -1,0 +1,31 @@
+{
+  "version": "B0-upstream-document-order-0.2",
+  "compiler": "deterministic pinned upstream documentation order",
+  "baseline_type": "README_documentation_fixed_route",
+  "compiled_before_ours_implementation": true,
+  "routes": {
+    "task_001": [
+      "u_chunked",
+      "u_chunked_iter",
+      "u_iterable"
+    ]
+  },
+  "rationale": [
+    "固定README列出chunked/windowed并链接iterutils文档；固定版本RST以autofunction列出文档顺序。",
+    "在同一三个候选单元中按上游文档出现顺序读取：chunked、chunked_iter、is_iterable；不是为Ours表现挑选路线。",
+    "只按固定顺序取预算内前缀，不做能力门控；静态行数成本仅作D02开发代理，正式对照需所有方法同成本。",
+    "默认shared仍保留null成本输入拒绝；显式source_lines_proposal不修改A共享单元。"
+  ],
+  "documentation": [
+    {
+      "path": "benchmarks/sources/boltons_B_D02/docs/README.md",
+      "sha256": "125d653ce15f442d8cafb2b43b4ddc01f443807a4a782e035528cfd75c4388f9"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+      "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+    }
+  ],
+  "human_review": "NOT_REVIEWED",
+  "limitations": "D02 documentation baseline is executable; no human learning effect, optimality or formal common-cost approval is claimed."
+}
