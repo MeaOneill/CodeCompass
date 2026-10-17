@@ -1,0 +1,33 @@
+{
+  "purpose": "account handoff smoke only, not a repetition of all 142/167 tests",
+  "timestamp": "2026-10-17T23:00:48.409346+08:00",
+  "machine": "LAPTOP-LUQPS3EV",
+  "executor": "Codex Agent A",
+  "python": "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+  "python_version": "3.12.14",
+  "commands": [
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-account-handoff-20261017/smoke.log"
+    },
+    {
+      "command": [
+        "D:\\AIC算法主题赛\\tmp\\A-D02-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "raw_log": "experiments/A/A-account-handoff-20261017/pip_check.log"
+    }
+  ],
+  "all_passed": true,
+  "A_D04_full_suite": "historically 142 pass; not repeated this handoff",
+  "B_D04_full_suite": "B reports 167 pass; NOT_REPLAYED_ON_A in this handoff",
+  "background_observation": "No python/pythonw/node process with project AIC marker observed by Get-CimInstance before these short-lived checks; not an all-system service audit",
+  "model_api_calls_this_handoff": 0
+}
