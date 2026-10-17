@@ -31,7 +31,7 @@ def audit_rows(root,rows,case_map):
         else:
             assert row['metrics'] is None,'missing plan with metrics'
         if not row['attempted']:
-            assert row['execution_status'] in ('NOT_CONFIGURED','BUDGET_NOT_RUN'),'invalid not-run'
+            assert row['execution_status'] in ('NOT_CONFIGURED','BUDGET_NOT_RUN','INPUT_LIMIT_NOT_RUN'),'invalid not-run'
 
 
 def main():

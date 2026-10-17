@@ -1,0 +1,128 @@
+[
+  {
+    "figure_id": "T02_development",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-offline01",
+    "png": "report_materials/B/B-D04-deepseek-offline01/T02_development.png",
+    "svg": "report_materials/B/B-D04-deepseek-offline01/T02_development.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-offline01 --output report_materials/B/B-D04-deepseek-offline01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/summary.json",
+        "sha256": "2d257fb518dc16a8fa7d3afe58f4e571a9d47324e5a2b7cfbf8e70d64516c0ac"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/T02.csv",
+        "sha256": "07e700720a5ef0716a96f9b9125bae3b34fc6bb9f019328d92309ccc86a21ace"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/render_config.json",
+        "sha256": "e30bdab956dabac3d0799cdb48f1c6aa50bc9962fa21d4207791e625c4fbd6db"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/T02_development.png",
+        "sha256": "8c020a7a14564fe1f54ba936d5eabf337936cac8973a8fe54d7d8a2cba96965a"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/T02_development.svg",
+        "sha256": "eb181d459c4c2b73c9d106fb88181b96543e3b71142315ed46b942939465e56e"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_001_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-offline01",
+    "png": "report_materials/B/B-D04-deepseek-offline01/task_001_routes.png",
+    "svg": "report_materials/B/B-D04-deepseek-offline01/task_001_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-offline01 --output report_materials/B/B-D04-deepseek-offline01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/summary.json",
+        "sha256": "2d257fb518dc16a8fa7d3afe58f4e571a9d47324e5a2b7cfbf8e70d64516c0ac"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/T02.csv",
+        "sha256": "07e700720a5ef0716a96f9b9125bae3b34fc6bb9f019328d92309ccc86a21ace"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/render_config.json",
+        "sha256": "e30bdab956dabac3d0799cdb48f1c6aa50bc9962fa21d4207791e625c4fbd6db"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/task_001_routes.png",
+        "sha256": "d9eb0d338366ca4b64cb5a4750408571cb0919d1efffebaec4ea1c5484ae0466"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/task_001_routes.svg",
+        "sha256": "12c3a57cea62e7655ee46d2238139e4270640ae64f67751eabf06843d03ea057"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_002_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-offline01",
+    "png": "report_materials/B/B-D04-deepseek-offline01/task_002_routes.png",
+    "svg": "report_materials/B/B-D04-deepseek-offline01/task_002_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-offline01 --output report_materials/B/B-D04-deepseek-offline01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/summary.json",
+        "sha256": "2d257fb518dc16a8fa7d3afe58f4e571a9d47324e5a2b7cfbf8e70d64516c0ac"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-offline01/T02.csv",
+        "sha256": "07e700720a5ef0716a96f9b9125bae3b34fc6bb9f019328d92309ccc86a21ace"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/render_config.json",
+        "sha256": "e30bdab956dabac3d0799cdb48f1c6aa50bc9962fa21d4207791e625c4fbd6db"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/task_002_routes.png",
+        "sha256": "5412f57bb5ebc5bc3fb9975fa5b20f6fb46a5da67ee434810f0ab344544b5abd"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-offline01/task_002_routes.svg",
+        "sha256": "3896d2fe6ee7a0e3b7a69a96adbeb2793953641b903e46b89a13efb2508ccfd6"
+      }
+    ]
+  }
+]

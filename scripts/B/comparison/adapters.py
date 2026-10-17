@@ -59,7 +59,7 @@ def invoke(root, case, method, comparison_config, prompt, meter, *, transport=No
            'attempted': True, 'execution_status': None, 'plan': None, 'metrics': None,
            'source_kind': 'fixed_real_task' if source else 'synthetic_structure',
            'profile_is_simulated': state['is_simulated'], 'human_task_success': None,
-           'calls': [], 'model_id': None, 'api_cost_usd': None, 'format_repairs': 0}
+           'calls': [], 'model_id': None, 'api_cost_usd': None, 'api_cost_cny': None, 'format_repairs': 0}
     try:
         if method == 'B1':
             raw = run_b1(context, comparison_config['b1'], prompt, meter, transport=transport)
@@ -67,6 +67,8 @@ def invoke(root, case, method, comparison_config, prompt, meter, *, transport=No
             row['model_id'] = raw['model_requested']; row['format_repairs'] = sum(c['kind']=='format_repair' for c in raw['calls'])
             estimates = [c['estimated_cost_usd'] for c in raw['calls']]
             row['api_cost_usd'] = sum(estimates) if estimates and all(v is not None for v in estimates) else None
+            estimates_cny = [c.get('estimated_cost_cny') for c in raw['calls']]
+            row['api_cost_cny'] = sum(estimates_cny) if estimates_cny and all(v is not None for v in estimates_cny) else None
             if raw['status'] != 'PARSED':
                 row['execution_status'] = raw['status']; return row, context
             route = raw['route']; by_id = {u['id']:u for u in units}

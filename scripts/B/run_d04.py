@@ -14,7 +14,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'src')); sys.path.insert(0, str(ROOT))
 from scripts.B.comparison.adapters import invoke
-from scripts.B.comparison.b1 import SpendMeter
+from scripts.B.comparison.b1 import SpendMeter, PersistentSpendMeter, cost_policy
 from scripts.B.comparison.metrics import aggregate
 
 
@@ -41,14 +41,21 @@ def main():
     if not re.fullmatch(r'[A-Za-z0-9_-]+', a.run_id): p.error('Invalid run ID')
     config = json.loads(a.config.read_text(encoding='utf-8'))
     template = json.loads((ROOT/'configs/B/D04_comparison.json').read_text(encoding='utf-8'))
-    if set(config) != set(template) or set(config['b1']) != set(template['b1']):
+    optional={'currency','budget_cny','per_call_reservation_cny','input_cny_per_million','output_cny_per_million','budget_state_path','max_input_bytes'}
+    if set(config) != set(template) or not set(template['b1']) <= set(config['b1']) or set(config['b1'])-set(template['b1'])-optional:
         p.error('Unexpected config fields; secrets belong only in the named environment variable')
     if config['methods'] != ['B0','B1','B2','beam']: p.error('D04 method set is fixed')
     out = ROOT/'experiments/B'/a.run_id
     if out.exists(): p.error('Do not overwrite evidence; choose a new run ID')
     out.mkdir(parents=True)
     prompt_path = ROOT/'configs/B/B1_direct_v1.txt'; prompt = prompt_path.read_text(encoding='utf-8')
-    meter = SpendMeter(config['b1']['budget_usd'] or 0); rows = []
+    currency,prices = cost_policy(config['b1'])
+    if config['b1'].get('budget_state_path'):
+        meter_path=(ROOT/config['b1']['budget_state_path']).resolve()
+        if not meter_path.is_relative_to(ROOT/'tmp'):p.error('Budget state must be in ignored local tmp')
+        meter=PersistentSpendMeter(meter_path,prices['budget'],currency)
+    else:meter = SpendMeter(prices['budget'] or 0)
+    rows = []
     for case in cases():
         hashes = set()
         save(out/'cases'/case['case_id']/'input.json', case)
@@ -63,14 +70,15 @@ def main():
     totals = {m: aggregate([r for r in rows if r['method']==m]) for m in config['methods']}
     summary = {'run_id': a.run_id, 'kind': 'exploratory_development_comparison', 'rows': rows,
                'aggregates': totals, 'B1_live_calls': sum(len(r['calls']) for r in rows),
-               'reserved_api_usd': meter.reserved, 'formal_study_ready': False,
+               'reserved_api_usd': meter.reserved if currency=='USD' else None,
+               'reserved_api_cny': meter.reserved if currency=='CNY' else None, 'cost_currency':currency,'formal_study_ready': False,
                'human_profiles': 0, 'learning_effect': 'NOT_MEASURED', 'independent_relevance_labels': 0}
     save(out/'summary.json', summary); save(out/'config.json', config)
     (out/'prompt.txt').write_text(prompt, encoding='utf-8', newline='\n')
     fields = ['case_id','method','source_kind','profile_is_simulated','attempted','execution_status','context_hash',
               'coverage_tp','required_concepts','coverage_ratio','hard_violations','hard_relations_checked',
               'prerequisite_violation_rate','source_spans_valid','source_spans_checked','source_reference_validity',
-              'replayed_proxy_cost','elapsed_seconds','api_cost_usd','format_repairs','human_task_success']
+              'replayed_proxy_cost','elapsed_seconds','api_cost_usd','api_cost_cny','format_repairs','human_task_success']
     with (out/'T02.csv').open('w', encoding='utf-8', newline='') as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction='ignore', lineterminator='\n'); w.writeheader()
         for row in rows:

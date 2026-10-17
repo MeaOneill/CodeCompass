@@ -62,6 +62,7 @@
 /docs/requests/B-D04-* text eol=lf
 /docs/joint/B-D04-* text eol=lf
 /.gitattributes text eol=lf
+/configs/B/D04_deepseek_authorized.json text eol=lf
 
 /experiments/A/A-D04-*/code_snapshot/** -text whitespace=-blank-at-eol
 /experiments/A/A-D04-*/comparison.csv -text whitespace=cr-at-eol

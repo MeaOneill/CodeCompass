@@ -1,0 +1,22 @@
+{
+  "task": "B-D04 B1 supplement",
+  "actual_time": "2026-10-17T12:00:39.502371+08:00",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "source_parent": "47f930182a02a5a1145430a41452df813ce55115",
+  "test_count": 166,
+  "new_tests": 6,
+  "real_api_calls": 0,
+  "currency": "CNY",
+  "authorized_ceiling": 5,
+  "budget_ledger": "ignored local tmp; no automatic resets",
+  "credentials": "AWAITING_LOCAL_REPLACEMENT_KEY",
+  "credential_material_in_Git": false,
+  "provider_docs": [
+    "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "https://api-docs.deepseek.com/api/create-response/"
+  ],
+  "local_preparation_passed": true,
+  "live_service_verified": false,
+  "independent_human_review": "NOT_REVIEWED"
+}
