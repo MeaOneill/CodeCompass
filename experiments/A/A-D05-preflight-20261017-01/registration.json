@@ -1,0 +1,189 @@
+{
+  "run_id": "A-D05-preflight-20261017-01",
+  "task": "A-D05 prerequisites / receive B-D04",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "model_id": null,
+  "machine": "糯糯",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "interpreter": "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+  "root": "C:\\CodeCompass\\CodeCompass-A-D05",
+  "branch": "codex/A-D05-diagnosis",
+  "code_commit": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "received_B_commit": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "started_at": "2026-10-17T23:25:07.265454+08:00",
+  "verification_kind": "same-machine isolated-worktree reception",
+  "model_api_calls": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "commands": [
+    {
+      "name": "pip-check",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8010087000002386,
+      "stdout": "pip-check.stdout.log",
+      "stderr": "pip-check.stderr.log"
+    },
+    {
+      "name": "pip-freeze",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1065708000023733,
+      "stdout": "pip-freeze.stdout.log",
+      "stderr": "pip-freeze.stderr.log"
+    },
+    {
+      "name": "pytest",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D05-preflight-20261017-01\\pytest"
+      ],
+      "exit_code": 0,
+      "seconds": 16.275358299993968,
+      "stdout": "pytest.stdout.log",
+      "stderr": "pytest.stderr.log"
+    },
+    {
+      "name": "B04-live-audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d04.py",
+        "--source",
+        "experiments/B/B-D04-deepseek-live01",
+        "--figures",
+        "report_materials/B/B-D04-deepseek-live01",
+        "--fixtures",
+        "experiments/B/B-D04-fixtures01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D05-preflight-20261017-01\\B04-live-audit.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6744144999975106,
+      "stdout": "B04-live-audit.stdout.log",
+      "stderr": "B04-live-audit.stderr.log"
+    },
+    {
+      "name": "A04-mechanism-audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d04.py",
+        "--run-id",
+        "A-D04-mechanism01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D05-preflight-20261017-01\\A04-mechanism-audit.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.219225800006825,
+      "stdout": "A04-mechanism-audit.stdout.log",
+      "stderr": "A04-mechanism-audit.stderr.log"
+    },
+    {
+      "name": "demo-A04",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d04.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6909070999972755,
+      "stdout": "demo-A04.stdout.log",
+      "stderr": "demo-A04.stderr.log"
+    },
+    {
+      "name": "sample",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "app",
+        "check-sample"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6993539999966742,
+      "stdout": "sample.stdout.log",
+      "stderr": "sample.stderr.log"
+    }
+  ],
+  "finished_at": "2026-10-17T23:25:31.736389+08:00",
+  "engineering_passed": true,
+  "files": [
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.json",
+      "sha256": "5dba934b83acb7f570965649108a0944d7e4acfce4c642e7d508e9801a911316"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.stdout.log",
+      "sha256": "dfbc2c65ab11af82b1a1294e7ac451dc253ca7a325548ce0a8145bf01f9a7c1d"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.json",
+      "sha256": "4d00960f5579b8b240a91c9394b0435a1b5660fb490898423959e83111b91ff1"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.stdout.log",
+      "sha256": "a456cc26e4664ee4206ca4cd04ddfb687b9f76562d719ebe5524fce092eec7b2"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/demo-A04.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/demo-A04.stdout.log",
+      "sha256": "6ff583ef5fef5f1c1a956f0609246bec3fb353755b84fa34f667cc92dd30347f"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-check.stdout.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-freeze.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-freeze.stdout.log",
+      "sha256": "3ad751314f3b0c5da7181e1e869096b13647934dd26783165a09c0395dde8aeb"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pytest.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pytest.stdout.log",
+      "sha256": "da323f616478ed39043720b10edfee04c38a353243ace3a857c867ec9d2290a7"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/sample.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/sample.stdout.log",
+      "sha256": "558950af4ba48550fa7407f4a6f7452e767a5f938708b44d8923d1bdf5f458b2"
+    }
+  ],
+  "reception_script_note": "Runner logging hardened after first execution: LF JSON output and runner hash; product code unchanged; committed-copy checks follow."
+}

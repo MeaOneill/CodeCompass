@@ -1,0 +1,103 @@
+{
+  "captured_at": "2026-10-17T23:31:01.923546+08:00",
+  "base_commit": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "files": [
+    {
+      "path": "docs/A/每日验收规则.md",
+      "sha256": "a7c5bebd633a6edc1f5668af8ba2ec694b3f1244b0d10b247810cd5f25445feb"
+    },
+    {
+      "path": "CodeCompass计划/03_双机接力与开发规范.md",
+      "sha256": "a76c68f4fa09a08dc909794259ca17eab8b14728213b67b10e9e7abe1b4c4275"
+    },
+    {
+      "path": "CodeCompass计划/01_竞赛说明书.md",
+      "sha256": "47895d83df8b40212011323a6b8fbbdac6b10e5172fbb5517098fa63cd928230"
+    },
+    {
+      "path": "CodeCompass计划/02_每日任务与验收.md",
+      "sha256": "c43ffca43e0421d364cbf4187efa6034cbf632d391443b42d5401b82894ce263"
+    },
+    {
+      "path": "CodeCompass计划/refine-logs/EXPERIMENT_PLAN.md",
+      "sha256": "6b65e5e81787530f6dadb0fb5d5ea5aa016f302436fa55d8b30c7bc7a93b07fd"
+    },
+    {
+      "path": "CodeCompass计划/tracking/STATUS.md",
+      "sha256": "c588d8a5edad2dcdc998e4672a31fef0cd3c29def4d24dc1308b6deb567c56c8"
+    },
+    {
+      "path": "CodeCompass计划/tracking/HANDOFF.md",
+      "sha256": "a9da224eefb7654b62d31025b09e7041a6ef8e47fad5d468ab831fae0133ee31"
+    },
+    {
+      "path": "CodeCompass计划/tracking/TASK_BOARD.md",
+      "sha256": "04e3c5eb56afe2fc815d2616b936c07b9b1f2427432cad6e4f6b925a5d3042d1"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "ec4bab1808947ba15cf0de81285a37ca780792121727525aebe1ab967f2dd6a7"
+    },
+    {
+      "path": "docs/freeze_manifest.md",
+      "sha256": "508b97ed26046bcd12002aade1e78322846d0fcd6666282f8c443b2d97d84303"
+    },
+    {
+      "path": "docs/A/algorithm.md",
+      "sha256": "939789d983629278d5cc3721df6153ed498a398864527fece427d4acae6eabbc"
+    },
+    {
+      "path": "docs/A/handoffs/A-D04.md",
+      "sha256": "6cd1cf5e7bde7f04af17c6e08ee3320219f2781e4d6da9e8dfddebe49a02469b"
+    },
+    {
+      "path": "scripts/A/README_D04.md",
+      "sha256": "83b23d11ffe578139333a6882ee3511907855fcd6f95b794b8808d75ba89afdc"
+    },
+    {
+      "path": "docs/B/handoffs/B-D04.md",
+      "sha256": "0078219701fe325e1e6a83e2a3cfedf8a9a135095ee6b1d4c8e7470aadd42c13"
+    },
+    {
+      "path": "docs/B/状态.md",
+      "sha256": "78a0d00279d3814a71b1e673d9e2ce6d302281271befca56553d4b4c82c8de4b"
+    },
+    {
+      "path": "docs/B/fairness.md",
+      "sha256": "ed0c2e15e7ff3698f190d668de6dc46cee2d684b43baf942f69eb6b11351e352"
+    },
+    {
+      "path": "docs/requests/B-D04-comparison-interface.md",
+      "sha256": "b4b0f7be03d36e2767868764bdc03f384b6be4b68a174530b7fbd47c9021ca5f"
+    },
+    {
+      "path": "docs/B/deepseek_B1接入.md",
+      "sha256": "90b86c550ceddb57318c195b7179d321251eaacaa1d4110652c2323d6b961070"
+    },
+    {
+      "path": "experiments/B/B-D04-deepseek-activation01/recovery_gate.json",
+      "sha256": "3d5a7530813ecc3ccad6c54605b86ead045d2e30e1e55ad1330e6caa8fa41144"
+    },
+    {
+      "path": "scripts/B/requirements-d01-win-py312.hashes.txt",
+      "sha256": "8e3fd61498fcaf4f00aaefa9ef7dc0a8b09ec159d3cabd67f363c37bbfe2e64d"
+    },
+    {
+      "path": "docs/A/handoffs/A_账号接力总交接_20261017.md",
+      "sha256": "85195cbff15a1453aa29568986282966ba6ec9f298530f1377722a1e5a21d527"
+    },
+    {
+      "path": "docs/A/handoffs/A_账号接力快照_20261017.json",
+      "sha256": "7efd64fd792d985e5a6830b7454a848286c001f341b56f832e3a78bf7a791491"
+    },
+    {
+      "path": "schemas/contracts-1.1.schema.json",
+      "sha256": "fc379758617fb7dd22fe0d3361a2c8b9e4ff65c42a14e37cfc456d76f2f97181"
+    },
+    {
+      "path": "schemas/contracts.schema.json",
+      "sha256": "6476bc3aa2e6999870dda1e821fc77d72bdf5d14e3fb78c4f65f0a82a4a781f2"
+    }
+  ],
+  "schema_review": "Parsed schema objects and contract semantics; full validation exercised by existing suite"
+}

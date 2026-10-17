@@ -1,0 +1,87 @@
+{
+  "time": "2026-10-17T23:31:01.923546+08:00",
+  "documents": [
+    {
+      "source": "C:\\CodeCompass\\CodeCompass_成员A工作计划安排与Agent每日任务.docx",
+      "sha256": "c61e913c39b9ee4a69008114bb1d62742caa2d28fa511b74809e4e33c0a304ee",
+      "text_file": "0.txt",
+      "characters": 33283
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass_成员B工作计划安排与Agent每日任务.docx",
+      "sha256": "af7b449610e9ccddbc5c8517a1c3b59ed15a6a4a7a781605005d52c42026b05f",
+      "text_file": "1.txt",
+      "characters": 32574
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass_项目说明书与双人分工计划.docx",
+      "sha256": "e8f924b9236ace36caf999b59632c2528dad5d66ccc13e1a99170787f9259963",
+      "text_file": "2.txt",
+      "characters": 19368
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass-A-D05\\Word文档\\V6.2_Git更新版\\CodeCompass_Git远程仓库创建与日常维护.docx",
+      "sha256": "8ab6439955bd4ff99289abb37015937a906c38f098d00e75b90d9dd97cd08dac",
+      "text_file": "3.txt",
+      "characters": 8703
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass-A-D05\\Word文档\\V6.2_Git更新版\\CodeCompass_成员A工作计划安排与Agent每日任务.docx",
+      "sha256": "c61e913c39b9ee4a69008114bb1d62742caa2d28fa511b74809e4e33c0a304ee",
+      "text_file": "4.txt",
+      "characters": 33283
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass-A-D05\\Word文档\\V6.2_Git更新版\\CodeCompass_成员B工作计划安排与Agent每日任务.docx",
+      "sha256": "af7b449610e9ccddbc5c8517a1c3b59ed15a6a4a7a781605005d52c42026b05f",
+      "text_file": "5.txt",
+      "characters": 32574
+    },
+    {
+      "source": "C:\\CodeCompass\\CodeCompass-A-D05\\Word文档\\V6.2_Git更新版\\CodeCompass_项目说明书与双人分工计划.docx",
+      "sha256": "e8f924b9236ace36caf999b59632c2528dad5d66ccc13e1a99170787f9259963",
+      "text_file": "6.txt",
+      "characters": 19368
+    }
+  ],
+  "document_comparison": "Three supplied DOCX SHA256 values equal repository V6.2 copies; read-only extraction, no edits/rendering",
+  "read_sections": [
+    "A/B common rules",
+    "A-D05 full card",
+    "B-D04 and B-D05 cards",
+    "project algorithm, interfaces, experiments and responsibilities"
+  ],
+  "applicable_agents_files": [],
+  "setup_issues": [
+    {
+      "action": "dedicated worktree tool",
+      "outcome": "Not a git repository at chat cwd C:/CodeCompass; used native git worktree instead"
+    },
+    {
+      "action": "inline Word extraction",
+      "exit_code": 1,
+      "error": "SyntaxError: unterminated string literal",
+      "fix": "separate Python file"
+    },
+    {
+      "action": "Word extraction script first attempt",
+      "exit_code": 1,
+      "error": "BadZipFile on Word ~$ lock file",
+      "fix": "exclude ~$ files"
+    },
+    {
+      "action": "venv ensurepip",
+      "exit_code": 1,
+      "error": "PermissionError on sandbox default TEMP",
+      "fix": "TEMP/TMP set to A worktree tmp; ensurepip/install succeeded"
+    }
+  ],
+  "original_setup_output": "Tool transcript; above failures are summaries, not reproduced raw logs",
+  "dependency_install": {
+    "command": "python -m pip install --require-hashes -r scripts/B/requirements-d01-win-py312.hashes.txt --no-index --find-links C:/CodeCompass/CodeCompass/tmp/b-d01-wheels",
+    "exit_code": 0,
+    "note": "Read-only public wheel cache; no credential or environment copied; no installation raw log persisted outside tool transcript"
+  },
+  "agents_search": "rg --files --hidden plus explicit C:/AGENTS.md and C:/CodeCompass/AGENTS.md ancestors; no matching file",
+  "no_A_D05_algorithm_changes": true
+}

@@ -1,0 +1,38 @@
+# A-D05 开始前交接
+
+Owner：成员A；执行者：当前账号 Codex Agent A；机器：糯糯；精确模型 ID 未知。实际日期以实验登记的北京时间为准。
+
+业务顺序：已接收 B-D04 → 本轮前置检查 → A-D05 → B-D05。A-D05 算法尚未开始，不能以本轮前置完成替代 A-D05 完成。
+
+## 环境和版本
+
+- A 工作区：`C:\CodeCompass\CodeCompass-A-D05`。
+- A 分支：`codex/A-D05-diagnosis`。
+- 接收 B-D04 / base：`18f08779b0e32f0c91f48827ef0b7d50cb223ad4`。
+- 原账号交接分支：`codex/A-account-handoff-20261017`，版本 `694c047c7a162bd6b7386467a6f0d1bf7685a0fc`。两份交接已精确恢复到 A 分支。
+- B 工作区：`C:\CodeCompass\CodeCompass`，仍在 `codex/B-D04-baselines`。三组 B-D02 未跟踪自验目录保留，不暂存、不复制、不清理。
+- A 独立解释器：`.venv\Scripts\python.exe`，CPython 3.12.10。依赖按 B 的 Windows Python 3.12 hash 锁从已有 wheel 缓存离线安装；并非原电脑的 Python 3.12.14。
+- 适用祖先路径和工作树搜索未发现 AGENTS.md / AGENTS.override.md；后续仍须检查新增规则。
+
+## 已执行和证据
+
+三份用户 Word 与仓库 V6.2 文件 SHA256 相同；已读取共同规则、A-D05 完整卡、B-D04/B-D05 卡、说明书主算法/接口/实验、实验协议草案、共享状态、契约及双方最新交接。
+
+首次接收检查：`experiments/A/A-D05-preflight-20261017-01/registration.json`。七命令 exit 0：pip check、pip freeze、167 测试、130 项 B live 数据审计、206 个 A 篡改输出拒绝、A04 demo、旧样例读取。B 的原始六次响应可回放，24 个方法槽均保存；本轮新增 API 调用 0。图表与输入、源码/配置字节通过 B 审计，已目视检查 T02 表和 A04 框架图。
+
+提交归档重跑记录为同目录 `checkpoint_replay.json`；最终是否放行以 `release_gate.json` 和同步回执为准。没有独立人类审核、异机复现或正式研究通过。
+
+准备过程中保留的失败：专用 worktree 工具因聊天根目录不是 Git 仓库失败，改用 Git worktree；初次内联 Word 提取引号失败，改为脚本；首次脚本误包含 Word 锁文件，已排除；venv ensurepip 默认临时目录权限失败，改用 A 工作树 tmp 后成功。详细记录见 `setup_and_inputs.json`。没有修改 B 代码或放宽测试。
+
+## A-D05 第一项具体动作
+
+1. 先读 `docs/A/状态.md`、本交接、每日验收规则及最终门禁/同步回执，核对分支和 HEAD。
+2. 读取 A 手册完整 A-D05 卡与 `CodeCompass计划/01_竞赛说明书.md` 第 4 节，按统一预算设计诊断/修复接口。
+3. 先列出顺序代价对状态等价性和证书的影响，再设计版本化实现；保留旧 B2 和冻结数据。没有可靠 p_pass 或统一成本时按卡片禁用 VOI，不伪造校准。
+4. 若涉及共同契约，先写 A 接口请求和角色前缀联合记录；不改 B 模块来制造验收通过。
+
+不要重新运行付费 launcher、读取/复制 DPAPI 或预算库、读取私有终测答案。当前没有已知需要接管的 A 后台任务；所有前置检查进程已完成，忽略目录中的环境不是待接管进程。
+
+## 随时回交原账号
+
+从本分支最新远程提交继续，不回到旧 A04 或文档分支。准确提交 SHA 以最终通知和同步回执为准，避免自引用。交回前写新时间戳回交 Markdown 与快照，记录 dirty 归属、base/HEAD、命令、日志、失败、后台任务和下一条动作；只提交 A 本轮文件，推送并核对远程。接收确认前不要让两个 A 同时写同一任务。

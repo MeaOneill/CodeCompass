@@ -280,5 +280,20 @@
       "status": "A_agent_visual_reviewed_B_pending",
       "limitations": "14 structural fixtures and 2 real-task definitions with simulated profiles; no human outcomes; beam not generally optimal; real tasks tie"
     }
+  ],
+  "reception_reviews": [
+    {
+      "task_id": "A-D05-preflight",
+      "time": "2026-10-17T23:31:01.923546+08:00",
+      "new_figures": false,
+      "reason": "Reception only; no A-D05 algorithm or effect data",
+      "audited_B_figures_manifest": "report_materials/B/B-D04-deepseek-live01/figure_manifest.json",
+      "audit": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.json",
+      "visually_viewed": [
+        "report_materials/B/B-D04-deepseek-live01/T02_development.png",
+        "report_materials/A/A-D04/A-D04-mechanism01/F03_search_framework.png"
+      ],
+      "visual_review": "Agent self review: legible, no obvious clipping; not human review"
+    }
   ]
 }

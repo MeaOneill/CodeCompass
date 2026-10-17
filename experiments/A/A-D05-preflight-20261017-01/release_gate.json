@@ -1,0 +1,11 @@
+{
+  "task": "A-D05-preflight",
+  "engineering_checks_passed": true,
+  "committed_copy_replay": "PENDING",
+  "remote_sync": "PENDING",
+  "next_step_allowed": false,
+  "next_task": "A-D05",
+  "A_D05_status": "NOT_STARTED",
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false
+}

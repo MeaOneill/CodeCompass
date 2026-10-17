@@ -1,0 +1,529 @@
+{
+  "engineering_passed": true,
+  "checks": [
+    {
+      "check": "exact bytes scripts/B/comparison/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/comparison/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/B/comparison/adapters.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/comparison/adapters.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/B/comparison/b1.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/comparison/b1.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/B/comparison/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/comparison/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/B/run_d04.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/run_d04.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes configs/B/B1_direct_v1.txt",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/configs/B/B1_direct_v1.txt",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/beam.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/beam.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/comparison_validator.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/comparison_validator.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/exact.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/exact.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/search_common.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/search_common.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/search_service.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/search_service.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/B/b0.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/B/b0.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "exact bytes schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "exact bytes experiments/B/B-D04-deepseek-live01/code_snapshot/benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "24 rows / six cases / four methods",
+      "passed": true
+    },
+    {
+      "check": "one result per method cost_gap",
+      "passed": true
+    },
+    {
+      "check": "same public info cost_gap",
+      "passed": true
+    },
+    {
+      "check": "saved public info cost_gap",
+      "passed": true
+    },
+    {
+      "check": "one result per method shared",
+      "passed": true
+    },
+    {
+      "check": "same public info shared",
+      "passed": true
+    },
+    {
+      "check": "saved public info shared",
+      "passed": true
+    },
+    {
+      "check": "one result per method task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "same public info task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "saved public info task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "one result per method task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "same public info task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "saved public info task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "one result per method task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "same public info task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "saved public info task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "one result per method task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "same public info task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "saved public info task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "failure denominator B0",
+      "passed": true
+    },
+    {
+      "check": "failure denominator B1",
+      "passed": true
+    },
+    {
+      "check": "failure denominator B2",
+      "passed": true
+    },
+    {
+      "check": "failure denominator beam",
+      "passed": true
+    },
+    {
+      "check": "real response/usage/route/input/fees replay",
+      "passed": true
+    },
+    {
+      "check": "T02 retains all scheduled rows",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_unknown B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_unknown B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_unknown B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_unknown beam",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_evidence B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_evidence B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_evidence B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_001-sim_evidence beam",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_unknown B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_unknown B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_unknown B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_unknown beam",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_evidence B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_evidence B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_evidence B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON task_002-sim_evidence beam",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON shared B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON shared B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON shared B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON shared beam",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON cost_gap B0",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON cost_gap B1",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON cost_gap B2",
+      "passed": true
+    },
+    {
+      "check": "CSV metrics equal raw JSON cost_gap beam",
+      "passed": true
+    },
+    {
+      "check": "fixture transport not a real model result",
+      "passed": true
+    },
+    {
+      "check": "hand-derived independent counts",
+      "passed": true
+    },
+    {
+      "check": "real-source comparison is exploratory",
+      "passed": true
+    },
+    {
+      "check": "figure belongs to audited run",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/T02.csv",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/render_config.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d04.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/T02_development.png",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/T02_development.svg",
+      "passed": true
+    },
+    {
+      "check": "300dpi T02_development",
+      "passed": true
+    },
+    {
+      "check": "native SVG T02_development",
+      "passed": true
+    },
+    {
+      "check": "figure belongs to audited run",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/T02.csv",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/render_config.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d04.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/task_001_routes.png",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/task_001_routes.svg",
+      "passed": true
+    },
+    {
+      "check": "300dpi task_001_routes",
+      "passed": true
+    },
+    {
+      "check": "native SVG task_001_routes",
+      "passed": true
+    },
+    {
+      "check": "figure belongs to audited run",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/summary.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input experiments/B/B-D04-deepseek-live01/T02.csv",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/render_config.json",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d04.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input scripts/B/draw_d02_materials.py",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/task_002_routes.png",
+      "passed": true
+    },
+    {
+      "check": "figure/input report_materials/B/B-D04-deepseek-live01/task_002_routes.svg",
+      "passed": true
+    },
+    {
+      "check": "300dpi task_002_routes",
+      "passed": true
+    },
+    {
+      "check": "native SVG task_002_routes",
+      "passed": true
+    }
+  ],
+  "B1_live_comparison": "SEE_RAW_CALLS",
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "exit_code": 0
+}
