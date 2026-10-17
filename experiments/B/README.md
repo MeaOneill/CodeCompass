@@ -29,3 +29,5 @@ verification捕获CLI/pip/A图/两种B0/首版严格审计，预期exit2的缺�
 B-D03：integration02为现行数据源（真实源码/任务 + 模拟回答 + 真实公开Issue）；preflight01是A交付重放输出；verification01记录10命令退出与stdout/stderr，A固定输出由B原样移至其A-replay子目录；audit01保留失败、audit02为修复后审计。integration01为早期代码记录，不作当前通过证据。无正式实验或真人数据，SQLite在忽略tmp。
 
 B-D04：现行comparison03为6组开发比较（真实2题×2模拟画像+shared/cost_gap夹具）；B1未配置，六槽NOT_CONFIGURED且指标NA。fixtures01为7种transport软件挑战+手算，真实调用0，不能并入真实B1结果。accept01保留初次A审计路径拒绝exit2和重试通过；verification01记录160测试/九命令期待退出。旧comparison01/02与初图保留，非最终哈希验收。当前/恢复复检按交接收尾更新。
+
+B-D04最终复检verification02九命令均符合预期；已提交01404b8同机新clone恢复到replay01，160测试/九命令/24槽重算一致，原始记录随分支共享。最终放行见closeout/recovery_gate.json。B1真实未运行与工程通过分别记录，不冒充强LLM对照完成。

@@ -18,7 +18,10 @@
   "strong_LLM_comparison_complete": false,
   "formal_study_ready": false,
   "independent_human_review": "NOT_REVIEWED",
-  "next_day_allowed": false,
-  "git_sync": "PENDING_COMMITTED_COPY_AND_PUSH",
-  "owner_note": "B03 user-generated untracked records preserved; A04 source files not modified"
+  "next_day_allowed": true,
+  "git_sync": "CHECKPOINT_HEAD_REMOTE_EQUAL",
+  "owner_note": "B03 user-generated untracked records preserved; A04 source files not modified",
+  "recovery_check": "PASSED_SAME_MACHINE_COMMITTED_CLONE",
+  "verified_checkpoint": "01404b891b8f01d1bca7b60885e5d7485fab406b",
+  "last_heartbeat": "2026-10-17T11:33:12.462062+08:00"
 }

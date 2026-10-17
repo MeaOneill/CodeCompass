@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "is_fixture": false,
+  "object_type": "ExperimentEvent",
+  "event_id": "B-D04-engineering-completed",
+  "run_id": "B-D04-replay01",
+  "actor": {
+    "role": "B",
+    "owner": "成员B / 糯糯",
+    "executor": "Codex Agent B",
+    "machine": "糯糯",
+    "model_id": null
+  },
+  "code_commit": "01404b891b8f01d1bca7b60885e5d7485fab406b",
+  "data_hash": "f5cd7397e82c0ba841d1d4d5ff4008d4880660573ae8739209d8f42632053e24",
+  "config_hash": "cdcb7ca56ca07fe1971ce993e414d6701a4cd82f0a06d3a7ea251846141d895d",
+  "timestamp": "2026-10-17T11:33:12.462062+08:00",
+  "event_type": "succeeded",
+  "payload": {
+    "task_id": "B-D04",
+    "evidence_type": "development_validation",
+    "command": [
+      "python",
+      "scripts/B/verify_d04.py",
+      "--run-id",
+      "B-D04-replay01"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": null,
+    "raw_result_path": "experiments/B/B-D04-replay01/registration.json",
+    "error": null,
+    "resume_from": null,
+    "metrics": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "method": "B1",
+  "case_id": "task_002-sim_evidence",
+  "context_hash": "14bf835c77f60b1e452307b65e39fc1ff070e9f5f322723cc27bec6f0bc958a7",
+  "attempted": false,
+  "execution_status": "NOT_CONFIGURED",
+  "plan": null,
+  "metrics": null,
+  "source_kind": "fixed_real_task",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "B1_trace": {
+    "attempted": false,
+    "status": "NOT_CONFIGURED",
+    "route": null,
+    "calls": [],
+    "transport_is_fixture": false,
+    "model_requested": null
+  },
+  "elapsed_seconds": 0.011252799999965646
+}

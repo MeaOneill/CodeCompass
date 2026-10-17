@@ -51,3 +51,5 @@ A从B03=5b3db98407ea47e1f26c7ff4cd7594cb42305aea接管，分支codex/A-D04-searc
 最终收尾 2026-10-16T23:58:27.136532+08:00：业务检查点HEAD=remote=63bce32b16eb7601f09baa671aa0f2767102087c。全新已提交归档142测试、A/B审计、CLI与全部机制重算通过；54结果/4状态/16宽度记录与原输入重算一致。严格工程复检通过，允许进入下一步B-D04；人类未审、正式实验0。真实任务成本平局保留，不宣称beam真实收益/一般最优。原始接收演示B模板署名不代表本次执行者，A实际归属/迁移映射见experiments/A/A-D04-accept-B03-01/relocation_and_actual_executor.json（冻结副本hash已逐项验证）。最后仅回执/日志提交，准确最终HEAD见通知；未合main，B未确认接管。
 
 B署名B-D04 2026-10-17T11:29:50.112581+08:00：Owner成员B/糯糯，机器糯糯，Codex Agent B；分支codex/B-D04-baselines，base A-D04 722b9c46676d05b7492f7250b58a9d61c60d5124。READY_FOR_REVIEW，160测试/统一比较已过；最终恢复同步待收尾。B1真实未配置，强LLM对照欠缺，按任务卡先跑本地方法及独立指标；不将夹具当模型结果。交接docs/B/handoffs/B-D04.md，不变更A Owner。
+
+B署名B-D04收尾 2026-10-17T11:33:12.462062+08:00：READY_FOR_REVIEW，工程按B1未配置降级条款通过，允许A-D05。检查点01404b891b8f01d1bca7b60885e5d7485fab406b=remote；同机新clone160测试/九命令/24槽重算一致。最终回执SHA以通知为准。强LLM对照/人类审核/本轮A异机接收仍未完成，未合main。先fetch本轮分支核对交接再推进。

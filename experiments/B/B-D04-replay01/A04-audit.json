@@ -1,0 +1,2280 @@
+{
+  "task_id": "A-D04",
+  "source_run": "A-D04-mechanism01",
+  "engineering_passed": true,
+  "checks": [
+    {
+      "check": "mechanism only",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/beam.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/beam.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/comparison_validator.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/comparison_validator.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/core.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/exact.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/exact.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/search_common.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/search_common.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/search_service.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/search_service.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/service.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/planner/validate.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/learner/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/src/codecompass/learner/model.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash scripts/A/cases_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/scripts/A/cases_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash scripts/A/run_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/scripts/A/run_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/scripts/A/run_d03.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash tests/A/test_search_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/tests/A/test_search_d04.py",
+      "passed": true
+    },
+    {
+      "check": "byte hash schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/schemas/contracts-1.1.schema.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/configs/A/D03_common.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash configs/A/D03_profiles.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/configs/A/D03_profiles.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/benchmarks/dev/D03/task_001.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/benchmarks/dev/D03/task_002.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/benchmarks/dev/D03/units.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "byte hash experiments/A/A-D04-mechanism01/code_snapshot/benchmarks/sources/boltons/snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "strong B2 exact original bytes",
+      "passed": true
+    },
+    {
+      "check": "18 common-input comparisons / 54 outcomes",
+      "passed": true
+    },
+    {
+      "check": "simulated profile shared",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request shared",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate shared",
+      "passed": true
+    },
+    {
+      "check": "independent route shared/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree shared/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time shared/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap shared/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 0",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 1",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 3",
+      "passed": true
+    },
+    {
+      "check": "independent route shared/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree shared/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time shared/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap shared/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 4",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 5",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 6",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 7",
+      "passed": true
+    },
+    {
+      "check": "independent route shared/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree shared/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time shared/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap shared/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal shared",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 8",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 9",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 10",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 11",
+      "passed": true
+    },
+    {
+      "check": "simulated profile greedy_failure",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request greedy_failure",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate greedy_failure",
+      "passed": true
+    },
+    {
+      "check": "independent route greedy_failure/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree greedy_failure/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time greedy_failure/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap greedy_failure/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 12",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 13",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 14",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 15",
+      "passed": true
+    },
+    {
+      "check": "independent route greedy_failure/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree greedy_failure/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time greedy_failure/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap greedy_failure/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 16",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 17",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 18",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 19",
+      "passed": true
+    },
+    {
+      "check": "independent route greedy_failure/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree greedy_failure/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time greedy_failure/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap greedy_failure/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal greedy_failure",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 20",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 21",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 22",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 23",
+      "passed": true
+    },
+    {
+      "check": "simulated profile cost_gap",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request cost_gap",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate cost_gap",
+      "passed": true
+    },
+    {
+      "check": "independent route cost_gap/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cost_gap/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cost_gap/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cost_gap/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 24",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 25",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 26",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 27",
+      "passed": true
+    },
+    {
+      "check": "independent route cost_gap/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cost_gap/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cost_gap/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cost_gap/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 28",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 29",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 30",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 31",
+      "passed": true
+    },
+    {
+      "check": "independent route cost_gap/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cost_gap/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cost_gap/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cost_gap/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal cost_gap",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 32",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 33",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 34",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 35",
+      "passed": true
+    },
+    {
+      "check": "simulated profile unique_chain",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request unique_chain",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate unique_chain",
+      "passed": true
+    },
+    {
+      "check": "independent route unique_chain/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unique_chain/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unique_chain/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unique_chain/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 36",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 37",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 38",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 39",
+      "passed": true
+    },
+    {
+      "check": "independent route unique_chain/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unique_chain/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unique_chain/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unique_chain/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 40",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 41",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 42",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 43",
+      "passed": true
+    },
+    {
+      "check": "independent route unique_chain/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unique_chain/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unique_chain/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unique_chain/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal unique_chain",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 44",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 45",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 46",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 47",
+      "passed": true
+    },
+    {
+      "check": "simulated profile cycle",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request cycle",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate cycle",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 48",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 49",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 50",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 51",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 52",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 53",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 54",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal cycle",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 55",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 56",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 57",
+      "passed": true
+    },
+    {
+      "check": "simulated profile cycle_escape",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request cycle_escape",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate cycle_escape",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle_escape/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle_escape/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle_escape/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle_escape/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 58",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 59",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 60",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 61",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle_escape/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle_escape/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle_escape/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle_escape/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 62",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 63",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 64",
+      "passed": true
+    },
+    {
+      "check": "independent route cycle_escape/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree cycle_escape/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time cycle_escape/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap cycle_escape/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal cycle_escape",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 65",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 66",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 67",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 68",
+      "passed": true
+    },
+    {
+      "check": "simulated profile budget_short",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request budget_short",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate budget_short",
+      "passed": true
+    },
+    {
+      "check": "independent route budget_short/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree budget_short/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time budget_short/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap budget_short/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 69",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 70",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 71",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 72",
+      "passed": true
+    },
+    {
+      "check": "independent route budget_short/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree budget_short/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time budget_short/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap budget_short/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 73",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 74",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 75",
+      "passed": true
+    },
+    {
+      "check": "independent route budget_short/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree budget_short/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time budget_short/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap budget_short/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal budget_short",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 76",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 77",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 78",
+      "passed": true
+    },
+    {
+      "check": "simulated profile unreachable",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request unreachable",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate unreachable",
+      "passed": true
+    },
+    {
+      "check": "independent route unreachable/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unreachable/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unreachable/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unreachable/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 79",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 80",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 81",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 82",
+      "passed": true
+    },
+    {
+      "check": "independent route unreachable/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unreachable/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unreachable/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unreachable/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 83",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 84",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 85",
+      "passed": true
+    },
+    {
+      "check": "independent route unreachable/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree unreachable/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time unreachable/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap unreachable/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal unreachable",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 86",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 87",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 88",
+      "passed": true
+    },
+    {
+      "check": "simulated profile mastered",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request mastered",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate mastered",
+      "passed": true
+    },
+    {
+      "check": "independent route mastered/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree mastered/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time mastered/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap mastered/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 89",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 90",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 91",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 92",
+      "passed": true
+    },
+    {
+      "check": "independent route mastered/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree mastered/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time mastered/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap mastered/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 93",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 94",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 95",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 96",
+      "passed": true
+    },
+    {
+      "check": "independent route mastered/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree mastered/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time mastered/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap mastered/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal mastered",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 97",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 98",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 99",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 100",
+      "passed": true
+    },
+    {
+      "check": "simulated profile zero_cost",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request zero_cost",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate zero_cost",
+      "passed": true
+    },
+    {
+      "check": "independent route zero_cost/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree zero_cost/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time zero_cost/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap zero_cost/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 101",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 102",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 103",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 104",
+      "passed": true
+    },
+    {
+      "check": "independent route zero_cost/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree zero_cost/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time zero_cost/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap zero_cost/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 105",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 106",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 107",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 108",
+      "passed": true
+    },
+    {
+      "check": "independent route zero_cost/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree zero_cost/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time zero_cost/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap zero_cost/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal zero_cost",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 109",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 110",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 111",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 112",
+      "passed": true
+    },
+    {
+      "check": "simulated profile fractional",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request fractional",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate fractional",
+      "passed": true
+    },
+    {
+      "check": "independent route fractional/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree fractional/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time fractional/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap fractional/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 113",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 114",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 115",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 116",
+      "passed": true
+    },
+    {
+      "check": "independent route fractional/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree fractional/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time fractional/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap fractional/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 117",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 118",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 119",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 120",
+      "passed": true
+    },
+    {
+      "check": "independent route fractional/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree fractional/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time fractional/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap fractional/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal fractional",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 121",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 122",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 123",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 124",
+      "passed": true
+    },
+    {
+      "check": "simulated profile ties",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request ties",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate ties",
+      "passed": true
+    },
+    {
+      "check": "independent route ties/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree ties/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time ties/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap ties/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 125",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 126",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 127",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 128",
+      "passed": true
+    },
+    {
+      "check": "independent route ties/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree ties/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time ties/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap ties/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 129",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 130",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 131",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 132",
+      "passed": true
+    },
+    {
+      "check": "independent route ties/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree ties/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time ties/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap ties/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal ties",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 133",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 134",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 135",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 136",
+      "passed": true
+    },
+    {
+      "check": "simulated profile twelve_units",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request twelve_units",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate twelve_units",
+      "passed": true
+    },
+    {
+      "check": "independent route twelve_units/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree twelve_units/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time twelve_units/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap twelve_units/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 137",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 138",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 139",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 140",
+      "passed": true
+    },
+    {
+      "check": "independent route twelve_units/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree twelve_units/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time twelve_units/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap twelve_units/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 141",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 142",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 143",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 144",
+      "passed": true
+    },
+    {
+      "check": "independent route twelve_units/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree twelve_units/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time twelve_units/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap twelve_units/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal twelve_units",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 145",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 146",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 147",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 148",
+      "passed": true
+    },
+    {
+      "check": "simulated profile empty_goal",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request empty_goal",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate empty_goal",
+      "passed": true
+    },
+    {
+      "check": "independent route empty_goal/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree empty_goal/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time empty_goal/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap empty_goal/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 149",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 150",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 151",
+      "passed": true
+    },
+    {
+      "check": "independent route empty_goal/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree empty_goal/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time empty_goal/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap empty_goal/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 152",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 153",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 154",
+      "passed": true
+    },
+    {
+      "check": "independent route empty_goal/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree empty_goal/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time empty_goal/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap empty_goal/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal empty_goal",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 155",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 156",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 157",
+      "passed": true
+    },
+    {
+      "check": "simulated profile task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 158",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 159",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 160",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 161",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 162",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 163",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 164",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 165",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal task_001-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 166",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 167",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 168",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 169",
+      "passed": true
+    },
+    {
+      "check": "simulated profile task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 170",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 171",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 172",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 173",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 174",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 175",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 176",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 177",
+      "passed": true
+    },
+    {
+      "check": "independent route task_001-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_001-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_001-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_001-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal task_001-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 178",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 179",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 180",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 181",
+      "passed": true
+    },
+    {
+      "check": "simulated profile task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_unknown/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 182",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 183",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 184",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 185",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_unknown/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 186",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 187",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 188",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 189",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_unknown/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal task_002-sim_unknown",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 190",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 191",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 192",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 193",
+      "passed": true
+    },
+    {
+      "check": "simulated profile task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "raw ledger matches request task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "independent complete exact certificate task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "real edges stay soft task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_evidence/exact",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 194",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 195",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 196",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 197",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_evidence/B2",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 198",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 199",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 200",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 201",
+      "passed": true
+    },
+    {
+      "check": "independent route task_002-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "summary and raw agree task_002-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "no human success/time task_002-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "missing not zero; exact gap task_002-sim_evidence/beam",
+      "passed": true
+    },
+    {
+      "check": "beam not optimal task_002-sim_evidence",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 202",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 203",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 204",
+      "passed": true
+    },
+    {
+      "check": "reject altered output 205",
+      "passed": true
+    },
+    {
+      "check": "real status invocation FEASIBLE",
+      "passed": true
+    },
+    {
+      "check": "real status invocation NO_FEASIBLE_FOUND",
+      "passed": true
+    },
+    {
+      "check": "feasible witness does not become false proof",
+      "passed": true
+    },
+    {
+      "check": "real status invocation INFEASIBLE_PROVEN",
+      "passed": true
+    },
+    {
+      "check": "real status invocation TIMEOUT",
+      "passed": true
+    },
+    {
+      "check": "actual zero wall budget",
+      "passed": true
+    },
+    {
+      "check": "figure source hash",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi F03_search_framework",
+      "passed": true
+    },
+    {
+      "check": "native SVG F03_search_framework",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi exact_B2_beam_table",
+      "passed": true
+    },
+    {
+      "check": "native SVG exact_B2_beam_table",
+      "passed": true
+    },
+    {
+      "check": "PNG300dpi beam_decision_trace",
+      "passed": true
+    },
+    {
+      "check": "native SVG beam_decision_trace",
+      "passed": true
+    }
+  ],
+  "negative_mutations_rejected": 206,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "release_pending": [
+    "final tests",
+    "committed-copy replay",
+    "remote SHA verification"
+  ],
+  "exit_code": 0
+}

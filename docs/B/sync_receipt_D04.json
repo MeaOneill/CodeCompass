@@ -2,11 +2,18 @@
   "task": "B-D04",
   "branch": "codex/B-D04-baselines",
   "base_commit": "722b9c46676d05b7492f7250b58a9d61c60d5124",
-  "status": "PENDING_COMMITTED_COPY_AND_PUSH",
-  "verified_head": null,
-  "remote_sha": null,
-  "business_gate": "LOCAL_VERIFICATION_PASSED_PENDING_RECOVERY",
+  "verified_head": "01404b891b8f01d1bca7b60885e5d7485fab406b",
+  "remote_sha": "01404b891b8f01d1bca7b60885e5d7485fab406b",
+  "checked_time": "2026-10-17T11:33:12.462062+08:00",
+  "status": "CHECKPOINT_REMOTE_VERIFIED",
+  "business_gate": "PASSED_ENGINEERING_WITH_EXPLICIT_B1_FALLBACK",
+  "state": "READY_FOR_REVIEW",
+  "next_day_allowed": true,
+  "next_task": "A-D05",
   "B1_live": "NOT_RUN",
+  "strong_LLM_comparison_complete": false,
+  "independent_human_review": "NOT_REVIEWED",
   "A_machine_acceptance": "NOT_CONFIRMED",
-  "main_merged": false
+  "main_merged": false,
+  "final_delivery_head": "Subsequent receipt-only commit; exact final HEAD/remote equality verified in final task notification."
 }
