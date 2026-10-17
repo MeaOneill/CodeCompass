@@ -1,0 +1,122 @@
+[
+  {
+    "path": "scripts/B/comparison/__init__.py",
+    "sha256": "2baa1b201c2b54331d0baad006aeb43cda8b32f4cb257802b6ef9598ab1abf03",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/comparison/__init__.py"
+  },
+  {
+    "path": "scripts/B/comparison/adapters.py",
+    "sha256": "090ac3d8e75f9d271c376cce92699ae91cd2812f6fbccb557074d41cc3bbfef0",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/comparison/adapters.py"
+  },
+  {
+    "path": "scripts/B/comparison/b1.py",
+    "sha256": "9b9c15bd4c11a8253b322aad3bc46a3a622252c636f6a063a238206f31a3c201",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/comparison/b1.py"
+  },
+  {
+    "path": "scripts/B/comparison/metrics.py",
+    "sha256": "31ea8ae341fe91270b48deab2262779025833f662cc2839f0b5a9eb6633cd3c2",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/comparison/metrics.py"
+  },
+  {
+    "path": "scripts/B/run_d04.py",
+    "sha256": "ab827edd3e1acd482ca77fa55128a71d617ba8f30062bc4b2c447dde212ff4e2",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/run_d04.py"
+  },
+  {
+    "path": "configs/B/B1_direct_v1.txt",
+    "sha256": "d41c13b360d97e0fe0b69a2764e38bc039ff65cbb6ba8d1cc5c0acf9f8ded87c",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/configs/B/B1_direct_v1.txt"
+  },
+  {
+    "path": "src/codecompass/planner/__init__.py",
+    "sha256": "496b8b146907f5af88607284a410f50733a92c4a7bfeb1bd77bdf9d28450e6fa",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/__init__.py"
+  },
+  {
+    "path": "src/codecompass/planner/beam.py",
+    "sha256": "046ef0455db7b9558c0485491eab2c178d8a64a1486fab1409e8591e2e11dba4",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/beam.py"
+  },
+  {
+    "path": "src/codecompass/planner/comparison_validator.py",
+    "sha256": "2e6abf84025e212fe5577d78d384e68b2e0df39513d7edc11476fd6a8001cb6f",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/comparison_validator.py"
+  },
+  {
+    "path": "src/codecompass/planner/core.py",
+    "sha256": "9354b2192c7b7bdfcf1648ca4cadcd86f62f825dd66ab2205611846b681bb63a",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/core.py"
+  },
+  {
+    "path": "src/codecompass/planner/exact.py",
+    "sha256": "731f6b0eda7c72652eb89917a777ab68c6f0db8043f722123eba2bd1f8756ff0",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/exact.py"
+  },
+  {
+    "path": "src/codecompass/planner/search_common.py",
+    "sha256": "cfacf68c14f576d3b24818a478101c3e515e2f63402fccc05b76ad9200bd2002",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/search_common.py"
+  },
+  {
+    "path": "src/codecompass/planner/search_service.py",
+    "sha256": "e3fc7204a36aeb1cb71a2eb1c7dcb2f941b95503b4b1a083301330b4844200ae",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/search_service.py"
+  },
+  {
+    "path": "src/codecompass/planner/service.py",
+    "sha256": "1f475c506b3ea5040965dc4af64d47ad7559262b8db027c39c9a09e04af158c6",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/service.py"
+  },
+  {
+    "path": "src/codecompass/planner/validate.py",
+    "sha256": "1ed234d541060fa24989f85e2582507cac02e428878777613bb99b9bd619aad3",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/planner/validate.py"
+  },
+  {
+    "path": "src/codecompass/learner/__init__.py",
+    "sha256": "36d2056f2f15877b6b2d2943ddee1eda9dd8efc151bdcb24e45f1be816ebe560",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/learner/__init__.py"
+  },
+  {
+    "path": "src/codecompass/learner/model.py",
+    "sha256": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/src/codecompass/learner/model.py"
+  },
+  {
+    "path": "scripts/B/b0.py",
+    "sha256": "0360f5c83a467ac458657e66b8eebf7c06c3eee3eb39991dc3129ea844f28a5a",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/B/b0.py"
+  },
+  {
+    "path": "scripts/A/run_d03.py",
+    "sha256": "62e2990e484237d35d3eea513f80076a276b8f849876eed7dfa37662e28c531f",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/scripts/A/run_d03.py"
+  },
+  {
+    "path": "schemas/contracts-1.1.schema.json",
+    "sha256": "fc379758617fb7dd22fe0d3361a2c8b9e4ff65c42a14e37cfc456d76f2f97181",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/schemas/contracts-1.1.schema.json"
+  },
+  {
+    "path": "benchmarks/dev/D03/task_001.json",
+    "sha256": "186f627b41aa87bb227e3e718ea9b93d93dc938a994410bd3515d04aa49a71e0",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/benchmarks/dev/D03/task_001.json"
+  },
+  {
+    "path": "benchmarks/dev/D03/task_002.json",
+    "sha256": "cbcbb5e75f5d58e2129f7f67d2a74574fff083d8aba5f36045baadd686dc319f",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/benchmarks/dev/D03/task_002.json"
+  },
+  {
+    "path": "benchmarks/dev/D03/units.json",
+    "sha256": "0d1cd3053b0fab3382e0a55f7aadc836dd83db76d74edd61faca2cb819ea9784",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/benchmarks/dev/D03/units.json"
+  },
+  {
+    "path": "benchmarks/sources/boltons/snapshot.json",
+    "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33",
+    "frozen_copy": "experiments/B/B-D04-comparison03/code_snapshot/benchmarks/sources/boltons/snapshot.json"
+  }
+]

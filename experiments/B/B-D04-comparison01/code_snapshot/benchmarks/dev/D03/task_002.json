@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.1.0",
+  "object_type": "CodeTask",
+  "is_fixture": false,
+  "task_id": "task_002",
+  "split": "dev",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "title": "滑动窗口size边界防护",
+  "task_type": "debug",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 472,
+      "end_line": 510,
+      "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 464,
+      "end_line": 469,
+      "content_hash": "071be10d549fe558dc96c5cc44ad6799e5f3c303d0a8c8d43c17821b39c95883"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 415,
+      "end_line": 436,
+      "content_hash": "ac481983a1e492688de2925b3c3daf0809c06950e098917e8f81eb4c8e87aba8"
+    }
+  ],
+  "origin": {
+    "kind": "team_designed_debug",
+    "description": "B-D02 authored windowed_iter boundary task; source benchmarks/B/task_catalog.json; not an upstream TODO/Issue",
+    "issue_url": null
+  },
+  "goal": "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+  "requirements": [
+    "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+    "解释/时间/材料按B独立rubric审核；本轮只做路径工程验证。"
+  ],
+  "required_concept_ids": [
+    "python.iterator_protocol",
+    "python.tee",
+    "python.keyword_presence",
+    "python.type_validation"
+  ],
+  "learning_unit_ids": [
+    "u_iterable",
+    "u_windowed_iter",
+    "u_positive_int"
+  ],
+  "allowed_context": [
+    "固定提交源码与任务说明",
+    "Python标准库文档",
+    "学习阶段各方法相同材料与帮助"
+  ],
+  "prohibited_help": [
+    "独立评分阶段无解答型AI或他人补丁",
+    "不能以规划器目标值评分；不能访问冻结终测答案"
+  ],
+  "time_limit_minutes": 25,
+  "timing_status": "design_target_not_piloted",
+  "difficulty": "有Python基础的局部修改题，未人工预演校准",
+  "rubric": [
+    {
+      "criterion_id": "R1",
+      "points": 3,
+      "description": "严格类型/正值拒绝",
+      "critical": true,
+      "acceptance": [
+        "严格类型/正值拒绝"
+      ]
+    },
+    {
+      "criterion_id": "R2",
+      "points": 2,
+      "description": "原窗口/空源/短源/size1兼容",
+      "critical": true,
+      "acceptance": [
+        "原窗口/空源/短源/size1兼容"
+      ]
+    },
+    {
+      "criterion_id": "R3",
+      "points": 2,
+      "description": "fill/end哨兵和无限源前缀兼容",
+      "critical": true,
+      "acceptance": [
+        "fill/end哨兵和无限源前缀兼容"
+      ]
+    },
+    {
+      "criterion_id": "R4",
+      "points": 2,
+      "description": "人类盲评源码解释与行号",
+      "critical": true,
+      "acceptance": [
+        "人类盲评源码解释与行号"
+      ]
+    },
+    {
+      "criterion_id": "R6",
+      "points": 1,
+      "description": "人类复核补丁、回归用例和实际命令",
+      "critical": false,
+      "acceptance": [
+        "人类复核补丁、回归用例和实际命令"
+      ]
+    }
+  ],
+  "max_score": 10,
+  "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+  "submission": [
+    "patch.diff",
+    "regression_tests.py",
+    "explanation.md",
+    "commands_and_elapsed.json"
+  ],
+  "evaluation_owner": "B",
+  "evaluator_status": "implemented_not_reviewed",
+  "review_status": "pending",
+  "reviewer": null,
+  "contribution_preparation": "为真实windowed_iter API输入边界补回归；没有上游提交或真人学习结果。",
+  "answer_access": "dev题rubric可共享；最终测试任务答案由B隔离，应用和LLM不得访问。"
+}

@@ -1,0 +1,956 @@
+{
+  "request": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanningRequest",
+    "is_fixture": true,
+    "request_id": "D04-task_002-sim_evidence",
+    "snapshot_id": "boltons-4e5faa3d7e40",
+    "task_id": "task_002",
+    "learner_state": [
+      {
+        "concept_id": "boltons.wrapper_compatibility",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:boltons.wrapper_compatibility:e0",
+          "sim_evidence:boltons.wrapper_compatibility:e1",
+          "sim_evidence:boltons.wrapper_compatibility:e2",
+          "sim_evidence:boltons.wrapper_compatibility:e3",
+          "sim_evidence:boltons.wrapper_compatibility:e4",
+          "sim_evidence:boltons.wrapper_compatibility:e5",
+          "sim_evidence:boltons.wrapper_compatibility:e6",
+          "sim_evidence:boltons.wrapper_compatibility:e7",
+          "sim_evidence:boltons.wrapper_compatibility:e8",
+          "sim_evidence:boltons.wrapper_compatibility:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1
+      },
+      {
+        "concept_id": "python.iterator_protocol",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.iterator_protocol:e0",
+          "sim_evidence:python.iterator_protocol:e1",
+          "sim_evidence:python.iterator_protocol:e2",
+          "sim_evidence:python.iterator_protocol:e3",
+          "sim_evidence:python.iterator_protocol:e4",
+          "sim_evidence:python.iterator_protocol:e5",
+          "sim_evidence:python.iterator_protocol:e6",
+          "sim_evidence:python.iterator_protocol:e7",
+          "sim_evidence:python.iterator_protocol:e8",
+          "sim_evidence:python.iterator_protocol:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1
+      },
+      {
+        "concept_id": "python.keyword_presence",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.keyword_presence:e0",
+          "sim_evidence:python.keyword_presence:e1",
+          "sim_evidence:python.keyword_presence:e2",
+          "sim_evidence:python.keyword_presence:e3",
+          "sim_evidence:python.keyword_presence:e4",
+          "sim_evidence:python.keyword_presence:e5",
+          "sim_evidence:python.keyword_presence:e6",
+          "sim_evidence:python.keyword_presence:e7",
+          "sim_evidence:python.keyword_presence:e8",
+          "sim_evidence:python.keyword_presence:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1
+      },
+      {
+        "concept_id": "python.type_validation",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.type_validation:e0",
+          "sim_evidence:python.type_validation:e1",
+          "sim_evidence:python.type_validation:e2",
+          "sim_evidence:python.type_validation:e3",
+          "sim_evidence:python.type_validation:e4",
+          "sim_evidence:python.type_validation:e5",
+          "sim_evidence:python.type_validation:e6",
+          "sim_evidence:python.type_validation:e7",
+          "sim_evidence:python.type_validation:e8",
+          "sim_evidence:python.type_validation:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1
+      }
+    ],
+    "budget": 100,
+    "cost_unit": "proxy_cost",
+    "config_version": "A-D03-dev-0.1",
+    "target_concept_ids": [
+      "python.iterator_protocol",
+      "python.tee",
+      "python.keyword_presence",
+      "python.type_validation"
+    ],
+    "unit_ids": [
+      "u_iterable",
+      "u_windowed_iter",
+      "u_positive_int"
+    ],
+    "prior_plan_id": null
+  },
+  "units": [
+    {
+      "schema_version": "1.1.0",
+      "object_type": "LearningUnit",
+      "is_fixture": false,
+      "id": "u_iterable",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 61,
+          "end_line": 76,
+          "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+        }
+      ],
+      "concept_ids": [
+        "python.iterator_protocol"
+      ],
+      "prerequisites": [],
+      "provenance": {
+        "kind": "static_source",
+        "evidence": [
+          "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "base_cost": 16,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+    },
+    {
+      "schema_version": "1.1.0",
+      "object_type": "LearningUnit",
+      "is_fixture": false,
+      "id": "u_windowed_iter",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 472,
+          "end_line": 510,
+          "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+        }
+      ],
+      "concept_ids": [
+        "python.tee",
+        "python.keyword_presence"
+      ],
+      "prerequisites": [],
+      "provenance": {
+        "kind": "static_source",
+        "evidence": [
+          "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: windowed_iter",
+          "tee与_UNSET分支直接见L494-510；概念覆盖是AI工程材料映射，不是人类金标准"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "base_cost": 39,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+    },
+    {
+      "schema_version": "1.1.0",
+      "object_type": "LearningUnit",
+      "is_fixture": false,
+      "id": "u_positive_int",
+      "source_spans": [
+        {
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "path": "boltons/iterutils.py",
+          "start_line": 309,
+          "end_line": 313,
+          "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+        }
+      ],
+      "concept_ids": [
+        "python.type_validation"
+      ],
+      "prerequisites": [],
+      "provenance": {
+        "kind": "static_source",
+        "evidence": [
+          "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: _validate_positive_int",
+          "对照int(value)的转换语义与task002要求的严格类型；这不是task002修复答案或完整校验实现"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "base_cost": 5,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+    }
+  ],
+  "learner_ledger": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "sim_evidence",
+    "is_simulated": true,
+    "records": [
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      }
+    ]
+  },
+  "learner_gate": {
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.iterator_protocol:e0",
+        "sim_evidence:python.iterator_protocol:e1",
+        "sim_evidence:python.iterator_protocol:e2",
+        "sim_evidence:python.iterator_protocol:e3",
+        "sim_evidence:python.iterator_protocol:e4",
+        "sim_evidence:python.iterator_protocol:e5",
+        "sim_evidence:python.iterator_protocol:e6",
+        "sim_evidence:python.iterator_protocol:e7",
+        "sim_evidence:python.iterator_protocol:e8",
+        "sim_evidence:python.iterator_protocol:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.keyword_presence:e0",
+        "sim_evidence:python.keyword_presence:e1",
+        "sim_evidence:python.keyword_presence:e2",
+        "sim_evidence:python.keyword_presence:e3",
+        "sim_evidence:python.keyword_presence:e4",
+        "sim_evidence:python.keyword_presence:e5",
+        "sim_evidence:python.keyword_presence:e6",
+        "sim_evidence:python.keyword_presence:e7",
+        "sim_evidence:python.keyword_presence:e8",
+        "sim_evidence:python.keyword_presence:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.tee": {
+      "concept_id": "python.tee",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.type_validation": {
+      "concept_id": "python.type_validation",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.type_validation:e0",
+        "sim_evidence:python.type_validation:e1",
+        "sim_evidence:python.type_validation:e2",
+        "sim_evidence:python.type_validation:e3",
+        "sim_evidence:python.type_validation:e4",
+        "sim_evidence:python.type_validation:e5",
+        "sim_evidence:python.type_validation:e6",
+        "sim_evidence:python.type_validation:e7",
+        "sim_evidence:python.type_validation:e8",
+        "sim_evidence:python.type_validation:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    }
+  },
+  "config": {
+    "version": "A-D03-dev-0.1",
+    "threshold": 0.7,
+    "quantile": 0.1
+  },
+  "task": {
+    "task_id": "task_002",
+    "title": "滑动窗口size边界防护",
+    "goal": "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+    "requirements": [
+      "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+      "解释/时间/材料按B独立rubric审核；本轮只做路径工程验证。"
+    ],
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "source_spans": [
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 472,
+        "end_line": 510,
+        "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+      },
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 464,
+        "end_line": 469,
+        "content_hash": "071be10d549fe558dc96c5cc44ad6799e5f3c303d0a8c8d43c17821b39c95883"
+      },
+      {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 415,
+        "end_line": 436,
+        "content_hash": "ac481983a1e492688de2925b3c3daf0809c06950e098917e8f81eb4c8e87aba8"
+      }
+    ]
+  },
+  "source_materials": [
+    {
+      "unit_id": "u_iterable",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 61,
+        "end_line": 76,
+        "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+      },
+      "text": "def is_iterable(obj):\n    \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n    ``True`` if an object is `iterable`_, ``False`` if not.\n\n    >>> is_iterable([])\n    True\n    >>> is_iterable(object())\n    False\n\n    .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n    \"\"\"\n    try:\n        iter(obj)\n    except TypeError:\n        return False\n    return True"
+    },
+    {
+      "unit_id": "u_windowed_iter",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 472,
+        "end_line": 510,
+        "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+      },
+      "text": "def windowed_iter(src, size, fill=_UNSET):\n    \"\"\"Returns tuples with length *size* which represent a sliding\n    window over iterable *src*.\n\n    >>> list(windowed_iter(range(7), 3))\n    [(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]\n\n    If *fill* is unset, and the iterable is too short to make a window \n    of length *size*, then no window tuples are returned.\n\n    >>> list(windowed_iter(range(3), 5))\n    []\n\n    With *fill* set, the iterator always yields a number of windows\n    equal to the length of the *src* iterable.\n\n    >>> windowed(range(4), 3, fill=None)\n    [(0, 1, 2), (1, 2, 3), (2, 3, None), (3, None, None)]\n\n    This way, *fill* values can be useful to signal the end of the iterable.\n    For infinite iterators, setting *fill* has no effect.\n    \"\"\"\n    tees = itertools.tee(src, size)\n    if fill is _UNSET:\n        try:\n            for i, t in enumerate(tees):\n                for _ in range(i):\n                    next(t)\n        except StopIteration:\n            return zip([])\n        return zip(*tees)\n\n    for i, t in enumerate(tees):\n        for _ in range(i):\n            try:\n                next(t)\n            except StopIteration:\n                continue\n    return zip_longest(*tees, fillvalue=fill)"
+    },
+    {
+      "unit_id": "u_positive_int",
+      "source_span": {
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "path": "boltons/iterutils.py",
+        "start_line": 309,
+        "end_line": 313,
+        "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+      },
+      "text": "def _validate_positive_int(value, name, strictly_positive=True):\n    value = int(value)\n    if value < 0 or (strictly_positive and value == 0):\n        raise ValueError('expected a positive integer ' + name)\n    return value"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "task": "B-D04",
+  "branch": "codex/B-D04-baselines",
+  "base_commit": "722b9c46676d05b7492f7250b58a9d61c60d5124",
+  "status": "PENDING_COMMITTED_COPY_AND_PUSH",
+  "verified_head": null,
+  "remote_sha": null,
+  "business_gate": "LOCAL_VERIFICATION_PASSED_PENDING_RECOVERY",
+  "B1_live": "NOT_RUN",
+  "A_machine_acceptance": "NOT_CONFIRMED",
+  "main_merged": false
+}

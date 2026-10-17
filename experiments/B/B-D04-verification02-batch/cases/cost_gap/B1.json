@@ -1,0 +1,25 @@
+{
+  "method": "B1",
+  "case_id": "cost_gap",
+  "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+  "attempted": false,
+  "execution_status": "NOT_CONFIGURED",
+  "plan": null,
+  "metrics": null,
+  "source_kind": "synthetic_structure",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "B1_trace": {
+    "attempted": false,
+    "status": "NOT_CONFIGURED",
+    "route": null,
+    "calls": [],
+    "transport_is_fixture": false,
+    "model_requested": null
+  },
+  "elapsed_seconds": 0.003172200000108205
+}

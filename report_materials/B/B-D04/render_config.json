@@ -1,0 +1,12 @@
+{
+  "run_id": "B-D04-comparison02",
+  "source_sha256": "36ad6b64458d6e570dca1df5c046524e5105cea42a43bd73b91650a545cfa251",
+  "audience": "provisional competition report",
+  "dpi": 300,
+  "units": "proxy_cost, source lines; coverage fraction; hard relation violations fraction",
+  "sample": "2 fixed real tasks x 2 synthetic profiles; no human participants",
+  "missing": "B1 not configured => NA; zero hard-edge denominator => NA",
+  "transformations": "Select all fixed_real_task rows; exclude explicitly synthetic mechanism rows from this real-task table; no smoothing/normalization",
+  "uncertainty": "not an estimator or population inference; no intervals applicable",
+  "formal_study_ready": false
+}

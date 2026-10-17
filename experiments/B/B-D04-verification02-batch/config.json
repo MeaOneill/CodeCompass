@@ -1,0 +1,35 @@
+{
+  "version": "B-D04-comparison-1",
+  "prompt_version": "B1-direct-v1",
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "beam"
+  ],
+  "beam_options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30
+  },
+  "b1": {
+    "enabled": false,
+    "model": null,
+    "api_key_env": "OPENAI_API_KEY",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "params": {},
+    "max_output_tokens": 1200,
+    "timeout_seconds": 30,
+    "max_repairs": 1,
+    "budget_usd": null,
+    "per_call_reservation_usd": null,
+    "input_usd_per_million": null,
+    "output_usd_per_million": null,
+    "price_source": null,
+    "max_response_bytes": 262144,
+    "notes": "No live model or spending configured. Costs calculated from configured rates are estimates, not billing receipts."
+  },
+  "formal_study_ready": false,
+  "units": "proxy_cost; fixed inclusive source lines, never minutes"
+}

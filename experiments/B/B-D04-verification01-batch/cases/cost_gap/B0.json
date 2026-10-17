@@ -1,0 +1,97 @@
+{
+  "method": "B0",
+  "case_id": "cost_gap",
+  "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+  "attempted": true,
+  "execution_status": "FEASIBLE",
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "cost_gap-B0",
+    "request_id": "cost_gap",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "a",
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 7,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=2; source=; selection intentionally ignores profile",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "b",
+        "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=5; source=; selection intentionally ignores profile",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "metrics": {
+    "required_concepts": 2,
+    "coverage_tp": 2,
+    "coverage_fn": 0,
+    "coverage_ratio": 1.0,
+    "hard_relations_checked": 0,
+    "hard_violations": 0,
+    "prerequisite_violation_rate": null,
+    "source_spans_checked": 0,
+    "source_spans_valid": 0,
+    "source_reference_validity": null,
+    "replayed_proxy_cost": 7.0,
+    "legal": true,
+    "violations": [],
+    "human_task_success": null
+  },
+  "source_kind": "synthetic_structure",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "details": {
+    "status": "ROUTE_PREFIX",
+    "ordered_units": [
+      "a",
+      "b"
+    ],
+    "reading_order_only": [
+      "a",
+      "b",
+      "c"
+    ],
+    "estimated_cost": 7,
+    "unmet_constraints": [
+      "fixed route truncated by budget"
+    ],
+    "cost_unit": "proxy_cost"
+  },
+  "independent_replay": {
+    "valid": true,
+    "violations": [],
+    "goal_complete": true,
+    "replayed_cost": 7.0,
+    "certificate_audit": null,
+    "not_a_learning_success_measure": true
+  },
+  "elapsed_seconds": 0.00455340000007709
+}

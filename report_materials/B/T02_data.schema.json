@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "B T02 development plotting row; internal metrics, not a new planning contract",
+  "type": "object",
+  "required": ["case_id", "method", "source_kind", "profile_is_simulated", "attempted", "execution_status", "context_hash", "metrics", "human_task_success"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "method": {"enum": ["B0", "B1", "B2", "beam"]},
+    "source_kind": {"enum": ["fixed_real_task", "synthetic_structure"]},
+    "profile_is_simulated": {"type": "boolean"},
+    "attempted": {"type": "boolean"},
+    "execution_status": {"type": "string"},
+    "context_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "elapsed_seconds": {"type": "number", "minimum": 0},
+    "api_cost_usd": {"type": ["number", "null"], "minimum": 0},
+    "format_repairs": {"type": "integer", "minimum": 0, "maximum": 1},
+    "metrics": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/metrics"}]},
+    "human_task_success": {"type": "null"}
+  },
+  "allOf": [{"if": {"properties": {"attempted": {"const": false}}}, "then": {"properties": {"metrics": {"type": "null"}}}}],
+  "$defs": {
+    "fraction": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "count": {"type": "integer", "minimum": 0},
+    "metrics": {
+      "type": "object",
+      "required": ["required_concepts", "coverage_tp", "coverage_fn", "coverage_ratio", "hard_relations_checked", "hard_violations", "prerequisite_violation_rate", "source_spans_checked", "source_spans_valid", "source_reference_validity", "replayed_proxy_cost", "legal", "violations", "human_task_success"],
+      "properties": {
+        "required_concepts": {"$ref": "#/$defs/count"}, "coverage_tp": {"$ref": "#/$defs/count"}, "coverage_fn": {"$ref": "#/$defs/count"},
+        "coverage_ratio": {"$ref": "#/$defs/fraction"},
+        "hard_relations_checked": {"$ref": "#/$defs/count"}, "hard_violations": {"$ref": "#/$defs/count"},
+        "prerequisite_violation_rate": {"$ref": "#/$defs/fraction"},
+        "source_spans_checked": {"$ref": "#/$defs/count"}, "source_spans_valid": {"$ref": "#/$defs/count"},
+        "source_reference_validity": {"$ref": "#/$defs/fraction"},
+        "replayed_proxy_cost": {"type": "number", "minimum": 0},
+        "legal": {"type": "boolean"}, "violations": {"type": "array", "items": {"type": "string"}}, "human_task_success": {"type": "null"}
+      }, "additionalProperties": false
+    }
+  }
+}

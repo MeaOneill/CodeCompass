@@ -1,0 +1,2 @@
+usage: run_d04.py [-h] --run-id RUN_ID [--config CONFIG]
+run_d04.py: error: Invalid run ID

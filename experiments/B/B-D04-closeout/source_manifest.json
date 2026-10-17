@@ -1,0 +1,72 @@
+[
+  {
+    "path": "scripts/B/comparison/__init__.py",
+    "sha256": "2baa1b201c2b54331d0baad006aeb43cda8b32f4cb257802b6ef9598ab1abf03",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/comparison/__init__.py"
+  },
+  {
+    "path": "scripts/B/comparison/adapters.py",
+    "sha256": "090ac3d8e75f9d271c376cce92699ae91cd2812f6fbccb557074d41cc3bbfef0",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/comparison/adapters.py"
+  },
+  {
+    "path": "scripts/B/comparison/b1.py",
+    "sha256": "9b9c15bd4c11a8253b322aad3bc46a3a622252c636f6a063a238206f31a3c201",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/comparison/b1.py"
+  },
+  {
+    "path": "scripts/B/comparison/metrics.py",
+    "sha256": "31ea8ae341fe91270b48deab2262779025833f662cc2839f0b5a9eb6633cd3c2",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/comparison/metrics.py"
+  },
+  {
+    "path": "scripts/B/run_d04.py",
+    "sha256": "ab827edd3e1acd482ca77fa55128a71d617ba8f30062bc4b2c447dde212ff4e2",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/run_d04.py"
+  },
+  {
+    "path": "scripts/B/audit_d04.py",
+    "sha256": "11e09843fa33dfe297c3c9322e220ae343026b7d8b7488d826ede02b6a27c220",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/audit_d04.py"
+  },
+  {
+    "path": "scripts/B/challenge_d04.py",
+    "sha256": "5b09381b287afa7b2cf49c5b238bd4ebe81297adaa11ca12bbe7cf7d7d63cf46",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/challenge_d04.py"
+  },
+  {
+    "path": "scripts/B/draw_d04.py",
+    "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/draw_d04.py"
+  },
+  {
+    "path": "scripts/B/verify_d04.py",
+    "sha256": "b7b7eac6b68da60fab5b6413d3e02f43a79483899e7241cae4e3b1d62bd7ef90",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/scripts/B/verify_d04.py"
+  },
+  {
+    "path": "tests/B/test_comparison_d04.py",
+    "sha256": "10d246fb515a78276a6585589974d224367bb3265f07de852973d6a565a36d68",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/tests/B/test_comparison_d04.py"
+  },
+  {
+    "path": "configs/B/D04_comparison.json",
+    "sha256": "cdcb7ca56ca07fe1971ce993e414d6701a4cd82f0a06d3a7ea251846141d895d",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/configs/B/D04_comparison.json"
+  },
+  {
+    "path": "configs/B/B1_direct_v1.txt",
+    "sha256": "d41c13b360d97e0fe0b69a2764e38bc039ff65cbb6ba8d1cc5c0acf9f8ded87c",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/configs/B/B1_direct_v1.txt"
+  },
+  {
+    "path": "report_materials/B/T02_data.schema.json",
+    "sha256": "4c76ed07c59c331d137173c1517adbe1bac1c474dce5c6fa0191d05eb50e61f7",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/report_materials/B/T02_data.schema.json"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "69bfc39983bf2476509a400c35d7aec8700c307f57599482c96b9f125eca2bde",
+    "frozen_copy": "experiments/B/B-D04-closeout/code_snapshot/.gitattributes"
+  }
+]

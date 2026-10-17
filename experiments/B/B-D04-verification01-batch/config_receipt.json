@@ -1,0 +1,5 @@
+{
+  "loaded_config_sha256": "cdcb7ca56ca07fe1971ce993e414d6701a4cd82f0a06d3a7ea251846141d895d",
+  "saved_config_sha256": "f4fcee70b43711d09aba5ea62a5def963fc91e3badf23dd50a80a2bb7eee9eba",
+  "note": "Effective config stored in config.json; external/local config path not copied into public prompt or code snapshot."
+}

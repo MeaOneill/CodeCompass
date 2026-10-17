@@ -1,0 +1,217 @@
+{
+  "method": "B2",
+  "case_id": "task_002-sim_unknown",
+  "context_hash": "a912cd5b414f4e40497284dd3c7ad62d0e25b0b8cc4b87b8e7a446376b8b0d56",
+  "attempted": true,
+  "execution_status": "FEASIBLE",
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "D04-task_002-sim_unknown-greedy",
+    "request_id": "D04-task_002-sim_unknown",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "u_positive_int",
+      "u_iterable",
+      "u_windowed_iter"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "covered_concept_ids": [
+        "python.iterator_protocol",
+        "python.keyword_presence",
+        "python.tee",
+        "python.type_validation"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 60,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "u_positive_int",
+        "reason": "TARGET_MATERIAL for u_positive_int; bundle new-goal gain=1, incremental proxy_cost=5; own proxy_cost=5; source=boltons/iterutils.py:L309-313; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "u_iterable",
+        "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "u_windowed_iter",
+        "reason": "TARGET_MATERIAL for u_windowed_iter; bundle new-goal gain=2, incremental proxy_cost=39; own proxy_cost=39; source=boltons/iterutils.py:L472-510; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "metrics": {
+    "required_concepts": 4,
+    "coverage_tp": 4,
+    "coverage_fn": 0,
+    "coverage_ratio": 1.0,
+    "hard_relations_checked": 0,
+    "hard_violations": 0,
+    "prerequisite_violation_rate": null,
+    "source_spans_checked": 3,
+    "source_spans_valid": 3,
+    "source_reference_validity": 1.0,
+    "replayed_proxy_cost": 60.0,
+    "legal": true,
+    "violations": [],
+    "human_task_success": null
+  },
+  "source_kind": "fixed_real_task",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "details": {
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "python.iterator_protocol",
+          "python.keyword_presence",
+          "python.tee",
+          "python.type_validation"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "incremental_cost": 16,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u_positive_int",
+            "bundle": [
+              "u_positive_int"
+            ],
+            "incremental_cost": 5,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "incremental_cost": 39,
+            "new_goal_gain": 2
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "pending_goals": [
+          "python.iterator_protocol",
+          "python.keyword_presence",
+          "python.tee"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "incremental_cost": 16,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "incremental_cost": 39,
+            "new_goal_gain": 2
+          }
+        ]
+      },
+      {
+        "iteration": 3,
+        "pending_goals": [
+          "python.keyword_presence",
+          "python.tee"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u_windowed_iter",
+            "bundle": [
+              "u_windowed_iter"
+            ],
+            "incremental_cost": 39,
+            "new_goal_gain": 2
+          }
+        ]
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 60.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  },
+  "independent_replay": {
+    "valid": true,
+    "violations": [],
+    "goal_complete": true,
+    "replayed_cost": 60.0,
+    "certificate_audit": null,
+    "not_a_learning_success_measure": true
+  },
+  "elapsed_seconds": 0.07395150000002104
+}

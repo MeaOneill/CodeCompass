@@ -1,0 +1,30 @@
+{
+  "is_fixture": true,
+  "manual_expected": {
+    "coverage_tp": 2,
+    "coverage_fn": 0,
+    "hard_violations": 1,
+    "hard_relations_checked": 2,
+    "prerequisite_violation_rate": 0.5,
+    "source_reference_validity": null
+  },
+  "explanation": "Shared graph s->a and s->b, route a,s,b: a misses s; b has s. Both target concepts present; illegal order remains illegal. No source spans => NA.",
+  "actual": {
+    "required_concepts": 2,
+    "coverage_tp": 2,
+    "coverage_fn": 0,
+    "coverage_ratio": 1.0,
+    "hard_relations_checked": 2,
+    "hard_violations": 1,
+    "prerequisite_violation_rate": 0.5,
+    "source_spans_checked": 0,
+    "source_spans_valid": 0,
+    "source_reference_validity": null,
+    "replayed_proxy_cost": 5.0,
+    "legal": false,
+    "violations": [
+      "hard prerequisite violation"
+    ],
+    "human_task_success": null
+  }
+}

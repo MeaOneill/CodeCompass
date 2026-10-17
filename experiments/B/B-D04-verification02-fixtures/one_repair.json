@@ -1,0 +1,283 @@
+{
+  "method": "B1",
+  "case_id": "shared",
+  "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+  "attempted": true,
+  "execution_status": "FEASIBLE",
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "shared-B1",
+    "request_id": "shared",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "s",
+      "a",
+      "b"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x",
+        "y"
+      ],
+      "ratio": 1.0
+    },
+    "estimated_cost": 5,
+    "cost_unit": "proxy_cost",
+    "unmet_constraints": [],
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "metrics": {
+    "required_concepts": 2,
+    "coverage_tp": 2,
+    "coverage_fn": 0,
+    "coverage_ratio": 1.0,
+    "hard_relations_checked": 2,
+    "hard_violations": 0,
+    "prerequisite_violation_rate": 0.0,
+    "source_spans_checked": 0,
+    "source_spans_valid": 0,
+    "source_reference_validity": null,
+    "replayed_proxy_cost": 5.0,
+    "legal": true,
+    "violations": [],
+    "human_task_success": null
+  },
+  "source_kind": "synthetic_structure",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [
+    {
+      "attempt": 0,
+      "kind": "initial",
+      "timestamp": "2026-10-17T03:30:02.858363+00:00",
+      "request_hash": "fba799dc85f091b0b886a7c5775a238bd2c3e2b42f253e42dd932d58dafee6da",
+      "request": {
+        "model": "fixture-model-snapshot",
+        "input": "EXPLICIT_FIXTURE_TRANSPORT_NOT_A_MODEL\nCONTEXT_JSON\n{\"config\": {\"quantile\": 0.1, \"threshold\": 0.7, \"version\": \"D04-mechanism-v1\"}, \"learner_gate\": {\"p\": {\"concept_id\": \"p\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"x\": {\"concept_id\": \"x\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"y\": {\"concept_id\": \"y\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"learner_ledger\": {\"is_simulated\": true, \"pseudonymous_user_id\": \"simulation-D04\", \"records\": [], \"state_version\": \"0.1.0\"}, \"request\": {\"budget\": 5, \"config_version\": \"D04-mechanism-v1\", \"cost_unit\": \"proxy_cost\", \"is_fixture\": true, \"learner_state\": [], \"object_type\": \"PlanningRequest\", \"prior_plan_id\": null, \"request_id\": \"shared\", \"schema_version\": \"1.0.0\", \"snapshot_id\": \"synthetic-D04\", \"target_concept_ids\": [\"x\", \"y\"], \"task_id\": \"shared\", \"unit_ids\": [\"s\", \"a\", \"b\"]}, \"source_materials\": [], \"task\": {\"kind\": \"EXPLICIT_SYNTHETIC_MECHANISM_FIXTURE\", \"task_id\": \"shared\"}, \"units\": [{\"base_cost\": 1, \"concept_ids\": [\"p\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"s\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"x\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"a\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"y\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"b\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}]}",
+        "store": false,
+        "max_output_tokens": 1200
+      },
+      "configured_rates": {
+        "input_usd_per_million": 1,
+        "output_usd_per_million": 2,
+        "price_source": "FIXTURE_NOT_REAL_PRICE"
+      },
+      "model_requested": "fixture-model-snapshot",
+      "model_returned": "fixture-model-snapshot",
+      "usage": {
+        "input_tokens": 100,
+        "output_tokens": 20
+      },
+      "estimated_cost_usd": 0.00014,
+      "billing_cost_usd": null,
+      "reserved_usd": 0.1,
+      "quarantined": false,
+      "response": {
+        "model": "fixture-model-snapshot",
+        "status": "completed",
+        "usage": {
+          "input_tokens": 100,
+          "output_tokens": 20
+        },
+        "output": [
+          {
+            "type": "message",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "bad JSON"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_sha256": "86cacd7e5bbbc5f820f7fc2f51dd88378d361643040e28fced4ca2be302e70dd",
+      "format_error": "Expecting value: line 1 column 1 (char 0)",
+      "elapsed_seconds": 0.0005309999999099091
+    },
+    {
+      "attempt": 1,
+      "kind": "format_repair",
+      "timestamp": "2026-10-17T03:30:02.858363+00:00",
+      "request_hash": "e8c95c5eab4cb90484daabdc65c882c2162169cf85bf236d08d4433168296dda",
+      "request": {
+        "model": "fixture-model-snapshot",
+        "input": "EXPLICIT_FIXTURE_TRANSPORT_NOT_A_MODEL\nCONTEXT_JSON\n{\"config\": {\"quantile\": 0.1, \"threshold\": 0.7, \"version\": \"D04-mechanism-v1\"}, \"learner_gate\": {\"p\": {\"concept_id\": \"p\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"x\": {\"concept_id\": \"x\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"y\": {\"concept_id\": \"y\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"learner_ledger\": {\"is_simulated\": true, \"pseudonymous_user_id\": \"simulation-D04\", \"records\": [], \"state_version\": \"0.1.0\"}, \"request\": {\"budget\": 5, \"config_version\": \"D04-mechanism-v1\", \"cost_unit\": \"proxy_cost\", \"is_fixture\": true, \"learner_state\": [], \"object_type\": \"PlanningRequest\", \"prior_plan_id\": null, \"request_id\": \"shared\", \"schema_version\": \"1.0.0\", \"snapshot_id\": \"synthetic-D04\", \"target_concept_ids\": [\"x\", \"y\"], \"task_id\": \"shared\", \"unit_ids\": [\"s\", \"a\", \"b\"]}, \"source_materials\": [], \"task\": {\"kind\": \"EXPLICIT_SYNTHETIC_MECHANISM_FIXTURE\", \"task_id\": \"shared\"}, \"units\": [{\"base_cost\": 1, \"concept_ids\": [\"p\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"s\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"x\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"a\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"y\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"b\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}]}\nFORMAT_ONLY_REPAIR: Return {\"ordered_units\": [string,...]} only. Preserve the intended order. Prior output:\nbad JSON",
+        "store": false,
+        "max_output_tokens": 1200
+      },
+      "configured_rates": {
+        "input_usd_per_million": 1,
+        "output_usd_per_million": 2,
+        "price_source": "FIXTURE_NOT_REAL_PRICE"
+      },
+      "model_requested": "fixture-model-snapshot",
+      "model_returned": "fixture-model-snapshot",
+      "usage": {
+        "input_tokens": 100,
+        "output_tokens": 20
+      },
+      "estimated_cost_usd": 0.00014,
+      "billing_cost_usd": null,
+      "reserved_usd": 0.1,
+      "quarantined": false,
+      "response": {
+        "model": "fixture-model-snapshot",
+        "status": "completed",
+        "usage": {
+          "input_tokens": 100,
+          "output_tokens": 20
+        },
+        "output": [
+          {
+            "type": "message",
+            "content": [
+              {
+                "type": "output_text",
+                "text": "{\"ordered_units\":[\"s\",\"a\",\"b\"]}"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_sha256": "a90e5355f6409fa58a2f7d50bf89501a9fe9349ada4ef8186174fffd32324abe",
+      "elapsed_seconds": 8.79000001532404e-05
+    }
+  ],
+  "model_id": "fixture-model-snapshot",
+  "api_cost_usd": 0.00028,
+  "format_repairs": 1,
+  "B1_trace": {
+    "attempted": true,
+    "status": "PARSED",
+    "route": [
+      "s",
+      "a",
+      "b"
+    ],
+    "calls": [
+      {
+        "attempt": 0,
+        "kind": "initial",
+        "timestamp": "2026-10-17T03:30:02.858363+00:00",
+        "request_hash": "fba799dc85f091b0b886a7c5775a238bd2c3e2b42f253e42dd932d58dafee6da",
+        "request": {
+          "model": "fixture-model-snapshot",
+          "input": "EXPLICIT_FIXTURE_TRANSPORT_NOT_A_MODEL\nCONTEXT_JSON\n{\"config\": {\"quantile\": 0.1, \"threshold\": 0.7, \"version\": \"D04-mechanism-v1\"}, \"learner_gate\": {\"p\": {\"concept_id\": \"p\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"x\": {\"concept_id\": \"x\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"y\": {\"concept_id\": \"y\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"learner_ledger\": {\"is_simulated\": true, \"pseudonymous_user_id\": \"simulation-D04\", \"records\": [], \"state_version\": \"0.1.0\"}, \"request\": {\"budget\": 5, \"config_version\": \"D04-mechanism-v1\", \"cost_unit\": \"proxy_cost\", \"is_fixture\": true, \"learner_state\": [], \"object_type\": \"PlanningRequest\", \"prior_plan_id\": null, \"request_id\": \"shared\", \"schema_version\": \"1.0.0\", \"snapshot_id\": \"synthetic-D04\", \"target_concept_ids\": [\"x\", \"y\"], \"task_id\": \"shared\", \"unit_ids\": [\"s\", \"a\", \"b\"]}, \"source_materials\": [], \"task\": {\"kind\": \"EXPLICIT_SYNTHETIC_MECHANISM_FIXTURE\", \"task_id\": \"shared\"}, \"units\": [{\"base_cost\": 1, \"concept_ids\": [\"p\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"s\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"x\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"a\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"y\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"b\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}]}",
+          "store": false,
+          "max_output_tokens": 1200
+        },
+        "configured_rates": {
+          "input_usd_per_million": 1,
+          "output_usd_per_million": 2,
+          "price_source": "FIXTURE_NOT_REAL_PRICE"
+        },
+        "model_requested": "fixture-model-snapshot",
+        "model_returned": "fixture-model-snapshot",
+        "usage": {
+          "input_tokens": 100,
+          "output_tokens": 20
+        },
+        "estimated_cost_usd": 0.00014,
+        "billing_cost_usd": null,
+        "reserved_usd": 0.1,
+        "quarantined": false,
+        "response": {
+          "model": "fixture-model-snapshot",
+          "status": "completed",
+          "usage": {
+            "input_tokens": 100,
+            "output_tokens": 20
+          },
+          "output": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "type": "output_text",
+                  "text": "bad JSON"
+                }
+              ]
+            }
+          ]
+        },
+        "raw_sha256": "86cacd7e5bbbc5f820f7fc2f51dd88378d361643040e28fced4ca2be302e70dd",
+        "format_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 0.0005309999999099091
+      },
+      {
+        "attempt": 1,
+        "kind": "format_repair",
+        "timestamp": "2026-10-17T03:30:02.858363+00:00",
+        "request_hash": "e8c95c5eab4cb90484daabdc65c882c2162169cf85bf236d08d4433168296dda",
+        "request": {
+          "model": "fixture-model-snapshot",
+          "input": "EXPLICIT_FIXTURE_TRANSPORT_NOT_A_MODEL\nCONTEXT_JSON\n{\"config\": {\"quantile\": 0.1, \"threshold\": 0.7, \"version\": \"D04-mechanism-v1\"}, \"learner_gate\": {\"p\": {\"concept_id\": \"p\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"x\": {\"concept_id\": \"x\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"y\": {\"concept_id\": \"y\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"learner_ledger\": {\"is_simulated\": true, \"pseudonymous_user_id\": \"simulation-D04\", \"records\": [], \"state_version\": \"0.1.0\"}, \"request\": {\"budget\": 5, \"config_version\": \"D04-mechanism-v1\", \"cost_unit\": \"proxy_cost\", \"is_fixture\": true, \"learner_state\": [], \"object_type\": \"PlanningRequest\", \"prior_plan_id\": null, \"request_id\": \"shared\", \"schema_version\": \"1.0.0\", \"snapshot_id\": \"synthetic-D04\", \"target_concept_ids\": [\"x\", \"y\"], \"task_id\": \"shared\", \"unit_ids\": [\"s\", \"a\", \"b\"]}, \"source_materials\": [], \"task\": {\"kind\": \"EXPLICIT_SYNTHETIC_MECHANISM_FIXTURE\", \"task_id\": \"shared\"}, \"units\": [{\"base_cost\": 1, \"concept_ids\": [\"p\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"s\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"x\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"a\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}, {\"base_cost\": 2, \"concept_ids\": [\"y\"], \"cost_basis\": \"explicit structural fixture proxy; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"b\", \"is_fixture\": true, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": true, \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:structural-constraint\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"approved\", \"reviewer\": \"SYNTHETIC_REVIEW_NOT_A_PERSON\"}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"s\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"fixture-only:mechanism\"], \"kind\": \"fixture\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.0.0\", \"source_spans\": []}]}\nFORMAT_ONLY_REPAIR: Return {\"ordered_units\": [string,...]} only. Preserve the intended order. Prior output:\nbad JSON",
+          "store": false,
+          "max_output_tokens": 1200
+        },
+        "configured_rates": {
+          "input_usd_per_million": 1,
+          "output_usd_per_million": 2,
+          "price_source": "FIXTURE_NOT_REAL_PRICE"
+        },
+        "model_requested": "fixture-model-snapshot",
+        "model_returned": "fixture-model-snapshot",
+        "usage": {
+          "input_tokens": 100,
+          "output_tokens": 20
+        },
+        "estimated_cost_usd": 0.00014,
+        "billing_cost_usd": null,
+        "reserved_usd": 0.1,
+        "quarantined": false,
+        "response": {
+          "model": "fixture-model-snapshot",
+          "status": "completed",
+          "usage": {
+            "input_tokens": 100,
+            "output_tokens": 20
+          },
+          "output": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "type": "output_text",
+                  "text": "{\"ordered_units\":[\"s\",\"a\",\"b\"]}"
+                }
+              ]
+            }
+          ]
+        },
+        "raw_sha256": "a90e5355f6409fa58a2f7d50bf89501a9fe9349ada4ef8186174fffd32324abe",
+        "elapsed_seconds": 8.79000001532404e-05
+      }
+    ],
+    "transport_is_fixture": true,
+    "model_requested": "fixture-model-snapshot"
+  },
+  "details": {
+    "certificate": null
+  },
+  "independent_replay": {
+    "valid": true,
+    "violations": [],
+    "goal_complete": true,
+    "replayed_cost": 5.0,
+    "certificate_audit": null,
+    "not_a_learning_success_measure": true
+  },
+  "elapsed_seconds": 0.0039059000000634114,
+  "challenge": "one_repair",
+  "is_fixture": true,
+  "real_api_calls": 0,
+  "expected_status": "FEASIBLE"
+}

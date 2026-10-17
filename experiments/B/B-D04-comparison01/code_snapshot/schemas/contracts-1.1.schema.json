@@ -1,0 +1,1266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codecompass.invalid/schemas/contracts-1.1.0",
+  "title": "CodeCompass compatible contracts 1.1.0",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/RepoSnapshot"
+    },
+    {
+      "$ref": "#/$defs/LearningUnit"
+    },
+    {
+      "$ref": "#/$defs/LearnerEvidence"
+    },
+    {
+      "$ref": "#/$defs/PlanningRequest"
+    },
+    {
+      "$ref": "#/$defs/PlanResult"
+    },
+    {
+      "$ref": "#/$defs/ExperimentEvent"
+    },
+    {
+      "$ref": "#/$defs/CodeTask"
+    }
+  ],
+  "$defs": {
+    "SourceSpan": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "snapshot_id",
+        "path",
+        "start_line",
+        "end_line",
+        "content_hash"
+      ],
+      "additionalProperties": false
+    },
+    "Provenance": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "static_source",
+            "teaching_judgment",
+            "model_candidate",
+            "fixture"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "proposed_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_status": {
+          "enum": [
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "evidence",
+        "proposed_by",
+        "review_status",
+        "reviewer",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "Prerequisite": {
+      "type": "object",
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation_type": {
+          "enum": [
+            "teaching_prerequisite"
+          ]
+        },
+        "hard": {
+          "type": "boolean"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "unit_id",
+        "relation_type",
+        "hard",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "State": {
+      "type": "object",
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alpha": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "beta": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "lower_bound": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quantile": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        }
+      },
+      "required": [
+        "concept_id",
+        "alpha",
+        "beta",
+        "evidence_ids",
+        "lower_bound",
+        "quantile"
+      ],
+      "additionalProperties": false
+    },
+    "Rubric": {
+      "type": "object",
+      "properties": {
+        "criterion_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "points": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "acceptance": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "critical": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "description",
+        "points",
+        "acceptance",
+        "critical"
+      ],
+      "additionalProperties": false
+    },
+    "RepoSnapshot": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "RepoSnapshot"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "hash_scope": {
+          "const": "selected_files_manifest_sha256"
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "git_blob": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "bytes",
+              "git_blob"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "license_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshot_scope": {
+          "const": "partial_source_bundle"
+        },
+        "complete_checkout_included": {
+          "const": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "snapshot_id",
+        "url",
+        "commit",
+        "license",
+        "retrieved_at",
+        "hash",
+        "hash_scope",
+        "files",
+        "license_path",
+        "snapshot_scope",
+        "complete_checkout_included"
+      ],
+      "additionalProperties": false
+    },
+    "LearningUnit": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "LearningUnit"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceSpan"
+          }
+        },
+        "concept_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Prerequisite"
+          }
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "base_cost": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cost_unit": {
+          "enum": [
+            "proxy_cost"
+          ]
+        },
+        "cost_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "id",
+        "source_spans",
+        "concept_ids",
+        "prerequisites",
+        "provenance",
+        "base_cost",
+        "cost_unit",
+        "cost_basis"
+      ],
+      "additionalProperties": false
+    },
+    "LearnerEvidence": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "LearnerEvidence"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pseudonymous_user_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "concept_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "enum": [
+            "pass",
+            "fail",
+            "unscored"
+          ]
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_type": {
+          "enum": [
+            "independent_quiz",
+            "independent_code_task",
+            "self_report",
+            "fixture"
+          ]
+        },
+        "attempt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independent": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "evidence_id",
+        "pseudonymous_user_id",
+        "concept_id",
+        "item_id",
+        "outcome",
+        "timestamp",
+        "project",
+        "evidence_type",
+        "attempt_id",
+        "independent"
+      ],
+      "additionalProperties": false
+    },
+    "PlanningRequest": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "PlanningRequest"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "learner_state": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/State"
+          }
+        },
+        "budget": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cost_unit": {
+          "enum": [
+            "proxy_cost"
+          ]
+        },
+        "config_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_concept_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "unit_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prior_plan_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "request_id",
+        "snapshot_id",
+        "task_id",
+        "learner_state",
+        "budget",
+        "cost_unit",
+        "config_version",
+        "target_concept_ids",
+        "unit_ids",
+        "prior_plan_id"
+      ],
+      "additionalProperties": false
+    },
+    "PlanResult": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "PlanResult"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "plan_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "FEASIBLE",
+            "INFEASIBLE_PROVEN",
+            "NO_FEASIBLE_FOUND",
+            "TIMEOUT"
+          ]
+        },
+        "ordered_units": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "required_concept_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "covered_concept_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "ratio": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "required_concept_ids",
+            "covered_concept_ids",
+            "ratio"
+          ],
+          "additionalProperties": false
+        },
+        "unmet_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "estimated_cost": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cost_unit": {
+          "enum": [
+            "proxy_cost"
+          ]
+        },
+        "reason_trace": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "unit_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "step",
+              "unit_id",
+              "reason",
+              "evidence_ids"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "proof_path": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "plan_id",
+        "request_id",
+        "status",
+        "ordered_units",
+        "coverage",
+        "unmet_constraints",
+        "estimated_cost",
+        "cost_unit",
+        "reason_trace",
+        "proof_path"
+      ],
+      "additionalProperties": false
+    },
+    "ExperimentEvent": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "ExperimentEvent"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actor": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "enum": [
+                "A",
+                "B"
+              ]
+            },
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "executor": {
+              "type": "string",
+              "minLength": 1
+            },
+            "machine": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "role",
+            "owner",
+            "executor",
+            "machine",
+            "model_id"
+          ],
+          "additionalProperties": false
+        },
+        "code_commit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "data_hash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "config_hash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "event_type": {
+          "enum": [
+            "started",
+            "succeeded",
+            "failed",
+            "paused",
+            "resumed"
+          ]
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_type": {
+              "enum": [
+                "development_validation",
+                "real_repository_offline",
+                "human",
+                "synthetic"
+              ]
+            },
+            "command": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "exit_code": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "elapsed_seconds": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "raw_result_path": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "error": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "resume_from": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "metrics": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "anyOf": [
+                        {
+                          "type": "boolean"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "score": {
+                      "anyOf": [
+                        {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "score"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "task_id",
+            "evidence_type",
+            "command",
+            "exit_code",
+            "elapsed_seconds",
+            "raw_result_path",
+            "error",
+            "resume_from",
+            "metrics"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "event_id",
+        "run_id",
+        "actor",
+        "code_commit",
+        "data_hash",
+        "config_hash",
+        "timestamp",
+        "event_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "CodeTask": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ]
+        },
+        "object_type": {
+          "const": "CodeTask"
+        },
+        "is_fixture": {
+          "type": "boolean"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "split": {
+          "enum": [
+            "dev",
+            "test"
+          ]
+        },
+        "snapshot_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repo_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task_type": {
+          "enum": [
+            "local_modification",
+            "locate_explain",
+            "debug"
+          ]
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceSpan"
+          }
+        },
+        "origin": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "enum": [
+                "upstream_todo_adapted",
+                "source_behavior_adapted",
+                "team_designed_debug"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "issue_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "description",
+            "issue_url"
+          ],
+          "additionalProperties": false
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required_concept_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "learning_unit_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "allowed_context": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prohibited_help": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "time_limit_minutes": {
+          "type": "integer",
+          "minimum": 20,
+          "maximum": 25
+        },
+        "timing_status": {
+          "const": "design_target_not_piloted"
+        },
+        "difficulty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rubric": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Rubric"
+          }
+        },
+        "max_score": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "success_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "submission": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evaluation_owner": {
+          "const": "B"
+        },
+        "evaluator_status": {
+          "enum": [
+            "spec_only_not_implemented",
+            "implemented_not_reviewed",
+            "reviewed"
+          ]
+        },
+        "review_status": {
+          "enum": [
+            "pending",
+            "approved"
+          ]
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contribution_preparation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer_access": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "object_type",
+        "is_fixture",
+        "task_id",
+        "split",
+        "snapshot_id",
+        "repo_commit",
+        "title",
+        "task_type",
+        "source_spans",
+        "origin",
+        "goal",
+        "requirements",
+        "required_concept_ids",
+        "learning_unit_ids",
+        "allowed_context",
+        "prohibited_help",
+        "time_limit_minutes",
+        "timing_status",
+        "difficulty",
+        "rubric",
+        "max_score",
+        "success_rule",
+        "submission",
+        "evaluation_owner",
+        "evaluator_status",
+        "review_status",
+        "reviewer",
+        "contribution_preparation",
+        "answer_access"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "origin": {
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "source_behavior_adapted",
+                      "team_designed_debug"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "schema_version": {
+                "const": "1.1.0"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

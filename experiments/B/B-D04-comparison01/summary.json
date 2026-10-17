@@ -1,0 +1,4155 @@
+{
+  "run_id": "B-D04-comparison01",
+  "kind": "exploratory_development_comparison",
+  "rows": [
+    {
+      "method": "B0",
+      "case_id": "task_001-sim_unknown",
+      "context_hash": "0f520826e7793f56f50c76f1ac3168a4eccd4a56bbf26b43c9f7dbae965f41de",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_unknown-B0",
+        "request_id": "D04-task_001-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 80,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_chunked",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_chunked_iter",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_iterable",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 80.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "reading_order_only": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "estimated_cost": 80,
+        "unmet_constraints": [],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 80.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.016458899999975074
+    },
+    {
+      "method": "B1",
+      "case_id": "task_001-sim_unknown",
+      "context_hash": "0f520826e7793f56f50c76f1ac3168a4eccd4a56bbf26b43c9f7dbae965f41de",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.011662300000011783
+    },
+    {
+      "method": "B2",
+      "case_id": "task_001-sim_unknown",
+      "context_hash": "0f520826e7793f56f50c76f1ac3168a4eccd4a56bbf26b43c9f7dbae965f41de",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_unknown-greedy",
+        "request_id": "D04-task_001-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked_iter",
+          "u_iterable",
+          "u_chunked"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 80,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_chunked_iter",
+            "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=4, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_iterable",
+            "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_chunked",
+            "reason": "TARGET_MATERIAL for u_chunked; bundle new-goal gain=1, incremental proxy_cost=21; own proxy_cost=21; source=boltons/iterutils.py:L286-306; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 80.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "boltons.chunk_postprocess": {
+            "concept_id": "boltons.chunk_postprocess",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "boltons.wrapper_compatibility": {
+            "concept_id": "boltons.wrapper_compatibility",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.islice_consumption": {
+            "concept_id": "python.islice_consumption",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "boltons.chunk_postprocess",
+              "boltons.wrapper_compatibility",
+              "python.generator_laziness",
+              "python.islice_consumption",
+              "python.iterator_protocol",
+              "python.keyword_presence"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental_cost": 21,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "incremental_cost": 43,
+                "new_goal_gain": 4
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental_cost": 16,
+                "new_goal_gain": 1
+              }
+            ]
+          },
+          {
+            "iteration": 2,
+            "pending_goals": [
+              "boltons.wrapper_compatibility",
+              "python.iterator_protocol"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental_cost": 21,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental_cost": 16,
+                "new_goal_gain": 1
+              }
+            ]
+          },
+          {
+            "iteration": 3,
+            "pending_goals": [
+              "boltons.wrapper_compatibility"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental_cost": 21,
+                "new_goal_gain": 1
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 80.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 80.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.08280119999994895
+    },
+    {
+      "method": "beam",
+      "case_id": "task_001-sim_unknown",
+      "context_hash": "0f520826e7793f56f50c76f1ac3168a4eccd4a56bbf26b43c9f7dbae965f41de",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_unknown-beam",
+        "request_id": "D04-task_001-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 80.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_chunked",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L286-306; proxy_cost=21; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_chunked_iter",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L316-358; proxy_cost=43; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_iterable",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L61-76; proxy_cost=16; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 80.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "boltons.chunk_postprocess": {
+            "concept_id": "boltons.chunk_postprocess",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "boltons.wrapper_compatibility": {
+            "concept_id": "boltons.wrapper_compatibility",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.islice_consumption": {
+            "concept_id": "python.islice_consumption",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "route": [
+                  "u_chunked_iter"
+                ],
+                "cost": 43.0
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_iterable"
+                ],
+                "cost": 16.0
+              },
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "route": [
+                  "u_chunked"
+                ],
+                "cost": 21.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "u_chunked_iter"
+              ],
+              [
+                "u_iterable"
+              ],
+              [
+                "u_chunked"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_chunked_iter"
+            ],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_chunked_iter",
+                  "u_iterable"
+                ],
+                "cost": 59.0
+              },
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "route": [
+                  "u_chunked_iter",
+                  "u_chunked"
+                ],
+                "cost": 64.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_iterable"
+            ],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_chunked_iter"
+                ],
+                "cost": 59.0
+              },
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_chunked"
+                ],
+                "cost": 37.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "deduplicate",
+            "route": [
+              "u_iterable",
+              "u_chunked_iter"
+            ],
+            "retained_route": [
+              "u_chunked_iter",
+              "u_iterable"
+            ]
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_chunked"
+            ],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "route": [
+                  "u_chunked",
+                  "u_chunked_iter"
+                ],
+                "cost": 64.0
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_chunked",
+                  "u_iterable"
+                ],
+                "cost": 37.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [
+              [
+                "u_chunked_iter",
+                "u_iterable"
+              ],
+              [
+                "u_chunked",
+                "u_chunked_iter"
+              ],
+              [
+                "u_chunked",
+                "u_iterable"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_chunked_iter",
+              "u_iterable"
+            ],
+            "candidates": [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "route": [
+                  "u_chunked_iter",
+                  "u_iterable",
+                  "u_chunked"
+                ],
+                "cost": 80.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_chunked",
+              "u_chunked_iter"
+            ],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_chunked",
+                  "u_chunked_iter",
+                  "u_iterable"
+                ],
+                "cost": 80.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_chunked",
+              "u_iterable"
+            ],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "route": [
+                  "u_chunked",
+                  "u_iterable",
+                  "u_chunked_iter"
+                ],
+                "cost": 80.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "deduplicate",
+            "route": [
+              "u_chunked",
+              "u_iterable",
+              "u_chunked_iter"
+            ],
+            "retained_route": [
+              "u_chunked",
+              "u_chunked_iter",
+              "u_iterable"
+            ]
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 2,
+            "retained": [
+              [
+                "u_chunked",
+                "u_chunked_iter",
+                "u_iterable"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 3,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 12,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 80.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 80.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.08845059999998739
+    },
+    {
+      "method": "B0",
+      "case_id": "task_001-sim_evidence",
+      "context_hash": "d8aca446d21cd459543744996bb1536855cddc1e766751a29a1ece1b0808a32a",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_evidence-B0",
+        "request_id": "D04-task_001-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 80,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_chunked",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=21; source=boltons/iterutils.py:L286-306; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_chunked_iter",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=43; source=boltons/iterutils.py:L316-358; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_iterable",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 80.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "reading_order_only": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "estimated_cost": 80,
+        "unmet_constraints": [],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 80.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.013677100000109021
+    },
+    {
+      "method": "B1",
+      "case_id": "task_001-sim_evidence",
+      "context_hash": "d8aca446d21cd459543744996bb1536855cddc1e766751a29a1ece1b0808a32a",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.011378300000046693
+    },
+    {
+      "method": "B2",
+      "case_id": "task_001-sim_evidence",
+      "context_hash": "d8aca446d21cd459543744996bb1536855cddc1e766751a29a1ece1b0808a32a",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_evidence-greedy",
+        "request_id": "D04-task_001-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 43,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip boltons.wrapper_compatibility; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:boltons.wrapper_compatibility:e0",
+              "sim_evidence:boltons.wrapper_compatibility:e1",
+              "sim_evidence:boltons.wrapper_compatibility:e2",
+              "sim_evidence:boltons.wrapper_compatibility:e3",
+              "sim_evidence:boltons.wrapper_compatibility:e4",
+              "sim_evidence:boltons.wrapper_compatibility:e5",
+              "sim_evidence:boltons.wrapper_compatibility:e6",
+              "sim_evidence:boltons.wrapper_compatibility:e7",
+              "sim_evidence:boltons.wrapper_compatibility:e8",
+              "sim_evidence:boltons.wrapper_compatibility:e9"
+            ]
+          },
+          {
+            "step": 2,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip python.iterator_protocol; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ]
+          },
+          {
+            "step": 3,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip python.keyword_presence; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ]
+          },
+          {
+            "step": 4,
+            "unit_id": "u_chunked_iter",
+            "reason": "TARGET_MATERIAL for u_chunked_iter; bundle new-goal gain=3, incremental proxy_cost=43; own proxy_cost=43; source=boltons/iterutils.py:L316-358; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 1,
+        "source_spans_valid": 1,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 43.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "boltons.chunk_postprocess": {
+            "concept_id": "boltons.chunk_postprocess",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "boltons.wrapper_compatibility": {
+            "concept_id": "boltons.wrapper_compatibility",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:boltons.wrapper_compatibility:e0",
+              "sim_evidence:boltons.wrapper_compatibility:e1",
+              "sim_evidence:boltons.wrapper_compatibility:e2",
+              "sim_evidence:boltons.wrapper_compatibility:e3",
+              "sim_evidence:boltons.wrapper_compatibility:e4",
+              "sim_evidence:boltons.wrapper_compatibility:e5",
+              "sim_evidence:boltons.wrapper_compatibility:e6",
+              "sim_evidence:boltons.wrapper_compatibility:e7",
+              "sim_evidence:boltons.wrapper_compatibility:e8",
+              "sim_evidence:boltons.wrapper_compatibility:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.islice_consumption": {
+            "concept_id": "python.islice_consumption",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "boltons.chunk_postprocess",
+              "python.generator_laziness",
+              "python.islice_consumption"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "incremental_cost": 43,
+                "new_goal_gain": 3
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 43.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 43.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.07897530000002462
+    },
+    {
+      "method": "beam",
+      "case_id": "task_001-sim_evidence",
+      "context_hash": "d8aca446d21cd459543744996bb1536855cddc1e766751a29a1ece1b0808a32a",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_001-sim_evidence-beam",
+        "request_id": "D04-task_001-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_chunked_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "covered_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 43.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: boltons.wrapper_compatibility",
+            "evidence_ids": [
+              "sim_evidence:boltons.wrapper_compatibility:e0",
+              "sim_evidence:boltons.wrapper_compatibility:e1",
+              "sim_evidence:boltons.wrapper_compatibility:e2",
+              "sim_evidence:boltons.wrapper_compatibility:e3",
+              "sim_evidence:boltons.wrapper_compatibility:e4",
+              "sim_evidence:boltons.wrapper_compatibility:e5",
+              "sim_evidence:boltons.wrapper_compatibility:e6",
+              "sim_evidence:boltons.wrapper_compatibility:e7",
+              "sim_evidence:boltons.wrapper_compatibility:e8",
+              "sim_evidence:boltons.wrapper_compatibility:e9"
+            ]
+          },
+          {
+            "step": 2,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: python.iterator_protocol",
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ]
+          },
+          {
+            "step": 3,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: python.keyword_presence",
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ]
+          },
+          {
+            "step": 4,
+            "unit_id": "u_chunked_iter",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L316-358; proxy_cost=43; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 6,
+        "coverage_tp": 6,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 1,
+        "source_spans_valid": 1,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 43.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "boltons.chunk_postprocess": {
+            "concept_id": "boltons.chunk_postprocess",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "boltons.wrapper_compatibility": {
+            "concept_id": "boltons.wrapper_compatibility",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:boltons.wrapper_compatibility:e0",
+              "sim_evidence:boltons.wrapper_compatibility:e1",
+              "sim_evidence:boltons.wrapper_compatibility:e2",
+              "sim_evidence:boltons.wrapper_compatibility:e3",
+              "sim_evidence:boltons.wrapper_compatibility:e4",
+              "sim_evidence:boltons.wrapper_compatibility:e5",
+              "sim_evidence:boltons.wrapper_compatibility:e6",
+              "sim_evidence:boltons.wrapper_compatibility:e7",
+              "sim_evidence:boltons.wrapper_compatibility:e8",
+              "sim_evidence:boltons.wrapper_compatibility:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.islice_consumption": {
+            "concept_id": "python.islice_consumption",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "route": [
+                  "u_chunked_iter"
+                ],
+                "cost": 43.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "u_chunked_iter"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 1,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 43.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 43.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.10545129999991332
+    },
+    {
+      "method": "B0",
+      "case_id": "task_002-sim_unknown",
+      "context_hash": "a912cd5b414f4e40497284dd3c7ad62d0e25b0b8cc4b87b8e7a446376b8b0d56",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_unknown-B0",
+        "request_id": "D04-task_002-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 60,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_windowed_iter",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=39; source=boltons/iterutils.py:L472-510; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_iterable",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_positive_int",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=5; source=boltons/iterutils.py:L309-313; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 60.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "reading_order_only": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "estimated_cost": 60,
+        "unmet_constraints": [],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 60.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.012527399999953559
+    },
+    {
+      "method": "B1",
+      "case_id": "task_002-sim_unknown",
+      "context_hash": "a912cd5b414f4e40497284dd3c7ad62d0e25b0b8cc4b87b8e7a446376b8b0d56",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.011927399999990485
+    },
+    {
+      "method": "B2",
+      "case_id": "task_002-sim_unknown",
+      "context_hash": "a912cd5b414f4e40497284dd3c7ad62d0e25b0b8cc4b87b8e7a446376b8b0d56",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_unknown-greedy",
+        "request_id": "D04-task_002-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_positive_int",
+          "u_iterable",
+          "u_windowed_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 60,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_positive_int",
+            "reason": "TARGET_MATERIAL for u_positive_int; bundle new-goal gain=1, incremental proxy_cost=5; own proxy_cost=5; source=boltons/iterutils.py:L309-313; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_iterable",
+            "reason": "TARGET_MATERIAL for u_iterable; bundle new-goal gain=1, incremental proxy_cost=16; own proxy_cost=16; source=boltons/iterutils.py:L61-76; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_windowed_iter",
+            "reason": "TARGET_MATERIAL for u_windowed_iter; bundle new-goal gain=2, incremental proxy_cost=39; own proxy_cost=39; source=boltons/iterutils.py:L472-510; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 60.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "python.iterator_protocol",
+              "python.keyword_presence",
+              "python.tee",
+              "python.type_validation"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental_cost": 16,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "u_positive_int",
+                "bundle": [
+                  "u_positive_int"
+                ],
+                "incremental_cost": 5,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "incremental_cost": 39,
+                "new_goal_gain": 2
+              }
+            ]
+          },
+          {
+            "iteration": 2,
+            "pending_goals": [
+              "python.iterator_protocol",
+              "python.keyword_presence",
+              "python.tee"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental_cost": 16,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "incremental_cost": 39,
+                "new_goal_gain": 2
+              }
+            ]
+          },
+          {
+            "iteration": 3,
+            "pending_goals": [
+              "python.keyword_presence",
+              "python.tee"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "incremental_cost": 39,
+                "new_goal_gain": 2
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 60.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 60.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.11679690000005394
+    },
+    {
+      "method": "beam",
+      "case_id": "task_002-sim_unknown",
+      "context_hash": "a912cd5b414f4e40497284dd3c7ad62d0e25b0b8cc4b87b8e7a446376b8b0d56",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_unknown-beam",
+        "request_id": "D04-task_002-sim_unknown",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_iterable",
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 60.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_iterable",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L61-76; proxy_cost=16; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_positive_int",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L309-313; proxy_cost=5; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_windowed_iter",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L472-510; proxy_cost=39; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 60.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "u_positive_int",
+                "bundle": [
+                  "u_positive_int"
+                ],
+                "route": [
+                  "u_positive_int"
+                ],
+                "cost": 5.0
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_iterable"
+                ],
+                "cost": 16.0
+              },
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "route": [
+                  "u_windowed_iter"
+                ],
+                "cost": 39.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "u_windowed_iter"
+              ],
+              [
+                "u_positive_int"
+              ],
+              [
+                "u_iterable"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_windowed_iter"
+            ],
+            "candidates": [
+              {
+                "root": "u_positive_int",
+                "bundle": [
+                  "u_positive_int"
+                ],
+                "route": [
+                  "u_windowed_iter",
+                  "u_positive_int"
+                ],
+                "cost": 44.0
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_windowed_iter",
+                  "u_iterable"
+                ],
+                "cost": 55.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_positive_int"
+            ],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_positive_int",
+                  "u_iterable"
+                ],
+                "cost": 21.0
+              },
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "route": [
+                  "u_positive_int",
+                  "u_windowed_iter"
+                ],
+                "cost": 44.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "u_iterable"
+            ],
+            "candidates": [
+              {
+                "root": "u_positive_int",
+                "bundle": [
+                  "u_positive_int"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_positive_int"
+                ],
+                "cost": 21.0
+              },
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_windowed_iter"
+                ],
+                "cost": 55.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [
+              [
+                "u_positive_int",
+                "u_windowed_iter"
+              ],
+              [
+                "u_iterable",
+                "u_windowed_iter"
+              ],
+              [
+                "u_iterable",
+                "u_positive_int"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_positive_int",
+              "u_windowed_iter"
+            ],
+            "candidates": [
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "route": [
+                  "u_positive_int",
+                  "u_windowed_iter",
+                  "u_iterable"
+                ],
+                "cost": 60.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_iterable",
+              "u_windowed_iter"
+            ],
+            "candidates": [
+              {
+                "root": "u_positive_int",
+                "bundle": [
+                  "u_positive_int"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_windowed_iter",
+                  "u_positive_int"
+                ],
+                "cost": 60.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 2,
+            "route": [
+              "u_iterable",
+              "u_positive_int"
+            ],
+            "candidates": [
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "route": [
+                  "u_iterable",
+                  "u_positive_int",
+                  "u_windowed_iter"
+                ],
+                "cost": 60.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 2,
+            "retained": [
+              [
+                "u_iterable",
+                "u_positive_int",
+                "u_windowed_iter"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 3,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 12,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 60.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 60.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.13796639999998206
+    },
+    {
+      "method": "B0",
+      "case_id": "task_002-sim_evidence",
+      "context_hash": "14bf835c77f60b1e452307b65e39fc1ff070e9f5f322723cc27bec6f0bc958a7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_evidence-B0",
+        "request_id": "D04-task_002-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 60,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "u_windowed_iter",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=39; source=boltons/iterutils.py:L472-510; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "u_iterable",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=16; source=boltons/iterutils.py:L61-76; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "u_positive_int",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=5; source=boltons/iterutils.py:L309-313; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 3,
+        "source_spans_valid": 3,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 60.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "reading_order_only": [
+          "u_windowed_iter",
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "estimated_cost": 60,
+        "unmet_constraints": [],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 60.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.021635899999978392
+    },
+    {
+      "method": "B1",
+      "case_id": "task_002-sim_evidence",
+      "context_hash": "14bf835c77f60b1e452307b65e39fc1ff070e9f5f322723cc27bec6f0bc958a7",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.02044150000006084
+    },
+    {
+      "method": "B2",
+      "case_id": "task_002-sim_evidence",
+      "context_hash": "14bf835c77f60b1e452307b65e39fc1ff070e9f5f322723cc27bec6f0bc958a7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_evidence-greedy",
+        "request_id": "D04-task_002-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_windowed_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 39,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip python.iterator_protocol; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ]
+          },
+          {
+            "step": 2,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip python.keyword_presence; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ]
+          },
+          {
+            "step": 3,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE skip python.type_validation; lower=0.811131 >= 0.7; no reading is counted as mastery",
+            "evidence_ids": [
+              "sim_evidence:python.type_validation:e0",
+              "sim_evidence:python.type_validation:e1",
+              "sim_evidence:python.type_validation:e2",
+              "sim_evidence:python.type_validation:e3",
+              "sim_evidence:python.type_validation:e4",
+              "sim_evidence:python.type_validation:e5",
+              "sim_evidence:python.type_validation:e6",
+              "sim_evidence:python.type_validation:e7",
+              "sim_evidence:python.type_validation:e8",
+              "sim_evidence:python.type_validation:e9"
+            ]
+          },
+          {
+            "step": 4,
+            "unit_id": "u_windowed_iter",
+            "reason": "TARGET_MATERIAL for u_windowed_iter; bundle new-goal gain=1, incremental proxy_cost=39; own proxy_cost=39; source=boltons/iterutils.py:L472-510; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 1,
+        "source_spans_valid": 1,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 39.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.type_validation:e0",
+              "sim_evidence:python.type_validation:e1",
+              "sim_evidence:python.type_validation:e2",
+              "sim_evidence:python.type_validation:e3",
+              "sim_evidence:python.type_validation:e4",
+              "sim_evidence:python.type_validation:e5",
+              "sim_evidence:python.type_validation:e6",
+              "sim_evidence:python.type_validation:e7",
+              "sim_evidence:python.type_validation:e8",
+              "sim_evidence:python.type_validation:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "python.tee"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "incremental_cost": 39,
+                "new_goal_gain": 1
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 39.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 39.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.10901799999999184
+    },
+    {
+      "method": "beam",
+      "case_id": "task_002-sim_evidence",
+      "context_hash": "14bf835c77f60b1e452307b65e39fc1ff070e9f5f322723cc27bec6f0bc958a7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "D04-task_002-sim_evidence-beam",
+        "request_id": "D04-task_002-sim_evidence",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "u_windowed_iter"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "covered_concept_ids": [
+            "python.iterator_protocol",
+            "python.keyword_presence",
+            "python.tee",
+            "python.type_validation"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 39.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: python.iterator_protocol",
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ]
+          },
+          {
+            "step": 2,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: python.keyword_presence",
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ]
+          },
+          {
+            "step": 3,
+            "unit_id": null,
+            "reason": "EVIDENCE_GATE: python.type_validation",
+            "evidence_ids": [
+              "sim_evidence:python.type_validation:e0",
+              "sim_evidence:python.type_validation:e1",
+              "sim_evidence:python.type_validation:e2",
+              "sim_evidence:python.type_validation:e3",
+              "sim_evidence:python.type_validation:e4",
+              "sim_evidence:python.type_validation:e5",
+              "sim_evidence:python.type_validation:e6",
+              "sim_evidence:python.type_validation:e7",
+              "sim_evidence:python.type_validation:e8",
+              "sim_evidence:python.type_validation:e9"
+            ]
+          },
+          {
+            "step": 4,
+            "unit_id": "u_windowed_iter",
+            "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L472-510; proxy_cost=39; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 4,
+        "coverage_tp": 4,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 1,
+        "source_spans_valid": 1,
+        "source_reference_validity": 1.0,
+        "replayed_proxy_cost": 39.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "fixed_real_task",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.iterator_protocol:e0",
+              "sim_evidence:python.iterator_protocol:e1",
+              "sim_evidence:python.iterator_protocol:e2",
+              "sim_evidence:python.iterator_protocol:e3",
+              "sim_evidence:python.iterator_protocol:e4",
+              "sim_evidence:python.iterator_protocol:e5",
+              "sim_evidence:python.iterator_protocol:e6",
+              "sim_evidence:python.iterator_protocol:e7",
+              "sim_evidence:python.iterator_protocol:e8",
+              "sim_evidence:python.iterator_protocol:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.keyword_presence:e0",
+              "sim_evidence:python.keyword_presence:e1",
+              "sim_evidence:python.keyword_presence:e2",
+              "sim_evidence:python.keyword_presence:e3",
+              "sim_evidence:python.keyword_presence:e4",
+              "sim_evidence:python.keyword_presence:e5",
+              "sim_evidence:python.keyword_presence:e6",
+              "sim_evidence:python.keyword_presence:e7",
+              "sim_evidence:python.keyword_presence:e8",
+              "sim_evidence:python.keyword_presence:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "alpha": 11,
+            "beta": 1,
+            "evidence_ids": [
+              "sim_evidence:python.type_validation:e0",
+              "sim_evidence:python.type_validation:e1",
+              "sim_evidence:python.type_validation:e2",
+              "sim_evidence:python.type_validation:e3",
+              "sim_evidence:python.type_validation:e4",
+              "sim_evidence:python.type_validation:e5",
+              "sim_evidence:python.type_validation:e6",
+              "sim_evidence:python.type_validation:e7",
+              "sim_evidence:python.type_validation:e8",
+              "sim_evidence:python.type_validation:e9"
+            ],
+            "lower_bound": 0.8111308307896871,
+            "quantile": 0.1,
+            "mastered": true,
+            "reason": "posterior lower quantile meets threshold"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "u_windowed_iter",
+                "bundle": [
+                  "u_windowed_iter"
+                ],
+                "route": [
+                  "u_windowed_iter"
+                ],
+                "cost": 39.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "u_windowed_iter"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 1,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 39.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 39.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.09600010000008297
+    },
+    {
+      "method": "B0",
+      "case_id": "shared",
+      "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "shared-B0",
+        "request_id": "shared",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "s",
+          "a",
+          "b"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 5,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "s",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=1; source=; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "a",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=2; source=; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "b",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=2; source=; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 2,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": 0.0,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 5.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "s",
+          "a",
+          "b"
+        ],
+        "reading_order_only": [
+          "s",
+          "a",
+          "b"
+        ],
+        "estimated_cost": 5,
+        "unmet_constraints": [],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 5.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.0067372000000887056
+    },
+    {
+      "method": "B1",
+      "case_id": "shared",
+      "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.004531899999960842
+    },
+    {
+      "method": "B2",
+      "case_id": "shared",
+      "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "shared-greedy",
+        "request_id": "shared",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "s",
+          "a",
+          "b"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 5,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "s",
+            "reason": "REQUIRED_PREREQUISITE for a; bundle new-goal gain=1, incremental proxy_cost=3; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "a",
+            "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=3; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "b",
+            "reason": "TARGET_MATERIAL for b; bundle new-goal gain=1, incremental proxy_cost=2; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 2,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": 0.0,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 5.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "p": {
+            "concept_id": "p",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "x": {
+            "concept_id": "x",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "y": {
+            "concept_id": "y",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "x",
+              "y"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "s",
+                  "a"
+                ],
+                "incremental_cost": 3,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "b",
+                "bundle": [
+                  "s",
+                  "b"
+                ],
+                "incremental_cost": 3,
+                "new_goal_gain": 1
+              }
+            ]
+          },
+          {
+            "iteration": 3,
+            "pending_goals": [
+              "y"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "incremental_cost": 2,
+                "new_goal_gain": 1
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 5.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 5.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.09072900000001027
+    },
+    {
+      "method": "beam",
+      "case_id": "shared",
+      "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "shared-beam",
+        "request_id": "shared",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "s",
+          "a",
+          "b"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 5.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "s",
+            "reason": "beam: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=1; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "a",
+            "reason": "beam: selected material; hard prerequisites=['s']; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 3,
+            "unit_id": "b",
+            "reason": "beam: selected material; hard prerequisites=['s']; source=explicit structural fixture; proxy_cost=2; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 2,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": 0.0,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 5.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "p": {
+            "concept_id": "p",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "x": {
+            "concept_id": "x",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "y": {
+            "concept_id": "y",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "s",
+                  "a"
+                ],
+                "route": [
+                  "s",
+                  "a"
+                ],
+                "cost": 3.0
+              },
+              {
+                "root": "b",
+                "bundle": [
+                  "s",
+                  "b"
+                ],
+                "route": [
+                  "s",
+                  "b"
+                ],
+                "cost": 3.0
+              },
+              {
+                "root": "s",
+                "bundle": [
+                  "s"
+                ],
+                "route": [
+                  "s"
+                ],
+                "cost": 1.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "s",
+                "a"
+              ],
+              [
+                "s",
+                "b"
+              ],
+              [
+                "s"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "s",
+              "a"
+            ],
+            "candidates": [
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "route": [
+                  "s",
+                  "a",
+                  "b"
+                ],
+                "cost": 5.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "s",
+              "b"
+            ],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "a"
+                ],
+                "route": [
+                  "s",
+                  "b",
+                  "a"
+                ],
+                "cost": 5.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "deduplicate",
+            "route": [
+              "s",
+              "b",
+              "a"
+            ],
+            "retained_route": [
+              "s",
+              "a",
+              "b"
+            ]
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "s"
+            ],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "a"
+                ],
+                "route": [
+                  "s",
+                  "a"
+                ],
+                "cost": 3.0
+              },
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "route": [
+                  "s",
+                  "b"
+                ],
+                "cost": 3.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "deduplicate",
+            "route": [
+              "s",
+              "a"
+            ],
+            "retained_route": [
+              "s",
+              "a"
+            ]
+          },
+          {
+            "event": "deduplicate",
+            "route": [
+              "s",
+              "b"
+            ],
+            "retained_route": [
+              "s",
+              "b"
+            ]
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [
+              [
+                "s",
+                "a",
+                "b"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 2,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 7,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 5.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 5.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.08196019999991222
+    },
+    {
+      "method": "B0",
+      "case_id": "cost_gap",
+      "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "cost_gap-B0",
+        "request_id": "cost_gap",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "a",
+          "b"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 7,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "a",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=2; source=; selection intentionally ignores profile",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "b",
+            "reason": "B0 FIXED_DOCUMENT_PREFIX; common proxy_cost=5; source=; selection intentionally ignores profile",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 7.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "status": "ROUTE_PREFIX",
+        "ordered_units": [
+          "a",
+          "b"
+        ],
+        "reading_order_only": [
+          "a",
+          "b",
+          "c"
+        ],
+        "estimated_cost": 7,
+        "unmet_constraints": [
+          "fixed route truncated by budget"
+        ],
+        "cost_unit": "proxy_cost"
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 7.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.0027376999998978135
+    },
+    {
+      "method": "B1",
+      "case_id": "cost_gap",
+      "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+      "attempted": false,
+      "execution_status": "NOT_CONFIGURED",
+      "plan": null,
+      "metrics": null,
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "B1_trace": {
+        "attempted": false,
+        "status": "NOT_CONFIGURED",
+        "route": null,
+        "calls": [],
+        "transport_is_fixture": false,
+        "model_requested": null
+      },
+      "elapsed_seconds": 0.002468399999997928
+    },
+    {
+      "method": "B2",
+      "case_id": "cost_gap",
+      "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "cost_gap-greedy",
+        "request_id": "cost_gap",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "a",
+          "c"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 6,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "a",
+            "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=2; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+            "evidence_ids": []
+          },
+          {
+            "step": 2,
+            "unit_id": "c",
+            "reason": "TARGET_MATERIAL for c; bundle new-goal gain=1, incremental proxy_cost=4; own proxy_cost=4; source=explicit structural fixture; soft edges do not create hard constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 6.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "gate": {
+          "x": {
+            "concept_id": "x",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "y": {
+            "concept_id": "y",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "candidate_attempts": [
+          {
+            "iteration": 1,
+            "pending_goals": [
+              "x",
+              "y"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "a"
+                ],
+                "incremental_cost": 2,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "incremental_cost": 5,
+                "new_goal_gain": 2
+              },
+              {
+                "root": "c",
+                "bundle": [
+                  "c"
+                ],
+                "incremental_cost": 4,
+                "new_goal_gain": 1
+              }
+            ]
+          },
+          {
+            "iteration": 2,
+            "pending_goals": [
+              "y"
+            ],
+            "blocked_candidates": [],
+            "candidates": [
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "incremental_cost": 5,
+                "new_goal_gain": 1
+              },
+              {
+                "root": "c",
+                "bundle": [
+                  "c"
+                ],
+                "incremental_cost": 4,
+                "new_goal_gain": 1
+              }
+            ]
+          }
+        ],
+        "method": "B2-initial-closure-gain-greedy",
+        "diagnostics_implemented": false,
+        "optimality_claim": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 6.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 6.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.061120500000015454
+    },
+    {
+      "method": "beam",
+      "case_id": "cost_gap",
+      "context_hash": "9ded377d9abba9893110b78ce89bda06fd1c830d8de09028d1d495977ca407d7",
+      "attempted": true,
+      "execution_status": "FEASIBLE",
+      "plan": {
+        "schema_version": "1.0.0",
+        "object_type": "PlanResult",
+        "is_fixture": true,
+        "plan_id": "cost_gap-beam",
+        "request_id": "cost_gap",
+        "status": "FEASIBLE",
+        "ordered_units": [
+          "b"
+        ],
+        "coverage": {
+          "required_concept_ids": [
+            "x",
+            "y"
+          ],
+          "covered_concept_ids": [
+            "x",
+            "y"
+          ],
+          "ratio": 1.0
+        },
+        "unmet_constraints": [],
+        "estimated_cost": 5.0,
+        "cost_unit": "proxy_cost",
+        "reason_trace": [
+          {
+            "step": 1,
+            "unit_id": "b",
+            "reason": "beam: selected material; hard prerequisites=[]; source=explicit structural fixture; proxy_cost=5; soft edges are not constraints",
+            "evidence_ids": []
+          }
+        ],
+        "proof_path": null
+      },
+      "metrics": {
+        "required_concepts": 2,
+        "coverage_tp": 2,
+        "coverage_fn": 0,
+        "coverage_ratio": 1.0,
+        "hard_relations_checked": 0,
+        "hard_violations": 0,
+        "prerequisite_violation_rate": null,
+        "source_spans_checked": 0,
+        "source_spans_valid": 0,
+        "source_reference_validity": null,
+        "replayed_proxy_cost": 5.0,
+        "legal": true,
+        "violations": [],
+        "human_task_success": null
+      },
+      "source_kind": "synthetic_structure",
+      "profile_is_simulated": true,
+      "human_task_success": null,
+      "calls": [],
+      "model_id": null,
+      "api_cost_usd": null,
+      "format_repairs": 0,
+      "details": {
+        "method": "beam",
+        "gate": {
+          "x": {
+            "concept_id": "x",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "y": {
+            "concept_id": "y",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30
+        },
+        "events": [
+          {
+            "event": "expand",
+            "depth": 0,
+            "route": [],
+            "candidates": [
+              {
+                "root": "a",
+                "bundle": [
+                  "a"
+                ],
+                "route": [
+                  "a"
+                ],
+                "cost": 2.0
+              },
+              {
+                "root": "b",
+                "bundle": [
+                  "b"
+                ],
+                "route": [
+                  "b"
+                ],
+                "cost": 5.0
+              },
+              {
+                "root": "c",
+                "bundle": [
+                  "c"
+                ],
+                "route": [
+                  "c"
+                ],
+                "cost": 4.0
+              }
+            ],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 0,
+            "retained": [
+              [
+                "b"
+              ],
+              [
+                "a"
+              ],
+              [
+                "c"
+              ]
+            ],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "a"
+            ],
+            "candidates": [],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "expand",
+            "depth": 1,
+            "route": [
+              "c"
+            ],
+            "candidates": [],
+            "candidate_truncation": {
+              "dropped_roots": [],
+              "count": 0
+            },
+            "blocked": []
+          },
+          {
+            "event": "beam_frontier",
+            "depth": 1,
+            "retained": [],
+            "beam_truncation": {
+              "count": 0,
+              "dropped_routes": []
+            }
+          }
+        ],
+        "expansions": 3,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "elapsed_seconds": 0.0,
+        "incumbent_feasible": true,
+        "optimality_claim": false,
+        "truncated": false,
+        "replay_audit": {
+          "valid": true,
+          "violations": [],
+          "goal_complete": true,
+          "replayed_cost": 5.0,
+          "certificate_audit": null,
+          "not_a_learning_success_measure": true
+        }
+      },
+      "independent_replay": {
+        "valid": true,
+        "violations": [],
+        "goal_complete": true,
+        "replayed_cost": 5.0,
+        "certificate_audit": null,
+        "not_a_learning_success_measure": true
+      },
+      "elapsed_seconds": 0.06661239999993995
+    }
+  ],
+  "aggregates": {
+    "B0": {
+      "scheduled": 6,
+      "attempted": 6,
+      "not_run": 0,
+      "failed": 0,
+      "failure_rate": 0.0,
+      "failure_definition": "attempted outcome other than independently legal FEASIBLE; includes timeout/format/algorithm/API errors",
+      "human_task_success": null
+    },
+    "B1": {
+      "scheduled": 6,
+      "attempted": 0,
+      "not_run": 6,
+      "failed": 0,
+      "failure_rate": null,
+      "failure_definition": "attempted outcome other than independently legal FEASIBLE; includes timeout/format/algorithm/API errors",
+      "human_task_success": null
+    },
+    "B2": {
+      "scheduled": 6,
+      "attempted": 6,
+      "not_run": 0,
+      "failed": 0,
+      "failure_rate": 0.0,
+      "failure_definition": "attempted outcome other than independently legal FEASIBLE; includes timeout/format/algorithm/API errors",
+      "human_task_success": null
+    },
+    "beam": {
+      "scheduled": 6,
+      "attempted": 6,
+      "not_run": 0,
+      "failed": 0,
+      "failure_rate": 0.0,
+      "failure_definition": "attempted outcome other than independently legal FEASIBLE; includes timeout/format/algorithm/API errors",
+      "human_task_success": null
+    }
+  },
+  "B1_live_calls": 0,
+  "reserved_api_usd": 0.0,
+  "formal_study_ready": false,
+  "human_profiles": 0,
+  "learning_effect": "NOT_MEASURED",
+  "independent_relevance_labels": 0
+}

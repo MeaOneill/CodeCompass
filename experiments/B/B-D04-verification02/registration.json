@@ -1,0 +1,149 @@
+{
+  "task": "B-D04",
+  "run_id": "B-D04-verification02",
+  "commands": [
+    {
+      "name": "pytest",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:29:51.049481+00:00",
+      "elapsed_seconds": 8.782781
+    },
+    {
+      "name": "batch",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/run_d04.py",
+        "--run-id",
+        "B-D04-verification02-batch"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:29:59.832262+00:00",
+      "elapsed_seconds": 2.385392
+    },
+    {
+      "name": "fixtures",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/challenge_d04.py",
+        "--run-id",
+        "B-D04-verification02-fixtures"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:02.217654+00:00",
+      "elapsed_seconds": 0.69725
+    },
+    {
+      "name": "B-audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d04.py",
+        "--source",
+        "experiments/B/B-D04-comparison03",
+        "--figures",
+        "report_materials/B/B-D04-final",
+        "--fixtures",
+        "experiments/B/B-D04-fixtures01",
+        "--output",
+        "experiments\\B\\B-D04-verification02\\audit.json"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:02.914904+00:00",
+      "elapsed_seconds": 1.368035
+    },
+    {
+      "name": "A04-audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d04.py",
+        "--run-id",
+        "A-D04-mechanism01",
+        "--output",
+        "experiments/A/B-D04-verification02-A04.json"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:04.282939+00:00",
+      "elapsed_seconds": 1.588986
+    },
+    {
+      "name": "B03-audit",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d03.py",
+        "--source",
+        "experiments/B/B-D03-integration02",
+        "--figures",
+        "report_materials/B/B-D03-final",
+        "--output",
+        "experiments\\B\\B-D04-verification02\\B03-audit.json"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:05.872941+00:00",
+      "elapsed_seconds": 0.614694
+    },
+    {
+      "name": "help",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/run_d04.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:06.487635+00:00",
+      "elapsed_seconds": 0.631734
+    },
+    {
+      "name": "invalid-run",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "scripts/B/run_d04.py",
+        "--run-id",
+        "../escape"
+      ],
+      "exit_code": 2,
+      "expected": 2,
+      "passed": true,
+      "started": "2026-10-17T03:30:07.120525+00:00",
+      "elapsed_seconds": 0.593956
+    },
+    {
+      "name": "pip-check",
+      "command": [
+        "C:\\CodeCompass\\CodeCompass\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true,
+      "started": "2026-10-17T03:30:07.714481+00:00",
+      "elapsed_seconds": 1.236694
+    }
+  ],
+  "engineering_passed": true,
+  "source_head": "722b9c46676d05b7492f7250b58a9d61c60d5124",
+  "B1_live_calls": 0,
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "exit_code": 0
+}

@@ -1,0 +1,67 @@
+/schemas/** text eol=lf
+/benchmarks/** text eol=lf
+/benchmarks/sources/boltons/LICENSE -text
+/benchmarks/sources/boltons/boltons/** -text
+/benchmarks/sources/boltons/tests/** -text
+/benchmarks/sources/boltons/pyproject.toml -text
+/experiments/A/** text eol=lf
+/report_materials/A/** text eol=lf
+/scripts/A/** text eol=lf
+/src/codecompass/graph/** text eol=lf
+/src/codecompass/learner/** text eol=lf
+/src/codecompass/planner/** text eol=lf
+/app/** text eol=lf
+/src/codecompass/__init__.py text eol=lf
+/src/codecompass/retrieval/** text eol=lf
+/src/codecompass/issues/** text eol=lf
+/tests/B/** text eol=lf
+/scripts/B/** text eol=lf
+/docs/B/** text eol=lf
+/docs/environment_B.md text eol=lf
+/docs/requests/B-D01-interface-review.md text eol=lf
+/docs/joint/B-D01-integration.md text eol=lf
+/report_materials/B/** text eol=lf
+/report_materials/B/*.png -text
+/report_materials/B/**/*.png -text
+/experiments/B/** -text whitespace=-blank-at-eol
+/pytest.ini text eol=lf
+/benchmarks/B/** text eol=lf
+/benchmarks/sources/boltons_B_D02/** -text whitespace=-blank-at-eol
+/configs/B/** text eol=lf
+/docs/requests/B-D02-evaluation-interface.md text eol=lf
+/docs/joint/B-D02-integration.md text eol=lf
+
+# A-D02 native image outputs retain binary bytes.
+/report_materials/A/**/*.png -text
+/tests/A/** text eol=lf
+/experiments/A/A-D02-20261016-graph01/code_snapshot/** -text
+/docs/A/** text eol=lf
+/docs/references/** text eol=lf
+/docs/related_work.md text eol=lf
+/docs/graph_format.md text eol=lf
+/docs/teaching_dependencies.md text eol=lf
+/docs/joint/A-* text eol=lf
+
+# Preserve native SVG serialization and raw command logs byte-for-byte.
+/report_materials/A/**/*.svg -text whitespace=cr-at-eol
+/experiments/A/**/*.log -text whitespace=-blank-at-eof,-blank-at-eol
+
+# Preserve A-D03 exact frozen inputs and CSV bytes across Git checkouts.
+/configs/A/** text eol=lf
+/docs/requests/A-* text eol=lf
+/experiments/A/A-D03-*/code_snapshot/** -text whitespace=-blank-at-eol
+/experiments/A/A-D03-*/routes.csv -text whitespace=cr-at-eol
+
+# B-D03 persistence and exact numeric source bytes for reproducible restoration.
+/src/codecompass/app/** text eol=lf
+/report_materials/B/B-D03-final/*.csv -text whitespace=cr-at-eol
+/docs/requests/B-D03-* text eol=lf
+/docs/joint/B-D03-* text eol=lf
+/configs/B/D04_comparison.json text eol=lf
+/configs/B/B1_direct_v1.txt text eol=lf
+/docs/requests/B-D04-* text eol=lf
+/docs/joint/B-D04-* text eol=lf
+/.gitattributes text eol=lf
+
+/experiments/A/A-D04-*/code_snapshot/** -text whitespace=-blank-at-eol
+/experiments/A/A-D04-*/comparison.csv -text whitespace=cr-at-eol

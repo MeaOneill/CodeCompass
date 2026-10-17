@@ -1,0 +1,484 @@
+{
+  "method": "beam",
+  "case_id": "task_001-sim_unknown",
+  "context_hash": "0f520826e7793f56f50c76f1ac3168a4eccd4a56bbf26b43c9f7dbae965f41de",
+  "attempted": true,
+  "execution_status": "FEASIBLE",
+  "plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "D04-task_001-sim_unknown-beam",
+    "request_id": "D04-task_001-sim_unknown",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "u_chunked",
+      "u_chunked_iter",
+      "u_iterable"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence"
+      ],
+      "covered_concept_ids": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 80.0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "u_chunked",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L286-306; proxy_cost=21; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "u_chunked_iter",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L316-358; proxy_cost=43; soft edges are not constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "u_iterable",
+        "reason": "beam: selected material; hard prerequisites=[]; source=boltons/iterutils.py:L61-76; proxy_cost=16; soft edges are not constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "metrics": {
+    "required_concepts": 6,
+    "coverage_tp": 6,
+    "coverage_fn": 0,
+    "coverage_ratio": 1.0,
+    "hard_relations_checked": 0,
+    "hard_violations": 0,
+    "prerequisite_violation_rate": null,
+    "source_spans_checked": 3,
+    "source_spans_valid": 3,
+    "source_reference_validity": 1.0,
+    "replayed_proxy_cost": 80.0,
+    "legal": true,
+    "violations": [],
+    "human_task_success": null
+  },
+  "source_kind": "fixed_real_task",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "details": {
+    "method": "beam",
+    "gate": {
+      "boltons.chunk_postprocess": {
+        "concept_id": "boltons.chunk_postprocess",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "boltons.wrapper_compatibility": {
+        "concept_id": "boltons.wrapper_compatibility",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.generator_laziness": {
+        "concept_id": "python.generator_laziness",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.islice_consumption": {
+        "concept_id": "python.islice_consumption",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30
+    },
+    "events": [
+      {
+        "event": "expand",
+        "depth": 0,
+        "route": [],
+        "candidates": [
+          {
+            "root": "u_chunked_iter",
+            "bundle": [
+              "u_chunked_iter"
+            ],
+            "route": [
+              "u_chunked_iter"
+            ],
+            "cost": 43.0
+          },
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_iterable"
+            ],
+            "cost": 16.0
+          },
+          {
+            "root": "u_chunked",
+            "bundle": [
+              "u_chunked"
+            ],
+            "route": [
+              "u_chunked"
+            ],
+            "cost": 21.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 0,
+        "retained": [
+          [
+            "u_chunked_iter"
+          ],
+          [
+            "u_iterable"
+          ],
+          [
+            "u_chunked"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_chunked_iter"
+        ],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_chunked_iter",
+              "u_iterable"
+            ],
+            "cost": 59.0
+          },
+          {
+            "root": "u_chunked",
+            "bundle": [
+              "u_chunked"
+            ],
+            "route": [
+              "u_chunked_iter",
+              "u_chunked"
+            ],
+            "cost": 64.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_iterable"
+        ],
+        "candidates": [
+          {
+            "root": "u_chunked_iter",
+            "bundle": [
+              "u_chunked_iter"
+            ],
+            "route": [
+              "u_iterable",
+              "u_chunked_iter"
+            ],
+            "cost": 59.0
+          },
+          {
+            "root": "u_chunked",
+            "bundle": [
+              "u_chunked"
+            ],
+            "route": [
+              "u_iterable",
+              "u_chunked"
+            ],
+            "cost": 37.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "deduplicate",
+        "route": [
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        "retained_route": [
+          "u_chunked_iter",
+          "u_iterable"
+        ]
+      },
+      {
+        "event": "expand",
+        "depth": 1,
+        "route": [
+          "u_chunked"
+        ],
+        "candidates": [
+          {
+            "root": "u_chunked_iter",
+            "bundle": [
+              "u_chunked_iter"
+            ],
+            "route": [
+              "u_chunked",
+              "u_chunked_iter"
+            ],
+            "cost": 64.0
+          },
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_chunked",
+              "u_iterable"
+            ],
+            "cost": 37.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 1,
+        "retained": [
+          [
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          [
+            "u_chunked",
+            "u_chunked_iter"
+          ],
+          [
+            "u_chunked",
+            "u_iterable"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "candidates": [
+          {
+            "root": "u_chunked",
+            "bundle": [
+              "u_chunked"
+            ],
+            "route": [
+              "u_chunked_iter",
+              "u_iterable",
+              "u_chunked"
+            ],
+            "cost": 80.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_chunked",
+          "u_chunked_iter"
+        ],
+        "candidates": [
+          {
+            "root": "u_iterable",
+            "bundle": [
+              "u_iterable"
+            ],
+            "route": [
+              "u_chunked",
+              "u_chunked_iter",
+              "u_iterable"
+            ],
+            "cost": 80.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "expand",
+        "depth": 2,
+        "route": [
+          "u_chunked",
+          "u_iterable"
+        ],
+        "candidates": [
+          {
+            "root": "u_chunked_iter",
+            "bundle": [
+              "u_chunked_iter"
+            ],
+            "route": [
+              "u_chunked",
+              "u_iterable",
+              "u_chunked_iter"
+            ],
+            "cost": 80.0
+          }
+        ],
+        "candidate_truncation": {
+          "dropped_roots": [],
+          "count": 0
+        },
+        "blocked": []
+      },
+      {
+        "event": "deduplicate",
+        "route": [
+          "u_chunked",
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        "retained_route": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ]
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 2,
+        "retained": [
+          [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ]
+        ],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      },
+      {
+        "event": "beam_frontier",
+        "depth": 3,
+        "retained": [],
+        "beam_truncation": {
+          "count": 0,
+          "dropped_routes": []
+        }
+      }
+    ],
+    "expansions": 12,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "elapsed_seconds": 0.0,
+    "incumbent_feasible": true,
+    "optimality_claim": false,
+    "truncated": false,
+    "replay_audit": {
+      "valid": true,
+      "violations": [],
+      "goal_complete": true,
+      "replayed_cost": 80.0,
+      "certificate_audit": null,
+      "not_a_learning_success_measure": true
+    }
+  },
+  "independent_replay": {
+    "valid": true,
+    "violations": [],
+    "goal_complete": true,
+    "replayed_cost": 80.0,
+    "certificate_audit": null,
+    "not_a_learning_success_measure": true
+  },
+  "elapsed_seconds": 0.0722241999999369
+}

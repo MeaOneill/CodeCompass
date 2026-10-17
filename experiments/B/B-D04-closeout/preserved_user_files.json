@@ -1,0 +1,65 @@
+{
+  "owner": "user-generated B-D02 self-check; not staged",
+  "files": [
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/B0-line-proxy.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/B0-line-proxy.stdout.txt",
+      "sha256": "fc9d19101b43bd60486b0b1139eb555fb3da6026d98db8b23fa60cf787cb4aaa"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/B0-shared.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/B0-shared.stdout.txt",
+      "sha256": "af5464c8da4084708f488cd72eb48501b3b27d70457260d2aacf1fcf6758a2be"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/demo_summary.json",
+      "sha256": "3bd04c6ccddba103084abc62e4c838e3dcb3d602f3db1f1033e2cf467c3dacec"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/task_001-original.json",
+      "sha256": "d858112152ee4f52e08ca77eed5984cfb4d4863f9ccb2ddae10173f03f38ba1c"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/task_001-reference.json",
+      "sha256": "b32b31b546c7d165141cba012083843b36e263039815f2cf852a73fd7921ba30"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/task_002-original.json",
+      "sha256": "6b411379ffd5e10d0435f0e5f9061ae2bd3467ce16e505b255c24d7413e2dd95"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622/task_002-reference.json",
+      "sha256": "5765893ba524a33567e7be4e8026d52f5a842d8512eb79ac43be7019e8e546ec"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-line-proxy/config.json",
+      "sha256": "8cedb16f53269a041174767162a96979f5cf1e2a6b2c7661cae9fd5ddc718ebc"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-line-proxy/input_units.json",
+      "sha256": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-line-proxy/result.json",
+      "sha256": "fc9d19101b43bd60486b0b1139eb555fb3da6026d98db8b23fa60cf787cb4aaa"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-shared/config.json",
+      "sha256": "8cedb16f53269a041174767162a96979f5cf1e2a6b2c7661cae9fd5ddc718ebc"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-shared/input_units.json",
+      "sha256": "67c26d165f04bc07245607ce9000250d1e9a31d4ca1651a4ee87466d20b28660"
+    },
+    {
+      "path": "experiments/B/B-D02-user-20261016-185622-shared/result.json",
+      "sha256": "af5464c8da4084708f488cd72eb48501b3b27d70457260d2aacf1fcf6758a2be"
+    }
+  ]
+}

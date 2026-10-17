@@ -1,0 +1,8 @@
+{
+  "phase": "precommit index integrity",
+  "exit_code": 1,
+  "file": ".gitattributes",
+  "reason": "working bytes had CRLF while Git normalized LF",
+  "repair": "explicit self eol=lf plus normalize working/frozen bytes and force renormalize; no algorithm change",
+  "commit_was_stopped": true
+}

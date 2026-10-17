@@ -1,0 +1,25 @@
+{
+  "method": "B1",
+  "case_id": "shared",
+  "context_hash": "5dfc8da2705c9aec503cb494bc17840b188ce3f2dad4c06eaddb9dcebf8ca078",
+  "attempted": false,
+  "execution_status": "NOT_CONFIGURED",
+  "plan": null,
+  "metrics": null,
+  "source_kind": "synthetic_structure",
+  "profile_is_simulated": true,
+  "human_task_success": null,
+  "calls": [],
+  "model_id": null,
+  "api_cost_usd": null,
+  "format_repairs": 0,
+  "B1_trace": {
+    "attempted": false,
+    "status": "NOT_CONFIGURED",
+    "route": null,
+    "calls": [],
+    "transport_is_fixture": false,
+    "model_requested": null
+  },
+  "elapsed_seconds": 0.004030900000088877
+}

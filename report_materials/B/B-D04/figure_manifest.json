@@ -1,0 +1,128 @@
+[
+  {
+    "figure_id": "T02_development",
+    "task_id": "B-D04",
+    "run_id": "B-D04-comparison02",
+    "png": "report_materials/B/B-D04/T02_development.png",
+    "svg": "report_materials/B/B-D04/T02_development.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-comparison02 --output report_materials/B/B-D04",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-comparison02/summary.json",
+        "sha256": "36ad6b64458d6e570dca1df5c046524e5105cea42a43bd73b91650a545cfa251"
+      },
+      {
+        "path": "experiments/B/B-D04-comparison02/T02.csv",
+        "sha256": "17026faeb2dd3abf80e02f549dda34304b52b1a51e75fc743e50d6c63c47d58c"
+      },
+      {
+        "path": "report_materials/B/B-D04/render_config.json",
+        "sha256": "6013fb03fdef52a78cde1d4db50214e7edc4101eb3d52d63703f798a6f099e9d"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04/T02_development.png",
+        "sha256": "05f5b3dcdf4316504bb35c44f5ed126b2ac9b53d7a782057562a8256aaf817df"
+      },
+      {
+        "path": "report_materials/B/B-D04/T02_development.svg",
+        "sha256": "d064d58313ffa84e909b792a1203702da927192ca5b76df2007ecc61a04366df"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_001_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-comparison02",
+    "png": "report_materials/B/B-D04/task_001_routes.png",
+    "svg": "report_materials/B/B-D04/task_001_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-comparison02 --output report_materials/B/B-D04",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-comparison02/summary.json",
+        "sha256": "36ad6b64458d6e570dca1df5c046524e5105cea42a43bd73b91650a545cfa251"
+      },
+      {
+        "path": "experiments/B/B-D04-comparison02/T02.csv",
+        "sha256": "17026faeb2dd3abf80e02f549dda34304b52b1a51e75fc743e50d6c63c47d58c"
+      },
+      {
+        "path": "report_materials/B/B-D04/render_config.json",
+        "sha256": "6013fb03fdef52a78cde1d4db50214e7edc4101eb3d52d63703f798a6f099e9d"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04/task_001_routes.png",
+        "sha256": "e05d54b1001471d48412b34e392d02998b691eecb3284e4b1c33dff70e265fdd"
+      },
+      {
+        "path": "report_materials/B/B-D04/task_001_routes.svg",
+        "sha256": "3ad4907999702b53896f7451cad62f4765682063ddbcc463360566f3920dc1b4"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_002_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-comparison02",
+    "png": "report_materials/B/B-D04/task_002_routes.png",
+    "svg": "report_materials/B/B-D04/task_002_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1未运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "PENDING_AGENT_VIEW",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-comparison02 --output report_materials/B/B-D04",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-comparison02/summary.json",
+        "sha256": "36ad6b64458d6e570dca1df5c046524e5105cea42a43bd73b91650a545cfa251"
+      },
+      {
+        "path": "experiments/B/B-D04-comparison02/T02.csv",
+        "sha256": "17026faeb2dd3abf80e02f549dda34304b52b1a51e75fc743e50d6c63c47d58c"
+      },
+      {
+        "path": "report_materials/B/B-D04/render_config.json",
+        "sha256": "6013fb03fdef52a78cde1d4db50214e7edc4101eb3d52d63703f798a6f099e9d"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "138a91a3176c4cce5b50f2606acd0c0ee4a2ac8b2e0ecf77a97665d962acec78"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04/task_002_routes.png",
+        "sha256": "ee068af67b307882cbfc4817373bf5d240b495047586e41e1fae92446afaf14e"
+      },
+      {
+        "path": "report_materials/B/B-D04/task_002_routes.svg",
+        "sha256": "843094c51ff6119fa99940acadcdd98914e38dde40537612e63351a15c497302"
+      }
+    ]
+  }
+]
