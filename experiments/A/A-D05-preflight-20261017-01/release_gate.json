@@ -1,11 +1,29 @@
 {
   "task": "A-D05-preflight",
+  "updated_at": "2026-10-17T23:39:01.362576+08:00",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "received_B_commit": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "validated_checkpoint": "b63a8a4ee7905aece0d7ca0c177fd84c77aa7d5b",
   "engineering_checks_passed": true,
-  "committed_copy_replay": "PENDING",
-  "remote_sync": "PENDING",
+  "tests": 167,
+  "B_offline_audit_checks": 130,
+  "A_negative_mutations_rejected": 206,
+  "committed_copy_replay": true,
+  "archive_byte_checks": 2229,
+  "guide_commands_verified": true,
+  "verification_kind": "same-machine isolated-worktree reception and committed-source archive replay",
+  "remote_sync": "NOT_SYNCED_AUTO_REVIEW_REJECTED",
   "next_step_allowed": false,
   "next_task": "A-D05",
   "A_D05_status": "NOT_STARTED",
+  "remaining": [
+    "Explicit user authorization and successful task-branch push with remote=HEAD verification"
+  ],
   "independent_human_review": "NOT_REVIEWED",
-  "formal_study_ready": false
+  "formal_study_ready": false,
+  "model_api_calls": 0,
+  "main_merged": false,
+  "background_A_jobs": []
 }

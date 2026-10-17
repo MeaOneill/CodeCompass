@@ -83,5 +83,30 @@
     "note": "Read-only public wheel cache; no credential or environment copied; no installation raw log persisted outside tool transcript"
   },
   "agents_search": "rg --files --hidden plus explicit C:/AGENTS.md and C:/CodeCompass/AGENTS.md ancestors; no matching file",
-  "no_A_D05_algorithm_changes": true
+  "no_A_D05_algorithm_changes": true,
+  "later_issues": [
+    {
+      "action": "inline staged-content scan",
+      "error": "PowerShell quoting ParserError before execution",
+      "fix": "separate Python script; scan passed"
+    },
+    {
+      "action": "local fresh clone",
+      "exit_code": 1,
+      "error": "Git MSYS NtCreateDirectoryObject access denied",
+      "fix": "Git archive instead; no clone relied on"
+    },
+    {
+      "action": "first archive byte comparison",
+      "exit_code": 1,
+      "error": "33 unpinned documentation paths converted to CRLF by core.autocrlf",
+      "fix": "raw git -c core.autocrlf=false archive; all 2229 blobs match; no product source/data difference"
+    },
+    {
+      "action": "task-branch push",
+      "executed": false,
+      "error": "Two automatic approval rejections",
+      "fix": "Pending user explicit authorization; remote not synchronized"
+    }
+  ]
 }

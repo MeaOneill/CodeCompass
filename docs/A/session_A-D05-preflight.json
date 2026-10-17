@@ -4,7 +4,7 @@
   "executor": "Codex Agent A",
   "machine": "糯糯",
   "model_id": null,
-  "actual_updated_at": "2026-10-17T23:31:01.923546+08:00",
+  "actual_updated_at": "2026-10-17T23:39:01.362576+08:00",
   "branch": "codex/A-D05-diagnosis",
   "root": "C:\\CodeCompass\\CodeCompass-A-D05",
   "base_commit": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
@@ -21,5 +21,10 @@
   "formal_study_ready": false,
   "next_task": "A-D05",
   "final_gate": "experiments/A/A-D05-preflight-20261017-01/release_gate.json",
-  "background_jobs": "No A preflight job running after completion; no B process ownership assumed"
+  "background_jobs": "No A preflight job running after completion; no B process ownership assumed",
+  "final_engineering_gate": "PASSED",
+  "committed_copy_replay": true,
+  "validated_checkpoint": "b63a8a4ee7905aece0d7ca0c177fd84c77aa7d5b",
+  "remote_sync": "NOT_SYNCED_AUTO_REVIEW_REJECTED",
+  "next_step_allowed": false
 }

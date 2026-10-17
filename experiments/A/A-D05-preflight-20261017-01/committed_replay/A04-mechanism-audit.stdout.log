@@ -1,0 +1,14 @@
+{
+  "task_id": "A-D04",
+  "source_run": "A-D04-mechanism01",
+  "engineering_passed": true,
+  "negative_mutations_rejected": 206,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "release_pending": [
+    "final tests",
+    "committed-copy replay",
+    "remote SHA verification"
+  ],
+  "exit_code": 0
+}

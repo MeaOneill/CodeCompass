@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-17T23:39:01.362576+08:00",
+  "product_and_B_code_unchanged_from": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "B_HEAD": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "B_status_short": "?? experiments/B/B-D02-user-20261016-185622-line-proxy/\n?? experiments/B/B-D02-user-20261016-185622-shared/\n?? experiments/B/B-D02-user-20261016-185622/\n",
+  "B_untracked_records_retained": true,
+  "no_B_files_staged": true,
+  "model_api_calls": 0,
+  "archive_blob_checks": 2229,
+  "engineering_passed": true,
+  "independent_human_review": "NOT_REVIEWED",
+  "A_background_jobs": "All A acceptance/replay commands completed; none remaining",
+  "B_background_jobs": "Not inspected or assumed owned by A"
+}

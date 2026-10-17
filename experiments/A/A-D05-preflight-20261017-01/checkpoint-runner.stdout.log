@@ -1,0 +1,7 @@
+pip-check: exit 0
+pip-freeze: exit 0
+pytest: exit 0
+B04-live-audit: exit 0
+A04-mechanism-audit: exit 0
+demo-A04: exit 0
+sample: exit 0

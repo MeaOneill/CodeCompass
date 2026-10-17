@@ -1,0 +1,229 @@
+{
+  "destination": "https://github.com/MeaOneill/CodeCompass.git",
+  "trust_basis": "Exact repository supplied by user in handoff; existing origin and fetched B delivery; not a new destination",
+  "scope_basis": "User requests all pre-A-D05 work; handoff section eight item ten and project daily workflow require task-branch commit/push; no main merge or B push",
+  "base": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "checkpoint": "b63a8a4ee7905aece0d7ca0c177fd84c77aa7d5b",
+  "new_commits": "1",
+  "files": [
+    {
+      "path": "CodeCompass计划/tracking/HANDOFF.md",
+      "bytes": 8421,
+      "sha256": "319bda65e5f366ae8b837fbd011a30d4e96256f2cdce5d828f9e7d026c5488d4",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "CodeCompass计划/tracking/STATUS.md",
+      "bytes": 8943,
+      "sha256": "e9f48ee55ec6d7c54bbaf99dddf37196272e142f4dc894639d94f75e232329b0",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "CodeCompass计划/tracking/TASK_BOARD.md",
+      "bytes": 6107,
+      "sha256": "f216380aaa3fb494dc7d4361d5f1335e8600dc653130cd03831e582c81bb6b69",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/A-D05前置成果与自行验收.md",
+      "bytes": 4803,
+      "sha256": "0c0e692e856fe4769bb7fdc645f54dce50422be2cb075dd95198e42ea94bd2dc",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/handoffs/A-D05-preflight.md",
+      "bytes": 3657,
+      "sha256": "0e7bb4db7e81fe42b48a3bd745248ddd2a8555b507837cc38df67a1da87f00cc",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/handoffs/A_账号接力快照_20261017.json",
+      "bytes": 2733,
+      "sha256": "7efd64fd792d985e5a6830b7454a848286c001f341b56f832e3a78bf7a791491",
+      "already_on_remote_handoff_branch": true
+    },
+    {
+      "path": "docs/A/handoffs/A_账号接力总交接_20261017.md",
+      "bytes": 25310,
+      "sha256": "85195cbff15a1453aa29568986282966ba6ec9f298530f1377722a1e5a21d527",
+      "already_on_remote_handoff_branch": true
+    },
+    {
+      "path": "docs/A/session_A-D05-preflight.json",
+      "bytes": 950,
+      "sha256": "e4b2a7de76ca84893d2a9487840bcd18ebd6d3090ec7ec5254111b281d508097",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/开发日志.md",
+      "bytes": 10234,
+      "sha256": "3daaecd46a70d72690b4ed8e48c1e02c2a723c84068ea3c640ba012b88baa164",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/每日验收规则.md",
+      "bytes": 1889,
+      "sha256": "6ac83886db46d661738f5b17374b18194ecc51ac787d9c72010ab2d85b524a3d",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/状态.md",
+      "bytes": 3260,
+      "sha256": "604777740a03ff2eba9c7386afd7558f59bded5e63013f7fbf78952b773b3194",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/A/贡献记录.md",
+      "bytes": 2466,
+      "sha256": "6babdff9157574afe2bf943c6d7607c96b7fc30af7a31a6449a2cb986e904d92",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "docs/joint/A-D05-preflight-reception.md",
+      "bytes": 926,
+      "sha256": "a109da27beb6704b2d29c0c34467de38ffa2736ed5caa97465916568285f0ed3",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.json",
+      "bytes": 50351,
+      "sha256": "5dba934b83acb7f570965649108a0944d7e4acfce4c642e7d508e9801a911316",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/A04-mechanism-audit.stdout.log",
+      "bytes": 345,
+      "sha256": "dfbc2c65ab11af82b1a1294e7ac451dc253ca7a325548ce0a8145bf01f9a7c1d",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.json",
+      "bytes": 13897,
+      "sha256": "4d00960f5579b8b240a91c9394b0435a1b5660fb490898423959e83111b91ff1",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/B04-live-audit.stdout.log",
+      "bytes": 158,
+      "sha256": "a456cc26e4664ee4206ca4cd04ddfb687b9f76562d719ebe5524fce092eec7b2",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/demo-A04.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/demo-A04.stdout.log",
+      "bytes": 610,
+      "sha256": "6ff583ef5fef5f1c1a956f0609246bec3fb353755b84fa34f667cc92dd30347f",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-check.stdout.log",
+      "bytes": 31,
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-freeze.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pip-freeze.stdout.log",
+      "bytes": 255,
+      "sha256": "3ad751314f3b0c5da7181e1e869096b13647934dd26783165a09c0395dde8aeb",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pytest.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/pytest.stdout.log",
+      "bytes": 265,
+      "sha256": "da323f616478ed39043720b10edfee04c38a353243ace3a857c867ec9d2290a7",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/registration.json",
+      "bytes": 6840,
+      "sha256": "601efc0263dcf46777ddebb7e9326c3438f21d1e0614d255a41620c181fb54b8",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/release_gate.json",
+      "bytes": 299,
+      "sha256": "2309042b5508b245e977b5466170851bea354283d9428e2e65e187fd721aa6a8",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/sample.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/sample.stdout.log",
+      "bytes": 1212,
+      "sha256": "558950af4ba48550fa7407f4a6f7452e767a5f938708b44d8923d1bdf5f458b2",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/setup_and_inputs.json",
+      "bytes": 3689,
+      "sha256": "a9f5b098992c3f23dec1bf23c357529cbb5919e11c4bad5eba5de23cd3af4841",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "experiments/A/A-D05-preflight-20261017-01/source_inputs.json",
+      "bytes": 3810,
+      "sha256": "5d65d8bf8dabd5a1d7cb7be1b0257117314f7c01c1185f6a7e25cd69c14317bd",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "report_materials/A/figure_manifest.json",
+      "bytes": 13271,
+      "sha256": "05c134d9f95db3b0399ab3172cc2d18609a29e6ad2dffe92582972a1f0295380",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "report_materials/A/素材索引.md",
+      "bytes": 2205,
+      "sha256": "d4632813aedf266b20690fcc7185e1661ab919fce5d9ed18698e1b82142aadb6",
+      "already_on_remote_handoff_branch": false
+    },
+    {
+      "path": "scripts/A/accept_b04.py",
+      "bytes": 4368,
+      "sha256": "e1322db34e8ea29c62511a3c0b575c8281a2dd74f6b57a66666cefc7ad0cbf76",
+      "already_on_remote_handoff_branch": false
+    }
+  ],
+  "total_bytes": 181305,
+  "inspected": "New delta only: A-authored task docs, offline logs/audits, public source hashes and metadata. No keys, databases, private answers, environments, or B personal records. Two restored account documents already byte-identical on origin A handoff branch.",
+  "automatic_approval": "First push rejected; no remote write occurred. Verified payload and destination before any retry."
+}
