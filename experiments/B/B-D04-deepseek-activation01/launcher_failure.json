@@ -1,0 +1,8 @@
+{
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/B/run_deepseek_d04.ps1 -RunId B-D04-deepseek-live01",
+  "exit_code": 1,
+  "observed_error": "ConvertTo-SecureString: Input string was not in a correct format",
+  "stage": "before Python or API transport",
+  "api_calls": 0,
+  "repair": "Strip encrypted-file trailing newline before DPAPI decode; keep encrypted file unchanged"
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "B-D04-deepseek-live01",
+  "source_sha256": "bd71e44f1ee585fe07f00785db30329ac6741298e1401c173da029f8370a3b38",
+  "audience": "provisional competition report",
+  "dpi": 300,
+  "units": "proxy_cost, source lines; coverage fraction; hard relation violations fraction",
+  "sample": "2 fixed real tasks x 2 synthetic profiles; no human participants",
+  "missing": "zero hard-edge denominator => NA; unattempted B1 => NA",
+  "transformations": "Select all fixed_real_task rows; exclude explicitly synthetic mechanism rows from this real-task table; no smoothing/normalization",
+  "uncertainty": "not an estimator or population inference; no intervals applicable",
+  "formal_study_ready": false
+}

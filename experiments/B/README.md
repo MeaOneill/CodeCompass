@@ -31,3 +31,5 @@ B-D03：integration02为现行数据源（真实源码/任务 + 模拟回答 + �
 B-D04：现行comparison03为6组开发比较（真实2题×2模拟画像+shared/cost_gap夹具）；B1未配置，六槽NOT_CONFIGURED且指标NA。fixtures01为7种transport软件挑战+手算，真实调用0，不能并入真实B1结果。accept01保留初次A审计路径拒绝exit2和重试通过；verification01记录160测试/九命令期待退出。旧comparison01/02与初图保留，非最终哈希验收。当前/恢复复检按交接收尾更新。
 
 B-D04最终复检verification02九命令均符合预期；已提交01404b8同机新clone恢复到replay01，160测试/九命令/24槽重算一致，原始记录随分支共享。最终放行见closeout/recovery_gate.json。B1真实未运行与工程通过分别记录，不冒充强LLM对照完成。
+
+B-D04最新真实B1：B-D04-deepseek-live01，6次真实HTTP响应，raw/calls/usage/完整public_context保留，24槽均运行；不与fixture transport样例混同。activation01保存解密前失败、2次PS环境回归失败和最终167通过、无额外调用的响应/费用篡改审计。费用使用高峰/缓存未命中保守费率，不当作实际账单。

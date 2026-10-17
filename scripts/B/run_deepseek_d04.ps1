@@ -3,7 +3,8 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 $keyPath = Join-Path $projectRoot 'tmp/deepseek-key.dpapi'
 if (-not (Test-Path -LiteralPath $keyPath)) { throw 'Encrypted key missing. Run scripts/B/set_deepseek_key.ps1 in your terminal first.' }
-$secret = Get-Content -Raw -LiteralPath $keyPath | ConvertTo-SecureString
+$encrypted = (Get-Content -Raw -LiteralPath $keyPath).Trim()
+$secret = ConvertTo-SecureString -String $encrypted
 $pointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secret)
 $priorKey = $env:DEEPSEEK_API_KEY
 try {

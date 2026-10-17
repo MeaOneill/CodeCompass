@@ -1,0 +1,27 @@
+........................................................................ [ 43%]
+....................................................F................... [ 86%]
+.......................                                                  [100%]
+================================== FAILURES ===================================
+________ test_launcher_decodes_trailing_newline_without_secret_output _________
+
+    def test_launcher_decodes_trailing_newline_without_secret_output():
+        import subprocess
+        code="""$ErrorActionPreference='Stop'; $s=ConvertTo-SecureString 'fixture-only-not-a-real-key' -AsPlainText -Force; $cipher=($s | ConvertFrom-SecureString)+\"`r`n\"; $decoded=ConvertTo-SecureString -String $cipher.Trim(); if($decoded.Length -ne $s.Length){throw 'roundtrip failed'}; Write-Output 'DPAPI_NEWLINE_ROUNDTRIP_OK'"""
+        r=subprocess.run(['powershell','-NoProfile','-Command',code],capture_output=True,text=True,timeout=30)
+>       assert r.returncode==0,r.stderr
+E       AssertionError: ConvertTo-SecureString : The 'ConvertTo-SecureString' command was found in the module 'Microsoft.PowerShell.Security', 
+E         but the module could not be loaded. For more information, run 'Import-Module Microsoft.PowerShell.Security'.
+E         At line:1 char:35
+E         + $ErrorActionPreference='Stop'; $s=ConvertTo-SecureString 'fixture-onl ...
+E         +                                   ~~~~~~~~~~~~~~~~~~~~~~
+E             + CategoryInfo          : ObjectNotFound: (ConvertTo-SecureString:String) [], ParentContainsErrorRecordException
+E             + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+E          
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-Command', '$ErrorActionPreference=\'Stop\'; $s=ConvertTo-SecureSt...ing:String) [], ParentContainsErrorRecordException\n    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule\n \n").returncode
+
+tests\B\test_deepseek_d04.py:75: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/B/test_deepseek_d04.py::test_launcher_decodes_trailing_newline_without_secret_output
+1 failed, 166 passed in 11.22s

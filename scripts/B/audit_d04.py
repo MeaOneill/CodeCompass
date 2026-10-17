@@ -10,7 +10,7 @@ from PIL import Image
 from jsonschema import Draft202012Validator
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'));sys.path.insert(0,str(ROOT))
 from scripts.B.comparison.adapters import public_packet
-from scripts.B.comparison.b1 import digest
+from scripts.B.comparison.b1 import digest, cost_policy, parse_route
 from scripts.B.comparison.metrics import evaluate,aggregate
 from scripts.B.run_d04 import save
 
@@ -32,6 +32,48 @@ def audit_rows(root,rows,case_map):
             assert row['metrics'] is None,'missing plan with metrics'
         if not row['attempted']:
             assert row['execution_status'] in ('NOT_CONFIGURED','BUDGET_NOT_RUN','INPUT_LIMIT_NOT_RUN'),'invalid not-run'
+
+
+def audit_live_calls(rows,case_map,config,prompt):
+    """Saved responses only: no transport/model execution during audit."""
+    currency,prices=cost_policy(config['b1']);total=0;cost=0;unknown_cost=False
+    for row in rows:
+        if row['method']!='B1' or not row['attempted']:continue
+        assert row['B1_trace']['transport_is_fixture'] is False,'mock transport in live result'
+        context,_,_,_=public_packet(ROOT,case_map[row['case_id']])
+        expected_input=prompt+'\nCONTEXT_JSON\n'+json.dumps(context,ensure_ascii=False,sort_keys=True)
+        assert len(row['calls'])<=2,'too many repairs'
+        for i,call in enumerate(row['calls']):
+            total+=1
+            assert call['request_hash']==digest(call['request']),'request hash mismatch'
+            assert call['request']['input']==expected_input,'different context or repair help'
+            assert call['kind']==('initial' if i==0 else 'format_repair'),'repair record'
+            if 'response' not in call:
+                assert row['plan'] is None and row['execution_status'] not in ('FEASIBLE','ALGORITHM_INVALID','NO_FEASIBLE_FOUND'),'missing response scored'
+                assert call['estimated_cost_'+currency.lower()] is None,'unknown fee filled in'
+                unknown_cost=True
+                continue
+            assert call.get('quarantined') is False,'quarantined response cannot be scored'
+            raw=call['response']
+            assert hashlib.sha256(json.dumps(raw,ensure_ascii=False).encode()).hexdigest()==call['raw_sha256'],'response hash mismatch'
+            assert raw.get('model')==call['model_returned'],'recorded model mismatch'
+            assert call['usage']==raw['usage'],'usage changed'
+            if not isinstance(raw.get('usage'),dict):
+                assert row['plan'] is None and call['estimated_cost_'+currency.lower()] is None,'missing usage scored'
+                unknown_cost=True
+                continue
+            estimate=(raw['usage']['input_tokens']*prices['input']+raw['usage']['output_tokens']*prices['output'])/1e6
+            assert call['estimated_cost_'+currency.lower()]==estimate,'fee mismatch'
+            cost+=estimate
+            text=''.join(p['text'] for item in raw['output'] if item.get('type')=='message' for p in item.get('content',[]) if p.get('type')=='output_text')
+            expected_input=expected_input+'\nFORMAT_ONLY_REPAIR: Return {"ordered_units": [string,...]} only. Preserve the intended order. Prior output:\n'+text
+        if row['execution_status'] in ('FEASIBLE','ALGORITHM_INVALID','NO_FEASIBLE_FOUND'):
+            assert raw['model']==config['b1']['model'],'different model scored'
+            assert parse_route(text)==row['plan']['ordered_units'],'recorded route differs from actual model text'
+            assert raw['status']=='completed','incomplete response scored'
+        estimates=[c['estimated_cost_'+currency.lower()] for c in row['calls']]
+        assert row['api_cost_'+currency.lower()]==(None if any(v is None for v in estimates) else sum(estimates)),'row fee mismatch'
+    return {'calls':total,'currency':currency,'conservative_token_cost':None if unknown_cost else cost,'known_cost_subtotal':cost,'billing_cost':None}
 
 
 def main():
@@ -60,6 +102,9 @@ def main():
         config=load(source/'config.json')
         if not config['b1']['enabled']:
             check('B1 not invented',summary['B1_live_calls']==0 and summary['aggregates']['B1']['attempted']==0 and summary['aggregates']['B1']['failure_rate'] is None)
+        elif summary['B1_live_calls']:
+            fees=audit_live_calls(rows,cases,config,(source/'prompt.txt').read_text(encoding='utf-8'))
+            check('real response/usage/route/input/fees replay',fees['calls']==summary['B1_live_calls'])
         with (source/'T02.csv').open(encoding='utf-8',newline='') as f:table=list(csv.DictReader(f))
         check('T02 retains all scheduled rows',len(table)==len(rows))
         indexed={(r['case_id'],r['method']):r for r in rows}
@@ -74,6 +119,7 @@ def main():
         check('hand-derived independent counts',all(hand['actual'][k]==v for k,v in hand['manual_expected'].items()))
         check('real-source comparison is exploratory',not summary['formal_study_ready'] and summary['human_profiles']==0 and summary['learning_effect']=='NOT_MEASURED')
         for figure in load(a.figures/'figure_manifest.json'):
+            check('figure belongs to audited run',figure['run_id']==summary['run_id'])
             for row in figure['files']:check('figure/input '+row['path'],hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()==row['sha256'])
             with Image.open(ROOT/figure['png']) as im:check('300dpi '+figure['figure_id'],all(abs(d-300)<.1 for d in im.info['dpi']))
             svg=ET.parse(ROOT/figure['svg']).getroot();check('native SVG '+figure['figure_id'],bool(svg.findall('{http://www.w3.org/2000/svg}text')) and not svg.findall('.//{http://www.w3.org/2000/svg}image'))

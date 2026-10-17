@@ -276,5 +276,131 @@
         "sha256": "99d939547b58511ff4d03695810426ae37bee49d362a7b52fc0a246dea6057b7"
       }
     ]
+  },
+  {
+    "figure_id": "T02_development",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-live01",
+    "png": "report_materials/B/B-D04-deepseek-live01/T02_development.png",
+    "svg": "report_materials/B/B-D04-deepseek-live01/T02_development.svg",
+    "caption": "真实源码开发比较/模拟画像；B1真实API已运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "Codex Agent B viewed actual PNG: legible, no clipped text; not independent human review",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-live01 --output report_materials/B/B-D04-deepseek-live01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/summary.json",
+        "sha256": "bd71e44f1ee585fe07f00785db30329ac6741298e1401c173da029f8370a3b38"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/T02.csv",
+        "sha256": "d90b4ad00ab6aa2fd870b96d18b1f75205a807ecdcb95af8e0e77a222b6f4504"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/render_config.json",
+        "sha256": "469d2c92593758563509e2852ae01b4c85e5fd776f89360311388fe028a9ebd5"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "f25dcdb0456f3b0f3369e43c54d0b11aa42e4c73c8b78ce95960fcb6e13929e4"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/T02_development.png",
+        "sha256": "0d8d73ee752bb1d243e8b45b2add900be97088ee2584d7f7df9b0653bbee079f"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/T02_development.svg",
+        "sha256": "a78396777dfe30e2dc2139ca99683f3e326f18529f3e3bdcb7d56a5bbd898aec"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_001_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-live01",
+    "png": "report_materials/B/B-D04-deepseek-live01/task_001_routes.png",
+    "svg": "report_materials/B/B-D04-deepseek-live01/task_001_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1真实API已运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "Codex Agent B viewed actual PNG: legible, no clipped text; not independent human review",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-live01 --output report_materials/B/B-D04-deepseek-live01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/summary.json",
+        "sha256": "bd71e44f1ee585fe07f00785db30329ac6741298e1401c173da029f8370a3b38"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/T02.csv",
+        "sha256": "d90b4ad00ab6aa2fd870b96d18b1f75205a807ecdcb95af8e0e77a222b6f4504"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/render_config.json",
+        "sha256": "469d2c92593758563509e2852ae01b4c85e5fd776f89360311388fe028a9ebd5"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "f25dcdb0456f3b0f3369e43c54d0b11aa42e4c73c8b78ce95960fcb6e13929e4"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/task_001_routes.png",
+        "sha256": "bf58cfd5fa310e895ff0e808e61c5e5f47c0e3f35f384c0ae282cd8d6d22ffc2"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/task_001_routes.svg",
+        "sha256": "93a7138c68d2f34bba49e03e6a5e24fc72873d2e0c74dcafb339ce15fe3848e3"
+      }
+    ]
+  },
+  {
+    "figure_id": "task_002_routes",
+    "task_id": "B-D04",
+    "run_id": "B-D04-deepseek-live01",
+    "png": "report_materials/B/B-D04-deepseek-live01/task_002_routes.png",
+    "svg": "report_materials/B/B-D04-deepseek-live01/task_002_routes.svg",
+    "caption": "真实源码开发比较/模拟画像；B1真实API已运行；非效果结果",
+    "units": "proxy_cost / fractions",
+    "human_sample_size": 0,
+    "visual_review": "Codex Agent B viewed actual PNG: legible, no clipped text; not independent human review",
+    "command": "python scripts/B/draw_d04.py --source experiments/B/B-D04-deepseek-live01 --output report_materials/B/B-D04-deepseek-live01",
+    "files": [
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/summary.json",
+        "sha256": "bd71e44f1ee585fe07f00785db30329ac6741298e1401c173da029f8370a3b38"
+      },
+      {
+        "path": "experiments/B/B-D04-deepseek-live01/T02.csv",
+        "sha256": "d90b4ad00ab6aa2fd870b96d18b1f75205a807ecdcb95af8e0e77a222b6f4504"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/render_config.json",
+        "sha256": "469d2c92593758563509e2852ae01b4c85e5fd776f89360311388fe028a9ebd5"
+      },
+      {
+        "path": "scripts/B/draw_d04.py",
+        "sha256": "f25dcdb0456f3b0f3369e43c54d0b11aa42e4c73c8b78ce95960fcb6e13929e4"
+      },
+      {
+        "path": "scripts/B/draw_d02_materials.py",
+        "sha256": "86c418c75253ffb0b53752d2e39b0680417574da2ca694e0454a1f2ed47ec409"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/task_002_routes.png",
+        "sha256": "fc7207663bfef9e766f39b905a9f5c1f6c0af191bbd7470381d5e12898720cac"
+      },
+      {
+        "path": "report_materials/B/B-D04-deepseek-live01/task_002_routes.svg",
+        "sha256": "09b5f4b15f6cfdf20044654da074207db635e3f15235f39a022eead391de8fbe"
+      }
+    ]
   }
 ]

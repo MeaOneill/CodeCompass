@@ -66,3 +66,15 @@ def test_deepseek_wire_request_fixture_has_no_key_in_payload(monkeypatch):
             return Response()
     monkeypatch.setattr(module,'build_opener',lambda *args:Opener())
     assert api_transport({'model':'deepseek-flash','input':'fixture'},c)['model']=='deepseek-flash'
+
+
+def test_launcher_decodes_trailing_newline_without_secret_output():
+    import subprocess,os
+    if os.name!='nt':pytest.skip('Windows DPAPI integration test')
+    code="""$ErrorActionPreference='Stop'; $s=ConvertTo-SecureString 'fixture-only-not-a-real-key' -AsPlainText -Force; $cipher=($s | ConvertFrom-SecureString)+\"`r`n\"; $decoded=ConvertTo-SecureString -String $cipher.Trim(); if($decoded.Length -ne $s.Length){throw 'roundtrip failed'}; Write-Output 'DPAPI_NEWLINE_ROUNDTRIP_OK'"""
+    # Python inherits PowerShell 7 module paths, unlike a nested PS shell.
+    # Pin Windows PowerShell's own security module path for this subprocess.
+    env={**os.environ,'PSModulePath':str(Path(os.environ['WINDIR'])/'System32/WindowsPowerShell/v1.0/Modules')}
+    r=subprocess.run(['powershell','-NoProfile','-Command',code],env=env,capture_output=True,text=True,timeout=30)
+    assert r.returncode==0,r.stderr
+    assert r.stdout.strip()=='DPAPI_NEWLINE_ROUNDTRIP_OK'
