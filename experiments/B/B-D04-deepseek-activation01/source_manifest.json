@@ -1,0 +1,22 @@
+[
+  {
+    "path": "scripts/B/audit_d04.py",
+    "sha256": "b13dd14f2550c174cad4c2d196ca097f572aca466f6649772a35086c19e8b8c4",
+    "frozen_copy": "experiments/B/B-D04-deepseek-activation01/code_snapshot/scripts/B/audit_d04.py"
+  },
+  {
+    "path": "scripts/B/draw_d04.py",
+    "sha256": "f25dcdb0456f3b0f3369e43c54d0b11aa42e4c73c8b78ce95960fcb6e13929e4",
+    "frozen_copy": "experiments/B/B-D04-deepseek-activation01/code_snapshot/scripts/B/draw_d04.py"
+  },
+  {
+    "path": "scripts/B/run_deepseek_d04.ps1",
+    "sha256": "f3330542970e7e46fa1df183ae4b21bd8e3c41ffdfceb3e249d4ab5749522af2",
+    "frozen_copy": "experiments/B/B-D04-deepseek-activation01/code_snapshot/scripts/B/run_deepseek_d04.ps1"
+  },
+  {
+    "path": "tests/B/test_deepseek_d04.py",
+    "sha256": "c519fda039d0684b94c66b28e1cc6877384ab4fff23694c7f4d0d47ea5561d91",
+    "frozen_copy": "experiments/B/B-D04-deepseek-activation01/code_snapshot/tests/B/test_deepseek_d04.py"
+  }
+]

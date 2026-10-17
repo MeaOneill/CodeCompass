@@ -19,11 +19,11 @@
   "formal_study_ready": false,
   "independent_human_review": "NOT_REVIEWED",
   "next_day_allowed": true,
-  "git_sync": "LIVE_RECEIPT_PENDING_PUSH",
+  "git_sync": "LIVE_CHECKPOINT_HEAD_REMOTE_EQUAL",
   "owner_note": "B03 user-generated untracked records preserved; A04 source files not modified",
   "recovery_check": "PASSED_SAME_MACHINE_COMMITTED_CLONE",
-  "verified_checkpoint": "01404b891b8f01d1bca7b60885e5d7485fab406b",
-  "last_heartbeat": "2026-10-17T12:19:13.226538+08:00",
+  "verified_checkpoint": "776b6ecb00970c48da0ca2a6cead8a28421d6fc1",
+  "last_heartbeat": "2026-10-17T12:22:29.321776+08:00",
   "B1_service": "https://api.deepseek.com",
   "B1_model": "deepseek-flash",
   "B1_authorized_budget_cny": 5,
@@ -34,5 +34,6 @@
   "tests": 167,
   "B1_conservative_estimated_cost_cny": 0.061746,
   "B1_actual_bill_cny": null,
-  "B1_budget_reserved_cny": 1.5
+  "B1_budget_reserved_cny": 1.5,
+  "B1_saved_response_recovery": "PASSED_SAME_MACHINE_COMMITTED_CLONE"
 }
