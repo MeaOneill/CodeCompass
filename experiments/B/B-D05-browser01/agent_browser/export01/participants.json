@@ -1,0 +1,14 @@
+[
+  {
+    "participant": "f36b00dcb9660b53d05aef3e",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  }
+]

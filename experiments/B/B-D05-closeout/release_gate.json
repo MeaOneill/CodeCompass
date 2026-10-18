@@ -1,0 +1,30 @@
+{
+  "task_id": "B-D05",
+  "owner": "成员B",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "actual_time": "2026-10-18T13:10:29.844159+08:00",
+  "planned_day": "2026-10-19",
+  "actual_day": "2026-10-18",
+  "branch": "codex/B-D05-interface",
+  "base_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+  "status": "PAUSED",
+  "software_status": "READY_FOR_REVIEW",
+  "reason": "PENDING_HUMAN_MANUAL_DEVELOPMENT_FLOW",
+  "tests": 234,
+  "technical_checks_passed": true,
+  "human_manual_acceptance": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "next_day_allowed": false,
+  "model_api_calls": 0,
+  "private_data": "ignored tmp SQLite only",
+  "git_sync": "PENDING_CHECKPOINT",
+  "agent_browser_sessions": 1,
+  "agent_browser_events": 11,
+  "fixture_sessions": 8,
+  "manual_sessions": 0,
+  "remaining": [
+    "one human manual development interaction with valid event/timing audit"
+  ]
+}

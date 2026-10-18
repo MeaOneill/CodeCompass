@@ -1,0 +1,29 @@
+const $=id=>document.getElementById(id);let state=null,busy=false;
+const token=document.querySelector('meta[name=session-token]').content;
+const terminal=s=>['SUBMITTED','WITHDRAWN','TIMED_OUT','FAILED'].includes(s.status);
+async function call(path,data){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-Session-Token':token},body:JSON.stringify(data)});const d=await r.json();if(!r.ok)throw Error(d.error||'请求被拒绝');return d;}
+async function act(action,payload={}){if(busy)return;busy=true;$('error').textContent='';try{state=await call('/api/action',{session_id:state.session_id,action,payload});render();}catch(e){$('error').textContent=e.message;}finally{busy=false;}}
+function text(id,t){$(id).textContent=t;}
+function render(){if(!state)return;localStorage.setItem('B05-session',state.session_id);localStorage.setItem('B05-participant',state.participant);
+ $('setup').hidden=true;$('session').hidden=false;text('taskTitle',state.task.title);text('identity',`${state.method} · ${state.actor==='human_manual'?'真人手动开发操作':'Agent 自动化开发操作'} · 匿名会话`);
+ const n=state.elapsed_seconds;text('timer',n===null?'时间缺失':`${String(Math.floor(n/60)).padStart(2,'0')}:${String(Math.floor(n%60)).padStart(2,'0')}`);text('state',state.status);text('pause',state.status==='PAUSED'?'恢复':'暂停');
+ $('pause').disabled=terminal(state);$('withdraw').disabled=terminal(state);['read','quiz','complete','answer','submit','showSubmit'].forEach(id=>$(id).disabled=state.status!=='ACTIVE');
+ $('quiz').disabled=state.status!=='ACTIVE'||state.quiz_done||state.completed.length===0||state.phase==='quiz';$('complete').disabled=state.status!=='ACTIVE'||!state.route.length;
+ $('route').replaceChildren();for(const [uid,done] of [...state.completed.map(x=>[x,true]),...state.route.map(x=>[x,false])]){const li=document.createElement('li');li.textContent=uid;li.className=done?'done':'current';$('route').append(li);}
+ text('budget',`已支付 ${state.spent} / 100 代理单位（不是分钟）`);text('limit','本轮上限 25 分钟；暂停时隐藏材料，暂停时间不计。');text('records',`${state.events} 条事件 · 已持久化`);text('limitations',state.limitation+(state.missing.length?' 时间标记：'+state.missing.join(', '):''));
+ ['reading','quizPanel','feedback','submission','finished'].forEach(id=>$(id).hidden=true);
+ if(terminal(state)){$('finished').hidden=false;text('finishText',`状态：${state.status}；评分：${state.score_status}。提交不等于成功；正式研究未开展。`);return;}
+ if(state.status==='PAUSED'){text('records',`${state.events} 条事件 · 已暂停，点击恢复继续`);return;}
+ text('source',`boltons / commit ${state.task.repo_commit}`);$('materials').replaceChildren();for(const m of state.materials){const p=document.createElement('p');p.className='muted';p.textContent=`${m.source_span.path}:${m.source_span.start_line}–${m.source_span.end_line}`;const pre=document.createElement('pre');pre.textContent=m.text;$('materials').append(p,pre);}
+ if(state.phase==='quiz'&&state.quiz){$('quizPanel').hidden=false;text('question',state.quiz.prompt);text('questionCode',state.quiz.code);
+  const selected=document.querySelector('input[name=choice]:checked')?.value;$('choices').replaceChildren();state.quiz.choices.forEach((t,i)=>{const label=document.createElement('label'),input=document.createElement('input');input.type='radio';input.name='choice';input.value=i;input.checked=selected===String(i);label.append(input,document.createTextNode(t));$('choices').append(label);});
+ }else if(state.phase==='feedback'){$('feedback').hidden=false;text('outcome',state.outcome==='pass'?'短测通过，已记录独立证据':'短测未通过，已保留失败证据');$('evidence').replaceChildren();for(const row of state.feedback.after){const before=state.feedback.before.find(x=>x.concept_id===row.concept_id)||{alpha:1,beta:1,lower_bound:.1};const div=document.createElement('div');div.className='evidenceRow';div.textContent=`${row.concept_id}：Beta(${before.alpha},${before.beta}) → Beta(${row.alpha},${row.beta})；保守下界 ${before.lower_bound.toFixed(3)} → ${row.lower_bound.toFixed(3)}`;$('evidence').append(div);}text('routeChange',`剩余路线：${state.feedback.before_route.join(' → ')||'无'} → [${state.feedback.after_route.join(' → ')||'无'}]`);
+ }else{$('reading').hidden=false;}
+}
+$('start').onclick=async()=>{if(busy)return;busy=true;try{state=await call('/api/start',{task:$('task').value,method:$('method').value,participant:localStorage.getItem('B05-participant')});render();await act('read');}catch(e){text('error',e.message);}finally{busy=false;}};
+$('read').onclick=()=>act('read');$('complete').onclick=()=>act('complete_reading');$('quiz').onclick=()=>act('quiz');$('pause').onclick=()=>act(state.status==='PAUSED'?'resume':'pause');$('withdraw').onclick=()=>act('withdraw');
+$('answer').onclick=()=>{const selected=document.querySelector('input[name=choice]:checked');if(!selected)return text('error','请先选择一个答案');act('answer',{choice:Number(selected.value)});};
+$('showSubmit').onclick=()=>{['reading','quizPanel','feedback','finished'].forEach(id=>$(id).hidden=true);$('submission').hidden=false;};$('submit').onclick=()=>act('submit',{response:$('response').value});
+$('newSession').onclick=()=>{state=null;localStorage.removeItem('B05-session');$('session').hidden=true;$('setup').hidden=false;};
+async function restore(){const id=localStorage.getItem('B05-session');if(!id)return;try{const r=await fetch('/api/session?id='+encodeURIComponent(id));const d=await r.json();if(!r.ok)throw Error(d.error);state=d;render();}catch(e){text('error',e.message);}}
+restore();setInterval(async()=>{if(!state||busy||terminal(state))return;try{const r=await fetch('/api/session?id='+encodeURIComponent(state.session_id));if(r.ok){const d=await r.json();const changed=d.status!==state.status;state=d;if(changed)render();else{text('timer',d.elapsed_seconds===null?'时间缺失':`${String(Math.floor(d.elapsed_seconds/60)).padStart(2,'0')}:${String(Math.floor(d.elapsed_seconds%60)).padStart(2,'0')}`);}}}catch(e){text('error','暂时无法连接服务器；保留会话，恢复连接后会核对计时。');}},2000);

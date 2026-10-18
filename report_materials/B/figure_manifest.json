@@ -402,5 +402,175 @@
         "sha256": "09b5f4b15f6cfdf20044654da074207db635e3f15235f39a022eead391de8fbe"
       }
     ]
+  },
+  {
+    "figure_id": "F03_collection_flow",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "structural_diagram",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1700,
+      1000
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "python scripts/B/draw_d05.py --source experiments/B/B-D05-browser01/agent_browser/export01 --output report_materials/B/B-D05-interface01",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F03_collection_flow.png",
+        "sha256": "78265b225889161733762d991e007da08494442a9e0505d9f744e95ac0a1a60e"
+      },
+      {
+        "path": "report_materials/B/B-D05-interface01/F03_collection_flow.svg",
+        "sha256": "aee30ee3b0137c248dda98eff3da7d8cd16bbee466965d1b4830c924dca33553"
+      }
+    ]
+  },
+  {
+    "figure_id": "F04_evidence_route",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "agent_development_mechanism",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1700,
+      1020
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "python scripts/B/draw_d05.py --source experiments/B/B-D05-browser01/agent_browser/export01 --output report_materials/B/B-D05-interface01",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F04_evidence_route.png",
+        "sha256": "daf1657eaf3ef91222dd09ccd3022411ed2fcbfd4b85ada82c9c19f793b1cbaf"
+      },
+      {
+        "path": "report_materials/B/B-D05-interface01/F04_evidence_route.svg",
+        "sha256": "3bd213a5ac7ad41a4b0f7c445818e7de5d1bcd530a74e63fa4c65ce6f3384cb0"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11_reading",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "unaltered_actual_browser_screenshot",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1265,
+      1249
+    ],
+    "dpi": null,
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "cua browserTab.screenshot({fullPage:true})",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F11_reading.png",
+        "sha256": "2f8322e8cdc8f9e430e6721df8f70cd74a01c4b8ced1ca0d7055a94bbf78524d"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11_quiz",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "unaltered_actual_browser_screenshot",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1265,
+      1270
+    ],
+    "dpi": null,
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "cua browserTab.screenshot({fullPage:true})",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F11_quiz.png",
+        "sha256": "f077ad43a40196ab183f37528e9df8f964dc419b2941b54d8be028e348de8aac"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11_feedback",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "unaltered_actual_browser_screenshot",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1265,
+      1023
+    ],
+    "dpi": null,
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "cua browserTab.screenshot({fullPage:true})",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F11_feedback.png",
+        "sha256": "46bff4c9ae086c9233fd0f1baa0faa19c41c1502edca6e6e5855ca605fb6d219"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11_submitted",
+    "task_id": "B-D05",
+    "run_id": "B-D05-browser01",
+    "evidence_type": "unaltered_actual_browser_screenshot",
+    "human_sample_size": 0,
+    "source_commit": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+    "source_versions": "browser source frozen in experiments/B/B-D05-browser01/source_snapshot; diagram script SHA below",
+    "source": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+    "source_hash": "27808213589e9e698138526d357bfce087a5c0c539c8dd0b294e5d0dfdfc57c6",
+    "pixels": [
+      1265,
+      1023
+    ],
+    "dpi": null,
+    "screenshot_processing": "none; full page; same task/session and unchanged viewport/zoom; anonymous label shown",
+    "command": "cua browserTab.screenshot({fullPage:true})",
+    "caption": "开发结构/Agent机制验证；不支持真人学习收益。",
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_IMAGES",
+    "files": [
+      {
+        "path": "report_materials/B/B-D05-interface01/F11_submitted.png",
+        "sha256": "e0b367c9de81b7bda741936dcfc6cb0dee0d7e89d5d4c2d299f956eed41cc4ca"
+      }
+    ]
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "task_id": "B-D05",
+  "run_id": "B-D05-browser01",
+  "owner": "B",
+  "executor": "Codex Agent B",
+  "actor": "agent_browser",
+  "machine": "\u7cef\u7cef",
+  "planned_date": "2026-10-19",
+  "actual_date": "2026-10-18",
+  "base_sha": "7a2a268cd3122abe9165a78b45b45cddf0a18515",
+  "source_note": "working changes identified by frozen byte hashes",
+  "command": "python scripts/B/serve_d05.py --port 8766 --actor agent_browser --database tmp/B-D05-agent-browser01.sqlite3",
+  "api_calls": 0,
+  "human_manual_sessions": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "screenshot_note": "actual browser full-page screenshots; same task/session, unchanged zoom/viewport; no personal identity displayed"
+}

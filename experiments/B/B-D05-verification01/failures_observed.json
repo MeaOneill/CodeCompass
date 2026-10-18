@@ -1,0 +1,15 @@
+{
+  "record_origin": "earlier tool output; not a rerun",
+  "failures": [
+    {
+      "command": "pytest tests/B/test_interface_d05.py first run",
+      "result": "18 passed, 1 HTTP test blocked by sandbox socket permissions",
+      "resolved_by": "authorized loopback test execution, 19 then 234 passed"
+    },
+    {
+      "command": "A audit initial output to experiments/B",
+      "result": "rejected: Unique output inside experiments/A required",
+      "resolved_by": "experiments/A/B-D05-accept-A05-01.json"
+    }
+  ]
+}

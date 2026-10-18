@@ -1,0 +1,30 @@
+{
+  "run_id": "B-D05-browser01",
+  "actor": "agent_browser",
+  "human_sample_size": 0,
+  "prior": {
+    "alpha": 1,
+    "beta": 1,
+    "mean": 0.5,
+    "lower_bound": 0.1
+  },
+  "posterior": {
+    "alpha": 2,
+    "beta": 1,
+    "mean": 0.6666666666666666,
+    "lower_bound": 0.3162277660168379
+  },
+  "quantile": 0.1,
+  "mastery_threshold": 0.7,
+  "source_events": "experiments\\B\\B-D05-browser01\\agent_browser\\export01\\events.json",
+  "route_before": [
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "route_after": [
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "outcome": "pass",
+  "not_a_learning_effect": true
+}

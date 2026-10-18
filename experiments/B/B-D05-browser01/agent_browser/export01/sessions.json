@@ -1,0 +1,24 @@
+[
+  {
+    "session_id": "4421e16d5aa9381d637a3a81",
+    "participant": "f36b00dcb9660b53d05aef3e",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "agent_browser",
+    "status": "SUBMITTED",
+    "duration_seconds": 38.40600000000268,
+    "observed_seconds": 38.40600000000268,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "10de2551fca3ea999733180de044281252d47dadc32efcec5a14f6092e84727e",
+    "event_count": 11,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  }
+]

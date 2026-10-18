@@ -33,3 +33,7 @@ B-D04：现行comparison03为6组开发比较（真实2题×2模拟画像+shared
 B-D04最终复检verification02九命令均符合预期；已提交01404b8同机新clone恢复到replay01，160测试/九命令/24槽重算一致，原始记录随分支共享。最终放行见closeout/recovery_gate.json。B1真实未运行与工程通过分别记录，不冒充强LLM对照完成。
 
 B-D04最新真实B1：B-D04-deepseek-live01，6次真实HTTP响应，raw/calls/usage/完整public_context保留，24槽均运行；不与fixture transport样例混同。activation01保存解密前失败、2次PS环境回归失败和最终167通过、无额外调用的响应/费用篡改审计。费用使用高峰/缓存未命中保守费率，不当作实际账单。
+
+## B-D05 2026-10-18T13:10:29.844159+08:00
+
+成员B / Codex Agent B / 糯糯。从已验收A-D05 7a2a268开始codex/B-D05-interface。完成统一四方法开发UI、SQLite事务采集、服务器计时/暂停/超时/重启缺失、独立短测证据与A反馈接口、匿名导出/分组与独立审计；无A模块/契约/依赖锁修改。前置209测试；本轮234测试与五条验证命令exit0。8条明确夹具、1条真实Agent浏览器11事件，F03/F04与四张F11截图有来源。软件自审通过；独立人类审核未审核；真人手动流程未完成，任务PAUSED，不放行A-D06。新增API调用0。原始：experiments/B/B-D05-verification02、B-D05-browser01、report_materials/B/B-D05-interface01。

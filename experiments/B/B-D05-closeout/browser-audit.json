@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": 84,
+  "errors": [],
+  "sessions": 1,
+  "events": 11,
+  "complete_manual_flows": 0,
+  "manual_flow_passed": false,
+  "human_manual_sessions": 0,
+  "independent_human_review": "NOT_REVIEWED"
+}

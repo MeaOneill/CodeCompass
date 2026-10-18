@@ -1,0 +1,11 @@
+{
+  "run_id": "B-D05-browser01",
+  "script_sha256": "e5fa4f36df0132ae20b0726bda97825645d75a24e939fa7baaf44fc3970865bf",
+  "diagram_dpi": 300,
+  "renderer": "Existing B native SVG/Pillow Canvas",
+  "destination": "provisional competition report",
+  "transformations": "one explicitly selected agent session; posterior from independent scored evidence; no smoothing",
+  "uncertainty": "Beta 10% quantile; not a confidence interval or calibrated probability",
+  "missing": "human effects and final scores unavailable",
+  "figure_sample": "one agent operation, zero human sample"
+}

@@ -1,0 +1,1 @@
+{"engineering_passed": true, "runs": 768, "events": 1920, "negative_cost_comparisons_retained": 180, "formal_study_ready": false, "independent_human_review": "NOT_REVIEWED", "model_api_calls": 0, "exit_code": 0, "audit_script_sha256": "8afdbefccc89ac753c26bfeeed1b6148cbed81a214bb4969d68aa0a58ea8cc0d"}
