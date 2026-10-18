@@ -1,0 +1,14 @@
+{
+  "run_id": "A-D05-development01",
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+  "matplotlib_version": "3.10.1",
+  "figure_lock": "scripts/A/requirements_d05_figures.hashes.txt",
+  "selected_case_policy": "F04 uses predeclared default .7/16/0/2; all candidates shown separately, no best selected",
+  "missing": "NA never zero; unknown durations remain unknown",
+  "unit": "proxy_cost",
+  "human_n": 0,
+  "transformations": "no exclusions; deterministic small x-offset by configuration index only; zero origin and common y limits within task family, with 12% headroom",
+  "uncertainty": "none; repeated configuration points are not independent samples",
+  "destination": "internal development / competition draft, no publisher compliance claimed"
+}

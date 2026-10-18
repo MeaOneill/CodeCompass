@@ -279,6 +279,153 @@
       "unit": "proxy_cost; not minutes",
       "status": "A_agent_visual_reviewed_B_pending",
       "limitations": "14 structural fixtures and 2 real-task definitions with simulated profiles; no human outcomes; beam not generally optimal; real tasks tie"
+    },
+    {
+      "figure_id": "F03_adaptive_flow",
+      "run_id": "A-D05-development01",
+      "png": "report_materials/A/A-D05/A-D05-development01/F03_adaptive_flow.png",
+      "svg": "report_materials/A/A-D05/A-D05-development01/F03_adaptive_flow.svg",
+      "caption": "实现分支、预算与回退逻辑的结构说明；不是软件界面或实验收益图",
+      "files": [
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/F03_adaptive_flow.png",
+          "sha256": "d35169c7eb4ec45fe4dac15280e55ffc65bfa54c4e8a4bb0fb75fa1b0965dbbe"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/F03_adaptive_flow.svg",
+          "sha256": "27ec89445bf32cca8167b174b8a1364a60f03a013451e9c452ce3fb198ac8d6b"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/summary.json",
+          "sha256": "ba4abf2b7c5a81e4a5e78e3dc8f00ca665c6c71da4e3c3974616fc7f8ae6fc17"
+        },
+        {
+          "path": "scripts/A/draw_d05.py",
+          "sha256": "13b696146ac853bad772b8ac5224dc3acd6cad0899a2c2003346679a9495ff6a"
+        },
+        {
+          "path": "scripts/A/requirements_d05_figures.hashes.txt",
+          "sha256": "5fcfeec6c43fd5dd71595ab06df1eecc79ec6d2591b87e84accbd16d2dc51b73"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/render_config.json",
+          "sha256": "257e749fc5dd8558cebbbf8bf5fe84cfe039e1d38083f0dd3e9c1ad1a8985a33"
+        }
+      ],
+      "cost_unit": "proxy_cost; not minutes",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "command": [
+        "python",
+        "scripts/A/draw_d05.py",
+        "--run-id",
+        "A-D05-development01",
+        "--figure-deps",
+        "tmp\\D05-figure-deps"
+      ],
+      "visual_review": "Codex Agent A viewed actual exported PNG; legible, no clipped data/text; not independent human review"
+    },
+    {
+      "figure_id": "F04_feedback_pair",
+      "run_id": "A-D05-development01",
+      "png": "report_materials/A/A-D05/A-D05-development01/F04_feedback_pair.png",
+      "svg": "report_materials/A/A-D05/A-D05-development01/F04_feedback_pair.svg",
+      "caption": "同输入的通过/失败合成分支，包含负结果和预算变化",
+      "files": [
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/F04_feedback_pair.png",
+          "sha256": "f0d36bcf8157b747c42373f64613f2cc9aeb36b9c2cd6a7e64459d553bf4292f"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/F04_feedback_pair.svg",
+          "sha256": "179484218f5acd4098a34304a24db864c44c3846879b38e98c7d14f448983890"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/summary.json",
+          "sha256": "ba4abf2b7c5a81e4a5e78e3dc8f00ca665c6c71da4e3c3974616fc7f8ae6fc17"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/runs/c025/diagnostic-pass/voi.json",
+          "sha256": "9bde9e6c06b7a44b736f61667cf08ddeebb6a4eb677e63c2a27cf0f58a769bc9"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/runs/c025/diagnostic-fail/voi.json",
+          "sha256": "e3afdcfa226d542ab36ade5d7ab0450562ca8ca8ea0455ad11c8eb7951b8b308"
+        },
+        {
+          "path": "scripts/A/draw_d05.py",
+          "sha256": "13b696146ac853bad772b8ac5224dc3acd6cad0899a2c2003346679a9495ff6a"
+        },
+        {
+          "path": "scripts/A/requirements_d05_figures.hashes.txt",
+          "sha256": "5fcfeec6c43fd5dd71595ab06df1eecc79ec6d2591b87e84accbd16d2dc51b73"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/render_config.json",
+          "sha256": "257e749fc5dd8558cebbbf8bf5fe84cfe039e1d38083f0dd3e9c1ad1a8985a33"
+        }
+      ],
+      "cost_unit": "proxy_cost; not minutes",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "command": [
+        "python",
+        "scripts/A/draw_d05.py",
+        "--run-id",
+        "A-D05-development01",
+        "--figure-deps",
+        "tmp\\D05-figure-deps"
+      ],
+      "visual_review": "Codex Agent A viewed actual exported PNG; legible, no clipped data/text; not independent human review"
+    },
+    {
+      "figure_id": "D05_all_candidates",
+      "run_id": "A-D05-development01",
+      "png": "report_materials/A/A-D05/A-D05-development01/D05_all_candidates.png",
+      "svg": "report_materials/A/A-D05/A-D05-development01/D05_all_candidates.svg",
+      "caption": "保留全部配置与四策略的开发代理成本；不是学习效果",
+      "files": [
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/D05_all_candidates.png",
+          "sha256": "274826d2d4049958150e88e68f80f1ff049cd5a356fbfc5eda5167cbc6a1f084"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/D05_all_candidates.svg",
+          "sha256": "cd37d2156510751f86f1cc51865956a6f7331dcf9824800609490c0ac30588b1"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/summary.json",
+          "sha256": "ba4abf2b7c5a81e4a5e78e3dc8f00ca665c6c71da4e3c3974616fc7f8ae6fc17"
+        },
+        {
+          "path": "experiments/A/A-D05-development01/comparison.csv",
+          "sha256": "acd7e50a4f5bae1fa0ad5e4b24671459c0ad83ef27053eab2884410d5d7b1233"
+        },
+        {
+          "path": "scripts/A/draw_d05.py",
+          "sha256": "13b696146ac853bad772b8ac5224dc3acd6cad0899a2c2003346679a9495ff6a"
+        },
+        {
+          "path": "scripts/A/requirements_d05_figures.hashes.txt",
+          "sha256": "5fcfeec6c43fd5dd71595ab06df1eecc79ec6d2591b87e84accbd16d2dc51b73"
+        },
+        {
+          "path": "report_materials/A/A-D05/A-D05-development01/render_config.json",
+          "sha256": "257e749fc5dd8558cebbbf8bf5fe84cfe039e1d38083f0dd3e9c1ad1a8985a33"
+        }
+      ],
+      "cost_unit": "proxy_cost; not minutes",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "command": [
+        "python",
+        "scripts/A/draw_d05.py",
+        "--run-id",
+        "A-D05-development01",
+        "--figure-deps",
+        "tmp\\D05-figure-deps"
+      ],
+      "visual_review": "Codex Agent A viewed actual exported PNG; legible, no clipped data/text; not independent human review"
     }
   ],
   "reception_reviews": [

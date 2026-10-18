@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-18T11:31:37.426819+08:00",
+  "setup_failure": "Bundled interpreter inherited user-site Matplotlib without pyparsing; import failed. Kept host unchanged, installed isolated hash-locked optional figure target.",
+  "figure_layout_repair": "Added 12% top headroom and common y range per task family after actual PNG review.",
+  "cost_review": "Caught repeated sunk-switch risk during implementation before scan; adopted plan normalized after switch payment. Tests and saved scan use fixed implementation.",
+  "test_logs": [
+    "experiments/A/A-D05-dev-checks01/pytest.stdout.log",
+    "experiments/A/A-D05-dev-checks01/pytest02.stdout.log"
+  ],
+  "runtime_lock_unchanged": true,
+  "optional_figure_lock": "scripts/A/requirements_d05_figures.hashes.txt",
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED"
+}

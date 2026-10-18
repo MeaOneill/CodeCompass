@@ -1,0 +1,8 @@
+{
+  "production_voi": "DISABLED_NO_REAL_DEV_CALIBRATION",
+  "fixture_probability": "Explicit synthetic prior .75; structural mechanism verification only",
+  "quiz_cost": "1 source-line-equivalent proxy unit by development assumption; no time calibration",
+  "outcomes": "synthetic fixed streams; unavailable to selector API; no final answers read",
+  "human_profiles": 0,
+  "formal_study_ready": false
+}

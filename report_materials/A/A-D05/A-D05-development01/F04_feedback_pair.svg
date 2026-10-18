@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="576pt" viewBox="0 0 1080 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-18T11:28:33.709654</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 1080 576 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="139.9989" transform="rotate(-0 63.157604 139.9989)">诊断前：s → a → b</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="179.9157" transform="rotate(-0 63.157604 179.9157)">总预算 25；预测直接补学 18</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="220.194375" transform="rotate(-0 63.157604 220.194375)">先验 p_pass=0.75；预测 VOI=8</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="259.7493" transform="rotate(-0 63.157604 259.7493)">诊断费用 1；已发生费用 1</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="299.6661" transform="rotate(-0 63.157604 299.6661)">修复后：s → b</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="339.5829" transform="rotate(-0 63.157604 339.5829)">剩余学习 6；本次切换 0</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="379.4997" transform="rotate(-0 63.157604 379.4997)">实际执行总代理成本 7</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="419.4165" transform="rotate(-0 63.157604 419.4165)">通过节省 / 失败多付测验费，均保留。</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.157604" y="459.3333" transform="rotate(-0 63.157604 459.3333)">已完成项不丢失；本例诊断发生在首项前。</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="282.940092" y="100.2" transform="rotate(-0 282.940092 100.2)">实际合成结果：通过</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="139.9989" transform="rotate(-0 598.877419 139.9989)">诊断前：s → a → b</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="179.9157" transform="rotate(-0 598.877419 179.9157)">总预算 25；预测直接补学 18</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="220.194375" transform="rotate(-0 598.877419 220.194375)">先验 p_pass=0.75；预测 VOI=8</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="259.7493" transform="rotate(-0 598.877419 259.7493)">诊断费用 1；已发生费用 1</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="299.6661" transform="rotate(-0 598.877419 299.6661)">修复后：s → a → b</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="339.5829" transform="rotate(-0 598.877419 339.5829)">剩余学习 18；本次切换 0</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="379.4997" transform="rotate(-0 598.877419 379.4997)">实际执行总代理成本 19</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="419.4165" transform="rotate(-0 598.877419 419.4165)">通过节省 / 失败多付测验费，均保留。</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="598.877419" y="459.3333" transform="rotate(-0 598.877419 459.3333)">已完成项不丢失；本例诊断发生在首项前。</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="818.659908" y="100.2" transform="rotate(-0 818.659908 100.2)">实际合成结果：失败</text>
+   </g>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 20px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="540" y="33.2675" transform="rotate(-0 540 33.2675)">F04 同一次诊断通过 / 失败后的配对路径</text>
+  </g>
+  <g id="text_22">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="54" y="69.12" transform="rotate(-0 54 69.12)">纯结构夹具 / 合成反馈；固定展示 τ=.7、W=16、α=0、γ=2，未按结果择优。</text>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: start" x="54" y="552.96" transform="rotate(-0 54 552.96)">测验时长未知记 NA；代理成本不是分钟。图来自实际执行的合成分支，不是真人测验。</text>
+  </g>
+ </g>
+</svg>

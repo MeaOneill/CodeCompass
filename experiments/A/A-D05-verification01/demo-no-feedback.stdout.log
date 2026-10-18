@@ -1,0 +1,13 @@
+A-D05 结构机制演示：模拟画像/合成反馈；不是正式UI或真人学习实验。
+统一单位 proxy_cost，不是分钟。真实源码无概率校准时默认禁用VOI。
+初始路线：s → a → b；剩余目标估计 18
+诊断决定：QUIZ_SELECTED
+  D05-new-x：POSITIVE_VOI；p_pass=0.75；VOI=8.0
+    pass: FEASIBLE | s → b | J=6
+    fail: FEASIBLE | s → a → b | J=18
+实际合成反馈=pass；已扣测验=1；切换=0
+反馈后路线：s → a → b
+结果状态：FEASIBLE；完成材料：s, a, b
+已支付：学习=18，测验=1，切换=0，合计=19 / 预算25
+测验次数=1；测验时长=None（None=未知，不填0）；独立重放=True
+生产VOI校准、真人效果、正式GUI未完成；材料覆盖不等于掌握或独立任务成功。

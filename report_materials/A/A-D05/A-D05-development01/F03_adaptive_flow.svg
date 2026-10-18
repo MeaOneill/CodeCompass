@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="648pt" viewBox="0 0 1080 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-18T11:28:33.452944</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1080 648 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 49.824 241.056 
+L 351.216 241.056 
+Q 357.1776 241.056 357.1776 238.14 
+L 357.1776 100.44 
+Q 357.1776 97.524 351.216 97.524 
+L 49.824 97.524 
+Q 43.8624 97.524 43.8624 100.44 
+L 43.8624 238.14 
+Q 43.8624 241.056 49.824 241.056 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 384.336 241.056 
+L 685.728 241.056 
+Q 691.6896 241.056 691.6896 238.14 
+L 691.6896 100.44 
+Q 691.6896 97.524 685.728 97.524 
+L 384.336 97.524 
+Q 378.3744 97.524 378.3744 100.44 
+L 378.3744 238.14 
+Q 378.3744 241.056 384.336 241.056 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 718.848 241.056 
+L 1020.24 241.056 
+Q 1026.2016 241.056 1026.2016 238.14 
+L 1026.2016 100.44 
+Q 1026.2016 97.524 1020.24 97.524 
+L 718.848 97.524 
+Q 712.8864 97.524 712.8864 100.44 
+L 712.8864 238.14 
+Q 712.8864 241.056 718.848 241.056 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 49.824 467.856 
+L 351.216 467.856 
+Q 357.1776 467.856 357.1776 464.94 
+L 357.1776 327.24 
+Q 357.1776 324.324 351.216 324.324 
+L 49.824 324.324 
+Q 43.8624 324.324 43.8624 327.24 
+L 43.8624 464.94 
+Q 43.8624 467.856 49.824 467.856 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 384.336 467.856 
+L 685.728 467.856 
+Q 691.6896 467.856 691.6896 464.94 
+L 691.6896 327.24 
+Q 691.6896 324.324 685.728 324.324 
+L 384.336 324.324 
+Q 378.3744 324.324 378.3744 327.24 
+L 378.3744 464.94 
+Q 378.3744 467.856 384.336 467.856 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 718.848 467.856 
+L 1020.24 467.856 
+Q 1026.2016 467.856 1026.2016 464.94 
+L 1026.2016 327.24 
+Q 1026.2016 324.324 1020.24 324.324 
+L 718.848 324.324 
+Q 712.8864 324.324 712.8864 327.24 
+L 712.8864 464.94 
+Q 712.8864 467.856 718.848 467.856 
+z
+" clip-path="url(#p9c9447aa44)" style="fill: #f4f7fa; stroke: #28577a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.072" y="134.3325" transform="rotate(-0 63.072 134.3325)">1 输入与保守门控</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 170.393438)">固定源码 / 独立题目ID</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 188.111859)">阅读不增加掌握证据</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 205.830281)">个性化成本 α 与总预算</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="397.584" y="134.3325" transform="rotate(-0 397.584 134.3325)">2 同规划器两分支</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 170.393438)">直接补学 J；诊断通过/失败 J</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 188.111859)">两分支先扣测验代理成本</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 205.830281)">未知概率 / 超时 → 保守补学</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="732.096" y="134.3325" transform="rotate(-0 732.096 134.3325)">3 四种开发策略</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 170.393438)">无诊断 / 固定频率</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 188.111859)">VOI选择 / VOI但禁用反馈</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 205.830281)">同题池、成本、次数上限</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="63.072" y="361.1325" transform="rotate(-0 63.072 361.1325)">4 接收实际独立反馈</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 397.193437)">先选择，后读取模拟结果流</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 414.911859)">只接受新独立题目</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(63.072 432.630281)">测验费用已发生不退款</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="397.584" y="361.1325" transform="rotate(-0 397.584 361.1325)">5 修复并保留历史</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 397.193437)">保留已完成单元</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 414.911859)">新增单元和逆序计切换费用</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(397.584 432.630281)">完整顺序前缀，不按集合合并</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="732.096" y="361.1325" transform="rotate(-0 732.096 361.1325)">6 独立重放与输出</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 397.193437)">核对费用、先修和证据去重</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 414.911859)">截断/超时不签发旧精确证书</text>
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'" transform="translate(732.096 432.630281)">覆盖不是独立任务成功</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 359.838237 170.1 
+Q 370.259513 170.1 379.003737 170.1 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 374.603737 167.9 
+L 379.003737 170.1 
+L 374.603737 172.3 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 694.350237 170.1 
+Q 704.771513 170.1 713.515737 170.1 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 709.115737 167.9 
+L 713.515737 170.1 
+L 709.115737 172.3 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 359.838237 396.9 
+Q 370.259513 396.9 379.003737 396.9 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 374.603737 394.7 
+L 379.003737 396.9 
+L 374.603737 399.1 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 694.350237 396.9 
+Q 704.771513 396.9 713.515737 396.9 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 709.115737 394.7 
+L 713.515737 396.9 
+L 709.115737 399.1 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 869.20795 246.060465 
+Q 524.471537 215.182918 195.748631 318.040985 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 200.604836 318.826652 
+L 195.748631 318.040985 
+L 199.290888 314.627421 
+" style="fill: none; stroke: #28577a; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 21px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="540" y="36.226875" transform="rotate(-0 540 36.226875)">F03 诊断选择与反馈后的剩余路径修复</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="43.2" y="58.32" transform="rotate(-0 43.2 58.32)">真实源码 VOI 缺校准时禁用；结构夹具先验仅验证机制。费用统一代理单位。</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: start" x="43.2" y="622.08" transform="rotate(-0 43.2 622.08)">D05-adaptive-v1 · 无一般最优保证 · 正式GUI / 真人效果 / 正式协议冻结尚未完成</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9c9447aa44">
+   <rect x="43.2" y="84.24" width="993.6" height="486"/>
+  </clipPath>
+ </defs>
+</svg>

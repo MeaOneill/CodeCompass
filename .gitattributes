@@ -66,3 +66,8 @@
 
 /experiments/A/A-D04-*/code_snapshot/** -text whitespace=-blank-at-eol
 /experiments/A/A-D04-*/comparison.csv -text whitespace=cr-at-eol
+
+# D05 own evidence only: preserve producer bytes and CSV line endings.
+/experiments/A/A-D05-*/code_snapshot/** -text whitespace=-blank-at-eol
+/experiments/A/A-D05-*/comparison.csv -text whitespace=cr-at-eol
+/report_materials/A/A-D05/**/*.svg -text whitespace=-blank-at-eol,cr-at-eol

@@ -1,0 +1,34 @@
+{
+  "run_id": "A-D05-development01",
+  "task_id": "A-D05",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "interpreter": "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+  "model_id": null,
+  "started_at": "2026-10-18T11:19:19.676211+08:00",
+  "finished_at": "2026-10-18T11:26:36.918047+08:00",
+  "elapsed_seconds": 437.2411285999988,
+  "code_commit": null,
+  "base_commit": "1395600f112ada5a636ee97904c64577f34ab22d",
+  "dirty_code_note": "Exact per-file hash/code snapshot identifies uncommitted run implementation",
+  "command": [
+    "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+    "scripts/A/run_d05.py",
+    "--run-id",
+    "A-D05-development01"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "counts": {
+    "candidates": 32,
+    "cases": 6,
+    "strategies": 4,
+    "runs": 768,
+    "errors": 0,
+    "nonfeasible": 0
+  },
+  "model_api_calls": 0,
+  "formal_study_ready": false
+}

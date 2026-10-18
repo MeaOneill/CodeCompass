@@ -1,0 +1,3 @@
+A-D05 结构机制演示：模拟画像/合成反馈；不是正式UI或真人学习实验。
+统一单位 proxy_cost，不是分钟。真实源码无概率校准时默认禁用VOI。
+输入被拒绝：alpha must be finite and nonnegative

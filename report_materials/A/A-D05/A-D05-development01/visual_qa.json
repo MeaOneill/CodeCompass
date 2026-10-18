@@ -1,0 +1,16 @@
+{
+  "time": "2026-10-18T11:31:37.426819+08:00",
+  "reviewer": "Codex Agent A",
+  "human_review": "NOT_REVIEWED",
+  "images": [
+    "report_materials/A/A-D05/A-D05-development01/F03_adaptive_flow.png",
+    "report_materials/A/A-D05/A-D05-development01/F04_feedback_pair.png",
+    "report_materials/A/A-D05/A-D05-development01/D05_all_candidates.png"
+  ],
+  "all_images_viewed": true,
+  "final_png_legible": true,
+  "correction": "Initial scatter top points lacked headroom; regenerated with common task-family limits from zero and 12% headroom. First render retained locally in ignored tmp/D05-first-render.",
+  "raster_dpi": 300,
+  "native_svg": true,
+  "no_effect_or_UI_claim": true
+}

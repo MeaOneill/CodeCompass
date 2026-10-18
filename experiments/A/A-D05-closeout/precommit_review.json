@@ -1,0 +1,11 @@
+{
+  "staged_files": 895,
+  "staged_bytes": 39004162,
+  "sensitive_patterns_found": 0,
+  "stage_input_and_figure_hashes_match": true,
+  "B_modules_unchanged": true,
+  "destination": "https://github.com/MeaOneill/CodeCompass.git",
+  "branch": "codex/A-D05-diagnosis",
+  "user_authorization": "Current A-D05 task explicitly requires saved checkpoint and configured task-branch synchronization; prior explicit permission covers this repository and A branch.",
+  "payload": "Own A source/test/config, simulated development inputs/outputs, hashes, figures and task documentation; no private answers, credentials, databases, user self-check records or virtual environments."
+}

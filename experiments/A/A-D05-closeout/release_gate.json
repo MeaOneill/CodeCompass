@@ -1,0 +1,19 @@
+{
+  "task_id": "A-D05",
+  "updated_at": "2026-10-18T11:31:37.426819+08:00",
+  "engineering_checks_passed": true,
+  "tests": 209,
+  "new_tests": 42,
+  "runs": 768,
+  "audit_checks": 7391,
+  "negative_cost_comparisons_retained": 180,
+  "new_tamper_rejected": 10,
+  "committed_copy_replay": "PENDING",
+  "remote_sync": "PENDING",
+  "next_step_allowed": false,
+  "next_task": "B-D05",
+  "production_voi": "DISABLED_NO_REAL_DEV_CALIBRATION",
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "model_api_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "version": "D05-adaptive-v1",
+  "split": "dev",
+  "thresholds": [0.65, 0.7],
+  "beam_widths": [1, 4, 16, 32],
+  "alpha_weights": [0.0, 0.5],
+  "switch_weights": [0.0, 2.0],
+  "strategies": ["none", "fixed", "voi", "no_feedback"],
+  "max_quizzes": 2,
+  "fixed_interval": 1,
+  "epsilon": 0.0,
+  "cost_unit": "proxy_cost",
+  "formal_study_ready": false,
+  "production_probability_calibration": null,
+  "selection_policy": "retain all candidates and failures; no winning configuration declared"
+}
