@@ -79,3 +79,15 @@ Owner成员A / Codex Agent A / 糯糯，分支codex/A-D05-diagnosis，base139560
 ## B-D05 2026-10-18T13:10:29.844159+08:00
 
 成员B / Codex Agent B / 糯糯。从已验收A-D05 7a2a268开始codex/B-D05-interface。完成统一四方法开发UI、SQLite事务采集、服务器计时/暂停/超时/重启缺失、独立短测证据与A反馈接口、匿名导出/分组与独立审计；无A模块/契约/依赖锁修改。前置209测试；本轮234测试与五条验证命令exit0。8条明确夹具、1条真实Agent浏览器11事件，F03/F04与四张F11截图有来源。软件自审通过；独立人类审核未审核；真人手动流程未完成，任务PAUSED，不放行A-D06。新增API调用0。原始：experiments/B/B-D05-verification02、B-D05-browser01、report_materials/B/B-D05-interface01。
+
+## B-D05 最终验收 2026-10-18T23:17:35.157151+08:00
+
+**本日工程与真人开发操作验收通过，允许进入下一步A-D06。** 状态READY_FOR_REVIEW，未合main；独立人类审核仍NOT_REVIEWED。
+
+用户确认已完成，实际本地human_manual库有同一匿名参与者3轮/35事件：2轮WITHDRAWN、1轮SUBMITTED；1轮完整阅读→短测→反馈→重规划→最终提交，另1轮退出前完成暂停/恢复。时钟有效，无缺失，240项独立日志检查通过；全仓236测试通过。去标识记录在experiments/B/B-D05-manual01/manual/export01；数据库、自由文本和本地令牌不入库。此人是开发预演者，不计正式研究样本，不把3轮当3个人。
+
+纠正了审计脚本额外要求“暂停必须与最终提交处于同一轮”的实现限制：任务卡不规定该顺序。核心完整流程仍必须来自同一会话，暂停恢复另行审计；两轮退出、旧拒绝结果与全部原事件保留，没有拼接会话或补时间。新增正反回归测试通过。
+
+B1静态回放、动态B1/正式终测评分未接入、生产VOI未校准、独立人类审核和异机复现未完成等既有边界不变；本轮没有新API调用。允许A-D06继续协议及接入边界工作，不代表正式研究已经可启动。
+
+A-D06第一动作：fetch并核对B-D05最终通知SHA，然后在自己的工作区运行 `python scripts/B/audit_d05.py --source experiments/B/B-D05-manual01/manual/export01 --output experiments/A/A-D06-accept-B05-manual-NEW.json --require-manual-flow`，预期exit0、complete_manual_flows=1、manual_pause_resume_flows=1；再读measurement_rules和接口请求，复核正式冻结边界。不调用付费模型。

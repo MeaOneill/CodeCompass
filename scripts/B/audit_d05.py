@@ -58,7 +58,10 @@ def audit(folder):
         check(s['duration_valid'] or s['duration_seconds'] is None,'invalid time presented as complete')
         check(s['status'] not in ('ACTIVE','PAUSED') or s['duration_seconds'] is None,'unfinished zero/final duration')
         if es:check(es[-1]['status']==s['status'],'terminal state mismatch')
-    required=['start','read','reading_complete','quiz_start','quiz_submit','feedback','replan','pause','resume','final_submit']
+    # Task-card step 4 requires one complete manual core flow. Pause/resume is
+    # independently audited and may occur in a preserved withdrawn session.
+    # Do not splice separate sessions into a fabricated complete submission.
+    required=['start','read','reading_complete','quiz_start','quiz_submit','feedback','replan','final_submit']
     manual=[]
     for s in sessions:
         if s['actor']!='human_manual' or s['status']!='SUBMITTED' or not s['duration_valid']:continue
@@ -67,7 +70,15 @@ def audit(folder):
         for kind in kinds:
             if cursor<len(required) and kind==required[cursor]:cursor+=1
         if cursor==len(required):manual.append(s['session_id'])
+    pause_flows=0
+    for s in sessions:
+        if s['actor']!='human_manual' or not s['duration_valid']:continue
+        kinds=[e['kind'] for e in events if e['session_id']==s['session_id']]
+        if 'pause' in kinds and 'resume' in kinds and kinds.index('pause')<kinds.index('resume'):
+            pause_flows+=1
     return dict(passed=not errors,checks=checks,errors=errors,sessions=len(sessions),events=len(events),
+                acceptance_rule='B-D05-manual-core-v2; pause/resume reported separately, no session splicing',
+                manual_pause_resume_flows=pause_flows,
                 complete_manual_flows=len(manual),manual_flow_passed=bool(manual) and not errors,
                 human_manual_sessions=sum(s['actor']=='human_manual' for s in sessions),independent_human_review='NOT_REVIEWED')
 

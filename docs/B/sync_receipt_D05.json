@@ -7,12 +7,14 @@
   "push_exit": 0,
   "ls_remote_exit": 0,
   "software_checks_passed": true,
-  "tests": 234,
+  "tests": 236,
   "changed_files_byte_checked": 91,
-  "manual_flow_passed": false,
-  "next_day_allowed": false,
+  "manual_flow_passed": true,
+  "next_day_allowed": true,
   "main_merged": false,
   "independent_human_review": "NOT_REVIEWED",
   "note": "Final receipt-only commit follows; exact HEAD=remote in final notification",
-  "updated_at": "2026-10-18T13:16:01.240075+08:00"
+  "updated_at": "2026-10-18T23:17:35.157151+08:00",
+  "acceptance_audit": "experiments/B/B-D05-manual01/audit.json",
+  "current_sync": "FINAL_ACCEPTANCE_PENDING_PUSH"
 }

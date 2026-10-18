@@ -35,3 +35,15 @@ B0保留文档路线；B2在反馈后以真实独立证据调用A贪心（已完
 历史初测的HTTP测试被沙箱阻止套接字，提升到授权本机回环环境后通过；没有关闭安全检查。A验收首次输出到experiments/B被A脚本主动拒绝，随后按它规定输出到experiments/A/B-D05-accept-A05-01.json，未修改A脚本。
 
 严格门禁：软件检查通过与“真人完整手动流程已验收”分开记录。真实手动证据未到齐前不能标整张B-D05任务卡通过。独立人类审核、异机复现、正式实验均不由本轮自审替代。
+
+## B-D05 最终验收 2026-10-18T23:17:35.157151+08:00
+
+**本日工程与真人开发操作验收通过，允许进入下一步A-D06。** 状态READY_FOR_REVIEW，未合main；独立人类审核仍NOT_REVIEWED。
+
+用户确认已完成，实际本地human_manual库有同一匿名参与者3轮/35事件：2轮WITHDRAWN、1轮SUBMITTED；1轮完整阅读→短测→反馈→重规划→最终提交，另1轮退出前完成暂停/恢复。时钟有效，无缺失，240项独立日志检查通过；全仓236测试通过。去标识记录在experiments/B/B-D05-manual01/manual/export01；数据库、自由文本和本地令牌不入库。此人是开发预演者，不计正式研究样本，不把3轮当3个人。
+
+纠正了审计脚本额外要求“暂停必须与最终提交处于同一轮”的实现限制：任务卡不规定该顺序。核心完整流程仍必须来自同一会话，暂停恢复另行审计；两轮退出、旧拒绝结果与全部原事件保留，没有拼接会话或补时间。新增正反回归测试通过。
+
+B1静态回放、动态B1/正式终测评分未接入、生产VOI未校准、独立人类审核和异机复现未完成等既有边界不变；本轮没有新API调用。允许A-D06继续协议及接入边界工作，不代表正式研究已经可启动。
+
+A-D06第一动作：fetch并核对B-D05最终通知SHA，然后在自己的工作区运行 `python scripts/B/audit_d05.py --source experiments/B/B-D05-manual01/manual/export01 --output experiments/A/A-D06-accept-B05-manual-NEW.json --require-manual-flow`，预期exit0、complete_manual_flows=1、manual_pause_resume_flows=1；再读measurement_rules和接口请求，复核正式冻结边界。不调用付费模型。

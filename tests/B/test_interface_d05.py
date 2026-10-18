@@ -117,6 +117,21 @@ def test_independent_questions_execute_expected_output():
         assert output.getvalue().strip()==q['choices'][q['answer']]
 
 
+@pytest.mark.parametrize('submit',[True,False])
+def test_manual_gate_core_flow_and_separate_pause(tmp_path,submit):
+    # Unit-test fixture only: this database never enters human experiment exports.
+    c=Collector(ROOT,tmp_path/'fixture.sqlite3',clock=FakeClock(),actor='human_manual')
+    paused=c.create();c.action(paused['session_id'],'pause');c.clock.t+=5
+    c.action(paused['session_id'],'resume');c.action(paused['session_id'],'withdraw')
+    sid=c.create(participant=paused['participant'])['session_id']
+    c.action(sid,'complete_reading');c.action(sid,'quiz');c.clock.t+=2
+    c.action(sid,'answer',{'choice':0})
+    c.action(sid,'submit' if submit else 'withdraw',{'response':'unit-test-only'})
+    export(c.database,tmp_path/'export','human_manual');result=audit(tmp_path/'export')
+    assert result['passed'] and result['manual_pause_resume_flows']==1
+    assert result['manual_flow_passed'] is submit
+
+
 @pytest.mark.parametrize('mutation',['negative_time','identity','fake_success','missing_event','mixed_actor','group'])
 def test_export_audit_rejects_tampering(collector,tmp_path,mutation):
     c=collector;s=c.create();c.clock.t+=2;c.action(s['session_id'],'submit',{'response':'fixture'})

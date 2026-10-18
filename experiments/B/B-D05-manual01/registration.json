@@ -1,0 +1,61 @@
+{
+  "task_id": "B-D05",
+  "run_id": "B-D05-manual01",
+  "owner": "成员B",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "time": "2026-10-18T23:17:35.157151+08:00",
+  "ui_source_commit": "434559519ed77b4d3a65761ed17e4b98cd7faed1",
+  "source_files": [
+    {
+      "path": "scripts/B/audit_d05.py",
+      "sha256": "7a36f9b3fbcfa9edc5e683b9b60577941ddc6c8c6318712cd0189d5826e215f2"
+    },
+    {
+      "path": "tests/B/test_interface_d05.py",
+      "sha256": "09156dd0d0a63157f1d47c88151008521c7cfc396232f3b35f8dc80221a5a7c5"
+    },
+    {
+      "path": "scripts/B/export_d05.py",
+      "sha256": "4db0cfa9455d0a57b4d91486bac585be64567c9fc433e089160c92648a745cbd"
+    },
+    {
+      "path": "src/codecompass/app/experiment.py",
+      "sha256": "df0d55c69db276fe7b90c6e5edd8023438488a688be06509fecb812f2d434950"
+    }
+  ],
+  "provenance": "human_manual; user explicitly confirmed completion",
+  "sessions": 3,
+  "participants": 1,
+  "events": 35,
+  "withdrawn": 2,
+  "submitted": 1,
+  "manual_complete_flows": 1,
+  "pause_resume_flows": 1,
+  "tests": 236,
+  "audit_checks": 240,
+  "model_api_calls": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false,
+  "commands": [
+    {
+      "command": "export_d05.py --database tmp/B-D05-human01.sqlite3 --actor human_manual --output experiments/B/B-D05-manual01/manual/export01",
+      "exit_code": 0
+    },
+    {
+      "command": "audit_d05.py --require-manual-flow (original overstrict rule)",
+      "exit_code": 1,
+      "result": "log integrity passed; demanded pause within submitted session"
+    },
+    {
+      "command": "pytest -q --basetemp=tmp/pytest-B05-manual-close01",
+      "exit_code": 0,
+      "raw": "pytest.txt"
+    },
+    {
+      "command": "audit_d05.py --source experiments/B/B-D05-manual01/manual/export01 --output experiments/B/B-D05-manual01/audit.json --require-manual-flow",
+      "exit_code": 0
+    }
+  ],
+  "rule_correction": "Task card requires one manual core flow. Pause/resume coverage audited separately in a preserved withdrawn session. No records edited, concatenated, discarded or relabelled; original rejected gate retained. Two new tests ensure incomplete/withdrawn-only flows still cannot pass."
+}

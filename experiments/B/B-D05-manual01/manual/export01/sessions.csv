@@ -1,0 +1,4 @@
+session_id,participant,task_id,method,actor,status,duration_seconds,observed_seconds,duration_valid,limit_seconds,success,score_status,missing,t_cap_seconds,quiz_outcome,response_sha256,event_count,source_commit
+ac5b26872e38b67202d398b2,e62eb03a5eeae68b139bf29f,task_001,Ours,human_manual,SUBMITTED,20.64100000000326,20.64100000000326,True,1500,NA,PENDING_INDEPENDENT_FINAL_SCORING,"[""FINAL_SCORE_MISSING""]",NA,pass,865f9e4571f7a4e16792613df15125598906d51f3d1c386c7864a53f91231bc1,11,4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d
+a9010835ed2002d90418d225,e62eb03a5eeae68b139bf29f,task_001,Ours,human_manual,WITHDRAWN,139.375,139.375,True,1500,NA,NOT_SUBMITTED,"[""FINAL_SCORE_MISSING""]",NA,fail,NA,13,4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d
+51e16f694c6c47aacc8cd872,e62eb03a5eeae68b139bf29f,task_001,Ours,human_manual,WITHDRAWN,12.453999999997905,12.453999999997905,True,1500,NA,NOT_SUBMITTED,"[""FINAL_SCORE_MISSING""]",NA,fail,NA,11,4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d

@@ -1,0 +1,68 @@
+[
+  {
+    "session_id": "ac5b26872e38b67202d398b2",
+    "participant": "e62eb03a5eeae68b139bf29f",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "human_manual",
+    "status": "SUBMITTED",
+    "duration_seconds": 20.64100000000326,
+    "observed_seconds": 20.64100000000326,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "865f9e4571f7a4e16792613df15125598906d51f3d1c386c7864a53f91231bc1",
+    "event_count": 11,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "a9010835ed2002d90418d225",
+    "participant": "e62eb03a5eeae68b139bf29f",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "human_manual",
+    "status": "WITHDRAWN",
+    "duration_seconds": 139.375,
+    "observed_seconds": 139.375,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "NOT_SUBMITTED",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "fail",
+    "response_sha256": null,
+    "event_count": 13,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "51e16f694c6c47aacc8cd872",
+    "participant": "e62eb03a5eeae68b139bf29f",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "human_manual",
+    "status": "WITHDRAWN",
+    "duration_seconds": 12.453999999997905,
+    "observed_seconds": 12.453999999997905,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "NOT_SUBMITTED",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "fail",
+    "response_sha256": null,
+    "event_count": 11,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  }
+]
