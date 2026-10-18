@@ -19,8 +19,8 @@
   "next_day_allowed": true,
   "model_api_calls": 0,
   "private_data": "ignored tmp SQLite only",
-  "git_sync": "FINAL_ACCEPTANCE_PENDING_PUSH",
-  "verified_checkpoint": "85c4b92c41fed6a8d8e6dca0b53ac17e77901ece",
+  "git_sync": "VERIFIED_FINAL_ACCEPTANCE_CHECKPOINT",
+  "verified_checkpoint": "119ae4151dc0d7865b1059e3185022dc86c73a02",
   "recovery_check": "PASSED_SAME_MACHINE_FRESH_COMMITTED_COPY",
   "recovery_tests": 234,
   "byte_checks": 91,
@@ -32,5 +32,7 @@
   "complete_manual_flows": 1,
   "manual_pause_resume_flows": 1,
   "manual_audit": "experiments/B/B-D05-manual01/audit.json",
-  "remaining": []
+  "remaining": [],
+  "remote_verified_sha": "119ae4151dc0d7865b1059e3185022dc86c73a02",
+  "sync_note": "Receipt-only commit follows; final HEAD=remote reported in task completion"
 }
