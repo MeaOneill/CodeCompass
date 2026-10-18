@@ -1,0 +1,1 @@
+{"sessions": 8, "participants": 2, "actor": "test_fixture", "audit_passed": true, "actual_human_sessions": 0, "model_api_calls": 0}

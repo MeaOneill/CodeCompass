@@ -1,0 +1,32 @@
+[
+  {
+    "participant": "40cd414da64dd1e2c1d0b8c0",
+    "sessions": 4,
+    "methods": [
+      "B0",
+      "B1_saved",
+      "B2",
+      "Ours"
+    ],
+    "completed_submissions": 4,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "58496fb680d1d1480560def9",
+    "sessions": 4,
+    "methods": [
+      "B0",
+      "B1_saved",
+      "B2",
+      "Ours"
+    ],
+    "completed_submissions": 4,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  }
+]
