@@ -1,6 +1,6 @@
 {
   "task": "A-D05-preflight",
-  "updated_at": "2026-10-17T23:39:01.362576+08:00",
+  "updated_at": "2026-10-18T11:02:53.816533+08:00",
   "owner": "成员A",
   "executor": "Codex Agent A",
   "machine": "糯糯",
@@ -14,16 +14,17 @@
   "archive_byte_checks": 2229,
   "guide_commands_verified": true,
   "verification_kind": "same-machine isolated-worktree reception and committed-source archive replay",
-  "remote_sync": "NOT_SYNCED_AUTO_REVIEW_REJECTED",
-  "next_step_allowed": false,
+  "remote_sync": "VERIFIED_AT_DELIVERY_CHECKPOINT",
+  "next_step_allowed": true,
   "next_task": "A-D05",
   "A_D05_status": "NOT_STARTED",
-  "remaining": [
-    "Explicit user authorization and successful task-branch push with remote=HEAD verification"
-  ],
+  "remaining": [],
   "independent_human_review": "NOT_REVIEWED",
   "formal_study_ready": false,
   "model_api_calls": 0,
   "main_merged": false,
-  "background_A_jobs": []
+  "background_A_jobs": [],
+  "remote_verified_commit": "599c593f1746e5ec297a5f1f00a32dd4ba3fd79d",
+  "user_upload_authorized": true,
+  "receipt_note": "Receipt-only commit follows verified delivery. Final HEAD and remote are checked after its push and reported in completion."
 }
