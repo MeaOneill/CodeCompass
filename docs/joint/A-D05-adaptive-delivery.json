@@ -2,15 +2,17 @@
   "owner": "成员A",
   "executor": "Codex Agent A",
   "machine": "糯糯",
-  "time": "2026-10-18T11:31:37.426819+08:00",
+  "time": "2026-10-18T11:36:31.969619+08:00",
   "base": "1395600f112ada5a636ee97904c64577f34ab22d",
   "shared_schema_changed": false,
   "B_modules_changed": false,
   "shared_runtime_lock_changed": false,
   "old_B2_changed": false,
-  "publication_gate": "PENDING_FINAL_REPLAY_AND_SYNC",
+  "publication_gate": "ENGINEERING_PASSED_BUSINESS_CHECKPOINT_REMOTE_VERIFIED",
   "request": "docs/requests/A-D05-adaptive-interface.md",
   "internal_version": "D05-adaptive-v1",
   "next_task": "B-D05",
-  "independent_human_review": "NOT_REVIEWED"
+  "independent_human_review": "NOT_REVIEWED",
+  "business_checkpoint": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627",
+  "next_step_allowed": true
 }

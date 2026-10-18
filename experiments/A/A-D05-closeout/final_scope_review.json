@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-18T11:36:31.969619+08:00",
+  "base": "1395600f112ada5a636ee97904c64577f34ab22d",
+  "product_code_changed_after_business_checkpoint": false,
+  "B_status_short": "?? experiments/B/B-D02-user-20261016-185622-line-proxy/\n?? experiments/B/B-D02-user-20261016-185622-shared/\n?? experiments/B/B-D02-user-20261016-185622/\n",
+  "B_HEAD": "18f08779b0e32f0c91f48827ef0b7d50cb223ad4",
+  "B_private_records_not_read_or_changed": true,
+  "model_api_calls": 0,
+  "A_background_jobs": [],
+  "next_task": "B-D05"
+}

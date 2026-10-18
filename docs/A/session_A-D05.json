@@ -13,7 +13,7 @@
   "next_task": "B-D05",
   "formal_study_ready": false,
   "independent_human_review": "NOT_REVIEWED",
-  "updated_at": "2026-10-18T11:31:37.426819+08:00",
+  "updated_at": "2026-10-18T11:36:31.969619+08:00",
   "verification": "experiments/A/A-D05-verification01/registration.json",
   "development_run": "A-D05-development01",
   "tests": 209,
@@ -24,7 +24,12 @@
   "tamper_challenges_rejected": 10,
   "negative_cost_comparisons_retained": 180,
   "production_voi": "DISABLED_NO_REAL_DEV_CALIBRATION",
-  "next_step_allowed": false,
+  "next_step_allowed": true,
   "final_gate": "experiments/A/A-D05-closeout/release_gate.json",
-  "background_jobs": []
+  "background_jobs": [],
+  "finished_at": "2026-10-18T11:36:31.969619+08:00",
+  "final_engineering_gate": "PASSED",
+  "business_checkpoint": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627",
+  "committed_copy_replay": true,
+  "remote_verified_sha": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627"
 }

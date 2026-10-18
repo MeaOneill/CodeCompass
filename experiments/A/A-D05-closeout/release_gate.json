@@ -1,6 +1,6 @@
 {
   "task_id": "A-D05",
-  "updated_at": "2026-10-18T11:31:37.426819+08:00",
+  "updated_at": "2026-10-18T11:36:31.969619+08:00",
   "engineering_checks_passed": true,
   "tests": 209,
   "new_tests": 42,
@@ -8,12 +8,25 @@
   "audit_checks": 7391,
   "negative_cost_comparisons_retained": 180,
   "new_tamper_rejected": 10,
-  "committed_copy_replay": "PENDING",
-  "remote_sync": "PENDING",
-  "next_step_allowed": false,
+  "committed_copy_replay": true,
+  "remote_sync": "VERIFIED_AT_BUSINESS_CHECKPOINT",
+  "next_step_allowed": true,
   "next_task": "B-D05",
   "production_voi": "DISABLED_NO_REAL_DEV_CALIBRATION",
   "formal_study_ready": false,
   "independent_human_review": "NOT_REVIEWED",
-  "model_api_calls": 0
+  "model_api_calls": 0,
+  "validated_checkpoint": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627",
+  "archive_byte_checks": 3157,
+  "remote_verified_sha": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627",
+  "replay_scope": "fresh committed source: 209 tests, independent replays of all 768 saved sessions, legacy audits and live CLI; no second full configuration generation",
+  "receipt_only_commit_follows": true,
+  "remaining_engineering_blockers": [],
+  "limitations": [
+    "No real dev p_pass calibration: production VOI disabled",
+    "All profiles/feedback are synthetic; human learning effect unmeasured",
+    "No official UI yet; B-D05 integrates",
+    "Formal protocol freeze and independent human review pending",
+    "New ordered search has no optimality/infeasibility certificate"
+  ]
 }

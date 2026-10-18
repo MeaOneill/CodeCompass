@@ -1,0 +1,331 @@
+{
+  "task_id": "A-D05",
+  "run_id": "A-D05-committed-verification01",
+  "source_run": "A-D05-development01",
+  "machine": "糯糯",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "interpreter": "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "model_id": null,
+  "commands": [
+    {
+      "name": "pip-check",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.2901973999978509,
+      "stdout": "pip-check.stdout.log",
+      "stderr": "pip-check.stderr.log"
+    },
+    {
+      "name": "pytest",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D05-business-replay01\\tmp\\A-D05-committed-verification01\\pytest"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 29.286874600002193,
+      "stdout": "pytest.stdout.log",
+      "stderr": "pytest.stderr.log"
+    },
+    {
+      "name": "adaptive-audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d05.py",
+        "--run-id",
+        "A-D05-development01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D05-business-replay01\\experiments\\A\\A-D05-committed-verification01\\adaptive-audit.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 21.834141999992426,
+      "stdout": "adaptive-audit.stdout.log",
+      "stderr": "adaptive-audit.stderr.log"
+    },
+    {
+      "name": "A04-audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d04.py",
+        "--run-id",
+        "A-D04-mechanism01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D05-business-replay01\\experiments\\A\\A-D05-committed-verification01\\A04-audit.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.476886700009345,
+      "stdout": "A04-audit.stdout.log",
+      "stderr": "A04-audit.stderr.log"
+    },
+    {
+      "name": "B04-audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d04.py",
+        "--source",
+        "experiments/B/B-D04-deepseek-live01",
+        "--figures",
+        "report_materials/B/B-D04-deepseek-live01",
+        "--fixtures",
+        "experiments/B/B-D04-fixtures01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D05-business-replay01\\experiments\\A\\A-D05-committed-verification01\\B04-audit.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.5938220999960322,
+      "stdout": "B04-audit.stdout.log",
+      "stderr": "B04-audit.stderr.log"
+    },
+    {
+      "name": "demo-pass",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--outcome",
+        "pass"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.1835028000059538,
+      "stdout": "demo-pass.stdout.log",
+      "stderr": "demo-pass.stderr.log"
+    },
+    {
+      "name": "demo-fail",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--outcome",
+        "fail"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.0227760000125272,
+      "stdout": "demo-fail.stdout.log",
+      "stderr": "demo-fail.stderr.log"
+    },
+    {
+      "name": "demo-none",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--strategy",
+        "none"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.6175905999989482,
+      "stdout": "demo-none.stdout.log",
+      "stderr": "demo-none.stderr.log"
+    },
+    {
+      "name": "demo-fixed",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--strategy",
+        "fixed"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.0346797999955015,
+      "stdout": "demo-fixed.stdout.log",
+      "stderr": "demo-fixed.stderr.log"
+    },
+    {
+      "name": "demo-no-feedback",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--strategy",
+        "no_feedback"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 1.0480001999967499,
+      "stdout": "demo-no-feedback.stdout.log",
+      "stderr": "demo-no-feedback.stderr.log"
+    },
+    {
+      "name": "demo-no-probability",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--no-probability"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.725647500003106,
+      "stdout": "demo-no-probability.stdout.log",
+      "stderr": "demo-no-probability.stderr.log"
+    },
+    {
+      "name": "demo-timeout",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--time-limit",
+        "0"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "elapsed_seconds": 0.8238478999992367,
+      "stdout": "demo-timeout.stdout.log",
+      "stderr": "demo-timeout.stderr.log"
+    },
+    {
+      "name": "reject-negative-cost-weight",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/demo_d05.py",
+        "--alpha",
+        "-1"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "elapsed_seconds": 0.6643141999957152,
+      "stdout": "reject-negative-cost-weight.stdout.log",
+      "stderr": "reject-negative-cost-weight.stderr.log"
+    }
+  ],
+  "started_at": "2026-10-18T11:34:17.884896+08:00",
+  "base_or_checkpoint": "0cd1127c27d852a41c6f3a2eccbb9f0070d32627",
+  "model_api_calls": 0,
+  "formal_study_ready": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "engineering_passed": true,
+  "finished_at": "2026-10-18T11:35:20.615365+08:00",
+  "command_logs": [
+    {
+      "path": "A04-audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "A04-audit.stdout.log",
+      "sha256": "dfbc2c65ab11af82b1a1294e7ac451dc253ca7a325548ce0a8145bf01f9a7c1d"
+    },
+    {
+      "path": "adaptive-audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "adaptive-audit.stdout.log",
+      "sha256": "1c092f1cd2f8bc523839e559b70d6bc0360d385c58611bd4af341786adeeca5c"
+    },
+    {
+      "path": "B04-audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "B04-audit.stdout.log",
+      "sha256": "a456cc26e4664ee4206ca4cd04ddfb687b9f76562d719ebe5524fce092eec7b2"
+    },
+    {
+      "path": "demo-fail.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-fail.stdout.log",
+      "sha256": "4ba9440751c7d54f762b735d84a10a5569ca2326be9c74c9d3f0a719ba990f90"
+    },
+    {
+      "path": "demo-fixed.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-fixed.stdout.log",
+      "sha256": "2bd84792e99f0eaf63aaa68eca4fff7c2cb492abebf242858a480bebb934b509"
+    },
+    {
+      "path": "demo-no-feedback.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-no-feedback.stdout.log",
+      "sha256": "fdbad3ccd652e5b481895a2f8fd7607d8667cfb508c48abfaf9cfbb94b7d5165"
+    },
+    {
+      "path": "demo-no-probability.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-no-probability.stdout.log",
+      "sha256": "cf464cc0f9378ec09d27255f3b62c4734690aad7fa7648faaea0725eec4d608b"
+    },
+    {
+      "path": "demo-none.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-none.stdout.log",
+      "sha256": "7037d4ec04f38801a649c3d1d43bccf2723a225450fcd8b16b387005fc51afea"
+    },
+    {
+      "path": "demo-pass.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-pass.stdout.log",
+      "sha256": "4a65a33de26f405c7c3127ec2abaa8401cc64e271e089172eea03009eb337246"
+    },
+    {
+      "path": "demo-timeout.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "demo-timeout.stdout.log",
+      "sha256": "1e83780101044150b785124605382ab91d17cbc89aedb51628d39b1603b311c7"
+    },
+    {
+      "path": "pip-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pip-check.stdout.log",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "pytest.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pytest.stdout.log",
+      "sha256": "94ab76130428ed530c1b308d6b6bf81cebb8eda66b0d5e4fada0f2f728feeae8"
+    },
+    {
+      "path": "reject-negative-cost-weight.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reject-negative-cost-weight.stdout.log",
+      "sha256": "9b421126f2bce82b8b081cfd05ae54b5eaa517b33cb594fcc4140661dfd29713"
+    }
+  ]
+}

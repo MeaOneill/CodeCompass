@@ -1,0 +1,13 @@
+pip-check: 0
+pytest: 0
+adaptive-audit: 0
+A04-audit: 0
+B04-audit: 0
+demo-pass: 0
+demo-fail: 0
+demo-none: 0
+demo-fixed: 0
+demo-no-feedback: 0
+demo-no-probability: 0
+demo-timeout: 0
+reject-negative-cost-weight: 2
