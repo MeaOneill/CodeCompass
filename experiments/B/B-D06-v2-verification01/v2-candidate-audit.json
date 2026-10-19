@@ -1,0 +1,21 @@
+{
+  "candidate_checks_passed": true,
+  "checks": 109,
+  "errors": [],
+  "task_specs": 12,
+  "executable_tasks": 12,
+  "actual_model_api_calls": 2,
+  "actual_enrollment": null,
+  "formal_tasks": 0,
+  "human_review": "NOT_REVIEWED",
+  "software_handoff_ready": true,
+  "joint_g2_passed": false,
+  "formal_study_allowed": false,
+  "freeze_tag_allowed": false,
+  "remaining": [
+    "actual recruitment/consent",
+    "actual task/source/protocol review and A/B comparison-branch confirmation",
+    "designated integration and formal version/tag"
+  ],
+  "historical_audit_policy": "v0.1 reports describe immutable previous checkpoint; this v0.2 audit supersedes its technical missing items"
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1350" viewBox="0 0 1900 1350"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="45" y="61" font-family="Microsoft YaHei,sans-serif" font-size="36" fill="#243c59">同任务路线配对板 | task_001 开发验证</text>
+<text x="45" y="122" font-family="Microsoft YaHei,sans-serif" font-size="27" fill="#243c59">真实B1服务 + 合成作答 · 三方法统一公开输入与100代理预算 · 非真人成绩</text>
+<rect x="45" y="175" width="1800" height="300" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="222" font-family="Microsoft YaHei,sans-serif" font-size="32" fill="#243c59">Ours</text>
+<text x="250" y="219" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">初始：u_chunked → u_chunked_iter → u_iterable</text>
+<text x="250" y="281" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">反馈后剩余：u_chunked_iter → u_iterable</text>
+<text x="250" y="345" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">已完成：u_chunked；模拟短测：pass</text>
+<text x="250" y="410" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">真实API调用 0；估算费用 CNY 0.000000；状态 FEASIBLE</text>
+<rect x="45" y="510" width="1800" height="300" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="557" font-family="Microsoft YaHei,sans-serif" font-size="32" fill="#243c59">B2</text>
+<text x="250" y="554" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">初始：u_chunked_iter → u_iterable → u_chunked</text>
+<text x="250" y="616" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">反馈后剩余：u_iterable → u_chunked</text>
+<text x="250" y="680" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">已完成：u_chunked_iter；模拟短测：pass</text>
+<text x="250" y="745" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">真实API调用 0；估算费用 CNY 0.000000；状态 FEASIBLE</text>
+<rect x="45" y="845" width="1800" height="300" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="892" font-family="Microsoft YaHei,sans-serif" font-size="32" fill="#243c59">B1</text>
+<text x="250" y="889" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">初始：u_iterable → u_chunked_iter → u_chunked</text>
+<text x="250" y="951" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">反馈后剩余：u_chunked_iter → u_chunked</text>
+<text x="250" y="1015" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">已完成：u_iterable；模拟短测：pass</text>
+<text x="250" y="1080" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">真实API调用 2；估算费用 CNY 0.014108；状态 FEASIBLE</text>
+<text x="45" y="1265" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">保持路线不变也保留；不据此推断学习收益或某方法更好。计时含调用，原始响应已留存。</text>
+</svg>

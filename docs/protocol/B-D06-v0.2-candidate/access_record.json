@@ -1,0 +1,12 @@
+{
+  "version": "B-D06-v0.2-candidate",
+  "formal_freeze": false,
+  "private_key": {
+    "path": "private_evaluation/B-D06/v0.1-candidate/keys.json",
+    "sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+    "access": "local_evaluator_only_ignored_not_sent_to_A_or_model"
+  },
+  "public_registry": "benchmarks/B/executable-v2/registry.json",
+  "personal_data": "No roster/contact/raw submission/SQLite in Git; no real participants enrolled",
+  "cross_machine_private_key_delivery": "NOT_CONFIGURED; do not claim private scoring replay from public clone"
+}

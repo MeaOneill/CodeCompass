@@ -1,0 +1,280 @@
+{
+  "candidate_checks_passed": true,
+  "checks": 107,
+  "errors": [],
+  "sealed_task_specs": 12,
+  "formal_tasks": 0,
+  "formal_reviewers": 0,
+  "actual_enrollment": null,
+  "private_key_matches_on_this_machine": true,
+  "private_key_new_clone_policy": "missing key blocks evaluator; protocol/code audit remains replayable",
+  "schedule_reports": [
+    {
+      "passed": true,
+      "errors": [],
+      "planned_slots": 12,
+      "actual_enrolled": 0,
+      "method_period_counts": {
+        "1:Ours": 4,
+        "1:B1": 4,
+        "1:B2": 4,
+        "2:Ours": 4,
+        "2:B1": 4,
+        "2:B2": 4,
+        "3:Ours": 4,
+        "3:B1": 4,
+        "3:B2": 4
+      },
+      "task_method_counts": [
+        {
+          "task_id": "task_005",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 1
+        },
+        {
+          "task_id": "task_006",
+          "Ours": 1,
+          "B1": 2,
+          "B2": 1
+        },
+        {
+          "task_id": "task_007",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 1
+        },
+        {
+          "task_id": "task_008",
+          "Ours": 1,
+          "B1": 2,
+          "B2": 1
+        },
+        {
+          "task_id": "task_009",
+          "Ours": 2,
+          "B1": 1,
+          "B2": 2
+        },
+        {
+          "task_id": "task_010",
+          "Ours": 1,
+          "B1": 1,
+          "B2": 2
+        },
+        {
+          "task_id": "task_011",
+          "Ours": 2,
+          "B1": 1,
+          "B2": 2
+        },
+        {
+          "task_id": "task_012",
+          "Ours": 1,
+          "B1": 1,
+          "B2": 2
+        }
+      ],
+      "task_method_max_spread": 1,
+      "parallel_difficulty": "NOT_HUMAN_CALIBRATED",
+      "shared_generic_python_transfer": "POSSIBLE_DESPITE_DISJOINT_LISTED_CONCEPTS"
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "planned_slots": 18,
+      "actual_enrolled": 0,
+      "method_period_counts": {
+        "1:Ours": 6,
+        "1:B1": 6,
+        "1:B2": 6,
+        "2:Ours": 6,
+        "2:B1": 6,
+        "2:B2": 6,
+        "3:Ours": 6,
+        "3:B1": 6,
+        "3:B2": 6
+      },
+      "task_method_counts": [
+        {
+          "task_id": "task_005",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 3
+        },
+        {
+          "task_id": "task_006",
+          "Ours": 3,
+          "B1": 2,
+          "B2": 2
+        },
+        {
+          "task_id": "task_007",
+          "Ours": 2,
+          "B1": 3,
+          "B2": 2
+        },
+        {
+          "task_id": "task_008",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 2
+        },
+        {
+          "task_id": "task_009",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 3
+        },
+        {
+          "task_id": "task_010",
+          "Ours": 3,
+          "B1": 2,
+          "B2": 2
+        },
+        {
+          "task_id": "task_011",
+          "Ours": 2,
+          "B1": 3,
+          "B2": 2
+        },
+        {
+          "task_id": "task_012",
+          "Ours": 2,
+          "B1": 2,
+          "B2": 2
+        }
+      ],
+      "task_method_max_spread": 1,
+      "parallel_difficulty": "NOT_HUMAN_CALIBRATED",
+      "shared_generic_python_transfer": "POSSIBLE_DESPITE_DISJOINT_LISTED_CONCEPTS"
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "planned_slots": 6,
+      "actual_enrolled": 0,
+      "method_period_counts": {
+        "1:Ours": 3,
+        "1:B2": 3,
+        "2:Ours": 3,
+        "2:B2": 3
+      },
+      "task_method_counts": [
+        {
+          "task_id": "task_005",
+          "Ours": 1,
+          "B2": 0
+        },
+        {
+          "task_id": "task_006",
+          "Ours": 0,
+          "B2": 1
+        },
+        {
+          "task_id": "task_007",
+          "Ours": 1,
+          "B2": 0
+        },
+        {
+          "task_id": "task_008",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_009",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_010",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_011",
+          "Ours": 0,
+          "B2": 1
+        },
+        {
+          "task_id": "task_012",
+          "Ours": 1,
+          "B2": 1
+        }
+      ],
+      "task_method_max_spread": 1,
+      "parallel_difficulty": "NOT_HUMAN_CALIBRATED",
+      "shared_generic_python_transfer": "POSSIBLE_DESPITE_DISJOINT_LISTED_CONCEPTS"
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "planned_slots": 10,
+      "actual_enrolled": 0,
+      "method_period_counts": {
+        "1:Ours": 5,
+        "1:B2": 5,
+        "2:Ours": 5,
+        "2:B2": 5
+      },
+      "task_method_counts": [
+        {
+          "task_id": "task_005",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_006",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_007",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_008",
+          "Ours": 1,
+          "B2": 1
+        },
+        {
+          "task_id": "task_009",
+          "Ours": 2,
+          "B2": 1
+        },
+        {
+          "task_id": "task_010",
+          "Ours": 1,
+          "B2": 2
+        },
+        {
+          "task_id": "task_011",
+          "Ours": 1,
+          "B2": 2
+        },
+        {
+          "task_id": "task_012",
+          "Ours": 2,
+          "B2": 1
+        }
+      ],
+      "task_method_max_spread": 1,
+      "parallel_difficulty": "NOT_HUMAN_CALIBRATED",
+      "shared_generic_python_transfer": "POSSIBLE_DESPITE_DISJOINT_LISTED_CONCEPTS"
+    }
+  ],
+  "joint_g2_passed": false,
+  "formal_study_allowed": false,
+  "freeze_tag_allowed": false,
+  "software_handoff_ready": true,
+  "blockers": [
+    "正式参与人数/自愿同意未确认；预演者排除需实际核对",
+    "12规格尚无人类题目/独立rubric与源码教学关系批准；正式题0",
+    "8留出候选未接入经审核规划/诊断材料；当前界面仅2道dev题",
+    "三方法分支缺动态B1；两方法分支需人数证据和事前双方方案确认",
+    "A/B协议批准、main集成及v0.1-protocol-freeze标签尚未完成"
+  ],
+  "independent_human_review": "NOT_REVIEWED",
+  "model_api_calls": 0
+}

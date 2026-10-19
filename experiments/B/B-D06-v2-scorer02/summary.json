@@ -1,0 +1,191 @@
+{
+  "run_id": "B-D06-v2-scorer02",
+  "scope": "evaluator-only synthetic positive/negative fixtures; not formal method outcomes",
+  "cases": [
+    {
+      "task_id": "task_003",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_003",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_004",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_004",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_005",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_005",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_006",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_006",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_007",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_007",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_008",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_008",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_009",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_009",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_010",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_010",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_011",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_011",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_012",
+      "fixture": "positive_reference",
+      "assessment_expected": true,
+      "status": "PENDING",
+      "review_count": 0,
+      "visible_result_bound": true
+    },
+    {
+      "task_id": "task_012",
+      "fixture": "negative_empty",
+      "assessment_expected": true,
+      "status": "SCORED",
+      "review_count": 0,
+      "visible_result_bound": true
+    }
+  ],
+  "passed": true,
+  "private_key_sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+  "answers_exported": false,
+  "human_reviews": 0,
+  "model_api_calls": 0,
+  "export_counts": {
+    "sessions": 20,
+    "participants": 20,
+    "actor": "test_fixture",
+    "assessment_records": 20,
+    "formal_outcomes": 0
+  },
+  "event_audit": {
+    "passed": true,
+    "checks": 1453,
+    "errors": [],
+    "sessions": 20,
+    "events": 220,
+    "acceptance_rule": "B-D05-manual-core-v2; pause/resume reported separately, no session splicing",
+    "manual_pause_resume_flows": 0,
+    "complete_manual_flows": 0,
+    "manual_flow_passed": false,
+    "human_manual_sessions": 0,
+    "independent_human_review": "NOT_REVIEWED"
+  }
+}

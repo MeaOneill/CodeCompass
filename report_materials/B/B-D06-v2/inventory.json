@@ -1,0 +1,20 @@
+[
+  {
+    "split": "dev",
+    "module": "iterutils",
+    "planned": 8,
+    "actual_specs": 4,
+    "executable": 4,
+    "human_approved": 0,
+    "formal_frozen": 0
+  },
+  {
+    "split": "test_candidate",
+    "module": "strutils",
+    "planned": 16,
+    "actual_specs": 8,
+    "executable": 8,
+    "human_approved": 0,
+    "formal_frozen": 0
+  }
+]

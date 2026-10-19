@@ -1,0 +1,275 @@
+{
+  "run_id": "B-D06-v2-offline01",
+  "actor": "test_fixture",
+  "operations": [
+    {
+      "task_id": "task_001",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 81.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_001",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 81.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_002",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 61.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_002",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 61.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_003",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 19.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_003",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 19.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_004",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 27.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_004",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 27.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_005",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 5.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_005",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 5.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_006",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 25.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_006",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 25.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_007",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 18.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_007",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 18.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_008",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 15.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_008",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 15.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_009",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 9.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_009",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 9.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_010",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 21.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_010",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 21.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_011",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 90.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_011",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 90.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_012",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 19.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_012",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 19.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    }
+  ],
+  "counts": {
+    "sessions": 24,
+    "participants": 24,
+    "actor": "test_fixture"
+  },
+  "event_audit": {
+    "passed": true,
+    "checks": 1871,
+    "errors": [],
+    "sessions": 24,
+    "events": 286,
+    "acceptance_rule": "B-D05-manual-core-v2; pause/resume reported separately, no session splicing",
+    "manual_pause_resume_flows": 0,
+    "complete_manual_flows": 0,
+    "manual_flow_passed": false,
+    "human_manual_sessions": 0,
+    "independent_human_review": "NOT_REVIEWED"
+  },
+  "model_api_calls": 0,
+  "model_reservation_before_cny": null,
+  "model_reservation_after_cny": null,
+  "cumulative_budget_cny": 5,
+  "estimated_cost_cny": 0,
+  "actual_bill_cny": null,
+  "formal_outcomes": 0,
+  "human_participants": 0,
+  "fixture_inputs": true,
+  "real_model_transport": false,
+  "passed": true
+}

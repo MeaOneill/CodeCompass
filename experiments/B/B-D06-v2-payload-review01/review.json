@@ -1,0 +1,30 @@
+{
+  "endpoint": "https://api.deepseek.com/responses",
+  "task": "task_001 dev only",
+  "source": "Public boltons MIT source; fixed commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_url": "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py",
+  "source_paths": [
+    "boltons/iterutils.py"
+  ],
+  "data": [
+    "public development-task specification",
+    "public fixed-source spans",
+    "public learning-unit costs",
+    "synthetic empty profile then one synthetic answer"
+  ],
+  "personal_data": false,
+  "local_file_paths": false,
+  "private_keys": false,
+  "final_answers": false,
+  "private_evaluation_files": false,
+  "actual_participants": false,
+  "original_approval_rejected": true,
+  "reason": "Concrete source/task payload approval requested by automated reviewer",
+  "budget": "Existing cumulative CNY5 ledger; cap4 calls/.25 reservation each; initial + at most one format repair per phase",
+  "context_policy": "Only fixed public task001 source and synthetic pass/fail; completed unit IDs depend on B1 initial route",
+  "files": {
+    "prompt.txt": "604a4cc5c6c4c98a0aa4a45832c231560ddd7d9f0b2c203d89d56e2d8ea75802",
+    "public-context-0.json": "c6d105c4f3b42bd7cb5f78d5356fb7926413073fa719d6a291e1dca3a96d70ac",
+    "public-context-1.json": "470e4ec1720333a753095c41a5b5f5c1461ed35acf7a752a6c7d11a80a6b3061"
+  }
+}

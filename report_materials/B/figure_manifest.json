@@ -676,5 +676,91 @@
         "sha256": "f652dd3fd41561f6c7ec682880539c08f21a4da85d2ab73fc12279f3db5e2d78"
       }
     ]
+  },
+  {
+    "figure_id": "T01_v2_inventory",
+    "task_id": "B-D06",
+    "run_id": "B-D06-v2",
+    "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+    "source_version": "B-D06-executable-candidate-2",
+    "evidence_type": "inventory_and_engineering_fixture_not_human_effect",
+    "human_effect_sample_size": 0,
+    "confirmed_enrollment": null,
+    "dpi": 300,
+    "visual_review": "Codex Agent B viewed PNG; readable, no clipping/garbled text; not independent human review",
+    "command": "python scripts/B/draw_relay_v2.py",
+    "files": [
+      {
+        "path": "benchmarks/B/executable-v2/registry.json",
+        "sha256": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4"
+      },
+      {
+        "path": "experiments/B/B-D06-v2-live01/traces.json",
+        "sha256": "a97501f08dcf4bb41c621fb344f42958be37488bcded31a0f844b8c9c7d223fd"
+      },
+      {
+        "path": "scripts/B/draw_relay_v2.py",
+        "sha256": "ee59a65fa7cb843b1f15a966d456e46de41dabf0bd08e3d16c414b76c58026c0"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/inventory.json",
+        "sha256": "0a2832564198b94de34652ea3053af4868ba63f3c5d5c64809e4957b0eeae588"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/inventory.csv",
+        "sha256": "1a9f27fc536d7881a491454e4431b62e18cafaa827645df034637c6e0259270e"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/T01_v2_inventory.png",
+        "sha256": "50e414fa84e077b993ef8553bfb5715e282817e0d0d39520269b06f0ffacb1a0"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/T01_v2_inventory.svg",
+        "sha256": "d7aa12db5b1100cd5ad7ff92244730d292e8b2014d6fca9e09e2babb4531c771"
+      }
+    ]
+  },
+  {
+    "figure_id": "paired_routes_v2",
+    "task_id": "B-D06",
+    "run_id": "B-D06-v2-live01",
+    "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+    "source_version": "B-D06-executable-candidate-2",
+    "evidence_type": "inventory_and_engineering_fixture_not_human_effect",
+    "human_effect_sample_size": 0,
+    "confirmed_enrollment": null,
+    "dpi": 300,
+    "visual_review": "Codex Agent B viewed PNG; readable, no clipping/garbled text; not independent human review",
+    "command": "python scripts/B/draw_relay_v2.py",
+    "files": [
+      {
+        "path": "benchmarks/B/executable-v2/registry.json",
+        "sha256": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4"
+      },
+      {
+        "path": "experiments/B/B-D06-v2-live01/traces.json",
+        "sha256": "a97501f08dcf4bb41c621fb344f42958be37488bcded31a0f844b8c9c7d223fd"
+      },
+      {
+        "path": "scripts/B/draw_relay_v2.py",
+        "sha256": "ee59a65fa7cb843b1f15a966d456e46de41dabf0bd08e3d16c414b76c58026c0"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/inventory.json",
+        "sha256": "0a2832564198b94de34652ea3053af4868ba63f3c5d5c64809e4957b0eeae588"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/inventory.csv",
+        "sha256": "1a9f27fc536d7881a491454e4431b62e18cafaa827645df034637c6e0259270e"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/paired_routes_v2.png",
+        "sha256": "fe7370c4a16e52954d22f0150f34d8d5f8c5376e178bf037340f6a6d6108459c"
+      },
+      {
+        "path": "report_materials/B/B-D06-v2/paired_routes_v2.svg",
+        "sha256": "cab558416f6ece7d75488969e16d9c0bdc92bcd7a083f6c23fd0e3edd7443995"
+      }
+    ]
   }
 ]

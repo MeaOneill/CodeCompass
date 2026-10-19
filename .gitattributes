@@ -87,3 +87,9 @@
 /docs/protocol/** text eol=lf
 /benchmarks/B/frozen/**/snapshots/** -text whitespace=-blank-at-eol,cr-at-eol
 /report_materials/A/A-D06-supplement/*.svg -text whitespace=-blank-at-eol,cr-at-eol
+
+# D06 v2 producer hashes include these Windows newline bytes.
+/benchmarks/B/executable-v2/registry.sha256 -text whitespace=cr-at-eol
+/report_materials/B/B-D06-v2/*.csv -text whitespace=cr-at-eol
+/app/B_D06_v2/style.css -text whitespace=cr-at-eol
+/report_materials/B/B-D06-v2/render_config.json -text whitespace=cr-at-eol

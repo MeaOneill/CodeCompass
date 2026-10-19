@@ -1,0 +1,65 @@
+{
+  "run_id": "B-D06-v2-live01",
+  "actor": "test_fixture",
+  "operations": [
+    {
+      "task_id": "task_001",
+      "method": "Ours",
+      "status": "SUBMITTED",
+      "spent": 81.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_001",
+      "method": "B2",
+      "status": "SUBMITTED",
+      "spent": 81.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    {
+      "task_id": "task_001",
+      "method": "B1",
+      "status": "SUBMITTED",
+      "spent": 81.0,
+      "quiz_done": true,
+      "success": null,
+      "profile_is_simulated": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    }
+  ],
+  "counts": {
+    "sessions": 3,
+    "participants": 3,
+    "actor": "test_fixture"
+  },
+  "event_audit": {
+    "passed": true,
+    "checks": 263,
+    "errors": [],
+    "sessions": 3,
+    "events": 39,
+    "acceptance_rule": "B-D05-manual-core-v2; pause/resume reported separately, no session splicing",
+    "manual_pause_resume_flows": 0,
+    "complete_manual_flows": 0,
+    "manual_flow_passed": false,
+    "human_manual_sessions": 0,
+    "independent_human_review": "NOT_REVIEWED"
+  },
+  "model_api_calls": 2,
+  "model_reservation_before_cny": 1.5,
+  "model_reservation_after_cny": 2.0,
+  "cumulative_budget_cny": 5,
+  "estimated_cost_cny": 0.014107999999999999,
+  "actual_bill_cny": null,
+  "formal_outcomes": 0,
+  "human_participants": 0,
+  "fixture_inputs": true,
+  "real_model_transport": true,
+  "passed": true
+}

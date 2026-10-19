@@ -1,0 +1,5616 @@
+[
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "824b382db39daa146f0cfb251dd2ec03c9f8735de1f20a8b75b4739635268843"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "47ee6a6d09cecafcc01e9c0f60073111d6c715415433f76cacdf73a3b9369166",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "824b382db39daa146f0cfb251dd2ec03c9f8735de1f20a8b75b4739635268843",
+    "hash": "e77994eb1da596ca7668979b52bfb9fe4e397cd6a80626fed374d605cac67bf9"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_005__camel2under",
+        "task_005__under2camel"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "47ee6a6d09cecafcc01e9c0f60073111d6c715415433f76cacdf73a3b9369166",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e77994eb1da596ca7668979b52bfb9fe4e397cd6a80626fed374d605cac67bf9",
+    "hash": "e5692589b563fe5377d48ec25161026302b5fbd92aa27e7b6c987b96ca6efb00"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__camel2under",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e5692589b563fe5377d48ec25161026302b5fbd92aa27e7b6c987b96ca6efb00",
+    "hash": "3f6e74779663daf56e1a0f2fe6e36f5a594683f59d4872981ee09c2f273da56c"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__camel2under",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3f6e74779663daf56e1a0f2fe6e36f5a594683f59d4872981ee09c2f273da56c",
+    "hash": "1bac4359bf8a49b662268a47e5fb30b9930e335ed2833a52fbce9e7b567786e1"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_005-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1bac4359bf8a49b662268a47e5fb30b9930e335ed2833a52fbce9e7b567786e1",
+    "hash": "7a88de12eaf9851fc1d398be68bdaaf4a7c6a3de47dc8ee7ececb9987c15e396"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_005-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7a88de12eaf9851fc1d398be68bdaaf4a7c6a3de47dc8ee7ececb9987c15e396",
+    "hash": "7194d4b6b9d57e9f5ff56eba4d81ac25ed6300ab9c61e91a2cdd5225be8b2a80"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.regex_boundary",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7194d4b6b9d57e9f5ff56eba4d81ac25ed6300ab9c61e91a2cdd5225be8b2a80",
+    "hash": "07a90088f7fd7fad0b429b781c10c377ea68de4cd9b83763efbc0d94586ef201"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "df3f608cc1fe7df3435de17c4472f398e6a93bf73705fac8e9fa7a783b684a31",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "07a90088f7fd7fad0b429b781c10c377ea68de4cd9b83763efbc0d94586ef201",
+    "hash": "f2d043d53a0c3e1ca6a672cfa1f26606f005b07e7ca775cc3c7877820d65c1a1"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_005__under2camel"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "df3f608cc1fe7df3435de17c4472f398e6a93bf73705fac8e9fa7a783b684a31",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f2d043d53a0c3e1ca6a672cfa1f26606f005b07e7ca775cc3c7877820d65c1a1",
+    "hash": "a4762c6716cf4c28c9f917e41079613186dc41f2b9f8a74973bcf5fa2d28c6a3"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__under2camel",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a4762c6716cf4c28c9f917e41079613186dc41f2b9f8a74973bcf5fa2d28c6a3",
+    "hash": "d478ea4ee2517829629fead48d0506f5910bbc7b3245d03b17fbf160817c4d07"
+  },
+  {
+    "session_id": "a7942aed8885a4f6814c5e2d",
+    "participant": "d682548495019bb195cbd869",
+    "task_id": "task_005",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1879999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d478ea4ee2517829629fead48d0506f5910bbc7b3245d03b17fbf160817c4d07",
+    "hash": "fe798ef2e4bd080b29b8f732401dc20e59fd814fb72ddee61e1d9dcad982ea7c"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "5e2312b50b3af3941764d3870e65d001c26ac24c7a410448ae905a24e07bc79e"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "92eb8bb805f3babd93742d5ad42b7b6972699d36f49f35f2d52382025f134c37",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5e2312b50b3af3941764d3870e65d001c26ac24c7a410448ae905a24e07bc79e",
+    "hash": "53988e759fa07906f2550357e7984e4c6d0b9b942deb8081da66f8122220c835"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.2970000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_012__human_readable_list",
+        "task_012__removeprefix"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "92eb8bb805f3babd93742d5ad42b7b6972699d36f49f35f2d52382025f134c37",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "53988e759fa07906f2550357e7984e4c6d0b9b942deb8081da66f8122220c835",
+    "hash": "44c572030e113b75e3c0bfa5c266d496a2c1cb56f2c06591807a6b0a2074c5a0"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.2970000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__human_readable_list",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "44c572030e113b75e3c0bfa5c266d496a2c1cb56f2c06591807a6b0a2074c5a0",
+    "hash": "af2e56909659f27efa71930371540b6dd366196bca60d8fb77ef56f81a0a3387"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.3129999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__human_readable_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "af2e56909659f27efa71930371540b6dd366196bca60d8fb77ef56f81a0a3387",
+    "hash": "d54659363ebb9d25bded11de146b1ef0b4d169148c362c5d312ec60330619f2e"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.3129999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_012-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d54659363ebb9d25bded11de146b1ef0b4d169148c362c5d312ec60330619f2e",
+    "hash": "30d020f790cf3e0168192b0710b34b50b96d513beed102c648b1c1ffc6bef5ca"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.34400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_012-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.031000000017229468,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "30d020f790cf3e0168192b0710b34b50b96d513beed102c648b1c1ffc6bef5ca",
+    "hash": "1680ecfe420fb14125d071e8595d055d029b987aba59ffb0d712390d3466d66e"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.34400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.prefix_slice",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1680ecfe420fb14125d071e8595d055d029b987aba59ffb0d712390d3466d66e",
+    "hash": "0b195bf36f72a7b5872ed98ee5f84c966f1412d8238655bd1635dcccde355e2f"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.34400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "57182dca23b856132d87ca79960a05bfe7730c57ee9cd9c311831f0db2a5ccbf",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0b195bf36f72a7b5872ed98ee5f84c966f1412d8238655bd1635dcccde355e2f",
+    "hash": "9c196f885483836d25acaf341cc9843d27227fb0c781f0e5fa4e822388a4f8be"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.610000000015134,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_012__removeprefix"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "57182dca23b856132d87ca79960a05bfe7730c57ee9cd9c311831f0db2a5ccbf",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9c196f885483836d25acaf341cc9843d27227fb0c781f0e5fa4e822388a4f8be",
+    "hash": "b49a81755a3e0ffff183862a02271dce366ad323aa08679f7e71d0c7bf564b2d"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.625,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__removeprefix",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b49a81755a3e0ffff183862a02271dce366ad323aa08679f7e71d0c7bf564b2d",
+    "hash": "0395be5a44f1c72b67f9f8b2dacecba6a1025531cc6192d2ab04be7d773a0fbf"
+  },
+  {
+    "session_id": "e86404e61c9657e678b7c5f6",
+    "participant": "c35c2727942b5e6bc09c67c8",
+    "task_id": "task_012",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.6410000000032596,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0395be5a44f1c72b67f9f8b2dacecba6a1025531cc6192d2ab04be7d773a0fbf",
+    "hash": "7531f4756a8eac716a69bbfc62e5a001dc1599be710d2ed1ee9b410adb9ebcd0"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "d50f6abe6bf566602663ac35f6f8d6345601cdded43aa23cbb05c2a2060bc47e"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "b5ed0be1ee20fdfcd430f39d988310414974d1a6138cf984070f134deced26e1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d50f6abe6bf566602663ac35f6f8d6345601cdded43aa23cbb05c2a2060bc47e",
+    "hash": "186b056188e48e80bef03f1d8812b23a18d691ddc3d756bc43ef8980557e8923"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_008__strip_ansi"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "b5ed0be1ee20fdfcd430f39d988310414974d1a6138cf984070f134deced26e1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "186b056188e48e80bef03f1d8812b23a18d691ddc3d756bc43ef8980557e8923",
+    "hash": "d461c5d2e9368d181f89b8ff880a72e821052ba4b2275d9058673d5f3f27c308"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_008__strip_ansi",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d461c5d2e9368d181f89b8ff880a72e821052ba4b2275d9058673d5f3f27c308",
+    "hash": "cadefa70b2f91850a5eb9f707e70ef90d3ab220842c1a9d3f8109ba483eace69"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_008__strip_ansi",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cadefa70b2f91850a5eb9f707e70ef90d3ab220842c1a9d3f8109ba483eace69",
+    "hash": "cc018a089693860e85b12c09d95e26871790950c2f1b99ec442ff3130484c973"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_008-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cc018a089693860e85b12c09d95e26871790950c2f1b99ec442ff3130484c973",
+    "hash": "039f7d46512f47577eef6baff5ba438c097e92805ce3e35fe418bd82ac05e98d"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_008-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "039f7d46512f47577eef6baff5ba438c097e92805ce3e35fe418bd82ac05e98d",
+    "hash": "2f14dc7b5e1aab96e47fa85020add88b3f829d8e42c800c747ff91565b506219"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.bytes_text",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2f14dc7b5e1aab96e47fa85020add88b3f829d8e42c800c747ff91565b506219",
+    "hash": "d3e9735eb66cf97bea679b1aa59d0b5fd0af5e8315c2909f930355f823359666"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "ddc9d74e125974d3720ece94c2253e66011ff40aeada7442abe9748cd743e005",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d3e9735eb66cf97bea679b1aa59d0b5fd0af5e8315c2909f930355f823359666",
+    "hash": "0461bcbe2ce776c1502ae138be711eaa3f5f6b956f0581bff8605417b180bdb5"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "ddc9d74e125974d3720ece94c2253e66011ff40aeada7442abe9748cd743e005",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0461bcbe2ce776c1502ae138be711eaa3f5f6b956f0581bff8605417b180bdb5",
+    "hash": "42bbb4b44042c95b02102eccd3138b7c632506293f7ce81ff57a74b5b2f3d173"
+  },
+  {
+    "session_id": "de5d4d7ade6d178112f55f48",
+    "participant": "833691370e3af92a49b31756",
+    "task_id": "task_008",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1870000000053551,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "42bbb4b44042c95b02102eccd3138b7c632506293f7ce81ff57a74b5b2f3d173",
+    "hash": "7aec55f352c55a572d40b83a8b561a5bef6f397cd00a3cadf94611716f6ba0f9"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "b8c374ca77f441b39dfface29ce42d97e7e7d6532123a632d2a53cd1ffb32cb9"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "8bef3df9c2b35341f5a871440d9d7a2b72f7aa389681c6fffe774afa27ec277b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b8c374ca77f441b39dfface29ce42d97e7e7d6532123a632d2a53cd1ffb32cb9",
+    "hash": "ef0b84f5c934fb2ad9f768436cb0e60daff8e75d7bfa3d13d6d83ad269db08ca"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_positive_int",
+        "u_iterable",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8bef3df9c2b35341f5a871440d9d7a2b72f7aa389681c6fffe774afa27ec277b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ef0b84f5c934fb2ad9f768436cb0e60daff8e75d7bfa3d13d6d83ad269db08ca",
+    "hash": "056f2e5df049ca48278ecadc7d0dbdeaf1d39e8c564d278c81c4f5ab547643c6"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_positive_int",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "056f2e5df049ca48278ecadc7d0dbdeaf1d39e8c564d278c81c4f5ab547643c6",
+    "hash": "741885359b5eef1be428267003d00972f9d64d6815076c4bb34f3f56e55e2c44"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_positive_int",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "741885359b5eef1be428267003d00972f9d64d6815076c4bb34f3f56e55e2c44",
+    "hash": "ae468153e74a2ea507df5a09ab266856e05143b84782bb4c78464215f9374917"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ae468153e74a2ea507df5a09ab266856e05143b84782bb4c78464215f9374917",
+    "hash": "f1881cf7a2c1c50302dd203db15f530b59f9214ab022a070e27762cde6ec7b9c"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f1881cf7a2c1c50302dd203db15f530b59f9214ab022a070e27762cde6ec7b9c",
+    "hash": "908dd85ee247f17d7daa8365e299a3364300793c6be07204ea2d6f15e9ae410d"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.iterator_protocol",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "908dd85ee247f17d7daa8365e299a3364300793c6be07204ea2d6f15e9ae410d",
+    "hash": "e274b64df278f8d4042fd965fe7934aa74275e10bebf5a701dc84e1452410fa5"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "642f82215605edbe0cb5b1ffc39fb3d5aa0ce4fb650cc32c4a3802304f122f95",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e274b64df278f8d4042fd965fe7934aa74275e10bebf5a701dc84e1452410fa5",
+    "hash": "ef6ab62bd42278bcdff9bdac9e180132f9f1f6063c8d82fa01122b5ec105c09a"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_iterable",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "642f82215605edbe0cb5b1ffc39fb3d5aa0ce4fb650cc32c4a3802304f122f95",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ef6ab62bd42278bcdff9bdac9e180132f9f1f6063c8d82fa01122b5ec105c09a",
+    "hash": "c003a050ecbf2ce68aa4ea0e9210a581d7749ab015005f51e37009cc62552706"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c003a050ecbf2ce68aa4ea0e9210a581d7749ab015005f51e37009cc62552706",
+    "hash": "cda473b02e8c90f71c5947bf4a1a615249a201fd4d9c556713190436a82391f5"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_windowed_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cda473b02e8c90f71c5947bf4a1a615249a201fd4d9c556713190436a82391f5",
+    "hash": "e66f77a101876992e86e1ffc7de35d25e317649823ac1daa3867a05ff31e032d"
+  },
+  {
+    "session_id": "55a9652d2740503f57b457a2",
+    "participant": "29d3983cdfb5ee1ba0181d11",
+    "task_id": "task_002",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e66f77a101876992e86e1ffc7de35d25e317649823ac1daa3867a05ff31e032d",
+    "hash": "ca9f58adc0cb5cbc5bee6fff32d2954e80aeb24d3465a2a6b981dffb2e112680"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "12aa96c6be6be22aeaee10a70687522610820960ded17f09b541ec307f752c5a"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "1b6ade10ccce62ca33a3cb06ea3d7cf10f0907e00bb0d96682d0955f919e722c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "12aa96c6be6be22aeaee10a70687522610820960ded17f09b541ec307f752c5a",
+    "hash": "a105e7cfe1a190215ec1280e135d0a0fe4afcc8190b701bfaadb65beee518c1c"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.014999999984866008,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_004__get_path"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "1b6ade10ccce62ca33a3cb06ea3d7cf10f0907e00bb0d96682d0955f919e722c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a105e7cfe1a190215ec1280e135d0a0fe4afcc8190b701bfaadb65beee518c1c",
+    "hash": "69f10edf690684cd799d632121e34d2c31f4ed7c4053332c69e426b443c0a5ff"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.014999999984866008,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_004__get_path",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "69f10edf690684cd799d632121e34d2c31f4ed7c4053332c69e426b443c0a5ff",
+    "hash": "cb79bb07b7996a373cee259f3700029e189785c2eeec7f1f6e0e6532dd9cfe0b"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_004__get_path",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cb79bb07b7996a373cee259f3700029e189785c2eeec7f1f6e0e6532dd9cfe0b",
+    "hash": "48aab9f5e4c44b9aaf0bff200ea210d8ff58689bb5fa08a9d7372548c20815fc"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_004-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "48aab9f5e4c44b9aaf0bff200ea210d8ff58689bb5fa08a9d7372548c20815fc",
+    "hash": "300148fc39a7c0f16501d28a91a1bc3317df39c4cfc814eb5cebde3fe6ab2032"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_004-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "300148fc39a7c0f16501d28a91a1bc3317df39c4cfc814eb5cebde3fe6ab2032",
+    "hash": "a002195419a7a1d09c9b6f9cca8e83da843b004bd9a2f43ba0b6823fa252f6dc"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.sentinel_default",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a002195419a7a1d09c9b6f9cca8e83da843b004bd9a2f43ba0b6823fa252f6dc",
+    "hash": "282e919ada1ef645c16ccb389a67bfd76f8b532f28c38e87b3d0748a612aec35"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "ed37ee37841cfd6833ea626f40d9b9d1f166f7b1fbe6aa79d4701e5a3cbc99f7",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "282e919ada1ef645c16ccb389a67bfd76f8b532f28c38e87b3d0748a612aec35",
+    "hash": "bb81e7d5cafc1cdf89dabb0d89f3611338b7962141927d3b08371e4d32f3b6b8"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "ed37ee37841cfd6833ea626f40d9b9d1f166f7b1fbe6aa79d4701e5a3cbc99f7",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bb81e7d5cafc1cdf89dabb0d89f3611338b7962141927d3b08371e4d32f3b6b8",
+    "hash": "67f136cadda9383afdad009dd2c21ac33de9b5601d54958d527aea5847312c1f"
+  },
+  {
+    "session_id": "3c77b5641aa98ec545f55486",
+    "participant": "7d3410829d022f32f6d3b8a1",
+    "task_id": "task_004",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "67f136cadda9383afdad009dd2c21ac33de9b5601d54958d527aea5847312c1f",
+    "hash": "3b5fe9c30fa7f7d72bef35a23790c35fd49a31d61014e52cd08e0e7572e3ecfb"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "6d5ab1d1b7de317ec85fb553de8019485b6ed61a2c98c4e82482aac76c1cae37"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "1b6ade10ccce62ca33a3cb06ea3d7cf10f0907e00bb0d96682d0955f919e722c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6d5ab1d1b7de317ec85fb553de8019485b6ed61a2c98c4e82482aac76c1cae37",
+    "hash": "d95c09cd84d3cc1e395460e220df72ab405c0e17fa89203a78243fc32e0a8b9f"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_004__get_path"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "1b6ade10ccce62ca33a3cb06ea3d7cf10f0907e00bb0d96682d0955f919e722c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d95c09cd84d3cc1e395460e220df72ab405c0e17fa89203a78243fc32e0a8b9f",
+    "hash": "6021a3c085071666b5c0a2b75c32d3c1d6e79bd39dae9fd77944dc82f1dc8cfe"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_004__get_path",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6021a3c085071666b5c0a2b75c32d3c1d6e79bd39dae9fd77944dc82f1dc8cfe",
+    "hash": "8d57166eae012d062cb219d080e364a97c2f11cda18c1bb0f0b8b7c15dc85e77"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_004__get_path",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8d57166eae012d062cb219d080e364a97c2f11cda18c1bb0f0b8b7c15dc85e77",
+    "hash": "5792335578ab12f37e24ad1d72947a0a3285e5fd4112e05e4a88c5ab4e03fa6c"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_004-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5792335578ab12f37e24ad1d72947a0a3285e5fd4112e05e4a88c5ab4e03fa6c",
+    "hash": "5c809e7b5d93b44e62f417ad7d5d7c9630d1ed8f1786c2464a3ebd5a943a71aa"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_004-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5c809e7b5d93b44e62f417ad7d5d7c9630d1ed8f1786c2464a3ebd5a943a71aa",
+    "hash": "e93009218f228da050f809d8cc41a571a512079ad88e098233daf40f5dc284bd"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.sentinel_default",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e93009218f228da050f809d8cc41a571a512079ad88e098233daf40f5dc284bd",
+    "hash": "3a0bcdd03c0dd819aa5b28a991bbd75279b04976d5e74eba9ea4d42378a15b5a"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "ed37ee37841cfd6833ea626f40d9b9d1f166f7b1fbe6aa79d4701e5a3cbc99f7",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3a0bcdd03c0dd819aa5b28a991bbd75279b04976d5e74eba9ea4d42378a15b5a",
+    "hash": "3c4160c9797cc44d63e5ae2a9233e00f8c7879305f1ac348fc164cca0601fead"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "ed37ee37841cfd6833ea626f40d9b9d1f166f7b1fbe6aa79d4701e5a3cbc99f7",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3c4160c9797cc44d63e5ae2a9233e00f8c7879305f1ac348fc164cca0601fead",
+    "hash": "ee261b788f29ada47cccbfd76abf153aa9e10d19a5b142133803e3c93cf1c062"
+  },
+  {
+    "session_id": "d8986807cbc10ee6f8ad6efa",
+    "participant": "cdd899c23fb2806f793b8390",
+    "task_id": "task_004",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1879999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ee261b788f29ada47cccbfd76abf153aa9e10d19a5b142133803e3c93cf1c062",
+    "hash": "1d6fbca7c75bf2984bf98b20f8fd656b2f6bb82f5c0cafdf2fab18bf2c50e95b"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "61d952e2a638590cabf0310b76ccb9eb358a2f51461feccab3de0640515a398f"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "0da1c0c446687f08f930e553da655944ffb34de9da54077b27fbd560d64c33b6",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "61d952e2a638590cabf0310b76ccb9eb358a2f51461feccab3de0640515a398f",
+    "hash": "746dc5a06027dff07e8eab14f119b19808a2d9ee00f190ef6e357ee391aae53b"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_010__indent",
+        "task_010__iter_splitlines"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "0da1c0c446687f08f930e553da655944ffb34de9da54077b27fbd560d64c33b6",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "746dc5a06027dff07e8eab14f119b19808a2d9ee00f190ef6e357ee391aae53b",
+    "hash": "f8cd8e91b12c05c1ad057661ec59ad5b437f6609933b3a375bbc9a74b8f18a3a"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__indent",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f8cd8e91b12c05c1ad057661ec59ad5b437f6609933b3a375bbc9a74b8f18a3a",
+    "hash": "0a1c5f9f0d78cbaf81359ceb7248e8d7cc10dee4d4c82db74c9b69573a112ab8"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__indent",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0a1c5f9f0d78cbaf81359ceb7248e8d7cc10dee4d4c82db74c9b69573a112ab8",
+    "hash": "020cea7c67389f42c13728aba7aa202b427596db3051dd4e993caa9dd4c2e5ae"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_010-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "020cea7c67389f42c13728aba7aa202b427596db3051dd4e993caa9dd4c2e5ae",
+    "hash": "4d0009e68667ff534bbc11d945892bac4cba2ff36ab0800a2a1dcf42c080d0f9"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_010-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4d0009e68667ff534bbc11d945892bac4cba2ff36ab0800a2a1dcf42c080d0f9",
+    "hash": "83802de3f6ead522d0922cbbfa009a715ae75dde50c3232f25cb0337e96e3731"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.regex_group",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "83802de3f6ead522d0922cbbfa009a715ae75dde50c3232f25cb0337e96e3731",
+    "hash": "8e74c41a863c341ffa598965ea797d06e24459b6a4f20a752bf7a7314bbd2f9b"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "bd606d620290045b373068637341ad568be2210a216e188332928a9f06ba3ab5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8e74c41a863c341ffa598965ea797d06e24459b6a4f20a752bf7a7314bbd2f9b",
+    "hash": "1c37e10092ada3747036c648cad16a2ea83607729b0d4ccd4376a7c384987a25"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.15700000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_010__iter_splitlines"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "bd606d620290045b373068637341ad568be2210a216e188332928a9f06ba3ab5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1c37e10092ada3747036c648cad16a2ea83607729b0d4ccd4376a7c384987a25",
+    "hash": "5cbcd6e800d2b44f2b113231090620df94ea481fe8be3ef634d0277dbe99ae14"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.1720000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__iter_splitlines",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5cbcd6e800d2b44f2b113231090620df94ea481fe8be3ef634d0277dbe99ae14",
+    "hash": "31dc396f237d37b03100358beb466b008121eca4f3e1be6cf1a46d8955aa3cd7"
+  },
+  {
+    "session_id": "752714097fbf6a23e8b7dca2",
+    "participant": "62396645f1ba3c37eac0cbf1",
+    "task_id": "task_010",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1879999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "31dc396f237d37b03100358beb466b008121eca4f3e1be6cf1a46d8955aa3cd7",
+    "hash": "323981c864a9ac8ef17bc8182d0e86749aa2258a6cf6a1a59230214b3ed8a90c"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "fc95b591e54c1003aa0f8500ab194eacac9ce4fbbfc23f3f3aac95b3c658ef08"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "7f70d93f0862c0874cfa2d0a59a8f689e380a3d4d9c79a0f18d118c2919c720c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "fc95b591e54c1003aa0f8500ab194eacac9ce4fbbfc23f3f3aac95b3c658ef08",
+    "hash": "cbfd414372f5fd64d2f72559d4f594b8cc48db42e1adbad76ea5895b54f1bc97"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.32800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_011__format_int_list",
+        "task_011__parse_int_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "7f70d93f0862c0874cfa2d0a59a8f689e380a3d4d9c79a0f18d118c2919c720c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cbfd414372f5fd64d2f72559d4f594b8cc48db42e1adbad76ea5895b54f1bc97",
+    "hash": "24d136c83c88b4663608c16b1e960baaa5bcef949912b6b28793a540f04e186c"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.32800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__format_int_list",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "24d136c83c88b4663608c16b1e960baaa5bcef949912b6b28793a540f04e186c",
+    "hash": "fe3af740260d5d1f9052049b2a96ca3456c31e55b67840f44edf5bcc62ab760a"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.34399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__format_int_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "fe3af740260d5d1f9052049b2a96ca3456c31e55b67840f44edf5bcc62ab760a",
+    "hash": "ad49cbf12fdf0d48e989bc218a70d969f7969cb78282c19c15f92ca84f3a6960"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.34399999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_011-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ad49cbf12fdf0d48e989bc218a70d969f7969cb78282c19c15f92ca84f3a6960",
+    "hash": "1c90618c94a078f4f4defadd00fbb3b49cbb50c35d21fe954ce80ccd3584cebb"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.375,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_011-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.031000000017229468,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1c90618c94a078f4f4defadd00fbb3b49cbb50c35d21fe954ce80ccd3584cebb",
+    "hash": "0cb86a5d7c1eada192a2d129e6bbda78cf575997d7156aac6a1c2aaec9b205aa"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.375,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.range_closed",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0cb86a5d7c1eada192a2d129e6bbda78cf575997d7156aac6a1c2aaec9b205aa",
+    "hash": "af540fe60212485b96faf47627dc658328f57bdd65b0f2192ec256d66cb6beec"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.375,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "49e175164f9e6f736f23dc9b6b52fb8c07b55306c2d0bb88c4fc4d252878cea5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "af540fe60212485b96faf47627dc658328f57bdd65b0f2192ec256d66cb6beec",
+    "hash": "43d8b4a6046022328c149b26310d3d779060fc36026fbe2e7daed8f82b907c34"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.6089999999967404,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_011__parse_int_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "49e175164f9e6f736f23dc9b6b52fb8c07b55306c2d0bb88c4fc4d252878cea5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "43d8b4a6046022328c149b26310d3d779060fc36026fbe2e7daed8f82b907c34",
+    "hash": "4f59ba1a4536262637903fc65fba62c368d388d30851f5aee64fa31a53354f31"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.625,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__parse_int_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4f59ba1a4536262637903fc65fba62c368d388d30851f5aee64fa31a53354f31",
+    "hash": "2abd0f617e0d7fa45f279ba1d310160f4d113565fd88ecaf44d42b2a74b59109"
+  },
+  {
+    "session_id": "23a1add44fa524e96c5f492b",
+    "participant": "a3d351355a18e374fa06f470",
+    "task_id": "task_011",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.6410000000032596,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2abd0f617e0d7fa45f279ba1d310160f4d113565fd88ecaf44d42b2a74b59109",
+    "hash": "700a0678dd15924748c8f0d35653f00e67dd78fd0f62c366f05d4a49e124f5a5"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "66a6fca0985dac5ea5fbfcb5b171de86d2847b2f8d38ed3521eb4f1c9fc5b13b"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "0da1c0c446687f08f930e553da655944ffb34de9da54077b27fbd560d64c33b6",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "66a6fca0985dac5ea5fbfcb5b171de86d2847b2f8d38ed3521eb4f1c9fc5b13b",
+    "hash": "5b597b34459f760734a3f3ebd2ad92c4d75a7c72e7ed684abc871a93b27cad80"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_010__indent",
+        "task_010__iter_splitlines"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "0da1c0c446687f08f930e553da655944ffb34de9da54077b27fbd560d64c33b6",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5b597b34459f760734a3f3ebd2ad92c4d75a7c72e7ed684abc871a93b27cad80",
+    "hash": "65d7c4e61abe4eac326ccafd62dfe950fd313e91bf810c35d5e0685583aa1f23"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__indent",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "65d7c4e61abe4eac326ccafd62dfe950fd313e91bf810c35d5e0685583aa1f23",
+    "hash": "6c0aa13feb3c37b16da774d6b65494e266e112b1e1577b72378291c89031bc36"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__indent",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6c0aa13feb3c37b16da774d6b65494e266e112b1e1577b72378291c89031bc36",
+    "hash": "db84fa43708d899591ea063b0b611d3ac10d91154cb1e934090d3b1ed5462dd7"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_010-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "db84fa43708d899591ea063b0b611d3ac10d91154cb1e934090d3b1ed5462dd7",
+    "hash": "8958a950e7086a3ada17123d237eededf8ee087aeeccc1a1f0c446a70e48fb5d"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_010-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8958a950e7086a3ada17123d237eededf8ee087aeeccc1a1f0c446a70e48fb5d",
+    "hash": "71784b7fa8d720a275fb6f935b89a13f10262de4beebf3b3785f4e56737fbbad"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.regex_group",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "71784b7fa8d720a275fb6f935b89a13f10262de4beebf3b3785f4e56737fbbad",
+    "hash": "d4978bf5b6a16d11e5bec4476f85ada1908af34699034cdebbf8533b01100140"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "bd606d620290045b373068637341ad568be2210a216e188332928a9f06ba3ab5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d4978bf5b6a16d11e5bec4476f85ada1908af34699034cdebbf8533b01100140",
+    "hash": "e1c82b9a33098f621490999a6b99b64f450a629913706f2ff873211a21e911cc"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_010__iter_splitlines"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "bd606d620290045b373068637341ad568be2210a216e188332928a9f06ba3ab5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e1c82b9a33098f621490999a6b99b64f450a629913706f2ff873211a21e911cc",
+    "hash": "0c4f1926b7e8451fafe25d4a356868a28aeb6bf6adbb582bc94cbb5013bd1c2e"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.10999999998603016,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_010__iter_splitlines",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0c4f1926b7e8451fafe25d4a356868a28aeb6bf6adbb582bc94cbb5013bd1c2e",
+    "hash": "a98d7ec6c181f4cfb38f61375f4aa9ab16b1c4b947f654b7d5e944c384ec6e1b"
+  },
+  {
+    "session_id": "a62cfd8a258278b6faa93c23",
+    "participant": "568977ca4db08a2ab259f241",
+    "task_id": "task_010",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a98d7ec6c181f4cfb38f61375f4aa9ab16b1c4b947f654b7d5e944c384ec6e1b",
+    "hash": "580e8fed4167eee03a2c0fab6391dd27ef3081ad8aaffc7ad98ce4f12b31a0e1"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "c4e594335083f93607f30c1201a63796a51eb4d44d73eb7ddf7eaddb2a7fe9aa"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "8f231603831afa168c99bc13a00612b6e15521a88f3a2911e69556dff899f4ec",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c4e594335083f93607f30c1201a63796a51eb4d44d73eb7ddf7eaddb2a7fe9aa",
+    "hash": "d7f9eb9a8e9843cbf6dfd580539a03c92616da778300b538c569cc6adf7af464"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_007__ordinalize"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8f231603831afa168c99bc13a00612b6e15521a88f3a2911e69556dff899f4ec",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d7f9eb9a8e9843cbf6dfd580539a03c92616da778300b538c569cc6adf7af464",
+    "hash": "b01dfb27b411152efb79cc8b49ac9e164e22b765d1e59d03b7ac07a9cd957de4"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_007__ordinalize",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b01dfb27b411152efb79cc8b49ac9e164e22b765d1e59d03b7ac07a9cd957de4",
+    "hash": "243c15e4ba5842405f108574418330ae7809631f331a6cfe79654162f72e10a9"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_007__ordinalize",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "243c15e4ba5842405f108574418330ae7809631f331a6cfe79654162f72e10a9",
+    "hash": "1dc69a615db1c3de02d7d47cd571767d70ca84fdf0c0f8b16497ae6201998ef8"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_007-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1dc69a615db1c3de02d7d47cd571767d70ca84fdf0c0f8b16497ae6201998ef8",
+    "hash": "4212b324bda40019c791968231c94367547a6be0c88e94ce6ede3f90e10e7276"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_007-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4212b324bda40019c791968231c94367547a6be0c88e94ce6ede3f90e10e7276",
+    "hash": "5b2337a60860baa947171d1250ead32eba510b73d5ae3cbd289cb7aba108555e"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.string_index",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5b2337a60860baa947171d1250ead32eba510b73d5ae3cbd289cb7aba108555e",
+    "hash": "ee35bc8b78254ecc88aaedbc6e9aee96673a1676caf611c8dfb40b2e62ff67c7"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "269fe3c41c653c2593ccc559414079db323c4f638469ddfafded565727679dc3",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ee35bc8b78254ecc88aaedbc6e9aee96673a1676caf611c8dfb40b2e62ff67c7",
+    "hash": "5ba69964f14bfcdcc9620ec15852655096a971cf81fb6d9003e4cfa79dcbc178"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.15700000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "269fe3c41c653c2593ccc559414079db323c4f638469ddfafded565727679dc3",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5ba69964f14bfcdcc9620ec15852655096a971cf81fb6d9003e4cfa79dcbc178",
+    "hash": "8f6ffca1ba06631482148920570d0189fbeb1d31a46783d66963f84aa8c2034f"
+  },
+  {
+    "session_id": "10c80a76bcc43a9c7bf3e632",
+    "participant": "1127004662af9cfdafe9b15f",
+    "task_id": "task_007",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1720000000204891,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8f6ffca1ba06631482148920570d0189fbeb1d31a46783d66963f84aa8c2034f",
+    "hash": "f9165e1b3b8d39ec109b72db7bbb1ad6dd58a364972059c2824a3f6c386b1de6"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "4df71a16dae843775335d503817d1f13031091a4d284196457b7f6e051106a17"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "313ef79af4bc5a52f6f555a4a68ff9865ff64df9352ae373d3928a65e50ffa56",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4df71a16dae843775335d503817d1f13031091a4d284196457b7f6e051106a17",
+    "hash": "9e3365ef1388d239f5169d29bea468ecc2f526caf53c1c76934bb6bf67f329fc"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.01600000000325963,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "313ef79af4bc5a52f6f555a4a68ff9865ff64df9352ae373d3928a65e50ffa56",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9e3365ef1388d239f5169d29bea468ecc2f526caf53c1c76934bb6bf67f329fc",
+    "hash": "ef4471d880b3965c572e31a0c4e0abdf5f8134242d4b118a7f4d523c281233c6"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.01600000000325963,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked_iter",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ef4471d880b3965c572e31a0c4e0abdf5f8134242d4b118a7f4d523c281233c6",
+    "hash": "1cf6c74aa03df8345626e7d19c9f6208ffd1deb2767a902143e57ff8c313decd"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.01600000000325963,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1cf6c74aa03df8345626e7d19c9f6208ffd1deb2767a902143e57ff8c313decd",
+    "hash": "9c40df902e583f4ca28b168b9d75ae6d6bf363b9bd871a09c827ab5eba60aef7"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.01600000000325963,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-generator-first-next-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9c40df902e583f4ca28b168b9d75ae6d6bf363b9bd871a09c827ab5eba60aef7",
+    "hash": "6a5aec69a6f2874d686e9b3bf7d8ff3636a7c07cd16b1e6d32b2d4aab74e6f36"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-generator-first-next-v1",
+      "outcome": "pass",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6a5aec69a6f2874d686e9b3bf7d8ff3636a7c07cd16b1e6d32b2d4aab74e6f36",
+    "hash": "6f602ca12671d5a74e75c44d238aa4b7fd72b1e549754984c0c9f6ce3d556fe3"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.generator_laziness",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6f602ca12671d5a74e75c44d238aa4b7fd72b1e549754984c0c9f6ce3d556fe3",
+    "hash": "1c85e4424495df8752e093ffffa12d5e981284fb2f57df7eb29760b352952cf0"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "1c7aa2b2c2b9f8b4344c33feb9e7fe174bf7ebab5aab167ffe5252ce6fa76eaf",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1c85e4424495df8752e093ffffa12d5e981284fb2f57df7eb29760b352952cf0",
+    "hash": "9a05097e52c5ba31530877c53abfb34231e016d10f3d7eef0dfee1dba0e5a3e3"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.03200000000651926,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_iterable",
+        "u_chunked"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "1c7aa2b2c2b9f8b4344c33feb9e7fe174bf7ebab5aab167ffe5252ce6fa76eaf",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9a05097e52c5ba31530877c53abfb34231e016d10f3d7eef0dfee1dba0e5a3e3",
+    "hash": "5e01bc766cec3ad32d06c74fd185708bd6ad9c58d32a67741c9afc35970d160f"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5e01bc766cec3ad32d06c74fd185708bd6ad9c58d32a67741c9afc35970d160f",
+    "hash": "bb12813ff60574180af3d95e240853cf6677d60324e3b82fa7a14c7200cb0532"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bb12813ff60574180af3d95e240853cf6677d60324e3b82fa7a14c7200cb0532",
+    "hash": "d8492848a1b590b2703a9e0d55d5cf476225a305cdab00de826c364aa0c33961"
+  },
+  {
+    "session_id": "31d91f5d0cec9ee792830181",
+    "participant": "6b7f7c0244d853ce0e4ba40e",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d8492848a1b590b2703a9e0d55d5cf476225a305cdab00de826c364aa0c33961",
+    "hash": "7e48b54203d3643a97aabfb00df41f567d58280c3063c755d0f10c87e9899438"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "54a602b0f78f65d5a0182400342315680199a400b08868c9ea29ee63306fd76b"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "bc9c59a96c90c908c18ab8ea3bfd30806dfddb7785b892432c7f540ff148971f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "54a602b0f78f65d5a0182400342315680199a400b08868c9ea29ee63306fd76b",
+    "hash": "314080a5720495dd27cfe43a82ca7ac00465a45e6d12507f627083a50cfa235e"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.014999999984866008,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_003__unique_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "bc9c59a96c90c908c18ab8ea3bfd30806dfddb7785b892432c7f540ff148971f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "314080a5720495dd27cfe43a82ca7ac00465a45e6d12507f627083a50cfa235e",
+    "hash": "238b1b449a1b72ff327b2f7477ad98d4da01e2245dbef38acd227125bf21491f"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.014999999984866008,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_003__unique_iter",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "238b1b449a1b72ff327b2f7477ad98d4da01e2245dbef38acd227125bf21491f",
+    "hash": "2b8ec614487c24c2cce0b8d6fd49c2eba2281c5d8f841de4b045722e19fb1ae9"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_003__unique_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2b8ec614487c24c2cce0b8d6fd49c2eba2281c5d8f841de4b045722e19fb1ae9",
+    "hash": "53336c38168152a8bb9b1524cb75038c608388f0aaff5febff7adb2c143f0425"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_003-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "53336c38168152a8bb9b1524cb75038c608388f0aaff5febff7adb2c143f0425",
+    "hash": "a3116444324bbc0e1e055d3b8a678d139d2bfdb2ff4b9edcf1535a3f569b8251"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_003-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a3116444324bbc0e1e055d3b8a678d139d2bfdb2ff4b9edcf1535a3f569b8251",
+    "hash": "810b91dc3abf7022f924b3c7b873c05d07feda268f3ba6cdde8318ec13063505"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.hash_set",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "810b91dc3abf7022f924b3c7b873c05d07feda268f3ba6cdde8318ec13063505",
+    "hash": "314a8bd9dc6f22923c8d74c2f5f2f03128fd6030c457c40e24bbb24b5df7dcf6"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "be79fc0cf14d74564d7628584cdf21331c6e2c3488e11660af29f014498f797b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "314a8bd9dc6f22923c8d74c2f5f2f03128fd6030c457c40e24bbb24b5df7dcf6",
+    "hash": "2e8112a75434691b91766aa7ad6ac0b2f6ce2a2d540a8c20695cf5047700c93b"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "be79fc0cf14d74564d7628584cdf21331c6e2c3488e11660af29f014498f797b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2e8112a75434691b91766aa7ad6ac0b2f6ce2a2d540a8c20695cf5047700c93b",
+    "hash": "ca10574856473c42ce5f0308a70687f63c9e1a881312000995981f8704873cf4"
+  },
+  {
+    "session_id": "11174537fdcbe4a2e7d9ac24",
+    "participant": "b583920c8eac20c80e0ffe22",
+    "task_id": "task_003",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ca10574856473c42ce5f0308a70687f63c9e1a881312000995981f8704873cf4",
+    "hash": "321eaf4513ced646397e93a6d6fbfc0056952e6badae6c25d242c0c4fa3cae74"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "06ec352c2a63c931e24d1ba2850d9a47d24562487e68f38b242627219cdf0810"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "8bef3df9c2b35341f5a871440d9d7a2b72f7aa389681c6fffe774afa27ec277b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "06ec352c2a63c931e24d1ba2850d9a47d24562487e68f38b242627219cdf0810",
+    "hash": "0566aea25d6ba79a91bd8c78566282adca6ffddd72b8009ebcd5b09ab297aa53"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_iterable",
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8bef3df9c2b35341f5a871440d9d7a2b72f7aa389681c6fffe774afa27ec277b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0566aea25d6ba79a91bd8c78566282adca6ffddd72b8009ebcd5b09ab297aa53",
+    "hash": "f12da4850523bf299df3d6d0d13d96d529ddd81a9d080b4526ea708d5287bf69"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f12da4850523bf299df3d6d0d13d96d529ddd81a9d080b4526ea708d5287bf69",
+    "hash": "beb9c0453c36d33fc801f5ddb2fddf57da652b233893994705ebf664e8355e7a"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "beb9c0453c36d33fc801f5ddb2fddf57da652b233893994705ebf664e8355e7a",
+    "hash": "d3c17ba7f916ce1287aed0c36061e5d8b3ca05e177db491ed34cb3138eaa2718"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d3c17ba7f916ce1287aed0c36061e5d8b3ca05e177db491ed34cb3138eaa2718",
+    "hash": "838004135e947e55acce86b2451681a5a8ee8d8ae79608e4a86e1babfdb52e24"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "838004135e947e55acce86b2451681a5a8ee8d8ae79608e4a86e1babfdb52e24",
+    "hash": "be0a51cccadb8696cd61bc62b462f529e07eb323e3d680b8fb6bdc05d0529812"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.iterator_protocol",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "be0a51cccadb8696cd61bc62b462f529e07eb323e3d680b8fb6bdc05d0529812",
+    "hash": "f6415180b8c4c9230087de72016a67c034dc96bb0d33402feac9a08187f978bd"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "dc47b0e194dedbcc5e6c6c797e8fc286adf1ba8d231f1c50b1caf293fcfa68e2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f6415180b8c4c9230087de72016a67c034dc96bb0d33402feac9a08187f978bd",
+    "hash": "206990e078af846ac3e52b28f04248f08e2dd33a43afb8bf28c77c59ab34ff47"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.20300000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "dc47b0e194dedbcc5e6c6c797e8fc286adf1ba8d231f1c50b1caf293fcfa68e2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "206990e078af846ac3e52b28f04248f08e2dd33a43afb8bf28c77c59ab34ff47",
+    "hash": "3243d4fc2e3a67c4c6fb87050d7c0f378790ec72664690a1b72ae98852a276d6"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.20300000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_positive_int",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3243d4fc2e3a67c4c6fb87050d7c0f378790ec72664690a1b72ae98852a276d6",
+    "hash": "ea53fb4332748a6470222ccc700560f542edb9f4713c0dce77b1c7c7031ee71c"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_windowed_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ea53fb4332748a6470222ccc700560f542edb9f4713c0dce77b1c7c7031ee71c",
+    "hash": "b4e972b84f61afb04a6258853b834a10044bfd60468f70bf44f971f85e56c4d1"
+  },
+  {
+    "session_id": "161ac50efcb5e94d4f361929",
+    "participant": "c66c5f20b0eb920eea2ce049",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b4e972b84f61afb04a6258853b834a10044bfd60468f70bf44f971f85e56c4d1",
+    "hash": "14c4a7307b49c103919c882bd565c44dbf4c1d54c7f77dd199a70f1d8d281aa1"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "15a1301944bbe63ec6d04ad79489887ed241f3ec4910490636b8ee63f03e821d"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "8f231603831afa168c99bc13a00612b6e15521a88f3a2911e69556dff899f4ec",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "15a1301944bbe63ec6d04ad79489887ed241f3ec4910490636b8ee63f03e821d",
+    "hash": "4aebeec84ac78130494f0a16e60f3f7fa54f2a987fc5424b3ce886c760cfe9df"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.0159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_007__ordinalize"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8f231603831afa168c99bc13a00612b6e15521a88f3a2911e69556dff899f4ec",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4aebeec84ac78130494f0a16e60f3f7fa54f2a987fc5424b3ce886c760cfe9df",
+    "hash": "276239287f65d3d29c9cad5570bc7403754460664c5823600c512e29366882c4"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.0159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_007__ordinalize",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "276239287f65d3d29c9cad5570bc7403754460664c5823600c512e29366882c4",
+    "hash": "04a489a0bbae5342050b53f5bc8f2e8c76a37b709c08423f09832ec82038092a"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_007__ordinalize",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "04a489a0bbae5342050b53f5bc8f2e8c76a37b709c08423f09832ec82038092a",
+    "hash": "e39fae7bd2b4d6fec20a9b83d877cf770b8bba8f4bbea32e3d441dcd6c146c10"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_007-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "e39fae7bd2b4d6fec20a9b83d877cf770b8bba8f4bbea32e3d441dcd6c146c10",
+    "hash": "06c3ad007be136552e0a24e15680feab23ed23281776da981f03f8d4d27412e9"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_007-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "06c3ad007be136552e0a24e15680feab23ed23281776da981f03f8d4d27412e9",
+    "hash": "5efa35f628a4102d1a57e24a73647556347f7dea9d2983606a26e9532f1796c9"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.string_index",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5efa35f628a4102d1a57e24a73647556347f7dea9d2983606a26e9532f1796c9",
+    "hash": "8de458fa269569eda038b6738004340552583b368d43621dd0c0a427329fb015"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "269fe3c41c653c2593ccc559414079db323c4f638469ddfafded565727679dc3",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8de458fa269569eda038b6738004340552583b368d43621dd0c0a427329fb015",
+    "hash": "8ceecd2da726477942d24ebee4f16f6ba5eeb3abb4a2135d4928b0ec435125cd"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "269fe3c41c653c2593ccc559414079db323c4f638469ddfafded565727679dc3",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8ceecd2da726477942d24ebee4f16f6ba5eeb3abb4a2135d4928b0ec435125cd",
+    "hash": "fcb1cb738005afe5f1cb214aaf07b9df312d46b76ede7b44516e1f487922d279"
+  },
+  {
+    "session_id": "8596e62c8757d2cd44220cee",
+    "participant": "79837a27caac65c9438e514c",
+    "task_id": "task_007",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "fcb1cb738005afe5f1cb214aaf07b9df312d46b76ede7b44516e1f487922d279",
+    "hash": "37cd667408769a9cfe15e09ce77867b2f42eaaabfff737f5b6cc67ec7634ce2e"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "5c3057c7760f6288a3bdd6e6d48e9f21d931afc570a1eb54758a2c7957d78e65"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "fbc1de7840b53ee2ad2e97fc7cfcb08bd877d6a7be781d79c50efb217c85e4d5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5c3057c7760f6288a3bdd6e6d48e9f21d931afc570a1eb54758a2c7957d78e65",
+    "hash": "998dcc847c31e47e4abb747a817c0439d738052a5a68882651e33ef8bb207d0b"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_009__gunzip_bytes",
+        "task_009__gzip_bytes"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "fbc1de7840b53ee2ad2e97fc7cfcb08bd877d6a7be781d79c50efb217c85e4d5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "998dcc847c31e47e4abb747a817c0439d738052a5a68882651e33ef8bb207d0b",
+    "hash": "083d950cbdc5901f4e80a7b0dc59008b69a6e8c11fc4901034463947f3f0820d"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gunzip_bytes",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "083d950cbdc5901f4e80a7b0dc59008b69a6e8c11fc4901034463947f3f0820d",
+    "hash": "41fc1adba2b7f6384edc2fa170da7e0ff11e3409a79f4385c319959db2c20cc7"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gunzip_bytes",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "41fc1adba2b7f6384edc2fa170da7e0ff11e3409a79f4385c319959db2c20cc7",
+    "hash": "d41cc05483008e58bec2de703da36bfeff7561134ea869b19aae474788d33f2e"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_009-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d41cc05483008e58bec2de703da36bfeff7561134ea869b19aae474788d33f2e",
+    "hash": "bd03015676524d8bb8e825a2a626649442a37feb1f0cc129e489be758f909b6e"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_009-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bd03015676524d8bb8e825a2a626649442a37feb1f0cc129e489be758f909b6e",
+    "hash": "17794f89172234ba171b583deb753898ab3c5c5bf172cfe4fa5a02cdc7629ce2"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.compression_roundtrip",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "17794f89172234ba171b583deb753898ab3c5c5bf172cfe4fa5a02cdc7629ce2",
+    "hash": "6ca735f25432b3a03c56ae581624edc834d0806c08c54a788518ac2486592018"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "8140750db0c445739d919b76c1dee522b3362863ab0fdbbe9fcdc4474b0ad75e",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6ca735f25432b3a03c56ae581624edc834d0806c08c54a788518ac2486592018",
+    "hash": "82957130b2b76eca78c5eb05ce2ce8239ce3465b3ec1609989a181baeabd7e4b"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.1870000000053551,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_009__gzip_bytes"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8140750db0c445739d919b76c1dee522b3362863ab0fdbbe9fcdc4474b0ad75e",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "82957130b2b76eca78c5eb05ce2ce8239ce3465b3ec1609989a181baeabd7e4b",
+    "hash": "c22df2a5ebfe731e3a9d1b382a4d38c63e8a5c14d44adad4f9457794c38b3101"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.1870000000053551,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gzip_bytes",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c22df2a5ebfe731e3a9d1b382a4d38c63e8a5c14d44adad4f9457794c38b3101",
+    "hash": "dc8029cd3eb1581c39f3dcf8811290f763b4e54e613888b99e88512311e0a548"
+  },
+  {
+    "session_id": "44ba0f3c2440233a71c2705c",
+    "participant": "7385d436dee04fd34303cf5e",
+    "task_id": "task_009",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.2029999999795109,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "dc8029cd3eb1581c39f3dcf8811290f763b4e54e613888b99e88512311e0a548",
+    "hash": "3fdef369ff1eedc44a640b6592def41151406db0522fe68817a9f11dc7d63c91"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "09484d341d0b25811c209b7449176c44454e3f91d44adaa9f0b443ecabdfe666"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "50f3589277e525868d6af7ee34d14fcc143b14257584a5b2f6a4873e63e1210f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "09484d341d0b25811c209b7449176c44454e3f91d44adaa9f0b443ecabdfe666",
+    "hash": "bbc0b5ff996d99b50239cbccd2fca517e889a4b18e6c18290d77f150ed9eb833"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.10999999998603016,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_006__asciify",
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "50f3589277e525868d6af7ee34d14fcc143b14257584a5b2f6a4873e63e1210f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bbc0b5ff996d99b50239cbccd2fca517e889a4b18e6c18290d77f150ed9eb833",
+    "hash": "6b92de7f7e22ccadb84546af5a3cd56288e5a162fd700019eb0d9629f689fb5e"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.10999999998603016,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__asciify",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6b92de7f7e22ccadb84546af5a3cd56288e5a162fd700019eb0d9629f689fb5e",
+    "hash": "70e84a3781a628819224a256fb484fec5e26176b2a3155dce5986a48ea2862e8"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.10999999998603016,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__asciify",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "70e84a3781a628819224a256fb484fec5e26176b2a3155dce5986a48ea2862e8",
+    "hash": "c0a0cb4dd745d5bacd49432cc561324476fd64c875184744aa8b5b73927246ff"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.10999999998603016,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_006-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c0a0cb4dd745d5bacd49432cc561324476fd64c875184744aa8b5b73927246ff",
+    "hash": "4b7fdf27044d5e707cd00ecf2f9151ab5793e59522ae492cca6c854b5346d3ea"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_006-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.015000000013969839,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4b7fdf27044d5e707cd00ecf2f9151ab5793e59522ae492cca6c854b5346d3ea",
+    "hash": "6d2a6a5236a36f20b83967595851aa1c05320ea78995b527e5b6c9c3401b90bc"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.bytes_text",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6d2a6a5236a36f20b83967595851aa1c05320ea78995b527e5b6c9c3401b90bc",
+    "hash": "7b98e2f1ef8badf878bb2676b7ecdb3f126d8d0de1e8196927b76b99f6d16999"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "2322b59154dc3b71575c2a6182f2decb1cea8bdc0b1092d1b4bdf43751e5807d",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7b98e2f1ef8badf878bb2676b7ecdb3f126d8d0de1e8196927b76b99f6d16999",
+    "hash": "db022dac8a4ffe834312366aeedccf1b2f8e7135476caaea0efb566094ae1653"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.20399999999790452,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "2322b59154dc3b71575c2a6182f2decb1cea8bdc0b1092d1b4bdf43751e5807d",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "db022dac8a4ffe834312366aeedccf1b2f8e7135476caaea0efb566094ae1653",
+    "hash": "b680d69e20e5338c5a1c361c207bd653dff790bd9415580957559495c6103bca"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.20399999999790452,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__slugify",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b680d69e20e5338c5a1c361c207bd653dff790bd9415580957559495c6103bca",
+    "hash": "eeb96d62e5c0be13fe669399d5ed3d633836a49978d50b3d62cec0c91e170b68"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__split_punct_ws",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "eeb96d62e5c0be13fe669399d5ed3d633836a49978d50b3d62cec0c91e170b68",
+    "hash": "b59389bb9714fbb45756ceb81fb138f7febbb8ae10691d5b381870f0285bf159"
+  },
+  {
+    "session_id": "683984d53e08bc92d745a32d",
+    "participant": "d7440db148b550c92c5e08e6",
+    "task_id": "task_006",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b59389bb9714fbb45756ceb81fb138f7febbb8ae10691d5b381870f0285bf159",
+    "hash": "409e90e0904610830db912e181d6718cc8308de2fc6c46cd1962f5ff725da0d4"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "c7f094f17074c6e51d8541628005270e147f82a889935dada0541b3e002e9eab"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "7f70d93f0862c0874cfa2d0a59a8f689e380a3d4d9c79a0f18d118c2919c720c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c7f094f17074c6e51d8541628005270e147f82a889935dada0541b3e002e9eab",
+    "hash": "a3e916f694096b3cb6ab8c4a07346862a8bf1878045cb66d33d3a7fc2b0c5b3d"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_011__parse_int_list",
+        "task_011__format_int_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "7f70d93f0862c0874cfa2d0a59a8f689e380a3d4d9c79a0f18d118c2919c720c",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a3e916f694096b3cb6ab8c4a07346862a8bf1878045cb66d33d3a7fc2b0c5b3d",
+    "hash": "8cf88c408e78efd51edc43fcd8cd9d6ad9019d8a1e7833e1527dabbfd5f64bac"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__parse_int_list",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8cf88c408e78efd51edc43fcd8cd9d6ad9019d8a1e7833e1527dabbfd5f64bac",
+    "hash": "b27e5fb32adefae56f771913fafd905127e7314772d04e7c1721c09140d7d5e8"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__parse_int_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b27e5fb32adefae56f771913fafd905127e7314772d04e7c1721c09140d7d5e8",
+    "hash": "61d9a5caab37033f40ad293ba19394f73b1ce1db18645250f5f5dbba896f8f7b"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_011-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "61d9a5caab37033f40ad293ba19394f73b1ce1db18645250f5f5dbba896f8f7b",
+    "hash": "bb05d0b57271f42e434a03f7c03f9459abb407ca9610f50343459c62e202bb86"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_011-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bb05d0b57271f42e434a03f7c03f9459abb407ca9610f50343459c62e202bb86",
+    "hash": "9cac2e103fc3531c8245f20da97d3631a55b3a5087bbdb0efed029368bffbb6f"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.range_closed",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9cac2e103fc3531c8245f20da97d3631a55b3a5087bbdb0efed029368bffbb6f",
+    "hash": "5e4c397456086cbea2f08ce8f923cf1d14841eceee8cd9cbef44fbbb634cc759"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "c53c50779ba0b354f72b93ba8c50b303738b04975591c5a0e7b1f25b5ecac69a",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5e4c397456086cbea2f08ce8f923cf1d14841eceee8cd9cbef44fbbb634cc759",
+    "hash": "082ce48a029d55535730f70a2cc087b9b5be042bd7b6b14416790661569a5ca6"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_011__format_int_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "c53c50779ba0b354f72b93ba8c50b303738b04975591c5a0e7b1f25b5ecac69a",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "082ce48a029d55535730f70a2cc087b9b5be042bd7b6b14416790661569a5ca6",
+    "hash": "7caef92137964e1193ee447315eaa1dded876abeb7037e8182525a8caf56dda7"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.10899999999674037,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_011__format_int_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7caef92137964e1193ee447315eaa1dded876abeb7037e8182525a8caf56dda7",
+    "hash": "49c8ddd540786563665c0e961d373a05dffd65ac4ef9331f9948f955c0b3058e"
+  },
+  {
+    "session_id": "d37bad2492bc22954ab5b897",
+    "participant": "bd1aa90ed177e79e3bb83c8c",
+    "task_id": "task_011",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "49c8ddd540786563665c0e961d373a05dffd65ac4ef9331f9948f955c0b3058e",
+    "hash": "01be4e862aea2d0e1cfa4e696a94cf421daf1f1257ea6508da477f9f12737e3c"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "a5e480cd34d5d3ff3eae56af20319bf838471e14597c3ebf8a6b18e52a4da6c0"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "313ef79af4bc5a52f6f555a4a68ff9865ff64df9352ae373d3928a65e50ffa56",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a5e480cd34d5d3ff3eae56af20319bf838471e14597c3ebf8a6b18e52a4da6c0",
+    "hash": "9e69c024858444add1fe7b87f32a747c6a83a80265fb364f07537b49d1087df9"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "313ef79af4bc5a52f6f555a4a68ff9865ff64df9352ae373d3928a65e50ffa56",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9e69c024858444add1fe7b87f32a747c6a83a80265fb364f07537b49d1087df9",
+    "hash": "b4cf80b1374d6f0efe6d91a25658dfc9c617639ecafdf9deb29d1553b7b23df0"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b4cf80b1374d6f0efe6d91a25658dfc9c617639ecafdf9deb29d1553b7b23df0",
+    "hash": "f33bbc33937cbd5b296648947b5848a56bb553615f67d1a8e94736e9a19525b1"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f33bbc33937cbd5b296648947b5848a56bb553615f67d1a8e94736e9a19525b1",
+    "hash": "dfec922cefd729332ee53af70a888223dc8d212c202aa0f095a4d4d0b382d687"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-generator-first-next-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "dfec922cefd729332ee53af70a888223dc8d212c202aa0f095a4d4d0b382d687",
+    "hash": "2b8524bd9cba643fc0ffe5bb86b0dc8a22a47243f88d48d5eb26fa9dd8409335"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-generator-first-next-v1",
+      "outcome": "pass",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2b8524bd9cba643fc0ffe5bb86b0dc8a22a47243f88d48d5eb26fa9dd8409335",
+    "hash": "89a9c1a612e9fcee9e925247e3ec8cdd65580346ce532973d07501a4a0c63371"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.generator_laziness",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "89a9c1a612e9fcee9e925247e3ec8cdd65580346ce532973d07501a4a0c63371",
+    "hash": "02c9cfbba652f367c6917f3736d3c6c3ca1dac76a268f8831c2104716c5f449e"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.09400000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "b9679d5d833fadccfc81034b3d8e66f37084e8558f08c4104949522460309b27",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "02c9cfbba652f367c6917f3736d3c6c3ca1dac76a268f8831c2104716c5f449e",
+    "hash": "b0537345788250ce44a9a50519c2e20f4b89e0c509f92edeabac071e97f75938"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.15600000001722947,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "b9679d5d833fadccfc81034b3d8e66f37084e8558f08c4104949522460309b27",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b0537345788250ce44a9a50519c2e20f4b89e0c509f92edeabac071e97f75938",
+    "hash": "0700d139e52b458f58b8b3dfd19e4aae08396a2bd08b1f3809cefe553ad6d88e"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_chunked_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0700d139e52b458f58b8b3dfd19e4aae08396a2bd08b1f3809cefe553ad6d88e",
+    "hash": "a62317532d60a0d5e02001a9ae00ca655fa173a4cfa81c09537f747e7c480281"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a62317532d60a0d5e02001a9ae00ca655fa173a4cfa81c09537f747e7c480281",
+    "hash": "1a1dafff852c72359f90c453f3728ebc4bc389e02f405692f5f4d7473fa706d7"
+  },
+  {
+    "session_id": "b153c6728ee57008a43b9f89",
+    "participant": "165c7ddea4db0e71abdd8b29",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.17199999999138527,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1a1dafff852c72359f90c453f3728ebc4bc389e02f405692f5f4d7473fa706d7",
+    "hash": "8c9c189e640244063e5092a244db3ee79170aefb0a3c0e1ca16306925e230e1e"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "cc2f489936d6667bfe50ebe5127d29b7890ec1790136c46dac2a8a7f0ffee059"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "bc9c59a96c90c908c18ab8ea3bfd30806dfddb7785b892432c7f540ff148971f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cc2f489936d6667bfe50ebe5127d29b7890ec1790136c46dac2a8a7f0ffee059",
+    "hash": "57fb26c1fbea57728441c3c79d8497f8c86fb41dd8eeb77548c5f37a5f51f691"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_003__unique_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "bc9c59a96c90c908c18ab8ea3bfd30806dfddb7785b892432c7f540ff148971f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "57fb26c1fbea57728441c3c79d8497f8c86fb41dd8eeb77548c5f37a5f51f691",
+    "hash": "11ecea37e7a10a9a4d7261096d7d217699fe80db72013cc8504aeb439586e4ec"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_003__unique_iter",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "11ecea37e7a10a9a4d7261096d7d217699fe80db72013cc8504aeb439586e4ec",
+    "hash": "5ff354938b4bc110979c5abd6943fa8a23c086cdb7b1dc6e328fb429da838d96"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_003__unique_iter",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5ff354938b4bc110979c5abd6943fa8a23c086cdb7b1dc6e328fb429da838d96",
+    "hash": "ca1b6539c5a26001883538e4728541a765fb49e3b252ec57c8b1eda742d8d4df"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_003-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ca1b6539c5a26001883538e4728541a765fb49e3b252ec57c8b1eda742d8d4df",
+    "hash": "dc6646e4464f1cd67227e408c1851af91ebb06140896edf4dcdbe56e0d4f5549"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_003-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "dc6646e4464f1cd67227e408c1851af91ebb06140896edf4dcdbe56e0d4f5549",
+    "hash": "55d5e7715e80c6e4dc2a75d4aed9a5124ee446fed6b712ba338778482b5a7e99"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.hash_set",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "55d5e7715e80c6e4dc2a75d4aed9a5124ee446fed6b712ba338778482b5a7e99",
+    "hash": "cbf879efaffd81de5f281f9f0828fe353cfb1e40faee43963a87dc7193858852"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "be79fc0cf14d74564d7628584cdf21331c6e2c3488e11660af29f014498f797b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cbf879efaffd81de5f281f9f0828fe353cfb1e40faee43963a87dc7193858852",
+    "hash": "711b07edd74ea7b98ef2ae81dccf343fe2b728a9c1b8d34f8f8765a129f1e9e5"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.15600000001722947,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "be79fc0cf14d74564d7628584cdf21331c6e2c3488e11660af29f014498f797b",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "711b07edd74ea7b98ef2ae81dccf343fe2b728a9c1b8d34f8f8765a129f1e9e5",
+    "hash": "cce76215fc489704f706c403b03707579368875408ca5011b8e708078eb6a12a"
+  },
+  {
+    "session_id": "7f9454b71979e4104e45b592",
+    "participant": "c636efd485d99c48c206b58c",
+    "task_id": "task_003",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.1720000000204891,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cce76215fc489704f706c403b03707579368875408ca5011b8e708078eb6a12a",
+    "hash": "f6848147bae0cf8c56e892002a3d53b363608d0c209a05643c5d9ffc23b91d6b"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "a400276c59fa639b67912adc5f44cd89bad4249a763c92bc6c948ead3b98cb81"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "50f3589277e525868d6af7ee34d14fcc143b14257584a5b2f6a4873e63e1210f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a400276c59fa639b67912adc5f44cd89bad4249a763c92bc6c948ead3b98cb81",
+    "hash": "6625e594c18dffd56055da1f9b2161a24c3ac5f6dab7f77cf167e373d85bd80e"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_006__split_punct_ws",
+        "task_006__slugify",
+        "task_006__asciify"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "50f3589277e525868d6af7ee34d14fcc143b14257584a5b2f6a4873e63e1210f",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6625e594c18dffd56055da1f9b2161a24c3ac5f6dab7f77cf167e373d85bd80e",
+    "hash": "2ee830723309343a20ea3849bca3b9f7288d4a45e7d96aaa5c2f643452bb97cb"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__split_punct_ws",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2ee830723309343a20ea3849bca3b9f7288d4a45e7d96aaa5c2f643452bb97cb",
+    "hash": "113ccffffba1f002f52178bde7ab7ae6dbd51026cf96fb156d35273ed3b796eb"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__split_punct_ws",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "113ccffffba1f002f52178bde7ab7ae6dbd51026cf96fb156d35273ed3b796eb",
+    "hash": "6a8735fa69425d98bbae1b7c377b05268d5a3ce046899d6d4aebf3244f5addb9"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_006-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6a8735fa69425d98bbae1b7c377b05268d5a3ce046899d6d4aebf3244f5addb9",
+    "hash": "a34f48d5219bd3928c74f356128ed3506bc737e023dee1394f4e80d379cbb80b"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_006-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a34f48d5219bd3928c74f356128ed3506bc737e023dee1394f4e80d379cbb80b",
+    "hash": "62b01d3a2787d5e4adebeb636b597748291cccf60e93691accce6d0b8ef1b566"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.bytes_text",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "62b01d3a2787d5e4adebeb636b597748291cccf60e93691accce6d0b8ef1b566",
+    "hash": "93fc00f7efa42305144fb4a95ba0fc19e5e22980d9232c414b4337f4855df7e3"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "312490f2692637030b9048407dad898e5fb82ffdacdfbdde264d89ca46e64446",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "93fc00f7efa42305144fb4a95ba0fc19e5e22980d9232c414b4337f4855df7e3",
+    "hash": "1e8182a058996fc188358d13ce4f6783fe4c7cc65e520b6345086268c43603c9"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.0470000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_006__slugify",
+        "task_006__asciify"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "312490f2692637030b9048407dad898e5fb82ffdacdfbdde264d89ca46e64446",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1e8182a058996fc188358d13ce4f6783fe4c7cc65e520b6345086268c43603c9",
+    "hash": "49fc38cb10ded845e54169474dcadd6226abd2fb6a0a34e2b728b67da396920e"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.0470000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__slugify",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "49fc38cb10ded845e54169474dcadd6226abd2fb6a0a34e2b728b67da396920e",
+    "hash": "6cfb7e31e3176ad9b9e16066320ef2f56020c42c64c68a9f581f6f054aa08547"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_006__asciify",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6cfb7e31e3176ad9b9e16066320ef2f56020c42c64c68a9f581f6f054aa08547",
+    "hash": "691849497ad2ffb73a2c246edf8c71685b6b97e6a26ee2777ec333049cd28806"
+  },
+  {
+    "session_id": "4173c437a430f2c32803c580",
+    "participant": "c6821879aa4640c207269f4f",
+    "task_id": "task_006",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "691849497ad2ffb73a2c246edf8c71685b6b97e6a26ee2777ec333049cd28806",
+    "hash": "83374c796972b7ab128a54665294327fce0ce19c21858dbc91ef76ccfb4e63db"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "4b44b6e9075a66c4268e2251ca754d7720d14253eab8e7408e72939d5c8e5380"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "92eb8bb805f3babd93742d5ad42b7b6972699d36f49f35f2d52382025f134c37",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "4b44b6e9075a66c4268e2251ca754d7720d14253eab8e7408e72939d5c8e5380",
+    "hash": "643fe1ddc7a0f7d9c574b1b43d7ab2b0b1f1c235d89a1b50a913a9120f288ad0"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.046000000002095476,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_012__removeprefix",
+        "task_012__human_readable_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "92eb8bb805f3babd93742d5ad42b7b6972699d36f49f35f2d52382025f134c37",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "643fe1ddc7a0f7d9c574b1b43d7ab2b0b1f1c235d89a1b50a913a9120f288ad0",
+    "hash": "35c405a61a8ee869688c9fdd71e4f1f9e3ab31f6de9abb38cf13d914cbee7679"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.046000000002095476,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__removeprefix",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "35c405a61a8ee869688c9fdd71e4f1f9e3ab31f6de9abb38cf13d914cbee7679",
+    "hash": "edf537b9b0554334a36d49a37ccee00727509d307ed33c6734603204997ff417"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__removeprefix",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "edf537b9b0554334a36d49a37ccee00727509d307ed33c6734603204997ff417",
+    "hash": "5117fa69445466b470c3e5dbc5718aefbdcd1f2597e88ed71169016253c13261"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_012-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "5117fa69445466b470c3e5dbc5718aefbdcd1f2597e88ed71169016253c13261",
+    "hash": "7cc554e18a8da2fb1cd719ef54ae7f89ed193f7ffb992e2960122b857f505dd8"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_012-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.01600000000325963,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7cc554e18a8da2fb1cd719ef54ae7f89ed193f7ffb992e2960122b857f505dd8",
+    "hash": "01a308c62b0194d3318bde25558fa44b29a1fb5bf1ca1bb5ac766061db470876"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.prefix_slice",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "01a308c62b0194d3318bde25558fa44b29a1fb5bf1ca1bb5ac766061db470876",
+    "hash": "d3b41eac6a5a7f7a15034ce7baaf72e015350f618ae813f26937bdb5641cf5e0"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.07800000000861473,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "2c138e6aa80e4846645170064e1ef798550bff55dd8eaac487b39bad0199d366",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d3b41eac6a5a7f7a15034ce7baaf72e015350f618ae813f26937bdb5641cf5e0",
+    "hash": "bdaa1984b1627c8ed0de24842c619c7e08fe2309521648d1c8b42f44591cac67"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.09299999999348074,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_012__human_readable_list"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "2c138e6aa80e4846645170064e1ef798550bff55dd8eaac487b39bad0199d366",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bdaa1984b1627c8ed0de24842c619c7e08fe2309521648d1c8b42f44591cac67",
+    "hash": "1c006cddf997fd027444f22b135089ae769452985b207fae999056831bc3fb4a"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_012__human_readable_list",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1c006cddf997fd027444f22b135089ae769452985b207fae999056831bc3fb4a",
+    "hash": "c60acccb8cf53f4a2e76290ae61ce1922c294a80f3f3e830715414898da58e22"
+  },
+  {
+    "session_id": "bc84cfc461207e5af3047888",
+    "participant": "4e051496ff04745741d64b35",
+    "task_id": "task_012",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.125,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c60acccb8cf53f4a2e76290ae61ce1922c294a80f3f3e830715414898da58e22",
+    "hash": "6aea2403fe0387d23a5c469fa82009fb6744497cb7382fbde6343be24566ed1d"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "81ad61f43670555c24d68e5382c47184b31e5ba16992081eba5394af28dd963a"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "47ee6a6d09cecafcc01e9c0f60073111d6c715415433f76cacdf73a3b9369166",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "81ad61f43670555c24d68e5382c47184b31e5ba16992081eba5394af28dd963a",
+    "hash": "548bb15f40e7aab4d96a61610902e3b1315128edb440e5b1cb800f4ede9357a8"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_005__camel2under",
+        "task_005__under2camel"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "47ee6a6d09cecafcc01e9c0f60073111d6c715415433f76cacdf73a3b9369166",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "548bb15f40e7aab4d96a61610902e3b1315128edb440e5b1cb800f4ede9357a8",
+    "hash": "ec0bf2def88f95f83338697ae9dcba43e04a7c0659f560f17430b2822d6aeeae"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__camel2under",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ec0bf2def88f95f83338697ae9dcba43e04a7c0659f560f17430b2822d6aeeae",
+    "hash": "1df74e1285f218bf445248b6d5d2d4ea3d55f304224bd41aa88577477ab5ea1b"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__camel2under",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1df74e1285f218bf445248b6d5d2d4ea3d55f304224bd41aa88577477ab5ea1b",
+    "hash": "423bda82ccf78efd1ca843b5a69e732887d5d8ac1a9cc18989823cfa500e2fc9"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_005-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "423bda82ccf78efd1ca843b5a69e732887d5d8ac1a9cc18989823cfa500e2fc9",
+    "hash": "038951a44a5215d4993b21105b215d1a4b8442197b66a8705b1d7753f8446563"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_005-v2",
+      "outcome": "fail",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "038951a44a5215d4993b21105b215d1a4b8442197b66a8705b1d7753f8446563",
+    "hash": "d6de271327e1ca1279442fc05d2cc0e876b2efd7eaeea8113df30f0ea30067da"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.regex_boundary",
+      "outcome": "fail",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d6de271327e1ca1279442fc05d2cc0e876b2efd7eaeea8113df30f0ea30067da",
+    "hash": "8f2838394423588f65a4cb5fdc0197fefb9dc20da76ab2eeaa76546c8c1c8d2b"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "df3f608cc1fe7df3435de17c4472f398e6a93bf73705fac8e9fa7a783b684a31",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8f2838394423588f65a4cb5fdc0197fefb9dc20da76ab2eeaa76546c8c1c8d2b",
+    "hash": "082034bea0e8d029c79efc5f1c9528af39e203c5a8c91a520c7295ab6b2f04b9"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.062000000005355105,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_005__under2camel"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "df3f608cc1fe7df3435de17c4472f398e6a93bf73705fac8e9fa7a783b684a31",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "082034bea0e8d029c79efc5f1c9528af39e203c5a8c91a520c7295ab6b2f04b9",
+    "hash": "7df67e97ddebd871f2ebef05325f0d1bf38008d6cc27058051a06ba07b573037"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_005__under2camel",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7df67e97ddebd871f2ebef05325f0d1bf38008d6cc27058051a06ba07b573037",
+    "hash": "721bf87c00f9e83cf25fc45765bfafffa7fd7bad5c56dbd65cf52c9a46427381"
+  },
+  {
+    "session_id": "f9825ef26710936be77ec72b",
+    "participant": "fead28c6d9a2411dd5dde90d",
+    "task_id": "task_005",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0779999999795109,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "721bf87c00f9e83cf25fc45765bfafffa7fd7bad5c56dbd65cf52c9a46427381",
+    "hash": "c7f588ff70819302018a6252f78a9e6dd0f6e253defb119fc3baa72bbb5399e0"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "af4b082aa49872bfa559f61c58ae1114492b2ee7ffe33fcbe34ad037a77daa17"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "b5ed0be1ee20fdfcd430f39d988310414974d1a6138cf984070f134deced26e1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "af4b082aa49872bfa559f61c58ae1114492b2ee7ffe33fcbe34ad037a77daa17",
+    "hash": "a4ff1728921a15854eafdd4babe4b358cd72ef08a385e5cf0a51b5231364bc98"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.0159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_008__strip_ansi"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "b5ed0be1ee20fdfcd430f39d988310414974d1a6138cf984070f134deced26e1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a4ff1728921a15854eafdd4babe4b358cd72ef08a385e5cf0a51b5231364bc98",
+    "hash": "a016a5a884ca01e22ddab2059ce4bc948e97bf09c08bb9183df3561745cc51d1"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.0159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_008__strip_ansi",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a016a5a884ca01e22ddab2059ce4bc948e97bf09c08bb9183df3561745cc51d1",
+    "hash": "bb25471eb7ede6721af7d9471baca298b3c7e93b5469736bd02b6cc1f5c94ab1"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_008__strip_ansi",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "bb25471eb7ede6721af7d9471baca298b3c7e93b5469736bd02b6cc1f5c94ab1",
+    "hash": "6742d52bcd5518f9a280d95618358cd608c1a37c317c1ff457ba15ef16191f97"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_008-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6742d52bcd5518f9a280d95618358cd608c1a37c317c1ff457ba15ef16191f97",
+    "hash": "b3df1ed0cd71335301e5a2180a04fa39d0704b488d7a832df55402833aa6b3d4"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_008-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "b3df1ed0cd71335301e5a2180a04fa39d0704b488d7a832df55402833aa6b3d4",
+    "hash": "8ed504e71961f4fe167d49825e0188be5c5fb4ef53a5b2c73c949a1af1fcdaa3"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.bytes_text",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "8ed504e71961f4fe167d49825e0188be5c5fb4ef53a5b2c73c949a1af1fcdaa3",
+    "hash": "3f2c66fc93877b4836e0eb85d423f47e6fac34211064bce3dd529ed7e8289ba9"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.030999999988125637,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "ddc9d74e125974d3720ece94c2253e66011ff40aeada7442abe9748cd743e005",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3f2c66fc93877b4836e0eb85d423f47e6fac34211064bce3dd529ed7e8289ba9",
+    "hash": "51e13b76c975c9da3a3949671da107d9d9de547f563cc21264d35da316160ff4"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.046999999991385266,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "ddc9d74e125974d3720ece94c2253e66011ff40aeada7442abe9748cd743e005",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "51e13b76c975c9da3a3949671da107d9d9de547f563cc21264d35da316160ff4",
+    "hash": "2929bc5f301c1f9a304ea44b3cc64c4a145c7ce4d683b26533fec143e1ce3496"
+  },
+  {
+    "session_id": "095f8b4b7b8915d3dbe2dda3",
+    "participant": "d2c8185b4ae727b8260fb563",
+    "task_id": "task_008",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0629999999946449,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2929bc5f301c1f9a304ea44b3cc64c4a145c7ce4d683b26533fec143e1ce3496",
+    "hash": "51dc2d89579b069e387da897abfb17cde844447be40f3f28bcf1d09c83e8868b"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_or_pilot_not_formal",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "7835c479ceebbc8585bb3e18192bcd4ae3a0c4badf0b2dcec660568d0a2bf22c"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "fbc1de7840b53ee2ad2e97fc7cfcb08bd877d6a7be781d79c50efb217c85e4d5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7835c479ceebbc8585bb3e18192bcd4ae3a0c4badf0b2dcec660568d0a2bf22c",
+    "hash": "f6d9c5cfa5943c833c1673945fe6c316fd7963d08f0d6fb55867a790eaa565f9"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_009__gunzip_bytes",
+        "task_009__gzip_bytes"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "fbc1de7840b53ee2ad2e97fc7cfcb08bd877d6a7be781d79c50efb217c85e4d5",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "f6d9c5cfa5943c833c1673945fe6c316fd7963d08f0d6fb55867a790eaa565f9",
+    "hash": "49d4d3038bc85dae11fa947623476fd3aac67fecd4a3c49dc74f789993e98a41"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.015000000013969839,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gunzip_bytes",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "49d4d3038bc85dae11fa947623476fd3aac67fecd4a3c49dc74f789993e98a41",
+    "hash": "a9b9a14eecd2467afe62a9dd0cb06f83d9735fb2882e80b28c8b85d38410e105"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gunzip_bytes",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a9b9a14eecd2467afe62a9dd0cb06f83d9735fb2882e80b28c8b85d38410e105",
+    "hash": "9992eac835bb4ba93c2cc9878b3355ac5f6a7f2c58750b4955b3cba308de8c29"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_009-v2",
+      "policy": "automatic_after_exactly_one_material",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "9992eac835bb4ba93c2cc9878b3355ac5f6a7f2c58750b4955b3cba308de8c29",
+    "hash": "3f86c5b430b3d6b4ef2307097c75e0f67195aaa12fc96b1c8826e5df76cf96fb"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B06-parallel-task_009-v2",
+      "outcome": "pass",
+      "duration_seconds": 0.0,
+      "scorer": "independent_parallel_python_snippet_v2",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3f86c5b430b3d6b4ef2307097c75e0f67195aaa12fc96b1c8826e5df76cf96fb",
+    "hash": "6f0b17d9f2ac9c535ce4024f030d80bcfb937d90a555baa23d863a770f194270"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.compression_roundtrip",
+      "outcome": "pass",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "6f0b17d9f2ac9c535ce4024f030d80bcfb937d90a555baa23d863a770f194270",
+    "hash": "c2dec6d7b65c43bc4b05eced781d526e1d32042ad362f38e893e5e6aeddc6a81"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.031000000017229468,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "8140750db0c445739d919b76c1dee522b3362863ab0fdbbe9fcdc4474b0ad75e",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c2dec6d7b65c43bc4b05eced781d526e1d32042ad362f38e893e5e6aeddc6a81",
+    "hash": "a47b9e77eea37e5154bdda434befe20f3a2caa67a12b057e71f0b4e3d6991082"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.0470000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "task_009__gzip_bytes"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "8140750db0c445739d919b76c1dee522b3362863ab0fdbbe9fcdc4474b0ad75e",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a47b9e77eea37e5154bdda434befe20f3a2caa67a12b057e71f0b4e3d6991082",
+    "hash": "c9017135dbc2f9c2ac3d510a22a0ef7d62bb9d10f75a4e1073f74873fce8a28d"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.0470000000204891,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "task_009__gzip_bytes",
+      "mastery_updated": false,
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "c9017135dbc2f9c2ac3d510a22a0ef7d62bb9d10f75a4e1073f74873fce8a28d",
+    "hash": "12986384e7ce1d89876050ce0aa94d3c647d48400347289cad72377b00e9edea"
+  },
+  {
+    "session_id": "f686c08e1dbfd131ca1d9ac6",
+    "participant": "d0f665f1b6798a094901c8c4",
+    "task_id": "task_009",
+    "method": "B2",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "final_submit",
+    "elapsed_observed": 0.0470000000204891,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "12986384e7ce1d89876050ce0aa94d3c647d48400347289cad72377b00e9edea",
+    "hash": "d7b2a982a1a24aad3684ea745334f9a8f0ddf500fb696c2856659728ff6346c6"
+  }
+]

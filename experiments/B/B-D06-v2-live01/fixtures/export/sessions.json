@@ -1,0 +1,68 @@
+[
+  {
+    "session_id": "666950cb393a9d16ba22ef3c",
+    "participant": "76bbbfe566cec98e55ed53ec",
+    "task_id": "task_001",
+    "method": "B1",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "duration_seconds": 1.7969999999913853,
+    "observed_seconds": 1.7969999999913853,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+    "event_count": 13,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "e3aacb43dace47219cd11cea",
+    "participant": "5a969162711811556168d925",
+    "task_id": "task_001",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "duration_seconds": 0.1720000000204891,
+    "observed_seconds": 0.1720000000204891,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+    "event_count": 13,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "97190fa0bc7f1ce935640c29",
+    "participant": "f88505eb5dbc00cedab782cb",
+    "task_id": "task_001",
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "duration_seconds": 0.0629999999946449,
+    "observed_seconds": 0.0629999999946449,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "f04bdd670979c96e4728d457922a2d8db9425413cef7ab8984f60681b3c49f8b",
+    "event_count": 13,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  }
+]

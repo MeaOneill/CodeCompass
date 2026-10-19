@@ -1,0 +1,7 @@
+Plan a remaining source-reading route using ONLY the public context.
+Return exactly {"ordered_units":["unit_id",...]} with no additional keys.
+Preserve completed materials: never return a completed unit, repeat a unit,
+invent IDs, exceed remaining proxy budget or violate hard prerequisites.
+Cover remaining goals using supplied independent mastery gate and completed
+coverage. You receive the same source, feedback, budget and help as other
+methods. No final answers, final tests or other methods' routes are provided.

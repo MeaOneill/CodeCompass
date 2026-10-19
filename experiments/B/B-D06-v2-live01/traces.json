@@ -1,0 +1,2531 @@
+[
+  {
+    "task_id": "task_001",
+    "method": "Ours",
+    "traces": [
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "cost": 80.0,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [],
+          "spent_proxy": 0.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 100.0,
+          "feedback": null,
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "version": "D05-adaptive-v1",
+          "status": "FEASIBLE",
+          "completed": [],
+          "remaining": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "unit_costs": {
+            "u_iterable": 16.0,
+            "u_chunked_iter": 43.0,
+            "u_chunked": 21.0
+          },
+          "gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "reference": [],
+          "spent_before": 0.0,
+          "alpha": 0,
+          "gamma": 0,
+          "learning_cost": 80.0,
+          "switch_cost": 0.0,
+          "objective": 80.0,
+          "missing": [],
+          "total_if_executed": 80.0,
+          "replay": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 80.0,
+            "switch_cost": 0.0,
+            "objective": 80.0,
+            "total_if_executed": 80.0
+          },
+          "options": {
+            "beam_width": 16,
+            "candidate_limit": 50,
+            "max_expansions": 100000,
+            "time_limit_seconds": 30.0
+          },
+          "expansions": 15,
+          "truncated": false,
+          "termination": "BOUNDED_SEARCH_FINISHED",
+          "events": [
+            {
+              "depth": 0,
+              "prefix": [],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 0,
+              "retained": [
+                [
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_iterable"
+                ],
+                [
+                  "u_chunked"
+                ]
+              ],
+              "dropped_prefixes": []
+            },
+            {
+              "depth": 1,
+              "prefix": [
+                "u_chunked_iter"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 1,
+              "prefix": [
+                "u_iterable"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 1,
+              "prefix": [
+                "u_chunked"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 1,
+              "retained": [
+                [
+                  "u_chunked_iter",
+                  "u_iterable"
+                ],
+                [
+                  "u_iterable",
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_chunked",
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_chunked_iter",
+                  "u_chunked"
+                ],
+                [
+                  "u_chunked",
+                  "u_iterable"
+                ],
+                [
+                  "u_iterable",
+                  "u_chunked"
+                ]
+              ],
+              "dropped_prefixes": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_chunked_iter",
+                "u_iterable"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_iterable",
+                "u_chunked_iter"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_chunked",
+                "u_chunked_iter"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_chunked_iter",
+                "u_chunked"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_chunked",
+                "u_iterable"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "prefix": [
+                "u_iterable",
+                "u_chunked"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 2,
+              "retained": [
+                [
+                  "u_chunked",
+                  "u_chunked_iter",
+                  "u_iterable"
+                ],
+                [
+                  "u_chunked",
+                  "u_iterable",
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_chunked_iter",
+                  "u_chunked",
+                  "u_iterable"
+                ],
+                [
+                  "u_chunked_iter",
+                  "u_iterable",
+                  "u_chunked"
+                ],
+                [
+                  "u_iterable",
+                  "u_chunked",
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_iterable",
+                  "u_chunked_iter",
+                  "u_chunked"
+                ]
+              ],
+              "dropped_prefixes": []
+            },
+            {
+              "depth": 3,
+              "retained": [],
+              "dropped_prefixes": []
+            }
+          ],
+          "elapsed_seconds": 0.0,
+          "optimality_claim": false,
+          "certificate": null,
+          "state_key": "full ordered remaining prefix; completed context fixed"
+        }
+      },
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        "cost": 59.0,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [
+            {
+              "concept_id": "python.generator_laziness",
+              "item_id": "B05-generator-first-next-v1",
+              "outcome": "pass",
+              "project": "boltons-4e5faa3d7e40",
+              "evidence_type": "independent_quiz",
+              "independent": true,
+              "is_fixture": true
+            }
+          ],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "alpha": 2,
+              "beta": 1,
+              "evidence_ids": [
+                "D05:B05-generator-first-next-v1"
+              ],
+              "lower_bound": 0.3162277660168379,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [
+            "u_chunked"
+          ],
+          "spent_proxy": 22.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 78.0,
+          "feedback": "pass",
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "version": "D05-adaptive-v1",
+          "status": "FEASIBLE",
+          "completed": [
+            "u_chunked"
+          ],
+          "remaining": [
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "unit_costs": {
+            "u_iterable": 16.0,
+            "u_chunked_iter": 43.0,
+            "u_chunked": 21.0
+          },
+          "gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "alpha": 2,
+              "beta": 1,
+              "evidence_ids": [
+                "D05:B05-generator-first-next-v1"
+              ],
+              "lower_bound": 0.3162277660168379,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "reference": [
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "spent_before": 22.0,
+          "alpha": 0,
+          "gamma": 0,
+          "learning_cost": 59.0,
+          "switch_cost": 0.0,
+          "objective": 59.0,
+          "missing": [],
+          "total_if_executed": 81.0,
+          "replay": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 59.0,
+            "switch_cost": 0.0,
+            "objective": 59.0,
+            "total_if_executed": 81.0
+          },
+          "options": {
+            "beam_width": 16,
+            "candidate_limit": 50,
+            "max_expansions": 100000,
+            "time_limit_seconds": 30.0
+          },
+          "expansions": 4,
+          "truncated": false,
+          "termination": "BOUNDED_SEARCH_FINISHED",
+          "events": [
+            {
+              "depth": 0,
+              "prefix": [],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 0,
+              "retained": [
+                [
+                  "u_chunked_iter"
+                ],
+                [
+                  "u_iterable"
+                ]
+              ],
+              "dropped_prefixes": []
+            },
+            {
+              "depth": 1,
+              "prefix": [
+                "u_chunked_iter"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 1,
+              "prefix": [
+                "u_iterable"
+              ],
+              "dropped_candidates": []
+            },
+            {
+              "depth": 1,
+              "retained": [
+                [
+                  "u_chunked_iter",
+                  "u_iterable"
+                ],
+                [
+                  "u_iterable",
+                  "u_chunked_iter"
+                ]
+              ],
+              "dropped_prefixes": []
+            },
+            {
+              "depth": 2,
+              "retained": [],
+              "dropped_prefixes": []
+            }
+          ],
+          "elapsed_seconds": 0.0,
+          "optimality_claim": false,
+          "certificate": null,
+          "state_key": "full ordered remaining prefix; completed context fixed"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_001",
+    "method": "B2",
+    "traces": [
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_chunked_iter",
+          "u_iterable",
+          "u_chunked"
+        ],
+        "cost": 80.0,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [],
+          "spent_proxy": 0.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 100.0,
+          "feedback": null,
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "status": "FEASIBLE",
+          "remaining": [
+            "u_chunked_iter",
+            "u_iterable",
+            "u_chunked"
+          ],
+          "cost": 80.0,
+          "gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "replay": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 80.0,
+            "switch_cost": 0.0,
+            "objective": 80.0,
+            "total_if_executed": 80.0
+          },
+          "candidate_attempts": [
+            [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental": 21
+              },
+              {
+                "root": "u_chunked_iter",
+                "bundle": [
+                  "u_chunked_iter"
+                ],
+                "incremental": 43
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental": 16
+              }
+            ],
+            [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental": 21
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental": 16
+              }
+            ],
+            [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental": 21
+              }
+            ]
+          ],
+          "completed": [],
+          "method": "original_closure_gain_cost_rule_with_completed_context",
+          "mastery_fabricated": false
+        }
+      },
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_iterable",
+          "u_chunked"
+        ],
+        "cost": 37.0,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [
+            {
+              "concept_id": "python.generator_laziness",
+              "item_id": "B05-generator-first-next-v1",
+              "outcome": "pass",
+              "project": "boltons-4e5faa3d7e40",
+              "evidence_type": "independent_quiz",
+              "independent": true,
+              "is_fixture": true
+            }
+          ],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "alpha": 2,
+              "beta": 1,
+              "evidence_ids": [
+                "D05:B05-generator-first-next-v1"
+              ],
+              "lower_bound": 0.3162277660168379,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [
+            "u_chunked_iter"
+          ],
+          "spent_proxy": 44.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 56.0,
+          "feedback": "pass",
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "status": "FEASIBLE",
+          "remaining": [
+            "u_iterable",
+            "u_chunked"
+          ],
+          "cost": 37.0,
+          "gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "alpha": 2,
+              "beta": 1,
+              "evidence_ids": [
+                "D05:B05-generator-first-next-v1"
+              ],
+              "lower_bound": 0.3162277660168379,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "replay": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 37.0,
+            "switch_cost": 0.0,
+            "objective": 37.0,
+            "total_if_executed": 81.0
+          },
+          "candidate_attempts": [
+            [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental": 21
+              },
+              {
+                "root": "u_iterable",
+                "bundle": [
+                  "u_iterable"
+                ],
+                "incremental": 16
+              }
+            ],
+            [
+              {
+                "root": "u_chunked",
+                "bundle": [
+                  "u_chunked"
+                ],
+                "incremental": 21
+              }
+            ]
+          ],
+          "completed": [
+            "u_chunked_iter"
+          ],
+          "method": "original_closure_gain_cost_rule_with_completed_context",
+          "mastery_fabricated": false
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_001",
+    "method": "B1",
+    "traces": [
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_iterable",
+          "u_chunked_iter",
+          "u_chunked"
+        ],
+        "cost": 80,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [],
+          "spent_proxy": 0.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 100.0,
+          "feedback": null,
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "attempted": true,
+          "status": "PARSED",
+          "route": [
+            "u_iterable",
+            "u_chunked_iter",
+            "u_chunked"
+          ],
+          "calls": [
+            {
+              "attempt": 0,
+              "kind": "initial",
+              "timestamp": "2026-10-19T12:34:41.105177+00:00",
+              "request_hash": "84f4c87ffa7288ac95b239ca919d5016df122176c526d0bb244c1623958b485b",
+              "request": {
+                "model": "deepseek-flash",
+                "input": "Plan a remaining source-reading route using ONLY the public context.\nReturn exactly {\"ordered_units\":[\"unit_id\",...]} with no additional keys.\nPreserve completed materials: never return a completed unit, repeat a unit,\ninvent IDs, exceed remaining proxy budget or violate hard prerequisites.\nCover remaining goals using supplied independent mastery gate and completed\ncoverage. You receive the same source, feedback, budget and help as other\nmethods. No final answers, final tests or other methods' routes are provided.\n\nCONTEXT_JSON\n{\"budget_proxy\": 100, \"completed\": [], \"feedback\": null, \"learner_evidence\": [], \"learner_gate\": {\"boltons.chunk_postprocess\": {\"concept_id\": \"boltons.chunk_postprocess\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"boltons.wrapper_compatibility\": {\"concept_id\": \"boltons.wrapper_compatibility\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.generator_laziness\": {\"concept_id\": \"python.generator_laziness\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.islice_consumption\": {\"concept_id\": \"python.islice_consumption\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.iterator_protocol\": {\"concept_id\": \"python.iterator_protocol\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.keyword_presence\": {\"concept_id\": \"python.keyword_presence\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"policy\": {\"alpha\": 0, \"gamma\": 0, \"max_quizzes\": 1, \"quantile\": 0.1, \"quiz_cost\": 1, \"threshold\": 0.7}, \"remaining_proxy\": 100.0, \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"source_context\": [], \"source_materials\": [{\"source_span\": {\"content_hash\": \"e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676\", \"end_line\": 76, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 61}, \"text\": \"  61  def is_iterable(obj):\\n  62      \\\"\\\"\\\"Similar in nature to :func:`callable`, ``is_iterable`` returns\\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\\n  64  \\n  65      >>> is_iterable([])\\n  66      True\\n  67      >>> is_iterable(object())\\n  68      False\\n  69  \\n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\\n  71      \\\"\\\"\\\"\\n  72      try:\\n  73          iter(obj)\\n  74      except TypeError:\\n  75          return False\\n  76      return True\", \"unit_id\": \"u_iterable\"}, {\"source_span\": {\"content_hash\": \"406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3\", \"end_line\": 358, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 316}, \"text\": \" 316  def chunked_iter(src, size, **kw):\\n 317      \\\"\\\"\\\"Generates *size*-sized chunks from *src* iterable. Unless the\\n 318      optional *fill* keyword argument is provided, iterables not evenly\\n 319      divisible by *size* will have a final chunk that is smaller than\\n 320      *size*.\\n 321  \\n 322      >>> list(chunked_iter(range(10), 3))\\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\\n 326  \\n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\\n 328      \\\"\\\"\\\"\\n 329      # TODO: add count kwarg?\\n 330      if not is_iterable(src):\\n 331          raise TypeError('expected an iterable')\\n 332      size = _validate_positive_int(size, 'chunk size')\\n 333      do_fill = True\\n 334      try:\\n 335          fill_val = kw.pop('fill')\\n 336      except KeyError:\\n 337          do_fill = False\\n 338          fill_val = None\\n 339      if kw:\\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\\n 341      if not src:\\n 342          return\\n 343  \\n 344      def postprocess(chk): return chk\\n 345      if isinstance(src, (str, bytes)):\\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\\n 347          if isinstance(src, bytes):\\n 348              def postprocess(chk): return bytes(chk)\\n 349      src_iter = iter(src)\\n 350      while True:\\n 351          cur_chunk = list(itertools.islice(src_iter, size))\\n 352          if not cur_chunk:\\n 353              break\\n 354          lc = len(cur_chunk)\\n 355          if lc < size and do_fill:\\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\\n 357          yield postprocess(cur_chunk)\\n 358      return\", \"unit_id\": \"u_chunked_iter\"}, {\"source_span\": {\"content_hash\": \"11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe\", \"end_line\": 306, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 286}, \"text\": \" 286  def chunked(src, size, count=None, **kw):\\n 287      \\\"\\\"\\\"Returns a list of *count* chunks, each with *size* elements,\\n 288      generated from iterable *src*. If *src* is not evenly divisible by\\n 289      *size*, the final chunk will have fewer than *size* elements.\\n 290      Provide the *fill* keyword argument to provide a pad value and\\n 291      enable padding, otherwise no padding will take place.\\n 292  \\n 293      >>> chunked(range(10), 3)\\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\\n 295      >>> chunked(range(10), 3, fill=None)\\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\\n 297      >>> chunked(range(10), 3, count=2)\\n 298      [[0, 1, 2], [3, 4, 5]]\\n 299  \\n 300      See :func:`chunked_iter` for more info.\\n 301      \\\"\\\"\\\"\\n 302      chunk_iter = chunked_iter(src, size, **kw)\\n 303      if count is None:\\n 304          return list(chunk_iter)\\n 305      else:\\n 306          return list(itertools.islice(chunk_iter, count))\", \"unit_id\": \"u_chunked\"}], \"spent_proxy\": 0.0, \"target_concept_ids\": [\"boltons.chunk_postprocess\", \"boltons.wrapper_compatibility\", \"python.generator_laziness\", \"python.islice_consumption\", \"python.iterator_protocol\", \"python.keyword_presence\"], \"task\": {\"goal\": \"理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。\", \"repo_commit\": \"4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d\", \"requirements\": [\"仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。\", \"count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。\", \"负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。\", \"保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。\", \"fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。\", \"提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。\"], \"task_id\": \"task_001\", \"title\": \"为boltons.chunked_iter增加惰性count限制\"}, \"units\": [{\"base_cost\": 16, \"concept_ids\": [\"python.iterator_protocol\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_iterable\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676\", \"end_line\": 76, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 61}]}, {\"base_cost\": 43, \"concept_ids\": [\"python.generator_laziness\", \"python.islice_consumption\", \"python.keyword_presence\", \"boltons.chunk_postprocess\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_chunked_iter\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": false, \"provenance\": {\"confidence\": null, \"evidence\": [\"先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核\"], \"kind\": \"teaching_judgment\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"u_iterable\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3\", \"end_line\": 358, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 316}]}, {\"base_cost\": 21, \"concept_ids\": [\"boltons.wrapper_compatibility\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_chunked\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": false, \"provenance\": {\"confidence\": null, \"evidence\": [\"先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核\"], \"kind\": \"teaching_judgment\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"u_chunked_iter\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe\", \"end_line\": 306, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 286}]}]}",
+                "store": false,
+                "max_output_tokens": 1200,
+                "reasoning": {
+                  "effort": "none"
+                }
+              },
+              "configured_rates": {
+                "budget": 5,
+                "reservation": 0.25,
+                "input": 2,
+                "output": 8,
+                "currency": "CNY",
+                "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision"
+              },
+              "model_requested": "deepseek-flash",
+              "model_returned": "deepseek-flash",
+              "usage": {
+                "input_tokens": 3388,
+                "input_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "output_tokens": 22,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 3410
+              },
+              "estimated_cost_usd": null,
+              "estimated_cost_cny": 0.006952,
+              "currency": "CNY",
+              "billing_cost_usd": null,
+              "billing_cost_cny": null,
+              "reserved_amount": 0.25,
+              "quarantined": false,
+              "response": {
+                "id": "a37acf73-2be4-4a70-be03-07c2cbd133ff",
+                "object": "response",
+                "created_at": 1792413281,
+                "status": "completed",
+                "background": false,
+                "completed_at": 1792413282,
+                "content_filters": null,
+                "error": null,
+                "frequency_penalty": 0.0,
+                "incomplete_details": null,
+                "instructions": null,
+                "max_output_tokens": 1200,
+                "max_tool_calls": null,
+                "model": "deepseek-flash",
+                "moderation": null,
+                "output": [
+                  {
+                    "type": "message",
+                    "id": "b69ac5aa-ed51-4382-9eb8-0f6921d0d7db",
+                    "status": "completed",
+                    "content": [
+                      {
+                        "type": "output_text",
+                        "annotations": [],
+                        "logprobs": [],
+                        "text": "{\"ordered_units\":[\"u_iterable\",\"u_chunked_iter\",\"u_chunked\"]}"
+                      }
+                    ],
+                    "phase": "final_answer",
+                    "role": "assistant"
+                  }
+                ],
+                "parallel_tool_calls": true,
+                "presence_penalty": 0.0,
+                "previous_response_id": null,
+                "prompt_cache_key": null,
+                "prompt_cache_retention": null,
+                "reasoning": {
+                  "effort": "none",
+                  "summary": null
+                },
+                "safety_identifier": null,
+                "service_tier": "default",
+                "store": false,
+                "temperature": 1.0,
+                "text": {
+                  "format": {
+                    "type": "text"
+                  },
+                  "verbosity": null
+                },
+                "tool_choice": "auto",
+                "tools": [],
+                "top_logprobs": 0,
+                "top_p": 1.0,
+                "truncation": "disabled",
+                "usage": {
+                  "input_tokens": 3388,
+                  "input_tokens_details": {
+                    "cached_tokens": 0
+                  },
+                  "output_tokens": 22,
+                  "output_tokens_details": {
+                    "reasoning_tokens": 0
+                  },
+                  "total_tokens": 3410
+                },
+                "user": null,
+                "metadata": {}
+              },
+              "raw_sha256": "04a6a68b61972413b20eee6cc6e04dff986c47879491ffa5405e1b5e88d31849",
+              "elapsed_seconds": 0.8780625000072177
+            }
+          ],
+          "transport_is_fixture": false,
+          "model_requested": "deepseek-flash"
+        },
+        "independent_replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 80.0,
+          "switch_cost": 0.0,
+          "objective": 80.0,
+          "total_if_executed": 80.0
+        }
+      },
+      {
+        "status": "FEASIBLE",
+        "route": [
+          "u_chunked_iter",
+          "u_chunked"
+        ],
+        "cost": 64,
+        "context": {
+          "task": {
+            "task_id": "task_001",
+            "title": "为boltons.chunked_iter增加惰性count限制",
+            "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+            "requirements": [
+              "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+              "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+              "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+              "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+              "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+              "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+            ],
+            "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+          },
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "target_concept_ids": [
+            "boltons.chunk_postprocess",
+            "boltons.wrapper_compatibility",
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.iterator_protocol",
+            "python.keyword_presence"
+          ],
+          "units": [
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_iterable",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "concept_ids": [
+                "python.iterator_protocol"
+              ],
+              "prerequisites": [],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 16,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked_iter",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 316,
+                  "end_line": 358,
+                  "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+                }
+              ],
+              "concept_ids": [
+                "python.generator_laziness",
+                "python.islice_consumption",
+                "python.keyword_presence",
+                "boltons.chunk_postprocess"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_iterable",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 43,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            },
+            {
+              "schema_version": "1.1.0",
+              "object_type": "LearningUnit",
+              "is_fixture": false,
+              "id": "u_chunked",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 286,
+                  "end_line": 306,
+                  "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+                }
+              ],
+              "concept_ids": [
+                "boltons.wrapper_compatibility"
+              ],
+              "prerequisites": [
+                {
+                  "unit_id": "u_chunked_iter",
+                  "relation_type": "teaching_prerequisite",
+                  "hard": false,
+                  "provenance": {
+                    "kind": "teaching_judgment",
+                    "evidence": [
+                      "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                    ],
+                    "proposed_by": "Codex Agent A",
+                    "review_status": "pending",
+                    "reviewer": null,
+                    "confidence": null
+                  }
+                }
+              ],
+              "provenance": {
+                "kind": "static_source",
+                "evidence": [
+                  "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              },
+              "base_cost": 21,
+              "cost_unit": "proxy_cost",
+              "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+            }
+          ],
+          "source_materials": [
+            {
+              "unit_id": "u_iterable",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              },
+              "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+            },
+            {
+              "unit_id": "u_chunked_iter",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 316,
+                "end_line": 358,
+                "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+              },
+              "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+            },
+            {
+              "unit_id": "u_chunked",
+              "source_span": {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 286,
+                "end_line": 306,
+                "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+              },
+              "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+            }
+          ],
+          "source_context": [],
+          "learner_evidence": [
+            {
+              "concept_id": "python.generator_laziness",
+              "item_id": "B05-generator-first-next-v1",
+              "outcome": "pass",
+              "project": "boltons-4e5faa3d7e40",
+              "evidence_type": "independent_quiz",
+              "independent": true,
+              "is_fixture": true
+            }
+          ],
+          "learner_gate": {
+            "boltons.chunk_postprocess": {
+              "concept_id": "boltons.chunk_postprocess",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "boltons.wrapper_compatibility": {
+              "concept_id": "boltons.wrapper_compatibility",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.generator_laziness": {
+              "concept_id": "python.generator_laziness",
+              "alpha": 2,
+              "beta": 1,
+              "evidence_ids": [
+                "D05:B05-generator-first-next-v1"
+              ],
+              "lower_bound": 0.3162277660168379,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.islice_consumption": {
+              "concept_id": "python.islice_consumption",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "completed": [
+            "u_iterable"
+          ],
+          "spent_proxy": 17.0,
+          "budget_proxy": 100,
+          "remaining_proxy": 83.0,
+          "feedback": "pass",
+          "policy": {
+            "threshold": 0.7,
+            "quantile": 0.1,
+            "alpha": 0,
+            "gamma": 0,
+            "max_quizzes": 1,
+            "quiz_cost": 1
+          }
+        },
+        "details": {
+          "attempted": true,
+          "status": "PARSED",
+          "route": [
+            "u_chunked_iter",
+            "u_chunked"
+          ],
+          "calls": [
+            {
+              "attempt": 0,
+              "kind": "initial",
+              "timestamp": "2026-10-19T12:34:42.012793+00:00",
+              "request_hash": "c5cb92e5ae49562d4ef197c55caeda4c0505e9d7d766f9d1b0505f46e890ad68",
+              "request": {
+                "model": "deepseek-flash",
+                "input": "Plan a remaining source-reading route using ONLY the public context.\nReturn exactly {\"ordered_units\":[\"unit_id\",...]} with no additional keys.\nPreserve completed materials: never return a completed unit, repeat a unit,\ninvent IDs, exceed remaining proxy budget or violate hard prerequisites.\nCover remaining goals using supplied independent mastery gate and completed\ncoverage. You receive the same source, feedback, budget and help as other\nmethods. No final answers, final tests or other methods' routes are provided.\n\nCONTEXT_JSON\n{\"budget_proxy\": 100, \"completed\": [\"u_iterable\"], \"feedback\": \"pass\", \"learner_evidence\": [{\"concept_id\": \"python.generator_laziness\", \"evidence_type\": \"independent_quiz\", \"independent\": true, \"is_fixture\": true, \"item_id\": \"B05-generator-first-next-v1\", \"outcome\": \"pass\", \"project\": \"boltons-4e5faa3d7e40\"}], \"learner_gate\": {\"boltons.chunk_postprocess\": {\"concept_id\": \"boltons.chunk_postprocess\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"boltons.wrapper_compatibility\": {\"concept_id\": \"boltons.wrapper_compatibility\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.generator_laziness\": {\"alpha\": 2, \"beta\": 1, \"concept_id\": \"python.generator_laziness\", \"evidence_ids\": [\"D05:B05-generator-first-next-v1\"], \"lower_bound\": 0.3162277660168379, \"mastered\": false, \"quantile\": 0.1, \"reason\": \"insufficient lower-bound evidence\"}, \"python.islice_consumption\": {\"concept_id\": \"python.islice_consumption\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.iterator_protocol\": {\"concept_id\": \"python.iterator_protocol\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.keyword_presence\": {\"concept_id\": \"python.keyword_presence\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"policy\": {\"alpha\": 0, \"gamma\": 0, \"max_quizzes\": 1, \"quantile\": 0.1, \"quiz_cost\": 1, \"threshold\": 0.7}, \"remaining_proxy\": 83.0, \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"source_context\": [], \"source_materials\": [{\"source_span\": {\"content_hash\": \"e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676\", \"end_line\": 76, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 61}, \"text\": \"  61  def is_iterable(obj):\\n  62      \\\"\\\"\\\"Similar in nature to :func:`callable`, ``is_iterable`` returns\\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\\n  64  \\n  65      >>> is_iterable([])\\n  66      True\\n  67      >>> is_iterable(object())\\n  68      False\\n  69  \\n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\\n  71      \\\"\\\"\\\"\\n  72      try:\\n  73          iter(obj)\\n  74      except TypeError:\\n  75          return False\\n  76      return True\", \"unit_id\": \"u_iterable\"}, {\"source_span\": {\"content_hash\": \"406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3\", \"end_line\": 358, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 316}, \"text\": \" 316  def chunked_iter(src, size, **kw):\\n 317      \\\"\\\"\\\"Generates *size*-sized chunks from *src* iterable. Unless the\\n 318      optional *fill* keyword argument is provided, iterables not evenly\\n 319      divisible by *size* will have a final chunk that is smaller than\\n 320      *size*.\\n 321  \\n 322      >>> list(chunked_iter(range(10), 3))\\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\\n 326  \\n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\\n 328      \\\"\\\"\\\"\\n 329      # TODO: add count kwarg?\\n 330      if not is_iterable(src):\\n 331          raise TypeError('expected an iterable')\\n 332      size = _validate_positive_int(size, 'chunk size')\\n 333      do_fill = True\\n 334      try:\\n 335          fill_val = kw.pop('fill')\\n 336      except KeyError:\\n 337          do_fill = False\\n 338          fill_val = None\\n 339      if kw:\\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\\n 341      if not src:\\n 342          return\\n 343  \\n 344      def postprocess(chk): return chk\\n 345      if isinstance(src, (str, bytes)):\\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\\n 347          if isinstance(src, bytes):\\n 348              def postprocess(chk): return bytes(chk)\\n 349      src_iter = iter(src)\\n 350      while True:\\n 351          cur_chunk = list(itertools.islice(src_iter, size))\\n 352          if not cur_chunk:\\n 353              break\\n 354          lc = len(cur_chunk)\\n 355          if lc < size and do_fill:\\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\\n 357          yield postprocess(cur_chunk)\\n 358      return\", \"unit_id\": \"u_chunked_iter\"}, {\"source_span\": {\"content_hash\": \"11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe\", \"end_line\": 306, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 286}, \"text\": \" 286  def chunked(src, size, count=None, **kw):\\n 287      \\\"\\\"\\\"Returns a list of *count* chunks, each with *size* elements,\\n 288      generated from iterable *src*. If *src* is not evenly divisible by\\n 289      *size*, the final chunk will have fewer than *size* elements.\\n 290      Provide the *fill* keyword argument to provide a pad value and\\n 291      enable padding, otherwise no padding will take place.\\n 292  \\n 293      >>> chunked(range(10), 3)\\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\\n 295      >>> chunked(range(10), 3, fill=None)\\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\\n 297      >>> chunked(range(10), 3, count=2)\\n 298      [[0, 1, 2], [3, 4, 5]]\\n 299  \\n 300      See :func:`chunked_iter` for more info.\\n 301      \\\"\\\"\\\"\\n 302      chunk_iter = chunked_iter(src, size, **kw)\\n 303      if count is None:\\n 304          return list(chunk_iter)\\n 305      else:\\n 306          return list(itertools.islice(chunk_iter, count))\", \"unit_id\": \"u_chunked\"}], \"spent_proxy\": 17.0, \"target_concept_ids\": [\"boltons.chunk_postprocess\", \"boltons.wrapper_compatibility\", \"python.generator_laziness\", \"python.islice_consumption\", \"python.iterator_protocol\", \"python.keyword_presence\"], \"task\": {\"goal\": \"理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。\", \"repo_commit\": \"4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d\", \"requirements\": [\"仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。\", \"count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。\", \"负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。\", \"保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。\", \"fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。\", \"提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。\"], \"task_id\": \"task_001\", \"title\": \"为boltons.chunked_iter增加惰性count限制\"}, \"units\": [{\"base_cost\": 16, \"concept_ids\": [\"python.iterator_protocol\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_iterable\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676\", \"end_line\": 76, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 61}]}, {\"base_cost\": 43, \"concept_ids\": [\"python.generator_laziness\", \"python.islice_consumption\", \"python.keyword_presence\", \"boltons.chunk_postprocess\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_chunked_iter\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": false, \"provenance\": {\"confidence\": null, \"evidence\": [\"先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核\"], \"kind\": \"teaching_judgment\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"u_iterable\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3\", \"end_line\": 358, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 316}]}, {\"base_cost\": 21, \"concept_ids\": [\"boltons.wrapper_compatibility\"], \"cost_basis\": \"A-D03 common fixed inclusive source-line proxy v1; not learning minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"u_chunked\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [{\"hard\": false, \"provenance\": {\"confidence\": null, \"evidence\": [\"先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核\"], \"kind\": \"teaching_judgment\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"relation_type\": \"teaching_prerequisite\", \"unit_id\": \"u_chunked_iter\"}], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent A\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe\", \"end_line\": 306, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 286}]}]}",
+                "store": false,
+                "max_output_tokens": 1200,
+                "reasoning": {
+                  "effort": "none"
+                }
+              },
+              "configured_rates": {
+                "budget": 5,
+                "reservation": 0.25,
+                "input": 2,
+                "output": 8,
+                "currency": "CNY",
+                "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision"
+              },
+              "model_requested": "deepseek-flash",
+              "model_returned": "deepseek-flash",
+              "usage": {
+                "input_tokens": 3506,
+                "input_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "output_tokens": 18,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 3524
+              },
+              "estimated_cost_usd": null,
+              "estimated_cost_cny": 0.007156,
+              "currency": "CNY",
+              "billing_cost_usd": null,
+              "billing_cost_cny": null,
+              "reserved_amount": 0.25,
+              "quarantined": false,
+              "response": {
+                "id": "24a0083e-89df-4b39-a7b8-661edb7b5f73",
+                "object": "response",
+                "created_at": 1792413282,
+                "status": "completed",
+                "background": false,
+                "completed_at": 1792413283,
+                "content_filters": null,
+                "error": null,
+                "frequency_penalty": 0.0,
+                "incomplete_details": null,
+                "instructions": null,
+                "max_output_tokens": 1200,
+                "max_tool_calls": null,
+                "model": "deepseek-flash",
+                "moderation": null,
+                "output": [
+                  {
+                    "type": "message",
+                    "id": "10ed8715-8f50-45e7-82e9-3711ae9bdbf6",
+                    "status": "completed",
+                    "content": [
+                      {
+                        "type": "output_text",
+                        "annotations": [],
+                        "logprobs": [],
+                        "text": "{\"ordered_units\":[\"u_chunked_iter\",\"u_chunked\"]}"
+                      }
+                    ],
+                    "phase": "final_answer",
+                    "role": "assistant"
+                  }
+                ],
+                "parallel_tool_calls": true,
+                "presence_penalty": 0.0,
+                "previous_response_id": null,
+                "prompt_cache_key": null,
+                "prompt_cache_retention": null,
+                "reasoning": {
+                  "effort": "none",
+                  "summary": null
+                },
+                "safety_identifier": null,
+                "service_tier": "default",
+                "store": false,
+                "temperature": 1.0,
+                "text": {
+                  "format": {
+                    "type": "text"
+                  },
+                  "verbosity": null
+                },
+                "tool_choice": "auto",
+                "tools": [],
+                "top_logprobs": 0,
+                "top_p": 1.0,
+                "truncation": "disabled",
+                "usage": {
+                  "input_tokens": 3506,
+                  "input_tokens_details": {
+                    "cached_tokens": 0
+                  },
+                  "output_tokens": 18,
+                  "output_tokens_details": {
+                    "reasoning_tokens": 0
+                  },
+                  "total_tokens": 3524
+                },
+                "user": null,
+                "metadata": {}
+              },
+              "raw_sha256": "8e5d8ebef9589376e371e7d5a03e13f53eaa07597681c0bb9e23ce319d1769db",
+              "elapsed_seconds": 0.8406310999998823
+            }
+          ],
+          "transport_is_fixture": false,
+          "model_requested": "deepseek-flash"
+        },
+        "independent_replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 64.0,
+          "switch_cost": 0.0,
+          "objective": 64.0,
+          "total_if_executed": 81.0
+        }
+      }
+    ]
+  }
+]

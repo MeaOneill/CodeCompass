@@ -1,0 +1,7 @@
+{
+  "files": 85,
+  "secret_scan_passed": true,
+  "user_D02_directories_excluded": true,
+  "actual_private_keys_in_staging": false,
+  "source_owned_A_unchanged": true
+}

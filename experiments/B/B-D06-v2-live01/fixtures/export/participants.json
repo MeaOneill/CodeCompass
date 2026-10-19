@@ -1,0 +1,38 @@
+[
+  {
+    "participant": "5a969162711811556168d925",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "76bbbfe566cec98e55ed53ec",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "f88505eb5dbc00cedab782cb",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  }
+]

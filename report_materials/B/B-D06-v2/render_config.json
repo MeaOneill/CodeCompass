@@ -1,0 +1,7 @@
+{
+  "dpi": 300,
+  "renderer": "native SVG/Pillow",
+  "data": "exact registry counts and saved route traces",
+  "run_id": "B-D06-v2-live01",
+  "effect_numbers": false
+}

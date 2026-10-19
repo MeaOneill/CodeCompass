@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="session-token" content="__TOKEN__"><title>CodeCompass · 完整任务联调</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><strong>◈ CodeCompass</strong><span>第六日 · 可执行候选 v2</span></header><main>
+<h1>阅读、独立短测、反馈与提交</h1><p class="muted">12道源码任务统一界面。当前用于开发/预演，正式招募和人工审批尚未完成。</p>
+<section id="setup" class="card"><div class="fields"><label>任务<select id="task"></select></label><label>路线方法<select id="method"><option value="Ours">Ours · 剩余路线搜索</option><option value="B2">B2 · 依赖闭包贪心</option><option value="B1">B1 · 实时模型规划与重规划</option></select></label><button id="start">开始本轮</button></div><p class="muted">B1默认未启用API；只有本机明确配置后才调用，费用计入原累计上限。各轮独立画像。</p></section>
+<p id="error" role="alert"></p><div id="session" hidden>
+<section class="card bar"><div><strong id="title"></strong><p id="meta" class="muted"></p></div><div><strong id="timer"></strong> <span id="status"></span> <button id="pause">暂停</button> <button id="withdraw" class="quiet">退出</button></div></section>
+<div class="grid"><aside class="card"><h2>当前路线</h2><ol id="route"></ol><p id="cost"></p><p class="muted">阅读完成是材料覆盖，不等于掌握。首份材料后自动进行一次独立短测。</p></aside>
+<section class="card"><div class="tabs"><button id="read">阅读源码</button><button id="showSubmit" class="quiet">最终提交</button></div>
+<div id="reading"><details><summary>任务目标与要求</summary><p id="goal"></p><ul id="requirements"></ul></details><p id="version" class="muted"></p><div id="materials"></div><details><summary>共同公开的模块依赖上下文</summary><div id="context"></div></details><button id="complete">标记本份阅读完成</button></div>
+<div id="quizPanel" hidden><h2 id="question"></h2><pre id="questionCode"></pre><div id="choices"></div><button id="answer">提交短测并重规划</button><p class="muted">题目独立于最终任务，答错记录保留；不能重复刷题增加能力。</p></div>
+<div id="feedback" hidden><h2 id="outcome"></h2><p id="change"></p><pre id="evidence"></pre><p class="muted">路线保持不变也是有效结果；一道题通常不足以达到掌握门槛。</p></div>
+<div id="submission" hidden><h2>独立任务提交</h2><p class="muted">提交阶段不提供解答型AI帮助。提交后由独立评估入口评分，缺人类解释评分保持待审核。</p>
+<div id="responseForm"><label>outputs（各字段填写JSON值或普通文本）<textarea id="outputs" rows="4" placeholder='例如 {"字段名": "你的结果"}'></textarea></label><label>源码依据（每行 path:起始行-结束行）<textarea id="citations" rows="3" placeholder="boltons/strutils.py:起始行-结束行"></textarea></label><label>机制解释<textarea id="explanation" rows="4"></textarea></label></div>
+<div id="patchForm" hidden><p>代码修改题：选择 candidate.py、explanation.md、regression_tests.py、patch.diff、commands_and_elapsed.json 五个文件。页面只收集文件，不执行。</p><input id="patchFiles" type="file" multiple></div>
+<button id="submit">保存提交并停止计时</button></div>
+<div id="finished" hidden><h2>本轮记录已保存</h2><p id="finishText"></p><button id="new">返回任务选择</button></div>
+</section></div><section class="card"><p id="records"></p><p id="limits" class="muted"></p></section></div>
+</main><footer>CodeCompass · 数据自动保存在本机 · 未获人工同意/批准前不进入正式研究</footer><script src="/app.js"></script></body></html>

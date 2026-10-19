@@ -1,0 +1,23 @@
+{
+  "task_id": "B-D06",
+  "owner": "B",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "registered_at": "2026-10-19T20:42:29.903547+08:00",
+  "base_sha": "72c0922369d5ef31c4803974dda8965761ca72dd",
+  "branch": "codex/B-D06-protocol",
+  "runs": [
+    "B-D06-v2-offline01",
+    "B-D06-v2-live01",
+    "B-D06-v2-scorer01",
+    "B-D06-v2-scorer02",
+    "B-D06-v2-verification01"
+  ],
+  "scope": "Engineering fixtures and actual model transport; no human effect analysis",
+  "formal_participants": 0,
+  "actual_enrollment": null,
+  "private_answers_exported": false,
+  "model_calls": 2,
+  "estimated_cny": 0.014108,
+  "independent_human_review": "NOT_REVIEWED"
+}

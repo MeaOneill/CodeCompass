@@ -1,0 +1,15 @@
+usage: grade_session_v2.py [-h] --database DATABASE --session SESSION --job
+                           JOB [--key KEY] [--review REVIEW]
+
+Offline evaluator bridge. Never imported by the web app; never runs code
+there. Inputs are actual submitted sessions, not fabricated elapsed times.
+Response keys must be explicitly provided. Local jobs may contain answers and
+must stay ignored.
+
+options:
+  -h, --help           show this help message and exit
+  --database DATABASE
+  --session SESSION
+  --job JOB
+  --key KEY
+  --review REVIEW

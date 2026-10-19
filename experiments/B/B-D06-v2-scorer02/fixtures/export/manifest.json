@@ -1,0 +1,22 @@
+{
+  "version": "B-D05-collector-1",
+  "actor": "test_fixture",
+  "scope": "development_only",
+  "clock_source": "server UTC + process monotonic",
+  "pii_removed": [
+    "local participant/session token",
+    "absolute time",
+    "free response",
+    "database path"
+  ],
+  "grouping": "HMAC pseudonyms stable within this export only; do not combine bundles as new participants",
+  "formal_study_ready": false,
+  "files": {
+    "events.json": "d8aec91e0c36f45c22f4b66268d9cd714260ef2cc39aa9797f75d388c2c7e25c",
+    "participants.json": "1b7957a4d2e884ebd1514ff110f1c65ab3c71c1949ccf3be2bf90daab900b17d",
+    "sessions.csv": "413c3a860f08cf204be11b2ea413fbba4669b94cb8dd283d0138caf5033cb586",
+    "sessions.json": "e61a2381436416973c1d5f8e94550e496c71ac0de2cd5ab21101494d15a962a4",
+    "assessments.json": "c7fdd10ec7b9665b08f3f6870ca93a5b6e63e0434294416e7da956a6e07b5aea"
+  },
+  "assessment_policy": "Separate bound independent results; raw session observations are not rewritten. Missing reviews remain pending."
+}

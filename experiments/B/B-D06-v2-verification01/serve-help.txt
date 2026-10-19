@@ -1,0 +1,10 @@
+usage: serve_relay_v2.py [-h] [--port PORT] [--enable-b1]
+                         [--actor {test_fixture,human_manual,agent_browser}]
+
+Loopback UI for all twelve tasks; B1 live mode requires explicit local config.
+
+options:
+  -h, --help            show this help message and exit
+  --port PORT
+  --enable-b1
+  --actor {test_fixture,human_manual,agent_browser}
