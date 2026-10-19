@@ -1,0 +1,353 @@
+{
+  "passed": true,
+  "checkpoint": "36e100346d4aacf3cbd86e00656105992b4d7893",
+  "method": "same-machine clean local clone; original interpreter reused; no credentials/private final key copied",
+  "commands": [
+    {
+      "name": "version",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07_version.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-recovery02\\version-audit.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.42609409999568015
+    },
+    {
+      "name": "new_tests",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A/test_runtime_d07.py",
+        "tests/A/test_runtime_d07_http.py",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.63369970000349
+    },
+    {
+      "name": "saved_replay",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07.py",
+        "--run-id",
+        "A-D07-development05",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-recovery02\\saved-smoke-audit.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.716007200011518
+    },
+    {
+      "name": "rerun",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/run_d07.py",
+        "--run-id",
+        "A-D07-clone-replay01"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.81036740000127
+    }
+  ],
+  "semantic_replay_matches": 72,
+  "comparisons": [
+    {
+      "path": "closed_loops/task_001/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_001/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_001/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_001/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_001/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_001/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_002/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_003/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_004/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_005/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_006/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_007/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_008/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_009/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_010/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_011/pass-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/fail-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/fail-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/fail-Ours.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/pass-B1.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/pass-B2.json",
+      "same": true
+    },
+    {
+      "path": "closed_loops/task_012/pass-Ours.json",
+      "same": true
+    }
+  ],
+  "comparison_scope": "route/status/goal context/evidence numeric gate/cost/completed/feedback/source explanations; only random transport/session identities and evidence IDs and processing latency excluded",
+  "new_model_calls": 0,
+  "real_human_pretests": "NOT_RUN",
+  "independent_person_review": "NOT_REVIEWED",
+  "formal_G2_passed": false,
+  "zip_sha256": "e38eb3f0b59b6b0c42fb764a3fc9964a187004717c9c5bbd2e9ba9a1932a5442"
+}

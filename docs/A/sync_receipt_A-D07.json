@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-20T00:05:52.325469+08:00",
+  "task": "A-D07",
+  "branch": "codex/A-D07-smoke",
+  "base": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "business_checkpoint": "36e100346d4aacf3cbd86e00656105992b4d7893",
+  "verified_remote_checkpoint": "36e100346d4aacf3cbd86e00656105992b4d7893",
+  "synchronization": "BUSINESS_CHECKPOINT_PUSHED_AND_CLEAN_CLONE_VERIFIED",
+  "recovery": "experiments/A/A-D07-recovery02/recovery_receipt.json",
+  "recovery_checks": {
+    "version": 43,
+    "new_tests": 21,
+    "saved_loop_audit": 1468,
+    "semantic_loop_matches": 72
+  },
+  "same_machine": true,
+  "other_machine_verified": false,
+  "formal_G2_passed": false,
+  "overall_day_passed": false,
+  "actual_pretesters": null,
+  "recruitment": null,
+  "new_A_code_independent_review": "NOT_REVIEWED",
+  "next": "B-D07 integration, independent review and genuine pretest preparation only",
+  "final_receipt_commit": "See final notification and git log; this receipt does not self-reference"
+}

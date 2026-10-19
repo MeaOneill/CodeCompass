@@ -1,0 +1,40 @@
+{
+  "passed": false,
+  "checkpoint": "36e100346d4aacf3cbd86e00656105992b4d7893",
+  "method": "same-machine clean local clone; original interpreter reused; no credentials/private final key copied",
+  "commands": [
+    {
+      "name": "version",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07_version.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-recovery01\\version-audit.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.656566899997415
+    },
+    {
+      "name": "new_tests",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A/test_runtime_d07.py",
+        "tests/A/test_runtime_d07_http.py",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 9.431384099996649
+    }
+  ],
+  "semantic_replay_matches": 0,
+  "comparisons": [],
+  "comparison_scope": "route/status/goal context/evidence numeric gate/cost/completed/feedback/source explanations; only random transport/session identities and evidence IDs and processing latency excluded",
+  "new_model_calls": 0,
+  "real_human_pretests": "NOT_RUN",
+  "independent_person_review": "NOT_REVIEWED",
+  "formal_G2_passed": false,
+  "zip_sha256": null
+}

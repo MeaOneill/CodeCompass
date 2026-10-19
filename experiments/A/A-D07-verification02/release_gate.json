@@ -28,5 +28,7 @@
   "formal_tag_created": false,
   "new_model_calls": 0,
   "latest_code_version": "configs/frozen/A-D07-runtime-v1/manifest.json",
-  "synchronization": "PENDING_CHECKPOINT_PUSH_AND_COMMITTED_COPY_CHECK"
+  "synchronization": "BUSINESS_CHECKPOINT_PUSHED_AND_CLEAN_CLONE_VERIFIED",
+  "synchronization_receipt": "docs/A/sync_receipt_A-D07.json",
+  "committed_recovery_passed": true
 }

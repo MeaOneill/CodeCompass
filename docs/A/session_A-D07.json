@@ -16,7 +16,7 @@
   "formal_study_allowed": false,
   "private_final_answers": "not read or copied",
   "scope": "A planner smoke, defect fixes, public protocol/source review; preserve B modules and old frozen bytes",
-  "updated_at": "2026-10-19T23:55:57.036715+08:00",
+  "updated_at": "2026-10-20T00:05:52.325469+08:00",
   "engineering_status": "READY_FOR_REVIEW",
   "full_tests": 384,
   "new_tests": 21,
@@ -32,6 +32,13 @@
   "b_d07_preparation_allowed": true,
   "final_gate": "experiments/A/A-D07-verification02/release_gate.json",
   "latest_runtime": "A-D07-runtime-v1",
-  "synchronization": "PENDING_CHECKPOINT",
-  "background_jobs": []
+  "synchronization": "BUSINESS_CHECKPOINT_PUSHED_AND_CLEAN_CLONE_VERIFIED",
+  "background_jobs": [],
+  "actual_execution_dates": [
+    "2026-10-19",
+    "2026-10-20"
+  ],
+  "business_checkpoint": "36e100346d4aacf3cbd86e00656105992b4d7893",
+  "committed_recovery_passed": true,
+  "synchronization_receipt": "docs/A/sync_receipt_A-D07.json"
 }

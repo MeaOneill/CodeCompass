@@ -1,0 +1,94 @@
+..........E.EEEE....E                                                    [100%]
+=================================== ERRORS ====================================
+__ ERROR at setup of test_real_defect_empty_B1_not_retried_or_called_success __
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_same_information_prefix_failure_and_resume[Ours] ___
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_same_information_prefix_failure_and_resume[B2] ____
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_same_information_prefix_failure_and_resume[B1] ____
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_timeout_and_input_rejection_preserve_completed ____
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+_________ ERROR at setup of test_versioned_page_and_source_reason_api _________
+
+self = WindowsPath('C:/CodeCompass/CodeCompass-A-D05/tmp/A-D07-replay-36e100/tmp/A-D07-committed-tests')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-replay-36e100\\tmp\\A-D07-committed-tests'
+
+C:\Users\茅佳媛\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/A/test_runtime_d07.py::test_real_defect_empty_B1_not_retried_or_called_success
+ERROR tests/A/test_runtime_d07.py::test_same_information_prefix_failure_and_resume[Ours]
+ERROR tests/A/test_runtime_d07.py::test_same_information_prefix_failure_and_resume[B2]
+ERROR tests/A/test_runtime_d07.py::test_same_information_prefix_failure_and_resume[B1]
+ERROR tests/A/test_runtime_d07.py::test_timeout_and_input_rejection_preserve_completed
+ERROR tests/A/test_runtime_d07_http.py::test_versioned_page_and_source_reason_api
+15 passed, 6 errors in 7.69s
