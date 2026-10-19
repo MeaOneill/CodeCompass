@@ -103,3 +103,5 @@ A-D06第一动作：fetch并核对B-D05最终通知SHA，然后在自己的工�
 ## A署名 A-D06 2026-10-19T13:52:37.497734+08:00
 
 Owner成员A/执行Codex Agent A/机器糯糯；codex/A-D06-g2-freeze，base=5e6ecb186e9b06d72599ae41d851e9b35ea59399。工程候选READY_FOR_REVIEW；正式G2 BLOCKED/NOT_PASSED，next_step_allowed=false，仅B-D06补依赖。30次开发对照、109文件hash快照、258测试与独立AI22复核通过；模拟反馈/真人正式0/付费调用0。缺动态B1、公平时机接入、正式协议/任务/终测评分、人类审核和双方main确认。未合main/未打正式标签。接收首命令与全部原始路径见docs/A/handoffs/A-D06.md；同步SHA见最终回执。
+
+A署名收尾 2026-10-19T14:00:33.713292+08:00：业务检查点5d39d55330359530dbec52c12e9b8ac3c119f619已实际push并核对remote一致；新本地clone的109文件审计、258测试、30次开发重跑与原语义结果逐项一致。首次本地clone被沙箱MSYS权限拒绝，原日志保留，允许后重试成功；未复制凭据。详见experiments/A/A-D06-closeout/release_gate.json。候选工程严格复检通过，但G2仍未通过：状态BLOCKED，仅允许B-D06补阻断，不放行正式实验/下一日。未合main/未打正式标签。后续仅回执提交，精确最终HEAD/remote见通知。

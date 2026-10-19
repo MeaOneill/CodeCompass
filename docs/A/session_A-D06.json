@@ -6,7 +6,7 @@
   "model_id": null,
   "planned_date": "2026-10-20",
   "actual_date": "2026-10-19",
-  "updated_at": "2026-10-19T13:52:37.497734+08:00",
+  "updated_at": "2026-10-19T14:00:33.713292+08:00",
   "branch": "codex/A-D06-g2-freeze",
   "base_commit": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
   "received_B_commit": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
@@ -28,6 +28,12 @@
   "model_api_calls": 0,
   "main_merged": false,
   "tag_created": false,
-  "synchronization": "PENDING_CHECKPOINT",
-  "background_jobs": []
+  "synchronization": "BUSINESS_CHECKPOINT_PUSHED_AND_VERIFIED; receipt-only final push follows",
+  "background_jobs": [],
+  "business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
+  "remote_verified_business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
+  "clean_clone_replay": true,
+  "clean_clone_tests": 258,
+  "semantic_replay_matches": 30,
+  "final_gate": "experiments/A/A-D06-closeout/release_gate.json"
 }

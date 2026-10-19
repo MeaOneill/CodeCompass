@@ -1,0 +1,6 @@
+Cloning into 'tmp/A-D06-replay-5d39'...
+      0 [main] sh (15632) C:\Program Files\Git\usr\bin\sh.exe: *** fatal error - NtCreateDirectoryObject(\BaseNamedObjects\msys-2.0S5-1888ae32e00d56aa): 0xC0000022
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

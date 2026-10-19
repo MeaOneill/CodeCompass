@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "errors": [],
+  "files": 21,
+  "scope": "explicit staged A-D06 paths; source string references are not credentials",
+  "items": [
+    {
+      "path": "CodeCompass计划/tracking/HANDOFF.md",
+      "sha256": "4c9a1ff646f18007c36712e83ca7c6be72ca7eeb0900cdeb23f2d2f3fd29d29c"
+    },
+    {
+      "path": "CodeCompass计划/tracking/STATUS.md",
+      "sha256": "0b471cd53b4012b9b3b1f93e702b8f5497a3cc4a7aac5baceae1d34f8353ea9e"
+    },
+    {
+      "path": "docs/A/A-D06_成果与自行验收.md",
+      "sha256": "9be9e30d6662fc292ab0a0d1b89c82148aa7d04df70a706abb9b670089da6a1b"
+    },
+    {
+      "path": "docs/A/handoffs/A-D06.md",
+      "sha256": "e8aa7dc8fbf9805530ca52df998abf61fca50a7063c88096bc3291a73f22845c"
+    },
+    {
+      "path": "docs/A/session_A-D06.json",
+      "sha256": "323e77140d34371786e664691edafbe35ef6db43c3bd3b16194631d8ff4621d4"
+    },
+    {
+      "path": "docs/A/sync_receipt_A-D06.json",
+      "sha256": "d89b2e47759ab42f14639d41ab9f07a4abe20973a29568e66aad1e694de9f89c"
+    },
+    {
+      "path": "docs/A/开发日志.md",
+      "sha256": "bcdfa1ff7ed25826db0544cb0d9230ce8a271ae406365215541cfa8ab925df89"
+    },
+    {
+      "path": "docs/A/状态.md",
+      "sha256": "8e84b979799bceeb67b1b5b24a9a014aef06143a07a628850c3c1e87d256c076"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/A-D06-clone-retry.log",
+      "sha256": "95afd59d9ca2da277d79e40d06d31e2a44034159297aa1ffc1a7326d782d0def"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/A-D06-clone.log",
+      "sha256": "7e8bd811151a286b40ffb79ad1109134f58f609343365eabb1758e79a680a3f5"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/development.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/development.stdout.log",
+      "sha256": "2049f16435b670b5ce13d0d0167be50fb4977547d50844ac4943dee5648f25cc"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/evidence_manifest.json",
+      "sha256": "395c346f9ed9edee825b45ae727097c907a08f6087a93aa7089047ad62f1d8fb"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/freeze.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/freeze.stdout.log",
+      "sha256": "45adfdf075d5610bbdf34763b0270470fb8632bce0ab08c78dcbcef07793a131"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/release_gate.json",
+      "sha256": "a69b9707aea79d056955704b499a261dfc04aad27300106f4673912753e2efe1"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/replay-freeze.json",
+      "sha256": "7df1406421f8c068c83d2119474491747a66b81824041a0d8fe04b6977bca261"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/replay_receipt.json",
+      "sha256": "64faebc5399bd35ffdd12f750624781f14924245c8707a0d477d044f202df44d"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/replayed_development.zip",
+      "sha256": "25510d815191dba31f742f9d49a5aac3d9551b7e11332efa03fa74317fcee87d"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/tests.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D06-closeout/tests.stdout.log",
+      "sha256": "1ac1b9520586777747f662eb5b02d773d73a6ac9fb811e70d190ddaa34acb8d1"
+    }
+  ]
+}

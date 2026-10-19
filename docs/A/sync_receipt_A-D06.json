@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-19T14:00:33.713292+08:00",
+  "branch": "codex/A-D06-g2-freeze",
+  "base": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+  "business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
+  "verified_remote_business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
+  "origin_main": "fd7b3e695b21ae5cb23845a808d58f07bdf0039f",
+  "method": "actual git push and git ls-remote; source restored via local no-hardlinks clone",
+  "restoration_passed": true,
+  "clean_clone_tests": 258,
+  "replayed_development_pairs": 30,
+  "final_delivery_note": "Next commit contains receipts only. Final HEAD=remote must be checked after that push and stated in completion message.",
+  "status": "BLOCKED_G2_CANDIDATE_SYNCED",
+  "g2_passed": false,
+  "formal_tag_created": false,
+  "main_merged": false,
+  "human_review": "NOT_REVIEWED",
+  "other_machine_reproduction": "NOT_RUN",
+  "new_model_calls": 0
+}

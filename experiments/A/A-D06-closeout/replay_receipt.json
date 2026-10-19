@@ -1,0 +1,170 @@
+{
+  "checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
+  "kind": "same-machine clean local clone, no credentials copied, original A interpreter reused",
+  "commands": [
+    {
+      "name": "freeze",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d06.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D06-closeout\\replay-freeze.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.0547479999950156
+    },
+    {
+      "name": "tests",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D06-replay-5d39\\tmp\\A-D06-clone-pytest"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 47.87965489999624
+    },
+    {
+      "name": "development",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/run_d06.py",
+        "--run-id",
+        "A-D06-clone-replay01"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.082798199990066
+    }
+  ],
+  "source_snapshot_integrity": "109 files checked by replay-freeze.json",
+  "comparisons": [
+    {
+      "path": "runs/diagnostic-fail/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-fail/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-fail/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-fail/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-fail/no_selection.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-pass/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-pass/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-pass/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-pass/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/diagnostic-pass/no_selection.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_evidence/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_evidence/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_evidence/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_evidence/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_evidence/no_selection.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_unknown/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_unknown/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_unknown/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_unknown/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_001-sim_unknown/no_selection.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_evidence/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_evidence/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_evidence/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_evidence/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_evidence/no_selection.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_unknown/main.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_unknown/no_diagnostic.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_unknown/no_feedback.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_unknown/no_gate.json",
+      "semantic_equal": true
+    },
+    {
+      "path": "runs/task_002-sim_unknown/no_selection.json",
+      "semantic_equal": true
+    }
+  ],
+  "semantic_matches": 30,
+  "passed": true,
+  "formal_g2_passed": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "new_model_calls": 0,
+  "first_clone_attempt": "sandbox Git MSYS access denied; retry with permission succeeded",
+  "zip_sha256": "25510d815191dba31f742f9d49a5aac3d9551b7e11332efa03fa74317fcee87d"
+}
