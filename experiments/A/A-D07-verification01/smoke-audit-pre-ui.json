@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": 1434,
+  "closed_loops": 72,
+  "paired_development_repair_passed": true,
+  "real_human_pretests": "NOT_RUN",
+  "recruitment": null,
+  "new_model_calls": 0,
+  "formal_g2_passed": false
+}

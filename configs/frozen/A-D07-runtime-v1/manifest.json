@@ -1,0 +1,127 @@
+{
+  "runtime_version": "A-D07-runtime-v1",
+  "status": "TECHNICAL_CANDIDATE_ONLY",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "parent_commit": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "parent_protocol": "B-D06-v0.2-candidate",
+  "parameters_changed": false,
+  "formal_g2_passed": false,
+  "formal_study_allowed": false,
+  "formal_tag_created": false,
+  "actual_recruitment": null,
+  "actual_pretesters": null,
+  "core_search_changed": false,
+  "affected_run_scope": "new opt-in runtime rejects legal incomplete routes; completed goals/previous valid routes retain original search and costs; UI explanation visibility versioned",
+  "accepted_evidence_run": "A-D07-development05",
+  "superseded_development_runs": [
+    "A-D07-development01",
+    "A-D07-development02",
+    "A-D07-development03",
+    "A-D07-development04"
+  ],
+  "historical_model_runs_preserved": [
+    "B-D06-v2-live01"
+  ],
+  "formal_runs_invalidated": [],
+  "new_model_calls": 0,
+  "required_before_formal": [
+    "B-D07 integrate validated runtime and independently review new A code",
+    "two genuine pretesters and accurate protocol/claim treatment",
+    "human task/protocol approval and actual comparison-branch decision",
+    "designated main integration and formal version/tag"
+  ],
+  "change_policy": "new version and affected run IDs for algorithm/protocol changes; never overwrite parent snapshots",
+  "protected_parent_files": {
+    "src/codecompass/planner/adaptive.py": "a3481880313ac6f5e6d938a3be100caa08519a32ac8c36f9c608ac248f2bca74",
+    "src/codecompass/planner/feedback.py": "fe2e4ca533dfc6303e8dcf04fc81fa31c73db9329212557e7ee1525994e4bfe2",
+    "src/codecompass/planner/diagnostics.py": "af44ffd86ab87ffa7a921621679051f19103f315f02de85f4b620039efe76f6b",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "src/codecompass/app/relay_v2.py": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24",
+    "src/codecompass/app/study_d06.py": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f",
+    "scripts/B/serve_relay_v2.py": "969f2677d708f7968eb6b572ac08c36e6b99441cebbf8e9b7710a4170d0d15bd",
+    "scripts/B/comparison/b1.py": "08c4417c3676dd271bcb15bdc3303939241860b0d1cd841f4a3ac74febd74ca2",
+    "configs/B/D06_v2_deepseek.json": "f8768cd81bdc390de2625fa3b7d5f091541cc1bf709c8a0d2341b6e115d997c1",
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "benchmarks/B/frozen/B-D06-v0.2-candidate/manifest.json": "6169cb25261bd06b6fb17a00a591e3833eaaaf0218df64b44e24ccdb954f1084",
+    "configs/frozen/freeze_manifest.json": "facc0534f9347215a121e9e372e625aa28fbdb7e2b8c2a7fd5ef9ecd12c0138e",
+    "configs/frozen/v0.1-candidate.1-supplement/freeze_manifest.json": "7d338a514101c55d1b5a215fae8101c7e127d8bfa2a441e247b240c070cf26ca"
+  },
+  "files": [
+    {
+      "path": "src/codecompass/planner/runtime_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/src/codecompass/planner/runtime_d07.py",
+      "sha256": "79c1bf60c0dfaf2ce04d2da430f293b0cb097f222d17ebbead195d2168466116"
+    },
+    {
+      "path": "scripts/A/relay_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/relay_d07.py",
+      "sha256": "8aa1d3281c28a9dceb9cade675dcf341bf13a7dd15687a7adb0d1d042183467f"
+    },
+    {
+      "path": "scripts/A/serve_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/serve_d07.py",
+      "sha256": "af2ed952c2f45f5d97be981314e92d95690e12cacc1e4ff533737bab2957c643"
+    },
+    {
+      "path": "scripts/A/run_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/run_d07.py",
+      "sha256": "bfac4f39c2425d5b56c2d3047c6643df5da9b1d8282070cf2128208ff245c375"
+    },
+    {
+      "path": "scripts/A/audit_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/audit_d07.py",
+      "sha256": "2df3447419c992b6414cdd22c2794e3477eefdb1730ce730fe2dbdea9d8cab60"
+    },
+    {
+      "path": "scripts/A/audit_d07_version.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/audit_d07_version.py",
+      "sha256": "a5e926b4749abaab3acece0042a50e4d24e2411a104ec0f05b77c07fbca5e3b9"
+    },
+    {
+      "path": "scripts/A/cases_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/cases_d07.py",
+      "sha256": "b5e9046d39aa549221f049e7f4f6cde0296a476c01a41a8be9d87266c5a5cf7e"
+    },
+    {
+      "path": "scripts/A/review_d07_protocol.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/review_d07_protocol.py",
+      "sha256": "d4a632e4365442783f3fde4c87d86c7688c030d921ddcaed744cdf372cf3c6a5"
+    },
+    {
+      "path": "scripts/A/export_d07_browser.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/export_d07_browser.py",
+      "sha256": "9c70de9f1c956ff67079e47a3254529b344c1c0c968a295162a6fcafcfda82cf"
+    },
+    {
+      "path": "scripts/A/draw_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/scripts/A/draw_d07.py",
+      "sha256": "e8a63b120a6780892b857578893fcf947e6d6be6172042276654307de1c6313e"
+    },
+    {
+      "path": "configs/A/D07_runtime.json",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/configs/A/D07_runtime.json",
+      "sha256": "215e738fa789513e53fe13d6d3c0a437eb056df8bd47f23dd5e64450f3230f78"
+    },
+    {
+      "path": "app/A_D07/a07.js",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/app/A_D07/a07.js",
+      "sha256": "6330e8777e19dc5f5b2300be84640fdc78c84a582bcb741d7e108f19aee60091"
+    },
+    {
+      "path": "app/A_D07/a07.css",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/app/A_D07/a07.css",
+      "sha256": "4ee983cc949fdfabd376d2e4712efe25e3274f6e895daa3818a25bde6db4eba9"
+    },
+    {
+      "path": "tests/A/test_runtime_d07.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/tests/A/test_runtime_d07.py",
+      "sha256": "beacac11592fe80b460671134015c4ba7928e1db1efc8f1ab9edb24b699a54a5"
+    },
+    {
+      "path": "tests/A/test_runtime_d07_http.py",
+      "snapshot": "configs/frozen/A-D07-runtime-v1/source_snapshot/tests/A/test_runtime_d07_http.py",
+      "sha256": "ee08c11c3d7b595158c372a4c6e1f4f3f469efd2f485146df974c7dad2650ce3"
+    }
+  ]
+}

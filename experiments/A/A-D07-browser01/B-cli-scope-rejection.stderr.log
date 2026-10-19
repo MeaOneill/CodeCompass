@@ -1,0 +1,3 @@
+usage: export_d05.py [-h] --database DATABASE --output OUTPUT --actor
+                     {human_manual,agent_browser,test_fixture}
+export_d05.py: error: Use experiments/B/<run>/agent_browser/<unique-export>

@@ -1,0 +1,8 @@
+{
+  "browser_tab_closed": true,
+  "scope": "only this task agent_browser server",
+  "stopped_task_process_ids": [
+    15968
+  ],
+  "port": 8771
+}

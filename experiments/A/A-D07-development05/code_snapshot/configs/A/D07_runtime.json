@@ -1,0 +1,22 @@
+{
+  "version": "A-D07-runtime-v1",
+  "parent_protocol": "B-D06-v0.2-candidate",
+  "base_commit": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "threshold": 0.7,
+  "quantile": 0.1,
+  "alpha": 0.0,
+  "gamma": 0.0,
+  "budget": 100,
+  "search": {"beam_width": 16, "candidate_limit": 50, "max_expansions": 100000, "time_limit_seconds": 30.0},
+  "quiz_cost": 1,
+  "max_quizzes": 1,
+  "production_voi_enabled": false,
+  "parameters_changed": false,
+  "behavior_change": "All methods require both legal route and complete goal coverage before FEASIBLE; opt-in runtime, no semantic retry",
+  "evidence_changed": false,
+  "human_pretest_count": null,
+  "actual_recruitment": null,
+  "joint_g2_passed": false,
+  "formal_study_allowed": false,
+  "new_model_calls_authorized_by_this_config": false
+}

@@ -1,0 +1,45 @@
+{
+  "version": "B-D06-executable-candidate-2",
+  "prompt_version": "relay_v2.PROMPT",
+  "methods": [
+    "Ours",
+    "B1",
+    "B2"
+  ],
+  "beam_options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30
+  },
+  "b1": {
+    "enabled": true,
+    "model": "deepseek-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "endpoint": "https://api.deepseek.com/responses",
+    "params": {
+      "reasoning": {
+        "effort": "none"
+      }
+    },
+    "max_output_tokens": 1200,
+    "timeout_seconds": 60,
+    "max_repairs": 1,
+    "budget_usd": null,
+    "per_call_reservation_usd": null,
+    "input_usd_per_million": null,
+    "output_usd_per_million": null,
+    "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision",
+    "max_response_bytes": 262144,
+    "notes": "User authorized CNY5-10; selected ceiling CNY5 total across runs. Durable reservations .25 per call including repair. At most 20 reserved calls across retries. No search/tools. Actual bill unknown; token-cost estimate conservatively uses peak rates. Requires locally encrypted replacement key; no key in config.",
+    "currency": "CNY",
+    "budget_cny": 5,
+    "per_call_reservation_cny": 0.25,
+    "input_cny_per_million": 2,
+    "output_cny_per_million": 8,
+    "budget_state_path": "tmp/B-D04-deepseek-budget.sqlite3",
+    "max_input_bytes": 80000
+  },
+  "formal_study_ready": false,
+  "units": "proxy_cost; fixed inclusive source lines, never minutes"
+}

@@ -1,0 +1,51 @@
+{
+  "run_id": "A-D07-development01",
+  "runtime_version": "A-D07-runtime-v1",
+  "closed_loops": 72,
+  "same_initial_information_tasks": 12,
+  "faults": [
+    {
+      "case": "budget_insufficient",
+      "status": "NO_FEASIBLE_FOUND"
+    },
+    {
+      "case": "timeout",
+      "status": "TIMEOUT"
+    },
+    {
+      "case": "wrong_user",
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "duplicate_evidence",
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "aggregate_mismatch",
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "foreign_project",
+      "status": "FEASIBLE"
+    },
+    {
+      "case": "similar_concept",
+      "status": "FEASIBLE"
+    },
+    {
+      "case": "damaged_source",
+      "status": "INVALID_INPUT"
+    }
+  ],
+  "new_model_calls": 0,
+  "actual_pretesters": null,
+  "actual_recruitment": null,
+  "formal_task_outcomes": 0,
+  "feedback_is_simulated": true,
+  "fixture_remaining_changes": 0,
+  "cold_start_single_quiz_pass_lower_bound": 0.05131670194948623,
+  "threshold": 0.7,
+  "protocol_limitation": "Unknown prior plus one independent pass cannot open tau=.7 q=.1 gate; no feedback-value claim",
+  "synthetic_prior_repair": "paired/failed_quiz_repair.json",
+  "formal_study_ready": false
+}

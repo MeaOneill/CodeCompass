@@ -1,0 +1,877 @@
+{
+  "task_id": "task_009",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "bWLidAewyGwGETIXubsgkTI_7h6bMZdO",
+    "participant": "p_89ef749bafc290f28988cc2cad2f9a83",
+    "task": {
+      "task_id": "task_009",
+      "title": "gzip往返与字节约定",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "对data=b'open-source navigation'，填写outputs：roundtrip=list(gunzip_bytes(gzip_bytes(data)))，empty=list(gunzip_bytes(gzip_bytes(b'')))，type_name=type(gzip_bytes(data)).__name__。解释BytesIO与压缩级别；不要把压缩后完整字节串当稳定跨版本金标准。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_009__gzip_bytes"
+    ],
+    "completed": [
+      "task_009__gunzip_bytes"
+    ],
+    "spent": 3.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_009__gzip_bytes",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 645,
+          "end_line": 645,
+          "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+        },
+        "text": " 645  def gzip_bytes(bytestring, level=6):"
+      },
+      {
+        "unit_id": "task_009__gzip_bytes",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 660,
+          "end_line": 664,
+          "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+        },
+        "text": " 660      out = StringIO()\n 661      f = GzipFile(fileobj=out, mode='wb', compresslevel=level)\n 662      f.write(bytestring)\n 663      f.close()\n 664      return out.getvalue()"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "zlib"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 46,
+          "end_line": 46,
+          "content_hash": "62cca641b59a088a58ee73430c63979d188126c706e4d559b9974d62c2984232"
+        },
+        "text": "import zlib"
+      },
+      {
+        "names": [
+          "GzipFile"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 48,
+          "end_line": 48,
+          "content_hash": "63b608506bbe2fda11d89f7a6c73eb39c7ff0fde9592285cb752fb4a92708edb"
+        },
+        "text": "from gzip import GzipFile"
+      },
+      {
+        "names": [
+          "StringIO"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 51,
+          "end_line": 51,
+          "content_hash": "75f9dc48cb1eeafd5f2d9c101c761f988e7ed91da9c48bcbfe4c24578c2e2f01"
+        },
+        "text": "from io import BytesIO as StringIO"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.compression_roundtrip",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_009-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_009__gzip_bytes"
+      ],
+      "after_route": [
+        "task_009__gzip_bytes"
+      ]
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_009__gunzip_bytes",
+        "completed": true,
+        "base_proxy_cost": 2,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.compression_roundtrip",
+          "source.function.strutils.gunzip_bytes"
+        ],
+        "target_concepts_not_gated": [
+          "python.compression_roundtrip",
+          "source.function.strutils.gunzip_bytes"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 630,
+            "end_line": 630,
+            "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 642,
+            "end_line": 642,
+            "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_009__gzip_bytes",
+        "completed": false,
+        "base_proxy_cost": 6,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.bytes_io",
+          "source.function.strutils.gzip_bytes"
+        ],
+        "target_concepts_not_gated": [
+          "python.bytes_io",
+          "source.function.strutils.gzip_bytes"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 645,
+            "end_line": 645,
+            "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 660,
+            "end_line": 664,
+            "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_009__gunzip_bytes",
+        "task_009__gzip_bytes"
+      ],
+      "cost": 8.0,
+      "context": {
+        "task": {
+          "task_id": "task_009",
+          "title": "gzip往返与字节约定",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "对data=b'open-source navigation'，填写outputs：roundtrip=list(gunzip_bytes(gzip_bytes(data)))，empty=list(gunzip_bytes(gzip_bytes(b'')))，type_name=type(gzip_bytes(data)).__name__。解释BytesIO与压缩级别；不要把压缩后完整字节串当稳定跨版本金标准。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.bytes_io",
+          "python.compression_roundtrip",
+          "source.function.strutils.gzip_bytes",
+          "source.function.strutils.gunzip_bytes"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_009__gzip_bytes",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 645,
+                "end_line": 645,
+                "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 660,
+                "end_line": 664,
+                "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.gzip_bytes",
+              "python.bytes_io"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L645"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 6,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_009__gunzip_bytes",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 630,
+                "end_line": 630,
+                "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 642,
+                "end_line": 642,
+                "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.gunzip_bytes",
+              "python.compression_roundtrip"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L630"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_009__gzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 645,
+              "end_line": 645,
+              "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+            },
+            "text": " 645  def gzip_bytes(bytestring, level=6):"
+          },
+          {
+            "unit_id": "task_009__gzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 660,
+              "end_line": 664,
+              "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+            },
+            "text": " 660      out = StringIO()\n 661      f = GzipFile(fileobj=out, mode='wb', compresslevel=level)\n 662      f.write(bytestring)\n 663      f.close()\n 664      return out.getvalue()"
+          },
+          {
+            "unit_id": "task_009__gunzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 630,
+              "end_line": 630,
+              "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+            },
+            "text": " 630  def gunzip_bytes(bytestring):"
+          },
+          {
+            "unit_id": "task_009__gunzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 642,
+              "end_line": 642,
+              "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+            },
+            "text": " 642      return zlib.decompress(bytestring, 16 + zlib.MAX_WBITS)"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "zlib"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 46,
+              "end_line": 46,
+              "content_hash": "62cca641b59a088a58ee73430c63979d188126c706e4d559b9974d62c2984232"
+            },
+            "text": "import zlib"
+          },
+          {
+            "names": [
+              "GzipFile"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 48,
+              "end_line": 48,
+              "content_hash": "63b608506bbe2fda11d89f7a6c73eb39c7ff0fde9592285cb752fb4a92708edb"
+            },
+            "text": "from gzip import GzipFile"
+          },
+          {
+            "names": [
+              "StringIO"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 51,
+              "end_line": 51,
+              "content_hash": "75f9dc48cb1eeafd5f2d9c101c761f988e7ed91da9c48bcbfe4c24578c2e2f01"
+            },
+            "text": "from io import BytesIO as StringIO"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.bytes_io": {
+            "concept_id": "python.bytes_io",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.compression_roundtrip": {
+            "concept_id": "python.compression_roundtrip",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gunzip_bytes": {
+            "concept_id": "source.function.strutils.gunzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gzip_bytes": {
+            "concept_id": "source.function.strutils.gzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_009__gunzip_bytes",
+          "task_009__gzip_bytes"
+        ],
+        "cost": 8.0,
+        "gate": {
+          "python.bytes_io": {
+            "concept_id": "python.bytes_io",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.compression_roundtrip": {
+            "concept_id": "python.compression_roundtrip",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gunzip_bytes": {
+            "concept_id": "source.function.strutils.gunzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gzip_bytes": {
+            "concept_id": "source.function.strutils.gzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 8.0,
+          "switch_cost": 0.0,
+          "objective": 8.0,
+          "total_if_executed": 8.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_009__gunzip_bytes",
+              "bundle": [
+                "task_009__gunzip_bytes"
+              ],
+              "incremental": 2
+            },
+            {
+              "root": "task_009__gzip_bytes",
+              "bundle": [
+                "task_009__gzip_bytes"
+              ],
+              "incremental": 6
+            }
+          ],
+          [
+            {
+              "root": "task_009__gzip_bytes",
+              "bundle": [
+                "task_009__gzip_bytes"
+              ],
+              "incremental": 6
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 8.0,
+        "switch_cost": 0.0,
+        "objective": 8.0,
+        "total_if_executed": 8.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_009__gzip_bytes"
+      ],
+      "cost": 6.0,
+      "context": {
+        "task": {
+          "task_id": "task_009",
+          "title": "gzip往返与字节约定",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "对data=b'open-source navigation'，填写outputs：roundtrip=list(gunzip_bytes(gzip_bytes(data)))，empty=list(gunzip_bytes(gzip_bytes(b'')))，type_name=type(gzip_bytes(data)).__name__。解释BytesIO与压缩级别；不要把压缩后完整字节串当稳定跨版本金标准。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.bytes_io",
+          "python.compression_roundtrip",
+          "source.function.strutils.gzip_bytes",
+          "source.function.strutils.gunzip_bytes"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_009__gzip_bytes",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 645,
+                "end_line": 645,
+                "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 660,
+                "end_line": 664,
+                "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.gzip_bytes",
+              "python.bytes_io"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L645"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 6,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_009__gunzip_bytes",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 630,
+                "end_line": 630,
+                "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 642,
+                "end_line": 642,
+                "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.gunzip_bytes",
+              "python.compression_roundtrip"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L630"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_009__gzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 645,
+              "end_line": 645,
+              "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+            },
+            "text": " 645  def gzip_bytes(bytestring, level=6):"
+          },
+          {
+            "unit_id": "task_009__gzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 660,
+              "end_line": 664,
+              "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+            },
+            "text": " 660      out = StringIO()\n 661      f = GzipFile(fileobj=out, mode='wb', compresslevel=level)\n 662      f.write(bytestring)\n 663      f.close()\n 664      return out.getvalue()"
+          },
+          {
+            "unit_id": "task_009__gunzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 630,
+              "end_line": 630,
+              "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+            },
+            "text": " 630  def gunzip_bytes(bytestring):"
+          },
+          {
+            "unit_id": "task_009__gunzip_bytes",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 642,
+              "end_line": 642,
+              "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+            },
+            "text": " 642      return zlib.decompress(bytestring, 16 + zlib.MAX_WBITS)"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "zlib"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 46,
+              "end_line": 46,
+              "content_hash": "62cca641b59a088a58ee73430c63979d188126c706e4d559b9974d62c2984232"
+            },
+            "text": "import zlib"
+          },
+          {
+            "names": [
+              "GzipFile"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 48,
+              "end_line": 48,
+              "content_hash": "63b608506bbe2fda11d89f7a6c73eb39c7ff0fde9592285cb752fb4a92708edb"
+            },
+            "text": "from gzip import GzipFile"
+          },
+          {
+            "names": [
+              "StringIO"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 51,
+              "end_line": 51,
+              "content_hash": "75f9dc48cb1eeafd5f2d9c101c761f988e7ed91da9c48bcbfe4c24578c2e2f01"
+            },
+            "text": "from io import BytesIO as StringIO"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.compression_roundtrip",
+            "item_id": "B06-parallel-task_009-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.bytes_io": {
+            "concept_id": "python.bytes_io",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.compression_roundtrip": {
+            "concept_id": "python.compression_roundtrip",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_009-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.gunzip_bytes": {
+            "concept_id": "source.function.strutils.gunzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gzip_bytes": {
+            "concept_id": "source.function.strutils.gzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_009__gunzip_bytes"
+        ],
+        "spent_proxy": 3.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 97.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_009__gzip_bytes"
+        ],
+        "cost": 6.0,
+        "gate": {
+          "python.bytes_io": {
+            "concept_id": "python.bytes_io",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.compression_roundtrip": {
+            "concept_id": "python.compression_roundtrip",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_009-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.gunzip_bytes": {
+            "concept_id": "source.function.strutils.gunzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.gzip_bytes": {
+            "concept_id": "source.function.strutils.gzip_bytes",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 6.0,
+          "switch_cost": 0.0,
+          "objective": 6.0,
+          "total_if_executed": 9.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_009__gzip_bytes",
+              "bundle": [
+                "task_009__gzip_bytes"
+              ],
+              "incremental": 6
+            }
+          ]
+        ],
+        "completed": [
+          "task_009__gunzip_bytes"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 6.0,
+        "switch_cost": 0.0,
+        "objective": 6.0,
+        "total_if_executed": 9.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

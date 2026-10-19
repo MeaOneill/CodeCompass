@@ -1,0 +1,15 @@
+{
+  "result": {
+    "runtime_version": "A-D07-runtime-v1",
+    "status": "INVALID_INPUT",
+    "remaining": [],
+    "completed": [],
+    "feasible": false,
+    "goal_complete": false,
+    "error_type": "ValueError",
+    "human_task_success": null,
+    "optimality_claim": false
+  },
+  "only_private_temp_copy_changed": true,
+  "fault": "append a comment to public cached source without updating declared hash"
+}

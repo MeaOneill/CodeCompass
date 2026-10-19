@@ -1,0 +1,3043 @@
+{
+  "version": "B-D06-executable-candidate-2",
+  "formal_study_ready": false,
+  "records": [
+    {
+      "task": {
+        "task_id": "task_001",
+        "title": "为boltons.chunked_iter增加惰性count限制",
+        "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+        "requirements": [
+          "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+          "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+          "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+          "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+          "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+          "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_001",
+      "split": "dev",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+        "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/iterutils.py",
+            "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+            "bytes": 59341,
+            "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+          },
+          {
+            "path": "pyproject.toml",
+            "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+            "bytes": 1820,
+            "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+          },
+          {
+            "path": "tests/test_iterutils.py",
+            "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+            "bytes": 21913,
+            "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons",
+      "target_concept_ids": [
+        "boltons.chunk_postprocess",
+        "boltons.wrapper_compatibility",
+        "python.generator_laziness",
+        "python.islice_consumption",
+        "python.iterator_protocol",
+        "python.keyword_presence"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_iterable",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 61,
+              "end_line": 76,
+              "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+            }
+          ],
+          "concept_ids": [
+            "python.iterator_protocol"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 16,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_chunked_iter",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 316,
+              "end_line": 358,
+              "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+            }
+          ],
+          "concept_ids": [
+            "python.generator_laziness",
+            "python.islice_consumption",
+            "python.keyword_presence",
+            "boltons.chunk_postprocess"
+          ],
+          "prerequisites": [
+            {
+              "unit_id": "u_iterable",
+              "relation_type": "teaching_prerequisite",
+              "hard": false,
+              "provenance": {
+                "kind": "teaching_judgment",
+                "evidence": [
+                  "先理解 u_iterable 再分析 chunked_iter；是阅读顺序建议，待B人工审核"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              }
+            }
+          ],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L316"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 43,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_chunked",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 286,
+              "end_line": 306,
+              "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+            }
+          ],
+          "concept_ids": [
+            "boltons.wrapper_compatibility"
+          ],
+          "prerequisites": [
+            {
+              "unit_id": "u_chunked_iter",
+              "relation_type": "teaching_prerequisite",
+              "hard": false,
+              "provenance": {
+                "kind": "teaching_judgment",
+                "evidence": [
+                  "先理解 u_chunked_iter 再分析 chunked；是阅读顺序建议，待B人工审核"
+                ],
+                "proposed_by": "Codex Agent A",
+                "review_status": "pending",
+                "reviewer": null,
+                "confidence": null
+              }
+            }
+          ],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L286"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 21,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "u_iterable",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 61,
+            "end_line": 76,
+            "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+          },
+          "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+        },
+        {
+          "unit_id": "u_chunked_iter",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 316,
+            "end_line": 358,
+            "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+          },
+          "text": " 316  def chunked_iter(src, size, **kw):\n 317      \"\"\"Generates *size*-sized chunks from *src* iterable. Unless the\n 318      optional *fill* keyword argument is provided, iterables not evenly\n 319      divisible by *size* will have a final chunk that is smaller than\n 320      *size*.\n 321  \n 322      >>> list(chunked_iter(range(10), 3))\n 323      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 324      >>> list(chunked_iter(range(10), 3, fill=None))\n 325      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 326  \n 327      Note that ``fill=None`` in fact uses ``None`` as the fill value.\n 328      \"\"\"\n 329      # TODO: add count kwarg?\n 330      if not is_iterable(src):\n 331          raise TypeError('expected an iterable')\n 332      size = _validate_positive_int(size, 'chunk size')\n 333      do_fill = True\n 334      try:\n 335          fill_val = kw.pop('fill')\n 336      except KeyError:\n 337          do_fill = False\n 338          fill_val = None\n 339      if kw:\n 340          raise ValueError('got unexpected keyword arguments: %r' % kw.keys())\n 341      if not src:\n 342          return\n 343  \n 344      def postprocess(chk): return chk\n 345      if isinstance(src, (str, bytes)):\n 346          def postprocess(chk, _sep=type(src)()): return _sep.join(chk)\n 347          if isinstance(src, bytes):\n 348              def postprocess(chk): return bytes(chk)\n 349      src_iter = iter(src)\n 350      while True:\n 351          cur_chunk = list(itertools.islice(src_iter, size))\n 352          if not cur_chunk:\n 353              break\n 354          lc = len(cur_chunk)\n 355          if lc < size and do_fill:\n 356              cur_chunk[lc:] = [fill_val] * (size - lc)\n 357          yield postprocess(cur_chunk)\n 358      return"
+        },
+        {
+          "unit_id": "u_chunked",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 286,
+            "end_line": 306,
+            "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+          },
+          "text": " 286  def chunked(src, size, count=None, **kw):\n 287      \"\"\"Returns a list of *count* chunks, each with *size* elements,\n 288      generated from iterable *src*. If *src* is not evenly divisible by\n 289      *size*, the final chunk will have fewer than *size* elements.\n 290      Provide the *fill* keyword argument to provide a pad value and\n 291      enable padding, otherwise no padding will take place.\n 292  \n 293      >>> chunked(range(10), 3)\n 294      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\n 295      >>> chunked(range(10), 3, fill=None)\n 296      [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, None, None]]\n 297      >>> chunked(range(10), 3, count=2)\n 298      [[0, 1, 2], [3, 4, 5]]\n 299  \n 300      See :func:`chunked_iter` for more info.\n 301      \"\"\"\n 302      chunk_iter = chunked_iter(src, size, **kw)\n 303      if count is None:\n 304          return list(chunk_iter)\n 305      else:\n 306          return list(itertools.islice(chunk_iter, count))"
+        }
+      ],
+      "source_context": [],
+      "quiz": {
+        "item_id": "B05-generator-first-next-v1",
+        "concept_id": "python.generator_laziness",
+        "independent": true,
+        "source": "Python generator first next yields the first value; executable independent snippet",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B05-generator-first-next-v1",
+        "prompt": "独立概念短测：下面程序最终打印什么？",
+        "code": "def numbers():\n    yield 7\n    yield 9\ng = numbers()\nprint(next(g))",
+        "choices": [
+          "7",
+          "9",
+          "[7, 9]",
+          "不会输出"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_002",
+        "title": "滑动窗口size边界防护",
+        "goal": "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+        "requirements": [
+          "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+          "解释/时间/材料按B独立rubric审核；本轮只做路径工程验证。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_002",
+      "split": "dev",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+        "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/iterutils.py",
+            "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+            "bytes": 59341,
+            "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+          },
+          {
+            "path": "pyproject.toml",
+            "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+            "bytes": 1820,
+            "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+          },
+          {
+            "path": "tests/test_iterutils.py",
+            "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+            "bytes": 21913,
+            "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons",
+      "target_concept_ids": [
+        "python.iterator_protocol",
+        "python.tee",
+        "python.keyword_presence",
+        "python.type_validation"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_iterable",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 61,
+              "end_line": 76,
+              "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+            }
+          ],
+          "concept_ids": [
+            "python.iterator_protocol"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 16,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_windowed_iter",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 472,
+              "end_line": 510,
+              "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+            }
+          ],
+          "concept_ids": [
+            "python.tee",
+            "python.keyword_presence"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: windowed_iter",
+              "tee与_UNSET分支直接见L494-510；概念覆盖是AI工程材料映射，不是人类金标准"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 39,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "u_positive_int",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 309,
+              "end_line": 313,
+              "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+            }
+          ],
+          "concept_ids": [
+            "python.type_validation"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: _validate_positive_int",
+              "对照int(value)的转换语义与task002要求的严格类型；这不是task002修复答案或完整校验实现"
+            ],
+            "proposed_by": "Codex Agent A",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 5,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "u_iterable",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 61,
+            "end_line": 76,
+            "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+          },
+          "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+        },
+        {
+          "unit_id": "u_windowed_iter",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 472,
+            "end_line": 510,
+            "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+          },
+          "text": " 472  def windowed_iter(src, size, fill=_UNSET):\n 473      \"\"\"Returns tuples with length *size* which represent a sliding\n 474      window over iterable *src*.\n 475  \n 476      >>> list(windowed_iter(range(7), 3))\n 477      [(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]\n 478  \n 479      If *fill* is unset, and the iterable is too short to make a window \n 480      of length *size*, then no window tuples are returned.\n 481  \n 482      >>> list(windowed_iter(range(3), 5))\n 483      []\n 484  \n 485      With *fill* set, the iterator always yields a number of windows\n 486      equal to the length of the *src* iterable.\n 487  \n 488      >>> windowed(range(4), 3, fill=None)\n 489      [(0, 1, 2), (1, 2, 3), (2, 3, None), (3, None, None)]\n 490  \n 491      This way, *fill* values can be useful to signal the end of the iterable.\n 492      For infinite iterators, setting *fill* has no effect.\n 493      \"\"\"\n 494      tees = itertools.tee(src, size)\n 495      if fill is _UNSET:\n 496          try:\n 497              for i, t in enumerate(tees):\n 498                  for _ in range(i):\n 499                      next(t)\n 500          except StopIteration:\n 501              return zip([])\n 502          return zip(*tees)\n 503  \n 504      for i, t in enumerate(tees):\n 505          for _ in range(i):\n 506              try:\n 507                  next(t)\n 508              except StopIteration:\n 509                  continue\n 510      return zip_longest(*tees, fillvalue=fill)"
+        },
+        {
+          "unit_id": "u_positive_int",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 309,
+            "end_line": 313,
+            "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+          },
+          "text": " 309  def _validate_positive_int(value, name, strictly_positive=True):\n 310      value = int(value)\n 311      if value < 0 or (strictly_positive and value == 0):\n 312          raise ValueError('expected a positive integer ' + name)\n 313      return value"
+        }
+      ],
+      "source_context": [],
+      "quiz": {
+        "item_id": "B05-iterator-next-v1",
+        "concept_id": "python.iterator_protocol",
+        "independent": true,
+        "source": "Python iterator advances once per next; executable independent snippet",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B05-iterator-next-v1",
+        "prompt": "独立概念短测：下面程序最终打印什么？",
+        "code": "it = iter([2, 4, 6])\nnext(it)\nprint(next(it))",
+        "choices": [
+          "2",
+          "4",
+          "6",
+          "[4, 6]"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_003",
+        "title": "稳定去重与key定位",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "给answer.json的outputs填写plain=list(unique_iter(['a','A','a','b']))、casefold=list(unique_iter(['a','A','a','b'], key=str.lower))、length=list(unique_iter(['hi','ok','hey','bye'], key=len))。在source_spans引用本题函数，explanation解释seen的键和输出对象区别、保持首次顺序和哈希限制。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_003",
+      "split": "dev",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+        "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/iterutils.py",
+            "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+            "bytes": 59341,
+            "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+          },
+          {
+            "path": "pyproject.toml",
+            "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+            "bytes": 1820,
+            "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+          },
+          {
+            "path": "tests/test_iterutils.py",
+            "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+            "bytes": 21913,
+            "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons",
+      "target_concept_ids": [
+        "python.hash_set",
+        "python.key_function",
+        "python.generator_laziness",
+        "source.function.iterutils.unique_iter"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_003__unique_iter",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 834,
+              "end_line": 834,
+              "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+            },
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 851,
+              "end_line": 867,
+              "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+            }
+          ],
+          "concept_ids": [
+            "source.function.iterutils.unique_iter",
+            "python.hash_set",
+            "python.key_function",
+            "python.generator_laziness"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L834"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 18,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_003__unique_iter",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 834,
+            "end_line": 834,
+            "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+          },
+          "text": " 834  def unique_iter(src, key=None):"
+        },
+        {
+          "unit_id": "task_003__unique_iter",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 851,
+            "end_line": 867,
+            "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+          },
+          "text": " 851      if not is_iterable(src):\n 852          raise TypeError('expected an iterable, not %r' % type(src))\n 853      if key is None:\n 854          def key_func(x): return x\n 855      elif callable(key):\n 856          key_func = key\n 857      elif isinstance(key, str):\n 858          def key_func(x): return getattr(x, key, x)\n 859      else:\n 860          raise TypeError('\"key\" expected a string or callable, not %r' % key)\n 861      seen = set()\n 862      for i in src:\n 863          k = key_func(i)\n 864          if k not in seen:\n 865              seen.add(k)\n 866              yield i\n 867      return"
+        }
+      ],
+      "source_context": [],
+      "quiz": {
+        "item_id": "B06-parallel-task_003-v2",
+        "concept_id": "python.hash_set",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_003-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print(len(set([4, 4, 7])))",
+        "choices": [
+          "2",
+          "3",
+          "1"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_004",
+        "title": "默认值与路径索引调试",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_004",
+      "split": "dev",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+        "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/iterutils.py",
+            "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+            "bytes": 59341,
+            "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+          },
+          {
+            "path": "pyproject.toml",
+            "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+            "bytes": 1820,
+            "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+          },
+          {
+            "path": "tests/test_iterutils.py",
+            "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+            "bytes": 21913,
+            "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons",
+      "target_concept_ids": [
+        "python.eafp",
+        "python.exception_translation",
+        "python.sentinel_default",
+        "source.function.iterutils.get_path"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_004__get_path",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1324,
+              "end_line": 1324,
+              "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+            },
+            {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1358,
+              "end_line": 1382,
+              "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+            }
+          ],
+          "concept_ids": [
+            "source.function.iterutils.get_path",
+            "python.eafp",
+            "python.exception_translation",
+            "python.sentinel_default"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L1324"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 26,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_004__get_path",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 1324,
+            "end_line": 1324,
+            "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+          },
+          "text": "1324  def get_path(root, path, default=_UNSET):"
+        },
+        {
+          "unit_id": "task_004__get_path",
+          "source_span": {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 1358,
+            "end_line": 1382,
+            "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+          },
+          "text": "1358      if isinstance(path, str):\n1359          path = path.split('.')\n1360      cur = root\n1361      try:\n1362          for seg in path:\n1363              try:\n1364                  cur = cur[seg]\n1365              except (KeyError, IndexError) as exc:\n1366                  raise PathAccessError(exc, seg, path)\n1367              except TypeError as exc:\n1368                  # either string index in a list, or a parent that\n1369                  # doesn't support indexing\n1370                  try:\n1371                      seg = int(seg)\n1372                      cur = cur[seg]\n1373                  except (ValueError, KeyError, IndexError, TypeError):\n1374                      if not is_iterable(cur):\n1375                          exc = TypeError('%r object is not indexable'\n1376                                          % type(cur).__name__)\n1377                      raise PathAccessError(exc, seg, path)\n1378      except PathAccessError:\n1379          if default is _UNSET:\n1380              raise\n1381          return default\n1382      return cur"
+        }
+      ],
+      "source_context": [],
+      "quiz": {
+        "item_id": "B06-parallel-task_004-v2",
+        "concept_id": "python.sentinel_default",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_004-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "sentinel = object()\nfound = None\nprint(found is sentinel)",
+        "choices": [
+          "True",
+          "False",
+          "None"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_005",
+        "title": "缩写与分隔符转换定位",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：acronym=camel2under('HTTPServer2Thing')，simple=under2camel('parse_http_body')，underscores=under2camel('__edge__')。引用正则使用位置；解释缩写边界和空片段的处理，不假定两个函数总互逆。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_005",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.regex_boundary",
+        "python.string_transform",
+        "source.function.strutils.camel2under",
+        "source.function.strutils.under2camel"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_005__camel2under",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 69,
+              "end_line": 69,
+              "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 76,
+              "end_line": 76,
+              "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.camel2under",
+            "python.regex_boundary"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L69"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 2,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_005__under2camel",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 79,
+              "end_line": 79,
+              "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 86,
+              "end_line": 86,
+              "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.under2camel",
+            "python.string_transform"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L79"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 2,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_005__camel2under",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 69,
+            "end_line": 69,
+            "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+          },
+          "text": "  69  def camel2under(camel_string):"
+        },
+        {
+          "unit_id": "task_005__camel2under",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 76,
+            "end_line": 76,
+            "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+          },
+          "text": "  76      return _camel2under_re.sub(r'_\\1', camel_string).lower()"
+        },
+        {
+          "unit_id": "task_005__under2camel",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 79,
+            "end_line": 79,
+            "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+          },
+          "text": "  79  def under2camel(under_string):"
+        },
+        {
+          "unit_id": "task_005__under2camel",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 86,
+            "end_line": 86,
+            "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+          },
+          "text": "  86      return ''.join(w.capitalize() or '_' for w in under_string.split('_'))"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "_camel2under_re"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 66,
+            "end_line": 66,
+            "content_hash": "78a308b83ff535042183d8176bebf603b93172916c2d9132c33c94a9421cab65"
+          },
+          "text": "_camel2under_re = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_005-v2",
+        "concept_id": "python.regex_boundary",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_005-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "import re\nprint(re.sub(r'(?<=[a-z])(?=[A-Z])', '_', 'redBlue'))",
+        "choices": [
+          "redBlue",
+          "red_Blue",
+          "red_blue"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_006",
+        "title": "slug返回类型与标点边界",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_006",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.regex_split",
+        "python.bytes_text",
+        "python.conditional_precedence",
+        "source.function.strutils.slugify",
+        "source.function.strutils.split_punct_ws",
+        "source.function.strutils.asciify"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_006__slugify",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 89,
+              "end_line": 89,
+              "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 107,
+              "end_line": 112,
+              "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.slugify",
+            "python.regex_split"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L89"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 7,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_006__split_punct_ws",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 115,
+              "end_line": 115,
+              "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 123,
+              "end_line": 123,
+              "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.split_punct_ws",
+            "python.bytes_text"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L115"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 2,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_006__asciify",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 416,
+              "end_line": 416,
+              "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 433,
+              "end_line": 446,
+              "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.asciify",
+            "python.conditional_precedence"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L416"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 15,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_006__slugify",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 89,
+            "end_line": 89,
+            "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+          },
+          "text": "  89  def slugify(text, delim='_', lower=True, ascii=False):"
+        },
+        {
+          "unit_id": "task_006__slugify",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 107,
+            "end_line": 112,
+            "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+          },
+          "text": " 107      ret = delim.join(split_punct_ws(text)) or delim if text else ''\n 108      if ascii:\n 109          ret = asciify(ret)\n 110      if lower:\n 111          ret = ret.lower()\n 112      return ret"
+        },
+        {
+          "unit_id": "task_006__split_punct_ws",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 115,
+            "end_line": 115,
+            "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+          },
+          "text": " 115  def split_punct_ws(text):"
+        },
+        {
+          "unit_id": "task_006__split_punct_ws",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 123,
+            "end_line": 123,
+            "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+          },
+          "text": " 123      return [w for w in _punct_re.split(text) if w]"
+        },
+        {
+          "unit_id": "task_006__asciify",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 416,
+            "end_line": 416,
+            "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+          },
+          "text": " 416  def asciify(text, ignore=False):"
+        },
+        {
+          "unit_id": "task_006__asciify",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 433,
+            "end_line": 446,
+            "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+          },
+          "text": " 433      try:\n 434          try:\n 435              return text.encode('ascii')\n 436          except UnicodeDecodeError:\n 437              # this usually means you passed in a non-unicode string\n 438              text = text.decode('utf-8')\n 439              return text.encode('ascii')\n 440      except UnicodeEncodeError:\n 441          mode = 'replace'\n 442          if ignore:\n 443              mode = 'ignore'\n 444          transd = unicodedata.normalize('NFKD', text.translate(DEACCENT_MAP))\n 445          ret = transd.encode('ascii', mode)\n 446          return ret"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "unicodedata"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 44,
+            "end_line": 44,
+            "content_hash": "f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6"
+          },
+          "text": "import unicodedata"
+        },
+        {
+          "names": [
+            "_punct_re"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 65,
+            "end_line": 65,
+            "content_hash": "908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32"
+          },
+          "text": "_punct_re = re.compile('[' + _punct_ws_str + ']+')"
+        },
+        {
+          "names": [
+            "DEACCENT_MAP"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 550,
+            "end_line": 550,
+            "content_hash": "aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12"
+          },
+          "text": "DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_006-v2",
+        "concept_id": "python.bytes_text",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_006-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print(type('hello'.encode('ascii')).__name__)",
+        "choices": [
+          "str",
+          "list",
+          "bytes"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_007",
+        "title": "序数词teen例外与后缀",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：teens=[ordinalize(n) for n in (11,12,13,21,112)]，suffix=ordinalize(23,ext_only=True)，text=ordinalize('abc')。定位teen分支；解释数值先转字符串及不以数字结尾的行为。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_007",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.string_index",
+        "python.branch_exception",
+        "source.function.strutils.ordinalize"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_007__ordinalize",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 150,
+              "end_line": 150,
+              "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 168,
+              "end_line": 183,
+              "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.ordinalize",
+            "python.string_index",
+            "python.branch_exception"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L150"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 17,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_007__ordinalize",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 150,
+            "end_line": 150,
+            "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+          },
+          "text": " 150  def ordinalize(number, ext_only=False):"
+        },
+        {
+          "unit_id": "task_007__ordinalize",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 168,
+            "end_line": 183,
+            "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+          },
+          "text": " 168      numstr, ext = str(number), ''\n 169      if numstr and numstr[-1] in string.digits:\n 170          try:\n 171              # first check for teens\n 172              if numstr[-2] == '1':\n 173                  ext = 'th'\n 174              else:\n 175                  # all other cases\n 176                  ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 177          except IndexError:\n 178              # single digit numbers (will reach here based on [-2] above)\n 179              ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 180      if ext_only:\n 181          return ext\n 182      else:\n 183          return numstr + ext"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "string"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 41,
+            "end_line": 41,
+            "content_hash": "4b96e0edaa07635f07c4e20d94f2de661169983644bcdc9019f4f809b05c784f"
+          },
+          "text": "import string"
+        },
+        {
+          "names": [
+            "_ORDINAL_MAP"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 145,
+            "end_line": 147,
+            "content_hash": "9c55fab9b80479b53459dbbd7f28fa185c8c0a0ebc53895a0c28917bf312d1e5"
+          },
+          "text": "_ORDINAL_MAP = {'1': 'st',\n                '2': 'nd',\n                '3': 'rd'}  # 'th' is the default"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_007-v2",
+        "concept_id": "python.string_index",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_007-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print('cat'[-1])",
+        "choices": [
+          "c",
+          "a",
+          "t"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_008",
+        "title": "ANSI清理与bytes边界",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：text=strip_ansi('A\\x1b[31mB\\x1b[0mC')（转义序列为真实ESC），bytes=list(strip_ansi(b'X\\x1b[1mY\\x1b[0m'))，plain=strip_ansi('plain')。解释文本与字节实现路径及函数支持边界，不声称清理任意终端协议。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_008",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.escape_sequence",
+        "python.bytes_text",
+        "source.function.strutils.strip_ansi"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_008__strip_ansi",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 378,
+              "end_line": 378,
+              "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 401,
+              "end_line": 413,
+              "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.strip_ansi",
+            "python.escape_sequence",
+            "python.bytes_text"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L378"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 14,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_008__strip_ansi",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 378,
+            "end_line": 378,
+            "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+          },
+          "text": " 378  def strip_ansi(text):"
+        },
+        {
+          "unit_id": "task_008__strip_ansi",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 401,
+            "end_line": 413,
+            "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+          },
+          "text": " 401      target_type = None\n 402      # Unicode type aliased to str is code-smell for Boltons in Python 3 env.\n 403      if isinstance(text, (bytes, bytearray)):\n 404          target_type = type(text)\n 405          text = text.decode('utf-8')\n 406  \n 407      cleaned = ANSI_SEQUENCES.sub('', text)\n 408  \n 409      # Transform back the result to the same bytearray type provided by the user.\n 410      if target_type and target_type != type(cleaned):\n 411          cleaned = target_type(cleaned, 'utf-8')\n 412  \n 413      return cleaned"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "ANSI_SEQUENCES"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 361,
+            "end_line": 375,
+            "content_hash": "a34a40584faeeee25ea32b67cb36e582cf68afd2cc667be70e6b0bacbafc701b"
+          },
+          "text": "ANSI_SEQUENCES = re.compile(r'''\n    \\x1B            # Sequence starts with ESC, i.e. hex 0x1B\n    (?:\n        [@-Z\\\\-_]   # Second byte:\n                    #   all 0x40–0x5F range but CSI char, i.e ASCII @A–Z\\]^_\n    |               # Or\n        \\[          # CSI sequences, starting with [\n        [0-?]*      # Parameter bytes:\n                    #   range 0x30–0x3F, ASCII 0–9:;<=>?\n        [ -/]*      # Intermediate bytes:\n                    #   range 0x20–0x2F, ASCII space and !\"#$%&'()*+,-./\n        [@-~]       # Final byte\n                    #   range 0x40–0x7E, ASCII @A–Z[\\]^_`a–z{|}~\n    )\n''', re.VERBOSE)"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_008-v2",
+        "concept_id": "python.bytes_text",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_008-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print(b'hi'.decode('utf-8'))",
+        "choices": [
+          "hi",
+          "b'hi'",
+          "[104, 105]"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_009",
+        "title": "gzip往返与字节约定",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "对data=b'open-source navigation'，填写outputs：roundtrip=list(gunzip_bytes(gzip_bytes(data)))，empty=list(gunzip_bytes(gzip_bytes(b'')))，type_name=type(gzip_bytes(data)).__name__。解释BytesIO与压缩级别；不要把压缩后完整字节串当稳定跨版本金标准。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_009",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.bytes_io",
+        "python.compression_roundtrip",
+        "source.function.strutils.gzip_bytes",
+        "source.function.strutils.gunzip_bytes"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_009__gzip_bytes",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 645,
+              "end_line": 645,
+              "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 660,
+              "end_line": 664,
+              "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.gzip_bytes",
+            "python.bytes_io"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L645"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 6,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_009__gunzip_bytes",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 630,
+              "end_line": 630,
+              "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 642,
+              "end_line": 642,
+              "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.gunzip_bytes",
+            "python.compression_roundtrip"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L630"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 2,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_009__gzip_bytes",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 645,
+            "end_line": 645,
+            "content_hash": "d311317c7ae5873b058df02715508184cc09c2946264b7e891c1601426b6e8c6"
+          },
+          "text": " 645  def gzip_bytes(bytestring, level=6):"
+        },
+        {
+          "unit_id": "task_009__gzip_bytes",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 660,
+            "end_line": 664,
+            "content_hash": "9db383384849d88d584dfe5a2f1c13f32c4aa13ecb3d2ed1cb152f1dbd9c9708"
+          },
+          "text": " 660      out = StringIO()\n 661      f = GzipFile(fileobj=out, mode='wb', compresslevel=level)\n 662      f.write(bytestring)\n 663      f.close()\n 664      return out.getvalue()"
+        },
+        {
+          "unit_id": "task_009__gunzip_bytes",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 630,
+            "end_line": 630,
+            "content_hash": "d7ceed3037928e4b9fa639e1d634b86bbb0bf47dffa2bfbaf83e82409d0139eb"
+          },
+          "text": " 630  def gunzip_bytes(bytestring):"
+        },
+        {
+          "unit_id": "task_009__gunzip_bytes",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 642,
+            "end_line": 642,
+            "content_hash": "eadf471cfb5da4b8fd17e4a7de0016200ba479f6270f304628a0ba30f1378073"
+          },
+          "text": " 642      return zlib.decompress(bytestring, 16 + zlib.MAX_WBITS)"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "zlib"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 46,
+            "end_line": 46,
+            "content_hash": "62cca641b59a088a58ee73430c63979d188126c706e4d559b9974d62c2984232"
+          },
+          "text": "import zlib"
+        },
+        {
+          "names": [
+            "GzipFile"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 48,
+            "end_line": 48,
+            "content_hash": "63b608506bbe2fda11d89f7a6c73eb39c7ff0fde9592285cb752fb4a92708edb"
+          },
+          "text": "from gzip import GzipFile"
+        },
+        {
+          "names": [
+            "StringIO"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 51,
+            "end_line": 51,
+            "content_hash": "75f9dc48cb1eeafd5f2d9c101c761f988e7ed91da9c48bcbfe4c24578c2e2f01"
+          },
+          "text": "from io import BytesIO as StringIO"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_009-v2",
+        "concept_id": "python.compression_roundtrip",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_009-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "import zlib\npayload = b'xyz'\nprint(zlib.decompress(zlib.compress(payload)) == payload)",
+        "choices": [
+          "True",
+          "False",
+          "None"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_010",
+        "title": "换行尾空行与缩进调试",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：lines=list(iter_splitlines('a\\r\\nb\\n'))，empty=list(iter_splitlines(''))，indented=indent('a\\n\\nb\\n','> ')。输入中的转义为真实换行。解释末尾空行和key=bool如何影响空行缩进及连接符。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_010",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.regex_group",
+        "python.generator_boundary",
+        "python.predicate",
+        "source.function.strutils.iter_splitlines",
+        "source.function.strutils.indent"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_010__iter_splitlines",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 672,
+              "end_line": 672,
+              "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 687,
+              "end_line": 701,
+              "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.iter_splitlines",
+            "python.regex_group",
+            "python.predicate"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L672"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 16,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_010__indent",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 704,
+              "end_line": 704,
+              "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 715,
+              "end_line": 717,
+              "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.indent",
+            "python.generator_boundary"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L704"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 4,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_010__iter_splitlines",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 672,
+            "end_line": 672,
+            "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+          },
+          "text": " 672  def iter_splitlines(text):"
+        },
+        {
+          "unit_id": "task_010__iter_splitlines",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 687,
+            "end_line": 701,
+            "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+          },
+          "text": " 687      prev_end, len_text = 0, len(text)\n 688      # print('last: %r' % last_idx)\n 689      # start, end = None, None\n 690      for match in _line_ending_re.finditer(text):\n 691          start, end = match.start(1), match.end(1)\n 692          # print(start, end)\n 693          if prev_end <= start:\n 694              yield text[prev_end:start]\n 695          if end == len_text:\n 696              yield ''\n 697          prev_end = end\n 698      tail = text[prev_end:]\n 699      if tail:\n 700          yield tail\n 701      return"
+        },
+        {
+          "unit_id": "task_010__indent",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 704,
+            "end_line": 704,
+            "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+          },
+          "text": " 704  def indent(text, margin, newline='\\n', key=bool):"
+        },
+        {
+          "unit_id": "task_010__indent",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 715,
+            "end_line": 717,
+            "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+          },
+          "text": " 715      indented_lines = [(margin + line if key(line) else line)\n 716                        for line in iter_splitlines(text)]\n 717      return newline.join(indented_lines)"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "_line_ending_re"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 668,
+            "end_line": 669,
+            "content_hash": "8d2a7896d6c3efc4c96abb2329cfac9432a7a57fcdb955ad1c5c7df425ded94b"
+          },
+          "text": "_line_ending_re = re.compile(r'(\\r\\n|\\n|\\x0b|\\f|\\r|\\x85|\\u2028|\\u2029)',\n                             re.UNICODE)"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_010-v2",
+        "concept_id": "python.regex_group",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_010-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "import re\nprint(re.split(r'(,)', 'a,b'))",
+        "choices": [
+          "['a', 'b']",
+          "['a', ',', 'b']",
+          "['a,b']"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_011",
+        "title": "整数区间解析与重复保留",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：reverse=parse_int_list('5-3,1')，duplicates=parse_int_list('2,1,2')，formatted=format_int_list([1,2,3,5])，empty=parse_int_list('')。解释排序不等于去重、反向范围取min/max及区间闭端点。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_011",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.range_closed",
+        "python.sorting_duplicates",
+        "python.branch_parse",
+        "source.function.strutils.parse_int_list",
+        "source.function.strutils.format_int_list"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_011__parse_int_list",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 886,
+              "end_line": 886,
+              "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 903,
+              "end_line": 920,
+              "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.parse_int_list",
+            "python.range_closed",
+            "python.branch_parse"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L886"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 19,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_011__format_int_list",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 923,
+              "end_line": 923,
+              "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 942,
+              "end_line": 1010,
+              "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.format_int_list",
+            "python.sorting_duplicates"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L923"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 70,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_011__parse_int_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 886,
+            "end_line": 886,
+            "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+          },
+          "text": " 886  def parse_int_list(range_string, delim=',', range_delim='-'):"
+        },
+        {
+          "unit_id": "task_011__parse_int_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 903,
+            "end_line": 920,
+            "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+          },
+          "text": " 903      output = []\n 904  \n 905      for x in range_string.strip().split(delim):\n 906  \n 907          # Range\n 908          if range_delim in x:\n 909              range_limits = list(map(int, x.split(range_delim)))\n 910              output += list(range(min(range_limits), max(range_limits)+1))\n 911  \n 912          # Empty String\n 913          elif not x:\n 914              continue\n 915  \n 916          # Integer\n 917          else:\n 918              output.append(int(x))\n 919  \n 920      return sorted(output)"
+        },
+        {
+          "unit_id": "task_011__format_int_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 923,
+            "end_line": 923,
+            "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+          },
+          "text": " 923  def format_int_list(int_list, delim=',', range_delim='-', delim_space=False):"
+        },
+        {
+          "unit_id": "task_011__format_int_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 942,
+            "end_line": 1010,
+            "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+          },
+          "text": " 942      output = []\n 943      contig_range = collections.deque()\n 944  \n 945      for x in sorted(int_list):\n 946  \n 947          # Handle current (and first) value.\n 948          if len(contig_range) < 1:\n 949              contig_range.append(x)\n 950  \n 951          # Handle current value, given multiple previous values are contiguous.\n 952          elif len(contig_range) > 1:\n 953              delta = x - contig_range[-1]\n 954  \n 955              # Current value is contiguous.\n 956              if delta == 1:\n 957                  contig_range.append(x)\n 958  \n 959              # Current value is non-contiguous.\n 960              elif delta > 1:\n 961                  range_substr = '{:d}{}{:d}'.format(min(contig_range),\n 962                                                        range_delim,\n 963                                                        max(contig_range))\n 964                  output.append(range_substr)\n 965                  contig_range.clear()\n 966                  contig_range.append(x)\n 967  \n 968              # Current value repeated.\n 969              else:\n 970                  continue\n 971  \n 972          # Handle current value, given no previous contiguous integers\n 973          else:\n 974              delta = x - contig_range[0]\n 975  \n 976              # Current value is contiguous.\n 977              if delta == 1:\n 978                  contig_range.append(x)\n 979  \n 980              # Current value is non-contiguous.\n 981              elif delta > 1:\n 982                  output.append(f'{contig_range.popleft():d}')\n 983                  contig_range.append(x)\n 984  \n 985              # Current value repeated.\n 986              else:\n 987                  continue\n 988  \n 989      # Handle the last value.\n 990      else:\n 991  \n 992          # Last value is non-contiguous.\n 993          if len(contig_range) == 1:\n 994              output.append(f'{contig_range.popleft():d}')\n 995              contig_range.clear()\n 996  \n 997          # Last value is part of contiguous range.\n 998          elif len(contig_range) > 1:\n 999              range_substr = '{:d}{}{:d}'.format(min(contig_range),\n1000                                                    range_delim,\n1001                                                    max(contig_range))\n1002              output.append(range_substr)\n1003              contig_range.clear()\n1004  \n1005      if delim_space:\n1006          output_str = (delim+' ').join(output)\n1007      else:\n1008          output_str = delim.join(output)\n1009  \n1010      return output_str"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "collections"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 39,
+            "end_line": 39,
+            "content_hash": "69efa92a979aa6a964237c809beb09a7f6ba63803fc85781a1e712268334023e"
+          },
+          "text": "import collections"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_011-v2",
+        "concept_id": "python.range_closed",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_011-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print(list(range(2, 5)))",
+        "choices": [
+          "[2, 3, 4, 5]",
+          "[2, 3, 4]",
+          "[3, 4, 5]"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    },
+    {
+      "task": {
+        "task_id": "task_012",
+        "title": "前缀切片与自然语言列表",
+        "goal": "独立理解固定源码并按公开要求作答。",
+        "requirements": [
+          "填写outputs：prefix=removeprefix('foobar','foo')，not_chars=removeprefix('barfoo','foo')，two=human_readable_list(['a','b'])，three=human_readable_list(['a','b','c'],oxford=False)。解释精确前缀与lstrip字符集合的区别，并定位两元素及oxford分支。"
+        ],
+        "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+      },
+      "task_id": "task_012",
+      "split": "test_candidate",
+      "snapshot": {
+        "schema_version": "1.0.0",
+        "object_type": "RepoSnapshot",
+        "is_fixture": false,
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "url": "https://github.com/mahmoud/boltons",
+        "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+        "license": "BSD-3-Clause",
+        "retrieved_at": "2026-10-16T09:07:20.743364+00:00",
+        "hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75",
+        "hash_scope": "selected_files_manifest_sha256",
+        "files": [
+          {
+            "path": "LICENSE",
+            "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+            "bytes": 1497,
+            "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+          },
+          {
+            "path": "boltons/strutils.py",
+            "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+            "bytes": 47294,
+            "git_blob": "74441c7e39dc5a666d76ca559f2ea6b80b3372c6"
+          },
+          {
+            "path": "tests/test_strutils.py",
+            "sha256": "f4927141e385c187ecd718044eb53327e0001e2d3d8b135dec8700dfde7d3e1d",
+            "bytes": 16253,
+            "git_blob": "7cb2ec449199954fbe130ca1a885c7dde7a5546f"
+          }
+        ],
+        "license_path": "LICENSE",
+        "snapshot_scope": "partial_source_bundle",
+        "complete_checkout_included": false
+      },
+      "source_root": "benchmarks/sources/boltons_B_D02",
+      "target_concept_ids": [
+        "python.prefix_slice",
+        "python.branch_formatting",
+        "source.function.strutils.removeprefix",
+        "source.function.strutils.human_readable_list"
+      ],
+      "units": [
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_012__removeprefix",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1288,
+              "end_line": 1288,
+              "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1298,
+              "end_line": 1300,
+              "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.removeprefix",
+            "python.prefix_slice"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1288"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 4,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        },
+        {
+          "schema_version": "1.1.0",
+          "object_type": "LearningUnit",
+          "is_fixture": false,
+          "id": "task_012__human_readable_list",
+          "source_spans": [
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1302,
+              "end_line": 1302,
+              "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+            },
+            {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1317,
+              "end_line": 1329,
+              "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+            }
+          ],
+          "concept_ids": [
+            "source.function.strutils.human_readable_list",
+            "python.branch_formatting"
+          ],
+          "prerequisites": [],
+          "provenance": {
+            "kind": "static_source",
+            "evidence": [
+              "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1302"
+            ],
+            "proposed_by": "Codex Agent B",
+            "review_status": "pending",
+            "reviewer": null,
+            "confidence": null
+          },
+          "base_cost": 14,
+          "cost_unit": "proxy_cost",
+          "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+        }
+      ],
+      "materials": [
+        {
+          "unit_id": "task_012__removeprefix",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1288,
+            "end_line": 1288,
+            "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+          },
+          "text": "1288  def removeprefix(text: str, prefix: str) -> str:"
+        },
+        {
+          "unit_id": "task_012__removeprefix",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1298,
+            "end_line": 1300,
+            "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+          },
+          "text": "1298      if text.startswith(prefix):\n1299          return text[len(prefix):]\n1300      return text"
+        },
+        {
+          "unit_id": "task_012__human_readable_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1302,
+            "end_line": 1302,
+            "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+          },
+          "text": "1302  def human_readable_list(items: typing.Sequence[str], delimiter: str = ',', conjunction: str = 'and', *, oxford: bool = True) -> str:"
+        },
+        {
+          "unit_id": "task_012__human_readable_list",
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1317,
+            "end_line": 1329,
+            "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+          },
+          "text": "1317      if not items:\n1318          return ''\n1319  \n1320      delimiter = delimiter and delimiter.strip() + ' '\n1321      conjunction = conjunction.strip()\n1322  \n1323      if len(items) == 1:\n1324          return items[0]\n1325  \n1326      if len(items) == 2:\n1327          return f'{items[0]} {conjunction} {items[1]}'\n1328  \n1329      return f'{delimiter.join(items[:-1])}{delimiter if oxford else \" \"}{conjunction} {items[-1]}'"
+        }
+      ],
+      "source_context": [
+        {
+          "names": [
+            "typing"
+          ],
+          "source_span": {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 43,
+            "end_line": 43,
+            "content_hash": "aab041eaebba062227b69c80b6946b0a55d7b3c73484a336491453ca7f79bf5b"
+          },
+          "text": "import typing"
+        }
+      ],
+      "quiz": {
+        "item_id": "B06-parallel-task_012-v2",
+        "concept_id": "python.prefix_slice",
+        "independent": true,
+        "source": "Independently executable Python semantics; distinct inputs from final task; engineering-reviewed, not human-calibrated",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "probability": null
+      },
+      "public_quiz": {
+        "item_id": "B06-parallel-task_012-v2",
+        "prompt": "独立概念短测：程序打印什么？",
+        "code": "print('blueprint'[:4])",
+        "choices": [
+          "blue",
+          "print",
+          "bluep"
+        ]
+      },
+      "config": {
+        "version": "A-D03-dev-0.1",
+        "cost_unit": "proxy_cost",
+        "cost_policy": "fixed-inclusive-source-lines-v1",
+        "budget": 100,
+        "quantile": 0.1,
+        "threshold": 0.7,
+        "methods": [
+          "B0-pinned-document-prefix",
+          "B2-initial-closure-gain-greedy"
+        ],
+        "routes": {
+          "task_001": [
+            "u_chunked",
+            "u_chunked_iter",
+            "u_iterable"
+          ],
+          "task_002": [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ]
+        },
+        "documentation": {
+          "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+          "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+        },
+        "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+        "diagnostics_implemented": false,
+        "formal_study_ready": false,
+        "human_cost_calibration": null,
+        "unit_costs": {
+          "u_iterable": 16,
+          "u_chunked_iter": 43,
+          "u_chunked": 21,
+          "u_windowed_iter": 39,
+          "u_positive_int": 5
+        }
+      },
+      "source_hash": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda",
+      "human_review": "NOT_REVIEWED",
+      "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+      "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts"
+    }
+  ],
+  "private_answers_loaded": false,
+  "original_gold_rubrics_modified": false
+}

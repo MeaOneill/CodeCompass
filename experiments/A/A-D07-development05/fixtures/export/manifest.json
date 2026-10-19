@@ -1,0 +1,20 @@
+{
+  "version": "B-D05-collector-1",
+  "actor": "test_fixture",
+  "scope": "development_only",
+  "clock_source": "server UTC + process monotonic",
+  "pii_removed": [
+    "local participant/session token",
+    "absolute time",
+    "free response",
+    "database path"
+  ],
+  "grouping": "HMAC pseudonyms stable within this export only; do not combine bundles as new participants",
+  "formal_study_ready": false,
+  "files": {
+    "events.json": "53a6d9ecda5f7588e8fcfdecde1acfbc39a03413a323a8d8f552212a93ba3a04",
+    "participants.json": "e2ec0be34f4c121faf8476384cec5500bfce0961b3d5611d91d7a4c932ae8608",
+    "sessions.csv": "fcd2b6fe6c166b6cc33c2d570b334079d179edfee0a6d98ee0f03f9f05d5abe5",
+    "sessions.json": "0e3e066664d226aa67156b213b74c9c3273aa708666cc012d491d87bdf280c05"
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "task_id": "task_008",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "i1OPJNPmdGH7OahDelLd6lxwpuL8U2TU",
+    "participant": "p_d2be54323159016a81eb36452306eb17",
+    "task": {
+      "task_id": "task_008",
+      "title": "ANSI清理与bytes边界",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：text=strip_ansi('A\\x1b[31mB\\x1b[0mC')（转义序列为真实ESC），bytes=list(strip_ansi(b'X\\x1b[1mY\\x1b[0m'))，plain=strip_ansi('plain')。解释文本与字节实现路径及函数支持边界，不声称清理任意终端协议。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [],
+    "completed": [
+      "task_008__strip_ansi"
+    ],
+    "spent": 15.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [],
+    "source_context": [
+      {
+        "names": [
+          "ANSI_SEQUENCES"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 361,
+          "end_line": 375,
+          "content_hash": "a34a40584faeeee25ea32b67cb36e582cf68afd2cc667be70e6b0bacbafc701b"
+        },
+        "text": "ANSI_SEQUENCES = re.compile(r'''\n    \\x1B            # Sequence starts with ESC, i.e. hex 0x1B\n    (?:\n        [@-Z\\\\-_]   # Second byte:\n                    #   all 0x40–0x5F range but CSI char, i.e ASCII @A–Z\\]^_\n    |               # Or\n        \\[          # CSI sequences, starting with [\n        [0-?]*      # Parameter bytes:\n                    #   range 0x30–0x3F, ASCII 0–9:;<=>?\n        [ -/]*      # Intermediate bytes:\n                    #   range 0x20–0x2F, ASCII space and !\"#$%&'()*+,-./\n        [@-~]       # Final byte\n                    #   range 0x40–0x7E, ASCII @A–Z[\\]^_`a–z{|}~\n    )\n''', re.VERBOSE)"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.bytes_text",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_008-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [],
+      "after_route": []
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_008__strip_ansi",
+        "completed": true,
+        "base_proxy_cost": 14,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.bytes_text",
+          "python.escape_sequence",
+          "source.function.strutils.strip_ansi"
+        ],
+        "target_concepts_not_gated": [
+          "python.bytes_text",
+          "python.escape_sequence",
+          "source.function.strutils.strip_ansi"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 378,
+            "end_line": 378,
+            "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 401,
+            "end_line": 413,
+            "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_008__strip_ansi"
+      ],
+      "cost": 14.0,
+      "context": {
+        "task": {
+          "task_id": "task_008",
+          "title": "ANSI清理与bytes边界",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：text=strip_ansi('A\\x1b[31mB\\x1b[0mC')（转义序列为真实ESC），bytes=list(strip_ansi(b'X\\x1b[1mY\\x1b[0m'))，plain=strip_ansi('plain')。解释文本与字节实现路径及函数支持边界，不声称清理任意终端协议。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.escape_sequence",
+          "python.bytes_text",
+          "source.function.strutils.strip_ansi"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_008__strip_ansi",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 378,
+                "end_line": 378,
+                "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 401,
+                "end_line": 413,
+                "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.strip_ansi",
+              "python.escape_sequence",
+              "python.bytes_text"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L378"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 14,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_008__strip_ansi",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 378,
+              "end_line": 378,
+              "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+            },
+            "text": " 378  def strip_ansi(text):"
+          },
+          {
+            "unit_id": "task_008__strip_ansi",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 401,
+              "end_line": 413,
+              "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+            },
+            "text": " 401      target_type = None\n 402      # Unicode type aliased to str is code-smell for Boltons in Python 3 env.\n 403      if isinstance(text, (bytes, bytearray)):\n 404          target_type = type(text)\n 405          text = text.decode('utf-8')\n 406  \n 407      cleaned = ANSI_SEQUENCES.sub('', text)\n 408  \n 409      # Transform back the result to the same bytearray type provided by the user.\n 410      if target_type and target_type != type(cleaned):\n 411          cleaned = target_type(cleaned, 'utf-8')\n 412  \n 413      return cleaned"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "ANSI_SEQUENCES"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 361,
+              "end_line": 375,
+              "content_hash": "a34a40584faeeee25ea32b67cb36e582cf68afd2cc667be70e6b0bacbafc701b"
+            },
+            "text": "ANSI_SEQUENCES = re.compile(r'''\n    \\x1B            # Sequence starts with ESC, i.e. hex 0x1B\n    (?:\n        [@-Z\\\\-_]   # Second byte:\n                    #   all 0x40–0x5F range but CSI char, i.e ASCII @A–Z\\]^_\n    |               # Or\n        \\[          # CSI sequences, starting with [\n        [0-?]*      # Parameter bytes:\n                    #   range 0x30–0x3F, ASCII 0–9:;<=>?\n        [ -/]*      # Intermediate bytes:\n                    #   range 0x20–0x2F, ASCII space and !\"#$%&'()*+,-./\n        [@-~]       # Final byte\n                    #   range 0x40–0x7E, ASCII @A–Z[\\]^_`a–z{|}~\n    )\n''', re.VERBOSE)"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.escape_sequence": {
+            "concept_id": "python.escape_sequence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.strip_ansi": {
+            "concept_id": "source.function.strutils.strip_ansi",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_008__strip_ansi"
+        ],
+        "cost": 14.0,
+        "gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.escape_sequence": {
+            "concept_id": "python.escape_sequence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.strip_ansi": {
+            "concept_id": "source.function.strutils.strip_ansi",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 14.0,
+          "switch_cost": 0.0,
+          "objective": 14.0,
+          "total_if_executed": 14.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_008__strip_ansi",
+              "bundle": [
+                "task_008__strip_ansi"
+              ],
+              "incremental": 14
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 14.0,
+        "switch_cost": 0.0,
+        "objective": 14.0,
+        "total_if_executed": 14.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [],
+      "cost": 0.0,
+      "context": {
+        "task": {
+          "task_id": "task_008",
+          "title": "ANSI清理与bytes边界",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：text=strip_ansi('A\\x1b[31mB\\x1b[0mC')（转义序列为真实ESC），bytes=list(strip_ansi(b'X\\x1b[1mY\\x1b[0m'))，plain=strip_ansi('plain')。解释文本与字节实现路径及函数支持边界，不声称清理任意终端协议。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.escape_sequence",
+          "python.bytes_text",
+          "source.function.strutils.strip_ansi"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_008__strip_ansi",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 378,
+                "end_line": 378,
+                "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 401,
+                "end_line": 413,
+                "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.strip_ansi",
+              "python.escape_sequence",
+              "python.bytes_text"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L378"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 14,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_008__strip_ansi",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 378,
+              "end_line": 378,
+              "content_hash": "dcd932a7ee455bd2632a985740e5116811bbb5a5d23fd383d1187dc1e14d4f0c"
+            },
+            "text": " 378  def strip_ansi(text):"
+          },
+          {
+            "unit_id": "task_008__strip_ansi",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 401,
+              "end_line": 413,
+              "content_hash": "d394ba538c450eaa0ad906244abe7ae7b252ce98b5b11a1d717bacf5e53565c5"
+            },
+            "text": " 401      target_type = None\n 402      # Unicode type aliased to str is code-smell for Boltons in Python 3 env.\n 403      if isinstance(text, (bytes, bytearray)):\n 404          target_type = type(text)\n 405          text = text.decode('utf-8')\n 406  \n 407      cleaned = ANSI_SEQUENCES.sub('', text)\n 408  \n 409      # Transform back the result to the same bytearray type provided by the user.\n 410      if target_type and target_type != type(cleaned):\n 411          cleaned = target_type(cleaned, 'utf-8')\n 412  \n 413      return cleaned"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "ANSI_SEQUENCES"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 361,
+              "end_line": 375,
+              "content_hash": "a34a40584faeeee25ea32b67cb36e582cf68afd2cc667be70e6b0bacbafc701b"
+            },
+            "text": "ANSI_SEQUENCES = re.compile(r'''\n    \\x1B            # Sequence starts with ESC, i.e. hex 0x1B\n    (?:\n        [@-Z\\\\-_]   # Second byte:\n                    #   all 0x40–0x5F range but CSI char, i.e ASCII @A–Z\\]^_\n    |               # Or\n        \\[          # CSI sequences, starting with [\n        [0-?]*      # Parameter bytes:\n                    #   range 0x30–0x3F, ASCII 0–9:;<=>?\n        [ -/]*      # Intermediate bytes:\n                    #   range 0x20–0x2F, ASCII space and !\"#$%&'()*+,-./\n        [@-~]       # Final byte\n                    #   range 0x40–0x7E, ASCII @A–Z[\\]^_`a–z{|}~\n    )\n''', re.VERBOSE)"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.bytes_text",
+            "item_id": "B06-parallel-task_008-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_008-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.escape_sequence": {
+            "concept_id": "python.escape_sequence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.strip_ansi": {
+            "concept_id": "source.function.strutils.strip_ansi",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_008__strip_ansi"
+        ],
+        "spent_proxy": 15.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 85.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [],
+        "cost": 0.0,
+        "gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_008-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.escape_sequence": {
+            "concept_id": "python.escape_sequence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.strip_ansi": {
+            "concept_id": "source.function.strutils.strip_ansi",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 0.0,
+          "switch_cost": 0.0,
+          "objective": 0.0,
+          "total_if_executed": 15.0
+        },
+        "candidate_attempts": [],
+        "completed": [
+          "task_008__strip_ansi"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "total_if_executed": 15.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

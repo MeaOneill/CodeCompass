@@ -1,0 +1,25 @@
+{
+  "actor": "agent_browser",
+  "human_n": 0,
+  "real_pretesters": null,
+  "formal_g2_passed": false,
+  "formal_task_outcomes": 0,
+  "sessions": 2,
+  "events": 27,
+  "export": "agent_browser/export01",
+  "verified_ui_steps": [
+    "Ours read/pause/resume/failed quiz/replan",
+    "restart of paused session preserves prefix",
+    "B2 single material still requires common quiz",
+    "independent submission keeps score pending",
+    "new audit panel hidden during quiz/pause/submission after fix"
+  ],
+  "source_components": {
+    "server_source_snapshot": "experiments/A/A-D07-development03/code_snapshot",
+    "final_static_assets": "experiments/A/A-D07-development05/code_snapshot/app/A_D07",
+    "note": "Browser process preceded final input-type and per-event-version additions; those separately pass final 384 tests and 72 fully stamped fixtures. Do not relabel browser records as final formal trials."
+  },
+  "known_tool_failure": "label-based selector found no match; observed ID selector then succeeded; no duplicate session submitted",
+  "private_data": "SQLite/session tokens/free response omitted by deidentified export",
+  "screenshots": "report_materials/A/A-D07/UI_*_agent_browser.png; native viewport captures, not redrawn UI"
+}

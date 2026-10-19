@@ -1,0 +1,799 @@
+{
+  "task_id": "task_012",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "fail",
+  "view": {
+    "session_id": "ZpiziNIwMsBr7r1tv9Ab3Us-66pmomX0",
+    "participant": "p_c09bf55118104065a816a2bb54932ba2",
+    "task": {
+      "task_id": "task_012",
+      "title": "前缀切片与自然语言列表",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：prefix=removeprefix('foobar','foo')，not_chars=removeprefix('barfoo','foo')，two=human_readable_list(['a','b'])，three=human_readable_list(['a','b','c'],oxford=False)。解释精确前缀与lstrip字符集合的区别，并定位两元素及oxford分支。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_012__human_readable_list"
+    ],
+    "completed": [
+      "task_012__removeprefix"
+    ],
+    "spent": 5.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_012__human_readable_list",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 1302,
+          "end_line": 1302,
+          "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+        },
+        "text": "1302  def human_readable_list(items: typing.Sequence[str], delimiter: str = ',', conjunction: str = 'and', *, oxford: bool = True) -> str:"
+      },
+      {
+        "unit_id": "task_012__human_readable_list",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 1317,
+          "end_line": 1329,
+          "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+        },
+        "text": "1317      if not items:\n1318          return ''\n1319  \n1320      delimiter = delimiter and delimiter.strip() + ' '\n1321      conjunction = conjunction.strip()\n1322  \n1323      if len(items) == 1:\n1324          return items[0]\n1325  \n1326      if len(items) == 2:\n1327          return f'{items[0]} {conjunction} {items[1]}'\n1328  \n1329      return f'{delimiter.join(items[:-1])}{delimiter if oxford else \" \"}{conjunction} {items[-1]}'"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "typing"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 43,
+          "end_line": 43,
+          "content_hash": "aab041eaebba062227b69c80b6946b0a55d7b3c73484a336491453ca7f79bf5b"
+        },
+        "text": "import typing"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.prefix_slice",
+          "alpha": 1,
+          "beta": 2,
+          "evidence_ids": [
+            "D05:B06-parallel-task_012-v2"
+          ],
+          "lower_bound": 0.051316701949486225,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_012__human_readable_list"
+      ],
+      "after_route": [
+        "task_012__human_readable_list"
+      ]
+    },
+    "outcome": "fail",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_012__removeprefix",
+        "completed": true,
+        "base_proxy_cost": 4,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.prefix_slice",
+          "source.function.strutils.removeprefix"
+        ],
+        "target_concepts_not_gated": [
+          "python.prefix_slice",
+          "source.function.strutils.removeprefix"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1288,
+            "end_line": 1288,
+            "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1298,
+            "end_line": 1300,
+            "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_012__human_readable_list",
+        "completed": false,
+        "base_proxy_cost": 14,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.branch_formatting",
+          "source.function.strutils.human_readable_list"
+        ],
+        "target_concepts_not_gated": [
+          "python.branch_formatting",
+          "source.function.strutils.human_readable_list"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1302,
+            "end_line": 1302,
+            "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 1317,
+            "end_line": 1329,
+            "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_012__removeprefix",
+        "task_012__human_readable_list"
+      ],
+      "cost": 18.0,
+      "context": {
+        "task": {
+          "task_id": "task_012",
+          "title": "前缀切片与自然语言列表",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：prefix=removeprefix('foobar','foo')，not_chars=removeprefix('barfoo','foo')，two=human_readable_list(['a','b'])，three=human_readable_list(['a','b','c'],oxford=False)。解释精确前缀与lstrip字符集合的区别，并定位两元素及oxford分支。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.prefix_slice",
+          "python.branch_formatting",
+          "source.function.strutils.removeprefix",
+          "source.function.strutils.human_readable_list"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_012__removeprefix",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1288,
+                "end_line": 1288,
+                "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1298,
+                "end_line": 1300,
+                "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.removeprefix",
+              "python.prefix_slice"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1288"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 4,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_012__human_readable_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1302,
+                "end_line": 1302,
+                "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1317,
+                "end_line": 1329,
+                "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.human_readable_list",
+              "python.branch_formatting"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1302"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 14,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_012__removeprefix",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1288,
+              "end_line": 1288,
+              "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+            },
+            "text": "1288  def removeprefix(text: str, prefix: str) -> str:"
+          },
+          {
+            "unit_id": "task_012__removeprefix",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1298,
+              "end_line": 1300,
+              "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+            },
+            "text": "1298      if text.startswith(prefix):\n1299          return text[len(prefix):]\n1300      return text"
+          },
+          {
+            "unit_id": "task_012__human_readable_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1302,
+              "end_line": 1302,
+              "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+            },
+            "text": "1302  def human_readable_list(items: typing.Sequence[str], delimiter: str = ',', conjunction: str = 'and', *, oxford: bool = True) -> str:"
+          },
+          {
+            "unit_id": "task_012__human_readable_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1317,
+              "end_line": 1329,
+              "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+            },
+            "text": "1317      if not items:\n1318          return ''\n1319  \n1320      delimiter = delimiter and delimiter.strip() + ' '\n1321      conjunction = conjunction.strip()\n1322  \n1323      if len(items) == 1:\n1324          return items[0]\n1325  \n1326      if len(items) == 2:\n1327          return f'{items[0]} {conjunction} {items[1]}'\n1328  \n1329      return f'{delimiter.join(items[:-1])}{delimiter if oxford else \" \"}{conjunction} {items[-1]}'"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "typing"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 43,
+              "end_line": 43,
+              "content_hash": "aab041eaebba062227b69c80b6946b0a55d7b3c73484a336491453ca7f79bf5b"
+            },
+            "text": "import typing"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.branch_formatting": {
+            "concept_id": "python.branch_formatting",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.prefix_slice": {
+            "concept_id": "python.prefix_slice",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.human_readable_list": {
+            "concept_id": "source.function.strutils.human_readable_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.removeprefix": {
+            "concept_id": "source.function.strutils.removeprefix",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_012__removeprefix",
+          "task_012__human_readable_list"
+        ],
+        "cost": 18.0,
+        "gate": {
+          "python.branch_formatting": {
+            "concept_id": "python.branch_formatting",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.prefix_slice": {
+            "concept_id": "python.prefix_slice",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.human_readable_list": {
+            "concept_id": "source.function.strutils.human_readable_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.removeprefix": {
+            "concept_id": "source.function.strutils.removeprefix",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 18.0,
+          "switch_cost": 0.0,
+          "objective": 18.0,
+          "total_if_executed": 18.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_012__human_readable_list",
+              "bundle": [
+                "task_012__human_readable_list"
+              ],
+              "incremental": 14
+            },
+            {
+              "root": "task_012__removeprefix",
+              "bundle": [
+                "task_012__removeprefix"
+              ],
+              "incremental": 4
+            }
+          ],
+          [
+            {
+              "root": "task_012__human_readable_list",
+              "bundle": [
+                "task_012__human_readable_list"
+              ],
+              "incremental": 14
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 18.0,
+        "switch_cost": 0.0,
+        "objective": 18.0,
+        "total_if_executed": 18.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_012__human_readable_list"
+      ],
+      "cost": 14.0,
+      "context": {
+        "task": {
+          "task_id": "task_012",
+          "title": "前缀切片与自然语言列表",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：prefix=removeprefix('foobar','foo')，not_chars=removeprefix('barfoo','foo')，two=human_readable_list(['a','b'])，three=human_readable_list(['a','b','c'],oxford=False)。解释精确前缀与lstrip字符集合的区别，并定位两元素及oxford分支。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.prefix_slice",
+          "python.branch_formatting",
+          "source.function.strutils.removeprefix",
+          "source.function.strutils.human_readable_list"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_012__removeprefix",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1288,
+                "end_line": 1288,
+                "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1298,
+                "end_line": 1300,
+                "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.removeprefix",
+              "python.prefix_slice"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1288"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 4,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_012__human_readable_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1302,
+                "end_line": 1302,
+                "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 1317,
+                "end_line": 1329,
+                "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.human_readable_list",
+              "python.branch_formatting"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L1302"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 14,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_012__removeprefix",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1288,
+              "end_line": 1288,
+              "content_hash": "878a9984aea9076ea95bfb0868a4ae5a070dc753522f91606692b771832e6929"
+            },
+            "text": "1288  def removeprefix(text: str, prefix: str) -> str:"
+          },
+          {
+            "unit_id": "task_012__removeprefix",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1298,
+              "end_line": 1300,
+              "content_hash": "77692eb957b0bffbbd7f92e8ca3d8170dab4eee6ed2011dfb81d5ebac2c8c865"
+            },
+            "text": "1298      if text.startswith(prefix):\n1299          return text[len(prefix):]\n1300      return text"
+          },
+          {
+            "unit_id": "task_012__human_readable_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1302,
+              "end_line": 1302,
+              "content_hash": "6c9491e64a466523d9221bbcc80ff8875f2783dab84c856618e653dbd4d938e7"
+            },
+            "text": "1302  def human_readable_list(items: typing.Sequence[str], delimiter: str = ',', conjunction: str = 'and', *, oxford: bool = True) -> str:"
+          },
+          {
+            "unit_id": "task_012__human_readable_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 1317,
+              "end_line": 1329,
+              "content_hash": "31540180daa5120d967a78490e67f743e577c3658221fbb752ef71064ac08fed"
+            },
+            "text": "1317      if not items:\n1318          return ''\n1319  \n1320      delimiter = delimiter and delimiter.strip() + ' '\n1321      conjunction = conjunction.strip()\n1322  \n1323      if len(items) == 1:\n1324          return items[0]\n1325  \n1326      if len(items) == 2:\n1327          return f'{items[0]} {conjunction} {items[1]}'\n1328  \n1329      return f'{delimiter.join(items[:-1])}{delimiter if oxford else \" \"}{conjunction} {items[-1]}'"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "typing"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 43,
+              "end_line": 43,
+              "content_hash": "aab041eaebba062227b69c80b6946b0a55d7b3c73484a336491453ca7f79bf5b"
+            },
+            "text": "import typing"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.prefix_slice",
+            "item_id": "B06-parallel-task_012-v2",
+            "outcome": "fail",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.branch_formatting": {
+            "concept_id": "python.branch_formatting",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.prefix_slice": {
+            "concept_id": "python.prefix_slice",
+            "alpha": 1,
+            "beta": 2,
+            "evidence_ids": [
+              "D05:B06-parallel-task_012-v2"
+            ],
+            "lower_bound": 0.051316701949486225,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.human_readable_list": {
+            "concept_id": "source.function.strutils.human_readable_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.removeprefix": {
+            "concept_id": "source.function.strutils.removeprefix",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_012__removeprefix"
+        ],
+        "spent_proxy": 5.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 95.0,
+        "feedback": "fail",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_012__human_readable_list"
+        ],
+        "cost": 14.0,
+        "gate": {
+          "python.branch_formatting": {
+            "concept_id": "python.branch_formatting",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.prefix_slice": {
+            "concept_id": "python.prefix_slice",
+            "alpha": 1,
+            "beta": 2,
+            "evidence_ids": [
+              "D05:B06-parallel-task_012-v2"
+            ],
+            "lower_bound": 0.051316701949486225,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.human_readable_list": {
+            "concept_id": "source.function.strutils.human_readable_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.removeprefix": {
+            "concept_id": "source.function.strutils.removeprefix",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 14.0,
+          "switch_cost": 0.0,
+          "objective": 14.0,
+          "total_if_executed": 19.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_012__human_readable_list",
+              "bundle": [
+                "task_012__human_readable_list"
+              ],
+              "incremental": 14
+            }
+          ]
+        ],
+        "completed": [
+          "task_012__removeprefix"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 14.0,
+        "switch_cost": 0.0,
+        "objective": 14.0,
+        "total_if_executed": 19.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

@@ -1,0 +1,519 @@
+{
+  "task_id": "task_004",
+  "method": "B1",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "IS0_k0aHiC8PFmugcsIqGhPWlSF0hnq8",
+    "participant": "p_692b45081644b3e0540a2100d2abf8c9",
+    "task": {
+      "task_id": "task_004",
+      "title": "默认值与路径索引调试",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B1",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [],
+    "completed": [
+      "task_004__get_path"
+    ],
+    "spent": 27.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [],
+    "source_context": [],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.sentinel_default",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_004-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [],
+      "after_route": []
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_004__get_path",
+        "completed": true,
+        "base_proxy_cost": 26,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.eafp",
+          "python.exception_translation",
+          "python.sentinel_default",
+          "source.function.iterutils.get_path"
+        ],
+        "target_concepts_not_gated": [
+          "python.eafp",
+          "python.exception_translation",
+          "python.sentinel_default",
+          "source.function.iterutils.get_path"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 1324,
+            "end_line": 1324,
+            "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+          },
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 1358,
+            "end_line": 1382,
+            "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_004__get_path"
+      ],
+      "cost": 26,
+      "context": {
+        "task": {
+          "task_id": "task_004",
+          "title": "默认值与路径索引调试",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.eafp",
+          "python.exception_translation",
+          "python.sentinel_default",
+          "source.function.iterutils.get_path"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_004__get_path",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 1324,
+                "end_line": 1324,
+                "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 1358,
+                "end_line": 1382,
+                "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+              }
+            ],
+            "concept_ids": [
+              "source.function.iterutils.get_path",
+              "python.eafp",
+              "python.exception_translation",
+              "python.sentinel_default"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L1324"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 26,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_004__get_path",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1324,
+              "end_line": 1324,
+              "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+            },
+            "text": "1324  def get_path(root, path, default=_UNSET):"
+          },
+          {
+            "unit_id": "task_004__get_path",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1358,
+              "end_line": 1382,
+              "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+            },
+            "text": "1358      if isinstance(path, str):\n1359          path = path.split('.')\n1360      cur = root\n1361      try:\n1362          for seg in path:\n1363              try:\n1364                  cur = cur[seg]\n1365              except (KeyError, IndexError) as exc:\n1366                  raise PathAccessError(exc, seg, path)\n1367              except TypeError as exc:\n1368                  # either string index in a list, or a parent that\n1369                  # doesn't support indexing\n1370                  try:\n1371                      seg = int(seg)\n1372                      cur = cur[seg]\n1373                  except (ValueError, KeyError, IndexError, TypeError):\n1374                      if not is_iterable(cur):\n1375                          exc = TypeError('%r object is not indexable'\n1376                                          % type(cur).__name__)\n1377                      raise PathAccessError(exc, seg, path)\n1378      except PathAccessError:\n1379          if default is _UNSET:\n1380              raise\n1381          return default\n1382      return cur"
+          }
+        ],
+        "source_context": [],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.eafp": {
+            "concept_id": "python.eafp",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.exception_translation": {
+            "concept_id": "python.exception_translation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.sentinel_default": {
+            "concept_id": "python.sentinel_default",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.iterutils.get_path": {
+            "concept_id": "source.function.iterutils.get_path",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "attempted": true,
+        "status": "PARSED",
+        "route": [
+          "task_004__get_path"
+        ],
+        "calls": [
+          {
+            "attempt": 0,
+            "kind": "initial",
+            "timestamp": "2026-10-19T15:24:52.824740+00:00",
+            "request_hash": "d7ed1885aa2c2b73872a974f054b506ea860121be54d0f1b69f7d1f93cb76001",
+            "request": {
+              "model": "deepseek-flash",
+              "input": "Plan a remaining source-reading route using ONLY the public context.\nReturn exactly {\"ordered_units\":[\"unit_id\",...]} with no additional keys.\nPreserve completed materials: never return a completed unit, repeat a unit,\ninvent IDs, exceed remaining proxy budget or violate hard prerequisites.\nCover remaining goals using supplied independent mastery gate and completed\ncoverage. You receive the same source, feedback, budget and help as other\nmethods. No final answers, final tests or other methods' routes are provided.\n\nCONTEXT_JSON\n{\"budget_proxy\": 100, \"completed\": [], \"feedback\": null, \"learner_evidence\": [], \"learner_gate\": {\"python.eafp\": {\"concept_id\": \"python.eafp\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.exception_translation\": {\"concept_id\": \"python.exception_translation\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.sentinel_default\": {\"concept_id\": \"python.sentinel_default\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.iterutils.get_path\": {\"concept_id\": \"source.function.iterutils.get_path\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"policy\": {\"alpha\": 0, \"gamma\": 0, \"max_quizzes\": 1, \"quantile\": 0.1, \"quiz_cost\": 1, \"threshold\": 0.7}, \"remaining_proxy\": 100.0, \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"source_context\": [], \"source_materials\": [{\"source_span\": {\"content_hash\": \"31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458\", \"end_line\": 1324, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 1324}, \"text\": \"1324  def get_path(root, path, default=_UNSET):\", \"unit_id\": \"task_004__get_path\"}, {\"source_span\": {\"content_hash\": \"b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc\", \"end_line\": 1382, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 1358}, \"text\": \"1358      if isinstance(path, str):\\n1359          path = path.split('.')\\n1360      cur = root\\n1361      try:\\n1362          for seg in path:\\n1363              try:\\n1364                  cur = cur[seg]\\n1365              except (KeyError, IndexError) as exc:\\n1366                  raise PathAccessError(exc, seg, path)\\n1367              except TypeError as exc:\\n1368                  # either string index in a list, or a parent that\\n1369                  # doesn't support indexing\\n1370                  try:\\n1371                      seg = int(seg)\\n1372                      cur = cur[seg]\\n1373                  except (ValueError, KeyError, IndexError, TypeError):\\n1374                      if not is_iterable(cur):\\n1375                          exc = TypeError('%r object is not indexable'\\n1376                                          % type(cur).__name__)\\n1377                      raise PathAccessError(exc, seg, path)\\n1378      except PathAccessError:\\n1379          if default is _UNSET:\\n1380              raise\\n1381          return default\\n1382      return cur\", \"unit_id\": \"task_004__get_path\"}], \"spent_proxy\": 0.0, \"target_concept_ids\": [\"python.eafp\", \"python.exception_translation\", \"python.sentinel_default\", \"source.function.iterutils.get_path\"], \"task\": {\"goal\": \"独立理解固定源码并按公开要求作答。\", \"repo_commit\": \"4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d\", \"requirements\": [\"root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。\"], \"task_id\": \"task_004\", \"title\": \"默认值与路径索引调试\"}, \"units\": [{\"base_cost\": 26, \"concept_ids\": [\"source.function.iterutils.get_path\", \"python.eafp\", \"python.exception_translation\", \"python.sentinel_default\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_004__get_path\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L1324\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458\", \"end_line\": 1324, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 1324}, {\"content_hash\": \"b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc\", \"end_line\": 1382, \"path\": \"boltons/iterutils.py\", \"snapshot_id\": \"boltons-4e5faa3d7e40\", \"start_line\": 1358}]}]}",
+              "store": false,
+              "max_output_tokens": 1200,
+              "reasoning": {
+                "effort": "none"
+              }
+            },
+            "configured_rates": {
+              "budget": 5,
+              "reservation": 0.25,
+              "input": 2,
+              "output": 8,
+              "currency": "CNY",
+              "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision"
+            },
+            "model_requested": "deepseek-flash",
+            "model_returned": "deepseek-flash",
+            "usage": {
+              "input_tokens": 100,
+              "output_tokens": 50
+            },
+            "estimated_cost_usd": null,
+            "estimated_cost_cny": 0.0006,
+            "currency": "CNY",
+            "billing_cost_usd": null,
+            "billing_cost_cny": null,
+            "reserved_amount": 0.25,
+            "quarantined": false,
+            "response": {
+              "model": "deepseek-flash",
+              "status": "completed",
+              "usage": {
+                "input_tokens": 100,
+                "output_tokens": 50
+              },
+              "output": [
+                {
+                  "type": "message",
+                  "content": [
+                    {
+                      "type": "output_text",
+                      "text": "{\"ordered_units\": [\"task_004__get_path\"]}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "raw_sha256": "2ebf8c07732333a4153d8a9ff6d81dd001ded3a8da1f0d7b742ecd9ac5fa3244",
+            "elapsed_seconds": 0.00039370000013150275
+          }
+        ],
+        "transport_is_fixture": true,
+        "model_requested": "deepseek-flash"
+      },
+      "independent_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 26.0,
+        "switch_cost": 0.0,
+        "objective": 26.0,
+        "total_if_executed": 26.0
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 26.0,
+        "switch_cost": 0.0,
+        "objective": 26.0,
+        "total_if_executed": 26.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [],
+      "cost": 0,
+      "context": {
+        "task": {
+          "task_id": "task_004",
+          "title": "默认值与路径索引调试",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "root={'a':[{'x':None}]}。填写outputs：null=get_path(root,('a',0,'x'),default='MISSING')，missing=get_path(root,'a.0.z',default='MISSING')，string_index=get_path({'a':[10,20]},'a.1')，empty_path=get_path({'x':1},())。解释为何None不代表查找失败、字符串数字何时转换以及何时抛PathAccessError。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.eafp",
+          "python.exception_translation",
+          "python.sentinel_default",
+          "source.function.iterutils.get_path"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_004__get_path",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 1324,
+                "end_line": 1324,
+                "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 1358,
+                "end_line": 1382,
+                "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+              }
+            ],
+            "concept_ids": [
+              "source.function.iterutils.get_path",
+              "python.eafp",
+              "python.exception_translation",
+              "python.sentinel_default"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L1324"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 26,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_004__get_path",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1324,
+              "end_line": 1324,
+              "content_hash": "31369fb4167a91bf85f48a6fcec54d5749785d2df802b93e3c034ed07144e458"
+            },
+            "text": "1324  def get_path(root, path, default=_UNSET):"
+          },
+          {
+            "unit_id": "task_004__get_path",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 1358,
+              "end_line": 1382,
+              "content_hash": "b1799ff979bcf52338a11a2e6ed858144bbef798a9c0f32fd2877809b536f3bc"
+            },
+            "text": "1358      if isinstance(path, str):\n1359          path = path.split('.')\n1360      cur = root\n1361      try:\n1362          for seg in path:\n1363              try:\n1364                  cur = cur[seg]\n1365              except (KeyError, IndexError) as exc:\n1366                  raise PathAccessError(exc, seg, path)\n1367              except TypeError as exc:\n1368                  # either string index in a list, or a parent that\n1369                  # doesn't support indexing\n1370                  try:\n1371                      seg = int(seg)\n1372                      cur = cur[seg]\n1373                  except (ValueError, KeyError, IndexError, TypeError):\n1374                      if not is_iterable(cur):\n1375                          exc = TypeError('%r object is not indexable'\n1376                                          % type(cur).__name__)\n1377                      raise PathAccessError(exc, seg, path)\n1378      except PathAccessError:\n1379          if default is _UNSET:\n1380              raise\n1381          return default\n1382      return cur"
+          }
+        ],
+        "source_context": [],
+        "learner_evidence": [
+          {
+            "concept_id": "python.sentinel_default",
+            "item_id": "B06-parallel-task_004-v2",
+            "outcome": "pass",
+            "project": "boltons-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.eafp": {
+            "concept_id": "python.eafp",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.exception_translation": {
+            "concept_id": "python.exception_translation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.sentinel_default": {
+            "concept_id": "python.sentinel_default",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_004-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.iterutils.get_path": {
+            "concept_id": "source.function.iterutils.get_path",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_004__get_path"
+        ],
+        "spent_proxy": 27.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 73.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "NO_ACTION_NEEDED",
+        "calls": [],
+        "attempted": false,
+        "route": [],
+        "transport_is_fixture": true
+      },
+      "independent_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "total_if_executed": 27.0
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "total_if_executed": 27.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

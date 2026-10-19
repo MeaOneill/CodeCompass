@@ -1,0 +1,701 @@
+{
+  "task_id": "task_003",
+  "method": "Ours",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "9WPU2d1ANhC_aP3uNJF66MSgtOh9K0AT",
+    "participant": "p_5624615066295c3769ea67322849c7e1",
+    "task": {
+      "task_id": "task_003",
+      "title": "稳定去重与key定位",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "给answer.json的outputs填写plain=list(unique_iter(['a','A','a','b']))、casefold=list(unique_iter(['a','A','a','b'], key=str.lower))、length=list(unique_iter(['hi','ok','hey','bye'], key=len))。在source_spans引用本题函数，explanation解释seen的键和输出对象区别、保持首次顺序和哈希限制。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "Ours",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [],
+    "completed": [
+      "task_003__unique_iter"
+    ],
+    "spent": 19.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [],
+    "source_context": [],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.hash_set",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_003-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [],
+      "after_route": []
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_003__unique_iter",
+        "completed": true,
+        "base_proxy_cost": 18,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.generator_laziness",
+          "python.hash_set",
+          "python.key_function",
+          "source.function.iterutils.unique_iter"
+        ],
+        "target_concepts_not_gated": [
+          "python.generator_laziness",
+          "python.hash_set",
+          "python.key_function",
+          "source.function.iterutils.unique_iter"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 834,
+            "end_line": 834,
+            "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+          },
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "path": "boltons/iterutils.py",
+            "start_line": 851,
+            "end_line": 867,
+            "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_003__unique_iter"
+      ],
+      "cost": 18.0,
+      "context": {
+        "task": {
+          "task_id": "task_003",
+          "title": "稳定去重与key定位",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "给answer.json的outputs填写plain=list(unique_iter(['a','A','a','b']))、casefold=list(unique_iter(['a','A','a','b'], key=str.lower))、length=list(unique_iter(['hi','ok','hey','bye'], key=len))。在source_spans引用本题函数，explanation解释seen的键和输出对象区别、保持首次顺序和哈希限制。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.hash_set",
+          "python.key_function",
+          "python.generator_laziness",
+          "source.function.iterutils.unique_iter"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_003__unique_iter",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 834,
+                "end_line": 834,
+                "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 851,
+                "end_line": 867,
+                "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.iterutils.unique_iter",
+              "python.hash_set",
+              "python.key_function",
+              "python.generator_laziness"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L834"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 18,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_003__unique_iter",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 834,
+              "end_line": 834,
+              "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+            },
+            "text": " 834  def unique_iter(src, key=None):"
+          },
+          {
+            "unit_id": "task_003__unique_iter",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 851,
+              "end_line": 867,
+              "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+            },
+            "text": " 851      if not is_iterable(src):\n 852          raise TypeError('expected an iterable, not %r' % type(src))\n 853      if key is None:\n 854          def key_func(x): return x\n 855      elif callable(key):\n 856          key_func = key\n 857      elif isinstance(key, str):\n 858          def key_func(x): return getattr(x, key, x)\n 859      else:\n 860          raise TypeError('\"key\" expected a string or callable, not %r' % key)\n 861      seen = set()\n 862      for i in src:\n 863          k = key_func(i)\n 864          if k not in seen:\n 865              seen.add(k)\n 866              yield i\n 867      return"
+          }
+        ],
+        "source_context": [],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.hash_set": {
+            "concept_id": "python.hash_set",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.key_function": {
+            "concept_id": "python.key_function",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.iterutils.unique_iter": {
+            "concept_id": "source.function.iterutils.unique_iter",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [],
+        "remaining": [
+          "task_003__unique_iter"
+        ],
+        "unit_costs": {
+          "task_003__unique_iter": 18.0
+        },
+        "gate": {
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.hash_set": {
+            "concept_id": "python.hash_set",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.key_function": {
+            "concept_id": "python.key_function",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.iterutils.unique_iter": {
+            "concept_id": "source.function.iterutils.unique_iter",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [],
+        "spent_before": 0.0,
+        "alpha": 0,
+        "gamma": 0,
+        "learning_cost": 18.0,
+        "switch_cost": 0.0,
+        "objective": 18.0,
+        "missing": [],
+        "total_if_executed": 18.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 18.0,
+          "switch_cost": 0.0,
+          "objective": 18.0,
+          "total_if_executed": 18.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 1,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "prefix": [],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 0,
+            "retained": [
+              [
+                "task_003__unique_iter"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 1,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed",
+        "runtime_version": "A-D07-runtime-v1",
+        "feasible": true,
+        "goal_complete": true,
+        "human_task_success": null,
+        "route_explanations": [
+          {
+            "unit_id": "task_003__unique_iter",
+            "completed": false,
+            "base_proxy_cost": 18,
+            "cost_unit": "proxy_cost",
+            "target_concepts": [
+              "python.generator_laziness",
+              "python.hash_set",
+              "python.key_function",
+              "source.function.iterutils.unique_iter"
+            ],
+            "target_concepts_not_gated": [
+              "python.generator_laziness",
+              "python.hash_set",
+              "python.key_function",
+              "source.function.iterutils.unique_iter"
+            ],
+            "required_by_remaining": [],
+            "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 834,
+                "end_line": 834,
+                "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 851,
+                "end_line": 867,
+                "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+              }
+            ],
+            "source_versions": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+              }
+            ]
+          }
+        ]
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 18.0,
+        "switch_cost": 0.0,
+        "objective": 18.0,
+        "total_if_executed": 18.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [],
+      "cost": 0.0,
+      "context": {
+        "task": {
+          "task_id": "task_003",
+          "title": "稳定去重与key定位",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "给answer.json的outputs填写plain=list(unique_iter(['a','A','a','b']))、casefold=list(unique_iter(['a','A','a','b'], key=str.lower))、length=list(unique_iter(['hi','ok','hey','bye'], key=len))。在source_spans引用本题函数，explanation解释seen的键和输出对象区别、保持首次顺序和哈希限制。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.hash_set",
+          "python.key_function",
+          "python.generator_laziness",
+          "source.function.iterutils.unique_iter"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_003__unique_iter",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 834,
+                "end_line": 834,
+                "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 851,
+                "end_line": 867,
+                "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.iterutils.unique_iter",
+              "python.hash_set",
+              "python.key_function",
+              "python.generator_laziness"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L834"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 18,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_003__unique_iter",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 834,
+              "end_line": 834,
+              "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+            },
+            "text": " 834  def unique_iter(src, key=None):"
+          },
+          {
+            "unit_id": "task_003__unique_iter",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 851,
+              "end_line": 867,
+              "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+            },
+            "text": " 851      if not is_iterable(src):\n 852          raise TypeError('expected an iterable, not %r' % type(src))\n 853      if key is None:\n 854          def key_func(x): return x\n 855      elif callable(key):\n 856          key_func = key\n 857      elif isinstance(key, str):\n 858          def key_func(x): return getattr(x, key, x)\n 859      else:\n 860          raise TypeError('\"key\" expected a string or callable, not %r' % key)\n 861      seen = set()\n 862      for i in src:\n 863          k = key_func(i)\n 864          if k not in seen:\n 865              seen.add(k)\n 866              yield i\n 867      return"
+          }
+        ],
+        "source_context": [],
+        "learner_evidence": [
+          {
+            "concept_id": "python.hash_set",
+            "item_id": "B06-parallel-task_003-v2",
+            "outcome": "pass",
+            "project": "boltons-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.hash_set": {
+            "concept_id": "python.hash_set",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_003-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.key_function": {
+            "concept_id": "python.key_function",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.iterutils.unique_iter": {
+            "concept_id": "source.function.iterutils.unique_iter",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_003__unique_iter"
+        ],
+        "spent_proxy": 19.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 81.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [
+          "task_003__unique_iter"
+        ],
+        "remaining": [],
+        "unit_costs": {
+          "task_003__unique_iter": 18.0
+        },
+        "gate": {
+          "python.generator_laziness": {
+            "concept_id": "python.generator_laziness",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.hash_set": {
+            "concept_id": "python.hash_set",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_003-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.key_function": {
+            "concept_id": "python.key_function",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.iterutils.unique_iter": {
+            "concept_id": "source.function.iterutils.unique_iter",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [],
+        "spent_before": 19.0,
+        "alpha": 0,
+        "gamma": 0,
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "missing": [],
+        "total_if_executed": 19.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 0.0,
+          "switch_cost": 0.0,
+          "objective": 0.0,
+          "total_if_executed": 19.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 0,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed",
+        "runtime_version": "A-D07-runtime-v1",
+        "feasible": true,
+        "goal_complete": true,
+        "human_task_success": null,
+        "route_explanations": [
+          {
+            "unit_id": "task_003__unique_iter",
+            "completed": true,
+            "base_proxy_cost": 18,
+            "cost_unit": "proxy_cost",
+            "target_concepts": [
+              "python.generator_laziness",
+              "python.hash_set",
+              "python.key_function",
+              "source.function.iterutils.unique_iter"
+            ],
+            "target_concepts_not_gated": [
+              "python.generator_laziness",
+              "python.hash_set",
+              "python.key_function",
+              "source.function.iterutils.unique_iter"
+            ],
+            "required_by_remaining": [],
+            "reason": "completed coverage retained; no mastery evidence added",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 834,
+                "end_line": 834,
+                "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+              },
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 851,
+                "end_line": 867,
+                "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+              }
+            ],
+            "source_versions": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+              }
+            ]
+          }
+        ]
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "total_if_executed": 19.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

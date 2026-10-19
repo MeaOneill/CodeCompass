@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="720pt" viewBox="0 0 1080 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-19T23:43:01.980974</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1080 720 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 56.592 283.661538 
+L 334.476 283.661538 
+Q 341.172 283.661538 341.172 280.523077 
+L 341.172 191.076923 
+Q 341.172 187.938462 334.476 187.938462 
+L 56.592 187.938462 
+Q 49.896 187.938462 49.896 191.076923 
+L 49.896 280.523077 
+Q 49.896 283.661538 56.592 283.661538 
+z
+" clip-path="url(#pc80bf6e0c4)" style="fill: #e7ecef; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 384.696 283.661538 
+L 662.58 283.661538 
+Q 669.276 283.661538 669.276 280.523077 
+L 669.276 191.076923 
+Q 669.276 187.938462 662.58 187.938462 
+L 384.696 187.938462 
+Q 378 187.938462 378 191.076923 
+L 378 280.523077 
+Q 378 283.661538 384.696 283.661538 
+z
+" clip-path="url(#pc80bf6e0c4)" style="fill: #eff5fa; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 56.592 445.292308 
+L 334.476 445.292308 
+Q 341.172 445.292308 341.172 442.153846 
+L 341.172 352.707692 
+Q 341.172 349.569231 334.476 349.569231 
+L 56.592 349.569231 
+Q 49.896 349.569231 49.896 352.707692 
+L 49.896 442.153846 
+Q 49.896 445.292308 56.592 445.292308 
+z
+" clip-path="url(#pc80bf6e0c4)" style="fill: #e7ecef; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 384.696 445.292308 
+L 662.58 445.292308 
+Q 669.276 445.292308 669.276 442.153846 
+L 669.276 352.707692 
+Q 669.276 349.569231 662.58 349.569231 
+L 384.696 349.569231 
+Q 378 349.569231 378 352.707692 
+L 378 442.153846 
+Q 378 445.292308 384.696 445.292308 
+z
+" clip-path="url(#pc80bf6e0c4)" style="fill: #eff5fa; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 712.8 445.292308 
+L 990.684 445.292308 
+Q 997.38 445.292308 997.38 442.153846 
+L 997.38 352.707692 
+Q 997.38 349.569231 990.684 349.569231 
+L 712.8 349.569231 
+Q 706.104 349.569231 706.104 352.707692 
+L 706.104 442.153846 
+Q 706.104 445.292308 712.8 445.292308 
+z
+" clip-path="url(#pc80bf6e0c4)" style="fill: #eff5fa; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="49.896" y="162.830769" transform="rotate(-0 49.896 162.830769)">反馈前：已支付21，预算余额79，执行余路线后预计累计37</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 215.562356)">已完成保留</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 232.365887)">u_chunked</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 249.243325)">21 proxy_cost</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 266.120762)">iterutils.py:L286–306</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 215.562356)">u_iterable</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 232.439793)">16 proxy_cost</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 249.317231)">iterutils.py:L61–76</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="49.896" y="324.461538" transform="rotate(-0 49.896 324.461538)">失败反馈后：已支付22，预算余额78，执行余路线后预计累计81</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 377.193125)">已完成保留</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 393.996656)">u_chunked</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 410.874094)">21 proxy_cost</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(66.636 427.751531)">iterutils.py:L286–306</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 377.193125)">u_chunked_iter</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 394.070562)">43 proxy_cost</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(394.74 410.948)">iterutils.py:L316–358</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(722.844 377.193125)">u_iterable</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(722.844 394.070562)">16 proxy_cost</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(722.844 410.948)">iterutils.py:L61–76</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei'; text-anchor: start" x="53.244" y="539.446154" transform="rotate(-0 53.244 539.446154)">预算不足注入：同一task_001，临时预算1；冻结正常预算仍为100。</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="53.244" y="579.2" transform="rotate(-0 53.244 579.2)">状态 NO_FEASIBLE_FOUND；未覆盖概念6个；没有签发无解证明或最优证书。</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #8b2424" x="53.244" y="617.907692" transform="rotate(-0 53.244 617.907692)">不把局部路线成本0画成完整路线成本；失败与缺失继续保留。</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 21px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="540" y="38.386875" transform="rotate(-0 540 38.386875)">F09 失败反馈后的剩余修复与预算不足</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="43.2" y="64.8" transform="rotate(-0 43.2 64.8)">真实源码开发案例；每概念6道独立通过历史及本次失败作答均模拟；保持原阈值、成本和搜索参数。</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: start" x="43.2" y="687.6" transform="rotate(-0 43.2 687.6)">测验支付1；新补回u_chunked_iter成本43为未来计划费用，尚未当作已花费用。完成前缀不丢失；切换权重仍为0。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc80bf6e0c4">
+   <rect x="43.2" y="144" width="1004.4" height="313.846154"/>
+  </clipPath>
+ </defs>
+</svg>

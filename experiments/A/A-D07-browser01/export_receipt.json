@@ -1,0 +1,49 @@
+{
+  "commands": [
+    {
+      "name": "B-cli-scope-rejection",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/B/export_d05.py",
+        "--database",
+        "tmp/A-D07-browser.sqlite3",
+        "--output",
+        "experiments/A/A-D07-browser01/export",
+        "--actor",
+        "agent_browser"
+      ],
+      "exit_code": 2,
+      "expected": 2
+    },
+    {
+      "name": "export",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/export_d07_browser.py",
+        "--database",
+        "tmp/A-D07-browser.sqlite3",
+        "--output",
+        "experiments/A/A-D07-browser01/agent_browser/export01"
+      ],
+      "exit_code": 0,
+      "expected": 0
+    },
+    {
+      "name": "audit",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_d05.py",
+        "--source",
+        "experiments/A/A-D07-browser01/agent_browser/export01",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-browser01\\event-audit.json"
+      ],
+      "exit_code": 0,
+      "expected": 0
+    }
+  ],
+  "actor": "agent_browser",
+  "human_n": 0,
+  "real_pretesters": null,
+  "note": "Initial B-only CLI rejected A output; A wrapper preserves role partition and original B restriction. No private DB or response body exported."
+}

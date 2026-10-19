@@ -1,0 +1,22 @@
+{
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "model_id": null,
+  "planned_date": "2026-10-21",
+  "started_at": "2026-10-19T23:30:09.389874+08:00",
+  "finished_at": "2026-10-19T23:30:44.140126+08:00",
+  "base_commit": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "command": [
+    "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+    "scripts/A/run_d07.py",
+    "--run-id",
+    "A-D07-development04"
+  ],
+  "exit_code": 0,
+  "source_version": "exact hashes in input_manifest.json + byte copies",
+  "actual_pretesters": null,
+  "actual_recruitment": null,
+  "new_model_calls": 0,
+  "formal_g2_passed": false
+}

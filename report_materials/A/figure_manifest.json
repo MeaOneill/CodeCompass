@@ -443,6 +443,14 @@
       "manifest": "report_materials/A/A-D06-supplement/figure_manifest.json",
       "human_n": 0,
       "formal_study_ready": false
+    },
+    {
+      "figure_id": "A-D07-F04-F09-UI",
+      "run_id": "A-D07-development05",
+      "manifest": "report_materials/A/A-D07/figure_manifest.json",
+      "kind": "development routes and actual agent_browser UI",
+      "human_n": 0,
+      "formal_study_ready": false
     }
   ],
   "reception_reviews": [

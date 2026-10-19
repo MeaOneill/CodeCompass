@@ -1,0 +1,6 @@
+.grid{grid-template-columns:245px minmax(0,1fr)}
+.grid>*{min-width:0}
+pre{max-width:100%}
+#a07-audit{max-width:1216px;margin:24px auto;padding:24px;background:white;border:1px solid #dbe4e0;border-radius:12px}
+#a07-audit p{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:850px){.grid{grid-template-columns:minmax(0,1fr)}#a07-audit{margin:20px;padding:16px}.bar{flex-wrap:wrap;gap:12px}header{height:auto;min-height:72px;flex-wrap:wrap;gap:8px}}

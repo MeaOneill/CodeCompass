@@ -1,0 +1,54 @@
+{
+  "runtime_version": "A-D07-runtime-v1",
+  "defects": [
+    {
+      "id": "D07-01",
+      "severity": "P1",
+      "status": "FIXED_OPT_IN_RUNTIME",
+      "trigger": "B1 legal empty route does not cover any target",
+      "old": "FEASIBLE/ACTIVE",
+      "new": "ALGORITHM_INCOMPLETE/FAILED",
+      "fix": "runtime_d07.validate_method_result; StableRelayCollector",
+      "evidence": "A-D07-development05/defects/B1_incomplete_route.json",
+      "semantic_retry": false
+    },
+    {
+      "id": "D07-02",
+      "severity": "P1 UI regression introduced here",
+      "status": "FIXED",
+      "trigger": "frontend submission is visible while server phase still feedback",
+      "fix": "a07.js checks local submission visibility and immediately hides panel",
+      "evidence": "A-D07-browser01/submission-before-fix.txt and submission-after-fix.txt"
+    },
+    {
+      "id": "D07-03",
+      "severity": "P2",
+      "status": "FIXED",
+      "trigger": "wrong/missing learner shape, duplicate/cross-user evidence, damaged source",
+      "fix": "safe_remaining returns explicit rejected-input/source/error statuses; no arbitrary exception text",
+      "evidence": "A-D07-development05/faults"
+    },
+    {
+      "id": "D07-04",
+      "severity": "development metadata",
+      "status": "CORRECTED_WITH_HISTORY_PRESERVED",
+      "trigger": "development01 summary manually used fail-branch formula for single-pass lower bound",
+      "fix": "call frozen Beta function and compare with independent closed form; development05 selected",
+      "evidence": "A-D07-development01/ERRATA.md"
+    },
+    {
+      "id": "D07-05",
+      "severity": "protocol limitation",
+      "status": "OPEN_NO_PARAMETER_TUNING",
+      "trigger": "unknown + max one quiz cannot reach frozen gate; all12 force every unit from unknown",
+      "fix": "do not claim feedback/content-selection efficacy; keep all ties; human/pretest and protocol review pending"
+    },
+    {
+      "id": "D07-06",
+      "severity": "human acceptance",
+      "status": "NOT_RUN",
+      "trigger": "two genuine pretesters not confirmed",
+      "fix": "B-D07 organize actual willing pretesters; do not count agent_browser or fixtures as people"
+    }
+  ]
+}

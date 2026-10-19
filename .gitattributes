@@ -88,6 +88,12 @@
 /benchmarks/B/frozen/**/snapshots/** -text whitespace=-blank-at-eol,cr-at-eol
 /report_materials/A/A-D06-supplement/*.svg -text whitespace=-blank-at-eol,cr-at-eol
 
+# A-D07 own source, candidate snapshots and native evidence only.
+/app/A_D07/** text eol=lf
+/configs/frozen/A-D07-runtime-v1/source_snapshot/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/experiments/A/A-D07-*/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/report_materials/A/A-D07/*.svg -text whitespace=-blank-at-eol,cr-at-eol
+
 # D06 v2 producer hashes include these Windows newline bytes.
 /benchmarks/B/executable-v2/registry.sha256 -text whitespace=cr-at-eol
 /report_materials/B/B-D06-v2/*.csv -text whitespace=cr-at-eol

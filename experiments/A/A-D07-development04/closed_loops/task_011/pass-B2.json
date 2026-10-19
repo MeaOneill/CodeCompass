@@ -1,0 +1,833 @@
+{
+  "task_id": "task_011",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "UVZ3G9a6JLKOqpNGPR8_SL7aClStdZWO",
+    "participant": "p_56286ec4e6b275ebc65071b6c965a8c6",
+    "task": {
+      "task_id": "task_011",
+      "title": "整数区间解析与重复保留",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：reverse=parse_int_list('5-3,1')，duplicates=parse_int_list('2,1,2')，formatted=format_int_list([1,2,3,5])，empty=parse_int_list('')。解释排序不等于去重、反向范围取min/max及区间闭端点。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_011__format_int_list"
+    ],
+    "completed": [
+      "task_011__parse_int_list"
+    ],
+    "spent": 20.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_011__format_int_list",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 923,
+          "end_line": 923,
+          "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+        },
+        "text": " 923  def format_int_list(int_list, delim=',', range_delim='-', delim_space=False):"
+      },
+      {
+        "unit_id": "task_011__format_int_list",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 942,
+          "end_line": 1010,
+          "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+        },
+        "text": " 942      output = []\n 943      contig_range = collections.deque()\n 944  \n 945      for x in sorted(int_list):\n 946  \n 947          # Handle current (and first) value.\n 948          if len(contig_range) < 1:\n 949              contig_range.append(x)\n 950  \n 951          # Handle current value, given multiple previous values are contiguous.\n 952          elif len(contig_range) > 1:\n 953              delta = x - contig_range[-1]\n 954  \n 955              # Current value is contiguous.\n 956              if delta == 1:\n 957                  contig_range.append(x)\n 958  \n 959              # Current value is non-contiguous.\n 960              elif delta > 1:\n 961                  range_substr = '{:d}{}{:d}'.format(min(contig_range),\n 962                                                        range_delim,\n 963                                                        max(contig_range))\n 964                  output.append(range_substr)\n 965                  contig_range.clear()\n 966                  contig_range.append(x)\n 967  \n 968              # Current value repeated.\n 969              else:\n 970                  continue\n 971  \n 972          # Handle current value, given no previous contiguous integers\n 973          else:\n 974              delta = x - contig_range[0]\n 975  \n 976              # Current value is contiguous.\n 977              if delta == 1:\n 978                  contig_range.append(x)\n 979  \n 980              # Current value is non-contiguous.\n 981              elif delta > 1:\n 982                  output.append(f'{contig_range.popleft():d}')\n 983                  contig_range.append(x)\n 984  \n 985              # Current value repeated.\n 986              else:\n 987                  continue\n 988  \n 989      # Handle the last value.\n 990      else:\n 991  \n 992          # Last value is non-contiguous.\n 993          if len(contig_range) == 1:\n 994              output.append(f'{contig_range.popleft():d}')\n 995              contig_range.clear()\n 996  \n 997          # Last value is part of contiguous range.\n 998          elif len(contig_range) > 1:\n 999              range_substr = '{:d}{}{:d}'.format(min(contig_range),\n1000                                                    range_delim,\n1001                                                    max(contig_range))\n1002              output.append(range_substr)\n1003              contig_range.clear()\n1004  \n1005      if delim_space:\n1006          output_str = (delim+' ').join(output)\n1007      else:\n1008          output_str = delim.join(output)\n1009  \n1010      return output_str"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "collections"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 39,
+          "end_line": 39,
+          "content_hash": "69efa92a979aa6a964237c809beb09a7f6ba63803fc85781a1e712268334023e"
+        },
+        "text": "import collections"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.range_closed",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_011-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_011__format_int_list"
+      ],
+      "after_route": [
+        "task_011__format_int_list"
+      ]
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_011__parse_int_list",
+        "completed": true,
+        "base_proxy_cost": 19,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.branch_parse",
+          "python.range_closed",
+          "source.function.strutils.parse_int_list"
+        ],
+        "target_concepts_not_gated": [
+          "python.branch_parse",
+          "python.range_closed",
+          "source.function.strutils.parse_int_list"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 886,
+            "end_line": 886,
+            "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 903,
+            "end_line": 920,
+            "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_011__format_int_list",
+        "completed": false,
+        "base_proxy_cost": 70,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.sorting_duplicates",
+          "source.function.strutils.format_int_list"
+        ],
+        "target_concepts_not_gated": [
+          "python.sorting_duplicates",
+          "source.function.strutils.format_int_list"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 923,
+            "end_line": 923,
+            "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 942,
+            "end_line": 1010,
+            "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_011__parse_int_list",
+        "task_011__format_int_list"
+      ],
+      "cost": 89.0,
+      "context": {
+        "task": {
+          "task_id": "task_011",
+          "title": "整数区间解析与重复保留",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：reverse=parse_int_list('5-3,1')，duplicates=parse_int_list('2,1,2')，formatted=format_int_list([1,2,3,5])，empty=parse_int_list('')。解释排序不等于去重、反向范围取min/max及区间闭端点。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.range_closed",
+          "python.sorting_duplicates",
+          "python.branch_parse",
+          "source.function.strutils.parse_int_list",
+          "source.function.strutils.format_int_list"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_011__parse_int_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 886,
+                "end_line": 886,
+                "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 903,
+                "end_line": 920,
+                "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.parse_int_list",
+              "python.range_closed",
+              "python.branch_parse"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L886"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 19,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_011__format_int_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 923,
+                "end_line": 923,
+                "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 942,
+                "end_line": 1010,
+                "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.format_int_list",
+              "python.sorting_duplicates"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L923"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 70,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_011__parse_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 886,
+              "end_line": 886,
+              "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+            },
+            "text": " 886  def parse_int_list(range_string, delim=',', range_delim='-'):"
+          },
+          {
+            "unit_id": "task_011__parse_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 903,
+              "end_line": 920,
+              "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+            },
+            "text": " 903      output = []\n 904  \n 905      for x in range_string.strip().split(delim):\n 906  \n 907          # Range\n 908          if range_delim in x:\n 909              range_limits = list(map(int, x.split(range_delim)))\n 910              output += list(range(min(range_limits), max(range_limits)+1))\n 911  \n 912          # Empty String\n 913          elif not x:\n 914              continue\n 915  \n 916          # Integer\n 917          else:\n 918              output.append(int(x))\n 919  \n 920      return sorted(output)"
+          },
+          {
+            "unit_id": "task_011__format_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 923,
+              "end_line": 923,
+              "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+            },
+            "text": " 923  def format_int_list(int_list, delim=',', range_delim='-', delim_space=False):"
+          },
+          {
+            "unit_id": "task_011__format_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 942,
+              "end_line": 1010,
+              "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+            },
+            "text": " 942      output = []\n 943      contig_range = collections.deque()\n 944  \n 945      for x in sorted(int_list):\n 946  \n 947          # Handle current (and first) value.\n 948          if len(contig_range) < 1:\n 949              contig_range.append(x)\n 950  \n 951          # Handle current value, given multiple previous values are contiguous.\n 952          elif len(contig_range) > 1:\n 953              delta = x - contig_range[-1]\n 954  \n 955              # Current value is contiguous.\n 956              if delta == 1:\n 957                  contig_range.append(x)\n 958  \n 959              # Current value is non-contiguous.\n 960              elif delta > 1:\n 961                  range_substr = '{:d}{}{:d}'.format(min(contig_range),\n 962                                                        range_delim,\n 963                                                        max(contig_range))\n 964                  output.append(range_substr)\n 965                  contig_range.clear()\n 966                  contig_range.append(x)\n 967  \n 968              # Current value repeated.\n 969              else:\n 970                  continue\n 971  \n 972          # Handle current value, given no previous contiguous integers\n 973          else:\n 974              delta = x - contig_range[0]\n 975  \n 976              # Current value is contiguous.\n 977              if delta == 1:\n 978                  contig_range.append(x)\n 979  \n 980              # Current value is non-contiguous.\n 981              elif delta > 1:\n 982                  output.append(f'{contig_range.popleft():d}')\n 983                  contig_range.append(x)\n 984  \n 985              # Current value repeated.\n 986              else:\n 987                  continue\n 988  \n 989      # Handle the last value.\n 990      else:\n 991  \n 992          # Last value is non-contiguous.\n 993          if len(contig_range) == 1:\n 994              output.append(f'{contig_range.popleft():d}')\n 995              contig_range.clear()\n 996  \n 997          # Last value is part of contiguous range.\n 998          elif len(contig_range) > 1:\n 999              range_substr = '{:d}{}{:d}'.format(min(contig_range),\n1000                                                    range_delim,\n1001                                                    max(contig_range))\n1002              output.append(range_substr)\n1003              contig_range.clear()\n1004  \n1005      if delim_space:\n1006          output_str = (delim+' ').join(output)\n1007      else:\n1008          output_str = delim.join(output)\n1009  \n1010      return output_str"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "collections"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 39,
+              "end_line": 39,
+              "content_hash": "69efa92a979aa6a964237c809beb09a7f6ba63803fc85781a1e712268334023e"
+            },
+            "text": "import collections"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.branch_parse": {
+            "concept_id": "python.branch_parse",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.range_closed": {
+            "concept_id": "python.range_closed",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.sorting_duplicates": {
+            "concept_id": "python.sorting_duplicates",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.format_int_list": {
+            "concept_id": "source.function.strutils.format_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.parse_int_list": {
+            "concept_id": "source.function.strutils.parse_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_011__parse_int_list",
+          "task_011__format_int_list"
+        ],
+        "cost": 89.0,
+        "gate": {
+          "python.branch_parse": {
+            "concept_id": "python.branch_parse",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.range_closed": {
+            "concept_id": "python.range_closed",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.sorting_duplicates": {
+            "concept_id": "python.sorting_duplicates",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.format_int_list": {
+            "concept_id": "source.function.strutils.format_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.parse_int_list": {
+            "concept_id": "source.function.strutils.parse_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 89.0,
+          "switch_cost": 0.0,
+          "objective": 89.0,
+          "total_if_executed": 89.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_011__format_int_list",
+              "bundle": [
+                "task_011__format_int_list"
+              ],
+              "incremental": 70
+            },
+            {
+              "root": "task_011__parse_int_list",
+              "bundle": [
+                "task_011__parse_int_list"
+              ],
+              "incremental": 19
+            }
+          ],
+          [
+            {
+              "root": "task_011__format_int_list",
+              "bundle": [
+                "task_011__format_int_list"
+              ],
+              "incremental": 70
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 89.0,
+        "switch_cost": 0.0,
+        "objective": 89.0,
+        "total_if_executed": 89.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_011__format_int_list"
+      ],
+      "cost": 70.0,
+      "context": {
+        "task": {
+          "task_id": "task_011",
+          "title": "整数区间解析与重复保留",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：reverse=parse_int_list('5-3,1')，duplicates=parse_int_list('2,1,2')，formatted=format_int_list([1,2,3,5])，empty=parse_int_list('')。解释排序不等于去重、反向范围取min/max及区间闭端点。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.range_closed",
+          "python.sorting_duplicates",
+          "python.branch_parse",
+          "source.function.strutils.parse_int_list",
+          "source.function.strutils.format_int_list"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_011__parse_int_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 886,
+                "end_line": 886,
+                "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 903,
+                "end_line": 920,
+                "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.parse_int_list",
+              "python.range_closed",
+              "python.branch_parse"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L886"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 19,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_011__format_int_list",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 923,
+                "end_line": 923,
+                "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 942,
+                "end_line": 1010,
+                "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.format_int_list",
+              "python.sorting_duplicates"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L923"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 70,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_011__parse_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 886,
+              "end_line": 886,
+              "content_hash": "62674aca5ebbed7e3b544f75f1ae68ee43fcfda632f8ebf250cfb1b892674495"
+            },
+            "text": " 886  def parse_int_list(range_string, delim=',', range_delim='-'):"
+          },
+          {
+            "unit_id": "task_011__parse_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 903,
+              "end_line": 920,
+              "content_hash": "8ba35f276edd256240c37d496f5631e60af9d8465ec89e90dab3ef040d9f419a"
+            },
+            "text": " 903      output = []\n 904  \n 905      for x in range_string.strip().split(delim):\n 906  \n 907          # Range\n 908          if range_delim in x:\n 909              range_limits = list(map(int, x.split(range_delim)))\n 910              output += list(range(min(range_limits), max(range_limits)+1))\n 911  \n 912          # Empty String\n 913          elif not x:\n 914              continue\n 915  \n 916          # Integer\n 917          else:\n 918              output.append(int(x))\n 919  \n 920      return sorted(output)"
+          },
+          {
+            "unit_id": "task_011__format_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 923,
+              "end_line": 923,
+              "content_hash": "0ef70126fd6a2f3d13bead21994d268a6c72af044f093622e8db703ccec713a8"
+            },
+            "text": " 923  def format_int_list(int_list, delim=',', range_delim='-', delim_space=False):"
+          },
+          {
+            "unit_id": "task_011__format_int_list",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 942,
+              "end_line": 1010,
+              "content_hash": "39444ebf15b76d37418309f3103063b95782e4f80c7c409d6840e8eb118a1e4b"
+            },
+            "text": " 942      output = []\n 943      contig_range = collections.deque()\n 944  \n 945      for x in sorted(int_list):\n 946  \n 947          # Handle current (and first) value.\n 948          if len(contig_range) < 1:\n 949              contig_range.append(x)\n 950  \n 951          # Handle current value, given multiple previous values are contiguous.\n 952          elif len(contig_range) > 1:\n 953              delta = x - contig_range[-1]\n 954  \n 955              # Current value is contiguous.\n 956              if delta == 1:\n 957                  contig_range.append(x)\n 958  \n 959              # Current value is non-contiguous.\n 960              elif delta > 1:\n 961                  range_substr = '{:d}{}{:d}'.format(min(contig_range),\n 962                                                        range_delim,\n 963                                                        max(contig_range))\n 964                  output.append(range_substr)\n 965                  contig_range.clear()\n 966                  contig_range.append(x)\n 967  \n 968              # Current value repeated.\n 969              else:\n 970                  continue\n 971  \n 972          # Handle current value, given no previous contiguous integers\n 973          else:\n 974              delta = x - contig_range[0]\n 975  \n 976              # Current value is contiguous.\n 977              if delta == 1:\n 978                  contig_range.append(x)\n 979  \n 980              # Current value is non-contiguous.\n 981              elif delta > 1:\n 982                  output.append(f'{contig_range.popleft():d}')\n 983                  contig_range.append(x)\n 984  \n 985              # Current value repeated.\n 986              else:\n 987                  continue\n 988  \n 989      # Handle the last value.\n 990      else:\n 991  \n 992          # Last value is non-contiguous.\n 993          if len(contig_range) == 1:\n 994              output.append(f'{contig_range.popleft():d}')\n 995              contig_range.clear()\n 996  \n 997          # Last value is part of contiguous range.\n 998          elif len(contig_range) > 1:\n 999              range_substr = '{:d}{}{:d}'.format(min(contig_range),\n1000                                                    range_delim,\n1001                                                    max(contig_range))\n1002              output.append(range_substr)\n1003              contig_range.clear()\n1004  \n1005      if delim_space:\n1006          output_str = (delim+' ').join(output)\n1007      else:\n1008          output_str = delim.join(output)\n1009  \n1010      return output_str"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "collections"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 39,
+              "end_line": 39,
+              "content_hash": "69efa92a979aa6a964237c809beb09a7f6ba63803fc85781a1e712268334023e"
+            },
+            "text": "import collections"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.range_closed",
+            "item_id": "B06-parallel-task_011-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.branch_parse": {
+            "concept_id": "python.branch_parse",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.range_closed": {
+            "concept_id": "python.range_closed",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_011-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.sorting_duplicates": {
+            "concept_id": "python.sorting_duplicates",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.format_int_list": {
+            "concept_id": "source.function.strutils.format_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.parse_int_list": {
+            "concept_id": "source.function.strutils.parse_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_011__parse_int_list"
+        ],
+        "spent_proxy": 20.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 80.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_011__format_int_list"
+        ],
+        "cost": 70.0,
+        "gate": {
+          "python.branch_parse": {
+            "concept_id": "python.branch_parse",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.range_closed": {
+            "concept_id": "python.range_closed",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_011-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.sorting_duplicates": {
+            "concept_id": "python.sorting_duplicates",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.format_int_list": {
+            "concept_id": "source.function.strutils.format_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.parse_int_list": {
+            "concept_id": "source.function.strutils.parse_int_list",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 70.0,
+          "switch_cost": 0.0,
+          "objective": 70.0,
+          "total_if_executed": 90.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_011__format_int_list",
+              "bundle": [
+                "task_011__format_int_list"
+              ],
+              "incremental": 70
+            }
+          ]
+        ],
+        "completed": [
+          "task_011__parse_int_list"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 70.0,
+        "switch_cost": 0.0,
+        "objective": 70.0,
+        "total_if_executed": 90.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

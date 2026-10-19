@@ -1,0 +1,7 @@
+Browser tab: 1, Title: "CodeCompass · 完整任务联调", URL: "http://127.0.0.1:8771/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 38
++				54 text 03:00
+~							46 text entry area (settable) outputs（各字段填写JSON值或普通文本）, Value: {}, ID: outputs
+~							52 text entry area (settable) 机制解释, Value: agent_browser界面回归测试；此内容不是任务解答，不计真人样本。, ID: explanation
+The focused UI element is 52 text entry area (settable) 机制解释, Value: agent_browser界面回归测试；此内容不是任务解答，不计真人样本。, ID: explanation

@@ -19,3 +19,7 @@
 configs/frozen/freeze_manifest.json登记109文件与逐字节副本，版本v0.1-candidate；q=.1/τ=.7/W16/预算100/α=γ=0/seed0/生产VOI禁用。只有公开开发数据；正式终测hash与评分器hash=null，协议缺口见ADR-006-G2。未合main/未获双方批准，不创建v0.1-protocol-freeze。冻结后改算法/协议必须新版本及受影响run，不覆盖候选。
 
 A-D06补充：v0.1-candidate.1-supplement保存均值门控/初始B2对照新源码和60结果hash；原v0.1-candidate保持原字节。参数/生产方法未改，旧run保留；联合G2与正式标签仍未放行。
+
+## A-D07运行边界候选
+
+configs/frozen/A-D07-runtime-v1/manifest.json保存15源文件/副本与13父文件hash保护；parent B-D06-v0.2-candidate/c84e833。参数和旧冻结文件不变。新增完整目标接收、明确错误、runtime事件版本和同类路线依据显示/独立提交隐藏。正式G2/标签=false、人数未知，非正式冻结；新正式数据须先批准此版本，不能直接走旧B入口。

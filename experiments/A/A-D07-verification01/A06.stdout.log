@@ -1,0 +1,1 @@
+{"passed": true, "checked_results": 60, "replay_checks": 420, "parent_candidate_files": 109, "b2_scope": "initial only; not dynamic feedback comparison", "joint_g2_passed": false, "formal_test_allowed": false, "freeze_tag_allowed": false, "test_answers_used": false}

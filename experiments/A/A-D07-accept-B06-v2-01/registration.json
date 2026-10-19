@@ -1,0 +1,67 @@
+{
+  "task": "A-D07",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "model_id": null,
+  "planned_date": "2026-10-21",
+  "actual_date": "2026-10-19",
+  "started_at": "2026-10-19T23:08:05.089879+08:00",
+  "finished_at": "2026-10-19T23:09:40.824896+08:00",
+  "base": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "branch": "codex/A-D07-smoke",
+  "kind": "same-machine isolated A worktree; no private final answers read or copied",
+  "commands": [
+    {
+      "name": "pip",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.622265399986645
+    },
+    {
+      "name": "B06-v2",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/B/audit_relay_v2.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-accept-B06-v2-01\\B06-v2-audit.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.3606602999789175
+    },
+    {
+      "name": "A06",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d06_gate_control.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-accept-B06-v2-01\\A06-audit.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.694668600015575
+    },
+    {
+      "name": "tests",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-accept-pytest"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 83.90118099999381
+    }
+  ],
+  "passed": true,
+  "new_model_calls": 0,
+  "actual_recruitment": null,
+  "actual_pretesters": null,
+  "human_review": "NOT_REVIEWED",
+  "formal_g2_passed": false
+}

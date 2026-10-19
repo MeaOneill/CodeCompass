@@ -1,0 +1,866 @@
+[
+  {
+    "participant": "0a9d55f5402d5ce2195ff8da",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "0bd7c3a2277beabfb16f3850",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "0c03e94c79ecc5d07e7a40a0",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "0c909f71647eea96afc54648",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "125c1f5267dd1291a679456d",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "15d4c50ec2abec1d521eb399",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "18c4f6ba5bfcbe73f9e49848",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "1bbddfbec713321cb0a31057",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "229568035c15c8b18173c561",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "238a046ceaa2afdfbb29165f",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "24c0acc9c8873a7871d08dfa",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "2547be5b94c06afe49b11c77",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "29c6f86792cee8b644d1320e",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "29d19cdae979a0acec37dc97",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "2d54113d698103487b976d96",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "2d9d8a67654e99a651d63fef",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "2e90d1aa29f4830f17bcfeb3",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "33f2b1a4f075f0e43ad968dc",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "35194d0ed6f1967ee9e39381",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "36436dd73aa21dfdda2dc1ff",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "3e2d980a78c0d9355d5a9566",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "43d795a53624481c1d86de7c",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "44fbc07b898979026a42b5eb",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "4a00c7c6a128bc2448dbf3b6",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "4a80c2e0d70ba7c1c21cd622",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "4a9c51b877b1a68b84169af0",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "517e405f5388326ee66a13fb",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "572e8c8afabb8f0a2ab59b42",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "58da21799fd04332a089afc9",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "5c1c0cd1a7112a87bfdbbe26",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "661e4f761fe2fcce34a223ec",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "67638d7cd51f4496198e398f",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "6c247875de0cd939f76c6ef3",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "743c8d45c28cfd47ca96a607",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "791591552e46a0f454d010cf",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "7a727d7affefa7d426da6f86",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "7f4fa18190a0ffa1803d454a",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "7fd67774864f938d9f9be893",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "828e84bd77000af8d381776b",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "89fe131661a84db0fe8f520d",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "8c711ee95e446d6845541ff0",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "90de3f16bfddd6c2c61c703e",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "92eb7bfb14489f49455c5044",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "94a886d48f673ed12e3a4450",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "9fc8b106acd8131e16d650e5",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "a092d365bac66258e1b84ddb",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "a1a10df258ec53b2e92b2c98",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "aa74592c17502ba8df2cd199",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "ac6a2a9893c73d55dbd09f30",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "b37ffa9597c26a93ef3ae395",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "b3e2ce8c107145a991bd1fe9",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "b4cc4683a41eb559424e2c68",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "b72689133b1edf6ba5847696",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "b8c9c7012540179698808aec",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "bac1f9b135ded53c4f4eb934",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "bcb58ec8946634aae93d5fad",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "c25e3405a2a0e3cd7495a9ae",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "c27885d27eaf1445477102b2",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "c78cd082140caeeaa9034954",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "cb928f9cf6149f089d04a493",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "cd022fb72a576f6dc083aecb",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "d25a895e7017a17bbfbfe3bf",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "debca0b757d89c0570578e42",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "dfbc99b7f9eac9a65d60e305",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "e25751362fbea55ffe78a558",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "e61b874e9a2a2326f635c29d",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "e884dc38eda62563cd827e3c",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "efdb698d38d28745a1fd8937",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "f0a12d372691b68c6bb15a8e",
+    "sessions": 1,
+    "methods": [
+      "B1"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "fa287e6bd3028e1bd82097e1",
+    "sessions": 1,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "fd43d56ac818e2d71ed013b6",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "fec4ce1070113ebd3f661d14",
+    "sessions": 1,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 1,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  }
+]

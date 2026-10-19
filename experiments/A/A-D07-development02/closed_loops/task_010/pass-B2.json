@@ -1,0 +1,833 @@
+{
+  "task_id": "task_010",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "O8Ch0PgYYEe8D16g__Q-lqrq153dauC_",
+    "participant": "p_d68eddbaaf94c55652e5d0adebdbd3c8",
+    "task": {
+      "task_id": "task_010",
+      "title": "换行尾空行与缩进调试",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：lines=list(iter_splitlines('a\\r\\nb\\n'))，empty=list(iter_splitlines(''))，indented=indent('a\\n\\nb\\n','> ')。输入中的转义为真实换行。解释末尾空行和key=bool如何影响空行缩进及连接符。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_010__iter_splitlines"
+    ],
+    "completed": [
+      "task_010__indent"
+    ],
+    "spent": 5.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_010__iter_splitlines",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 672,
+          "end_line": 672,
+          "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+        },
+        "text": " 672  def iter_splitlines(text):"
+      },
+      {
+        "unit_id": "task_010__iter_splitlines",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 687,
+          "end_line": 701,
+          "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+        },
+        "text": " 687      prev_end, len_text = 0, len(text)\n 688      # print('last: %r' % last_idx)\n 689      # start, end = None, None\n 690      for match in _line_ending_re.finditer(text):\n 691          start, end = match.start(1), match.end(1)\n 692          # print(start, end)\n 693          if prev_end <= start:\n 694              yield text[prev_end:start]\n 695          if end == len_text:\n 696              yield ''\n 697          prev_end = end\n 698      tail = text[prev_end:]\n 699      if tail:\n 700          yield tail\n 701      return"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "_line_ending_re"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 668,
+          "end_line": 669,
+          "content_hash": "8d2a7896d6c3efc4c96abb2329cfac9432a7a57fcdb955ad1c5c7df425ded94b"
+        },
+        "text": "_line_ending_re = re.compile(r'(\\r\\n|\\n|\\x0b|\\f|\\r|\\x85|\\u2028|\\u2029)',\n                             re.UNICODE)"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.regex_group",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_010-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_010__iter_splitlines"
+      ],
+      "after_route": [
+        "task_010__iter_splitlines"
+      ]
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_010__indent",
+        "completed": true,
+        "base_proxy_cost": 4,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.generator_boundary",
+          "source.function.strutils.indent"
+        ],
+        "target_concepts_not_gated": [
+          "python.generator_boundary",
+          "source.function.strutils.indent"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 704,
+            "end_line": 704,
+            "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 715,
+            "end_line": 717,
+            "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_010__iter_splitlines",
+        "completed": false,
+        "base_proxy_cost": 16,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.predicate",
+          "python.regex_group",
+          "source.function.strutils.iter_splitlines"
+        ],
+        "target_concepts_not_gated": [
+          "python.predicate",
+          "python.regex_group",
+          "source.function.strutils.iter_splitlines"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 672,
+            "end_line": 672,
+            "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 687,
+            "end_line": 701,
+            "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_010__indent",
+        "task_010__iter_splitlines"
+      ],
+      "cost": 20.0,
+      "context": {
+        "task": {
+          "task_id": "task_010",
+          "title": "换行尾空行与缩进调试",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：lines=list(iter_splitlines('a\\r\\nb\\n'))，empty=list(iter_splitlines(''))，indented=indent('a\\n\\nb\\n','> ')。输入中的转义为真实换行。解释末尾空行和key=bool如何影响空行缩进及连接符。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_group",
+          "python.generator_boundary",
+          "python.predicate",
+          "source.function.strutils.iter_splitlines",
+          "source.function.strutils.indent"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_010__iter_splitlines",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 672,
+                "end_line": 672,
+                "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 687,
+                "end_line": 701,
+                "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.iter_splitlines",
+              "python.regex_group",
+              "python.predicate"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L672"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 16,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_010__indent",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 704,
+                "end_line": 704,
+                "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 715,
+                "end_line": 717,
+                "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.indent",
+              "python.generator_boundary"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L704"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 4,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_010__iter_splitlines",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 672,
+              "end_line": 672,
+              "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+            },
+            "text": " 672  def iter_splitlines(text):"
+          },
+          {
+            "unit_id": "task_010__iter_splitlines",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 687,
+              "end_line": 701,
+              "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+            },
+            "text": " 687      prev_end, len_text = 0, len(text)\n 688      # print('last: %r' % last_idx)\n 689      # start, end = None, None\n 690      for match in _line_ending_re.finditer(text):\n 691          start, end = match.start(1), match.end(1)\n 692          # print(start, end)\n 693          if prev_end <= start:\n 694              yield text[prev_end:start]\n 695          if end == len_text:\n 696              yield ''\n 697          prev_end = end\n 698      tail = text[prev_end:]\n 699      if tail:\n 700          yield tail\n 701      return"
+          },
+          {
+            "unit_id": "task_010__indent",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 704,
+              "end_line": 704,
+              "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+            },
+            "text": " 704  def indent(text, margin, newline='\\n', key=bool):"
+          },
+          {
+            "unit_id": "task_010__indent",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 715,
+              "end_line": 717,
+              "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+            },
+            "text": " 715      indented_lines = [(margin + line if key(line) else line)\n 716                        for line in iter_splitlines(text)]\n 717      return newline.join(indented_lines)"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "_line_ending_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 668,
+              "end_line": 669,
+              "content_hash": "8d2a7896d6c3efc4c96abb2329cfac9432a7a57fcdb955ad1c5c7df425ded94b"
+            },
+            "text": "_line_ending_re = re.compile(r'(\\r\\n|\\n|\\x0b|\\f|\\r|\\x85|\\u2028|\\u2029)',\n                             re.UNICODE)"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.generator_boundary": {
+            "concept_id": "python.generator_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.predicate": {
+            "concept_id": "python.predicate",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_group": {
+            "concept_id": "python.regex_group",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.indent": {
+            "concept_id": "source.function.strutils.indent",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.iter_splitlines": {
+            "concept_id": "source.function.strutils.iter_splitlines",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_010__indent",
+          "task_010__iter_splitlines"
+        ],
+        "cost": 20.0,
+        "gate": {
+          "python.generator_boundary": {
+            "concept_id": "python.generator_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.predicate": {
+            "concept_id": "python.predicate",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_group": {
+            "concept_id": "python.regex_group",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.indent": {
+            "concept_id": "source.function.strutils.indent",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.iter_splitlines": {
+            "concept_id": "source.function.strutils.iter_splitlines",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 20.0,
+          "switch_cost": 0.0,
+          "objective": 20.0,
+          "total_if_executed": 20.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_010__indent",
+              "bundle": [
+                "task_010__indent"
+              ],
+              "incremental": 4
+            },
+            {
+              "root": "task_010__iter_splitlines",
+              "bundle": [
+                "task_010__iter_splitlines"
+              ],
+              "incremental": 16
+            }
+          ],
+          [
+            {
+              "root": "task_010__iter_splitlines",
+              "bundle": [
+                "task_010__iter_splitlines"
+              ],
+              "incremental": 16
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 20.0,
+        "switch_cost": 0.0,
+        "objective": 20.0,
+        "total_if_executed": 20.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_010__iter_splitlines"
+      ],
+      "cost": 16.0,
+      "context": {
+        "task": {
+          "task_id": "task_010",
+          "title": "换行尾空行与缩进调试",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：lines=list(iter_splitlines('a\\r\\nb\\n'))，empty=list(iter_splitlines(''))，indented=indent('a\\n\\nb\\n','> ')。输入中的转义为真实换行。解释末尾空行和key=bool如何影响空行缩进及连接符。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_group",
+          "python.generator_boundary",
+          "python.predicate",
+          "source.function.strutils.iter_splitlines",
+          "source.function.strutils.indent"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_010__iter_splitlines",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 672,
+                "end_line": 672,
+                "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 687,
+                "end_line": 701,
+                "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.iter_splitlines",
+              "python.regex_group",
+              "python.predicate"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L672"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 16,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_010__indent",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 704,
+                "end_line": 704,
+                "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 715,
+                "end_line": 717,
+                "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.indent",
+              "python.generator_boundary"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L704"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 4,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_010__iter_splitlines",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 672,
+              "end_line": 672,
+              "content_hash": "048cf276e73c30f9b3ffb9182fbcee223d559f62085e6a7c7a13e6cd68a82110"
+            },
+            "text": " 672  def iter_splitlines(text):"
+          },
+          {
+            "unit_id": "task_010__iter_splitlines",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 687,
+              "end_line": 701,
+              "content_hash": "61913a4b8fe60f0226e2c054da1173e1358ff7a322297aa6f38b06aa19a7ecb4"
+            },
+            "text": " 687      prev_end, len_text = 0, len(text)\n 688      # print('last: %r' % last_idx)\n 689      # start, end = None, None\n 690      for match in _line_ending_re.finditer(text):\n 691          start, end = match.start(1), match.end(1)\n 692          # print(start, end)\n 693          if prev_end <= start:\n 694              yield text[prev_end:start]\n 695          if end == len_text:\n 696              yield ''\n 697          prev_end = end\n 698      tail = text[prev_end:]\n 699      if tail:\n 700          yield tail\n 701      return"
+          },
+          {
+            "unit_id": "task_010__indent",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 704,
+              "end_line": 704,
+              "content_hash": "cb40e0abaa4699e0832f4f2ff4899d1eac87a60f319e13b91be468507012a912"
+            },
+            "text": " 704  def indent(text, margin, newline='\\n', key=bool):"
+          },
+          {
+            "unit_id": "task_010__indent",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 715,
+              "end_line": 717,
+              "content_hash": "d2eee9bbfc82d93f28627363137d72c70974fc036f91db71f3afdaf16586aa37"
+            },
+            "text": " 715      indented_lines = [(margin + line if key(line) else line)\n 716                        for line in iter_splitlines(text)]\n 717      return newline.join(indented_lines)"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "_line_ending_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 668,
+              "end_line": 669,
+              "content_hash": "8d2a7896d6c3efc4c96abb2329cfac9432a7a57fcdb955ad1c5c7df425ded94b"
+            },
+            "text": "_line_ending_re = re.compile(r'(\\r\\n|\\n|\\x0b|\\f|\\r|\\x85|\\u2028|\\u2029)',\n                             re.UNICODE)"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.regex_group",
+            "item_id": "B06-parallel-task_010-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.generator_boundary": {
+            "concept_id": "python.generator_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.predicate": {
+            "concept_id": "python.predicate",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_group": {
+            "concept_id": "python.regex_group",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_010-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.indent": {
+            "concept_id": "source.function.strutils.indent",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.iter_splitlines": {
+            "concept_id": "source.function.strutils.iter_splitlines",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_010__indent"
+        ],
+        "spent_proxy": 5.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 95.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_010__iter_splitlines"
+        ],
+        "cost": 16.0,
+        "gate": {
+          "python.generator_boundary": {
+            "concept_id": "python.generator_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.predicate": {
+            "concept_id": "python.predicate",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_group": {
+            "concept_id": "python.regex_group",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_010-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.indent": {
+            "concept_id": "source.function.strutils.indent",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.iter_splitlines": {
+            "concept_id": "source.function.strutils.iter_splitlines",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 16.0,
+          "switch_cost": 0.0,
+          "objective": 16.0,
+          "total_if_executed": 21.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_010__iter_splitlines",
+              "bundle": [
+                "task_010__iter_splitlines"
+              ],
+              "incremental": 16
+            }
+          ]
+        ],
+        "completed": [
+          "task_010__indent"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 16.0,
+        "switch_cost": 0.0,
+        "objective": 16.0,
+        "total_if_executed": 21.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

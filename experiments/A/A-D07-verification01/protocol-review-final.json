@@ -1,0 +1,291 @@
+{
+  "role": "A technical cross-review of B candidate; not human signature",
+  "tasks": [
+    {
+      "task_id": "task_001",
+      "split": "dev",
+      "unit_count": 3,
+      "total_source_proxy_cost": 80,
+      "target_count": 6,
+      "explicit_function_goals": [],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": "Inherited A units: no explicit source.function goals despite generic policy string"
+    },
+    {
+      "task_id": "task_002",
+      "split": "dev",
+      "unit_count": 3,
+      "total_source_proxy_cost": 60,
+      "target_count": 4,
+      "explicit_function_goals": [],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": "Inherited A units: no explicit source.function goals despite generic policy string"
+    },
+    {
+      "task_id": "task_003",
+      "split": "dev",
+      "unit_count": 1,
+      "total_source_proxy_cost": 18,
+      "target_count": 4,
+      "explicit_function_goals": [
+        "source.function.iterutils.unique_iter"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_004",
+      "split": "dev",
+      "unit_count": 1,
+      "total_source_proxy_cost": 26,
+      "target_count": 4,
+      "explicit_function_goals": [
+        "source.function.iterutils.get_path"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_005",
+      "split": "test_candidate",
+      "unit_count": 2,
+      "total_source_proxy_cost": 4,
+      "target_count": 4,
+      "explicit_function_goals": [
+        "source.function.strutils.camel2under",
+        "source.function.strutils.under2camel"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_006",
+      "split": "test_candidate",
+      "unit_count": 3,
+      "total_source_proxy_cost": 24,
+      "target_count": 6,
+      "explicit_function_goals": [
+        "source.function.strutils.asciify",
+        "source.function.strutils.slugify",
+        "source.function.strutils.split_punct_ws"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_007",
+      "split": "test_candidate",
+      "unit_count": 1,
+      "total_source_proxy_cost": 17,
+      "target_count": 3,
+      "explicit_function_goals": [
+        "source.function.strutils.ordinalize"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_008",
+      "split": "test_candidate",
+      "unit_count": 1,
+      "total_source_proxy_cost": 14,
+      "target_count": 3,
+      "explicit_function_goals": [
+        "source.function.strutils.strip_ansi"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_009",
+      "split": "test_candidate",
+      "unit_count": 2,
+      "total_source_proxy_cost": 8,
+      "target_count": 4,
+      "explicit_function_goals": [
+        "source.function.strutils.gunzip_bytes",
+        "source.function.strutils.gzip_bytes"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_010",
+      "split": "test_candidate",
+      "unit_count": 2,
+      "total_source_proxy_cost": 20,
+      "target_count": 5,
+      "explicit_function_goals": [
+        "source.function.strutils.indent",
+        "source.function.strutils.iter_splitlines"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_011",
+      "split": "test_candidate",
+      "unit_count": 2,
+      "total_source_proxy_cost": 89,
+      "target_count": 5,
+      "explicit_function_goals": [
+        "source.function.strutils.format_int_list",
+        "source.function.strutils.parse_int_list"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    },
+    {
+      "task_id": "task_012",
+      "split": "test_candidate",
+      "unit_count": 2,
+      "total_source_proxy_cost": 18,
+      "target_count": 4,
+      "explicit_function_goals": [
+        "source.function.strutils.human_readable_list",
+        "source.function.strutils.removeprefix"
+      ],
+      "all_units_forced_from_unknown": true,
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+      "declared_license": "BSD-3-Clause",
+      "source_spans_validated": true,
+      "technical_review": "PASS_SOURCE_AND_CONTRACT_ONLY",
+      "human_task_approval": "NOT_REVIEWED",
+      "policy_text_exception": null
+    }
+  ],
+  "source_tasks": 12,
+  "dev_tasks": 4,
+  "single_unit_tasks": 4,
+  "forced_all_units_tasks": 12,
+  "historical_live_route_replay": [
+    {
+      "method": "Ours",
+      "stage": 0,
+      "valid": true,
+      "goal_complete": true
+    },
+    {
+      "method": "Ours",
+      "stage": 1,
+      "valid": true,
+      "goal_complete": true
+    },
+    {
+      "method": "B2",
+      "stage": 0,
+      "valid": true,
+      "goal_complete": true
+    },
+    {
+      "method": "B2",
+      "stage": 1,
+      "valid": true,
+      "goal_complete": true
+    },
+    {
+      "method": "B1",
+      "stage": 0,
+      "valid": true,
+      "goal_complete": true
+    },
+    {
+      "method": "B1",
+      "stage": 1,
+      "valid": true,
+      "goal_complete": true
+    }
+  ],
+  "parameter_retuning": false,
+  "final_answers_opened": false,
+  "actual_pretesters": null,
+  "recruitment": null,
+  "comparison_branch": null,
+  "formal_g2_passed": false,
+  "freeze_tag_allowed": false,
+  "method_fairness": "same public source/context, budget100, scheduled quiz1, max1; see final development05 replay audit",
+  "limitations": [
+    "unknown plus one quiz cannot reach lower-bound threshold; no C2 selection/feedback benefit established",
+    "unique mandatory function goals limit content optimization freedom; ordering/robustness still testable",
+    "task001/002 inherit A concepts and material granularity; do not claim all12 have new function goals",
+    "model alias deepseek-flash is not immutable provider weights",
+    "private final scoring replay not performed by A; sealed manifest hash only",
+    "task/source/protocol human approval and two genuine pretesters remain unconfirmed"
+  ],
+  "files": {
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "benchmarks/B/frozen/B-D06-v0.2-candidate/manifest.json": "6169cb25261bd06b6fb17a00a591e3833eaaaf0218df64b44e24ccdb954f1084",
+    "docs/protocol/B-D06-v0.2-candidate/protocol.md": "5c6fe6e781b7727374507121efa7dfbdb45236e839f1fbad3cd017ad3d6063fb",
+    "docs/protocol/B-D06-v0.1-candidate/protocol.md": "14902db86c91fc9f0f5f8a35ef09d4c7d757bdda1e07b4de788d8ec4c315181f",
+    "docs/protocol/B-D06-v0.1-candidate/scoring.md": "5e209b1d0ee064e3a0949ec4cf22056d7bcc4433fb2ce473d879293e9037642e",
+    "configs/B/D06_v2_deepseek.json": "f8768cd81bdc390de2625fa3b7d5f091541cc1bf709c8a0d2341b6e115d997c1",
+    "experiments/B/B-D06-v2-live01/traces.json": "a97501f08dcf4bb41c621fb344f42958be37488bcded31a0f844b8c9c7d223fd"
+  }
+}

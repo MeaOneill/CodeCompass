@@ -16,7 +16,7 @@
 | D05-B | 2026-10-19 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D06-A | 2026-10-20（10/19执行） | A | 成员A / Codex Agent A / 糯糯 | READY_FOR_REVIEW | codex/A-D06-g2-freeze / 5e6ecb18 | A工程通过，允许同日B-D06；联合G2待依赖/双方确认 |
 | D06-B | 2026-10-20 | B | 待认领 | TODO | 未建立 | 未执行 |
-| D07-A | 2026-10-21 | A | 待认领 | TODO | 未建立 | 未执行 |
+| D07-A | 2026-10-21（10/19起执行） | A | 成员A / Codex Agent A / 糯糯 | BLOCKED_HUMAN_PRETEST | codex/A-D07-smoke / c84e833 | 工程384测通过；两人真实预演/新代码独立审未完成 |
 | D07-B | 2026-10-21 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D08-A | 2026-10-22 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D08-B | 2026-10-22 | B | 待认领 | TODO | 未建立 | 未执行 |
@@ -113,3 +113,7 @@ Owner成员B / Codex Agent B / 糯糯，分支codex/B-D06-protocol，base A-D06�
 交付12规格(4/8)与44项内容封存、私有key本地hash验证、真人协议/匿名空表/三方法与两方法预分配、成功/失败/缺失及配对字段、盲评回执接口、首材料后自动诊断与B2完成上下文、T01/分配图。原A与D05冻结文件未改。前置276测试；本轮305全套测试、协议107检查、4明确夹具347事件检查、3种隔离篡改拒绝、A109文件/60结果420检查与pip检查通过。没有正式终测运行、新API调用或人类审核签字。
 
 实际人数未知，已归档正式同意回执0；正式批准题0，8留出规划/诊断映射缺失；三方法缺动态B1，两方法需人数与双方事前确认；main/正式标签未建立。可补依赖交接，不能宣布G2通过。产物见docs/protocol/B-D06-v0.1-candidate、docs/B/G2执行可行性清单.md、docs/B/handoffs/B-D06.md。原始experiments/B/B-D06-verification01、B-D06-development01；图表report_materials/B/B-D06-protocol01。三组B-D02用户记录保留。
+
+## A署名 A-D07 2026-10-19T23:55:57.036715+08:00
+
+Owner成员A / Codex Agent A / 糯糯；codex/A-D07-smoke，base=c84e8334d681a86151cfa63b22a2307dd0245963。工程READY_FOR_REVIEW，总状态BLOCKED_HUMAN_PRETEST。384测试、72模拟闭环/1468smoke登记检查、43版本核对/4篡改拒绝通过；实际浏览器2自动会话不当真人。B1不完整路线接收缺陷与独立提交面板回归已修复，新版本A-D07-runtime-v1，原A/B冻结代码/参数不改。两人预演、真实反馈路径变化、A新代码独立审核未完成；招募未知，G2/正式实验/正式标签未放行。允许B-D07开展整合/审核/实际预演准备，不跳A-D08。入口docs/A/handoffs/A-D07.md；最终同步与恢复回执另补，付费新调用0。

@@ -1,0 +1,1090 @@
+{
+  "task_id": "task_006",
+  "method": "B1",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "GXsH_saIrjgq7vzjcNvKpl2Q1208nYZC",
+    "participant": "p_1e59c46a0f093fb12959420b4c4255b8",
+    "task": {
+      "task_id": "task_006",
+      "title": "slug返回类型与标点边界",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B1",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_006__split_punct_ws",
+      "task_006__asciify"
+    ],
+    "completed": [
+      "task_006__slugify"
+    ],
+    "spent": 8.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_006__split_punct_ws",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 115,
+          "end_line": 115,
+          "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+        },
+        "text": " 115  def split_punct_ws(text):"
+      },
+      {
+        "unit_id": "task_006__split_punct_ws",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 123,
+          "end_line": 123,
+          "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+        },
+        "text": " 123      return [w for w in _punct_re.split(text) if w]"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "unicodedata"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 44,
+          "end_line": 44,
+          "content_hash": "f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6"
+        },
+        "text": "import unicodedata"
+      },
+      {
+        "names": [
+          "_punct_re"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 65,
+          "end_line": 65,
+          "content_hash": "908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32"
+        },
+        "text": "_punct_re = re.compile('[' + _punct_ws_str + ']+')"
+      },
+      {
+        "names": [
+          "DEACCENT_MAP"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 550,
+          "end_line": 550,
+          "content_hash": "aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12"
+        },
+        "text": "DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.bytes_text",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_006-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_006__split_punct_ws",
+        "task_006__asciify"
+      ],
+      "after_route": [
+        "task_006__split_punct_ws",
+        "task_006__asciify"
+      ]
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_006__slugify",
+        "completed": true,
+        "base_proxy_cost": 7,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.regex_split",
+          "source.function.strutils.slugify"
+        ],
+        "target_concepts_not_gated": [
+          "python.regex_split",
+          "source.function.strutils.slugify"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 89,
+            "end_line": 89,
+            "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 107,
+            "end_line": 112,
+            "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_006__split_punct_ws",
+        "completed": false,
+        "base_proxy_cost": 2,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.bytes_text",
+          "source.function.strutils.split_punct_ws"
+        ],
+        "target_concepts_not_gated": [
+          "python.bytes_text",
+          "source.function.strutils.split_punct_ws"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 115,
+            "end_line": 115,
+            "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 123,
+            "end_line": 123,
+            "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_006__asciify",
+        "completed": false,
+        "base_proxy_cost": 15,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.conditional_precedence",
+          "source.function.strutils.asciify"
+        ],
+        "target_concepts_not_gated": [
+          "python.conditional_precedence",
+          "source.function.strutils.asciify"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 416,
+            "end_line": 416,
+            "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 433,
+            "end_line": 446,
+            "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_006__slugify",
+        "task_006__split_punct_ws",
+        "task_006__asciify"
+      ],
+      "cost": 24,
+      "context": {
+        "task": {
+          "task_id": "task_006",
+          "title": "slug返回类型与标点边界",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_split",
+          "python.bytes_text",
+          "python.conditional_precedence",
+          "source.function.strutils.slugify",
+          "source.function.strutils.split_punct_ws",
+          "source.function.strutils.asciify"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__slugify",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 89,
+                "end_line": 89,
+                "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 107,
+                "end_line": 112,
+                "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.slugify",
+              "python.regex_split"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L89"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 7,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__split_punct_ws",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 115,
+                "end_line": 115,
+                "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 123,
+                "end_line": 123,
+                "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.split_punct_ws",
+              "python.bytes_text"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L115"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__asciify",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 416,
+                "end_line": 416,
+                "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 433,
+                "end_line": 446,
+                "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.asciify",
+              "python.conditional_precedence"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L416"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 15,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_006__slugify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 89,
+              "end_line": 89,
+              "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+            },
+            "text": "  89  def slugify(text, delim='_', lower=True, ascii=False):"
+          },
+          {
+            "unit_id": "task_006__slugify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 107,
+              "end_line": 112,
+              "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+            },
+            "text": " 107      ret = delim.join(split_punct_ws(text)) or delim if text else ''\n 108      if ascii:\n 109          ret = asciify(ret)\n 110      if lower:\n 111          ret = ret.lower()\n 112      return ret"
+          },
+          {
+            "unit_id": "task_006__split_punct_ws",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 115,
+              "end_line": 115,
+              "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+            },
+            "text": " 115  def split_punct_ws(text):"
+          },
+          {
+            "unit_id": "task_006__split_punct_ws",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 123,
+              "end_line": 123,
+              "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+            },
+            "text": " 123      return [w for w in _punct_re.split(text) if w]"
+          },
+          {
+            "unit_id": "task_006__asciify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 416,
+              "end_line": 416,
+              "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+            },
+            "text": " 416  def asciify(text, ignore=False):"
+          },
+          {
+            "unit_id": "task_006__asciify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 433,
+              "end_line": 446,
+              "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+            },
+            "text": " 433      try:\n 434          try:\n 435              return text.encode('ascii')\n 436          except UnicodeDecodeError:\n 437              # this usually means you passed in a non-unicode string\n 438              text = text.decode('utf-8')\n 439              return text.encode('ascii')\n 440      except UnicodeEncodeError:\n 441          mode = 'replace'\n 442          if ignore:\n 443              mode = 'ignore'\n 444          transd = unicodedata.normalize('NFKD', text.translate(DEACCENT_MAP))\n 445          ret = transd.encode('ascii', mode)\n 446          return ret"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "unicodedata"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 44,
+              "end_line": 44,
+              "content_hash": "f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6"
+            },
+            "text": "import unicodedata"
+          },
+          {
+            "names": [
+              "_punct_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 65,
+              "end_line": 65,
+              "content_hash": "908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32"
+            },
+            "text": "_punct_re = re.compile('[' + _punct_ws_str + ']+')"
+          },
+          {
+            "names": [
+              "DEACCENT_MAP"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 550,
+              "end_line": 550,
+              "content_hash": "aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12"
+            },
+            "text": "DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.conditional_precedence": {
+            "concept_id": "python.conditional_precedence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_split": {
+            "concept_id": "python.regex_split",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.asciify": {
+            "concept_id": "source.function.strutils.asciify",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.slugify": {
+            "concept_id": "source.function.strutils.slugify",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.split_punct_ws": {
+            "concept_id": "source.function.strutils.split_punct_ws",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "attempted": true,
+        "status": "PARSED",
+        "route": [
+          "task_006__slugify",
+          "task_006__split_punct_ws",
+          "task_006__asciify"
+        ],
+        "calls": [
+          {
+            "attempt": 0,
+            "kind": "initial",
+            "timestamp": "2026-10-19T15:18:15.745733+00:00",
+            "request_hash": "5863eeca4c17c87a85967896696f84f26b11ce73d9480ac0114b945acd62625e",
+            "request": {
+              "model": "deepseek-flash",
+              "input": "Plan a remaining source-reading route using ONLY the public context.\nReturn exactly {\"ordered_units\":[\"unit_id\",...]} with no additional keys.\nPreserve completed materials: never return a completed unit, repeat a unit,\ninvent IDs, exceed remaining proxy budget or violate hard prerequisites.\nCover remaining goals using supplied independent mastery gate and completed\ncoverage. You receive the same source, feedback, budget and help as other\nmethods. No final answers, final tests or other methods' routes are provided.\n\nCONTEXT_JSON\n{\"budget_proxy\": 100, \"completed\": [], \"feedback\": null, \"learner_evidence\": [], \"learner_gate\": {\"python.bytes_text\": {\"concept_id\": \"python.bytes_text\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.conditional_precedence\": {\"concept_id\": \"python.conditional_precedence\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.regex_split\": {\"concept_id\": \"python.regex_split\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.asciify\": {\"concept_id\": \"source.function.strutils.asciify\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.slugify\": {\"concept_id\": \"source.function.strutils.slugify\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.split_punct_ws\": {\"concept_id\": \"source.function.strutils.split_punct_ws\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"policy\": {\"alpha\": 0, \"gamma\": 0, \"max_quizzes\": 1, \"quantile\": 0.1, \"quiz_cost\": 1, \"threshold\": 0.7}, \"remaining_proxy\": 100.0, \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"source_context\": [{\"names\": [\"unicodedata\"], \"source_span\": {\"content_hash\": \"f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6\", \"end_line\": 44, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 44}, \"text\": \"import unicodedata\"}, {\"names\": [\"_punct_re\"], \"source_span\": {\"content_hash\": \"908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32\", \"end_line\": 65, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 65}, \"text\": \"_punct_re = re.compile('[' + _punct_ws_str + ']+')\"}, {\"names\": [\"DEACCENT_MAP\"], \"source_span\": {\"content_hash\": \"aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12\", \"end_line\": 550, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 550}, \"text\": \"DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)\"}], \"source_materials\": [{\"source_span\": {\"content_hash\": \"6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505\", \"end_line\": 89, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 89}, \"text\": \"  89  def slugify(text, delim='_', lower=True, ascii=False):\", \"unit_id\": \"task_006__slugify\"}, {\"source_span\": {\"content_hash\": \"9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36\", \"end_line\": 112, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 107}, \"text\": \" 107      ret = delim.join(split_punct_ws(text)) or delim if text else ''\\n 108      if ascii:\\n 109          ret = asciify(ret)\\n 110      if lower:\\n 111          ret = ret.lower()\\n 112      return ret\", \"unit_id\": \"task_006__slugify\"}, {\"source_span\": {\"content_hash\": \"00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606\", \"end_line\": 115, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 115}, \"text\": \" 115  def split_punct_ws(text):\", \"unit_id\": \"task_006__split_punct_ws\"}, {\"source_span\": {\"content_hash\": \"ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077\", \"end_line\": 123, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 123}, \"text\": \" 123      return [w for w in _punct_re.split(text) if w]\", \"unit_id\": \"task_006__split_punct_ws\"}, {\"source_span\": {\"content_hash\": \"15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349\", \"end_line\": 416, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 416}, \"text\": \" 416  def asciify(text, ignore=False):\", \"unit_id\": \"task_006__asciify\"}, {\"source_span\": {\"content_hash\": \"c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3\", \"end_line\": 446, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 433}, \"text\": \" 433      try:\\n 434          try:\\n 435              return text.encode('ascii')\\n 436          except UnicodeDecodeError:\\n 437              # this usually means you passed in a non-unicode string\\n 438              text = text.decode('utf-8')\\n 439              return text.encode('ascii')\\n 440      except UnicodeEncodeError:\\n 441          mode = 'replace'\\n 442          if ignore:\\n 443              mode = 'ignore'\\n 444          transd = unicodedata.normalize('NFKD', text.translate(DEACCENT_MAP))\\n 445          ret = transd.encode('ascii', mode)\\n 446          return ret\", \"unit_id\": \"task_006__asciify\"}], \"spent_proxy\": 0.0, \"target_concept_ids\": [\"python.regex_split\", \"python.bytes_text\", \"python.conditional_precedence\", \"source.function.strutils.slugify\", \"source.function.strutils.split_punct_ws\", \"source.function.strutils.asciify\"], \"task\": {\"goal\": \"独立理解固定源码并按公开要求作答。\", \"repo_commit\": \"4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d\", \"requirements\": [\"填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。\"], \"task_id\": \"task_006\", \"title\": \"slug返回类型与标点边界\"}, \"units\": [{\"base_cost\": 7, \"concept_ids\": [\"source.function.strutils.slugify\", \"python.regex_split\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__slugify\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L89\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505\", \"end_line\": 89, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 89}, {\"content_hash\": \"9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36\", \"end_line\": 112, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 107}]}, {\"base_cost\": 2, \"concept_ids\": [\"source.function.strutils.split_punct_ws\", \"python.bytes_text\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__split_punct_ws\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L115\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606\", \"end_line\": 115, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 115}, {\"content_hash\": \"ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077\", \"end_line\": 123, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 123}]}, {\"base_cost\": 15, \"concept_ids\": [\"source.function.strutils.asciify\", \"python.conditional_precedence\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__asciify\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L416\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349\", \"end_line\": 416, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 416}, {\"content_hash\": \"c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3\", \"end_line\": 446, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 433}]}]}",
+              "store": false,
+              "max_output_tokens": 1200,
+              "reasoning": {
+                "effort": "none"
+              }
+            },
+            "configured_rates": {
+              "budget": 5,
+              "reservation": 0.25,
+              "input": 2,
+              "output": 8,
+              "currency": "CNY",
+              "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision"
+            },
+            "model_requested": "deepseek-flash",
+            "model_returned": "deepseek-flash",
+            "usage": {
+              "input_tokens": 100,
+              "output_tokens": 50
+            },
+            "estimated_cost_usd": null,
+            "estimated_cost_cny": 0.0006,
+            "currency": "CNY",
+            "billing_cost_usd": null,
+            "billing_cost_cny": null,
+            "reserved_amount": 0.25,
+            "quarantined": false,
+            "response": {
+              "model": "deepseek-flash",
+              "status": "completed",
+              "usage": {
+                "input_tokens": 100,
+                "output_tokens": 50
+              },
+              "output": [
+                {
+                  "type": "message",
+                  "content": [
+                    {
+                      "type": "output_text",
+                      "text": "{\"ordered_units\": [\"task_006__slugify\", \"task_006__split_punct_ws\", \"task_006__asciify\"]}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "raw_sha256": "7a87688059c1b565a30f3d9235e5506b3a64d1633621e5c16eec3d7ca2088936",
+            "elapsed_seconds": 0.0007189000025391579
+          }
+        ],
+        "transport_is_fixture": true,
+        "model_requested": "deepseek-flash"
+      },
+      "independent_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 24.0,
+        "switch_cost": 0.0,
+        "objective": 24.0,
+        "total_if_executed": 24.0
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 24.0,
+        "switch_cost": 0.0,
+        "objective": 24.0,
+        "total_if_executed": 24.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_006__split_punct_ws",
+        "task_006__asciify"
+      ],
+      "cost": 17,
+      "context": {
+        "task": {
+          "task_id": "task_006",
+          "title": "slug返回类型与标点边界",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_split",
+          "python.bytes_text",
+          "python.conditional_precedence",
+          "source.function.strutils.slugify",
+          "source.function.strutils.split_punct_ws",
+          "source.function.strutils.asciify"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__slugify",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 89,
+                "end_line": 89,
+                "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 107,
+                "end_line": 112,
+                "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.slugify",
+              "python.regex_split"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L89"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 7,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__split_punct_ws",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 115,
+                "end_line": 115,
+                "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 123,
+                "end_line": 123,
+                "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.split_punct_ws",
+              "python.bytes_text"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L115"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_006__asciify",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 416,
+                "end_line": 416,
+                "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 433,
+                "end_line": 446,
+                "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.asciify",
+              "python.conditional_precedence"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L416"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 15,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_006__slugify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 89,
+              "end_line": 89,
+              "content_hash": "6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505"
+            },
+            "text": "  89  def slugify(text, delim='_', lower=True, ascii=False):"
+          },
+          {
+            "unit_id": "task_006__slugify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 107,
+              "end_line": 112,
+              "content_hash": "9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36"
+            },
+            "text": " 107      ret = delim.join(split_punct_ws(text)) or delim if text else ''\n 108      if ascii:\n 109          ret = asciify(ret)\n 110      if lower:\n 111          ret = ret.lower()\n 112      return ret"
+          },
+          {
+            "unit_id": "task_006__split_punct_ws",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 115,
+              "end_line": 115,
+              "content_hash": "00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606"
+            },
+            "text": " 115  def split_punct_ws(text):"
+          },
+          {
+            "unit_id": "task_006__split_punct_ws",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 123,
+              "end_line": 123,
+              "content_hash": "ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077"
+            },
+            "text": " 123      return [w for w in _punct_re.split(text) if w]"
+          },
+          {
+            "unit_id": "task_006__asciify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 416,
+              "end_line": 416,
+              "content_hash": "15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349"
+            },
+            "text": " 416  def asciify(text, ignore=False):"
+          },
+          {
+            "unit_id": "task_006__asciify",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 433,
+              "end_line": 446,
+              "content_hash": "c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3"
+            },
+            "text": " 433      try:\n 434          try:\n 435              return text.encode('ascii')\n 436          except UnicodeDecodeError:\n 437              # this usually means you passed in a non-unicode string\n 438              text = text.decode('utf-8')\n 439              return text.encode('ascii')\n 440      except UnicodeEncodeError:\n 441          mode = 'replace'\n 442          if ignore:\n 443              mode = 'ignore'\n 444          transd = unicodedata.normalize('NFKD', text.translate(DEACCENT_MAP))\n 445          ret = transd.encode('ascii', mode)\n 446          return ret"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "unicodedata"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 44,
+              "end_line": 44,
+              "content_hash": "f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6"
+            },
+            "text": "import unicodedata"
+          },
+          {
+            "names": [
+              "_punct_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 65,
+              "end_line": 65,
+              "content_hash": "908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32"
+            },
+            "text": "_punct_re = re.compile('[' + _punct_ws_str + ']+')"
+          },
+          {
+            "names": [
+              "DEACCENT_MAP"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 550,
+              "end_line": 550,
+              "content_hash": "aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12"
+            },
+            "text": "DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.bytes_text",
+            "item_id": "B06-parallel-task_006-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.bytes_text": {
+            "concept_id": "python.bytes_text",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_006-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.conditional_precedence": {
+            "concept_id": "python.conditional_precedence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.regex_split": {
+            "concept_id": "python.regex_split",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.asciify": {
+            "concept_id": "source.function.strutils.asciify",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.slugify": {
+            "concept_id": "source.function.strutils.slugify",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.split_punct_ws": {
+            "concept_id": "source.function.strutils.split_punct_ws",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_006__slugify"
+        ],
+        "spent_proxy": 8.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 92.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "attempted": true,
+        "status": "PARSED",
+        "route": [
+          "task_006__split_punct_ws",
+          "task_006__asciify"
+        ],
+        "calls": [
+          {
+            "attempt": 0,
+            "kind": "initial",
+            "timestamp": "2026-10-19T15:18:15.930775+00:00",
+            "request_hash": "55a9ed7e07d04ef9a52c1a957c7335742d1c0cdad1d738c51988c9bdf9747911",
+            "request": {
+              "model": "deepseek-flash",
+              "input": "Plan a remaining source-reading route using ONLY the public context.\nReturn exactly {\"ordered_units\":[\"unit_id\",...]} with no additional keys.\nPreserve completed materials: never return a completed unit, repeat a unit,\ninvent IDs, exceed remaining proxy budget or violate hard prerequisites.\nCover remaining goals using supplied independent mastery gate and completed\ncoverage. You receive the same source, feedback, budget and help as other\nmethods. No final answers, final tests or other methods' routes are provided.\n\nCONTEXT_JSON\n{\"budget_proxy\": 100, \"completed\": [\"task_006__slugify\"], \"feedback\": \"pass\", \"learner_evidence\": [{\"concept_id\": \"python.bytes_text\", \"evidence_type\": \"independent_quiz\", \"independent\": true, \"is_fixture\": true, \"item_id\": \"B06-parallel-task_006-v2\", \"outcome\": \"pass\", \"project\": \"boltons-d02-strutils-4e5faa3d7e40\"}], \"learner_gate\": {\"python.bytes_text\": {\"alpha\": 2, \"beta\": 1, \"concept_id\": \"python.bytes_text\", \"evidence_ids\": [\"D05:B06-parallel-task_006-v2\"], \"lower_bound\": 0.3162277660168379, \"mastered\": false, \"quantile\": 0.1, \"reason\": \"insufficient lower-bound evidence\"}, \"python.conditional_precedence\": {\"concept_id\": \"python.conditional_precedence\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"python.regex_split\": {\"concept_id\": \"python.regex_split\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.asciify\": {\"concept_id\": \"source.function.strutils.asciify\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.slugify\": {\"concept_id\": \"source.function.strutils.slugify\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}, \"source.function.strutils.split_punct_ws\": {\"concept_id\": \"source.function.strutils.split_punct_ws\", \"evidence_ids\": [], \"lower_bound\": null, \"mastered\": false, \"reason\": \"unknown: no independent current-project item\"}}, \"policy\": {\"alpha\": 0, \"gamma\": 0, \"max_quizzes\": 1, \"quantile\": 0.1, \"quiz_cost\": 1, \"threshold\": 0.7}, \"remaining_proxy\": 92.0, \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"source_context\": [{\"names\": [\"unicodedata\"], \"source_span\": {\"content_hash\": \"f6b67ef23c4cd880e765b3875a61143e58a865ce10cc88965219aeb2f5b053d6\", \"end_line\": 44, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 44}, \"text\": \"import unicodedata\"}, {\"names\": [\"_punct_re\"], \"source_span\": {\"content_hash\": \"908488ed61c0f54a10e4b5b02594089ed2fb39efbcd4a484502ef5ba80d1ca32\", \"end_line\": 65, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 65}, \"text\": \"_punct_re = re.compile('[' + _punct_ws_str + ']+')\"}, {\"names\": [\"DEACCENT_MAP\"], \"source_span\": {\"content_hash\": \"aa324683684199590e5e9c537d3b70496a3289b3ca1b65279fc71e624dcabb12\", \"end_line\": 550, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 550}, \"text\": \"DEACCENT_MAP = DeaccenterDict(_BASE_DEACCENT_MAP)\"}], \"source_materials\": [{\"source_span\": {\"content_hash\": \"6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505\", \"end_line\": 89, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 89}, \"text\": \"  89  def slugify(text, delim='_', lower=True, ascii=False):\", \"unit_id\": \"task_006__slugify\"}, {\"source_span\": {\"content_hash\": \"9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36\", \"end_line\": 112, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 107}, \"text\": \" 107      ret = delim.join(split_punct_ws(text)) or delim if text else ''\\n 108      if ascii:\\n 109          ret = asciify(ret)\\n 110      if lower:\\n 111          ret = ret.lower()\\n 112      return ret\", \"unit_id\": \"task_006__slugify\"}, {\"source_span\": {\"content_hash\": \"00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606\", \"end_line\": 115, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 115}, \"text\": \" 115  def split_punct_ws(text):\", \"unit_id\": \"task_006__split_punct_ws\"}, {\"source_span\": {\"content_hash\": \"ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077\", \"end_line\": 123, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 123}, \"text\": \" 123      return [w for w in _punct_re.split(text) if w]\", \"unit_id\": \"task_006__split_punct_ws\"}, {\"source_span\": {\"content_hash\": \"15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349\", \"end_line\": 416, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 416}, \"text\": \" 416  def asciify(text, ignore=False):\", \"unit_id\": \"task_006__asciify\"}, {\"source_span\": {\"content_hash\": \"c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3\", \"end_line\": 446, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 433}, \"text\": \" 433      try:\\n 434          try:\\n 435              return text.encode('ascii')\\n 436          except UnicodeDecodeError:\\n 437              # this usually means you passed in a non-unicode string\\n 438              text = text.decode('utf-8')\\n 439              return text.encode('ascii')\\n 440      except UnicodeEncodeError:\\n 441          mode = 'replace'\\n 442          if ignore:\\n 443              mode = 'ignore'\\n 444          transd = unicodedata.normalize('NFKD', text.translate(DEACCENT_MAP))\\n 445          ret = transd.encode('ascii', mode)\\n 446          return ret\", \"unit_id\": \"task_006__asciify\"}], \"spent_proxy\": 8.0, \"target_concept_ids\": [\"python.regex_split\", \"python.bytes_text\", \"python.conditional_precedence\", \"source.function.strutils.slugify\", \"source.function.strutils.split_punct_ws\", \"source.function.strutils.asciify\"], \"task\": {\"goal\": \"独立理解固定源码并按公开要求作答。\", \"repo_commit\": \"4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d\", \"requirements\": [\"填写outputs：normal=slugify('Hello, World!')，empty=slugify('')，punct=slugify('!!!')，ascii_bytes=list(slugify('Café',ascii=True))。解释ascii=True的返回类型为何影响JSON/文本调用方以及空串与全标点输入差异。\"], \"task_id\": \"task_006\", \"title\": \"slug返回类型与标点边界\"}, \"units\": [{\"base_cost\": 7, \"concept_ids\": [\"source.function.strutils.slugify\", \"python.regex_split\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__slugify\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L89\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"6ab7b54672ebfa76259423689a903386a62f26bdc0861e0cc92ea0c592025505\", \"end_line\": 89, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 89}, {\"content_hash\": \"9c72cbead9c1eb64299dcda99481f956fbc23679eed872436be1a605d43f5d36\", \"end_line\": 112, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 107}]}, {\"base_cost\": 2, \"concept_ids\": [\"source.function.strutils.split_punct_ws\", \"python.bytes_text\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__split_punct_ws\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L115\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"00785548a4443b0a6a51d97f8354cdcdf2525aff647e4426c4bece799edfa606\", \"end_line\": 115, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 115}, {\"content_hash\": \"ab8782927dd0c385fc1877bebc646e8d6c4f81e4ab8311349702ae4eabacd077\", \"end_line\": 123, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 123}]}, {\"base_cost\": 15, \"concept_ids\": [\"source.function.strutils.asciify\", \"python.conditional_precedence\"], \"cost_basis\": \"D06-v2 explicit function signature and executable-body inclusive line spans; not minutes\", \"cost_unit\": \"proxy_cost\", \"id\": \"task_006__asciify\", \"is_fixture\": false, \"object_type\": \"LearningUnit\", \"prerequisites\": [], \"provenance\": {\"confidence\": null, \"evidence\": [\"https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L416\"], \"kind\": \"static_source\", \"proposed_by\": \"Codex Agent B\", \"review_status\": \"pending\", \"reviewer\": null}, \"schema_version\": \"1.1.0\", \"source_spans\": [{\"content_hash\": \"15dde3ea9283ea2624981f774416c71ab096967805b28387462bf806a65bd349\", \"end_line\": 416, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 416}, {\"content_hash\": \"c592f106e0e12610e22dea34fc926e2738c9643ab8b59cd268a80cfd2736adc3\", \"end_line\": 446, \"path\": \"boltons/strutils.py\", \"snapshot_id\": \"boltons-d02-strutils-4e5faa3d7e40\", \"start_line\": 433}]}]}",
+              "store": false,
+              "max_output_tokens": 1200,
+              "reasoning": {
+                "effort": "none"
+              }
+            },
+            "configured_rates": {
+              "budget": 5,
+              "reservation": 0.25,
+              "input": 2,
+              "output": 8,
+              "currency": "CNY",
+              "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/ ; checked 2026-10-19; peak/cache-miss input2/output8 CNY per million; advertised DeepSeek-V4.1-Flash-1017, API alias is not an immutable revision"
+            },
+            "model_requested": "deepseek-flash",
+            "model_returned": "deepseek-flash",
+            "usage": {
+              "input_tokens": 100,
+              "output_tokens": 50
+            },
+            "estimated_cost_usd": null,
+            "estimated_cost_cny": 0.0006,
+            "currency": "CNY",
+            "billing_cost_usd": null,
+            "billing_cost_cny": null,
+            "reserved_amount": 0.25,
+            "quarantined": false,
+            "response": {
+              "model": "deepseek-flash",
+              "status": "completed",
+              "usage": {
+                "input_tokens": 100,
+                "output_tokens": 50
+              },
+              "output": [
+                {
+                  "type": "message",
+                  "content": [
+                    {
+                      "type": "output_text",
+                      "text": "{\"ordered_units\": [\"task_006__split_punct_ws\", \"task_006__asciify\"]}"
+                    }
+                  ]
+                }
+              ]
+            },
+            "raw_sha256": "01ca422a723bd29a683b9dae4205a5d4f089e58259063332e29cfb8bde432795",
+            "elapsed_seconds": 0.00038499999209307134
+          }
+        ],
+        "transport_is_fixture": true,
+        "model_requested": "deepseek-flash"
+      },
+      "independent_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 17.0,
+        "switch_cost": 0.0,
+        "objective": 17.0,
+        "total_if_executed": 25.0
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 17.0,
+        "switch_cost": 0.0,
+        "objective": 17.0,
+        "total_if_executed": 25.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

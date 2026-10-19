@@ -1,0 +1,17 @@
+{
+  "reviewer": "Codex Agent A",
+  "reviewed_at": "2026-10-19T23:55:57.036715+08:00",
+  "kind": "actual PNG view; no independent human review",
+  "figures": [
+    "F04_evidence_routes",
+    "F09_failure_repair"
+  ],
+  "passed": true,
+  "checks": [
+    "source lines and proxy costs readable",
+    "completed prefix retained",
+    "future plan costs separated from paid costs",
+    "simulated history, unmeasured history acquisition cost, no human efficacy explicitly labelled"
+  ],
+  "native_ui_note": "IAB capture shows visible viewport; DOM clientWidth=scrollWidth=1265, no page horizontal overflow claimed from cropped screenshot alone"
+}

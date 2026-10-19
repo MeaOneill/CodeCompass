@@ -1,0 +1,122 @@
+[
+  {
+    "path": "src/codecompass/planner/__init__.py",
+    "sha256": "496b8b146907f5af88607284a410f50733a92c4a7bfeb1bd77bdf9d28450e6fa"
+  },
+  {
+    "path": "src/codecompass/planner/adaptive.py",
+    "sha256": "a3481880313ac6f5e6d938a3be100caa08519a32ac8c36f9c608ac248f2bca74"
+  },
+  {
+    "path": "src/codecompass/planner/adaptive_validator.py",
+    "sha256": "9499e30beeca33dd01bc76a72687943175592a3885b472599a4bc14b6922ba97"
+  },
+  {
+    "path": "src/codecompass/planner/beam.py",
+    "sha256": "046ef0455db7b9558c0485491eab2c178d8a64a1486fab1409e8591e2e11dba4"
+  },
+  {
+    "path": "src/codecompass/planner/comparison_validator.py",
+    "sha256": "2e6abf84025e212fe5577d78d384e68b2e0df39513d7edc11476fd6a8001cb6f"
+  },
+  {
+    "path": "src/codecompass/planner/core.py",
+    "sha256": "9354b2192c7b7bdfcf1648ca4cadcd86f62f825dd66ab2205611846b681bb63a"
+  },
+  {
+    "path": "src/codecompass/planner/diagnostics.py",
+    "sha256": "af44ffd86ab87ffa7a921621679051f19103f315f02de85f4b620039efe76f6b"
+  },
+  {
+    "path": "src/codecompass/planner/exact.py",
+    "sha256": "731f6b0eda7c72652eb89917a777ab68c6f0db8043f722123eba2bd1f8756ff0"
+  },
+  {
+    "path": "src/codecompass/planner/feedback.py",
+    "sha256": "fe2e4ca533dfc6303e8dcf04fc81fa31c73db9329212557e7ee1525994e4bfe2"
+  },
+  {
+    "path": "src/codecompass/planner/g2_candidate.py",
+    "sha256": "344a59544b48232195021ea9e59ffd5fb86747fab9c790a22913098489c81787"
+  },
+  {
+    "path": "src/codecompass/planner/g2_gate_control.py",
+    "sha256": "7d39616e818f7a5dbfc96ce6b19f30370e91623aa3db229daa86442f477f5a35"
+  },
+  {
+    "path": "src/codecompass/planner/runtime_d07.py",
+    "sha256": "8174c036e7e443bd4ad9c85228f4eeca72a543e74b88a3eab7e70963c000b3ea"
+  },
+  {
+    "path": "src/codecompass/planner/search_common.py",
+    "sha256": "cfacf68c14f576d3b24818a478101c3e515e2f63402fccc05b76ad9200bd2002"
+  },
+  {
+    "path": "src/codecompass/planner/search_service.py",
+    "sha256": "e3fc7204a36aeb1cb71a2eb1c7dcb2f941b95503b4b1a083301330b4844200ae"
+  },
+  {
+    "path": "src/codecompass/planner/service.py",
+    "sha256": "1f475c506b3ea5040965dc4af64d47ad7559262b8db027c39c9a09e04af158c6"
+  },
+  {
+    "path": "src/codecompass/planner/validate.py",
+    "sha256": "1ed234d541060fa24989f85e2582507cac02e428878777613bb99b9bd619aad3"
+  },
+  {
+    "path": "src/codecompass/learner/__init__.py",
+    "sha256": "36d2056f2f15877b6b2d2943ddee1eda9dd8efc151bdcb24e45f1be816ebe560"
+  },
+  {
+    "path": "src/codecompass/learner/model.py",
+    "sha256": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b"
+  },
+  {
+    "path": "scripts/A/run_d07.py",
+    "sha256": "1252ef2d82a6e078db46cc5dce4eb1d27fbf5358a24b4e898b3fc33d38060a01"
+  },
+  {
+    "path": "scripts/A/cases_d07.py",
+    "sha256": "b5e9046d39aa549221f049e7f4f6cde0296a476c01a41a8be9d87266c5a5cf7e"
+  },
+  {
+    "path": "scripts/A/relay_d07.py",
+    "sha256": "d8c85e3b6b91839db389ac6809f0ca37d4ada173d538e9fb5afe0b439835f1a4"
+  },
+  {
+    "path": "scripts/A/serve_d07.py",
+    "sha256": "af2ed952c2f45f5d97be981314e92d95690e12cacc1e4ff533737bab2957c643"
+  },
+  {
+    "path": "tests/A/test_runtime_d07.py",
+    "sha256": "c408928f12d82aed4a036992b323b5a616a766af998effbe5bd5aa3cc0012fd9"
+  },
+  {
+    "path": "configs/A/D07_runtime.json",
+    "sha256": "215e738fa789513e53fe13d6d3c0a437eb056df8bd47f23dd5e64450f3230f78"
+  },
+  {
+    "path": "app/A_D07/a07.js",
+    "sha256": "de867934b0af7a4787aec7d3a1518ace83f85f05d8d1f0db3843854e4c999d7c"
+  },
+  {
+    "path": "app/A_D07/a07.css",
+    "sha256": "4ee983cc949fdfabd376d2e4712efe25e3274f6e895daa3818a25bde6db4eba9"
+  },
+  {
+    "path": "src/codecompass/app/relay_v2.py",
+    "sha256": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24"
+  },
+  {
+    "path": "src/codecompass/app/study_d06.py",
+    "sha256": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+  },
+  {
+    "path": "benchmarks/B/executable-v2/registry.json",
+    "sha256": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4"
+  },
+  {
+    "path": "benchmarks/B/executable-v2/registry.sha256",
+    "sha256": "7d2b850d2bc7c272c2f46b8b31dcce77fa8603f7a330b2db263b268814a6d550"
+  }
+]

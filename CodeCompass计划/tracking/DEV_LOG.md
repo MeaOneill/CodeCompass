@@ -39,3 +39,7 @@ A从B03=5b3db98407ea47e1f26c7ff4cd7594cb42305aea接管，分支codex/A-D04-searc
 ## A署名 A-D06 2026-10-19T13:52:37.497734+08:00
 
 Owner成员A/执行Codex Agent A/机器糯糯；codex/A-D06-g2-freeze，base=5e6ecb186e9b06d72599ae41d851e9b35ea59399。工程候选READY_FOR_REVIEW；正式G2 BLOCKED/NOT_PASSED，next_step_allowed=false，仅B-D06补依赖。30次开发对照、109文件hash快照、258测试与独立AI22复核通过；模拟反馈/真人正式0/付费调用0。缺动态B1、公平时机接入、正式协议/任务/终测评分、人类审核和双方main确认。未合main/未打正式标签。接收首命令与全部原始路径见docs/A/handoffs/A-D06.md；同步SHA见最终回执。
+
+## A署名 A-D07 2026-10-19T23:55:57.036715+08:00
+
+Owner成员A / Codex Agent A / 糯糯；codex/A-D07-smoke，base=c84e8334d681a86151cfa63b22a2307dd0245963。工程READY_FOR_REVIEW，总状态BLOCKED_HUMAN_PRETEST。384测试、72模拟闭环/1468smoke登记检查、43版本核对/4篡改拒绝通过；实际浏览器2自动会话不当真人。B1不完整路线接收缺陷与独立提交面板回归已修复，新版本A-D07-runtime-v1，原A/B冻结代码/参数不改。两人预演、真实反馈路径变化、A新代码独立审核未完成；招募未知，G2/正式实验/正式标签未放行。允许B-D07开展整合/审核/实际预演准备，不跳A-D08。入口docs/A/handoffs/A-D07.md；最终同步与恢复回执另补，付费新调用0。

@@ -1,0 +1,744 @@
+{
+  "task_id": "task_007",
+  "method": "Ours",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "_nAfShmJapR3c-OCNa-sUa-pSJYVXnz6",
+    "participant": "p_6d5240cad65da48c8e493e50f993e706",
+    "task": {
+      "task_id": "task_007",
+      "title": "序数词teen例外与后缀",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：teens=[ordinalize(n) for n in (11,12,13,21,112)]，suffix=ordinalize(23,ext_only=True)，text=ordinalize('abc')。定位teen分支；解释数值先转字符串及不以数字结尾的行为。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "Ours",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [],
+    "completed": [
+      "task_007__ordinalize"
+    ],
+    "spent": 18.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [],
+    "source_context": [
+      {
+        "names": [
+          "string"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 41,
+          "end_line": 41,
+          "content_hash": "4b96e0edaa07635f07c4e20d94f2de661169983644bcdc9019f4f809b05c784f"
+        },
+        "text": "import string"
+      },
+      {
+        "names": [
+          "_ORDINAL_MAP"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 145,
+          "end_line": 147,
+          "content_hash": "9c55fab9b80479b53459dbbd7f28fa185c8c0a0ebc53895a0c28917bf312d1e5"
+        },
+        "text": "_ORDINAL_MAP = {'1': 'st',\n                '2': 'nd',\n                '3': 'rd'}  # 'th' is the default"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.string_index",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_007-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [],
+      "after_route": []
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_007__ordinalize",
+        "completed": true,
+        "base_proxy_cost": 17,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.branch_exception",
+          "python.string_index",
+          "source.function.strutils.ordinalize"
+        ],
+        "target_concepts_not_gated": [
+          "python.branch_exception",
+          "python.string_index",
+          "source.function.strutils.ordinalize"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 150,
+            "end_line": 150,
+            "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 168,
+            "end_line": 183,
+            "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_007__ordinalize"
+      ],
+      "cost": 17.0,
+      "context": {
+        "task": {
+          "task_id": "task_007",
+          "title": "序数词teen例外与后缀",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：teens=[ordinalize(n) for n in (11,12,13,21,112)]，suffix=ordinalize(23,ext_only=True)，text=ordinalize('abc')。定位teen分支；解释数值先转字符串及不以数字结尾的行为。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.string_index",
+          "python.branch_exception",
+          "source.function.strutils.ordinalize"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_007__ordinalize",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 150,
+                "end_line": 150,
+                "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 168,
+                "end_line": 183,
+                "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.ordinalize",
+              "python.string_index",
+              "python.branch_exception"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L150"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 17,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_007__ordinalize",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 150,
+              "end_line": 150,
+              "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+            },
+            "text": " 150  def ordinalize(number, ext_only=False):"
+          },
+          {
+            "unit_id": "task_007__ordinalize",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 168,
+              "end_line": 183,
+              "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+            },
+            "text": " 168      numstr, ext = str(number), ''\n 169      if numstr and numstr[-1] in string.digits:\n 170          try:\n 171              # first check for teens\n 172              if numstr[-2] == '1':\n 173                  ext = 'th'\n 174              else:\n 175                  # all other cases\n 176                  ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 177          except IndexError:\n 178              # single digit numbers (will reach here based on [-2] above)\n 179              ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 180      if ext_only:\n 181          return ext\n 182      else:\n 183          return numstr + ext"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "string"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 41,
+              "end_line": 41,
+              "content_hash": "4b96e0edaa07635f07c4e20d94f2de661169983644bcdc9019f4f809b05c784f"
+            },
+            "text": "import string"
+          },
+          {
+            "names": [
+              "_ORDINAL_MAP"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 145,
+              "end_line": 147,
+              "content_hash": "9c55fab9b80479b53459dbbd7f28fa185c8c0a0ebc53895a0c28917bf312d1e5"
+            },
+            "text": "_ORDINAL_MAP = {'1': 'st',\n                '2': 'nd',\n                '3': 'rd'}  # 'th' is the default"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.branch_exception": {
+            "concept_id": "python.branch_exception",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_index": {
+            "concept_id": "python.string_index",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.ordinalize": {
+            "concept_id": "source.function.strutils.ordinalize",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [],
+        "remaining": [
+          "task_007__ordinalize"
+        ],
+        "unit_costs": {
+          "task_007__ordinalize": 17.0
+        },
+        "gate": {
+          "python.branch_exception": {
+            "concept_id": "python.branch_exception",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_index": {
+            "concept_id": "python.string_index",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.ordinalize": {
+            "concept_id": "source.function.strutils.ordinalize",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [],
+        "spent_before": 0.0,
+        "alpha": 0,
+        "gamma": 0,
+        "learning_cost": 17.0,
+        "switch_cost": 0.0,
+        "objective": 17.0,
+        "missing": [],
+        "total_if_executed": 17.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 17.0,
+          "switch_cost": 0.0,
+          "objective": 17.0,
+          "total_if_executed": 17.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 1,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "prefix": [],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 0,
+            "retained": [
+              [
+                "task_007__ordinalize"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 1,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed",
+        "runtime_version": "A-D07-runtime-v1",
+        "feasible": true,
+        "goal_complete": true,
+        "human_task_success": null,
+        "route_explanations": [
+          {
+            "unit_id": "task_007__ordinalize",
+            "completed": false,
+            "base_proxy_cost": 17,
+            "cost_unit": "proxy_cost",
+            "target_concepts": [
+              "python.branch_exception",
+              "python.string_index",
+              "source.function.strutils.ordinalize"
+            ],
+            "target_concepts_not_gated": [
+              "python.branch_exception",
+              "python.string_index",
+              "source.function.strutils.ordinalize"
+            ],
+            "required_by_remaining": [],
+            "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 150,
+                "end_line": 150,
+                "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 168,
+                "end_line": 183,
+                "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+              }
+            ],
+            "source_versions": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+              }
+            ]
+          }
+        ]
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 17.0,
+        "switch_cost": 0.0,
+        "objective": 17.0,
+        "total_if_executed": 17.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [],
+      "cost": 0.0,
+      "context": {
+        "task": {
+          "task_id": "task_007",
+          "title": "序数词teen例外与后缀",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：teens=[ordinalize(n) for n in (11,12,13,21,112)]，suffix=ordinalize(23,ext_only=True)，text=ordinalize('abc')。定位teen分支；解释数值先转字符串及不以数字结尾的行为。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.string_index",
+          "python.branch_exception",
+          "source.function.strutils.ordinalize"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_007__ordinalize",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 150,
+                "end_line": 150,
+                "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 168,
+                "end_line": 183,
+                "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.ordinalize",
+              "python.string_index",
+              "python.branch_exception"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L150"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 17,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_007__ordinalize",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 150,
+              "end_line": 150,
+              "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+            },
+            "text": " 150  def ordinalize(number, ext_only=False):"
+          },
+          {
+            "unit_id": "task_007__ordinalize",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 168,
+              "end_line": 183,
+              "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+            },
+            "text": " 168      numstr, ext = str(number), ''\n 169      if numstr and numstr[-1] in string.digits:\n 170          try:\n 171              # first check for teens\n 172              if numstr[-2] == '1':\n 173                  ext = 'th'\n 174              else:\n 175                  # all other cases\n 176                  ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 177          except IndexError:\n 178              # single digit numbers (will reach here based on [-2] above)\n 179              ext = _ORDINAL_MAP.get(numstr[-1], 'th')\n 180      if ext_only:\n 181          return ext\n 182      else:\n 183          return numstr + ext"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "string"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 41,
+              "end_line": 41,
+              "content_hash": "4b96e0edaa07635f07c4e20d94f2de661169983644bcdc9019f4f809b05c784f"
+            },
+            "text": "import string"
+          },
+          {
+            "names": [
+              "_ORDINAL_MAP"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 145,
+              "end_line": 147,
+              "content_hash": "9c55fab9b80479b53459dbbd7f28fa185c8c0a0ebc53895a0c28917bf312d1e5"
+            },
+            "text": "_ORDINAL_MAP = {'1': 'st',\n                '2': 'nd',\n                '3': 'rd'}  # 'th' is the default"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.string_index",
+            "item_id": "B06-parallel-task_007-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.branch_exception": {
+            "concept_id": "python.branch_exception",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_index": {
+            "concept_id": "python.string_index",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_007-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.ordinalize": {
+            "concept_id": "source.function.strutils.ordinalize",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_007__ordinalize"
+        ],
+        "spent_proxy": 18.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 82.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [
+          "task_007__ordinalize"
+        ],
+        "remaining": [],
+        "unit_costs": {
+          "task_007__ordinalize": 17.0
+        },
+        "gate": {
+          "python.branch_exception": {
+            "concept_id": "python.branch_exception",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_index": {
+            "concept_id": "python.string_index",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_007-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "source.function.strutils.ordinalize": {
+            "concept_id": "source.function.strutils.ordinalize",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [],
+        "spent_before": 18.0,
+        "alpha": 0,
+        "gamma": 0,
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "missing": [],
+        "total_if_executed": 18.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 0.0,
+          "switch_cost": 0.0,
+          "objective": 0.0,
+          "total_if_executed": 18.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 0,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed",
+        "runtime_version": "A-D07-runtime-v1",
+        "feasible": true,
+        "goal_complete": true,
+        "human_task_success": null,
+        "route_explanations": [
+          {
+            "unit_id": "task_007__ordinalize",
+            "completed": true,
+            "base_proxy_cost": 17,
+            "cost_unit": "proxy_cost",
+            "target_concepts": [
+              "python.branch_exception",
+              "python.string_index",
+              "source.function.strutils.ordinalize"
+            ],
+            "target_concepts_not_gated": [
+              "python.branch_exception",
+              "python.string_index",
+              "source.function.strutils.ordinalize"
+            ],
+            "required_by_remaining": [],
+            "reason": "completed coverage retained; no mastery evidence added",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 150,
+                "end_line": 150,
+                "content_hash": "dfe488134ddb07a6a38a0c22f4a0e0ad9af387fcbf2aa93d8cd64fe9a8e4cfbb"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 168,
+                "end_line": 183,
+                "content_hash": "4029dd673bc6dddf331b54138ded065bafc7256109bd075b6cd333bd2084ae14"
+              }
+            ],
+            "source_versions": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+              }
+            ]
+          }
+        ]
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 0.0,
+        "switch_cost": 0.0,
+        "objective": 0.0,
+        "total_if_executed": 18.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

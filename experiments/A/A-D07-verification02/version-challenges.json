@@ -1,0 +1,65 @@
+{
+  "rejected": 4,
+  "challenges": [
+    {
+      "attack": "source",
+      "rejected": true,
+      "result": {
+        "passed": false,
+        "errors": [
+          "HASH_OR_SCOPE:src/codecompass/planner/runtime_d07.py"
+        ],
+        "checked_files": 43,
+        "runtime_version": "A-D07-runtime-v1",
+        "formal_g2_passed": false,
+        "formal_study_allowed": false,
+        "formal_tag_created": false
+      }
+    },
+    {
+      "attack": "snapshot",
+      "rejected": true,
+      "result": {
+        "passed": false,
+        "errors": [
+          "HASH_OR_SCOPE:configs/frozen/A-D07-runtime-v1/source_snapshot/src/codecompass/planner/runtime_d07.py"
+        ],
+        "checked_files": 43,
+        "runtime_version": "A-D07-runtime-v1",
+        "formal_g2_passed": false,
+        "formal_study_allowed": false,
+        "formal_tag_created": false
+      }
+    },
+    {
+      "attack": "parent",
+      "rejected": true,
+      "result": {
+        "passed": false,
+        "errors": [
+          "PARENT_CHANGED:src/codecompass/planner/adaptive.py"
+        ],
+        "checked_files": 43,
+        "runtime_version": "A-D07-runtime-v1",
+        "formal_g2_passed": false,
+        "formal_study_allowed": false,
+        "formal_tag_created": false
+      }
+    },
+    {
+      "attack": "formal_flag",
+      "rejected": true,
+      "result": {
+        "passed": false,
+        "errors": [
+          "FORMAL_APPROVAL_FORBIDDEN"
+        ],
+        "checked_files": 43,
+        "runtime_version": "A-D07-runtime-v1",
+        "formal_g2_passed": false,
+        "formal_study_allowed": false,
+        "formal_tag_created": false
+      }
+    }
+  ]
+}

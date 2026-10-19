@@ -1,0 +1,10 @@
+Browser tab: 1, Title: "CodeCompass · 完整任务联调", URL: "http://127.0.0.1:8771/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 92, 109-111
++				109 text 02:21
++		110 heading 路线依据与逐项成本 · A-D07-runtime-v1, Value: 2
++			111 text 路线依据与逐项成本 · A-D07-runtime-v1
++		112 text 已完成保留 task_003__unique_iter · 18 proxy_cost（非分钟）
+已完成项继续计作覆盖；阅读不新增掌握证据
+源码：boltons/iterutils.py:L834–834; boltons/iterutils.py:L851–867；commit：4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d
+The focused UI element is 62 button 最终提交, ID: showSubmit

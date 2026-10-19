@@ -1,0 +1,799 @@
+{
+  "task_id": "task_005",
+  "method": "B2",
+  "actor": "test_fixture",
+  "feedback_is_simulated": true,
+  "outcome": "pass",
+  "view": {
+    "session_id": "i0DdRC-kHb9aVF1_3X7fpO2bDIDiBQUj",
+    "participant": "p_3e7c4b4ab228e6e04e14e7ff4e695dd3",
+    "task": {
+      "task_id": "task_005",
+      "title": "缩写与分隔符转换定位",
+      "goal": "独立理解固定源码并按公开要求作答。",
+      "requirements": [
+        "填写outputs：acronym=camel2under('HTTPServer2Thing')，simple=under2camel('parse_http_body')，underscores=under2camel('__edge__')。引用正则使用位置；解释缩写边界和空片段的处理，不假定两个函数总互逆。"
+      ],
+      "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+    },
+    "method": "B2",
+    "actor": "test_fixture",
+    "status": "SUBMITTED",
+    "phase": "feedback",
+    "elapsed_seconds": 4.0,
+    "observed_seconds": 4.0,
+    "missing": [],
+    "limit_seconds": 1500,
+    "route": [
+      "task_005__under2camel"
+    ],
+    "completed": [
+      "task_005__camel2under"
+    ],
+    "spent": 3.0,
+    "quiz_done": true,
+    "quiz": null,
+    "materials": [
+      {
+        "unit_id": "task_005__under2camel",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 79,
+          "end_line": 79,
+          "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+        },
+        "text": "  79  def under2camel(under_string):"
+      },
+      {
+        "unit_id": "task_005__under2camel",
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 86,
+          "end_line": 86,
+          "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+        },
+        "text": "  86      return ''.join(w.capitalize() or '_' for w in under_string.split('_'))"
+      }
+    ],
+    "source_context": [
+      {
+        "names": [
+          "_camel2under_re"
+        ],
+        "source_span": {
+          "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+          "path": "boltons/strutils.py",
+          "start_line": 66,
+          "end_line": 66,
+          "content_hash": "78a308b83ff535042183d8176bebf603b93172916c2d9132c33c94a9421cab65"
+        },
+        "text": "_camel2under_re = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')"
+      }
+    ],
+    "feedback": {
+      "before": [],
+      "after": [
+        {
+          "concept_id": "python.regex_boundary",
+          "alpha": 2,
+          "beta": 1,
+          "evidence_ids": [
+            "D05:B06-parallel-task_005-v2"
+          ],
+          "lower_bound": 0.3162277660168379,
+          "quantile": 0.1
+        }
+      ],
+      "before_route": [
+        "task_005__under2camel"
+      ],
+      "after_route": [
+        "task_005__under2camel"
+      ]
+    },
+    "outcome": "pass",
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "success": null,
+    "events": 13,
+    "patch_task": false,
+    "assessment": null,
+    "protocol_version": "B-D06-executable-candidate-2",
+    "limitation": "12题与三方法技术联调候选；真人同意、题目/方案人工批准尚未完成，非正式实验。 A-D07运行边界：完整目标校验；模拟演示不等于真人预演，正式G2仍未放行。",
+    "runtime_version": "A-D07-runtime-v1",
+    "route_explanations": [
+      {
+        "unit_id": "task_005__camel2under",
+        "completed": true,
+        "base_proxy_cost": 2,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.regex_boundary",
+          "source.function.strutils.camel2under"
+        ],
+        "target_concepts_not_gated": [
+          "python.regex_boundary",
+          "source.function.strutils.camel2under"
+        ],
+        "required_by_remaining": [],
+        "reason": "completed coverage retained; no mastery evidence added",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 69,
+            "end_line": 69,
+            "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 76,
+            "end_line": 76,
+            "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      },
+      {
+        "unit_id": "task_005__under2camel",
+        "completed": false,
+        "base_proxy_cost": 2,
+        "cost_unit": "proxy_cost",
+        "target_concepts": [
+          "python.string_transform",
+          "source.function.strutils.under2camel"
+        ],
+        "target_concepts_not_gated": [
+          "python.string_transform",
+          "source.function.strutils.under2camel"
+        ],
+        "required_by_remaining": [],
+        "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+        "source_spans": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 79,
+            "end_line": 79,
+            "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+          },
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "path": "boltons/strutils.py",
+            "start_line": 86,
+            "end_line": 86,
+            "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+          }
+        ],
+        "source_versions": [
+          {
+            "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+            "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+            "source_manifest_hash": "8301ee93005488fdfa82841e9859e47ead69dfc64871469c9eae5b19c63c6c75"
+          }
+        ]
+      }
+    ]
+  },
+  "traces": [
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_005__camel2under",
+        "task_005__under2camel"
+      ],
+      "cost": 4.0,
+      "context": {
+        "task": {
+          "task_id": "task_005",
+          "title": "缩写与分隔符转换定位",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：acronym=camel2under('HTTPServer2Thing')，simple=under2camel('parse_http_body')，underscores=under2camel('__edge__')。引用正则使用位置；解释缩写边界和空片段的处理，不假定两个函数总互逆。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_boundary",
+          "python.string_transform",
+          "source.function.strutils.camel2under",
+          "source.function.strutils.under2camel"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_005__camel2under",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 69,
+                "end_line": 69,
+                "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 76,
+                "end_line": 76,
+                "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.camel2under",
+              "python.regex_boundary"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L69"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_005__under2camel",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 79,
+                "end_line": 79,
+                "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 86,
+                "end_line": 86,
+                "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.under2camel",
+              "python.string_transform"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L79"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_005__camel2under",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 69,
+              "end_line": 69,
+              "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+            },
+            "text": "  69  def camel2under(camel_string):"
+          },
+          {
+            "unit_id": "task_005__camel2under",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 76,
+              "end_line": 76,
+              "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+            },
+            "text": "  76      return _camel2under_re.sub(r'_\\1', camel_string).lower()"
+          },
+          {
+            "unit_id": "task_005__under2camel",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 79,
+              "end_line": 79,
+              "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+            },
+            "text": "  79  def under2camel(under_string):"
+          },
+          {
+            "unit_id": "task_005__under2camel",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 86,
+              "end_line": 86,
+              "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+            },
+            "text": "  86      return ''.join(w.capitalize() or '_' for w in under_string.split('_'))"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "_camel2under_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 66,
+              "end_line": 66,
+              "content_hash": "78a308b83ff535042183d8176bebf603b93172916c2d9132c33c94a9421cab65"
+            },
+            "text": "_camel2under_re = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')"
+          }
+        ],
+        "learner_evidence": [],
+        "learner_gate": {
+          "python.regex_boundary": {
+            "concept_id": "python.regex_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_transform": {
+            "concept_id": "python.string_transform",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.camel2under": {
+            "concept_id": "source.function.strutils.camel2under",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.under2camel": {
+            "concept_id": "source.function.strutils.under2camel",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [],
+        "spent_proxy": 0.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 100.0,
+        "feedback": null,
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_005__camel2under",
+          "task_005__under2camel"
+        ],
+        "cost": 4.0,
+        "gate": {
+          "python.regex_boundary": {
+            "concept_id": "python.regex_boundary",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.string_transform": {
+            "concept_id": "python.string_transform",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.camel2under": {
+            "concept_id": "source.function.strutils.camel2under",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.under2camel": {
+            "concept_id": "source.function.strutils.under2camel",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 4.0,
+          "switch_cost": 0.0,
+          "objective": 4.0,
+          "total_if_executed": 4.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_005__camel2under",
+              "bundle": [
+                "task_005__camel2under"
+              ],
+              "incremental": 2
+            },
+            {
+              "root": "task_005__under2camel",
+              "bundle": [
+                "task_005__under2camel"
+              ],
+              "incremental": 2
+            }
+          ],
+          [
+            {
+              "root": "task_005__under2camel",
+              "bundle": [
+                "task_005__under2camel"
+              ],
+              "incremental": 2
+            }
+          ]
+        ],
+        "completed": [],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 4.0,
+        "switch_cost": 0.0,
+        "objective": 4.0,
+        "total_if_executed": 4.0
+      }
+    },
+    {
+      "status": "FEASIBLE",
+      "route": [
+        "task_005__under2camel"
+      ],
+      "cost": 2.0,
+      "context": {
+        "task": {
+          "task_id": "task_005",
+          "title": "缩写与分隔符转换定位",
+          "goal": "独立理解固定源码并按公开要求作答。",
+          "requirements": [
+            "填写outputs：acronym=camel2under('HTTPServer2Thing')，simple=under2camel('parse_http_body')，underscores=under2camel('__edge__')。引用正则使用位置；解释缩写边界和空片段的处理，不假定两个函数总互逆。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+        "target_concept_ids": [
+          "python.regex_boundary",
+          "python.string_transform",
+          "source.function.strutils.camel2under",
+          "source.function.strutils.under2camel"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_005__camel2under",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 69,
+                "end_line": 69,
+                "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 76,
+                "end_line": 76,
+                "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.camel2under",
+              "python.regex_boundary"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L69"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "task_005__under2camel",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 79,
+                "end_line": 79,
+                "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+              },
+              {
+                "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+                "path": "boltons/strutils.py",
+                "start_line": 86,
+                "end_line": 86,
+                "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+              }
+            ],
+            "concept_ids": [
+              "source.function.strutils.under2camel",
+              "python.string_transform"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/strutils.py#L79"
+              ],
+              "proposed_by": "Codex Agent B",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 2,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "D06-v2 explicit function signature and executable-body inclusive line spans; not minutes"
+          }
+        ],
+        "source_materials": [
+          {
+            "unit_id": "task_005__camel2under",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 69,
+              "end_line": 69,
+              "content_hash": "802d9b44fd031d752d711733946ad1b2c8cc4915b6de2c26dc40040a20bbcec6"
+            },
+            "text": "  69  def camel2under(camel_string):"
+          },
+          {
+            "unit_id": "task_005__camel2under",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 76,
+              "end_line": 76,
+              "content_hash": "2ba71033089a8337872991fdf239d309ff69dcc6870a23c48a1831ccf1cc808b"
+            },
+            "text": "  76      return _camel2under_re.sub(r'_\\1', camel_string).lower()"
+          },
+          {
+            "unit_id": "task_005__under2camel",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 79,
+              "end_line": 79,
+              "content_hash": "06b889c250a4faf20965d299819acbb46e31d5b90c2b31a8f646fc54304af9d2"
+            },
+            "text": "  79  def under2camel(under_string):"
+          },
+          {
+            "unit_id": "task_005__under2camel",
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 86,
+              "end_line": 86,
+              "content_hash": "dc58318b4fe9aff6a6d6dd562a55e019c86b8987f3c9e94b3cb8030dbbc85489"
+            },
+            "text": "  86      return ''.join(w.capitalize() or '_' for w in under_string.split('_'))"
+          }
+        ],
+        "source_context": [
+          {
+            "names": [
+              "_camel2under_re"
+            ],
+            "source_span": {
+              "snapshot_id": "boltons-d02-strutils-4e5faa3d7e40",
+              "path": "boltons/strutils.py",
+              "start_line": 66,
+              "end_line": 66,
+              "content_hash": "78a308b83ff535042183d8176bebf603b93172916c2d9132c33c94a9421cab65"
+            },
+            "text": "_camel2under_re = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')"
+          }
+        ],
+        "learner_evidence": [
+          {
+            "concept_id": "python.regex_boundary",
+            "item_id": "B06-parallel-task_005-v2",
+            "outcome": "pass",
+            "project": "boltons-d02-strutils-4e5faa3d7e40",
+            "evidence_type": "independent_quiz",
+            "independent": true,
+            "is_fixture": true
+          }
+        ],
+        "learner_gate": {
+          "python.regex_boundary": {
+            "concept_id": "python.regex_boundary",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_005-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.string_transform": {
+            "concept_id": "python.string_transform",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.camel2under": {
+            "concept_id": "source.function.strutils.camel2under",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.under2camel": {
+            "concept_id": "source.function.strutils.under2camel",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "completed": [
+          "task_005__camel2under"
+        ],
+        "spent_proxy": 3.0,
+        "budget_proxy": 100,
+        "remaining_proxy": 97.0,
+        "feedback": "pass",
+        "policy": {
+          "threshold": 0.7,
+          "quantile": 0.1,
+          "alpha": 0,
+          "gamma": 0,
+          "max_quizzes": 1,
+          "quiz_cost": 1
+        }
+      },
+      "details": {
+        "status": "FEASIBLE",
+        "remaining": [
+          "task_005__under2camel"
+        ],
+        "cost": 2.0,
+        "gate": {
+          "python.regex_boundary": {
+            "concept_id": "python.regex_boundary",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:B06-parallel-task_005-v2"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.string_transform": {
+            "concept_id": "python.string_transform",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.camel2under": {
+            "concept_id": "source.function.strutils.camel2under",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "source.function.strutils.under2camel": {
+            "concept_id": "source.function.strutils.under2camel",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 2.0,
+          "switch_cost": 0.0,
+          "objective": 2.0,
+          "total_if_executed": 5.0
+        },
+        "candidate_attempts": [
+          [
+            {
+              "root": "task_005__under2camel",
+              "bundle": [
+                "task_005__under2camel"
+              ],
+              "incremental": 2
+            }
+          ]
+        ],
+        "completed": [
+          "task_005__camel2under"
+        ],
+        "method": "original_closure_gain_cost_rule_with_completed_context",
+        "mastery_fabricated": false
+      },
+      "runtime_version": "A-D07-runtime-v1",
+      "acceptance_replay": {
+        "valid": true,
+        "errors": [],
+        "goal_complete": true,
+        "missing": [],
+        "learning_cost": 2.0,
+        "switch_cost": 0.0,
+        "objective": 2.0,
+        "total_if_executed": 5.0
+      }
+    }
+  ],
+  "quiz_changed_remaining": false
+}

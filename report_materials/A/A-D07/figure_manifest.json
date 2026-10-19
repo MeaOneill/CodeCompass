@@ -1,0 +1,116 @@
+{
+  "owner": "A",
+  "figures": [
+    {
+      "figure_id": "F04_evidence_routes",
+      "run_id": "A-D07-development05",
+      "caption": "真实固定源码、模拟能力历史；实际执行路线，未测真人学习收益。",
+      "human_n": 0,
+      "source_base": "c84e8334d681a86151cfa63b22a2307dd0245963",
+      "runtime_version": "A-D07-runtime-v1",
+      "cost_unit": "proxy_cost, not minutes",
+      "formal_study_ready": false,
+      "files": [
+        {
+          "path": "report_materials/A/A-D07/F04_evidence_routes.png",
+          "sha256": "cbbde8ef8bbbca8e4460266b3553848d2eeba03a465eac41e976a5551e37ef7c"
+        },
+        {
+          "path": "report_materials/A/A-D07/F04_evidence_routes.svg",
+          "sha256": "36d23234f8821382ade0fe64db19ac30ca2cc8c76294a901bf72b24e6686245b"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/paired/unknown.json",
+          "sha256": "7c14b4a43e341053d693fb3cf3e9ad2f26d817ec4c584f1c1e206e1baa08764b"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/paired/synthetic_evidence.json",
+          "sha256": "a72d3cbac3248d893f798ca1f6771781880f8a1ef5e78ec44fe9097614bc1bd1"
+        },
+        {
+          "path": "scripts/A/draw_d07.py",
+          "sha256": "e8a63b120a6780892b857578893fcf947e6d6be6172042276654307de1c6313e"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/input_manifest.json",
+          "sha256": "da88bf2fcb6efa5bf646a0ac8f5ebbcff71f0afdae9cb3c9479d75dff01f012c"
+        }
+      ],
+      "command": [
+        "python",
+        "scripts/A/draw_d07.py"
+      ],
+      "visual_review": "AGENT_ACTUAL_PNG_VIEW_PASSED_NOT_HUMAN"
+    },
+    {
+      "figure_id": "F09_failure_repair",
+      "run_id": "A-D07-development05",
+      "caption": "一次模拟独立失败削弱证据并补回源码材料；另保留真实源码预算不足的故障注入。",
+      "human_n": 0,
+      "source_base": "c84e8334d681a86151cfa63b22a2307dd0245963",
+      "runtime_version": "A-D07-runtime-v1",
+      "cost_unit": "proxy_cost, not minutes",
+      "formal_study_ready": false,
+      "files": [
+        {
+          "path": "report_materials/A/A-D07/F09_failure_repair.png",
+          "sha256": "f384c0d56e02120fe5ab653d28834d27f451dd45f667ddaee6874fa5a2993bf2"
+        },
+        {
+          "path": "report_materials/A/A-D07/F09_failure_repair.svg",
+          "sha256": "a0907f02e680442ee90db9a89ae04612e9e3a50f2e289956c7e0a0414b59fb44"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/paired/failed_quiz_repair.json",
+          "sha256": "473f61c186a7726f7607870b0b5ad93a9c21e77c64632136e466aed5ca5c900a"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/faults/budget_insufficient.json",
+          "sha256": "ec3dfaf02099cfb51440f9609b6c6160bd1e109f6a0cc69814eeecbda1377eae"
+        },
+        {
+          "path": "scripts/A/draw_d07.py",
+          "sha256": "e8a63b120a6780892b857578893fcf947e6d6be6172042276654307de1c6313e"
+        },
+        {
+          "path": "experiments/A/A-D07-development05/input_manifest.json",
+          "sha256": "da88bf2fcb6efa5bf646a0ac8f5ebbcff71f0afdae9cb3c9479d75dff01f012c"
+        }
+      ],
+      "command": [
+        "python",
+        "scripts/A/draw_d07.py"
+      ],
+      "visual_review": "AGENT_ACTUAL_PNG_VIEW_PASSED_NOT_HUMAN"
+    }
+  ],
+  "ui_captures": [
+    {
+      "path": "report_materials/A/A-D07/UI_feedback_agent_browser.png",
+      "sha256": "87f187b8df7a2492744bf5046ef405ba06e6a1908ff9247376e808e9e01910e3",
+      "kind": "native viewport screenshot",
+      "actor": "agent_browser",
+      "human_n": 0,
+      "dpi": "native, not upsampled",
+      "source_note": "See experiments/A/A-D07-browser01/provenance.json"
+    },
+    {
+      "path": "report_materials/A/A-D07/UI_paused_agent_browser.png",
+      "sha256": "269797c11913ecb8d7a3558298766dbefac4c8cfcdfdbc725e65d1fbc5ae579e",
+      "kind": "native viewport screenshot",
+      "actor": "agent_browser",
+      "human_n": 0,
+      "dpi": "native, not upsampled",
+      "source_note": "See experiments/A/A-D07-browser01/provenance.json"
+    },
+    {
+      "path": "report_materials/A/A-D07/UI_submitted_agent_browser.png",
+      "sha256": "b797e28b659fb33072493db5336e2c8f437679dd57082c2ca0aa2b4d0329327b",
+      "kind": "native viewport screenshot",
+      "actor": "agent_browser",
+      "human_n": 0,
+      "dpi": "native, not upsampled",
+      "source_note": "See experiments/A/A-D07-browser01/provenance.json"
+    }
+  ]
+}
