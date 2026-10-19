@@ -1,0 +1,32 @@
+{
+  "checkpoint_sha": "2752b7c8a0368028dd0ca2c36bf5b2ec8682be8a",
+  "sealed_byte_checks": 54,
+  "mismatches": [],
+  "clone_has_private_key": false,
+  "clone_has_model_key": false,
+  "recovery_scope": "New committed copy on SAME machine; not independent-machine or human review",
+  "model_calls_during_recovery": 0,
+  "commands": [
+    {
+      "command": "git clone --no-hardlinks --single-branch --branch codex/B-D06-protocol SOURCE IGNORED_RECOVERY_DIR",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/B/audit_relay_v2.py --output ORIGINAL_RUN_DIR/v2-audit.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/A/audit_d06.py --output ORIGINAL_RUN_DIR/A-audit.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/B/audit_d06.py --output ORIGINAL_RUN_DIR/B-v1-audit.json",
+      "exit_code": 0
+    }
+  ],
+  "recorded_at": "2026-10-19T20:48:12.012210+08:00",
+  "pytest_exit_code": 0,
+  "pytest_count": 363,
+  "pytest_duration_seconds": 70.5,
+  "passed": true
+}

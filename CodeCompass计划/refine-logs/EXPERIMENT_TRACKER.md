@@ -68,3 +68,8 @@ Owner成员B / Codex Agent B / 糯糯，分支codex/B-D06-protocol，base A-D06�
 新候选docs/protocol/B-D06-v0.2-candidate、benchmarks/B/executable-v2、benchmarks/B/frozen/B-D06-v0.2-candidate；T01更新和同任务三方法路线板PNG300dpi/SVG已Agent目视，无真人效果图。浏览器可视操作受工具策略限制，未伪造UI截图；本机HTTP访问/隔离已实测。新入口scripts/B/serve_relay_v2.py，默认8768无付费调用；验收说明docs/B/B-D06_v2_验收说明.md。
 
 正式G2仍需实际招募/同意、题目/源码/协议人工批准和A/B比较分支确认，随后指定负责人集成main/正式标签；不是等待用户运行代码。人数保持用户已确认的“未确认”(null)，不造名单、不选结果驱动分支。技术候选允许交A-D07复核，不允许未获同意就正式收集。3组B-D02用户记录和旧冻结版本原样保留。
+
+
+## v0.2恢复与同步完成 2026-10-19T20:49:52.968595+08:00
+
+工程检查点2752b7c8a0368028dd0ca2c36bf5b2ec8682be8a已push并核对remote相同。全新同机clone未复制密钥/私有答案，363全套测试通过（70.50秒、退出0）；54封存文件逐字节一致，v0.2审计109检查通过，A109文件与B旧107检查仍通过。最终仅补交此回执，不需要重跑已通过的付费调用或算法。恢复原始输出experiments/B/B-D06-v2-recovery-check01；准确最终SHA见最终回复。技术候选READY_FOR_REVIEW，允许交A-D07联合复核；实际人类确认未发生，联合G2/正式实验不放行。

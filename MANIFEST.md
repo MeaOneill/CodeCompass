@@ -223,3 +223,11 @@
 | 2026-10-19T20:45:37 | experiment-plan | src/codecompass/app/diagnostics_v2.py | implementation | B-D06 v0.2 executable candidate; real API + simulated profiles; formal G2 pending actual approval |
 | 2026-10-19T20:45:37 | experiment-plan | src/codecompass/app/relay_v2.py | implementation | B-D06 v0.2 executable candidate; real API + simulated profiles; formal G2 pending actual approval |
 | 2026-10-19T20:45:37 | experiment-plan | tests/B/test_relay_v2.py | implementation | B-D06 v0.2 executable candidate; real API + simulated profiles; formal G2 pending actual approval |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/A-audit.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/B-v1-audit.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/pytest.txt | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/recovery_registration.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/release_gate.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/v2-audit.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | docs/B/sync_receipt_D06_v2.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-verification01/index-byte-check.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
