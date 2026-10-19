@@ -128,3 +128,13 @@
 | 2026-10-19 15:32:35 | experiment-plan | scripts/B/serve_d06.py | implementation | B-D06 candidate preparation; G2 not passed |
 | 2026-10-19 15:32:35 | experiment-plan | src/codecompass/app/study_d06.py | implementation | B-D06 candidate preparation; G2 not passed |
 | 2026-10-19 15:32:35 | experiment-plan | tests/B/test_protocol_d06.py | implementation | B-D06 candidate preparation; G2 not passed |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/A-candidate-audit.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/A-supplement-audit.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/committed-bytes.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/protocol-audit.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/pytest.txt | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-recovery-check01/registration.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-verification01/pre-recovery-audit.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-verification01/B2-original-parity.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | docs/B/sync_receipt_D06.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 15:38:24 | experiment-plan | docs/B/session_B-D06_20261019_153824.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |

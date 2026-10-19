@@ -1,0 +1,202 @@
+{
+  "inputs": 20,
+  "all_matched": true,
+  "scope": "initial planning parity only; dynamic completed-context semantics checked separately in tests",
+  "cases": [
+    {
+      "case": "D04-budget_short",
+      "matched": true,
+      "status": "NO_FEASIBLE_FOUND",
+      "route": [],
+      "cost": 0.0
+    },
+    {
+      "case": "D04-cost_gap",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "a",
+        "c"
+      ],
+      "cost": 6.0
+    },
+    {
+      "case": "D04-cycle",
+      "matched": true,
+      "status": "NO_FEASIBLE_FOUND",
+      "route": [],
+      "cost": 0.0
+    },
+    {
+      "case": "D04-cycle_escape",
+      "matched": true,
+      "status": "NO_FEASIBLE_FOUND",
+      "route": [],
+      "cost": 0.0
+    },
+    {
+      "case": "D04-empty_goal",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [],
+      "cost": 0.0
+    },
+    {
+      "case": "D04-fractional",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "a",
+        "b"
+      ],
+      "cost": 0.30000000000000004
+    },
+    {
+      "case": "D04-greedy_failure",
+      "matched": true,
+      "status": "NO_FEASIBLE_FOUND",
+      "route": [
+        "a"
+      ],
+      "cost": 2.0
+    },
+    {
+      "case": "D04-mastered",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "a"
+      ],
+      "cost": 2.0
+    },
+    {
+      "case": "D04-shared",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "s",
+        "a",
+        "b"
+      ],
+      "cost": 5.0
+    },
+    {
+      "case": "D04-ties",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "a"
+      ],
+      "cost": 1.0
+    },
+    {
+      "case": "D04-twelve_units",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11"
+      ],
+      "cost": 12.0
+    },
+    {
+      "case": "D04-unique_chain",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "s",
+        "a"
+      ],
+      "cost": 3.0
+    },
+    {
+      "case": "D04-unreachable",
+      "matched": true,
+      "status": "NO_FEASIBLE_FOUND",
+      "route": [],
+      "cost": 0.0
+    },
+    {
+      "case": "D04-zero_cost",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "a",
+        "b"
+      ],
+      "cost": 0.0
+    },
+    {
+      "case": "diagnostic-fail",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "s",
+        "a",
+        "b"
+      ],
+      "cost": 18.0
+    },
+    {
+      "case": "diagnostic-pass",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "s",
+        "a",
+        "b"
+      ],
+      "cost": 18.0
+    },
+    {
+      "case": "task_001-sim_evidence",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "u_chunked_iter"
+      ],
+      "cost": 43.0
+    },
+    {
+      "case": "task_001-sim_unknown",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "u_chunked_iter",
+        "u_iterable",
+        "u_chunked"
+      ],
+      "cost": 80.0
+    },
+    {
+      "case": "task_002-sim_evidence",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "u_windowed_iter"
+      ],
+      "cost": 39.0
+    },
+    {
+      "case": "task_002-sim_unknown",
+      "matched": true,
+      "status": "FEASIBLE",
+      "route": [
+        "u_positive_int",
+        "u_iterable",
+        "u_windowed_iter"
+      ],
+      "cost": 60.0
+    }
+  ]
+}

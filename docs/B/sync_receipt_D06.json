@@ -1,0 +1,20 @@
+{
+  "task_id": "B-D06",
+  "branch": "codex/B-D06-protocol",
+  "base_sha": "72c0922369d5ef31c4803974dda8965761ca72dd",
+  "business_checkpoint": "061c3fc81fc7e6dde5f230e6d1587433d59465e7",
+  "remote_verified_sha": "061c3fc81fc7e6dde5f230e6d1587433d59465e7",
+  "push_exit_code": 0,
+  "ls_remote_exit_code": 0,
+  "technical_checks_passed": true,
+  "tests": 305,
+  "recovery_tests": 305,
+  "byte_checks": 127,
+  "joint_g2_passed": false,
+  "next_day_allowed": false,
+  "dependency_handoff_allowed": true,
+  "main_merged": false,
+  "tag_created": false,
+  "independent_human_review": "NOT_REVIEWED",
+  "final_sha_note": "Receipt-only commit follows; final HEAD=remote in task completion"
+}

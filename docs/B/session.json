@@ -6,7 +6,7 @@
   "model_id": null,
   "actual_date": "2026-10-19",
   "planned_date": "2026-10-20",
-  "updated_at": "2026-10-19T15:32:35.298413+08:00",
+  "updated_at": "2026-10-19T15:38:24.996106+08:00",
   "branch": "codex/B-D06-protocol",
   "base_commit": "72c0922369d5ef31c4803974dda8965761ca72dd",
   "status": "BLOCKED",
@@ -28,5 +28,11 @@
   "main_merged": false,
   "model_api_calls": 0,
   "independent_human_review": "NOT_REVIEWED",
-  "git_sync": "PENDING_WIP_CHECKPOINT"
+  "git_sync": "CANDIDATE_CHECKPOINT_HEAD_REMOTE_EQUAL",
+  "verified_checkpoint": "061c3fc81fc7e6dde5f230e6d1587433d59465e7",
+  "remote_verified_sha": "061c3fc81fc7e6dde5f230e6d1587433d59465e7",
+  "recovery_check": "PASSED_SAME_MACHINE_COMMITTED_COPY",
+  "recovery_tests": 305,
+  "changed_file_byte_checks": 127,
+  "B2_initial_parity_cases": 20
 }

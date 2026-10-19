@@ -56,35 +56,35 @@
   ],
   "commands": [
     {
-      "command": "pytest -q --basetemp=tmp/pytest-B-D06-final01",
+      "command": "./.venv/Scripts/python.exe -m pytest -q --basetemp=tmp/pytest-B-D06-final01",
       "exit_code": 0,
       "raw": "pytest.txt",
       "tests": 305
     },
     {
-      "command": "scripts/B/audit_d06.py --output .../protocol-audit.json",
+      "command": "./.venv/Scripts/python.exe scripts/B/audit_d06.py --output experiments/B/B-D06-verification01/protocol-audit.json",
       "exit_code": 0,
       "checks": 107
     },
     {
-      "command": "scripts/B/demo_d06.py --run-id B-D06-development01",
+      "command": "./.venv/Scripts/python.exe scripts/B/demo_d06.py --run-id B-D06-development01",
       "exit_code": 0,
       "raw": "../B-D06-development01/fixtures/summary.json"
     },
     {
-      "command": "scripts/B/challenge_d06.py --output .../tamper-challenges.json",
+      "command": "./.venv/Scripts/python.exe scripts/B/challenge_d06.py --output experiments/B/B-D06-verification01/tamper-challenges.json",
       "exit_code": 0
     },
     {
-      "command": "scripts/A/audit_d06.py + audit_d06_gate_control.py",
-      "exit_code": 0,
-      "raw": [
-        "A-candidate-audit.json",
-        "A-supplement-audit.json"
-      ]
+      "command": "./.venv/Scripts/python.exe scripts/A/audit_d06.py --output experiments/B/B-D06-verification01/A-candidate-audit.json",
+      "exit_code": 0
     },
     {
-      "command": "python -m pip check",
+      "command": "./.venv/Scripts/python.exe scripts/A/audit_d06_gate_control.py --output experiments/B/B-D06-verification01/A-supplement-audit.json",
+      "exit_code": 0
+    },
+    {
+      "command": "./.venv/Scripts/python.exe -m pip check",
       "exit_code": 0,
       "result": "No broken requirements found."
     }

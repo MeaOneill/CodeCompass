@@ -1,0 +1,13 @@
+{
+  "task_id": "B-D06",
+  "checkpoint": "061c3fc81fc7e6dde5f230e6d1587433d59465e7",
+  "scope": "same-machine committed-copy recovery, not second-machine or human review",
+  "tests": 305,
+  "changed_files_byte_matches": 127,
+  "private_key_copied": false,
+  "private_key_matches_on_recovery_machine": false,
+  "protocol_audit_passed": true,
+  "A_audits_passed": true,
+  "model_api_calls": 0,
+  "formal_study_allowed": false
+}
