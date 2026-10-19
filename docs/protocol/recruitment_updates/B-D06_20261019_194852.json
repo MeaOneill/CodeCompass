@@ -1,0 +1,13 @@
+{
+  "task_id": "B-D06",
+  "recorded_at": "2026-10-19T19:48:52.150989+08:00",
+  "source": "direct user reply",
+  "user_reply": "未确认",
+  "confirmed_count": null,
+  "status": "NOT_YET_CONFIRMED",
+  "selected_comparison": "PENDING_CONFIRMATION",
+  "not_equivalent_to_zero": true,
+  "participant_names_or_contacts_collected": false,
+  "formal_outcomes_collected": 0,
+  "candidate_files_modified": false
+}

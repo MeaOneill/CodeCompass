@@ -6,7 +6,7 @@
   "model_id": null,
   "actual_date": "2026-10-19",
   "planned_date": "2026-10-20",
-  "updated_at": "2026-10-19T15:38:24.996106+08:00",
+  "updated_at": "2026-10-19T19:48:52.150989+08:00",
   "branch": "codex/B-D06-protocol",
   "base_commit": "72c0922369d5ef31c4803974dda8965761ca72dd",
   "status": "BLOCKED",
@@ -34,5 +34,8 @@
   "recovery_check": "PASSED_SAME_MACHINE_COMMITTED_COPY",
   "recovery_tests": 305,
   "changed_file_byte_checks": 127,
-  "B2_initial_parity_cases": 20
+  "B2_initial_parity_cases": 20,
+  "recruitment_status": "USER_CONFIRMED_NOT_YET_CONFIRMED",
+  "recruitment_evidence": "docs/protocol/recruitment_updates/B-D06_20261019_194852.json",
+  "comparison_decision": "PENDING_CONFIRMATION"
 }

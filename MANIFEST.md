@@ -138,3 +138,4 @@
 | 2026-10-19 15:38:24 | experiment-plan | experiments/B/B-D06-verification01/B2-original-parity.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
 | 2026-10-19 15:38:24 | experiment-plan | docs/B/sync_receipt_D06.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
 | 2026-10-19 15:38:24 | experiment-plan | docs/B/session_B-D06_20261019_153824.json | implementation | B-D06 recovery evidence; formal G2 remains blocked |
+| 2026-10-19 19:48:52 | experiment-plan | docs/protocol/recruitment_updates/B-D06_20261019_194852.json | implementation | User confirms recruitment not yet confirmed; frozen candidate unchanged |
