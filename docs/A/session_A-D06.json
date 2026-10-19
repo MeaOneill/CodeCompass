@@ -6,7 +6,7 @@
   "model_id": null,
   "planned_date": "2026-10-20",
   "actual_date": "2026-10-19",
-  "updated_at": "2026-10-19T14:35:11.925881+08:00",
+  "updated_at": "2026-10-19T14:43:46.219591+08:00",
   "branch": "codex/A-D06-g2-freeze",
   "base_commit": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
   "received_B_commit": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
@@ -28,7 +28,7 @@
   "model_api_calls": 0,
   "main_merged": false,
   "tag_created": false,
-  "synchronization": "PENDING_FOLLOWUP_PUSH",
+  "synchronization": "FOLLOWUP_CHECKPOINT_PUSHED_AND_VERIFIED",
   "background_jobs": [],
   "business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
   "remote_verified_business_checkpoint": "5d39d55330359530dbec52c12e9b8ac3c119f619",
@@ -40,5 +40,12 @@
   "next_step_scope": "same-day B-D06 dependency closure only",
   "supplemental_development_run": "A-D06-gate-control02",
   "supplemental_results": 60,
-  "supplemental_version": "v0.1-candidate.1-supplement"
+  "supplemental_version": "v0.1-candidate.1-supplement",
+  "followup_checkpoint": "67787e708a4470efb44acc95c8affe0f74a539f9",
+  "followup_verified_remote": "67787e708a4470efb44acc95c8affe0f74a539f9",
+  "followup_clean_clone_tests": 18,
+  "followup_clean_clone_saved_route_audit": 60,
+  "joint_g2_passed": false,
+  "formal_test_allowed": false,
+  "final_head_note": "Receipt-only child commit follows; final HEAD/remote in completion message, not self-referenced"
 }

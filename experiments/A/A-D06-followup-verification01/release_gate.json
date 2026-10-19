@@ -14,8 +14,12 @@
   "raw_audit": "control-audit.json",
   "source_version": "v0.1-candidate.1-supplement",
   "scope_correction": "B-D06 is same-day dependency closure; joint G2 not a prerequisite for starting B-D06",
-  "synchronization": "commit/push and remote equality required; exact final SHA in receipt/completion notification",
+  "synchronization": "FOLLOWUP_CHECKPOINT_PUSHED_AND_VERIFIED",
   "human_review": "NOT_REVIEWED",
   "new_model_calls": 0,
-  "interface_contract": "docs/requests/A-D06-to-B-D06-freeze-contract.md"
+  "interface_contract": "docs/requests/A-D06-to-B-D06-freeze-contract.md",
+  "verified_checkpoint": "67787e708a4470efb44acc95c8affe0f74a539f9",
+  "clean_clone_new_tests": 18,
+  "clean_clone_control_audit": 60,
+  "final_receipt_only_commit_follows": true
 }
