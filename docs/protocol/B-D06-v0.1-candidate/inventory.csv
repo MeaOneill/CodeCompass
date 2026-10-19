@@ -1,0 +1,3 @@
+split,module,planned,actual_specs,human_reviewed,pilot_validated,formally_frozen,patch_tasks,task_types
+dev,iterutils,8,4,0,0,0,1,"{""local_modification"": 1, ""debug"": 2, ""locate_explain"": 1}"
+test_candidate,strutils,16,8,0,0,0,0,"{""locate_explain"": 5, ""debug"": 3}"

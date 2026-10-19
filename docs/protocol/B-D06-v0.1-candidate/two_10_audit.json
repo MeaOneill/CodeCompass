@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "errors": [],
+  "planned_slots": 10,
+  "actual_enrolled": 0,
+  "method_period_counts": {
+    "1:Ours": 5,
+    "1:B2": 5,
+    "2:Ours": 5,
+    "2:B2": 5
+  },
+  "task_method_counts": [
+    {
+      "task_id": "task_005",
+      "Ours": 1,
+      "B2": 1
+    },
+    {
+      "task_id": "task_006",
+      "Ours": 1,
+      "B2": 1
+    },
+    {
+      "task_id": "task_007",
+      "Ours": 1,
+      "B2": 1
+    },
+    {
+      "task_id": "task_008",
+      "Ours": 1,
+      "B2": 1
+    },
+    {
+      "task_id": "task_009",
+      "Ours": 2,
+      "B2": 1
+    },
+    {
+      "task_id": "task_010",
+      "Ours": 1,
+      "B2": 2
+    },
+    {
+      "task_id": "task_011",
+      "Ours": 1,
+      "B2": 2
+    },
+    {
+      "task_id": "task_012",
+      "Ours": 2,
+      "B2": 1
+    }
+  ],
+  "task_method_max_spread": 1,
+  "parallel_difficulty": "NOT_HUMAN_CALIBRATED",
+  "shared_generic_python_transfer": "POSSIBLE_DESPITE_DISJOINT_LISTED_CONCEPTS"
+}

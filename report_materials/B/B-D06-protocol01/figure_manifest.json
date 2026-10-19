@@ -1,0 +1,106 @@
+[
+  {
+    "figure_id": "T01_actual_inventory",
+    "task_id": "B-D06",
+    "run_id": "B-D06-protocol01",
+    "source_version": "B-D06-v0.1-candidate",
+    "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+    "evidence_type": "inventory_count_not_learning_effect",
+    "human_effect_sample_size": 0,
+    "confirmed_enrollment": null,
+    "dpi": 300,
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_OUTPUT",
+    "caption": "实际规格计数与预设分配规则，非正式冻结/真人效果。",
+    "command": "python scripts/B/draw_d06.py",
+    "files": [
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/inventory.json",
+        "sha256": "221466553ce903cb6a28cbd5d73fb1edaf916da08cc320ac870e774b3062d9bc"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/inventory.csv",
+        "sha256": "4228f75f713157acc15a044ebcb657cc9e3e939d5ad9fc294e4bd80647592b7f"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/three_12.csv",
+        "sha256": "6c030aa266b501bc02a4cb0a659b619d6a435494f8a45842fed3954454dde9da"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/three_18.csv",
+        "sha256": "952ebaff1b94d523c2dfe97b7cd5899fed0752b86ff696753cd0502116a79979"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/two_6.csv",
+        "sha256": "4492885aa316fbabdbb3878225f107d4593ec49c3e2217ff31c56acd489da6d0"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/two_10.csv",
+        "sha256": "f0cc06ac02b1c57e59a098cf8ddebcbd734f549148b33bd491ea897a64f59399"
+      },
+      {
+        "path": "scripts/B/draw_d06.py",
+        "sha256": "8fc2acd4dd882eb6a21a20d20b4b88a6c22537c5c87684520995f25c2d89f88c"
+      },
+      {
+        "path": "report_materials/B/B-D06-protocol01/T01_actual_inventory.png",
+        "sha256": "b19d9c68941684909ddaa431f7340b749085bfbf80761f98e3bcb952ccbe3a08"
+      },
+      {
+        "path": "report_materials/B/B-D06-protocol01/T01_actual_inventory.svg",
+        "sha256": "6eb048bea347ec17764b3a59788211a657a68b388bb7446961251829b3f0befd"
+      }
+    ]
+  },
+  {
+    "figure_id": "assignment_flow",
+    "task_id": "B-D06",
+    "run_id": "B-D06-protocol01",
+    "source_version": "B-D06-v0.1-candidate",
+    "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+    "evidence_type": "planned_assignment_flow",
+    "human_effect_sample_size": 0,
+    "confirmed_enrollment": null,
+    "dpi": 300,
+    "visual_review": "PASSED_AGENT_VIEW_NATIVE_OUTPUT",
+    "caption": "实际规格计数与预设分配规则，非正式冻结/真人效果。",
+    "command": "python scripts/B/draw_d06.py",
+    "files": [
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/inventory.json",
+        "sha256": "221466553ce903cb6a28cbd5d73fb1edaf916da08cc320ac870e774b3062d9bc"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/inventory.csv",
+        "sha256": "4228f75f713157acc15a044ebcb657cc9e3e939d5ad9fc294e4bd80647592b7f"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/three_12.csv",
+        "sha256": "6c030aa266b501bc02a4cb0a659b619d6a435494f8a45842fed3954454dde9da"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/three_18.csv",
+        "sha256": "952ebaff1b94d523c2dfe97b7cd5899fed0752b86ff696753cd0502116a79979"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/two_6.csv",
+        "sha256": "4492885aa316fbabdbb3878225f107d4593ec49c3e2217ff31c56acd489da6d0"
+      },
+      {
+        "path": "docs/protocol/B-D06-v0.1-candidate/two_10.csv",
+        "sha256": "f0cc06ac02b1c57e59a098cf8ddebcbd734f549148b33bd491ea897a64f59399"
+      },
+      {
+        "path": "scripts/B/draw_d06.py",
+        "sha256": "8fc2acd4dd882eb6a21a20d20b4b88a6c22537c5c87684520995f25c2d89f88c"
+      },
+      {
+        "path": "report_materials/B/B-D06-protocol01/assignment_flow.png",
+        "sha256": "17724ef3bb32869e81841c6e9bb18d0b6b8ab9b1712943bfed1e31619f3ca0ae"
+      },
+      {
+        "path": "report_materials/B/B-D06-protocol01/assignment_flow.svg",
+        "sha256": "f652dd3fd41561f6c7ec682880539c08f21a4da85d2ab73fc12279f3db5e2d78"
+      }
+    ]
+  }
+]

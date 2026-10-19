@@ -1,0 +1,57 @@
+{
+  "version": "B-D06-protocol-candidate-1",
+  "formal_freeze": false,
+  "status": "SEALED_CANDIDATE_NOT_FORMAL",
+  "source_base_sha": "72c0922369d5ef31c4803974dda8965761ca72dd",
+  "files": [
+    {
+      "path": "benchmarks/B/task_catalog.json",
+      "sha256": "6e11f3f4ed05435a69e056d72e98827d8c57dc70a0d17d00f0f7c74b2fc544be"
+    },
+    {
+      "path": "benchmarks/B/private_key_manifest.json",
+      "sha256": "0c612c58786563b33a873fd8fe1eac80f7824eb98d2f3ef1d45781b108e3e383"
+    },
+    {
+      "path": "scripts/B/evaluation/grade.py",
+      "sha256": "35304f8edd709e796906e23b84f21f6e44e1fdae4b0a1f3f7772baec90fae611"
+    },
+    {
+      "path": "scripts/B/evaluation/grade_response.py",
+      "sha256": "90e89620dc538797679e7d634b1b0c77785d5b0671d35e4e89280593275932cf"
+    },
+    {
+      "path": "scripts/B/evaluation/worker.py",
+      "sha256": "1ccb3129d8fdde8f004256836dd2ef7a35ffee7ca4b956a9acb6477417ec3af0"
+    },
+    {
+      "path": "src/codecompass/app/diagnostic_items.py",
+      "sha256": "a95736435804b926dd874d4eaff8f76b21c933eab79f162a0d1b869fa4249c71"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/snapshot.json",
+      "sha256": "54b0fcab69eef1b184ef470a38be89416455c845476ee68d5785b4bc6c809d03"
+    }
+  ],
+  "private_key": {
+    "sha256": "1de1e5502e0fad952ffcdb2144bcfa92f1ae38a0cea24f3886716940df1874fa",
+    "verified_local": true,
+    "task_ids": [
+      "task_005",
+      "task_006",
+      "task_007",
+      "task_008",
+      "task_009",
+      "task_010",
+      "task_011",
+      "task_012"
+    ],
+    "shared_storage": false,
+    "storage": "ignored private_evaluation/B-D06/v0.1-candidate; B evaluator only; explicit restricted transfer not configured"
+  },
+  "human_reviews": [],
+  "scoring_disagreements": [],
+  "disagreement_status": "NOT_REVIEWED; empty list is not agreement",
+  "source_module_review": "NOT_HUMAN_REVIEWED",
+  "freeze_tag": null
+}

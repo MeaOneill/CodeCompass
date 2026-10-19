@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="session-token" content="__TOKEN__"><title>CodeCompass · 阅读与反馈</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><span class="brand">C<span>◈</span> CodeCompass</span><span class="badge">B-D06 · 候选开发</span></header>
+<main><section class="intro"><p class="eyebrow">开源代码学习 · 固定版本 · 可追溯记录</p><h1>从源码阅读，到证据反馈。</h1><p>各方法使用相同材料、短测与操作界面。本页不用于正式研究；提交后由独立评分确认结果。</p></section>
+<section id="setup" class="card"><h2>开始一轮开发体验</h2><div class="fields"><label>任务<select id="task"><option value="task_001">01 · 生成器与分块迭代</option><option value="task_002">02 · 滑动窗口与迭代器</option></select></label><label>路线方法<select id="method"><option value="Ours">Ours · 证据更新与修复</option><option value="B2">B2 · 能力门控贪心</option></select></label><button id="start">开始开发体验</button></div><p class="muted">不收集姓名、学校或联系方式。开发说明请勿填写个人信息。你可以随时暂停或退出。</p></section>
+<p id="error" role="alert"></p>
+<div id="session" hidden><section class="sessionbar card"><div><strong id="taskTitle"></strong><p id="identity" class="muted"></p></div><div><strong id="timer">00:00</strong><span id="state" class="badge"></span><button id="pause">暂停</button><button id="withdraw" class="quiet">退出本轮</button></div></section>
+<div class="grid"><aside class="card"><p class="eyebrow">阅读路线</p><ol id="route"></ol><p id="budget" class="muted"></p><hr><p class="muted">点击“阅读完成”只记录进度。只有独立短测评分才产生能力证据。</p><p id="limit" class="muted"></p></aside>
+<section class="card content"><nav><button id="read">阅读源码</button><button id="quiz">进入短测</button><button id="showSubmit" class="quiet">最终提交</button></nav>
+<div id="reading"><h2>固定版本源码</h2><details><summary>查看任务目标与公开要求</summary><p id="goal"></p><ul id="requirements"></ul></details><p id="source" class="muted"></p><div id="materials"></div><button id="complete">标记本份阅读完成</button></div>
+<div id="quizPanel" hidden><p class="eyebrow">独立概念短测 · 每轮一次</p><h2 id="question"></h2><pre id="questionCode"></pre><div id="choices"></div><button id="answer">提交短测并更新路线</button><p class="muted">这是基础概念诊断，不是最终代码任务的答案或成绩。</p></div>
+<div id="feedback" hidden><p class="eyebrow">证据更新 / 路线复核</p><h2 id="outcome"></h2><div id="evidence"></div><p id="routeChange"></p><p class="muted">一道题只更新一次。路线可能保持不变；少量证据不代表已经掌握。</p></div>
+<div id="submission" hidden><h2>提交开发说明</h2><p>描述本次完成的步骤或粘贴代码修改说明。此入口只保存提交，尚未接入最终补丁独立评分。</p><textarea id="response" rows="5" maxlength="12000" placeholder="开发操作说明，不填写姓名或联系方式"></textarea><button id="submit">保存最终提交并停止计时</button></div>
+<div id="finished" hidden><h2>本轮记录已保存</h2><p id="finishText"></p><button id="newSession">返回开始页</button></div>
+</section></div><section class="card foot"><strong>记录状态</strong><span id="records"></span><p id="limitations" class="muted"></p></section></div>
+</main><footer>CodeCompass / 本机开发预演 · 学习效果尚未测量 · 不产生 API 费用</footer><script src="/app.js"></script></body></html>

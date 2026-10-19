@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="45" y="61" font-family="Microsoft YaHei,sans-serif" font-size="36" fill="#243c59">实验分配流程 | 已准备规则，尚未分配真人</text>
+<text x="45" y="121" font-family="Microsoft YaHei,sans-serif" font-size="26" fill="#243c59">预设种子17 · 三方法6种顺序 / 两方法2种顺序 · SLOT不是参与者</text>
+<rect x="45" y="165" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="206" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">1 真实自愿确认 / 排除开发与预演者</text>
+<text x="70" y="252" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">目前确认人数未知；已有正式同意回执0；D05同一预演者3轮全排除</text>
+<rect x="45" y="310" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="351" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">2 事前登记比较分支</text>
+<text x="70" y="397" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">≥12人：三方法须动态B1；6–11人：Ours/B2；1–5人：案例；0人：离线</text>
+<rect x="45" y="455" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="496" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">3 生成匿名编号后绑定保留SLOT</text>
+<text x="70" y="542" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">不同轮不重复题；知识点/函数不重叠；难度平行尚未人类校准</text>
+<rect x="45" y="600" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="641" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">4 相同初测 / 阅读 / 固定首材料后短测</text>
+<text x="70" y="687" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">同预算、同帮助、相同次数；真实时长包含规划和方法内诊断</text>
+<rect x="45" y="745" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="786" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">5 独立终测 + 隐藏方法的双人评分</text>
+<text x="70" y="832" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">缺评分/分歧保持PENDING；退出/超时/无效结果分别保留</text>
+<rect x="45" y="890" width="1700" height="120" rx="12" fill="white" stroke="#b5c4d8" stroke-width="2"/>
+<text x="70" y="931" font-family="Microsoft YaHei,sans-serif" font-size="29" fill="#243c59">6 按参与者配对汇总</text>
+<text x="70" y="977" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">F05/F06只准备字段；按人整组重采样，不把多轮或种子当更多人</text>
+<text x="45" y="1115" font-family="Microsoft YaHei,sans-serif" font-size="25" fill="#243c59">当前联合G2未通过：人工审阅、留出规划接入、比较分支确认、main和正式标签仍缺。</text>
+</svg>

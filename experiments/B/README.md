@@ -49,3 +49,11 @@ B-D04最新真实B1：B-D04-deepseek-live01，6次真实HTTP响应，raw/calls/u
 B1静态回放、动态B1/正式终测评分未接入、生产VOI未校准、独立人类审核和异机复现未完成等既有边界不变；本轮没有新API调用。允许A-D06继续协议及接入边界工作，不代表正式研究已经可启动。
 
 A-D06第一动作：fetch并核对B-D05最终通知SHA，然后在自己的工作区运行 `python scripts/B/audit_d05.py --source experiments/B/B-D05-manual01/manual/export01 --output experiments/A/A-D06-accept-B05-manual-NEW.json --require-manual-flow`，预期exit0、complete_manual_flows=1、manual_pause_resume_flows=1；再读measurement_rules和接口请求，复核正式冻结边界。不调用付费模型。
+
+## B-D06 2026-10-19T15:32:35.298413+08:00
+
+Owner成员B / Codex Agent B / 糯糯，分支codex/B-D06-protocol，base A-D06最终72c0922369d5ef31c4803974dda8965761ca72dd。工程候选检查通过，READY_FOR_REVIEW；完整任务BLOCKED_G2，正式G2未通过，不放行正式下一阶段。没有将联合冻结缺口误当作禁止B准备材料。
+
+交付12规格(4/8)与44项内容封存、私有key本地hash验证、真人协议/匿名空表/三方法与两方法预分配、成功/失败/缺失及配对字段、盲评回执接口、首材料后自动诊断与B2完成上下文、T01/分配图。原A与D05冻结文件未改。前置276测试；本轮305全套测试、协议107检查、4明确夹具347事件检查、3种隔离篡改拒绝、A109文件/60结果420检查与pip检查通过。没有正式终测运行、新API调用或人类审核签字。
+
+实际人数未知，已归档正式同意回执0；正式批准题0，8留出规划/诊断映射缺失；三方法缺动态B1，两方法需人数与双方事前确认；main/正式标签未建立。可补依赖交接，不能宣布G2通过。产物见docs/protocol/B-D06-v0.1-candidate、docs/B/G2执行可行性清单.md、docs/B/handoffs/B-D06.md。原始experiments/B/B-D06-verification01、B-D06-development01；图表report_materials/B/B-D06-protocol01。三组B-D02用户记录保留。

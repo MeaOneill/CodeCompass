@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "case": "catalog",
+      "rejected": true,
+      "errors": [
+        "hash mismatch: benchmarks/B/task_catalog.json"
+      ]
+    },
+    {
+      "case": "snapshot",
+      "rejected": true,
+      "errors": [
+        "hash mismatch: benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/access.md"
+      ]
+    },
+    {
+      "case": "protocol",
+      "rejected": true,
+      "errors": [
+        "hash mismatch: docs/protocol/B-D06-v0.1-candidate/protocol.md"
+      ]
+    }
+  ],
+  "passed": true,
+  "private_answers_copied": false
+}

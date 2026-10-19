@@ -1,0 +1,18 @@
+{
+  "candidate_integrity_passed": false,
+  "errors": [
+    "HASH_MISMATCH:scripts/B/requirements-d01-win-py312.hashes.txt"
+  ],
+  "checked_files": 109,
+  "g2_passed": false,
+  "formal_study_ready": false,
+  "freeze_tag_allowed": false,
+  "blockers": [
+    "B-D06 formal protocol/task split/scoring versions not delivered",
+    "dynamic fair B1 not integrated; B1_saved only",
+    "D06 controlled quiz timing not integrated into B development UI",
+    "independent human source/teaching-edge review and A/B confirmations absent",
+    "main not integrated/confirmed; no formal milestone tag"
+  ],
+  "independent_human_review": "NOT_REVIEWED"
+}

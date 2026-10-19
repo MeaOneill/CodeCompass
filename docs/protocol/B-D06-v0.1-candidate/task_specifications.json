@@ -1,0 +1,239 @@
+[
+  {
+    "task_id": "task_001",
+    "split": "dev",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "iterutils",
+    "functions": [
+      "chunked",
+      "chunked_iter"
+    ],
+    "task_type": "local_modification",
+    "required_concept_ids": [
+      "boltons.chunk_postprocess",
+      "boltons.wrapper_compatibility",
+      "python.generator_laziness",
+      "python.islice_consumption",
+      "python.iterator_protocol",
+      "python.keyword_presence"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_002",
+    "split": "dev",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "iterutils",
+    "functions": [
+      "windowed_iter",
+      "windowed",
+      "pairwise"
+    ],
+    "task_type": "debug",
+    "required_concept_ids": [
+      "python.iterator_protocol",
+      "python.tee",
+      "python.keyword_presence",
+      "python.type_validation"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_003",
+    "split": "dev",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "iterutils",
+    "functions": [
+      "unique_iter"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.hash_set",
+      "python.key_function",
+      "python.generator_laziness"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_004",
+    "split": "dev",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "iterutils",
+    "functions": [
+      "get_path"
+    ],
+    "task_type": "debug",
+    "required_concept_ids": [
+      "python.eafp",
+      "python.exception_translation",
+      "python.sentinel_default"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_005",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "camel2under",
+      "under2camel"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.regex_boundary",
+      "python.string_transform"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_006",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "slugify",
+      "split_punct_ws",
+      "asciify"
+    ],
+    "task_type": "debug",
+    "required_concept_ids": [
+      "python.regex_split",
+      "python.bytes_text",
+      "python.conditional_precedence"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_007",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "ordinalize"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.string_index",
+      "python.branch_exception"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_008",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "strip_ansi"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.escape_sequence",
+      "python.bytes_text"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_009",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "gzip_bytes",
+      "gunzip_bytes"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.bytes_io",
+      "python.compression_roundtrip"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_010",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "iter_splitlines",
+      "indent"
+    ],
+    "task_type": "debug",
+    "required_concept_ids": [
+      "python.regex_group",
+      "python.generator_boundary",
+      "python.predicate"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_011",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "parse_int_list",
+      "format_int_list"
+    ],
+    "task_type": "debug",
+    "required_concept_ids": [
+      "python.range_closed",
+      "python.sorting_duplicates",
+      "python.branch_parse"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  },
+  {
+    "task_id": "task_012",
+    "split": "test_candidate",
+    "repo_url": "https://github.com/mahmoud/boltons",
+    "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "module": "strutils",
+    "functions": [
+      "removeprefix",
+      "human_readable_list"
+    ],
+    "task_type": "locate_explain",
+    "required_concept_ids": [
+      "python.prefix_slice",
+      "python.branch_formatting"
+    ],
+    "time_limit_minutes": 25,
+    "success_rule": "全部关键组通过，总分>=9且人类记录用时<=1500秒；缺人类审核为null而非成功",
+    "review_status": "AGENT_CHECKED_NOT_HUMAN_REVIEWED"
+  }
+]

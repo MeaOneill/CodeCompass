@@ -1,0 +1,95 @@
+{
+  "run_id": "B-D06-verification01",
+  "task_id": "B-D06",
+  "owner": "成员B",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "python": "3.12.10",
+  "actual_date": "2026-10-19",
+  "planned_date": "2026-10-20",
+  "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+  "source_files": [
+    {
+      "path": "scripts/B/audit_d06.py",
+      "sha256": "46b8387352c9f3a5ffdff0f44ac19a3c82689814e0e06400ddbe0cee13a94454"
+    },
+    {
+      "path": "scripts/B/challenge_d06.py",
+      "sha256": "ce980f411e47a9109278b943b1727215e33e872cc758d39f1a20f82760184ee0"
+    },
+    {
+      "path": "scripts/B/demo_d06.py",
+      "sha256": "e345239577f91b84708ebe2036e81dd13eec6b3f6e87f3caca4bfa5a5de55ee3"
+    },
+    {
+      "path": "scripts/B/draw_d06.py",
+      "sha256": "8fc2acd4dd882eb6a21a20d20b4b88a6c22537c5c87684520995f25c2d89f88c"
+    },
+    {
+      "path": "scripts/B/protocol_d06.py",
+      "sha256": "23258477d547c739302691e7d0691efa897ce367557773fd6a7569ac4154119d"
+    },
+    {
+      "path": "scripts/B/score_d06.py",
+      "sha256": "776598cd050b756b4e853aee92264086ac710331f3280af81dcc6fda283bd774"
+    },
+    {
+      "path": "scripts/B/seal_d06.py",
+      "sha256": "9452be4eb80a7922443cd61693238b8a7bd1ca8f392833ff3f176519f8e2f784"
+    },
+    {
+      "path": "scripts/B/serve_d06.py",
+      "sha256": "ea9ecad11481b6272d786845f59bb92dacf1189e47c58ff2ccfab06edb29e5b4"
+    },
+    {
+      "path": "src/codecompass/app/study_d06.py",
+      "sha256": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+    },
+    {
+      "path": "tests/B/test_protocol_d06.py",
+      "sha256": "5a0dc11ee82fbf183826ce7853cf62c51bf522ffcb1cc719bd829b7764277b94"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "daab22d2d2eeebf5f0a9b91eb2fa8665ed85b74eaeefb13cf0e6b87e0e0fed7b"
+    }
+  ],
+  "commands": [
+    {
+      "command": "pytest -q --basetemp=tmp/pytest-B-D06-final01",
+      "exit_code": 0,
+      "raw": "pytest.txt",
+      "tests": 305
+    },
+    {
+      "command": "scripts/B/audit_d06.py --output .../protocol-audit.json",
+      "exit_code": 0,
+      "checks": 107
+    },
+    {
+      "command": "scripts/B/demo_d06.py --run-id B-D06-development01",
+      "exit_code": 0,
+      "raw": "../B-D06-development01/fixtures/summary.json"
+    },
+    {
+      "command": "scripts/B/challenge_d06.py --output .../tamper-challenges.json",
+      "exit_code": 0
+    },
+    {
+      "command": "scripts/A/audit_d06.py + audit_d06_gate_control.py",
+      "exit_code": 0,
+      "raw": [
+        "A-candidate-audit.json",
+        "A-supplement-audit.json"
+      ]
+    },
+    {
+      "command": "python -m pip check",
+      "exit_code": 0,
+      "result": "No broken requirements found."
+    }
+  ],
+  "formal_outcomes": 0,
+  "model_api_calls": 0,
+  "independent_human_review": "NOT_REVIEWED"
+}

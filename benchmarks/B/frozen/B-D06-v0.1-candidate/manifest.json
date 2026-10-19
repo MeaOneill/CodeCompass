@@ -1,0 +1,234 @@
+{
+  "version": "B-D06-v0.1-candidate",
+  "record_type": "candidate_content_seal_not_formal_freeze",
+  "source_base": "72c0922369d5ef31c4803974dda8965761ca72dd",
+  "formal_freeze": false,
+  "formal_tasks": 0,
+  "task_specs": 12,
+  "private_answers_in_git": false,
+  "A_candidate_preserved": true,
+  "A_tag": null,
+  "files": [
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/access.md",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/access.md",
+      "sha256": "d8265de604be4d23fa7809fccc1a1eba245e16d743962b88d60bfc19567ef16c"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/confirmations_template.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/confirmations_template.csv",
+      "sha256": "6c3bd9a944f36045fc570dfc873ddf9f436b7fa2cc07bfd50095e1a65228f423"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/consent.md",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/consent.md",
+      "sha256": "cc36257ee1aec6dbec36acfa6e71743027b8bc9821ab6118825627468a60f025"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/deviations_template.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/deviations_template.csv",
+      "sha256": "ece171661d3c2022ddd8eb738a523b86e1fd18f9bc4d2aa41b64dfe552c6b2d6"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/F05_F06_fields.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/F05_F06_fields.json",
+      "sha256": "e4eda012905ea6dc620ca30a33e2a189d7198396e22dd9e713932a627607fe8b"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/inventory.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/inventory.csv",
+      "sha256": "4228f75f713157acc15a044ebcb657cc9e3e939d5ad9fc294e4bd80647592b7f"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/inventory.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/inventory.json",
+      "sha256": "221466553ce903cb6a28cbd5d73fb1edaf916da08cc320ac870e774b3062d9bc"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/participant_registry_template.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/participant_registry_template.csv",
+      "sha256": "3f120caaf254f585fe40be9dd507a3cc6f7f1ef787880371f6853ec88b75fa85"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/protocol.md",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/protocol.md",
+      "sha256": "14902db86c91fc9f0f5f8a35ef09d4c7d757bdda1e07b4de788d8ec4c315181f"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/recruitment_status.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/recruitment_status.json",
+      "sha256": "e1f9fd2863cab897d644872b89db0704c94ed3dcafba6ff9b29ae33a5e8bfccf"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/review_template.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/review_template.csv",
+      "sha256": "3846fd2539448e58a737ca6c77378c17a14485db41158857a9a19a0ba13cb462"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/score_sheet_template.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/score_sheet_template.csv",
+      "sha256": "37abf3938327cff1e1c3590448e8bcc6d00339173536b4adb705695f9818638e"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/scoring.md",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/scoring.md",
+      "sha256": "5e209b1d0ee064e3a0949ec4cf22056d7bcc4433fb2ce473d879293e9037642e"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/seal_manifest.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/seal_manifest.json",
+      "sha256": "95dffa9c14e6b201614536ddf3b90bc3598a52f256929fb4c27d99d2b616c66d"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/task_specifications.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/task_specifications.json",
+      "sha256": "d5ff10b718a13057578f2c8686340e1408f4e08e140099532838d55f846326e7"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/three_12.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/three_12.csv",
+      "sha256": "6c030aa266b501bc02a4cb0a659b619d6a435494f8a45842fed3954454dde9da"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/three_12_audit.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/three_12_audit.json",
+      "sha256": "10b6a26a69d661538556a9f1b111cb656c28044b2ed0f2fca3df565cd532d038"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/three_18.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/three_18.csv",
+      "sha256": "952ebaff1b94d523c2dfe97b7cd5899fed0752b86ff696753cd0502116a79979"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/three_18_audit.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/three_18_audit.json",
+      "sha256": "0515b541495f37667bbb54c90745ffacfe2c8404f51e6029df3985ac589fecf9"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/two_10.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/two_10.csv",
+      "sha256": "f0cc06ac02b1c57e59a098cf8ddebcbd734f549148b33bd491ea897a64f59399"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/two_10_audit.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/two_10_audit.json",
+      "sha256": "3425cd37c62ab72e31afaa2b3b715e544dc2fc5376c691ffece785aae33219bb"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/two_6.csv",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/two_6.csv",
+      "sha256": "4492885aa316fbabdbb3878225f107d4593ec49c3e2217ff31c56acd489da6d0"
+    },
+    {
+      "path": "docs/protocol/B-D06-v0.1-candidate/two_6_audit.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/docs/protocol/B-D06-v0.1-candidate/two_6_audit.json",
+      "sha256": "b17e67e58a1e8203befff5c4f989d07a75bf28600674902fd668b95b226bc8ae"
+    },
+    {
+      "path": "app/B_D06/app.js",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/app/B_D06/app.js",
+      "sha256": "4ee336f57a52d817543cd0a765a74e31072cb49830211d39be1b10046d0be44e"
+    },
+    {
+      "path": "app/B_D06/index.html",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/app/B_D06/index.html",
+      "sha256": "8350aab89793cf05f909a0950f11954b8c697707d83d872e45d69791f44a807c"
+    },
+    {
+      "path": "app/B_D06/style.css",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/app/B_D06/style.css",
+      "sha256": "e82718a42b3a41c68a203695781e2629d44c8334db900c7d20990ab38cbe1985"
+    },
+    {
+      "path": "benchmarks/B/task_catalog.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/benchmarks/B/task_catalog.json",
+      "sha256": "6e11f3f4ed05435a69e056d72e98827d8c57dc70a0d17d00f0f7c74b2fc544be"
+    },
+    {
+      "path": "benchmarks/B/private_key_manifest.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/benchmarks/B/private_key_manifest.json",
+      "sha256": "0c612c58786563b33a873fd8fe1eac80f7824eb98d2f3ef1d45781b108e3e383"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/snapshot.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/benchmarks/sources/boltons_B_D02/snapshot.json",
+      "sha256": "54b0fcab69eef1b184ef470a38be89416455c845476ee68d5785b4bc6c809d03"
+    },
+    {
+      "path": "benchmarks/sources/boltons_B_D02/boltons/strutils.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/benchmarks/sources/boltons_B_D02/boltons/strutils.py",
+      "sha256": "c5ecb7efd3b2e86f92545c18d8d72193f45a1bd1d0edaf3da65868aa0e8bcdda"
+    },
+    {
+      "path": "benchmarks/sources/boltons/snapshot.json",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/benchmarks/sources/boltons/snapshot.json",
+      "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+    },
+    {
+      "path": "scripts/B/protocol_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/protocol_d06.py",
+      "sha256": "23258477d547c739302691e7d0691efa897ce367557773fd6a7569ac4154119d"
+    },
+    {
+      "path": "scripts/B/score_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/score_d06.py",
+      "sha256": "776598cd050b756b4e853aee92264086ac710331f3280af81dcc6fda283bd774"
+    },
+    {
+      "path": "scripts/B/serve_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/serve_d06.py",
+      "sha256": "ea9ecad11481b6272d786845f59bb92dacf1189e47c58ff2ccfab06edb29e5b4"
+    },
+    {
+      "path": "scripts/B/serve_d05.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/serve_d05.py",
+      "sha256": "8eb4221411a79fb7fcd3235ec0bc4c8c349fa7e839f4557034db2a8cdc310b18"
+    },
+    {
+      "path": "scripts/B/seal_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/seal_d06.py",
+      "sha256": "9452be4eb80a7922443cd61693238b8a7bd1ca8f392833ff3f176519f8e2f784"
+    },
+    {
+      "path": "scripts/B/audit_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/audit_d06.py",
+      "sha256": "46b8387352c9f3a5ffdff0f44ac19a3c82689814e0e06400ddbe0cee13a94454"
+    },
+    {
+      "path": "src/codecompass/app/study_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/src/codecompass/app/study_d06.py",
+      "sha256": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+    },
+    {
+      "path": "tests/B/test_protocol_d06.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/tests/B/test_protocol_d06.py",
+      "sha256": "5a0dc11ee82fbf183826ce7853cf62c51bf522ffcb1cc719bd829b7764277b94"
+    },
+    {
+      "path": "scripts/B/evaluation/__init__.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/evaluation/__init__.py",
+      "sha256": "d4e197b029080fa2e0ccf32f8d313a5903a1d9a1a6387cb52498c6a8c2b300b7"
+    },
+    {
+      "path": "scripts/B/evaluation/dev_fixtures.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/evaluation/dev_fixtures.py",
+      "sha256": "504a72dddf572402652345c7c8d4fbeaee7313afbb7008f449af793671dad985"
+    },
+    {
+      "path": "scripts/B/evaluation/grade.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/evaluation/grade.py",
+      "sha256": "35304f8edd709e796906e23b84f21f6e44e1fdae4b0a1f3f7772baec90fae611"
+    },
+    {
+      "path": "scripts/B/evaluation/grade_response.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/evaluation/grade_response.py",
+      "sha256": "90e89620dc538797679e7d634b1b0c77785d5b0671d35e4e89280593275932cf"
+    },
+    {
+      "path": "scripts/B/evaluation/worker.py",
+      "snapshot": "benchmarks/B/frozen/B-D06-v0.1-candidate/snapshots/scripts/B/evaluation/worker.py",
+      "sha256": "1ccb3129d8fdde8f004256836dd2ef7a35ffee7ca4b956a9acb6477417ec3af0"
+    }
+  ],
+  "change_policy": "No overwrite. New content requires new version, reason and affected runs before formal outcomes."
+}

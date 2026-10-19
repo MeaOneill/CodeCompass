@@ -1,0 +1,32 @@
+{
+  "record_type": "F05_F06_input_schema_not_results",
+  "required": [
+    "participant_id",
+    "pair_id",
+    "trial_id",
+    "task_id",
+    "method",
+    "period",
+    "protocol_hash",
+    "assignment_hash",
+    "source_commit",
+    "split",
+    "is_pilot",
+    "status",
+    "success",
+    "duration_seconds",
+    "duration_valid",
+    "t_cap_seconds",
+    "missing_reason",
+    "evaluator_version",
+    "submission_sha256"
+  ],
+  "rules": {
+    "participant_unit": "resample all trials of same participant together",
+    "pair_id": "same participant, different nonrepeating task for each method",
+    "missing": "null not 0; withdrawals separate from failed completed scoring",
+    "max_task_seconds": 1500,
+    "primary": "independent success within cap, pending not true",
+    "data_rows": 0
+  }
+}

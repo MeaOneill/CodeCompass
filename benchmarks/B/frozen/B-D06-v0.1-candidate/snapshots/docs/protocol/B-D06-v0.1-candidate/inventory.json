@@ -1,0 +1,39 @@
+{
+  "version": "B-D06-protocol-candidate-1",
+  "repository_count": 1,
+  "rows": [
+    {
+      "split": "dev",
+      "module": "iterutils",
+      "planned": 8,
+      "actual_specs": 4,
+      "human_reviewed": 0,
+      "pilot_validated": 0,
+      "formally_frozen": 0,
+      "patch_tasks": 1,
+      "task_types": {
+        "local_modification": 1,
+        "debug": 2,
+        "locate_explain": 1
+      }
+    },
+    {
+      "split": "test_candidate",
+      "module": "strutils",
+      "planned": 16,
+      "actual_specs": 8,
+      "human_reviewed": 0,
+      "pilot_validated": 0,
+      "formally_frozen": 0,
+      "patch_tasks": 0,
+      "task_types": {
+        "locate_explain": 5,
+        "debug": 3
+      }
+    }
+  ],
+  "actual_specs": 12,
+  "planned_specs": 24,
+  "formal_tasks": 0,
+  "scope": "one repository, iterutils dev / strutils held-out candidates; not cross-repo generalization"
+}

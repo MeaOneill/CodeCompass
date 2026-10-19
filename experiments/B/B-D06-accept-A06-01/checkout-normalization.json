@@ -1,0 +1,6 @@
+{
+  "path": "scripts/B/requirements-d01-win-py312.hashes.txt",
+  "original_sha256": "2e2b373ae49c605b96de2014c5e3902029d0268fb92bee29eb3dd5c4f9f3620f",
+  "restored_git_sha256": "8e3fd61498fcaf4f00aaefa9ef7dc0a8b09ec159d3cabd67f363c37bbfe2e64d",
+  "reason": "Inherited local CRLF versus committed LF; restore exact Git blob, no lock/content/manifest change"
+}

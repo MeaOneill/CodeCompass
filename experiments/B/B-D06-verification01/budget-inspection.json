@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-19T07:27:27.461964+00:00",
+  "currency": "CNY",
+  "approved_cumulative_ceiling": 5.0,
+  "historical_reservations_count": 6,
+  "reserved_total": 1.5,
+  "new_D06_calls": 0,
+  "reservation_is_not_actual_charge": true,
+  "actual_bill": null,
+  "credential_storage": "DPAPI ciphertext exists in ignored tmp; not read/decrypted"
+}

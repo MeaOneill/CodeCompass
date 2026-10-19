@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-10-19",
+  "confirmed_count": null,
+  "known_confirmed_receipts": 0,
+  "actual_contacted": null,
+  "consent_records": 0,
+  "developer_and_pilot_excluded": true,
+  "excluded_D05_pilot_count": 1,
+  "excluded_D05_sessions": 3,
+  "mode": "PENDING_CONFIRMATION",
+  "formal_outcomes_collected": 0,
+  "source": "No actual recruitment confirmation supplied; unknown is not zero"
+}

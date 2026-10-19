@@ -82,4 +82,8 @@
 /docs/decisions/** text eol=lf
 /CodeCompass计划/refine-logs/EXPERIMENT_PLAN.md text eol=crlf
 /configs/frozen/v0.1-candidate.1-supplement/source_snapshot/** -text whitespace=-blank-at-eol,cr-at-eol
+
+# B-D06 protocol and sealed byte snapshots are reproducible on Windows clones.
+/docs/protocol/** text eol=lf
+/benchmarks/B/frozen/**/snapshots/** -text whitespace=-blank-at-eol,cr-at-eol
 /report_materials/A/A-D06-supplement/*.svg -text whitespace=-blank-at-eol,cr-at-eol

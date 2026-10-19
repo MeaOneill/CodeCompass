@@ -12,8 +12,9 @@ sys.path.insert(0,str(ROOT/'src'))
 from codecompass.app.experiment import Collector
 
 
-def make_server(collector, port=8765):
+def make_server(collector, port=8765, asset_root=None):
     token=secrets.token_urlsafe(32)
+    asset_root=asset_root or ROOT/'app/B_D05'
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,*args):
             pass  # No session capabilities, IPs or identities in logs.
@@ -33,7 +34,7 @@ def make_server(collector, port=8765):
             u=urlparse(self.path)
             if u.path in ('/','/app.js','/style.css'):
                 names={'/':('index.html','text/html'),'/app.js':('app.js','text/javascript'),'/style.css':('style.css','text/css')}
-                name,kind=names[u.path];body=(ROOT/'app/B_D05'/name).read_bytes()
+                name,kind=names[u.path];body=(asset_root/name).read_bytes()
                 if name=='index.html':body=body.replace(b'__TOKEN__',token.encode())
                 return self.send(200,body,kind+'; charset=utf-8')
             if u.path=='/api/session':

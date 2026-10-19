@@ -1,0 +1,7 @@
+{
+  "dpi": 300,
+  "renderer": "Existing native SVG/Pillow Canvas",
+  "sample": "task inventory and planned slots only",
+  "missing": "enrollment unknown; no outcomes",
+  "transformations": "direct counts, no inference or normalization"
+}
