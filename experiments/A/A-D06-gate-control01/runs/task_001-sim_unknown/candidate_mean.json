@@ -1,0 +1,260 @@
+{
+  "version": "D05-adaptive-v1",
+  "status": "FEASIBLE",
+  "completed": [],
+  "remaining": [
+    "u_chunked",
+    "u_chunked_iter",
+    "u_iterable"
+  ],
+  "unit_costs": {
+    "u_iterable": 16.0,
+    "u_chunked_iter": 43.0,
+    "u_chunked": 21.0
+  },
+  "gate": {
+    "boltons.chunk_postprocess": {
+      "concept_id": "boltons.chunk_postprocess",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "boltons.wrapper_compatibility": {
+      "concept_id": "boltons.wrapper_compatibility",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.generator_laziness": {
+      "concept_id": "python.generator_laziness",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.islice_consumption": {
+      "concept_id": "python.islice_consumption",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 80.0,
+  "switch_cost": 0.0,
+  "objective": 80.0,
+  "missing": [],
+  "total_if_executed": 80.0,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 80.0,
+    "switch_cost": 0.0,
+    "objective": 80.0,
+    "total_if_executed": 80.0
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 15,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [
+        [
+          "u_chunked_iter"
+        ],
+        [
+          "u_iterable"
+        ],
+        [
+          "u_chunked"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "u_chunked_iter"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "u_iterable"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "u_chunked"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "retained": [
+        [
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        [
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        [
+          "u_chunked",
+          "u_chunked_iter"
+        ],
+        [
+          "u_chunked_iter",
+          "u_chunked"
+        ],
+        [
+          "u_chunked",
+          "u_iterable"
+        ],
+        [
+          "u_iterable",
+          "u_chunked"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_iterable",
+        "u_chunked_iter"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_chunked",
+        "u_chunked_iter"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_chunked_iter",
+        "u_chunked"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_chunked",
+        "u_iterable"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_iterable",
+        "u_chunked"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "retained": [
+        [
+          "u_chunked",
+          "u_chunked_iter",
+          "u_iterable"
+        ],
+        [
+          "u_chunked",
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        [
+          "u_chunked_iter",
+          "u_chunked",
+          "u_iterable"
+        ],
+        [
+          "u_chunked_iter",
+          "u_iterable",
+          "u_chunked"
+        ],
+        [
+          "u_iterable",
+          "u_chunked",
+          "u_chunked_iter"
+        ],
+        [
+          "u_iterable",
+          "u_chunked_iter",
+          "u_chunked"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 3,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed",
+  "gate_policy": "posterior_mean",
+  "adapter": {
+    "known_from_independent_evidence": [],
+    "removed_hard_edges": [],
+    "removed_goals": [],
+    "original_ledger_unchanged": true
+  }
+}

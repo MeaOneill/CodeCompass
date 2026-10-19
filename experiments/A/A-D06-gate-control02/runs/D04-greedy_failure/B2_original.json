@@ -1,0 +1,141 @@
+{
+  "status": "NO_FEASIBLE_FOUND",
+  "remaining": [
+    "a"
+  ],
+  "objective": 2,
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "y": {
+      "concept_id": "y",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": false,
+    "missing": [
+      "y"
+    ],
+    "learning_cost": 2.0,
+    "switch_cost": 0.0,
+    "objective": 2.0,
+    "total_if_executed": 2.0
+  },
+  "original_plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "greedy_failure-greedy",
+    "request_id": "greedy_failure",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x",
+        "y"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 0.5
+    },
+    "unmet_constraints": [
+      "uncovered target: y",
+      "b: requires incremental proxy_cost=5, remaining=3",
+      "c: requires incremental proxy_cost=4, remaining=3",
+      "Greedy search did not find a complete feasible route; this is not an infeasibility proof"
+    ],
+    "estimated_cost": 2,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=2; own proxy_cost=2; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "original_trace": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x",
+          "y"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "incremental_cost": 2,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "incremental_cost": 5,
+            "new_goal_gain": 2
+          },
+          {
+            "root": "c",
+            "bundle": [
+              "c"
+            ],
+            "incremental_cost": 4,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "pending_goals": [
+          "y"
+        ],
+        "blocked_candidates": [
+          "b: requires incremental proxy_cost=5, remaining=3",
+          "c: requires incremental proxy_cost=4, remaining=3"
+        ],
+        "candidates": []
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  }
+}

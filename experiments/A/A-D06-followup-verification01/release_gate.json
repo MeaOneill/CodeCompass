@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-10-19T14:35:11.925881+08:00",
+  "a_d06_engineering_passed": true,
+  "artifact_status": "READY_FOR_REVIEW",
+  "next_task": "B-D06",
+  "b_d06_handoff_allowed": true,
+  "formal_test_allowed": false,
+  "joint_g2_passed": false,
+  "freeze_tag_allowed": false,
+  "full_tests_passed": 276,
+  "new_tests": 18,
+  "independent_ai_gate_tests": 17,
+  "saved_comparisons": 60,
+  "raw_audit": "control-audit.json",
+  "source_version": "v0.1-candidate.1-supplement",
+  "scope_correction": "B-D06 is same-day dependency closure; joint G2 not a prerequisite for starting B-D06",
+  "synchronization": "commit/push and remote equality required; exact final SHA in receipt/completion notification",
+  "human_review": "NOT_REVIEWED",
+  "new_model_calls": 0,
+  "interface_contract": "docs/requests/A-D06-to-B-D06-freeze-contract.md"
+}

@@ -17,3 +17,5 @@
 ## A-D06候选快照（G2未通过）
 
 configs/frozen/freeze_manifest.json登记109文件与逐字节副本，版本v0.1-candidate；q=.1/τ=.7/W16/预算100/α=γ=0/seed0/生产VOI禁用。只有公开开发数据；正式终测hash与评分器hash=null，协议缺口见ADR-006-G2。未合main/未获双方批准，不创建v0.1-protocol-freeze。冻结后改算法/协议必须新版本及受影响run，不覆盖候选。
+
+A-D06补充：v0.1-candidate.1-supplement保存均值门控/初始B2对照新源码和60结果hash；原v0.1-candidate保持原字节。参数/生产方法未改，旧run保留；联合G2与正式标签仍未放行。

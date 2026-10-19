@@ -1,0 +1,67 @@
+{
+  "version": "D06-gate-control-v1.1",
+  "gate_policy": "mean",
+  "status": "NO_FEASIBLE_FOUND",
+  "completed": [],
+  "remaining": [],
+  "unit_costs": {
+    "a": 2.0
+  },
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 0.0,
+  "switch_cost": 0.0,
+  "objective": 0.0,
+  "missing": [
+    "x"
+  ],
+  "total_if_executed": 0.0,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": false,
+    "missing": [
+      "x"
+    ],
+    "learning_cost": 0.0,
+    "switch_cost": 0.0,
+    "objective": 0.0,
+    "total_if_executed": 0.0
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 0,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed"
+}

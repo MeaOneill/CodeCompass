@@ -436,6 +436,13 @@
       "plot_entrypoint": "scripts/A/draw_d06.py",
       "human_n": 0,
       "formal_study_ready": false
+    },
+    {
+      "figure_id": "A-D06-mean-B2-control",
+      "run_id": "A-D06-gate-control02",
+      "manifest": "report_materials/A/A-D06-supplement/figure_manifest.json",
+      "human_n": 0,
+      "formal_study_ready": false
     }
   ],
   "reception_reviews": [

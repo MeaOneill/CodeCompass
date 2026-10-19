@@ -1,0 +1,226 @@
+{
+  "version": "D05-adaptive-v1",
+  "status": "FEASIBLE",
+  "completed": [],
+  "remaining": [
+    "u_chunked_iter"
+  ],
+  "unit_costs": {
+    "u_iterable": 16.0,
+    "u_chunked_iter": 43.0,
+    "u_chunked": 21.0
+  },
+  "gate": {
+    "boltons.chunk_postprocess": {
+      "concept_id": "boltons.chunk_postprocess",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "boltons.wrapper_compatibility": {
+      "concept_id": "boltons.wrapper_compatibility",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:boltons.wrapper_compatibility:e0",
+        "sim_evidence:boltons.wrapper_compatibility:e1",
+        "sim_evidence:boltons.wrapper_compatibility:e2",
+        "sim_evidence:boltons.wrapper_compatibility:e3",
+        "sim_evidence:boltons.wrapper_compatibility:e4",
+        "sim_evidence:boltons.wrapper_compatibility:e5",
+        "sim_evidence:boltons.wrapper_compatibility:e6",
+        "sim_evidence:boltons.wrapper_compatibility:e7",
+        "sim_evidence:boltons.wrapper_compatibility:e8",
+        "sim_evidence:boltons.wrapper_compatibility:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.generator_laziness": {
+      "concept_id": "python.generator_laziness",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.islice_consumption": {
+      "concept_id": "python.islice_consumption",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "python.iterator_protocol": {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.iterator_protocol:e0",
+        "sim_evidence:python.iterator_protocol:e1",
+        "sim_evidence:python.iterator_protocol:e2",
+        "sim_evidence:python.iterator_protocol:e3",
+        "sim_evidence:python.iterator_protocol:e4",
+        "sim_evidence:python.iterator_protocol:e5",
+        "sim_evidence:python.iterator_protocol:e6",
+        "sim_evidence:python.iterator_protocol:e7",
+        "sim_evidence:python.iterator_protocol:e8",
+        "sim_evidence:python.iterator_protocol:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    },
+    "python.keyword_presence": {
+      "concept_id": "python.keyword_presence",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "sim_evidence:python.keyword_presence:e0",
+        "sim_evidence:python.keyword_presence:e1",
+        "sim_evidence:python.keyword_presence:e2",
+        "sim_evidence:python.keyword_presence:e3",
+        "sim_evidence:python.keyword_presence:e4",
+        "sim_evidence:python.keyword_presence:e5",
+        "sim_evidence:python.keyword_presence:e6",
+        "sim_evidence:python.keyword_presence:e7",
+        "sim_evidence:python.keyword_presence:e8",
+        "sim_evidence:python.keyword_presence:e9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "posterior lower quantile meets threshold"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 43.0,
+  "switch_cost": 0.0,
+  "objective": 43.0,
+  "missing": [],
+  "total_if_executed": 43.0,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 43.0,
+    "switch_cost": 0.0,
+    "objective": 43.0,
+    "total_if_executed": 43.0
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 9,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [
+        [
+          "u_chunked_iter"
+        ],
+        [
+          "u_iterable"
+        ],
+        [
+          "u_chunked"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "u_iterable"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "u_chunked"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "retained": [
+        [
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        [
+          "u_chunked",
+          "u_chunked_iter"
+        ],
+        [
+          "u_chunked",
+          "u_iterable"
+        ],
+        [
+          "u_iterable",
+          "u_chunked"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_chunked",
+        "u_iterable"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "u_iterable",
+        "u_chunked"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "retained": [
+        [
+          "u_chunked",
+          "u_iterable",
+          "u_chunked_iter"
+        ],
+        [
+          "u_iterable",
+          "u_chunked",
+          "u_chunked_iter"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 3,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed"
+}

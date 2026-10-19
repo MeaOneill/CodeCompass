@@ -1,0 +1,144 @@
+{
+  "case_id": "D04-shared",
+  "is_simulated": true,
+  "units": [
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "s",
+      "concept_ids": [
+        "p"
+      ],
+      "source_spans": [],
+      "base_cost": 1,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": []
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "a",
+      "concept_ids": [
+        "x"
+      ],
+      "source_spans": [],
+      "base_cost": 2,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": [
+        {
+          "unit_id": "s",
+          "relation_type": "teaching_prerequisite",
+          "hard": true,
+          "provenance": {
+            "kind": "fixture",
+            "review_status": "approved",
+            "reviewer": "SYNTHETIC_REVIEW_NOT_A_PERSON",
+            "proposed_by": "Codex Agent A",
+            "confidence": null,
+            "evidence": [
+              "fixture-only:structural-constraint"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "object_type": "LearningUnit",
+      "is_fixture": true,
+      "id": "b",
+      "concept_ids": [
+        "y"
+      ],
+      "source_spans": [],
+      "base_cost": 2,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "explicit structural fixture proxy; not minutes",
+      "provenance": {
+        "kind": "fixture",
+        "evidence": [
+          "fixture-only:mechanism"
+        ],
+        "proposed_by": "Codex Agent A",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "prerequisites": [
+        {
+          "unit_id": "s",
+          "relation_type": "teaching_prerequisite",
+          "hard": true,
+          "provenance": {
+            "kind": "fixture",
+            "review_status": "approved",
+            "reviewer": "SYNTHETIC_REVIEW_NOT_A_PERSON",
+            "proposed_by": "Codex Agent A",
+            "confidence": null,
+            "evidence": [
+              "fixture-only:structural-constraint"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "request": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanningRequest",
+    "is_fixture": true,
+    "request_id": "shared",
+    "snapshot_id": "synthetic-D04",
+    "task_id": "shared",
+    "learner_state": [],
+    "budget": 5,
+    "cost_unit": "proxy_cost",
+    "config_version": "D04-mechanism-v1",
+    "target_concept_ids": [
+      "x",
+      "y"
+    ],
+    "unit_ids": [
+      "s",
+      "a",
+      "b"
+    ],
+    "prior_plan_id": null
+  },
+  "state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "simulation-D04",
+    "is_simulated": true,
+    "records": []
+  },
+  "config": {
+    "version": "D04-mechanism-v1",
+    "threshold": 0.7,
+    "quantile": 0.1
+  },
+  "group": "historical_structural_stress"
+}

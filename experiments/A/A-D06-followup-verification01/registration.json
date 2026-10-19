@@ -1,0 +1,37 @@
+{
+  "task": "A-D06 followup",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "recorded_at": "2026-10-19T14:35:11.925881+08:00",
+  "source_base": "42689bb62f1b3490288174749ad6ca4be3df6afb",
+  "commands": [
+    {
+      "command": "python scripts/A/run_d06_gate_control.py --run-id A-D06-gate-control02",
+      "exit_code": 0,
+      "result": "60 results"
+    },
+    {
+      "command": "python scripts/A/audit_d06_gate_control.py --output experiments/A/A-D06-followup-verification01/control-audit.json",
+      "exit_code": 0,
+      "result": "60 routes/420 checks; parent109 valid"
+    },
+    {
+      "command": "python scripts/A/draw_d06_gate_control.py",
+      "exit_code": 0,
+      "result": "PNG300dpi+SVG actually viewed"
+    },
+    {
+      "command": "python -m pytest -q --basetemp=tmp/A-D06-followup-full-tests",
+      "exit_code": 0,
+      "result": "276 passed",
+      "log": "tests.log"
+    }
+  ],
+  "known_failures": [
+    "gate-control01 P1 preserved and fixed in02",
+    "audit initial expected gate included unrelated concepts; fixed and regression added"
+  ],
+  "new_model_calls": 0,
+  "test_answers_used": false
+}

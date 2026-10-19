@@ -81,3 +81,5 @@
 /report_materials/A/A-D06/*.svg -text whitespace=-blank-at-eol,cr-at-eol
 /docs/decisions/** text eol=lf
 /CodeCompass计划/refine-logs/EXPERIMENT_PLAN.md text eol=crlf
+/configs/frozen/v0.1-candidate.1-supplement/source_snapshot/** -text whitespace=-blank-at-eol,cr-at-eol
+/report_materials/A/A-D06-supplement/*.svg -text whitespace=-blank-at-eol,cr-at-eol

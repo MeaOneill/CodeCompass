@@ -1,0 +1,110 @@
+{
+  "version": "D05-adaptive-v1",
+  "status": "FEASIBLE",
+  "completed": [],
+  "remaining": [
+    "a"
+  ],
+  "unit_costs": {
+    "s": 5.0,
+    "a": 2.0
+  },
+  "gate": {
+    "p": {
+      "concept_id": "p",
+      "alpha": 11,
+      "beta": 1,
+      "evidence_ids": [
+        "p:0",
+        "p:1",
+        "p:2",
+        "p:3",
+        "p:4",
+        "p:5",
+        "p:6",
+        "p:7",
+        "p:8",
+        "p:9"
+      ],
+      "lower_bound": 0.8111308307896871,
+      "quantile": 0.1,
+      "mastered": true,
+      "reason": "MEAN_ABLATION: independent current-project posterior mean threshold",
+      "posterior_mean": 0.9166666666666666
+    },
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 2.0,
+  "switch_cost": 0.0,
+  "objective": 2.0,
+  "missing": [],
+  "total_if_executed": 2.0,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 2.0,
+    "switch_cost": 0.0,
+    "objective": 2.0,
+    "total_if_executed": 2.0
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 1,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [
+        [
+          "a"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 1,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed",
+  "gate_policy": "posterior_mean",
+  "adapter": {
+    "known_from_independent_evidence": [
+      "p"
+    ],
+    "removed_hard_edges": [
+      [
+        "a",
+        "s"
+      ]
+    ],
+    "removed_goals": [],
+    "original_ledger_unchanged": true
+  }
+}

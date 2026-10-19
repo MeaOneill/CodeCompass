@@ -1,0 +1,466 @@
+{
+  "recorded_at": "2026-10-19T14:35:11.925881+08:00",
+  "kind": "post-run regression discovery; not one of original 60 comparisons",
+  "source_sha256": "7516a5953840316640bc8201aba3c563d4d93167693383b91bff9c04b9a95e6f",
+  "input": {
+    "case_id": "diagnostic-pass",
+    "is_simulated": true,
+    "units": [
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearningUnit",
+        "is_fixture": true,
+        "id": "p",
+        "concept_ids": [
+          "x",
+          "y"
+        ],
+        "source_spans": [],
+        "base_cost": 100,
+        "cost_unit": "proxy_cost",
+        "cost_basis": "explicit structural fixture proxy; not minutes",
+        "provenance": {
+          "kind": "fixture",
+          "evidence": [
+            "fixture-only:mechanism"
+          ],
+          "proposed_by": "Codex Agent A",
+          "review_status": "pending",
+          "reviewer": null,
+          "confidence": null
+        },
+        "prerequisites": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearningUnit",
+        "is_fixture": true,
+        "id": "a",
+        "concept_ids": [
+          "y"
+        ],
+        "source_spans": [],
+        "base_cost": 1,
+        "cost_unit": "proxy_cost",
+        "cost_basis": "explicit structural fixture proxy; not minutes",
+        "provenance": {
+          "kind": "fixture",
+          "evidence": [
+            "fixture-only:mechanism"
+          ],
+          "proposed_by": "Codex Agent A",
+          "review_status": "pending",
+          "reviewer": null,
+          "confidence": null
+        },
+        "prerequisites": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearningUnit",
+        "is_fixture": true,
+        "id": "b",
+        "concept_ids": [
+          "z"
+        ],
+        "source_spans": [],
+        "base_cost": 1,
+        "cost_unit": "proxy_cost",
+        "cost_basis": "explicit structural fixture proxy; not minutes",
+        "provenance": {
+          "kind": "fixture",
+          "evidence": [
+            "fixture-only:mechanism"
+          ],
+          "proposed_by": "Codex Agent A",
+          "review_status": "pending",
+          "reviewer": null,
+          "confidence": null
+        },
+        "prerequisites": [
+          {
+            "unit_id": "p",
+            "relation_type": "teaching_prerequisite",
+            "hard": true,
+            "provenance": {
+              "kind": "fixture",
+              "review_status": "approved",
+              "reviewer": "SYNTHETIC_REVIEW_NOT_A_PERSON",
+              "proposed_by": "Codex Agent A",
+              "confidence": null,
+              "evidence": [
+                "fixture-only:structural-constraint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "request": {
+      "schema_version": "1.0.0",
+      "object_type": "PlanningRequest",
+      "is_fixture": true,
+      "request_id": "diagnostic-pass",
+      "snapshot_id": "synthetic-D04",
+      "task_id": "diagnostic-pass",
+      "learner_state": [
+        {
+          "concept_id": "x",
+          "alpha": 6,
+          "beta": 1,
+          "evidence_ids": [
+            "history-0",
+            "history-1",
+            "history-2",
+            "history-3",
+            "history-4"
+          ],
+          "lower_bound": 0.6812920690579612,
+          "quantile": 0.1
+        }
+      ],
+      "budget": 5,
+      "cost_unit": "proxy_cost",
+      "config_version": "D04-mechanism-v1",
+      "target_concept_ids": [
+        "z"
+      ],
+      "unit_ids": [
+        "p",
+        "a",
+        "b"
+      ],
+      "prior_plan_id": null
+    },
+    "state": {
+      "state_version": "0.1.0",
+      "pseudonymous_user_id": "D05-synthetic-learner",
+      "is_simulated": true,
+      "records": [
+        {
+          "evidence_id": "history-0",
+          "item_id": "history-0",
+          "concept_id": "x",
+          "outcome": "pass",
+          "timestamp": "2026-10-17T00:00:00+08:00",
+          "project": "synthetic-D04",
+          "pseudonymous_user_id": "D05-synthetic-learner",
+          "is_fixture": true,
+          "independent": true,
+          "evidence_type": "independent_quiz"
+        },
+        {
+          "evidence_id": "history-1",
+          "item_id": "history-1",
+          "concept_id": "x",
+          "outcome": "pass",
+          "timestamp": "2026-10-17T00:00:00+08:00",
+          "project": "synthetic-D04",
+          "pseudonymous_user_id": "D05-synthetic-learner",
+          "is_fixture": true,
+          "independent": true,
+          "evidence_type": "independent_quiz"
+        },
+        {
+          "evidence_id": "history-2",
+          "item_id": "history-2",
+          "concept_id": "x",
+          "outcome": "pass",
+          "timestamp": "2026-10-17T00:00:00+08:00",
+          "project": "synthetic-D04",
+          "pseudonymous_user_id": "D05-synthetic-learner",
+          "is_fixture": true,
+          "independent": true,
+          "evidence_type": "independent_quiz"
+        },
+        {
+          "evidence_id": "history-3",
+          "item_id": "history-3",
+          "concept_id": "x",
+          "outcome": "pass",
+          "timestamp": "2026-10-17T00:00:00+08:00",
+          "project": "synthetic-D04",
+          "pseudonymous_user_id": "D05-synthetic-learner",
+          "is_fixture": true,
+          "independent": true,
+          "evidence_type": "independent_quiz"
+        },
+        {
+          "evidence_id": "history-4",
+          "item_id": "history-4",
+          "concept_id": "x",
+          "outcome": "pass",
+          "timestamp": "2026-10-17T00:00:00+08:00",
+          "project": "synthetic-D04",
+          "pseudonymous_user_id": "D05-synthetic-learner",
+          "is_fixture": true,
+          "independent": true,
+          "evidence_type": "independent_quiz"
+        }
+      ]
+    },
+    "config": {
+      "version": "D04-mechanism-v1",
+      "threshold": 0.7,
+      "quantile": 0.1
+    },
+    "quizzes": [
+      {
+        "item_id": "D05-new-x",
+        "concept_id": "x",
+        "independent": true,
+        "source": "public development concept; outcome stream is synthetic, not a learner measurement",
+        "cost": 1.0,
+        "cost_unit": "proxy_cost",
+        "cost_basis": "fixed development source-line-equivalent proxy assumption; not seconds or calibrated time",
+        "probability": {
+          "kind": "synthetic_prior",
+          "p_pass": 0.75,
+          "source": "declared structural-test prior; not empirical calibration"
+        }
+      }
+    ],
+    "outcomes": {
+      "D05-new-x": "pass"
+    },
+    "source_kind": "synthetic_structure",
+    "feedback_kind": "synthetic_fixed_outcome_stream"
+  },
+  "buggy_result": {
+    "version": "D05-adaptive-v1",
+    "status": "NO_FEASIBLE_FOUND",
+    "completed": [],
+    "remaining": [],
+    "unit_costs": {
+      "p": 100.0,
+      "a": 1.0,
+      "b": 1.0
+    },
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "alpha": 6,
+        "beta": 1,
+        "evidence_ids": [
+          "history-0",
+          "history-1",
+          "history-2",
+          "history-3",
+          "history-4"
+        ],
+        "lower_bound": 0.6812920690579612,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "MEAN_ABLATION: independent current-project posterior mean threshold",
+        "posterior_mean": 0.8571428571428571
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "z": {
+        "concept_id": "z",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "reference": [],
+    "spent_before": 0,
+    "alpha": 0,
+    "gamma": 0,
+    "learning_cost": 0.0,
+    "switch_cost": 0.0,
+    "objective": 0.0,
+    "missing": [
+      "z"
+    ],
+    "total_if_executed": 0.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": false,
+      "missing": [
+        "z"
+      ],
+      "learning_cost": 0.0,
+      "switch_cost": 0.0,
+      "objective": 0.0,
+      "total_if_executed": 0.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 1,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "a"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "a"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed",
+    "gate_policy": "posterior_mean",
+    "adapter": {
+      "known_from_independent_evidence": [
+        "x"
+      ],
+      "removed_hard_edges": [],
+      "removed_goals": [],
+      "original_ledger_unchanged": true
+    }
+  },
+  "fixed_result": {
+    "version": "D06-gate-control-v1.1",
+    "gate_policy": "mean",
+    "status": "FEASIBLE",
+    "completed": [],
+    "remaining": [
+      "a",
+      "b"
+    ],
+    "unit_costs": {
+      "p": 100.0,
+      "a": 1.0,
+      "b": 1.0
+    },
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "alpha": 6,
+        "beta": 1,
+        "evidence_ids": [
+          "history-0",
+          "history-1",
+          "history-2",
+          "history-3",
+          "history-4"
+        ],
+        "lower_bound": 0.6812920690579612,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "MEAN_ABLATION: independent current-project posterior mean threshold",
+        "posterior_mean": 0.8571428571428571
+      },
+      "y": {
+        "concept_id": "y",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "z": {
+        "concept_id": "z",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "reference": [],
+    "spent_before": 0,
+    "alpha": 0,
+    "gamma": 0,
+    "learning_cost": 2.0,
+    "switch_cost": 0.0,
+    "objective": 2.0,
+    "missing": [],
+    "total_if_executed": 2.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": true,
+      "missing": [],
+      "learning_cost": 2.0,
+      "switch_cost": 0.0,
+      "objective": 2.0,
+      "total_if_executed": 2.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 2,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "a"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "a"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 2,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed"
+  },
+  "superseded_by": "A-D06-gate-control02",
+  "new_model_calls": 0
+}

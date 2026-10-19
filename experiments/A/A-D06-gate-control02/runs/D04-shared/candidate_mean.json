@@ -1,0 +1,145 @@
+{
+  "version": "D06-gate-control-v1.1",
+  "gate_policy": "mean",
+  "status": "FEASIBLE",
+  "completed": [],
+  "remaining": [
+    "s",
+    "a",
+    "b"
+  ],
+  "unit_costs": {
+    "s": 1.0,
+    "a": 2.0,
+    "b": 2.0
+  },
+  "gate": {
+    "p": {
+      "concept_id": "p",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "y": {
+      "concept_id": "y",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 5.0,
+  "switch_cost": 0.0,
+  "objective": 5.0,
+  "missing": [],
+  "total_if_executed": 5.0,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 5.0,
+    "switch_cost": 0.0,
+    "objective": 5.0,
+    "total_if_executed": 5.0
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 5,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [
+        [
+          "s"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "s"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "retained": [
+        [
+          "s",
+          "a"
+        ],
+        [
+          "s",
+          "b"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "s",
+        "a"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "prefix": [
+        "s",
+        "b"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 2,
+      "retained": [
+        [
+          "s",
+          "a",
+          "b"
+        ],
+        [
+          "s",
+          "b",
+          "a"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 3,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.01600000000325963,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed"
+}

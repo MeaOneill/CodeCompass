@@ -1,0 +1,30 @@
+{
+  "owner": "A",
+  "run_id": "A-D06-gate-control02",
+  "version": "v0.1-candidate.1-supplement",
+  "human_n": 0,
+  "formal_study_ready": false,
+  "files": [
+    {
+      "path": "report_materials/A/A-D06-supplement/D06_mean_B2_controls.png",
+      "sha256": "acfbd4fdd5445abdceb21931769ba9ef5427b6fe25fce178ee69578fdf67ef81"
+    },
+    {
+      "path": "report_materials/A/A-D06-supplement/D06_mean_B2_controls.svg",
+      "sha256": "35a27d3f8afae59f9cc93d3feca11df3e781a9606adb4d5efc97c778ca748933"
+    },
+    {
+      "path": "experiments/A/A-D06-gate-control02/comparison.csv",
+      "sha256": "a1057380611100c9158eafb0257d218f621b138f74ae72bd017d4f4301d74455"
+    },
+    {
+      "path": "scripts/A/draw_d06_gate_control.py",
+      "sha256": "af37bd517b3bcb244f342d9eaf2168e5bf7a59221167c8c1fa5ee4c1b3b48c32"
+    }
+  ],
+  "command": [
+    "python",
+    "scripts/A/draw_d06_gate_control.py"
+  ],
+  "visual_review": "AGENT_VIEW_PASSED_NOT_HUMAN"
+}

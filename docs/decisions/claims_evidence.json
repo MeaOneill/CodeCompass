@@ -5,24 +5,71 @@
   "test_answer_selection": "FORBIDDEN",
   "claims": [
     {
-      "id": "C1", "status": "HYPOTHESIS_NOT_CONFIRMED",
+      "id": "C1",
+      "status": "HYPOTHESIS_NOT_CONFIRMED",
       "text": "证据约束的联合补学路线能否改善固定源码任务的实际完成价值",
-      "strong_baselines": ["original B2 closure greedy", "dynamic B1 pending"],
-      "ablations": ["no_gate: disable all evidence skipping", "no_feedback: observations charged but not used by planner"],
-      "evidence": ["A-D04-mechanism01", "A-D05-development01", "A-D06-controls03"],
-      "negative_results": ["two real-source development tasks tie with B2 in D04", "D06 unknown profiles gate ablation ties", "no independent formal task scores"],
-      "failure_explanations": ["candidate pools have little substitution", "coverage is not task success", "synthetic histories are not measured ability"],
-      "required_before_claiming": ["frozen independent task scoring", "fair strong baseline", "held-out outcome evidence"]
+      "strong_baselines": [
+        "original B2 closure greedy",
+        "dynamic B1 pending"
+      ],
+      "ablations": [
+        "no_gate: disable all evidence skipping",
+        "no_feedback: observations charged but not used by planner"
+      ],
+      "evidence": [
+        "A-D04-mechanism01",
+        "A-D05-development01",
+        "A-D06-controls03"
+      ],
+      "negative_results": [
+        "two real-source development tasks tie with B2 in D04",
+        "D06 unknown profiles gate ablation ties",
+        "no independent formal task scores"
+      ],
+      "failure_explanations": [
+        "candidate pools have little substitution",
+        "coverage is not task success",
+        "synthetic histories are not measured ability"
+      ],
+      "required_before_claiming": [
+        "frozen independent task scoring",
+        "fair strong baseline",
+        "held-out outcome evidence"
+      ]
     },
     {
-      "id": "C2", "status": "OPTIONAL_FEEDBACK_ONLY_HYPOTHESIS",
+      "id": "C2",
+      "status": "OPTIONAL_FEEDBACK_ONLY_HYPOTHESIS",
       "text": "保留已完成项的反馈修复是否在有信息的测验后节省剩余补学成本",
-      "strong_baselines": ["same-cost fixed common assessment", "same-cost assessment with feedback disabled"],
-      "ablations": ["no_feedback", "no_selection explicitly NOT_IDENTIFIABLE when VOI disabled"],
-      "evidence": ["A-D06-controls03 diagnostic-pass: 7 versus no_feedback 19", "diagnostic-fail:19 versus no_diagnostic18"],
-      "negative_results": ["real-source four development profiles tie with no_feedback", "all six no_selection cases identical to main", "quiz adds one proxy unit with no benefit on fail"],
+      "strong_baselines": [
+        "same-cost fixed common assessment",
+        "same-cost assessment with feedback disabled"
+      ],
+      "ablations": [
+        "no_feedback",
+        "no_selection explicitly NOT_IDENTIFIABLE when VOI disabled"
+      ],
+      "evidence": [
+        "A-D06-controls03 diagnostic-pass: 7 versus no_feedback 19",
+        "diagnostic-fail:19 versus no_diagnostic18"
+      ],
+      "negative_results": [
+        "real-source four development profiles tie with no_feedback",
+        "all six no_selection cases identical to main",
+        "quiz adds one proxy unit with no benefit on fail"
+      ],
       "excluded_claim": "VOI diagnostic selection improves real task outcomes",
-      "required_before_claiming": ["real calibrated diagnostic value or remove diagnostic-selection claim", "independent outcome evaluation", "consistent scheduling across methods"]
+      "required_before_claiming": [
+        "real calibrated diagnostic value or remove diagnostic-selection claim",
+        "independent outcome evaluation",
+        "consistent scheduling across methods"
+      ]
     }
+  ],
+  "supplemental_evidence": "A-D06-gate-control02: true mean gate comparison plus initial B2; real-source tasks still tie",
+  "supplemental_limitations": [
+    "not a dynamic B2 comparison",
+    "mean cost saving is not evidence of correct mastery",
+    "no human effect measured"
   ]
 }

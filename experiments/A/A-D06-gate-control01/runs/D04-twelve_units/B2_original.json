@@ -1,0 +1,1136 @@
+{
+  "status": "FEASIBLE",
+  "remaining": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04",
+    "u05",
+    "u06",
+    "u07",
+    "u08",
+    "u09",
+    "u10",
+    "u11"
+  ],
+  "objective": 12,
+  "gate": {
+    "c00": {
+      "concept_id": "c00",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c01": {
+      "concept_id": "c01",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c02": {
+      "concept_id": "c02",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c03": {
+      "concept_id": "c03",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c04": {
+      "concept_id": "c04",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c05": {
+      "concept_id": "c05",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c06": {
+      "concept_id": "c06",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c07": {
+      "concept_id": "c07",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c08": {
+      "concept_id": "c08",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c09": {
+      "concept_id": "c09",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c10": {
+      "concept_id": "c10",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "c11": {
+      "concept_id": "c11",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 12.0,
+    "switch_cost": 0.0,
+    "objective": 12.0,
+    "total_if_executed": 12.0
+  },
+  "original_plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "twelve_units-greedy",
+    "request_id": "twelve_units",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "u07",
+      "u08",
+      "u09",
+      "u10",
+      "u11"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "c00",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11"
+      ],
+      "covered_concept_ids": [
+        "c00",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 12,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "u00",
+        "reason": "TARGET_MATERIAL for u00; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 2,
+        "unit_id": "u01",
+        "reason": "TARGET_MATERIAL for u01; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 3,
+        "unit_id": "u02",
+        "reason": "TARGET_MATERIAL for u02; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 4,
+        "unit_id": "u03",
+        "reason": "TARGET_MATERIAL for u03; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 5,
+        "unit_id": "u04",
+        "reason": "TARGET_MATERIAL for u04; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 6,
+        "unit_id": "u05",
+        "reason": "TARGET_MATERIAL for u05; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 7,
+        "unit_id": "u06",
+        "reason": "TARGET_MATERIAL for u06; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 8,
+        "unit_id": "u07",
+        "reason": "TARGET_MATERIAL for u07; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 9,
+        "unit_id": "u08",
+        "reason": "TARGET_MATERIAL for u08; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 10,
+        "unit_id": "u09",
+        "reason": "TARGET_MATERIAL for u09; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 11,
+        "unit_id": "u10",
+        "reason": "TARGET_MATERIAL for u10; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      },
+      {
+        "step": 12,
+        "unit_id": "u11",
+        "reason": "TARGET_MATERIAL for u11; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "original_trace": {
+    "gate": {
+      "c00": {
+        "concept_id": "c00",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c01": {
+        "concept_id": "c01",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c02": {
+        "concept_id": "c02",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c03": {
+        "concept_id": "c03",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c04": {
+        "concept_id": "c04",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c05": {
+        "concept_id": "c05",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c06": {
+        "concept_id": "c06",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c07": {
+        "concept_id": "c07",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c08": {
+        "concept_id": "c08",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c09": {
+        "concept_id": "c09",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c10": {
+        "concept_id": "c10",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "c11": {
+        "concept_id": "c11",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "c00",
+          "c01",
+          "c02",
+          "c03",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u00",
+            "bundle": [
+              "u00"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u01",
+            "bundle": [
+              "u01"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u02",
+            "bundle": [
+              "u02"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u03",
+            "bundle": [
+              "u03"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u04",
+            "bundle": [
+              "u04"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 2,
+        "pending_goals": [
+          "c01",
+          "c02",
+          "c03",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u01",
+            "bundle": [
+              "u01"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u02",
+            "bundle": [
+              "u02"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u03",
+            "bundle": [
+              "u03"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u04",
+            "bundle": [
+              "u04"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 3,
+        "pending_goals": [
+          "c02",
+          "c03",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u02",
+            "bundle": [
+              "u02"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u03",
+            "bundle": [
+              "u03"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u04",
+            "bundle": [
+              "u04"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 4,
+        "pending_goals": [
+          "c03",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u03",
+            "bundle": [
+              "u03"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u04",
+            "bundle": [
+              "u04"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 5,
+        "pending_goals": [
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u04",
+            "bundle": [
+              "u04"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 6,
+        "pending_goals": [
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u05",
+            "bundle": [
+              "u05"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 7,
+        "pending_goals": [
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u06",
+            "bundle": [
+              "u06"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 8,
+        "pending_goals": [
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u07",
+            "bundle": [
+              "u07"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 9,
+        "pending_goals": [
+          "c08",
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u08",
+            "bundle": [
+              "u08"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 10,
+        "pending_goals": [
+          "c09",
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u09",
+            "bundle": [
+              "u09"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 11,
+        "pending_goals": [
+          "c10",
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u10",
+            "bundle": [
+              "u10"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      },
+      {
+        "iteration": 12,
+        "pending_goals": [
+          "c11"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "u11",
+            "bundle": [
+              "u11"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  }
+}

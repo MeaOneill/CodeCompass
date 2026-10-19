@@ -1,0 +1,114 @@
+{
+  "version": "D06-gate-control-v1.1",
+  "gate_policy": "mean",
+  "status": "FEASIBLE",
+  "completed": [],
+  "remaining": [
+    "a",
+    "b"
+  ],
+  "unit_costs": {
+    "a": 0.1,
+    "b": 0.2
+  },
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    },
+    "y": {
+      "concept_id": "y",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "reference": [],
+  "spent_before": 0,
+  "alpha": 0,
+  "gamma": 0,
+  "learning_cost": 0.30000000000000004,
+  "switch_cost": 0.0,
+  "objective": 0.30000000000000004,
+  "missing": [],
+  "total_if_executed": 0.30000000000000004,
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 0.30000000000000004,
+    "switch_cost": 0.0,
+    "objective": 0.30000000000000004,
+    "total_if_executed": 0.30000000000000004
+  },
+  "options": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 30.0
+  },
+  "expansions": 4,
+  "truncated": false,
+  "termination": "BOUNDED_SEARCH_FINISHED",
+  "events": [
+    {
+      "depth": 0,
+      "prefix": [],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 0,
+      "retained": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "a"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "prefix": [
+        "b"
+      ],
+      "dropped_candidates": []
+    },
+    {
+      "depth": 1,
+      "retained": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "dropped_prefixes": []
+    },
+    {
+      "depth": 2,
+      "retained": [],
+      "dropped_prefixes": []
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "optimality_claim": false,
+  "certificate": null,
+  "state_key": "full ordered remaining prefix; completed context fixed"
+}

@@ -1,0 +1,45 @@
+{
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "started_at": "2026-10-19T14:26:58.647619+08:00",
+  "finished_at": "2026-10-19T14:27:05.240926+08:00",
+  "source_base": "42689bb62f1b3490288174749ad6ca4be3df6afb",
+  "command": [
+    "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+    "scripts/A/run_d06_gate_control.py",
+    "--run-id",
+    "A-D06-gate-control01"
+  ],
+  "exit_code": 0,
+  "version": "v0.1-candidate.1-supplement",
+  "affected_run_ids": [
+    "A-D06-gate-control01"
+  ],
+  "unchanged_prior_run_ids": [
+    "A-D06-controls03"
+  ],
+  "file_hashes": {
+    "configs/frozen/v0.1-candidate/candidate.json": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc",
+    "scripts/A/cases_d04.py": "ef21c1450553ada3da46cca273108838de1f1f2ce24bfbbfcd0c247ab58e8df5",
+    "scripts/A/cases_d05.py": "d13b51632a4a9764a9c1acd4b5b459fdb7605ab5b871dbc4a6baa10b7a0498e0",
+    "scripts/A/run_d06_gate_control.py": "37aecda1d53f7897075aad866e150bdb480c4bf2150b3e049657bb8a016abeb1",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "src/codecompass/planner/__init__.py": "496b8b146907f5af88607284a410f50733a92c4a7bfeb1bd77bdf9d28450e6fa",
+    "src/codecompass/planner/adaptive.py": "a3481880313ac6f5e6d938a3be100caa08519a32ac8c36f9c608ac248f2bca74",
+    "src/codecompass/planner/adaptive_validator.py": "9499e30beeca33dd01bc76a72687943175592a3885b472599a4bc14b6922ba97",
+    "src/codecompass/planner/beam.py": "046ef0455db7b9558c0485491eab2c178d8a64a1486fab1409e8591e2e11dba4",
+    "src/codecompass/planner/comparison_validator.py": "2e6abf84025e212fe5577d78d384e68b2e0df39513d7edc11476fd6a8001cb6f",
+    "src/codecompass/planner/core.py": "9354b2192c7b7bdfcf1648ca4cadcd86f62f825dd66ab2205611846b681bb63a",
+    "src/codecompass/planner/diagnostics.py": "af44ffd86ab87ffa7a921621679051f19103f315f02de85f4b620039efe76f6b",
+    "src/codecompass/planner/exact.py": "731f6b0eda7c72652eb89917a777ab68c6f0db8043f722123eba2bd1f8756ff0",
+    "src/codecompass/planner/feedback.py": "fe2e4ca533dfc6303e8dcf04fc81fa31c73db9329212557e7ee1525994e4bfe2",
+    "src/codecompass/planner/g2_candidate.py": "344a59544b48232195021ea9e59ffd5fb86747fab9c790a22913098489c81787",
+    "src/codecompass/planner/g2_gate_control.py": "7516a5953840316640bc8201aba3c563d4d93167693383b91bff9c04b9a95e6f",
+    "src/codecompass/planner/search_common.py": "cfacf68c14f576d3b24818a478101c3e515e2f63402fccc05b76ad9200bd2002",
+    "src/codecompass/planner/search_service.py": "e3fc7204a36aeb1cb71a2eb1c7dcb2f941b95503b4b1a083301330b4844200ae",
+    "src/codecompass/planner/service.py": "1f475c506b3ea5040965dc4af64d47ad7559262b8db027c39c9a09e04af158c6",
+    "src/codecompass/planner/validate.py": "1ed234d541060fa24989f85e2582507cac02e428878777613bb99b9bd619aad3",
+    "tests/A/test_g2_gate_control.py": "0c070c9fbb262f92dcb6e81a6ac57bcd82b092035b77325d05fd9334e3ddba52"
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\CodeCompass\CodeCompass-A-D05\scripts\A\audit_d06_gate_control.py", line 68, in <module>
+    result=audit()
+           ^^^^^^^
+  File "C:\CodeCompass\CodeCompass-A-D05\scripts\A\audit_d06_gate_control.py", line 45, in audit
+    assert {c for c,g in gate.items() if g['mastered']}==expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

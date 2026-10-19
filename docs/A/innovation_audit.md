@@ -33,3 +33,13 @@ validate route/accounting; record feasible, timeout or no feasible found explici
 
 
 最终AI交叉审核：独立子会话g2_source_review，22项D06测试独立执行通过、109文件候选审计通过。计时等价误判已修复并用controls03重跑；文档旧run编号及措辞已勘误。报告见experiments/A/A-D06-review/independent_ai_review.md。未获成员B/人类批准。
+
+## A-D06补充更正 2026-10-19T14:35:11.925881+08:00
+
+**A工程严格复检通过，允许进入同日下一棒B-D06；联合G2仍待B交付及双方确认，不允许正式测试或创建标签。** 上一轮把联合G2当成B-D06开始前置导致接力循环，现纠正；旧release_gate原样保留，最新依据experiments/A/A-D06-followup-verification01/release_gate.json。
+
+已补A可自行完成项：真正的后验均值vs下界门控、当前初始候选vs原强B2，共20输入60路线（模拟历史，不是20人）；发现并修复首版P1混合先修问题，01失败源码与回归保留，最终02通过。276全套测试、60结果420项重放、原109文件完整性通过；独立AI17测试通过。真实源码四组仍平局，不夸大收益。新补充版本v0.1-candidate.1-supplement，不改原冻结候选/参数/源版本。
+
+决定接口见docs/requests/A-D06-to-B-D06-freeze-contract.md：诊断时机、动态B1、B2已完成语义、跨轮隔离和独立评分职责均明确。B模块不在本轮覆盖，B-D06据此落地。
+
+你目前不用改代码或重复自动检查。到联合冻结时，成员A/B须真实确认方案与main集成；实际招募、参与者同意/预演只能由真人完成。G2不要求先有真人收益；研究效果由冻结后实验检验，不能反向成为开实验前的条件。

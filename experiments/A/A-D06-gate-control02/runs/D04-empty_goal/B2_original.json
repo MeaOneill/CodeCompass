@@ -1,0 +1,58 @@
+{
+  "status": "FEASIBLE",
+  "remaining": [],
+  "objective": 0,
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 0.0,
+    "switch_cost": 0.0,
+    "objective": 0.0,
+    "total_if_executed": 0.0
+  },
+  "original_plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "empty_goal-greedy",
+    "request_id": "empty_goal",
+    "status": "FEASIBLE",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [],
+      "covered_concept_ids": [],
+      "ratio": null
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "original_trace": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  }
+}

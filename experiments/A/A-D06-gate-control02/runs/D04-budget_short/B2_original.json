@@ -1,0 +1,77 @@
+{
+  "status": "NO_FEASIBLE_FOUND",
+  "remaining": [],
+  "objective": 0,
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": false,
+    "missing": [
+      "x"
+    ],
+    "learning_cost": 0.0,
+    "switch_cost": 0.0,
+    "objective": 0.0,
+    "total_if_executed": 0.0
+  },
+  "original_plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "budget_short-greedy",
+    "request_id": "budget_short",
+    "status": "NO_FEASIBLE_FOUND",
+    "ordered_units": [],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [],
+      "ratio": 0.0
+    },
+    "unmet_constraints": [
+      "uncovered target: x",
+      "a: requires incremental proxy_cost=2, remaining=1",
+      "Greedy search did not find a complete feasible route; this is not an infeasibility proof"
+    ],
+    "estimated_cost": 0,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [],
+    "proof_path": null
+  },
+  "original_trace": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x"
+        ],
+        "blocked_candidates": [
+          "a: requires incremental proxy_cost=2, remaining=1"
+        ],
+        "candidates": []
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  }
+}

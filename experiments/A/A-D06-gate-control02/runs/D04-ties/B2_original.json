@@ -1,0 +1,99 @@
+{
+  "status": "FEASIBLE",
+  "remaining": [
+    "a"
+  ],
+  "objective": 1,
+  "gate": {
+    "x": {
+      "concept_id": "x",
+      "lower_bound": null,
+      "evidence_ids": [],
+      "mastered": false,
+      "reason": "unknown: no independent current-project item"
+    }
+  },
+  "replay": {
+    "valid": true,
+    "errors": [],
+    "goal_complete": true,
+    "missing": [],
+    "learning_cost": 1.0,
+    "switch_cost": 0.0,
+    "objective": 1.0,
+    "total_if_executed": 1.0
+  },
+  "original_plan": {
+    "schema_version": "1.0.0",
+    "object_type": "PlanResult",
+    "is_fixture": true,
+    "plan_id": "ties-greedy",
+    "request_id": "ties",
+    "status": "FEASIBLE",
+    "ordered_units": [
+      "a"
+    ],
+    "coverage": {
+      "required_concept_ids": [
+        "x"
+      ],
+      "covered_concept_ids": [
+        "x"
+      ],
+      "ratio": 1.0
+    },
+    "unmet_constraints": [],
+    "estimated_cost": 1,
+    "cost_unit": "proxy_cost",
+    "reason_trace": [
+      {
+        "step": 1,
+        "unit_id": "a",
+        "reason": "TARGET_MATERIAL for a; bundle new-goal gain=1, incremental proxy_cost=1; own proxy_cost=1; source=explicit structural fixture; soft edges do not create hard constraints",
+        "evidence_ids": []
+      }
+    ],
+    "proof_path": null
+  },
+  "original_trace": {
+    "gate": {
+      "x": {
+        "concept_id": "x",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "candidate_attempts": [
+      {
+        "iteration": 1,
+        "pending_goals": [
+          "x"
+        ],
+        "blocked_candidates": [],
+        "candidates": [
+          {
+            "root": "a",
+            "bundle": [
+              "a"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          },
+          {
+            "root": "b",
+            "bundle": [
+              "b"
+            ],
+            "incremental_cost": 1,
+            "new_goal_gain": 1
+          }
+        ]
+      }
+    ],
+    "method": "B2-initial-closure-gain-greedy",
+    "diagnostics_implemented": false,
+    "optimality_claim": false
+  }
+}
