@@ -1,0 +1,1664 @@
+{
+  "variant": "no_diagnostic",
+  "initial_plan": {
+    "version": "D05-adaptive-v1",
+    "status": "FEASIBLE",
+    "completed": [],
+    "remaining": [
+      "u_windowed_iter"
+    ],
+    "unit_costs": {
+      "u_iterable": 16.0,
+      "u_windowed_iter": 39.0,
+      "u_positive_int": 5.0
+    },
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.iterator_protocol:e0",
+          "sim_evidence:python.iterator_protocol:e1",
+          "sim_evidence:python.iterator_protocol:e2",
+          "sim_evidence:python.iterator_protocol:e3",
+          "sim_evidence:python.iterator_protocol:e4",
+          "sim_evidence:python.iterator_protocol:e5",
+          "sim_evidence:python.iterator_protocol:e6",
+          "sim_evidence:python.iterator_protocol:e7",
+          "sim_evidence:python.iterator_protocol:e8",
+          "sim_evidence:python.iterator_protocol:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.keyword_presence:e0",
+          "sim_evidence:python.keyword_presence:e1",
+          "sim_evidence:python.keyword_presence:e2",
+          "sim_evidence:python.keyword_presence:e3",
+          "sim_evidence:python.keyword_presence:e4",
+          "sim_evidence:python.keyword_presence:e5",
+          "sim_evidence:python.keyword_presence:e6",
+          "sim_evidence:python.keyword_presence:e7",
+          "sim_evidence:python.keyword_presence:e8",
+          "sim_evidence:python.keyword_presence:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.type_validation:e0",
+          "sim_evidence:python.type_validation:e1",
+          "sim_evidence:python.type_validation:e2",
+          "sim_evidence:python.type_validation:e3",
+          "sim_evidence:python.type_validation:e4",
+          "sim_evidence:python.type_validation:e5",
+          "sim_evidence:python.type_validation:e6",
+          "sim_evidence:python.type_validation:e7",
+          "sim_evidence:python.type_validation:e8",
+          "sim_evidence:python.type_validation:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      }
+    },
+    "reference": [],
+    "spent_before": 0.0,
+    "alpha": 0,
+    "gamma": 0.0,
+    "learning_cost": 39.0,
+    "switch_cost": 0.0,
+    "objective": 39.0,
+    "missing": [],
+    "total_if_executed": 39.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": true,
+      "missing": [],
+      "learning_cost": 39.0,
+      "switch_cost": 0.0,
+      "objective": 39.0,
+      "total_if_executed": 39.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 9,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int"
+          ],
+          [
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [
+          [
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_positive_int"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_positive_int",
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "retained": [
+          [
+            "u_iterable",
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable",
+            "u_windowed_iter"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 3,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed"
+  },
+  "final_plan": {
+    "version": "D05-adaptive-v1",
+    "status": "FEASIBLE",
+    "completed": [],
+    "remaining": [],
+    "unit_costs": {
+      "u_iterable": 16.0,
+      "u_windowed_iter": 39.0,
+      "u_positive_int": 5.0
+    },
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.iterator_protocol:e0",
+          "sim_evidence:python.iterator_protocol:e1",
+          "sim_evidence:python.iterator_protocol:e2",
+          "sim_evidence:python.iterator_protocol:e3",
+          "sim_evidence:python.iterator_protocol:e4",
+          "sim_evidence:python.iterator_protocol:e5",
+          "sim_evidence:python.iterator_protocol:e6",
+          "sim_evidence:python.iterator_protocol:e7",
+          "sim_evidence:python.iterator_protocol:e8",
+          "sim_evidence:python.iterator_protocol:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.keyword_presence:e0",
+          "sim_evidence:python.keyword_presence:e1",
+          "sim_evidence:python.keyword_presence:e2",
+          "sim_evidence:python.keyword_presence:e3",
+          "sim_evidence:python.keyword_presence:e4",
+          "sim_evidence:python.keyword_presence:e5",
+          "sim_evidence:python.keyword_presence:e6",
+          "sim_evidence:python.keyword_presence:e7",
+          "sim_evidence:python.keyword_presence:e8",
+          "sim_evidence:python.keyword_presence:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "alpha": 11,
+        "beta": 1,
+        "evidence_ids": [
+          "sim_evidence:python.type_validation:e0",
+          "sim_evidence:python.type_validation:e1",
+          "sim_evidence:python.type_validation:e2",
+          "sim_evidence:python.type_validation:e3",
+          "sim_evidence:python.type_validation:e4",
+          "sim_evidence:python.type_validation:e5",
+          "sim_evidence:python.type_validation:e6",
+          "sim_evidence:python.type_validation:e7",
+          "sim_evidence:python.type_validation:e8",
+          "sim_evidence:python.type_validation:e9"
+        ],
+        "lower_bound": 0.8111308307896871,
+        "quantile": 0.1,
+        "mastered": true,
+        "reason": "posterior lower quantile meets threshold"
+      }
+    },
+    "reference": [],
+    "spent_before": 0.0,
+    "alpha": 0,
+    "gamma": 0.0,
+    "learning_cost": 39.0,
+    "switch_cost": 0.0,
+    "objective": 39.0,
+    "missing": [],
+    "total_if_executed": 39.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": true,
+      "missing": [],
+      "learning_cost": 39.0,
+      "switch_cost": 0.0,
+      "objective": 39.0,
+      "total_if_executed": 39.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 9,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int"
+          ],
+          [
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [
+          [
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_positive_int"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_positive_int",
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "retained": [
+          [
+            "u_iterable",
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable",
+            "u_windowed_iter"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 3,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed"
+  },
+  "observed_state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "sim_evidence",
+    "is_simulated": true,
+    "records": [
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      }
+    ]
+  },
+  "planning_state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "sim_evidence",
+    "is_simulated": true,
+    "records": [
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.iterator_protocol:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.iterator_protocol",
+        "item_id": "synthetic:python.iterator_protocol:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.keyword_presence:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.keyword_presence",
+        "item_id": "synthetic:python.keyword_presence:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:boltons.wrapper_compatibility:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "boltons.wrapper_compatibility",
+        "item_id": "synthetic:boltons.wrapper_compatibility:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e0",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item0",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt0",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e1",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item1",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt1",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e2",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item2",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt2",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e3",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item3",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt3",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e4",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item4",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt4",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e5",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item5",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt5",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e6",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item6",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt6",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e7",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item7",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt7",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e8",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item8",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt8",
+        "independent": true
+      },
+      {
+        "schema_version": "1.0.0",
+        "object_type": "LearnerEvidence",
+        "is_fixture": true,
+        "evidence_id": "sim_evidence:python.type_validation:e9",
+        "pseudonymous_user_id": "sim_evidence",
+        "concept_id": "python.type_validation",
+        "item_id": "synthetic:python.type_validation:item9",
+        "outcome": "pass",
+        "timestamp": "2026-10-16T00:00:00+08:00",
+        "project": "boltons-4e5faa3d7e40",
+        "evidence_type": "independent_quiz",
+        "attempt_id": "synthetic_attempt9",
+        "independent": true
+      }
+    ]
+  },
+  "completed": [
+    "u_windowed_iter"
+  ],
+  "events": [
+    {
+      "type": "material",
+      "unit_id": "u_windowed_iter",
+      "cost": 39.0,
+      "spent": 39.0,
+      "completed": [
+        "u_windowed_iter"
+      ]
+    }
+  ],
+  "total_proxy_cost": 39.0,
+  "learning_proxy_cost": 39.0,
+  "quiz_proxy_cost": 0.0,
+  "switch_proxy_cost": 0.0,
+  "quiz_count": 0,
+  "budget": 100,
+  "coverage_complete": true,
+  "human_task_success": null,
+  "no_selection_identifiable": false,
+  "gate_ablation": "disable all evidence-based skipping",
+  "feedback_is_simulated": true
+}

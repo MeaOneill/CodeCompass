@@ -1,0 +1,42 @@
+{
+  "task": "A-D06",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "model_id": null,
+  "base": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+  "recorded_at": "2026-10-19T13:52:37.497734+08:00",
+  "commands": [
+    {
+      "command": "python scripts/A/run_d06.py --run-id A-D06-controls03",
+      "exit_code": 0,
+      "result": "30 runs; 6 semantic no_selection ties",
+      "raw": "experiments/A/A-D06-controls03"
+    },
+    {
+      "command": "python scripts/A/draw_d06.py",
+      "exit_code": 0,
+      "result": "3 PNG300dpi + SVG; viewed all three"
+    },
+    {
+      "command": "python scripts/A/build_d06_snapshot.py",
+      "exit_code": 0,
+      "result": "109 files snapshotted once"
+    },
+    {
+      "command": "python scripts/A/audit_d06.py --output experiments/A/A-D06-verification01/freeze-audit.json",
+      "exit_code": 0,
+      "result": "candidate integrity true; G2 false"
+    },
+    {
+      "command": "python -m pytest -q --basetemp=tmp/A-D06-final-tests",
+      "exit_code": 0,
+      "result": "258 passed in 47.25s",
+      "log": "experiments/A/A-D06-verification01/tests.log"
+    }
+  ],
+  "formal_study_ready": false,
+  "model_api_calls": 0,
+  "independent_human_review": "NOT_REVIEWED",
+  "ai_cross_review": "experiments/A/A-D06-review/independent_ai_review.md"
+}

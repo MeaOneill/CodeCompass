@@ -1,0 +1,110 @@
+{
+  "owner": "A",
+  "figures": [
+    {
+      "figure_id": "F01_source_boundary",
+      "caption": "实际调用按模块定位；标准算法思想、第三方模型与源代码均不称原创。 G2未通过；这是边界图，不是效果图或新颖性认证。",
+      "run_id": "A-D06-controls03",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "source_base_sha": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+      "files": [
+        {
+          "path": "report_materials/A/A-D06/F01_source_boundary.png",
+          "sha256": "0b57e6202cbce2efe7506af8658f735114a54b0017d5c651c8a9834bea74f89c"
+        },
+        {
+          "path": "report_materials/A/A-D06/F01_source_boundary.svg",
+          "sha256": "58638828d9c784b024471bfc8108d882e63d78ec4100446771489175627b4ca9"
+        },
+        {
+          "path": "experiments/A/A-D06-controls03/comparison.csv",
+          "sha256": "5e840db668c901afefa07a57104e8ac0117a92825bdbecfa3b3358170d27905d"
+        },
+        {
+          "path": "scripts/A/draw_d06.py",
+          "sha256": "8af280ba64b2879bba206a905134cbf732c7a4be9e17882c53ab4c77d68dc2db"
+        },
+        {
+          "path": "configs/frozen/v0.1-candidate/candidate.json",
+          "sha256": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc"
+        }
+      ],
+      "command": [
+        "python",
+        "scripts/A/draw_d06.py"
+      ],
+      "visual_review": "AGENT_VIEW_PASSED_NOT_HUMAN"
+    },
+    {
+      "figure_id": "F03_candidate_flow",
+      "caption": "同单位代理预算100；q=.1 / τ=.7 / W16；α=γ=0；生产VOI禁用。 此图定稿到候选版本；UI仍为用户点选时机，正式协议时机需B-D06接入复验。",
+      "run_id": "A-D06-controls03",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "source_base_sha": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+      "files": [
+        {
+          "path": "report_materials/A/A-D06/F03_candidate_flow.png",
+          "sha256": "705cd921f8a60e347f27bbecedde6f0871999d1e6d1723a989052fd1782b7787"
+        },
+        {
+          "path": "report_materials/A/A-D06/F03_candidate_flow.svg",
+          "sha256": "a5a26cb9f2d3ad551f77068443bdb039578bb64da6d55b82bd70aaee879c3ccc"
+        },
+        {
+          "path": "experiments/A/A-D06-controls03/comparison.csv",
+          "sha256": "5e840db668c901afefa07a57104e8ac0117a92825bdbecfa3b3358170d27905d"
+        },
+        {
+          "path": "scripts/A/draw_d06.py",
+          "sha256": "8af280ba64b2879bba206a905134cbf732c7a4be9e17882c53ab4c77d68dc2db"
+        },
+        {
+          "path": "configs/frozen/v0.1-candidate/candidate.json",
+          "sha256": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc"
+        }
+      ],
+      "command": [
+        "python",
+        "scripts/A/draw_d06.py"
+      ],
+      "visual_review": "AGENT_VIEW_PASSED_NOT_HUMAN"
+    },
+    {
+      "figure_id": "D06_ablation_matrix",
+      "caption": "全部30次开发结果与负结果；模拟反馈，非正式效果。去选择不可识别；不是B2直接比较。",
+      "run_id": "A-D06-controls03",
+      "human_n": 0,
+      "formal_study_ready": false,
+      "source_base_sha": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+      "files": [
+        {
+          "path": "report_materials/A/A-D06/D06_ablation_matrix.png",
+          "sha256": "350aa68fcc59e51393ab131322747d3576492d65fa508b7fcc116cb3c392eff7"
+        },
+        {
+          "path": "report_materials/A/A-D06/D06_ablation_matrix.svg",
+          "sha256": "78a6d9d7f2c305ca6eabedecdfe79d6f4e58373699092370e79472079fc51cc6"
+        },
+        {
+          "path": "experiments/A/A-D06-controls03/comparison.csv",
+          "sha256": "5e840db668c901afefa07a57104e8ac0117a92825bdbecfa3b3358170d27905d"
+        },
+        {
+          "path": "scripts/A/draw_d06.py",
+          "sha256": "8af280ba64b2879bba206a905134cbf732c7a4be9e17882c53ab4c77d68dc2db"
+        },
+        {
+          "path": "configs/frozen/v0.1-candidate/candidate.json",
+          "sha256": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc"
+        }
+      ],
+      "command": [
+        "python",
+        "scripts/A/draw_d06.py"
+      ],
+      "visual_review": "AGENT_VIEW_PASSED_NOT_HUMAN"
+    }
+  ]
+}

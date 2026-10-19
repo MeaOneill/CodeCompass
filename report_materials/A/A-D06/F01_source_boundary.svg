@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="576pt" viewBox="0 0 1080 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-19T13:49:05.469248</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 1080 576 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.552 279.936 
+L 347.112 279.936 
+Q 353.88 279.936 353.88 276.0192 
+L 353.88 125.2224 
+Q 353.88 121.3056 347.112 121.3056 
+L 42.552 121.3056 
+Q 35.784 121.3056 35.784 125.2224 
+L 35.784 276.0192 
+Q 35.784 279.936 42.552 279.936 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 380.952 279.936 
+L 685.512 279.936 
+Q 692.28 279.936 692.28 276.0192 
+L 692.28 125.2224 
+Q 692.28 121.3056 685.512 121.3056 
+L 380.952 121.3056 
+Q 374.184 121.3056 374.184 125.2224 
+L 374.184 276.0192 
+Q 374.184 279.936 380.952 279.936 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 719.352 279.936 
+L 1023.912 279.936 
+Q 1030.68 279.936 1030.68 276.0192 
+L 1030.68 125.2224 
+Q 1030.68 121.3056 1023.912 121.3056 
+L 719.352 121.3056 
+Q 712.584 121.3056 712.584 125.2224 
+L 712.584 276.0192 
+Q 712.584 279.936 719.352 279.936 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 42.552 479.6928 
+L 347.112 479.6928 
+Q 353.88 479.6928 353.88 475.776 
+L 353.88 324.9792 
+Q 353.88 321.0624 347.112 321.0624 
+L 42.552 321.0624 
+Q 35.784 321.0624 35.784 324.9792 
+L 35.784 475.776 
+Q 35.784 479.6928 42.552 479.6928 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 380.952 479.6928 
+L 685.512 479.6928 
+Q 692.28 479.6928 692.28 475.776 
+L 692.28 324.9792 
+Q 692.28 321.0624 685.512 321.0624 
+L 380.952 321.0624 
+Q 374.184 321.0624 374.184 324.9792 
+L 374.184 475.776 
+Q 374.184 479.6928 380.952 479.6928 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 719.352 479.6928 
+L 1023.912 479.6928 
+Q 1030.68 479.6928 1030.68 475.776 
+L 1030.68 324.9792 
+Q 1030.68 321.0624 1023.912 321.0624 
+L 719.352 321.0624 
+Q 712.584 321.0624 712.584 324.9792 
+L 712.584 475.776 
+Q 712.584 479.6928 719.352 479.6928 
+z
+" clip-path="url(#pe0be1559db)" style="fill: #f0f5f9; stroke: #346382; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="54.396" y="152.4405" transform="rotate(-0 54.396 152.4405)">上游固定源码</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 190.809125)">boltons snapshot + LICENSE</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 209.239969)">Python AST / 依赖与 span</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 226.986406)">源码关系不等于教学先修</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="392.796" y="152.4405" transform="rotate(-0 392.796 152.4405)">A：证据与联合规划</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 190.809125)">独立证据 / 项目隔离 / 去重</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 208.491969)">有序前缀 beam + 总预算</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 226.174812)">完成项覆盖与剩余修复</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="731.196" y="152.4405" transform="rotate(-0 731.196 152.4405)">第三方与标准思想</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 190.809125)">Beta / beam / greedy / VOI</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 209.394141)">jsonschema / pytest / 绘图库</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 227.140578)">不复制上游规划器改名</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="54.396" y="352.1973" transform="rotate(-0 54.396 352.1973)">B：应用和比较</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 390.565925)">采集界面 / 事件 / 代理评分</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 408.248769)">B2动态；B1仅历史回放</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(54.396 425.931613)">动态B1与终测评分待接入</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="392.796" y="352.1973" transform="rotate(-0 392.796 352.1973)">AI辅助与核查</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 390.565925)">Codex辅助编写与自动验证</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 408.248769)">AI交叉代码检查另行记录</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(392.796 425.931613)">不替代成员/人类确认</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="731.196" y="352.1973" transform="rotate(-0 731.196 352.1973)">候选交付边界</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 390.565925)">v0.1-candidate 逐文件hash</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 408.248769)">main未集成 / 不打正式标签</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'" transform="translate(731.196 425.931613)">正式研究不放行</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 22px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="540" y="40.62625" transform="rotate(-0 540 40.62625)">F01 自主实现与第三方边界（G2候选）</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start" x="43.2" y="69.12" transform="rotate(-0 43.2 69.12)">实际调用按模块定位；标准算法思想、第三方模型与源代码均不称原创。</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #8b2424" x="43.2" y="541.44" transform="rotate(-0 43.2 541.44)">G2未通过；这是边界图，不是效果图或新颖性认证。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe0be1559db">
+   <rect x="32.4" y="103.68" width="1015.2" height="391.68"/>
+  </clipPath>
+ </defs>
+</svg>

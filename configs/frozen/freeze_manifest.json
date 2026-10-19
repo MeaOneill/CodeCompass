@@ -1,0 +1,591 @@
+{
+  "version": "v0.1-candidate",
+  "status": "CANDIDATE_ONLY_G2_NOT_PASSED",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "planned_date": "2026-10-20",
+  "actual_date": "2026-10-19",
+  "source_base_sha": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+  "code_version": "base SHA plus exact per-file hashes and byte snapshots; final Git checkpoint in sync receipt",
+  "selection_data_split": "dev",
+  "test_answers_used": false,
+  "formal_test_data_hash": null,
+  "formal_evaluator_hash": null,
+  "formal_study_ready": false,
+  "tag_created": false,
+  "provider_model_revision": null,
+  "model_revision_note": "historical deepseek-flash alias, exact provider revision unknown; no new calls",
+  "seed": 0,
+  "randomness": "deterministic lexical ordering; historical fixture random tests have their own seeds",
+  "evaluator": "development route/accounting audits only; independent final scoring unavailable",
+  "development_run_ids": [
+    "A-D04-mechanism01",
+    "A-D05-development01",
+    "A-D06-controls03"
+  ],
+  "g2_blockers": [
+    "B-D06 formal protocol/task split/scoring versions not delivered",
+    "dynamic fair B1 not integrated; B1_saved only",
+    "D06 controlled quiz timing not integrated into B development UI",
+    "independent human source/teaching-edge review and A/B confirmations absent",
+    "main not integrated/confirmed; no formal milestone tag"
+  ],
+  "change_policy": {
+    "new_version_required": true,
+    "affected_run_ids_required": true,
+    "affected_run_ids": [
+      "A-D06-controls03"
+    ],
+    "test_answer_tuning_forbidden": true,
+    "existing_version_overwrite_forbidden": true
+  },
+  "independent_human_review": "NOT_REVIEWED",
+  "files": [
+    {
+      "path": "benchmarks/dev/D03/task_001.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/dev/D03/task_001.json",
+      "sha256": "186f627b41aa87bb227e3e718ea9b93d93dc938a994410bd3515d04aa49a71e0"
+    },
+    {
+      "path": "benchmarks/dev/D03/task_002.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/dev/D03/task_002.json",
+      "sha256": "cbcbb5e75f5d58e2129f7f67d2a74574fff083d8aba5f36045baadd686dc319f"
+    },
+    {
+      "path": "benchmarks/dev/D03/units.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/dev/D03/units.json",
+      "sha256": "0d1cd3053b0fab3382e0a55f7aadc836dd83db76d74edd61faca2cb819ea9784"
+    },
+    {
+      "path": "benchmarks/sources/boltons/boltons/iterutils.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/sources/boltons/boltons/iterutils.py",
+      "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510"
+    },
+    {
+      "path": "benchmarks/sources/boltons/LICENSE",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/sources/boltons/LICENSE",
+      "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3"
+    },
+    {
+      "path": "benchmarks/sources/boltons/pyproject.toml",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/sources/boltons/pyproject.toml",
+      "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04"
+    },
+    {
+      "path": "benchmarks/sources/boltons/snapshot.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/sources/boltons/snapshot.json",
+      "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+    },
+    {
+      "path": "benchmarks/sources/boltons/tests/test_iterutils.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/benchmarks/sources/boltons/tests/test_iterutils.py",
+      "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263"
+    },
+    {
+      "path": "CodeCompass计划/refine-logs/EXPERIMENT_PLAN.md",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/CodeCompass计划/refine-logs/EXPERIMENT_PLAN.md",
+      "sha256": "6b65e5e81787530f6dadb0fb5d5ea5aa016f302436fa55d8b30c7bc7a93b07fd"
+    },
+    {
+      "path": "configs/A/D03_common.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/configs/A/D03_common.json",
+      "sha256": "4fb43e8c8f4e241bb08270f5ff02e261c8ef179bafca20f171f866c174baa3a6"
+    },
+    {
+      "path": "configs/A/D03_profiles.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/configs/A/D03_profiles.json",
+      "sha256": "e253236f8c347e177e59d7b4f5b8a1af962782ce503ae91e6a1fb71665861002"
+    },
+    {
+      "path": "configs/A/D05_scan.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/configs/A/D05_scan.json",
+      "sha256": "082ea1804eb008b5d9bfee838948afef24252fe183e5272f43407aab60d52422"
+    },
+    {
+      "path": "configs/frozen/v0.1-candidate/candidate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/configs/frozen/v0.1-candidate/candidate.json",
+      "sha256": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc"
+    },
+    {
+      "path": "docs/B/measurement_rules.md",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/docs/B/measurement_rules.md",
+      "sha256": "ef0c4f46bfe07cbd3901e1af5ff6bca269cfe28c7abeb8df6531dae39308867e"
+    },
+    {
+      "path": "docs/references/A-D02-source_provenance.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/docs/references/A-D02-source_provenance.json",
+      "sha256": "280d40ca43c861d9de22f43ae7b27ff0e00ccac613dddebcbdf044106f4b7123"
+    },
+    {
+      "path": "docs/related_work.md",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/docs/related_work.md",
+      "sha256": "6882a372fbe905fac2c5a16aa94d6db0ed79306294a785a97e4f57f760a71d5f"
+    },
+    {
+      "path": "experiments/A/A-D05-development01/comparison.csv",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D05-development01/comparison.csv",
+      "sha256": "acd7e50a4f5bae1fa0ad5e4b24671459c0ad83ef27053eab2884410d5d7b1233"
+    },
+    {
+      "path": "experiments/A/A-D05-development01/input_manifest.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D05-development01/input_manifest.json",
+      "sha256": "c70c9a945b0fa7609eb1d31f13fc42a79822dba729687c76811ffea817966018"
+    },
+    {
+      "path": "experiments/A/A-D05-development01/summary.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D05-development01/summary.json",
+      "sha256": "ba4abf2b7c5a81e4a5e78e3dc8f00ca665c6c71da4e3c3974616fc7f8ae6fc17"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/comparison.csv",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/comparison.csv",
+      "sha256": "5e840db668c901afefa07a57104e8ac0117a92825bdbecfa3b3358170d27905d"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/diagnostic-fail.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/diagnostic-fail.json",
+      "sha256": "0d0c9115483b62c78791fe326bc078184f5da33727f1c1775f47e7752eb6ede2"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/diagnostic-pass.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/diagnostic-pass.json",
+      "sha256": "a3bf0fc478e4e34dab485b531eb73f67df6624f55c1cc495290681a71fa302ac"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/task_001-sim_evidence.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/task_001-sim_evidence.json",
+      "sha256": "c185c187f06c07fa2fa85140ea2fae0ed204dd670122418da8634021f09f4996"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/task_001-sim_unknown.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/task_001-sim_unknown.json",
+      "sha256": "efc61d759005a9ec88332db665351398f88e95d769364ec15eeb78edcabdab0d"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/task_002-sim_evidence.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/task_002-sim_evidence.json",
+      "sha256": "be0e2afc2d203931b20da7d4f8c336de7d70bc51d99f7f82c0807415d080e896"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/inputs/task_002-sim_unknown.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/inputs/task_002-sim_unknown.json",
+      "sha256": "f6e9272c5c1f0cb1351039c98e0b60974b5c6c2b4015ffd7e71390bcd418bbce"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/registration.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/registration.json",
+      "sha256": "353a7d5d80810c0fb9e7fc8a59f99178a0b4d53b5e6748186edcc9e4dfb3665b"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-fail/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-fail/main.json",
+      "sha256": "0b33d704dad4b480c4363125f0801659281c842198b566691c0406ba591b2e84"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-fail/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-fail/no_diagnostic.json",
+      "sha256": "158a02ed8add7b3a2968b1fc2fd2f1af1110975746b3ced892e7fc6ed9b311c6"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-fail/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-fail/no_feedback.json",
+      "sha256": "9f4d675ced250d4c0973eee54b1ddcc279dad5ad01622396725c3da304209502"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-fail/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-fail/no_gate.json",
+      "sha256": "6e0330e887f0c20e2309b58f6421c3d3b3cbd6a45800add433954fd83f497330"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-fail/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-fail/no_selection.json",
+      "sha256": "654bd7d35340c177263d8684f6a8e88df28539e1c29e427a8eb167fc81ba384b"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-pass/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-pass/main.json",
+      "sha256": "97be50f13be40ad9bc864f15526d4032aecc7183e6fa6e09b1148946f10e3824"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-pass/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-pass/no_diagnostic.json",
+      "sha256": "158a02ed8add7b3a2968b1fc2fd2f1af1110975746b3ced892e7fc6ed9b311c6"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-pass/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-pass/no_feedback.json",
+      "sha256": "21964e948bb7b00ce8091bd994dee8d9dc2d96a17a05d848468394e93632df23"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-pass/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-pass/no_gate.json",
+      "sha256": "8fc1c86e70cc8b1e4b32e35b08be91a51fb3336b76ad92223cd7dfd51c07d0b6"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/diagnostic-pass/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/diagnostic-pass/no_selection.json",
+      "sha256": "cba7e30a24257fe7a93f5f756936a886bfc36ca880d2d37ee1da7657493ce7c4"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_evidence/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_evidence/main.json",
+      "sha256": "273060c51fcf1a067e795ff1457f131b1bd907715b1544dfd95c4e663adbea46"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_diagnostic.json",
+      "sha256": "0b3defefd3d60998d2cf3aa2283e3facc42455f893164bdb2b5b44eef314846c"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_feedback.json",
+      "sha256": "03876d207895edc6b9000a912acfaa01719a189f7dec9bd8b5f4abc21092a0f5"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_gate.json",
+      "sha256": "f1aecbbd5506e5ffd070933f575a24b26dc02f178b5fbb51cae646b77b8e0966"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_evidence/no_selection.json",
+      "sha256": "b8dbde2e0dc8a9862025fe72e1f8bbb492ce2da6a0a1e4fc649346153058959b"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_unknown/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_unknown/main.json",
+      "sha256": "4074ddb599c099846b8958ef455b13e669fe156444990fdc20f2023f4eeffac1"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_diagnostic.json",
+      "sha256": "44bb218cbf0adfd8bcbc9b4ae435f6f1dabbe2e9a22fe433a02eb7d94b44ce0b"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_feedback.json",
+      "sha256": "c2e3c0395bce3ea046454d52f1d98badf0862b5a5f4e886af5695d0f4a502811"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_gate.json",
+      "sha256": "90e9e5e779243215a45d9ca01c04fdd316624aece2595c7e2ce76f710353fb34"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_001-sim_unknown/no_selection.json",
+      "sha256": "ff067086aa638b59736487457fbf175901a301dc3d0a94afc22a726b67f52be4"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_evidence/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_evidence/main.json",
+      "sha256": "853b6b0bd57f1f74c2ac9b707f9349e8f522790f1909e4a7881e932dff3f3535"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_diagnostic.json",
+      "sha256": "59994379fbeeca81eaaf765bd3e0ff04c44d817a73414a1267fd74eaeeb670ee"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_feedback.json",
+      "sha256": "65722c0e161214142696db57613b384ac899b16913bd878af1b4569105827da8"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_gate.json",
+      "sha256": "a1473297bc8a5bb8e8d4097bf23bdb05a205b618d4dfbfe4d7712caa21c2f461"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_evidence/no_selection.json",
+      "sha256": "29922fafad3d2d42712e97d37e8ca1256603d026b3adc5726658abb1c9143778"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_unknown/main.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_unknown/main.json",
+      "sha256": "73a202b2649a8e0ab741ebbfd9f12d1ad283d97bfbb369641504b53df14354fc"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_diagnostic.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_diagnostic.json",
+      "sha256": "1b24944a87bed0268728f0b4dbac474fd49cfb7fd9a7b1bc730eaa13def45e26"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_feedback.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_feedback.json",
+      "sha256": "07d860baea8ccecd38b76fdc0640916232e240ab0bc6ce03ca9d0467b1684b9d"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_gate.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_gate.json",
+      "sha256": "ba0175daca4a1ad1d9443757c57bf62e87c115cdef714de9b8c652b8b9bbd8ec"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_selection.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/runs/task_002-sim_unknown/no_selection.json",
+      "sha256": "af58639284d3f0f84ff4b0329a496f391880466f87901d9d34e286368ebfc0fc"
+    },
+    {
+      "path": "experiments/A/A-D06-controls03/summary.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/A/A-D06-controls03/summary.json",
+      "sha256": "dc4a3953f78e6fed0d764d2b7f57906947b67a9155ab6155389ea6cb0dc9150a"
+    },
+    {
+      "path": "experiments/B/B-D04-deepseek-live01/config.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/B/B-D04-deepseek-live01/config.json",
+      "sha256": "fd71d62d20aa24175b0061b3d2648367e5f663d414d5ed81fd5f6704ec192aca"
+    },
+    {
+      "path": "experiments/B/B-D04-deepseek-live01/prompt.txt",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/B/B-D04-deepseek-live01/prompt.txt",
+      "sha256": "d41c13b360d97e0fe0b69a2764e38bc039ff65cbb6ba8d1cc5c0acf9f8ded87c"
+    },
+    {
+      "path": "experiments/B/B-D04-deepseek-live01/registration.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/experiments/B/B-D04-deepseek-live01/registration.json",
+      "sha256": "7ee7a107d97b04aa8e1d15122fa497e1f2ff6f2d76fcd289fa57fe0fbf0aca0a"
+    },
+    {
+      "path": "schemas/contracts-1.1.schema.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/contracts-1.1.schema.json",
+      "sha256": "fc379758617fb7dd22fe0d3361a2c8b9e4ff65c42a14e37cfc456d76f2f97181"
+    },
+    {
+      "path": "schemas/contracts.schema.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/contracts.schema.json",
+      "sha256": "6476bc3aa2e6999870dda1e821fc77d72bdf5d14e3fb78c4f65f0a82a4a781f2"
+    },
+    {
+      "path": "schemas/examples/code_task.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/code_task.json",
+      "sha256": "3725a1d28dd59b4211c1868962c8aadb05efd4fbdfe120f7d7c8913081c737fd"
+    },
+    {
+      "path": "schemas/examples/experiment_event.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/experiment_event.json",
+      "sha256": "5f373ba320597015963f93732235b6fd55c9e3c7eb15050554c5ffefb4ec38d9"
+    },
+    {
+      "path": "schemas/examples/learner_evidence.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/learner_evidence.json",
+      "sha256": "e3a34cde32e44425c47fb172e31f9bd176c65f3e206a049e1ff7f4edd7e4c3a1"
+    },
+    {
+      "path": "schemas/examples/learning_unit.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/learning_unit.json",
+      "sha256": "97faf3eb6fdf31716ead9e8f7bc1c45f6125c3abade6b2fb25d4733254e174a1"
+    },
+    {
+      "path": "schemas/examples/plan_result.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/plan_result.json",
+      "sha256": "2c0a2a2574adaac9a78634321b8d50bcb04e47cce6a7a07951ea276f669f5497"
+    },
+    {
+      "path": "schemas/examples/planning_request.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/planning_request.json",
+      "sha256": "fa27227e5006805d2a8e36a48c6eb6162fc93214213c14465817bd5a5ab40088"
+    },
+    {
+      "path": "schemas/examples/repo_snapshot.json",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/schemas/examples/repo_snapshot.json",
+      "sha256": "61624ecd97944921f6d1c8302dd210022686852fade508e695d718995ac2ad33"
+    },
+    {
+      "path": "scripts/A/audit_d06.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/audit_d06.py",
+      "sha256": "ec5b44eae1bd15545ce8ad994054feba681178dce6f7c875c75e5c1ae8c4b026"
+    },
+    {
+      "path": "scripts/A/build_d06_snapshot.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/build_d06_snapshot.py",
+      "sha256": "fa6268cfe8356362dd9b9ce42a7b05086739629740e249f34e4ba905b8f0b840"
+    },
+    {
+      "path": "scripts/A/cases_d04.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/cases_d04.py",
+      "sha256": "ef21c1450553ada3da46cca273108838de1f1f2ce24bfbbfcd0c247ab58e8df5"
+    },
+    {
+      "path": "scripts/A/cases_d05.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/cases_d05.py",
+      "sha256": "d13b51632a4a9764a9c1acd4b5b459fdb7605ab5b871dbc4a6baa10b7a0498e0"
+    },
+    {
+      "path": "scripts/A/draw_d06.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/draw_d06.py",
+      "sha256": "8af280ba64b2879bba206a905134cbf732c7a4be9e17882c53ab4c77d68dc2db"
+    },
+    {
+      "path": "scripts/A/requirements_d05_figures.hashes.txt",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/requirements_d05_figures.hashes.txt",
+      "sha256": "5fcfeec6c43fd5dd71595ab06df1eecc79ec6d2591b87e84accbd16d2dc51b73"
+    },
+    {
+      "path": "scripts/A/run_d03.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/run_d03.py",
+      "sha256": "62e2990e484237d35d3eea513f80076a276b8f849876eed7dfa37662e28c531f"
+    },
+    {
+      "path": "scripts/A/run_d06.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/A/run_d06.py",
+      "sha256": "d31fa731f939a4f9fcdb9c3521a4b0422b3272a04ec4324b7f6617da70ca5bc3"
+    },
+    {
+      "path": "scripts/B/requirements-d01-win-py312.hashes.txt",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/scripts/B/requirements-d01-win-py312.hashes.txt",
+      "sha256": "8e3fd61498fcaf4f00aaefa9ef7dc0a8b09ec159d3cabd67f363c37bbfe2e64d"
+    },
+    {
+      "path": "src/codecompass/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/__init__.py",
+      "sha256": "e79edd02b0265edf0b5e43d1275887599d2c4e99d858f225589b30b48e9efe16"
+    },
+    {
+      "path": "src/codecompass/app/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/app/__init__.py",
+      "sha256": "2639d0db20e6947593346502f3d9aafc5454403cb5cbc8919ab4b5645a9563c9"
+    },
+    {
+      "path": "src/codecompass/app/diagnostic_items.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/app/diagnostic_items.py",
+      "sha256": "a95736435804b926dd874d4eaff8f76b21c933eab79f162a0d1b869fa4249c71"
+    },
+    {
+      "path": "src/codecompass/app/evidence_store.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/app/evidence_store.py",
+      "sha256": "5537f4aac70368afb95e9bddd89809654a59105e29cdb5767bd1cd23c4098a98"
+    },
+    {
+      "path": "src/codecompass/app/experiment.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/app/experiment.py",
+      "sha256": "df0d55c69db276fe7b90c6e5edd8023438488a688be06509fecb812f2d434950"
+    },
+    {
+      "path": "src/codecompass/graph/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/graph/__init__.py",
+      "sha256": "3d4689984b85e3addb6542da8f1f541a8cae55078cda83544185aed6c9873a52"
+    },
+    {
+      "path": "src/codecompass/graph/extract.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/graph/extract.py",
+      "sha256": "3881c9727ad5e9cf6750bb47850adfc375e6f3a030b11703ef4be3b240fffeea"
+    },
+    {
+      "path": "src/codecompass/graph/pedagogy.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/graph/pedagogy.py",
+      "sha256": "47725b790acfecfccb42f0b7b9e2a42e1707f8b40738800dcbb17423904e38e0"
+    },
+    {
+      "path": "src/codecompass/graph/provenance.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/graph/provenance.py",
+      "sha256": "83b28c8d15b4f7d64ddf4742a6325525e40199f62636cbea32036dbee62b3d96"
+    },
+    {
+      "path": "src/codecompass/issues/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/issues/__init__.py",
+      "sha256": "ea2e51c821f305a38005a4b96f79762191b244e0fc0e1a7c6d7b7cf3c70ba7d7"
+    },
+    {
+      "path": "src/codecompass/issues/candidates.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/issues/candidates.py",
+      "sha256": "411e35805baa83f321e6c92bd875f34670f1cc919f41a16d23eace2424ba79f0"
+    },
+    {
+      "path": "src/codecompass/learner/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/learner/__init__.py",
+      "sha256": "36d2056f2f15877b6b2d2943ddee1eda9dd8efc151bdcb24e45f1be816ebe560"
+    },
+    {
+      "path": "src/codecompass/learner/model.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/learner/model.py",
+      "sha256": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b"
+    },
+    {
+      "path": "src/codecompass/planner/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/__init__.py",
+      "sha256": "496b8b146907f5af88607284a410f50733a92c4a7bfeb1bd77bdf9d28450e6fa"
+    },
+    {
+      "path": "src/codecompass/planner/adaptive.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/adaptive.py",
+      "sha256": "a3481880313ac6f5e6d938a3be100caa08519a32ac8c36f9c608ac248f2bca74"
+    },
+    {
+      "path": "src/codecompass/planner/adaptive_validator.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/adaptive_validator.py",
+      "sha256": "9499e30beeca33dd01bc76a72687943175592a3885b472599a4bc14b6922ba97"
+    },
+    {
+      "path": "src/codecompass/planner/beam.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/beam.py",
+      "sha256": "046ef0455db7b9558c0485491eab2c178d8a64a1486fab1409e8591e2e11dba4"
+    },
+    {
+      "path": "src/codecompass/planner/comparison_validator.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/comparison_validator.py",
+      "sha256": "2e6abf84025e212fe5577d78d384e68b2e0df39513d7edc11476fd6a8001cb6f"
+    },
+    {
+      "path": "src/codecompass/planner/core.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/core.py",
+      "sha256": "9354b2192c7b7bdfcf1648ca4cadcd86f62f825dd66ab2205611846b681bb63a"
+    },
+    {
+      "path": "src/codecompass/planner/diagnostics.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/diagnostics.py",
+      "sha256": "af44ffd86ab87ffa7a921621679051f19103f315f02de85f4b620039efe76f6b"
+    },
+    {
+      "path": "src/codecompass/planner/exact.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/exact.py",
+      "sha256": "731f6b0eda7c72652eb89917a777ab68c6f0db8043f722123eba2bd1f8756ff0"
+    },
+    {
+      "path": "src/codecompass/planner/feedback.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/feedback.py",
+      "sha256": "fe2e4ca533dfc6303e8dcf04fc81fa31c73db9329212557e7ee1525994e4bfe2"
+    },
+    {
+      "path": "src/codecompass/planner/g2_candidate.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/g2_candidate.py",
+      "sha256": "344a59544b48232195021ea9e59ffd5fb86747fab9c790a22913098489c81787"
+    },
+    {
+      "path": "src/codecompass/planner/search_common.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/search_common.py",
+      "sha256": "cfacf68c14f576d3b24818a478101c3e515e2f63402fccc05b76ad9200bd2002"
+    },
+    {
+      "path": "src/codecompass/planner/search_service.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/search_service.py",
+      "sha256": "e3fc7204a36aeb1cb71a2eb1c7dcb2f941b95503b4b1a083301330b4844200ae"
+    },
+    {
+      "path": "src/codecompass/planner/service.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/service.py",
+      "sha256": "1f475c506b3ea5040965dc4af64d47ad7559262b8db027c39c9a09e04af158c6"
+    },
+    {
+      "path": "src/codecompass/planner/validate.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/planner/validate.py",
+      "sha256": "1ed234d541060fa24989f85e2582507cac02e428878777613bb99b9bd619aad3"
+    },
+    {
+      "path": "src/codecompass/retrieval/__init__.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/retrieval/__init__.py",
+      "sha256": "e1a280ee018dca075e0762c7f24304b36a8dfb17b6ce178dc602697461b4c430"
+    },
+    {
+      "path": "src/codecompass/retrieval/samples.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/src/codecompass/retrieval/samples.py",
+      "sha256": "fe41c93ea7cd155f7c52d3a0decc0674436ad1668a75e0205827e01398cba1f5"
+    },
+    {
+      "path": "tests/A/test_g2_d06.py",
+      "snapshot": "configs/frozen/v0.1-candidate/snapshots/tests/A/test_g2_d06.py",
+      "sha256": "b0fa545ef39319563e1a58e90da43e8a6b7bf2a47965b38018d830bed75f5da8"
+    }
+  ]
+}

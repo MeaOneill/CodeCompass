@@ -13,3 +13,7 @@
 ## A-D04开发比较接口（非正式冻结）
 
 前置B-D03=5b3db98407ea47e1f26c7ff4cd7594cb42305aea；D04-cost-only-v0.1。新增search_service，不改schema1.1/原B2/learner/D03阈值和公共成本。默认beam W16/C50/扩展100000/搜索30秒，精确cap12、预算EPS1e-9；逐输入精确配置/hash在A-D04-mechanism01/input_manifest。未冻结正式协议/金标准/真人成本或诊断。
+
+## A-D06候选快照（G2未通过）
+
+configs/frozen/freeze_manifest.json登记109文件与逐字节副本，版本v0.1-candidate；q=.1/τ=.7/W16/预算100/α=γ=0/seed0/生产VOI禁用。只有公开开发数据；正式终测hash与评分器hash=null，协议缺口见ADR-006-G2。未合main/未获双方批准，不创建v0.1-protocol-freeze。冻结后改算法/协议必须新版本及受影响run，不覆盖候选。

@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.1.0",
+  "object_type": "CodeTask",
+  "is_fixture": false,
+  "task_id": "task_001",
+  "split": "dev",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "title": "为boltons.chunked_iter增加惰性count限制",
+  "task_type": "local_modification",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 286,
+      "end_line": 306,
+      "content_hash": "11dfd97b25906b2cfed12df66332efca2e808d1b6724da01aca97e84422a7abe"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 316,
+      "end_line": 358,
+      "content_hash": "406067bb892a10e61adfb20a620f7f87fbc1ba51a0987f5aa4515529c00c49f3"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 61,
+      "end_line": 76,
+      "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 309,
+      "end_line": 313,
+      "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+    }
+  ],
+  "origin": {
+    "kind": "upstream_todo_adapted",
+    "description": "固定提交iterutils.py:329的TODO: add count kwarg?；团队扩展为开发基准，上游需求尚未确认",
+    "issue_url": null
+  },
+  "goal": "理解列表包装器与生成器的消费边界，完成兼容的局部API扩展与回归测试，为真实开源贡献准备。",
+  "requirements": [
+    "仅修改chunked_iter及必要文档/测试，增加count=None；chunked公共签名及现有结果保持兼容。",
+    "count=None保持原语义；非负内置整数（排除bool）限制最多输出count个块；0输出空且不消费源；超过可用块数自然结束。",
+    "负count整数ValueError，其他类型（bool/float/str等）TypeError；允许首次next/列表化时抛错。size及原未知kw报错保持不变。",
+    "保持惰性：创建生成器不消费源；输出c个完整块后迭代到结束不得读取第c*size之后的元素；不能list(src)物化或产生再丢弃第c+1块。",
+    "fill未传与fill=None不同；填充仅作用真实短尾块，不能为凑count凭空增加块；str/bytes返回类型与原版一致。",
+    "提交最小复现、回归测试和固定版本行号解释；不声称本任务已获上游确认或存在开放Issue。"
+  ],
+  "required_concept_ids": [
+    "boltons.chunk_postprocess",
+    "boltons.wrapper_compatibility",
+    "python.generator_laziness",
+    "python.islice_consumption",
+    "python.iterator_protocol",
+    "python.keyword_presence"
+  ],
+  "learning_unit_ids": [
+    "u_iterable",
+    "u_chunked_iter",
+    "u_chunked"
+  ],
+  "allowed_context": [
+    "固定提交源码与任务说明",
+    "Python标准库文档",
+    "学习阶段各方法相同材料与帮助"
+  ],
+  "prohibited_help": [
+    "独立评分阶段无解答型AI或他人补丁",
+    "不能以规划器目标值评分；不能访问冻结终测答案"
+  ],
+  "time_limit_minutes": 25,
+  "timing_status": "design_target_not_piloted",
+  "difficulty": "有Python基础的局部修改题，未人工预演校准",
+  "rubric": [
+    {
+      "criterion_id": "R1",
+      "description": "输出限制与边界",
+      "points": 2,
+      "acceptance": [
+        "None与上游输出一致",
+        "count=0不消费",
+        "count=1/2截断",
+        "大count自然结束"
+      ],
+      "critical": true
+    },
+    {
+      "criterion_id": "R2",
+      "description": "惰性与消费边界",
+      "points": 2,
+      "acceptance": [
+        "构造时consumed=0",
+        "计数迭代器range(10),size=3,count=2完整迭代后consumed=6",
+        "无限迭代器count=2可终止"
+      ],
+      "critical": true
+    },
+    {
+      "criterion_id": "R3",
+      "description": "填充与API兼容",
+      "points": 2,
+      "acceptance": [
+        "fill未传短尾不填充",
+        "fill=None短尾补None",
+        "空源无伪块",
+        "str/bytes类型保持且chunked(...,count=2)回归通过"
+      ],
+      "critical": true
+    },
+    {
+      "criterion_id": "R4",
+      "description": "输入校验",
+      "points": 1,
+      "acceptance": [
+        "负count ValueError",
+        "bool/float/str count TypeError",
+        "原非法size及未知kw仍报错"
+      ],
+      "critical": false
+    },
+    {
+      "criterion_id": "R5",
+      "description": "源码解释",
+      "points": 2,
+      "acceptance": [
+        "指出chunked的islice与chunked_iter的yield消费差异并给行号",
+        "解释kw中fill是否存在决定填充，None不是缺省哨兵"
+      ],
+      "critical": true
+    },
+    {
+      "criterion_id": "R6",
+      "description": "贡献准备",
+      "points": 1,
+      "acceptance": [
+        "提交最小修改和回归测试，不接规划器评分",
+        "给出实际命令、失败与兼容说明"
+      ],
+      "critical": false
+    }
+  ],
+  "max_score": 10,
+  "success_rule": "25分钟内提交，R1/R2/R3/R5各满分且总分>=9/10。由B独立测试和盲于方法的解释rubric评分；失败/超时保留且截断耗时25分钟；不以路径覆盖率作成功标准。 各Rubric组全部acceptance满足才得该组满分，否则该组0分，不使用未定义的部分分。",
+  "submission": [
+    "patch.diff",
+    "regression_tests.py",
+    "explanation.md",
+    "commands_and_elapsed.json"
+  ],
+  "evaluation_owner": "B",
+  "evaluator_status": "implemented_not_reviewed",
+  "review_status": "pending",
+  "reviewer": null,
+  "contribution_preparation": "产出API兼容说明、回归用例和惰性消费分析，后续供真实Issue关联；今天未向社区提交。",
+  "answer_access": "dev题rubric可共享；最终测试任务答案由B隔离，应用和LLM不得访问。"
+}

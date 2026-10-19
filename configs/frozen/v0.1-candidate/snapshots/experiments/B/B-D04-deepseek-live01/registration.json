@@ -1,0 +1,22 @@
+{
+  "task": "B-D04",
+  "owner": "成员B / 糯糯",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "model_id": null,
+  "actual_time": "2026-10-17T04:14:17.896460+00:00",
+  "planned_day": "2026-10-18",
+  "command": [
+    "scripts/B/run_d04.py",
+    "--config",
+    "configs/B/D04_deepseek_authorized.json",
+    "--run-id",
+    "B-D04-deepseek-live01"
+  ],
+  "exit_code": 0,
+  "base": "722b9c46676d05b7492f7250b58a9d61c60d5124",
+  "source_head": "6adcf214b229241ccb2970ad519b54e41d76c7cd",
+  "B1": "SEE_CALL_LOGS",
+  "independent_human_review": "NOT_REVIEWED",
+  "formal_study_ready": false
+}

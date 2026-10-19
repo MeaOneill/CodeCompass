@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "is_fixture": true,
+  "object_type": "PlanningRequest",
+  "request_id": "fixture_request",
+  "snapshot_id": "boltons-4e5faa3d7e40",
+  "task_id": "task_001",
+  "learner_state": [
+    {
+      "concept_id": "python.iterator_protocol",
+      "alpha": 1,
+      "beta": 1,
+      "evidence_ids": [],
+      "lower_bound": null,
+      "quantile": 0.1
+    }
+  ],
+  "budget": 5,
+  "cost_unit": "proxy_cost",
+  "config_version": "fixture-only-v1",
+  "target_concept_ids": [
+    "python.iterator_protocol"
+  ],
+  "unit_ids": [
+    "u_iterable"
+  ],
+  "prior_plan_id": null
+}

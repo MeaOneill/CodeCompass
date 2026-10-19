@@ -1,0 +1,1 @@
+{"passed": true, "checks": 240, "errors": [], "sessions": 3, "events": 35, "acceptance_rule": "B-D05-manual-core-v2; pause/resume reported separately, no session splicing", "manual_pause_resume_flows": 1, "complete_manual_flows": 1, "manual_flow_passed": true, "human_manual_sessions": 3, "independent_human_review": "NOT_REVIEWED"}

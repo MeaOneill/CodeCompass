@@ -1,0 +1,22 @@
+{
+  "reviewer": "Codex Agent A",
+  "reviewed_at": "2026-10-19T13:52:37.497734+08:00",
+  "kind": "actual PNG view, not human review",
+  "figures": [
+    {
+      "figure_id": "F01_source_boundary",
+      "passed": true,
+      "note": "Actual PNG viewed; no visible clipping. Matrix row labels fixed before candidate snapshot; final matrix re-viewed."
+    },
+    {
+      "figure_id": "F03_candidate_flow",
+      "passed": true,
+      "note": "Actual PNG viewed; no visible clipping. Matrix row labels fixed before candidate snapshot; final matrix re-viewed."
+    },
+    {
+      "figure_id": "D06_ablation_matrix",
+      "passed": true,
+      "note": "Actual PNG viewed; no visible clipping. Matrix row labels fixed before candidate snapshot; final matrix re-viewed."
+    }
+  ]
+}

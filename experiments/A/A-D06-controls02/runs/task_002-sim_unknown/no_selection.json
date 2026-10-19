@@ -1,0 +1,860 @@
+{
+  "variant": "no_selection",
+  "initial_plan": {
+    "version": "D05-adaptive-v1",
+    "status": "FEASIBLE",
+    "completed": [],
+    "remaining": [
+      "u_iterable",
+      "u_positive_int",
+      "u_windowed_iter"
+    ],
+    "unit_costs": {
+      "u_iterable": 16.0,
+      "u_windowed_iter": 39.0,
+      "u_positive_int": 5.0
+    },
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "reference": [],
+    "spent_before": 0.0,
+    "alpha": 0,
+    "gamma": 0.0,
+    "learning_cost": 60.0,
+    "switch_cost": 0.0,
+    "objective": 60.0,
+    "missing": [],
+    "total_if_executed": 60.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": true,
+      "missing": [],
+      "learning_cost": 60.0,
+      "switch_cost": 0.0,
+      "objective": 60.0,
+      "total_if_executed": 60.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 15,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int"
+          ],
+          [
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_windowed_iter"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [
+          [
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_windowed_iter",
+            "u_positive_int"
+          ],
+          [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          [
+            "u_windowed_iter",
+            "u_iterable"
+          ],
+          [
+            "u_iterable",
+            "u_positive_int"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_windowed_iter",
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_iterable",
+          "u_windowed_iter"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_windowed_iter",
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_iterable",
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "prefix": [
+          "u_positive_int",
+          "u_iterable"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 2,
+        "retained": [
+          [
+            "u_iterable",
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_iterable",
+            "u_windowed_iter",
+            "u_positive_int"
+          ],
+          [
+            "u_positive_int",
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int",
+            "u_windowed_iter",
+            "u_iterable"
+          ],
+          [
+            "u_windowed_iter",
+            "u_iterable",
+            "u_positive_int"
+          ],
+          [
+            "u_windowed_iter",
+            "u_positive_int",
+            "u_iterable"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 3,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed"
+  },
+  "final_plan": {
+    "version": "D05-adaptive-v1",
+    "status": "FEASIBLE",
+    "completed": [
+      "u_iterable"
+    ],
+    "remaining": [],
+    "unit_costs": {
+      "u_iterable": 16.0,
+      "u_windowed_iter": 39.0,
+      "u_positive_int": 5.0
+    },
+    "gate": {
+      "python.iterator_protocol": {
+        "concept_id": "python.iterator_protocol",
+        "alpha": 2,
+        "beta": 1,
+        "evidence_ids": [
+          "D05:D05-new-python.iterator_protocol"
+        ],
+        "lower_bound": 0.3162277660168379,
+        "quantile": 0.1,
+        "mastered": false,
+        "reason": "insufficient lower-bound evidence"
+      },
+      "python.keyword_presence": {
+        "concept_id": "python.keyword_presence",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.tee": {
+        "concept_id": "python.tee",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      },
+      "python.type_validation": {
+        "concept_id": "python.type_validation",
+        "lower_bound": null,
+        "evidence_ids": [],
+        "mastered": false,
+        "reason": "unknown: no independent current-project item"
+      }
+    },
+    "reference": [
+      "u_positive_int",
+      "u_windowed_iter"
+    ],
+    "spent_before": 17.0,
+    "alpha": 0,
+    "gamma": 0.0,
+    "learning_cost": 44.0,
+    "switch_cost": 0.0,
+    "objective": 44.0,
+    "missing": [],
+    "total_if_executed": 61.0,
+    "replay": {
+      "valid": true,
+      "errors": [],
+      "goal_complete": true,
+      "missing": [],
+      "learning_cost": 44.0,
+      "switch_cost": 0.0,
+      "objective": 44.0,
+      "total_if_executed": 61.0
+    },
+    "options": {
+      "beam_width": 16,
+      "candidate_limit": 50,
+      "max_expansions": 100000,
+      "time_limit_seconds": 30.0
+    },
+    "expansions": 4,
+    "truncated": false,
+    "termination": "BOUNDED_SEARCH_FINISHED",
+    "events": [
+      {
+        "depth": 0,
+        "prefix": [],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 0,
+        "retained": [
+          [
+            "u_windowed_iter"
+          ],
+          [
+            "u_positive_int"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_windowed_iter"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "prefix": [
+          "u_positive_int"
+        ],
+        "dropped_candidates": []
+      },
+      {
+        "depth": 1,
+        "retained": [
+          [
+            "u_positive_int",
+            "u_windowed_iter"
+          ],
+          [
+            "u_windowed_iter",
+            "u_positive_int"
+          ]
+        ],
+        "dropped_prefixes": []
+      },
+      {
+        "depth": 2,
+        "retained": [],
+        "dropped_prefixes": []
+      }
+    ],
+    "elapsed_seconds": 0.0,
+    "optimality_claim": false,
+    "certificate": null,
+    "state_key": "full ordered remaining prefix; completed context fixed"
+  },
+  "observed_state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "sim_unknown",
+    "is_simulated": true,
+    "records": [
+      {
+        "evidence_id": "D05:D05-new-python.iterator_protocol",
+        "item_id": "D05-new-python.iterator_protocol",
+        "concept_id": "python.iterator_protocol",
+        "project": "boltons-4e5faa3d7e40",
+        "timestamp": "2026-10-19T00:00:00+08:00",
+        "pseudonymous_user_id": "sim_unknown",
+        "is_fixture": true,
+        "independent": true,
+        "evidence_type": "independent_quiz",
+        "outcome": "pass"
+      }
+    ]
+  },
+  "planning_state": {
+    "state_version": "0.1.0",
+    "pseudonymous_user_id": "sim_unknown",
+    "is_simulated": true,
+    "records": [
+      {
+        "evidence_id": "D05:D05-new-python.iterator_protocol",
+        "item_id": "D05-new-python.iterator_protocol",
+        "concept_id": "python.iterator_protocol",
+        "project": "boltons-4e5faa3d7e40",
+        "timestamp": "2026-10-19T00:00:00+08:00",
+        "pseudonymous_user_id": "sim_unknown",
+        "is_fixture": true,
+        "independent": true,
+        "evidence_type": "independent_quiz",
+        "outcome": "pass"
+      }
+    ]
+  },
+  "completed": [
+    "u_iterable",
+    "u_positive_int",
+    "u_windowed_iter"
+  ],
+  "events": [
+    {
+      "type": "material",
+      "unit_id": "u_iterable",
+      "cost": 16.0,
+      "spent": 16.0,
+      "completed": [
+        "u_iterable"
+      ]
+    },
+    {
+      "type": "quiz",
+      "item_id": "D05-new-python.iterator_protocol",
+      "outcome": "pass",
+      "accepted": "ACCEPTED",
+      "cost": 1.0,
+      "spent": 17.0,
+      "before": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [],
+        "remaining": [
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "unit_costs": {
+          "u_iterable": 16.0,
+          "u_windowed_iter": 39.0,
+          "u_positive_int": 5.0
+        },
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [],
+        "spent_before": 0.0,
+        "alpha": 0,
+        "gamma": 0.0,
+        "learning_cost": 60.0,
+        "switch_cost": 0.0,
+        "objective": 60.0,
+        "missing": [],
+        "total_if_executed": 60.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 60.0,
+          "switch_cost": 0.0,
+          "objective": 60.0,
+          "total_if_executed": 60.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 15,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "prefix": [],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 0,
+            "retained": [
+              [
+                "u_windowed_iter"
+              ],
+              [
+                "u_positive_int"
+              ],
+              [
+                "u_iterable"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 1,
+            "prefix": [
+              "u_windowed_iter"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 1,
+            "prefix": [
+              "u_positive_int"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 1,
+            "prefix": [
+              "u_iterable"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 1,
+            "retained": [
+              [
+                "u_positive_int",
+                "u_windowed_iter"
+              ],
+              [
+                "u_windowed_iter",
+                "u_positive_int"
+              ],
+              [
+                "u_iterable",
+                "u_windowed_iter"
+              ],
+              [
+                "u_windowed_iter",
+                "u_iterable"
+              ],
+              [
+                "u_iterable",
+                "u_positive_int"
+              ],
+              [
+                "u_positive_int",
+                "u_iterable"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_positive_int",
+              "u_windowed_iter"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_windowed_iter",
+              "u_positive_int"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_iterable",
+              "u_windowed_iter"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_windowed_iter",
+              "u_iterable"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_iterable",
+              "u_positive_int"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "prefix": [
+              "u_positive_int",
+              "u_iterable"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 2,
+            "retained": [
+              [
+                "u_iterable",
+                "u_positive_int",
+                "u_windowed_iter"
+              ],
+              [
+                "u_iterable",
+                "u_windowed_iter",
+                "u_positive_int"
+              ],
+              [
+                "u_positive_int",
+                "u_iterable",
+                "u_windowed_iter"
+              ],
+              [
+                "u_positive_int",
+                "u_windowed_iter",
+                "u_iterable"
+              ],
+              [
+                "u_windowed_iter",
+                "u_iterable",
+                "u_positive_int"
+              ],
+              [
+                "u_windowed_iter",
+                "u_positive_int",
+                "u_iterable"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 3,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed"
+      },
+      "after": {
+        "version": "D05-adaptive-v1",
+        "status": "FEASIBLE",
+        "completed": [
+          "u_iterable"
+        ],
+        "remaining": [
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "unit_costs": {
+          "u_iterable": 16.0,
+          "u_windowed_iter": 39.0,
+          "u_positive_int": 5.0
+        },
+        "gate": {
+          "python.iterator_protocol": {
+            "concept_id": "python.iterator_protocol",
+            "alpha": 2,
+            "beta": 1,
+            "evidence_ids": [
+              "D05:D05-new-python.iterator_protocol"
+            ],
+            "lower_bound": 0.3162277660168379,
+            "quantile": 0.1,
+            "mastered": false,
+            "reason": "insufficient lower-bound evidence"
+          },
+          "python.keyword_presence": {
+            "concept_id": "python.keyword_presence",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.tee": {
+            "concept_id": "python.tee",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          },
+          "python.type_validation": {
+            "concept_id": "python.type_validation",
+            "lower_bound": null,
+            "evidence_ids": [],
+            "mastered": false,
+            "reason": "unknown: no independent current-project item"
+          }
+        },
+        "reference": [
+          "u_positive_int",
+          "u_windowed_iter"
+        ],
+        "spent_before": 17.0,
+        "alpha": 0,
+        "gamma": 0.0,
+        "learning_cost": 44.0,
+        "switch_cost": 0.0,
+        "objective": 44.0,
+        "missing": [],
+        "total_if_executed": 61.0,
+        "replay": {
+          "valid": true,
+          "errors": [],
+          "goal_complete": true,
+          "missing": [],
+          "learning_cost": 44.0,
+          "switch_cost": 0.0,
+          "objective": 44.0,
+          "total_if_executed": 61.0
+        },
+        "options": {
+          "beam_width": 16,
+          "candidate_limit": 50,
+          "max_expansions": 100000,
+          "time_limit_seconds": 30.0
+        },
+        "expansions": 4,
+        "truncated": false,
+        "termination": "BOUNDED_SEARCH_FINISHED",
+        "events": [
+          {
+            "depth": 0,
+            "prefix": [],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 0,
+            "retained": [
+              [
+                "u_windowed_iter"
+              ],
+              [
+                "u_positive_int"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 1,
+            "prefix": [
+              "u_windowed_iter"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 1,
+            "prefix": [
+              "u_positive_int"
+            ],
+            "dropped_candidates": []
+          },
+          {
+            "depth": 1,
+            "retained": [
+              [
+                "u_positive_int",
+                "u_windowed_iter"
+              ],
+              [
+                "u_windowed_iter",
+                "u_positive_int"
+              ]
+            ],
+            "dropped_prefixes": []
+          },
+          {
+            "depth": 2,
+            "retained": [],
+            "dropped_prefixes": []
+          }
+        ],
+        "elapsed_seconds": 0.0,
+        "optimality_claim": false,
+        "certificate": null,
+        "state_key": "full ordered remaining prefix; completed context fixed"
+      },
+      "feedback_applied": true,
+      "observation": {
+        "evidence_id": "D05:D05-new-python.iterator_protocol",
+        "item_id": "D05-new-python.iterator_protocol",
+        "concept_id": "python.iterator_protocol",
+        "project": "boltons-4e5faa3d7e40",
+        "timestamp": "2026-10-19T00:00:00+08:00",
+        "pseudonymous_user_id": "sim_unknown",
+        "is_fixture": true,
+        "independent": true,
+        "evidence_type": "independent_quiz",
+        "outcome": "pass"
+      }
+    },
+    {
+      "type": "material",
+      "unit_id": "u_positive_int",
+      "cost": 5.0,
+      "spent": 22.0,
+      "completed": [
+        "u_iterable",
+        "u_positive_int"
+      ]
+    },
+    {
+      "type": "material",
+      "unit_id": "u_windowed_iter",
+      "cost": 39.0,
+      "spent": 61.0,
+      "completed": [
+        "u_iterable",
+        "u_positive_int",
+        "u_windowed_iter"
+      ]
+    }
+  ],
+  "total_proxy_cost": 61.0,
+  "learning_proxy_cost": 60.0,
+  "quiz_proxy_cost": 1.0,
+  "switch_proxy_cost": 0.0,
+  "quiz_count": 1,
+  "budget": 100,
+  "coverage_complete": true,
+  "human_task_success": null,
+  "no_selection_identifiable": false,
+  "gate_ablation": "disable all evidence-based skipping",
+  "feedback_is_simulated": true
+}

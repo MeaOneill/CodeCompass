@@ -1,0 +1,22 @@
+{
+  "task": "A-D06",
+  "owner": "成员A",
+  "executor": "Codex Agent A",
+  "machine": "糯糯",
+  "started_at": "2026-10-19T13:43:21.685486+08:00",
+  "planned_date": "2026-10-20",
+  "actual_date": "2026-10-19",
+  "command": [
+    "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+    "scripts/A/run_d06.py"
+  ],
+  "source_base": "5e6ecb186e9b06d72599ae41d851e9b35ea59399",
+  "file_hashes": {
+    "src/codecompass/planner/g2_candidate.py": "10e61428e2747ba25accf3aa5ab4b9c54f529aa348a3ef65aa118086e686a15d",
+    "scripts/A/run_d06.py": "47ea87d2ff514749c7f7cf9e25df407459ea51a024893b037280404c7a59cdc4",
+    "configs/frozen/v0.1-candidate/candidate.json": "074097e76cbb5631b133db80faf2f00a06360dac650b8aa6707f48ef85ab65dc"
+  },
+  "exit_code": 0,
+  "formal_study_ready": false,
+  "outcomes": "public synthetic fixed streams, never formal task answers"
+}

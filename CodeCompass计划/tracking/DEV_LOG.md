@@ -35,3 +35,7 @@ A-D02实际AST/来源校验与分层关系图实现，自审31测试通过，947
 A从B03=5b3db98407ea47e1f26c7ff4cd7594cb42305aea接管，分支codex/A-D04-search，READY_FOR_REVIEW。新增beam/精确DP/独立证书与统一比较，强B2字节不变；142测试/206负例/54结果/4状态/16宽度通过。可见入口docs/A/A-D04_成果与自行验收.md，算法algorithm.md，B-D04具体第一动作见A交接。提交归档/远程完成前不放行，最终看release_gate。真实任务平局、真人/正式实验0、GUI/诊断/切换目标未实现，未人类审。
 
 最终收尾 2026-10-16T23:58:27.136532+08:00：业务检查点HEAD=remote=63bce32b16eb7601f09baa671aa0f2767102087c。全新已提交归档142测试、A/B审计、CLI与全部机制重算通过；54结果/4状态/16宽度记录与原输入重算一致。严格工程复检通过，允许进入下一步B-D04；人类未审、正式实验0。真实任务成本平局保留，不宣称beam真实收益/一般最优。原始接收演示B模板署名不代表本次执行者，A实际归属/迁移映射见experiments/A/A-D04-accept-B03-01/relocation_and_actual_executor.json（冻结副本hash已逐项验证）。最后仅回执/日志提交，准确最终HEAD见通知；未合main，B未确认接管。
+
+## A署名 A-D06 2026-10-19T13:52:37.497734+08:00
+
+Owner成员A/执行Codex Agent A/机器糯糯；codex/A-D06-g2-freeze，base=5e6ecb186e9b06d72599ae41d851e9b35ea59399。工程候选READY_FOR_REVIEW；正式G2 BLOCKED/NOT_PASSED，next_step_allowed=false，仅B-D06补依赖。30次开发对照、109文件hash快照、258测试与独立AI22复核通过；模拟反馈/真人正式0/付费调用0。缺动态B1、公平时机接入、正式协议/任务/终测评分、人类审核和双方main确认。未合main/未打正式标签。接收首命令与全部原始路径见docs/A/handoffs/A-D06.md；同步SHA见最终回执。

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "is_fixture": true,
+  "object_type": "ExperimentEvent",
+  "event_id": "fixture_event_1",
+  "run_id": "fixture_run",
+  "actor": {
+    "role": "A",
+    "owner": "fixture_owner",
+    "executor": "fixture_executor",
+    "machine": "fixture_machine",
+    "model_id": null
+  },
+  "code_commit": null,
+  "data_hash": null,
+  "config_hash": null,
+  "timestamp": "2026-10-16T00:00:00+08:00",
+  "event_type": "paused",
+  "payload": {
+    "task_id": "fixture_task",
+    "evidence_type": "synthetic",
+    "command": [],
+    "exit_code": null,
+    "elapsed_seconds": null,
+    "raw_result_path": null,
+    "error": null,
+    "resume_from": "fixture_checkpoint",
+    "metrics": null
+  }
+}

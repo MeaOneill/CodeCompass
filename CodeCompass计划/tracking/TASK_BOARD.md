@@ -14,7 +14,7 @@
 | D04-B | 2026-10-18 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D05-A | 2026-10-19（10/18执行） | A | 成员A / 当前Codex Agent A / 糯糯 | READY_FOR_REVIEW | codex/A-D05-diagnosis / 1395600 | 209测试、768扫描、7391审计/归档通过；允许B-D05；SHA见回执 |
 | D05-B | 2026-10-19 | B | 待认领 | TODO | 未建立 | 未执行 |
-| D06-A | 2026-10-20 | A | 待认领 | TODO | 未建立 | 未执行 |
+| D06-A | 2026-10-20（10/19执行） | A | 成员A / Codex Agent A / 糯糯 | BLOCKED_G2 | codex/A-D06-g2-freeze / 5e6ecb18 | 候选工程可复核，G2未过，见A-D06交接 |
 | D06-B | 2026-10-20 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D07-A | 2026-10-21 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D07-B | 2026-10-21 | B | 待认领 | TODO | 未建立 | 未执行 |
@@ -91,3 +91,7 @@ Owner成员A / Codex Agent A / 糯糯，分支codex/A-D05-diagnosis，base139560
 B1静态回放、动态B1/正式终测评分未接入、生产VOI未校准、独立人类审核和异机复现未完成等既有边界不变；本轮没有新API调用。允许A-D06继续协议及接入边界工作，不代表正式研究已经可启动。
 
 A-D06第一动作：fetch并核对B-D05最终通知SHA，然后在自己的工作区运行 `python scripts/B/audit_d05.py --source experiments/B/B-D05-manual01/manual/export01 --output experiments/A/A-D06-accept-B05-manual-NEW.json --require-manual-flow`，预期exit0、complete_manual_flows=1、manual_pause_resume_flows=1；再读measurement_rules和接口请求，复核正式冻结边界。不调用付费模型。
+
+## A署名 A-D06 2026-10-19T13:52:37.497734+08:00
+
+Owner成员A/执行Codex Agent A/机器糯糯；codex/A-D06-g2-freeze，base=5e6ecb186e9b06d72599ae41d851e9b35ea59399。工程候选READY_FOR_REVIEW；正式G2 BLOCKED/NOT_PASSED，next_step_allowed=false，仅B-D06补依赖。30次开发对照、109文件hash快照、258测试与独立AI22复核通过；模拟反馈/真人正式0/付费调用0。缺动态B1、公平时机接入、正式协议/任务/终测评分、人类审核和双方main确认。未合main/未打正式标签。接收首命令与全部原始路径见docs/A/handoffs/A-D06.md；同步SHA见最终回执。

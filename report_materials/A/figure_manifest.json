@@ -426,6 +426,16 @@
         "tmp\\D05-figure-deps"
       ],
       "visual_review": "Codex Agent A viewed actual exported PNG; legible, no clipped data/text; not independent human review"
+    },
+    {
+      "figure_id": "A-D06-F01-F03-ablation",
+      "run_id": "A-D06-controls03",
+      "kind": "candidate diagrams and development matrix",
+      "status": "candidate_only_G2_not_passed",
+      "manifest": "report_materials/A/A-D06/figure_manifest.json",
+      "plot_entrypoint": "scripts/A/draw_d06.py",
+      "human_n": 0,
+      "formal_study_ready": false
     }
   ],
   "reception_reviews": [

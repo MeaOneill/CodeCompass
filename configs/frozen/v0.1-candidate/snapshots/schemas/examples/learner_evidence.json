@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "is_fixture": true,
+  "object_type": "LearnerEvidence",
+  "evidence_id": "fixture_e1",
+  "pseudonymous_user_id": "fixture_user",
+  "concept_id": "python.iterator_protocol",
+  "item_id": "fixture_quiz_1",
+  "outcome": "unscored",
+  "timestamp": "2026-10-16T00:00:00+08:00",
+  "project": "boltons-4e5faa3d7e40",
+  "evidence_type": "fixture",
+  "attempt_id": "fixture_attempt_1",
+  "independent": false
+}

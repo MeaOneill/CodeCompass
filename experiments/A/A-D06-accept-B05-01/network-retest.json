@@ -1,0 +1,8 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q --basetemp=tmp/A-D06-network-retest",
+  "exit_code": 0,
+  "tests_passed": 236,
+  "log": "tests-network-retest.log",
+  "reason": "sandbox loopback WinError10013; rerun with local network permission",
+  "original_failure_preserved": true
+}
