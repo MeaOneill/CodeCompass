@@ -16,7 +16,7 @@
 | D05-B | 2026-10-19 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D06-A | 2026-10-20（10/19执行） | A | 成员A / Codex Agent A / 糯糯 | READY_FOR_REVIEW | codex/A-D06-g2-freeze / 5e6ecb18 | A工程通过，允许同日B-D06；联合G2待依赖/双方确认 |
 | D06-B | 2026-10-20 | B | 待认领 | TODO | 未建立 | 未执行 |
-| D07-A | 2026-10-21（10/19起执行） | A | 成员A / Codex Agent A / 糯糯 | BLOCKED_HUMAN_PRETEST | codex/A-D07-smoke / c84e833 | 工程384测通过；两人真实预演/新代码独立审未完成 |
+| D07-A | 2026-10-21 | A | 成员A / Codex Agent A / 糯糯 | BLOCKED_PROTOCOL_GAP | codex/A-D07-smoke / c84e833 | 独立22回归/49hash通过；冻结单题反馈路径验收不可达；待明确授权独立开发协议，不交下一棒 |
 | D07-B | 2026-10-21 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D08-A | 2026-10-22 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D08-B | 2026-10-22 | B | 待认领 | TODO | 未建立 | 未执行 |
@@ -117,3 +117,7 @@ Owner成员B / Codex Agent B / 糯糯，分支codex/B-D06-protocol，base A-D06�
 ## A署名 A-D07 2026-10-19T23:55:57.036715+08:00
 
 Owner成员A / Codex Agent A / 糯糯；codex/A-D07-smoke，base=c84e8334d681a86151cfa63b22a2307dd0245963。工程READY_FOR_REVIEW，总状态BLOCKED_HUMAN_PRETEST。384测试、72模拟闭环/1468smoke登记检查、43版本核对/4篡改拒绝通过；实际浏览器2自动会话不当真人。B1不完整路线接收缺陷与独立提交面板回归已修复，新版本A-D07-runtime-v1，原A/B冻结代码/参数不改。两人预演、真实反馈路径变化、A新代码独立审核未完成；招募未知，G2/正式实验/正式标签未放行。允许B-D07开展整合/审核/实际预演准备，不跳A-D08。入口docs/A/handoffs/A-D07.md；最终同步与恢复回执另补，付费新调用0。
+
+## A署名 A-D07独立技术复核收尾 2026-10-21T21:27:17.637700+08:00
+
+继续A-D07，BLOCKED_PROTOCOL_GAP；本日未通过，不进入B-D07或正式实验。独立AI在无真人数据代码克隆上22回归/49hash通过，24个模拟反例反馈路线变化均0；原卡要求与unknown+单题冻结协议冲突。新UI格式提示版本保持原算法/提交处理，额外来源对应记录独立保存，不回填历史事件。解决提案docs/requests/A-D07-protocol-gap-resolution.md尚未授权、未实施。最新门禁experiments/A/A-D07-independent-review01/release_gate.json，审查原始命令/退出状态/反例均同目录。公开同步只含技术资料；参与者背景、同意、原答、会话及备份本机封存、不入Git。主源码588920d，独立审查记录5c684e6已推送；最终文档回执SHA见完成通知。没有新正式结果图，不新增模型付费调用、不合main、不打冻结标签。
