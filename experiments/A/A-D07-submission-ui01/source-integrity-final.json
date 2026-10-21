@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "app/A_D07_submission_v1/submission.js",
+      "source_and_snapshot_match": true
+    },
+    {
+      "path": "scripts/A/serve_d07_submission_v1.py",
+      "source_and_snapshot_match": true
+    },
+    {
+      "path": "tests/A/test_submission_ui_d07.py",
+      "source_and_snapshot_match": true
+    }
+  ],
+  "checked_bytes": 6,
+  "parent_integrity_separate": "parent-version-audit.json",
+  "scope": "technical source only; no participant records"
+}

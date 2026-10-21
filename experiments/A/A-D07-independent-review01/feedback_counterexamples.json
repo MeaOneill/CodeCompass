@@ -1,0 +1,581 @@
+{
+  "head": "588920db9c9b5c041d9687724203da941aef7296",
+  "fixture_only": true,
+  "scenarios": 24,
+  "feedback_changes": 0,
+  "beta_single_pass": 0.3162277660168379,
+  "beta_single_fail": 0.051316701949486225,
+  "min_all_passes_to_master": 6,
+  "rows": [
+    {
+      "task_id": "task_001",
+      "outcome": "pass",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "u_chunked"
+      ],
+      "suffix_before_feedback": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "suffix_after_feedback": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "counterfactual_same_spent": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_001",
+      "outcome": "fail",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "u_chunked"
+      ],
+      "suffix_before_feedback": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "suffix_after_feedback": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "counterfactual_same_spent": [
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_002",
+      "outcome": "pass",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "u_iterable"
+      ],
+      "suffix_before_feedback": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "suffix_after_feedback": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "counterfactual_same_spent": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_002",
+      "outcome": "fail",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "u_iterable"
+      ],
+      "suffix_before_feedback": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "suffix_after_feedback": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "counterfactual_same_spent": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_003",
+      "outcome": "pass",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_003__unique_iter"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_003",
+      "outcome": "fail",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_003__unique_iter"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_004",
+      "outcome": "pass",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_004__get_path"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_004",
+      "outcome": "fail",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_004__get_path"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_005",
+      "outcome": "pass",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_005__camel2under"
+      ],
+      "suffix_before_feedback": [
+        "task_005__under2camel"
+      ],
+      "suffix_after_feedback": [
+        "task_005__under2camel"
+      ],
+      "counterfactual_same_spent": [
+        "task_005__under2camel"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_005",
+      "outcome": "fail",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_005__camel2under"
+      ],
+      "suffix_before_feedback": [
+        "task_005__under2camel"
+      ],
+      "suffix_after_feedback": [
+        "task_005__under2camel"
+      ],
+      "counterfactual_same_spent": [
+        "task_005__under2camel"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_006",
+      "outcome": "pass",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_006__asciify"
+      ],
+      "suffix_before_feedback": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "suffix_after_feedback": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "counterfactual_same_spent": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_006",
+      "outcome": "fail",
+      "units": 3,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_006__asciify"
+      ],
+      "suffix_before_feedback": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "suffix_after_feedback": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "counterfactual_same_spent": [
+        "task_006__slugify",
+        "task_006__split_punct_ws"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_007",
+      "outcome": "pass",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_007__ordinalize"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_007",
+      "outcome": "fail",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_007__ordinalize"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_008",
+      "outcome": "pass",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_008__strip_ansi"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_008",
+      "outcome": "fail",
+      "units": 1,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_008__strip_ansi"
+      ],
+      "suffix_before_feedback": [],
+      "suffix_after_feedback": [],
+      "counterfactual_same_spent": [],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_009",
+      "outcome": "pass",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_009__gunzip_bytes"
+      ],
+      "suffix_before_feedback": [
+        "task_009__gzip_bytes"
+      ],
+      "suffix_after_feedback": [
+        "task_009__gzip_bytes"
+      ],
+      "counterfactual_same_spent": [
+        "task_009__gzip_bytes"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_009",
+      "outcome": "fail",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_009__gunzip_bytes"
+      ],
+      "suffix_before_feedback": [
+        "task_009__gzip_bytes"
+      ],
+      "suffix_after_feedback": [
+        "task_009__gzip_bytes"
+      ],
+      "counterfactual_same_spent": [
+        "task_009__gzip_bytes"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_010",
+      "outcome": "pass",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_010__indent"
+      ],
+      "suffix_before_feedback": [
+        "task_010__iter_splitlines"
+      ],
+      "suffix_after_feedback": [
+        "task_010__iter_splitlines"
+      ],
+      "counterfactual_same_spent": [
+        "task_010__iter_splitlines"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_010",
+      "outcome": "fail",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_010__indent"
+      ],
+      "suffix_before_feedback": [
+        "task_010__iter_splitlines"
+      ],
+      "suffix_after_feedback": [
+        "task_010__iter_splitlines"
+      ],
+      "counterfactual_same_spent": [
+        "task_010__iter_splitlines"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_011",
+      "outcome": "pass",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_011__format_int_list"
+      ],
+      "suffix_before_feedback": [
+        "task_011__parse_int_list"
+      ],
+      "suffix_after_feedback": [
+        "task_011__parse_int_list"
+      ],
+      "counterfactual_same_spent": [
+        "task_011__parse_int_list"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_011",
+      "outcome": "fail",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_011__format_int_list"
+      ],
+      "suffix_before_feedback": [
+        "task_011__parse_int_list"
+      ],
+      "suffix_after_feedback": [
+        "task_011__parse_int_list"
+      ],
+      "counterfactual_same_spent": [
+        "task_011__parse_int_list"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_012",
+      "outcome": "pass",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_012__human_readable_list"
+      ],
+      "suffix_before_feedback": [
+        "task_012__removeprefix"
+      ],
+      "suffix_after_feedback": [
+        "task_012__removeprefix"
+      ],
+      "counterfactual_same_spent": [
+        "task_012__removeprefix"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    },
+    {
+      "task_id": "task_012",
+      "outcome": "fail",
+      "units": 2,
+      "all_units_forced": true,
+      "initial_status": "FEASIBLE",
+      "status": "FEASIBLE",
+      "accepted": "ACCEPTED",
+      "completed": [
+        "task_012__human_readable_list"
+      ],
+      "suffix_before_feedback": [
+        "task_012__removeprefix"
+      ],
+      "suffix_after_feedback": [
+        "task_012__removeprefix"
+      ],
+      "counterfactual_same_spent": [
+        "task_012__removeprefix"
+      ],
+      "feedback_changed_route": false,
+      "suffix_changed": false,
+      "mastered_after": [],
+      "completed_preserved": true
+    }
+  ]
+}

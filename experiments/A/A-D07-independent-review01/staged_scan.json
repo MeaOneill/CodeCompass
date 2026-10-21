@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "errors": [],
+  "files": 17,
+  "scope": "staged Git blobs in explicitly A-owned paths; private databases, keys and production identities excluded",
+  "items": [
+    {
+      "path": "docs/A/A-D07_成果与自行验收.md",
+      "sha256": "b5603ae2b321d965812ae051a60c585ecd1d75d1820185806861fc24d6d5ea23"
+    },
+    {
+      "path": "docs/A/G2后烟雾验证及预演算法问题.md",
+      "sha256": "3c7138aa50f191452947040bbef78e737021321f2abac338a818868d99e3ab3e"
+    },
+    {
+      "path": "docs/A/handoffs/A-D07.md",
+      "sha256": "bfbb6bd6ac822bf70d03a73bc15b009d4f876cd99974dc2f8ca1395f18bbaa3d"
+    },
+    {
+      "path": "docs/A/session_A-D07.json",
+      "sha256": "060ae5c0a2e2d15a9fb9e24b705166ce88f15c15fb12508e1b87c365ba76b886"
+    },
+    {
+      "path": "docs/A/开发日志.md",
+      "sha256": "4734bd434337a8ab9b63dd591fe9119ebdb74d469040f1377bd070a378579b91"
+    },
+    {
+      "path": "docs/A/状态.md",
+      "sha256": "c6671a5645394cd01a2284136720b53efc7fd72039da34e42491ab6982a40710"
+    },
+    {
+      "path": "docs/requests/A-D07-protocol-gap-resolution.md",
+      "sha256": "c990752537e056b634cbf8f63d55b3c92d0ff58af0686fe2e518982299eaba9d"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/feedback_counterexamples.json",
+      "sha256": "82c5ca8eff23515fa4c9f67cc924f15e58ffa9f9b6d4f9a04e310f85b22f0126"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/feedback_counterexamples.log",
+      "sha256": "36138b964680489c5fe435aa58e3e485b2814f6b3ff20a8335ea0ccc548438a5"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/feedback_counterexamples.py",
+      "sha256": "9185dd4b323bed0391c92b4e850ec9724d5cd9ab6e284d74f545b224920f8420"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/hashes.json",
+      "sha256": "4d6ffd31947afd33e8baf85d16fbb51f8242f72d645e5b296b68938a71c85f00"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/javascript_syntax.json",
+      "sha256": "54c8d0be6efddd6511252aa6a59d44931dcf19a4f45e9d32922d0bbe0074b9a2"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/manifest.json",
+      "sha256": "7e3880f0dedd808c8dc0bf0cb0d156e2ae62145fbc14fda49ca34564bc416da4"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/pytest.log",
+      "sha256": "627411bcb179d12d924bb68fcc9bc4e0fea33fbc02239769a47564128184c710"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/release_gate.json",
+      "sha256": "b59469e322ad686e8ce724d6b68fd4534db69bd87bcc51626352ad3f383f6b56"
+    },
+    {
+      "path": "experiments/A/A-D07-independent-review01/review.md",
+      "sha256": "3ac493722795bfabf6157b8bc15446dc440866f82be2fe0fa6670cf82f5e6021"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/source-integrity-final.json",
+      "sha256": "b37bfa1a788e2b8b512c774bc9a511910056364a6aabb622a419d12f6fea5de5"
+    }
+  ]
+}

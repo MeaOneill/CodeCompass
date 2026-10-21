@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-21T21:24:35.408181+08:00",
+  "task": "A-D07",
+  "status": "BLOCKED_PROTOCOL_GAP",
+  "overall_day_passed": false,
+  "formal_G2_passed": false,
+  "formal_study_allowed": false,
+  "next_task_allowed": false,
+  "independent_AI_review": "COMPLETED_SEE_REPORT; not human approval",
+  "source_commit": "588920db9c9b5c041d9687724203da941aef7296",
+  "independent_tests_passed": 22,
+  "independent_file_hashes_checked": 49,
+  "independent_synthetic_counterexamples": 24,
+  "real_feedback_path_change": "NOT_DEMONSTRATED; no fabricated change",
+  "participant_records": "LOCAL_PRIVATE_NOT_IN_GIT",
+  "required_next": "Explicit authorization of a new development-only evidence protocol before implementation, or retain original-day failed status",
+  "proposed_resolution": "docs/requests/A-D07-protocol-gap-resolution.md",
+  "threshold_changed": false,
+  "old_frozen_protocol_changed": false,
+  "main_merged": false,
+  "formal_tag_created": false,
+  "new_model_calls": 0
+}
