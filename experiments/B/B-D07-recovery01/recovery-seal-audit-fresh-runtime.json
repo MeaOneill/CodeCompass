@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "errors": [],
+  "checked_files": 87,
+  "parent_new_checks": 55,
+  "parent_old_checks": 43,
+  "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+  "technical_delivery_ready": true,
+  "human_rehearsal_evaluated": false,
+  "other_machine_evaluated": false,
+  "whole_B07_day_passed": null,
+  "formal_G2_passed": false,
+  "formal_study_allowed": false,
+  "conclusion": "Engineering integrity only; actual pilot/other-machine receipts and cross-review remain separate"
+}

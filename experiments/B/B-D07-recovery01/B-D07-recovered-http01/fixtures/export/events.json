@@ -1,0 +1,597 @@
+[
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_pilot_not_formal",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "924c9eb09c7e7d336d7c9fdcabef8586299c10e1043baa96a62bdd22fbbbcc62"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "28452d64f820c6ba7c75951881ae70780a6b9552e0a2fa31da183dc8555d725f",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "924c9eb09c7e7d336d7c9fdcabef8586299c10e1043baa96a62bdd22fbbbcc62",
+    "hash": "3b15cc31a5c1f24b37fb7e8dbda5a03c0cf0d9a654ecda5ed9e059a4aeeb72b4"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "B07_more_chunked"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "28452d64f820c6ba7c75951881ae70780a6b9552e0a2fa31da183dc8555d725f",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3b15cc31a5c1f24b37fb7e8dbda5a03c0cf0d9a654ecda5ed9e059a4aeeb72b4",
+    "hash": "52134bffab18e6e34114179a9419d9ce467f4a04f44cdd32bdbf83e7350d19e8"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.21900000001187436,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "B07_more_chunked",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "52134bffab18e6e34114179a9419d9ce467f4a04f44cdd32bdbf83e7350d19e8",
+    "hash": "fce6d5726ae7d9b1fe58dccc065e2cf904bdbba578f4e6df290a5bc8ac430ecc"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.25,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "B07_more_chunked",
+      "mastery_updated": false,
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "fce6d5726ae7d9b1fe58dccc065e2cf904bdbba578f4e6df290a5bc8ac430ecc",
+    "hash": "a91c0a25dc98a67f1c692518cec43f48c2aed56db3d4728af4f33425119deadf"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.25,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B07-more-counter-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a91c0a25dc98a67f1c692518cec43f48c2aed56db3d4728af4f33425119deadf",
+    "hash": "3d3844e8aac7e1e76816dd02568e896fd4204e969eb99b12d5d47b1e565592c9"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.26500000001396984,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B07-more-counter-v1",
+      "outcome": "pass",
+      "duration_seconds": 0.015000000013969839,
+      "scorer": "independent_server_oracle",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3d3844e8aac7e1e76816dd02568e896fd4204e969eb99b12d5d47b1e565592c9",
+    "hash": "1e0e4c0d70b34c6d6852d94b73207f0c31fdac541a0ee68efe93e484fc938441"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.26500000001396984,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.iterator_protocol",
+      "outcome": "pass",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "1e0e4c0d70b34c6d6852d94b73207f0c31fdac541a0ee68efe93e484fc938441",
+    "hash": "fcc9fee99b8893ebde22f476fe6036d9a38a02c5f6a72fb85c5cd2dbb6787c2d"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.26500000001396984,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "b014e025242cd09aaa4fa4257bef102f9cfc5fd769fa7029acf2f6a38270ef87",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "fcc9fee99b8893ebde22f476fe6036d9a38a02c5f6a72fb85c5cd2dbb6787c2d",
+    "hash": "53e1a4a092895bb00a26bd98b80e8d1b1007493b7a9b12c392ba2c6e1325761f"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.6400000000139698,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [],
+      "planner_status": "FEASIBLE",
+      "context_hash": "b014e025242cd09aaa4fa4257bef102f9cfc5fd769fa7029acf2f6a38270ef87",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "53e1a4a092895bb00a26bd98b80e8d1b1007493b7a9b12c392ba2c6e1325761f",
+    "hash": "cc8e0e7cc4cfd23e60b92b530b289f5e7ce472d25554deba6067ac2f067346c9"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "pause",
+    "elapsed_observed": 0.6560000000172295,
+    "duration_valid": true,
+    "status": "PAUSED",
+    "payload": {
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "cc8e0e7cc4cfd23e60b92b530b289f5e7ce472d25554deba6067ac2f067346c9",
+    "hash": "7fcf04ab709b32b3d04f0c2457471e43395a019b9da6cf6017bda30b1adfc06a"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "resume",
+    "elapsed_observed": 0.6560000000172295,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "7fcf04ab709b32b3d04f0c2457471e43395a019b9da6cf6017bda30b1adfc06a",
+    "hash": "2d285d648f66e3a762c71a7e48dce3912f43a911caadf5e866d4a8805994108e"
+  },
+  {
+    "session_id": "473079a892981fc0c4dd610d",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "final_submit",
+    "elapsed_observed": 0.7030000000086147,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "d6b3c96ba0f493b14292e9b08825155713a104b9052b4533b435b85022c55c00",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "2d285d648f66e3a762c71a7e48dce3912f43a911caadf5e866d4a8805994108e",
+    "hash": "0b163e7cb0cac10e5cd5365bcf9d2f7ec05b2f9f6025f77dbbab1cd97c5e9634"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 1,
+    "kind": "start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "scope": "development_pilot_not_formal",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": null,
+    "hash": "ab5a8989de74a6a8f6d6279c5b77dc76a79606cbd5a993377047f133bbe07b3c"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 2,
+    "kind": "planning_start",
+    "elapsed_observed": 0.0,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "initial_plan",
+      "context_hash": "4fe8aecb484e70180e51352785b74ae452fef7ca8add918bfc42aee0f695947e",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ab5a8989de74a6a8f6d6279c5b77dc76a79606cbd5a993377047f133bbe07b3c",
+    "hash": "eaeefb81aa1fcfdee99afedf0ef5f4cede3b20b3b38fc22f113f7e8e546fe178"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 3,
+    "kind": "initial_plan",
+    "elapsed_observed": 0.42199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_iterable",
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "4fe8aecb484e70180e51352785b74ae452fef7ca8add918bfc42aee0f695947e",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "eaeefb81aa1fcfdee99afedf0ef5f4cede3b20b3b38fc22f113f7e8e546fe178",
+    "hash": "3cbababa482ece0e8c816f19a3bbc17425eb6e4ae1dd0d2b52a20768b12e04d2"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 4,
+    "kind": "read",
+    "elapsed_observed": 0.42199999999138527,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "3cbababa482ece0e8c816f19a3bbc17425eb6e4ae1dd0d2b52a20768b12e04d2",
+    "hash": "11e40dfdb8ba79d9389b83efdfc9fcd751e5801728b01dda465a0c154328e959"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 5,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.46899999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_iterable",
+      "mastery_updated": false,
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "11e40dfdb8ba79d9389b83efdfc9fcd751e5801728b01dda465a0c154328e959",
+    "hash": "a04ff3cef4bbb7ccba73f8b2fe1ac7b7c8e2fa0a2524713862de6e0acf6932b1"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 6,
+    "kind": "quiz_start",
+    "elapsed_observed": 0.46899999998277053,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "policy": "automatic_after_exactly_one_material",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "a04ff3cef4bbb7ccba73f8b2fe1ac7b7c8e2fa0a2524713862de6e0acf6932b1",
+    "hash": "97cb877519e52b2370eb918e933da8a1ced74fe254906fbaf9a4c0c8c1e09ad9"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 7,
+    "kind": "quiz_submit",
+    "elapsed_observed": 0.5159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "item_id": "B05-iterator-next-v1",
+      "outcome": "pass",
+      "duration_seconds": 0.046999999991385266,
+      "scorer": "independent_server_oracle",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "97cb877519e52b2370eb918e933da8a1ced74fe254906fbaf9a4c0c8c1e09ad9",
+    "hash": "256bcd1b3a1131ce0bfa2b40494b4e0c531403a01dbdcdf1d30ea687d2746de4"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 8,
+    "kind": "feedback",
+    "elapsed_observed": 0.5159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "concept_id": "python.iterator_protocol",
+      "outcome": "pass",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "256bcd1b3a1131ce0bfa2b40494b4e0c531403a01dbdcdf1d30ea687d2746de4",
+    "hash": "02521b96650678a243bbc835685d4265cd2e488d192f8b0c5af55c5e4544071e"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 9,
+    "kind": "planning_start",
+    "elapsed_observed": 0.5159999999741558,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "kind": "replan",
+      "context_hash": "c0526d9c867987b261b51a816b1fc8913174becda2bb244c4b7681b876449b4c",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "02521b96650678a243bbc835685d4265cd2e488d192f8b0c5af55c5e4544071e",
+    "hash": "279b28640197253ee12e0f24acaa3b71d913451c2ddf8d4d98e4574a6b6ec8b4"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 10,
+    "kind": "replan",
+    "elapsed_observed": 0.7809999999881256,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "route": [
+        "u_positive_int",
+        "u_windowed_iter"
+      ],
+      "planner_status": "FEASIBLE",
+      "context_hash": "c0526d9c867987b261b51a816b1fc8913174becda2bb244c4b7681b876449b4c",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "279b28640197253ee12e0f24acaa3b71d913451c2ddf8d4d98e4574a6b6ec8b4",
+    "hash": "d69586e6a7aeda2f63128ce22335e3f1331c9fe4875d146144afc0289ed03268"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 11,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.8129999999946449,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_positive_int",
+      "mastery_updated": false,
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d69586e6a7aeda2f63128ce22335e3f1331c9fe4875d146144afc0289ed03268",
+    "hash": "203650bf41a9f36fdaa2fe17951b7fe456a9497c588b80fc4d408b6074e5c5d8"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 12,
+    "kind": "reading_complete",
+    "elapsed_observed": 0.8279999999795109,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "unit_id": "u_windowed_iter",
+      "mastery_updated": false,
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "203650bf41a9f36fdaa2fe17951b7fe456a9497c588b80fc4d408b6074e5c5d8",
+    "hash": "0920163b41d9720422e933a8ea0225f1b12047d348e1d641037bb9f347f3f80f"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 13,
+    "kind": "pause",
+    "elapsed_observed": 0.8599999999860302,
+    "duration_valid": true,
+    "status": "PAUSED",
+    "payload": {
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "0920163b41d9720422e933a8ea0225f1b12047d348e1d641037bb9f347f3f80f",
+    "hash": "d5d83db9099a07b3fbb900c8eaac15c6388122b814ff4d4053d216568384303c"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 14,
+    "kind": "resume",
+    "elapsed_observed": 0.8599999999860302,
+    "duration_valid": true,
+    "status": "ACTIVE",
+    "payload": {
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "d5d83db9099a07b3fbb900c8eaac15c6388122b814ff4d4053d216568384303c",
+    "hash": "ea81f652e514b52f80f0afd2446f42b7ef527f35288578d57fb26fd77adc0cdc"
+  },
+  {
+    "session_id": "600d76d226bac5e6b9d0396e",
+    "participant": "1eed5fe137161797c7e743c2",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "test_fixture",
+    "seq": 15,
+    "kind": "final_submit",
+    "elapsed_observed": 0.8910000000032596,
+    "duration_valid": true,
+    "status": "SUBMITTED",
+    "payload": {
+      "response_sha256": "d6b3c96ba0f493b14292e9b08825155713a104b9052b4533b435b85022c55c00",
+      "success": null,
+      "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+      "journey_version": "B-D07-development-journey-3",
+      "runtime_version": "A-D07-runtime-v1",
+      "engine_version": "B-D06-executable-candidate-2"
+    },
+    "previous_hash": "ea81f652e514b52f80f0afd2446f42b7ef527f35288578d57fb26fd77adc0cdc",
+    "hash": "b0742bc469058be246b3ffe7b1e8921c314387ff0beeffee79c1e3334d8e07e5"
+  }
+]

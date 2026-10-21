@@ -1,0 +1,74 @@
+{
+  "run_id": "B-D07-recovered-http01",
+  "owner": "B",
+  "executor": "Agent_B",
+  "machine_fingerprint_sha256": "2fffa737941617ad929bb0a97f0b7b15ee4855ce9b375a42d1cf0bcba17b0b3a",
+  "python": "3.12.10",
+  "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+  "source_files": {
+    "src/codecompass/app/journey_d07.py": "a10cfad09d323a6b3f30b8e542e21131f7e857579adbd9d1cd8e5b514fa71bb7",
+    "scripts/B/serve_d07.py": "7bb0efbbd653584f2bfce951250a5d745cf503e5c3c0fbb60ca4eae6abda6f3b",
+    "app/B_D07/index.html": "88aff8fccfc98db6f18cb8e57de3a6577e36148b4ffb0f151757f7d36551669f",
+    "app/B_D07/app.js": "6fac59caa9726b8db2a138f98484abe91603059f91ec5cfa803b4ce435f2b38e",
+    "app/B_D07/style.css": "fb6e8796f5111cfb6e71b46fb94034a370f908b9a9978179f18a851bc0e51390",
+    "scripts/A/relay_d07.py": "8aa1d3281c28a9dceb9cade675dcf341bf13a7dd15687a7adb0d1d042183467f",
+    "src/codecompass/planner/runtime_d07.py": "79c1bf60c0dfaf2ce04d2da430f293b0cb097f222d17ebbead195d2168466116",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "benchmarks/B/D07/cross_project.json": "1d893c3b3c6c80eec6d15f121aa3aeb3e58e835c4b1de6a95dbb54fa54b935fa",
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "src/codecompass/app/diagnostics_v2.py": "cbe7b7e23207200457f6b35ccca5bede44d3aef3bd14d49e930052ac1abc2df2",
+    "src/codecompass/app/diagnostic_items.py": "a95736435804b926dd874d4eaff8f76b21c933eab79f162a0d1b869fa4249c71",
+    "src/codecompass/app/relay_v2.py": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24",
+    "src/codecompass/app/experiment.py": "df0d55c69db276fe7b90c6e5edd8023438488a688be06509fecb812f2d434950",
+    "src/codecompass/app/study_d06.py": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+  },
+  "http_operations": [
+    {
+      "task_id": "task_002",
+      "status": "SUBMITTED",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "issue_mode": "FIXED_HISTORICAL_SNAPSHOT"
+    },
+    {
+      "task_id": "B07_more_chunked",
+      "status": "SUBMITTED",
+      "source_commit": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+      "issue_mode": "UNAVAILABLE"
+    }
+  ],
+  "profile_restart_verified": true,
+  "receipt_audit": {
+    "passed": true,
+    "checks": 117,
+    "errors": [],
+    "actor": "test_fixture",
+    "version": "B-D07-development-journey-3",
+    "profiles": 1,
+    "actual_human_people_verified": false,
+    "formal_participants": 0,
+    "answers_exported": false,
+    "private_final_keys_read": false,
+    "formal_G2_passed": false
+  },
+  "event_audit": {
+    "passed": true,
+    "checks": 187,
+    "errors": [],
+    "sessions": 2,
+    "events": 28,
+    "acceptance_rule": "B-D05-manual-core-v2; pause/resume reported separately, no session splicing",
+    "manual_pause_resume_flows": 0,
+    "complete_manual_flows": 0,
+    "manual_flow_passed": false,
+    "human_manual_sessions": 0,
+    "independent_human_review": "NOT_REVIEWED"
+  },
+  "actor": "test_fixture",
+  "passed": true,
+  "compared_machine_fingerprint": "2fffa737941617ad929bb0a97f0b7b15ee4855ce9b375a42d1cf0bcba17b0b3a",
+  "different_machine_observed": false,
+  "human_people_verified": false,
+  "formal_participants": 0,
+  "model_calls": 0,
+  "network_scope": "loopback HTTP + fixed local source/Issue cache; no upstream fetch"
+}
