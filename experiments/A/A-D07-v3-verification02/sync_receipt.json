@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-21T22:15:07.933120+08:00",
+  "branch": "codex/A-D07-smoke",
+  "base": "c84e8334d681a86151cfa63b22a2307dd0245963",
+  "code_checkpoint": "51097b32dbc2e966ca9bbcdbde9f6fe9ae4d05f5",
+  "verified_remote_checkpoint": "51097b32dbc2e966ca9bbcdbde9f6fe9ae4d05f5",
+  "committed_clean_clone_verified": true,
+  "recovery": "experiments/A/A-D07-v3-verification02/recovery01/receipt.json",
+  "full_tests": 402,
+  "independent_regression": 17,
+  "development_status": "READY_FOR_REAL_DEVELOPMENT_VALIDATION",
+  "overall_day_passed": false,
+  "formal_G2_passed": false,
+  "raw_participant_records": "LOCAL_ONLY_NOT_UPLOADED",
+  "receipt_commit": "Exact final receipt-only HEAD/remote recorded in git log; no self-reference"
+}

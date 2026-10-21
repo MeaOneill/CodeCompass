@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-21T22:13:29.735874+08:00",
+  "passed": true,
+  "commit": "51097b32dbc2e966ca9bbcdbde9f6fe9ae4d05f5",
+  "method": "Same-machine clean committed clone, original environment reused, credentials/private final keys and human files not copied",
+  "commands": [
+    {
+      "name": "clone",
+      "argv": [
+        "git",
+        "clone",
+        "-q",
+        "--no-hardlinks",
+        "--single-branch",
+        "--branch",
+        "codex/A-D07-smoke",
+        "C:\\CodeCompass\\CodeCompass-A-D05",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-v3-recovery-51097"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "version",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07_v3_version.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-v3-verification02\\recovery01\\version-audit.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "regression",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A/test_pilot_d07_v3.py",
+        "-q",
+        "--basetemp",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\tmp\\A-D07-v3-recovery-51097\\tmp\\recovery-tests"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "new_real_cases": 0,
+  "formal_G2_passed": false
+}
