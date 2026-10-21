@@ -1,3 +1,5 @@
+> 授权状态更新：用户已于2026-10-21明确批准为完成A-D07的必要开发验证扩展。本提案已落实为独立v0.3；以下保留原提案历史，不能把其中旧的NOT_AUTHORIZED当当前状态。
+
 # A-D07 frozen protocol reachability gap: proposed resolution
 
 Status: PROPOSED, NOT IMPLEMENTED, NOT AUTHORIZED AS A PROTOCOL CHANGE. Owner A. Applies to technical source checkpoint `588920db9c9b5c041d9687724203da941aef7296`. Contains no participant records.

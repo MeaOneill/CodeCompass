@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-21T22:09:46.854921+08:00",
+  "task": "A-D07",
+  "status": "READY_FOR_REAL_DEVELOPMENT_VALIDATION",
+  "software_ready": true,
+  "full_tests": 402,
+  "independent_new_tests": 17,
+  "source_snapshot_parent_checks": 55,
+  "old_frozen_checks": 43,
+  "final_development_cases": 9,
+  "negative_cases_retained": 8,
+  "real_v3_cases": "NOT_RUN",
+  "overall_day_passed": false,
+  "next_task_allowed": false,
+  "protocol_extension_authorized": true,
+  "formal_G2_passed": false,
+  "formal_study_allowed": false,
+  "new_model_calls": 0,
+  "required": "At least one genuine non-repeated real response case changes remaining route, preserves completed, and passes the independent audit; fixed cap two people, six items each",
+  "independent_report": "experiments/A/A-D07-v3-independent01/v3-review-ready-final.md",
+  "version_manifest": "configs/frozen/A-D07-dev-repair-v3/manifest.json",
+  "raw_human_records": "LOCAL_ONLY under Git-ignored archive"
+}

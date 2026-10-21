@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-21T22:08:02.663780+08:00",
+  "kind": "Independent AI technical checks only; no participant records or SQLite included",
+  "files": {
+    "bank-oracle.json": "0ffd603e0937b1331352528daccc369dfe166c50b1350a030597907251480f9e",
+    "bank-oracle.py": "288c4042a3cd7054db7ab5d08db38edf1ce17c38e7f52e675962767d0805e845",
+    "bank-review.md": "fd3010a7ca43c59de28f52be0f9626c88fb77117f36d55369b9bae1da121541f",
+    "pytest-final.log": "1674935b5ad687134274bd95c570022cdd3d02f9e5d07e9c4d8551d350ee017b",
+    "pytest-ready-final.log": "01c320c46ef3160303e5c1a66583f5c658aa1fd6f46286ee22edcc7cc29361f9",
+    "pytest-ready.log": "c1d63397bcd061ceac6133ef7a8f8173988f88992d2a4a046e131188010087f0",
+    "v3-audit-ready-final.json": "41958d584d0459344519742d3f65d0bf322848a0136e942f640106ab1e32becd",
+    "v3-audit-ready-final.log": "6e1b73a0da1d0bf1b30203fc2fa7047a451d9b083c7abb2a17e8d19804ed1f2d",
+    "v3-audit-ready-final.py": "d285575e551b2424771da1afacd764ba8ee31f27c02bc3424d287f5d9f531e10",
+    "v3-faults-final.json": "62481d4f6517992f20a0d2a8f3eef004f5593228533053831cc9a76783c734df",
+    "v3-faults-final.log": "d4708a1dd0331fc37655dc96c14cf046f8ada3e424fa271c5b7226a674b0111d",
+    "v3-faults-final.py": "e86b316f3465518119b3e683a9f17919b43e5bbbf368f4ddb22401721e7b8626",
+    "v3-faults-ready.json": "dbd88b162ef79b65e8f83903bc18821ff869d7a1d9e0dbe5495197da966c2158",
+    "v3-faults-ready.log": "d4708a1dd0331fc37655dc96c14cf046f8ada3e424fa271c5b7226a674b0111d",
+    "v3-faults-ready.py": "913f041baece5ee1cacb331f60878181fda072da50fc26b759d1a45385abf780",
+    "v3-faults.json": "7f71fa0120a6c28114d8074ee45af66535a6f4993774f928530aa07c9e8daa95",
+    "v3-faults.log": "70ef4936ff3cefc676233292eaf14c09b895486005c98baa5361f0097763c689",
+    "v3-faults.py": "a629d7bd62caad2b79ada14cfc5db943363bad475d92b3b96c1924d6f6ebf23d",
+    "v3-js-final.cjs": "ca3c9fef1a519714ac4b2093517e8e9b7c41b765d401fafabad03945c2f8223b",
+    "v3-js-final.json": "c38bb55ed601b992580dd4718930d3fd72f23b6bec2cb34e9e26ca0468926fa8",
+    "v3-pytest.log": "20bb1b7820e33e813f5eeb1a1ba458173cc36ab4e38d4a6a5cf286e6fa57ddb5",
+    "v3-review-final.md": "9cf2fc564f4c4277630d463ba704985ff8b00dcb47696aff549fe65a3339edb5",
+    "v3-review-ready-final.md": "3e32cf77045605d7fd8b6e6c66b2cc472023f0e31c8e77bf60fc59c25946825a",
+    "v3-review-ready.md": "8ce347c461d5a5d3643ae50ce4c6fa05329e9a4c22e4da180e93959dbf2c50f8",
+    "v3-review.md": "eb29a04374d799ea343faab1b4c2ea8970875a28e04080309e0e799e2c56d67a"
+  }
+}

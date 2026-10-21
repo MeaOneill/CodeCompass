@@ -1,0 +1,10 @@
+case,status,actor,changed,spent,audit_checks,raw
+all_pass,DONE,test_fixture,True,11.0,90,all_pass.json
+wrong_0,DONE,test_fixture,False,11.0,90,wrong_0.json
+wrong_1,DONE,test_fixture,False,11.0,90,wrong_1.json
+wrong_2,DONE,test_fixture,False,11.0,90,wrong_2.json
+wrong_3,DONE,test_fixture,False,11.0,90,wrong_3.json
+wrong_4,DONE,test_fixture,False,11.0,90,wrong_4.json
+wrong_5,DONE,test_fixture,False,11.0,90,wrong_5.json
+all_fail,DONE,test_fixture,False,11.0,90,all_fail.json
+all_skip,DONE,test_fixture,False,11.0,78,all_skip.json

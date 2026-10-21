@@ -155,3 +155,12 @@ Owner成员A / Codex Agent A / 糯糯；codex/A-D07-smoke，base=c84e8334d681a86
 ## A署名 A-D07独立技术复核收尾 2026-10-21T21:27:17.637700+08:00
 
 继续A-D07，BLOCKED_PROTOCOL_GAP；本日未通过，不进入B-D07或正式实验。独立AI在无真人数据代码克隆上22回归/49hash通过，24个模拟反例反馈路线变化均0；原卡要求与unknown+单题冻结协议冲突。新UI格式提示版本保持原算法/提交处理，额外来源对应记录独立保存，不回填历史事件。解决提案docs/requests/A-D07-protocol-gap-resolution.md尚未授权、未实施。最新门禁experiments/A/A-D07-independent-review01/release_gate.json，审查原始命令/退出状态/反例均同目录。公开同步只含技术资料；参与者背景、同意、原答、会话及备份本机封存、不入Git。主源码588920d，独立审查记录5c684e6已推送；最终文档回执SHA见完成通知。没有新正式结果图，不新增模型付费调用、不合main、不打冻结标签。
+
+
+## A-D07 当前：工程复检完成，等待一次补充真人环节（2026-10-21T22:09:46.854921+08:00）
+
+用户已批准独立开发协议v0.3，不改原v0.2或原阈值。402全套回归、独立17回归、新55文件/旧43冻结检查、九种自动结局及三种篡改拒绝、实际自动浏览器最终来源审计均通过。原规划失败回滚答案缺陷和跳过记错问题已修并保留负版本。工程已到READY_FOR_REAL_DEVELOPMENT_VALIDATION；整日仍未通过，不进入B-D07。
+
+剩余仅是真人新协议作答产生实际路径变化并通过独立重放。六题固定封顶、最多两位既有预演者各一次，不能重试追门，不能用自动案例顶替。入口由Agent启动，不需用户运行测试或修代码。实际结果缺失时不填计划数值。最新门禁experiments/A/A-D07-v3-verification02/release_gate.json，协议docs/protocol/A-D07-v0.3-development/protocol.md，源hash configs/frozen/A-D07-dev-repair-v3/manifest.json。真人记录不进Git。正式G2/正式学习效果未放行。
+
+---

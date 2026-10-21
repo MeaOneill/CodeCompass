@@ -1,0 +1,112 @@
+[
+  {
+    "stage": "history",
+    "fault": "TIMEOUT",
+    "status": "FAILED",
+    "answers_retained": 5,
+    "ledger_retained": 5,
+    "spent": 10.0,
+    "elapsed": 3.0,
+    "completed": [
+      "u_positive_int"
+    ],
+    "last_event": "planning_failure",
+    "changed_retry_rejected": true,
+    "source_hashes": {
+      "src/codecompass/app/pilot_d07_v3.py": "38409de5c40544807f22b33fa22cf4e087251a71d055d7734e8ba1dd1609ca93",
+      "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+      "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+      "app/A_D07_v3/app.js": "4d48f22112c8c400681dc9f6a28c482e7460e3207f43f1a56470224052b8702d",
+      "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+      "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    }
+  },
+  {
+    "stage": "history",
+    "fault": "exception",
+    "status": "FAILED",
+    "answers_retained": 5,
+    "ledger_retained": 5,
+    "spent": 10.0,
+    "elapsed": 3.0,
+    "completed": [
+      "u_positive_int"
+    ],
+    "last_event": "planning_failure",
+    "changed_retry_rejected": true,
+    "source_hashes": {
+      "src/codecompass/app/pilot_d07_v3.py": "38409de5c40544807f22b33fa22cf4e087251a71d055d7734e8ba1dd1609ca93",
+      "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+      "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+      "app/A_D07_v3/app.js": "4d48f22112c8c400681dc9f6a28c482e7460e3207f43f1a56470224052b8702d",
+      "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+      "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    }
+  },
+  {
+    "stage": "diagnosis",
+    "fault": "TIMEOUT",
+    "status": "FAILED",
+    "answers_retained": 6,
+    "ledger_retained": 6,
+    "spent": 11.0,
+    "elapsed": 3.0,
+    "completed": [
+      "u_positive_int"
+    ],
+    "last_event": "planning_failure",
+    "changed_retry_rejected": true,
+    "source_hashes": {
+      "src/codecompass/app/pilot_d07_v3.py": "38409de5c40544807f22b33fa22cf4e087251a71d055d7734e8ba1dd1609ca93",
+      "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+      "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+      "app/A_D07_v3/app.js": "4d48f22112c8c400681dc9f6a28c482e7460e3207f43f1a56470224052b8702d",
+      "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+      "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    }
+  },
+  {
+    "stage": "diagnosis",
+    "fault": "exception",
+    "status": "FAILED",
+    "answers_retained": 6,
+    "ledger_retained": 6,
+    "spent": 11.0,
+    "elapsed": 3.0,
+    "completed": [
+      "u_positive_int"
+    ],
+    "last_event": "planning_failure",
+    "changed_retry_rejected": true,
+    "source_hashes": {
+      "src/codecompass/app/pilot_d07_v3.py": "38409de5c40544807f22b33fa22cf4e087251a71d055d7734e8ba1dd1609ca93",
+      "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+      "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+      "app/A_D07_v3/app.js": "4d48f22112c8c400681dc9f6a28c482e7460e3207f43f1a56470224052b8702d",
+      "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+      "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    }
+  },
+  {
+    "stage": "no_feedback",
+    "fault": "TIMEOUT",
+    "status": "FAILED",
+    "answers_retained": 6,
+    "ledger_retained": 6,
+    "spent": 11.0,
+    "elapsed": 3.0,
+    "completed": [
+      "u_positive_int"
+    ],
+    "last_event": "planning_failure",
+    "changed_retry_rejected": true,
+    "source_hashes": {
+      "src/codecompass/app/pilot_d07_v3.py": "38409de5c40544807f22b33fa22cf4e087251a71d055d7734e8ba1dd1609ca93",
+      "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+      "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+      "app/A_D07_v3/app.js": "4d48f22112c8c400681dc9f6a28c482e7460e3207f43f1a56470224052b8702d",
+      "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+      "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "stage": "history",
+    "error": "ValueError: �滮δ�ҵ������Ϸ�·�ߣ���¼���õ��ɳɹ�",
+    "status_after_failed": "ACTIVE",
+    "stage_after_failed": "history",
+    "answers_after_failed": 0,
+    "retry_status": "ACTIVE",
+    "retry_answers": 5,
+    "retry_missing": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "stage": "diagnosis",
+    "error": "ValueError: �滮δ�ҵ������Ϸ�·�ߣ���¼���õ��ɳɹ�",
+    "status_after_failed": "ACTIVE",
+    "stage_after_failed": "diagnosis",
+    "answers_after_failed": 5,
+    "retry_status": "DONE",
+    "retry_answers": 6,
+    "retry_missing": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  }
+]

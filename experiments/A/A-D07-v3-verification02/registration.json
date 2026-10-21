@@ -1,0 +1,58 @@
+{
+  "commands": [
+    {
+      "name": "pytest_full",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=tmp/A-D07-v3-full-tests02"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-10-21T22:02:43.681622+08:00",
+      "finished_at": "2026-10-21T22:04:32.063723+08:00"
+    },
+    {
+      "name": "parent_frozen",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07_version.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-v3-verification02\\parent-frozen-audit.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-10-21T22:04:32.063723+08:00",
+      "finished_at": "2026-10-21T22:04:32.381722+08:00"
+    },
+    {
+      "name": "old_smoke",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07.py",
+        "--run-id",
+        "A-D07-development05",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-v3-verification02\\old-smoke-audit.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-10-21T22:04:32.381722+08:00",
+      "finished_at": "2026-10-21T22:04:34.370570+08:00"
+    },
+    {
+      "name": "javascript",
+      "argv": [
+        "node",
+        "--check",
+        "app/A_D07_v3/app.js"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-10-21T22:04:34.370570+08:00",
+      "finished_at": "2026-10-21T22:04:34.493852+08:00"
+    }
+  ],
+  "passed": true,
+  "source_kind": "Automated technical tests; never human observations",
+  "new_model_calls": 0,
+  "formal_G2_passed": false
+}

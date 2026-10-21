@@ -1,0 +1,1325 @@
+{
+  "actor": "agent_browser",
+  "counts_as_human": false,
+  "stage": "earlier intermediate build",
+  "cases": [
+    {
+      "id": "Cfjin5LG9B6JXGHY4qVjf7Hu52MjTPi6",
+      "actor": "agent_browser",
+      "provenance": {
+        "protocol_version": "A-D07-dev-repair-v3",
+        "ui_version": "A-D07-dev-repair-v3",
+        "source_hashes": {
+          "src/codecompass/app/pilot_d07_v3.py": "f88535ee034e3bbfae0f447af8d30ec50c6704b8ab0bc85a11e835800b32200d",
+          "scripts/A/serve_d07_v3.py": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3",
+          "app/A_D07_v3/index.html": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59",
+          "app/A_D07_v3/app.js": "7a612211c9ba8a55cea35e3235930fa4f5878cd6b57fb4669504df004b0c2860",
+          "app/A_D07_v3/style.css": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44",
+          "benchmarks/dev/A_D07_v3/bank.json": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+        }
+      },
+      "consent": true,
+      "status": "DONE",
+      "stage": "done",
+      "data": {
+        "task": {
+          "task_id": "task_002",
+          "title": "滑动窗口size边界防护",
+          "goal": "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+          "requirements": [
+            "仅修改windowed_iter：size只接受内置正int，排除bool；非int TypeError，<=0 ValueError。保持正常窗口、短源/空源、fill省略与显式None、pairwise end及无限输入前缀兼容。说明tee和填充哨兵的作用。",
+            "解释/时间/材料按B独立rubric审核；本轮只做路径工程验证。"
+          ],
+          "repo_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+        },
+        "task_id": "task_002",
+        "split": "dev",
+        "snapshot": {
+          "schema_version": "1.0.0",
+          "object_type": "RepoSnapshot",
+          "is_fixture": false,
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "url": "https://github.com/mahmoud/boltons",
+          "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+          "license": "BSD-3-Clause",
+          "retrieved_at": "2026-10-16T05:49:11.972102+00:00",
+          "hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f",
+          "hash_scope": "selected_files_manifest_sha256",
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3",
+              "bytes": 1497,
+              "git_blob": "6a4c9d2496f53c61c99ae7c113e6ed94b15b038c"
+            },
+            {
+              "path": "boltons/iterutils.py",
+              "sha256": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+              "bytes": 59341,
+              "git_blob": "adefc31a36c6740f087c3eac8df358dac3e3d2ce"
+            },
+            {
+              "path": "pyproject.toml",
+              "sha256": "23d689cf1d468c6af6442869eb7483402aaea8b3cabdbfb2d7aa9df3a293aa04",
+              "bytes": 1820,
+              "git_blob": "a1861ff38ce043ebe2beeaff3b99428c5c97ea00"
+            },
+            {
+              "path": "tests/test_iterutils.py",
+              "sha256": "53e87f22a9d57f742a295af65f69fd4c374bf40f917a6cd807e4c2f26a833263",
+              "bytes": 21913,
+              "git_blob": "a1f9dc01649ab42e1f32d70af4ff3677f212cba1"
+            }
+          ],
+          "license_path": "LICENSE",
+          "snapshot_scope": "partial_source_bundle",
+          "complete_checkout_included": false
+        },
+        "source_root": "benchmarks/sources/boltons",
+        "target_concept_ids": [
+          "python.iterator_protocol",
+          "python.tee",
+          "python.keyword_presence",
+          "python.type_validation"
+        ],
+        "units": [
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "u_iterable",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 61,
+                "end_line": 76,
+                "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+              }
+            ],
+            "concept_ids": [
+              "python.iterator_protocol"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "https://github.com/mahmoud/boltons/blob/4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d/boltons/iterutils.py#L61"
+              ],
+              "proposed_by": "Codex Agent A",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 16,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "u_windowed_iter",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 472,
+                "end_line": 510,
+                "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+              }
+            ],
+            "concept_ids": [
+              "python.tee",
+              "python.keyword_presence"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: windowed_iter",
+                "tee与_UNSET分支直接见L494-510；概念覆盖是AI工程材料映射，不是人类金标准"
+              ],
+              "proposed_by": "Codex Agent A",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 39,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+          },
+          {
+            "schema_version": "1.1.0",
+            "object_type": "LearningUnit",
+            "is_fixture": false,
+            "id": "u_positive_int",
+            "source_spans": [
+              {
+                "snapshot_id": "boltons-4e5faa3d7e40",
+                "path": "boltons/iterutils.py",
+                "start_line": 309,
+                "end_line": 313,
+                "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+              }
+            ],
+            "concept_ids": [
+              "python.type_validation"
+            ],
+            "prerequisites": [],
+            "provenance": {
+              "kind": "static_source",
+              "evidence": [
+                "boltons commit 4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d: _validate_positive_int",
+                "对照int(value)的转换语义与task002要求的严格类型；这不是task002修复答案或完整校验实现"
+              ],
+              "proposed_by": "Codex Agent A",
+              "review_status": "pending",
+              "reviewer": null,
+              "confidence": null
+            },
+            "base_cost": 5,
+            "cost_unit": "proxy_cost",
+            "cost_basis": "A-D03 common fixed inclusive source-line proxy v1; not learning minutes"
+          }
+        ],
+        "materials": [
+          {
+            "unit_id": "u_iterable",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 61,
+              "end_line": 76,
+              "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+            },
+            "text": "  61  def is_iterable(obj):\n  62      \"\"\"Similar in nature to :func:`callable`, ``is_iterable`` returns\n  63      ``True`` if an object is `iterable`_, ``False`` if not.\n  64  \n  65      >>> is_iterable([])\n  66      True\n  67      >>> is_iterable(object())\n  68      False\n  69  \n  70      .. _iterable: https://docs.python.org/2/glossary.html#term-iterable\n  71      \"\"\"\n  72      try:\n  73          iter(obj)\n  74      except TypeError:\n  75          return False\n  76      return True"
+          },
+          {
+            "unit_id": "u_windowed_iter",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 472,
+              "end_line": 510,
+              "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+            },
+            "text": " 472  def windowed_iter(src, size, fill=_UNSET):\n 473      \"\"\"Returns tuples with length *size* which represent a sliding\n 474      window over iterable *src*.\n 475  \n 476      >>> list(windowed_iter(range(7), 3))\n 477      [(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]\n 478  \n 479      If *fill* is unset, and the iterable is too short to make a window \n 480      of length *size*, then no window tuples are returned.\n 481  \n 482      >>> list(windowed_iter(range(3), 5))\n 483      []\n 484  \n 485      With *fill* set, the iterator always yields a number of windows\n 486      equal to the length of the *src* iterable.\n 487  \n 488      >>> windowed(range(4), 3, fill=None)\n 489      [(0, 1, 2), (1, 2, 3), (2, 3, None), (3, None, None)]\n 490  \n 491      This way, *fill* values can be useful to signal the end of the iterable.\n 492      For infinite iterators, setting *fill* has no effect.\n 493      \"\"\"\n 494      tees = itertools.tee(src, size)\n 495      if fill is _UNSET:\n 496          try:\n 497              for i, t in enumerate(tees):\n 498                  for _ in range(i):\n 499                      next(t)\n 500          except StopIteration:\n 501              return zip([])\n 502          return zip(*tees)\n 503  \n 504      for i, t in enumerate(tees):\n 505          for _ in range(i):\n 506              try:\n 507                  next(t)\n 508              except StopIteration:\n 509                  continue\n 510      return zip_longest(*tees, fillvalue=fill)"
+          },
+          {
+            "unit_id": "u_positive_int",
+            "source_span": {
+              "snapshot_id": "boltons-4e5faa3d7e40",
+              "path": "boltons/iterutils.py",
+              "start_line": 309,
+              "end_line": 313,
+              "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+            },
+            "text": " 309  def _validate_positive_int(value, name, strictly_positive=True):\n 310      value = int(value)\n 311      if value < 0 or (strictly_positive and value == 0):\n 312          raise ValueError('expected a positive integer ' + name)\n 313      return value"
+          }
+        ],
+        "source_context": [],
+        "quiz": {
+          "item_id": "B05-iterator-next-v1",
+          "concept_id": "python.iterator_protocol",
+          "independent": true,
+          "source": "Python iterator advances once per next; executable independent snippet",
+          "cost": 1.0,
+          "cost_unit": "proxy_cost",
+          "probability": null
+        },
+        "public_quiz": {
+          "item_id": "B05-iterator-next-v1",
+          "prompt": "独立概念短测：下面程序最终打印什么？",
+          "code": "it = iter([2, 4, 6])\nnext(it)\nprint(next(it))",
+          "choices": [
+            "2",
+            "4",
+            "6",
+            "[4, 6]"
+          ]
+        },
+        "config": {
+          "version": "A-D03-dev-0.1",
+          "cost_unit": "proxy_cost",
+          "cost_policy": "fixed-inclusive-source-lines-v1",
+          "budget": 100,
+          "quantile": 0.1,
+          "threshold": 0.7,
+          "methods": [
+            "B0-pinned-document-prefix",
+            "B2-initial-closure-gain-greedy"
+          ],
+          "routes": {
+            "task_001": [
+              "u_chunked",
+              "u_chunked_iter",
+              "u_iterable"
+            ],
+            "task_002": [
+              "u_windowed_iter",
+              "u_iterable",
+              "u_positive_int"
+            ]
+          },
+          "documentation": {
+            "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+            "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+          },
+          "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+          "diagnostics_implemented": false,
+          "formal_study_ready": false,
+          "human_cost_calibration": null,
+          "unit_costs": {
+            "u_iterable": 16,
+            "u_chunked_iter": 43,
+            "u_chunked": 21,
+            "u_windowed_iter": 39,
+            "u_positive_int": 5
+          }
+        },
+        "source_hash": "7fb67f49dc1d895051549b523c2e21161e3c1f4e21590fa7fd09039386d08510",
+        "human_review": "NOT_REVIEWED",
+        "source_coverage_policy": "Explicit required function targets added from public function list; independent scoring unchanged",
+        "context_cost_policy": "Module context provided identically to every method, not extra scheduled learning units; reading/decision time still counts",
+        "state": {
+          "state_version": "0.1.0",
+          "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+          "is_simulated": true,
+          "records": [
+            {
+              "evidence_id": "v3:A07v3-fresh_iterator",
+              "item_id": "A07v3-fresh_iterator",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:08.723459+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            },
+            {
+              "evidence_id": "v3:A07v3-exhaustion_default",
+              "item_id": "A07v3-exhaustion_default",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:08.723459+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            },
+            {
+              "evidence_id": "v3:A07v3-custom_iterator",
+              "item_id": "A07v3-custom_iterator",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:08.723459+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            },
+            {
+              "evidence_id": "v3:A07v3-sequence_fallback",
+              "item_id": "A07v3-sequence_fallback",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:08.723459+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            },
+            {
+              "evidence_id": "v3:A07v3-callable_sentinel",
+              "item_id": "A07v3-callable_sentinel",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:08.723459+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            },
+            {
+              "evidence_id": "v3:A07v3-iterator_contract",
+              "item_id": "A07v3-iterator_contract",
+              "concept_id": "python.iterator_protocol",
+              "project": "boltons-4e5faa3d7e40",
+              "timestamp": "2026-10-21T13:55:21.598166+00:00",
+              "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+              "is_fixture": true,
+              "independent": true,
+              "evidence_type": "independent_quiz",
+              "outcome": "pass"
+            }
+          ]
+        },
+        "request": {
+          "schema_version": "1.0.0",
+          "object_type": "PlanningRequest",
+          "is_fixture": true,
+          "request_id": "R-v2-42849fcb5ef5501381b89278",
+          "snapshot_id": "boltons-4e5faa3d7e40",
+          "task_id": "task_002",
+          "learner_state": [],
+          "budget": 100,
+          "cost_unit": "proxy_cost",
+          "config_version": "A-D03-dev-0.1",
+          "target_concept_ids": [
+            "python.iterator_protocol",
+            "python.tee",
+            "python.keyword_presence",
+            "python.type_validation"
+          ],
+          "unit_ids": [
+            "u_iterable",
+            "u_windowed_iter",
+            "u_positive_int"
+          ],
+          "prior_plan_id": null
+        }
+      },
+      "completed": [
+        "u_positive_int"
+      ],
+      "spent": 11.0,
+      "history_cost": 5,
+      "diagnosis_cost": 1,
+      "elapsed": 20.687999999994645,
+      "duration_valid": true,
+      "clock": {
+        "wall": "2026-10-21T13:55:21.882675+00:00",
+        "mono": 130506.625,
+        "epoch": "c5ac6d64209e49ad93d23a7264ac65bb"
+      },
+      "events": [
+        {
+          "seq": 1,
+          "kind": "start",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 0.0,
+          "spent": 0.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "task": "task_002",
+            "limit_seconds": 1500,
+            "history_cap": 5,
+            "diagnosis_cap": 1
+          },
+          "previous_hash": null,
+          "hash": "9fd73d27c1ffcc26819c291b4775b2cd6d0adcf4c1ecf60ceb21e9f901f83961"
+        },
+        {
+          "seq": 2,
+          "kind": "reading_complete",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 5.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "unit": "u_positive_int",
+            "mastery_updated": false,
+            "arrangement": "fixed protocol prefix, not planner-selected"
+          },
+          "previous_hash": "9fd73d27c1ffcc26819c291b4775b2cd6d0adcf4c1ecf60ceb21e9f901f83961",
+          "hash": "48456fc098933a59fdf61af4ec346fe5970d0a661fff3e08cad6672adcfd96e3"
+        },
+        {
+          "seq": 3,
+          "kind": "history_evidence",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 6.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-fresh_iterator",
+            "choice": 1,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "48456fc098933a59fdf61af4ec346fe5970d0a661fff3e08cad6672adcfd96e3",
+          "hash": "e40a8fda02cdb8aea49139aa20f9c28226736664b39dcfb2aba04f965851f0c9"
+        },
+        {
+          "seq": 4,
+          "kind": "history_evidence",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 7.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-exhaustion_default",
+            "choice": 3,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "e40a8fda02cdb8aea49139aa20f9c28226736664b39dcfb2aba04f965851f0c9",
+          "hash": "8aad82f82483f121b748c9b4bda1f3c82542df5d48c847c2316fd7f60f709af9"
+        },
+        {
+          "seq": 5,
+          "kind": "history_evidence",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 8.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-custom_iterator",
+            "choice": 0,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "8aad82f82483f121b748c9b4bda1f3c82542df5d48c847c2316fd7f60f709af9",
+          "hash": "00450011fc6ee1bd7dc23f60cf0c1762c7eb6dca08b2dd3ff9f44a4fef83ab44"
+        },
+        {
+          "seq": 6,
+          "kind": "history_evidence",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 9.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-sequence_fallback",
+            "choice": 2,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "00450011fc6ee1bd7dc23f60cf0c1762c7eb6dca08b2dd3ff9f44a4fef83ab44",
+          "hash": "1285feb578bf687661cc46abcd42b1b08cf1b335c0bc5e66893df792f788d7b6"
+        },
+        {
+          "seq": 7,
+          "kind": "history_evidence",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.530999999988126,
+          "spent": 10.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-callable_sentinel",
+            "choice": 1,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "1285feb578bf687661cc46abcd42b1b08cf1b335c0bc5e66893df792f788d7b6",
+          "hash": "6d94204acccda0af44d34f483ad9de59b694f40e06486576aeaa9bc77959fa02"
+        },
+        {
+          "seq": 8,
+          "kind": "before_plan_sealed",
+          "status": "ACTIVE",
+          "stage": "history",
+          "elapsed": 7.73399999999674,
+          "spent": 10.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "plans_digest": "930bd860c74a4d4a0723dc9473ada75dfa7a1a056cd3eac02a78855747137507",
+            "state_digest": "ad699e96ff960c39c211c7bbb18ead06d2eeb6e9c1c304eba24ad62dcf809333",
+            "completed": [
+              "u_positive_int"
+            ]
+          },
+          "previous_hash": "6d94204acccda0af44d34f483ad9de59b694f40e06486576aeaa9bc77959fa02",
+          "hash": "4e394c26ee35a11178492ede1bfd558b5e24919f7e836b9f9269b693cd38ba53"
+        },
+        {
+          "seq": 9,
+          "kind": "diagnosis_presented",
+          "status": "ACTIVE",
+          "stage": "diagnosis",
+          "elapsed": 7.73399999999674,
+          "spent": 10.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-iterator_contract"
+          },
+          "previous_hash": "4e394c26ee35a11178492ede1bfd558b5e24919f7e836b9f9269b693cd38ba53",
+          "hash": "7e8d77cceb49d728f84220279cb7c1dc767aeff284cf7913dd67b49d5be24ca4"
+        },
+        {
+          "seq": 10,
+          "kind": "diagnosis_evidence",
+          "status": "ACTIVE",
+          "stage": "diagnosis",
+          "elapsed": 20.405999999988126,
+          "spent": 11.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "item_id": "A07v3-iterator_contract",
+            "choice": 2,
+            "outcome": "pass",
+            "missing": false
+          },
+          "previous_hash": "7e8d77cceb49d728f84220279cb7c1dc767aeff284cf7913dd67b49d5be24ca4",
+          "hash": "c46460d19ec8214e1439c9c418dc0743de17fdc13304ab85526dff2a98835da1"
+        },
+        {
+          "seq": 11,
+          "kind": "finished",
+          "status": "DONE",
+          "stage": "done",
+          "elapsed": 20.687999999994645,
+          "spent": 11.0,
+          "version": "A-D07-dev-repair-v3",
+          "ui_version": "A-D07-dev-repair-v3",
+          "source_digest": "26cb84073c227ceed3106be35e655ef9d7f508c42dde3d1d368db703657ff9f7",
+          "payload": {
+            "changed": true,
+            "completed": [
+              "u_positive_int"
+            ]
+          },
+          "previous_hash": "c46460d19ec8214e1439c9c418dc0743de17fdc13304ab85526dff2a98835da1",
+          "hash": "44229a6eaeaf8b00f8fb590df3cffc997b3595fa95068c7c41e3f290849effd8"
+        }
+      ],
+      "answers": [
+        {
+          "item_id": "A07v3-fresh_iterator",
+          "choice": 1,
+          "outcome": "pass",
+          "missing": false
+        },
+        {
+          "item_id": "A07v3-exhaustion_default",
+          "choice": 3,
+          "outcome": "pass",
+          "missing": false
+        },
+        {
+          "item_id": "A07v3-custom_iterator",
+          "choice": 0,
+          "outcome": "pass",
+          "missing": false
+        },
+        {
+          "item_id": "A07v3-sequence_fallback",
+          "choice": 2,
+          "outcome": "pass",
+          "missing": false
+        },
+        {
+          "item_id": "A07v3-callable_sentinel",
+          "choice": 1,
+          "outcome": "pass",
+          "missing": false
+        },
+        {
+          "item_id": "A07v3-iterator_contract",
+          "choice": 2,
+          "outcome": "pass",
+          "missing": false
+        }
+      ],
+      "before": {
+        "Ours": {
+          "route": [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 6,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.6812920690579612,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 55.0,
+            "switch_cost": 0.0,
+            "objective": 55.0,
+            "total_if_executed": 65.0
+          },
+          "cost": 55.0,
+          "explanations": [
+            {
+              "unit_id": "u_positive_int",
+              "completed": true,
+              "base_proxy_cost": 5,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.type_validation"
+              ],
+              "target_concepts_not_gated": [
+                "python.type_validation"
+              ],
+              "required_by_remaining": [],
+              "reason": "completed coverage retained; no mastery evidence added",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 309,
+                  "end_line": 313,
+                  "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            },
+            {
+              "unit_id": "u_iterable",
+              "completed": false,
+              "base_proxy_cost": 16,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.iterator_protocol"
+              ],
+              "target_concepts_not_gated": [
+                "python.iterator_protocol"
+              ],
+              "required_by_remaining": [],
+              "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            },
+            {
+              "unit_id": "u_windowed_iter",
+              "completed": false,
+              "base_proxy_cost": 39,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "target_concepts_not_gated": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "required_by_remaining": [],
+              "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 472,
+                  "end_line": 510,
+                  "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            }
+          ]
+        },
+        "B2": {
+          "route": [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 6,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.6812920690579612,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 55.0,
+            "switch_cost": 0.0,
+            "objective": 55.0,
+            "total_if_executed": 65.0
+          },
+          "cost": 55.0
+        }
+      },
+      "after": {
+        "Ours": {
+          "route": [
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 7,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-iterator_contract",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.7196856730011519,
+              "quantile": 0.1,
+              "mastered": true,
+              "reason": "posterior lower quantile meets threshold"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 39.0,
+            "switch_cost": 0.0,
+            "objective": 39.0,
+            "total_if_executed": 50.0
+          },
+          "cost": 39.0,
+          "explanations": [
+            {
+              "unit_id": "u_positive_int",
+              "completed": true,
+              "base_proxy_cost": 5,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.type_validation"
+              ],
+              "target_concepts_not_gated": [
+                "python.type_validation"
+              ],
+              "required_by_remaining": [],
+              "reason": "completed coverage retained; no mastery evidence added",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 309,
+                  "end_line": 313,
+                  "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            },
+            {
+              "unit_id": "u_windowed_iter",
+              "completed": false,
+              "base_proxy_cost": 39,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "target_concepts_not_gated": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "required_by_remaining": [],
+              "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 472,
+                  "end_line": 510,
+                  "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            }
+          ]
+        },
+        "B2": {
+          "route": [
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 7,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-iterator_contract",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.7196856730011519,
+              "quantile": 0.1,
+              "mastered": true,
+              "reason": "posterior lower quantile meets threshold"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 39.0,
+            "switch_cost": 0.0,
+            "objective": 39.0,
+            "total_if_executed": 50.0
+          },
+          "cost": 39.0
+        }
+      },
+      "no_feedback": {
+        "Ours": {
+          "route": [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 6,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.6812920690579612,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 55.0,
+            "switch_cost": 0.0,
+            "objective": 55.0,
+            "total_if_executed": 66.0
+          },
+          "cost": 55.0,
+          "explanations": [
+            {
+              "unit_id": "u_positive_int",
+              "completed": true,
+              "base_proxy_cost": 5,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.type_validation"
+              ],
+              "target_concepts_not_gated": [
+                "python.type_validation"
+              ],
+              "required_by_remaining": [],
+              "reason": "completed coverage retained; no mastery evidence added",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 309,
+                  "end_line": 313,
+                  "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            },
+            {
+              "unit_id": "u_iterable",
+              "completed": false,
+              "base_proxy_cost": 16,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.iterator_protocol"
+              ],
+              "target_concepts_not_gated": [
+                "python.iterator_protocol"
+              ],
+              "required_by_remaining": [],
+              "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 61,
+                  "end_line": 76,
+                  "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            },
+            {
+              "unit_id": "u_windowed_iter",
+              "completed": false,
+              "base_proxy_cost": 39,
+              "cost_unit": "proxy_cost",
+              "target_concepts": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "target_concepts_not_gated": [
+                "python.keyword_presence",
+                "python.tee"
+              ],
+              "required_by_remaining": [],
+              "reason": "covers target concepts or a required predecessor; bounded search, no optimality guarantee",
+              "source_spans": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "path": "boltons/iterutils.py",
+                  "start_line": 472,
+                  "end_line": 510,
+                  "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+                }
+              ],
+              "source_versions": [
+                {
+                  "snapshot_id": "boltons-4e5faa3d7e40",
+                  "commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+                  "source_manifest_hash": "82ca12465a671178c0c27fcffeaefeee8e83dceeace474c73eca6f1b436cf45f"
+                }
+              ]
+            }
+          ]
+        },
+        "B2": {
+          "route": [
+            "u_iterable",
+            "u_windowed_iter"
+          ],
+          "gate": {
+            "python.iterator_protocol": {
+              "concept_id": "python.iterator_protocol",
+              "alpha": 6,
+              "beta": 1,
+              "evidence_ids": [
+                "v3:A07v3-callable_sentinel",
+                "v3:A07v3-custom_iterator",
+                "v3:A07v3-exhaustion_default",
+                "v3:A07v3-fresh_iterator",
+                "v3:A07v3-sequence_fallback"
+              ],
+              "lower_bound": 0.6812920690579612,
+              "quantile": 0.1,
+              "mastered": false,
+              "reason": "insufficient lower-bound evidence"
+            },
+            "python.keyword_presence": {
+              "concept_id": "python.keyword_presence",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.tee": {
+              "concept_id": "python.tee",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            },
+            "python.type_validation": {
+              "concept_id": "python.type_validation",
+              "lower_bound": null,
+              "evidence_ids": [],
+              "mastered": false,
+              "reason": "unknown: no independent current-project item"
+            }
+          },
+          "audit": {
+            "valid": true,
+            "errors": [],
+            "goal_complete": true,
+            "missing": [],
+            "learning_cost": 55.0,
+            "switch_cost": 0.0,
+            "objective": 55.0,
+            "total_if_executed": 66.0
+          },
+          "cost": 55.0
+        }
+      },
+      "sixth_presented": true,
+      "formal_sample": false,
+      "state_before": {
+        "state_version": "0.1.0",
+        "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+        "is_simulated": true,
+        "records": [
+          {
+            "evidence_id": "v3:A07v3-fresh_iterator",
+            "item_id": "A07v3-fresh_iterator",
+            "concept_id": "python.iterator_protocol",
+            "project": "boltons-4e5faa3d7e40",
+            "timestamp": "2026-10-21T13:55:08.723459+00:00",
+            "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+            "is_fixture": true,
+            "independent": true,
+            "evidence_type": "independent_quiz",
+            "outcome": "pass"
+          },
+          {
+            "evidence_id": "v3:A07v3-exhaustion_default",
+            "item_id": "A07v3-exhaustion_default",
+            "concept_id": "python.iterator_protocol",
+            "project": "boltons-4e5faa3d7e40",
+            "timestamp": "2026-10-21T13:55:08.723459+00:00",
+            "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+            "is_fixture": true,
+            "independent": true,
+            "evidence_type": "independent_quiz",
+            "outcome": "pass"
+          },
+          {
+            "evidence_id": "v3:A07v3-custom_iterator",
+            "item_id": "A07v3-custom_iterator",
+            "concept_id": "python.iterator_protocol",
+            "project": "boltons-4e5faa3d7e40",
+            "timestamp": "2026-10-21T13:55:08.723459+00:00",
+            "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+            "is_fixture": true,
+            "independent": true,
+            "evidence_type": "independent_quiz",
+            "outcome": "pass"
+          },
+          {
+            "evidence_id": "v3:A07v3-sequence_fallback",
+            "item_id": "A07v3-sequence_fallback",
+            "concept_id": "python.iterator_protocol",
+            "project": "boltons-4e5faa3d7e40",
+            "timestamp": "2026-10-21T13:55:08.723459+00:00",
+            "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+            "is_fixture": true,
+            "independent": true,
+            "evidence_type": "independent_quiz",
+            "outcome": "pass"
+          },
+          {
+            "evidence_id": "v3:A07v3-callable_sentinel",
+            "item_id": "A07v3-callable_sentinel",
+            "concept_id": "python.iterator_protocol",
+            "project": "boltons-4e5faa3d7e40",
+            "timestamp": "2026-10-21T13:55:08.723459+00:00",
+            "pseudonymous_user_id": "p_20d43196e4b44769b418c495afc2e44e",
+            "is_fixture": true,
+            "independent": true,
+            "evidence_type": "independent_quiz",
+            "outcome": "pass"
+          }
+        ]
+      },
+      "diagnosis_started": 7.73399999999674,
+      "diagnosis_duration_seconds": 12.671999999991385,
+      "diagnosis_metrics": {
+        "count": 1,
+        "seconds": 12.671999999991385,
+        "quiz_cost": 1,
+        "switch_cost": 0,
+        "added_units": [],
+        "removed_units": [
+          "u_iterable"
+        ]
+      }
+    }
+  ]
+}

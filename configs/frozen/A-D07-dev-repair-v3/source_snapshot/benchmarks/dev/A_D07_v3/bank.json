@@ -1,0 +1,124 @@
+{
+  "version": "A-D07-dev-repair-v3",
+  "items": [
+    {
+      "item_id": "A07v3-fresh_iterator",
+      "concept_id": "python.iterator_protocol",
+      "facet": "容器重新建立迭代器与已有位置",
+      "code": "xs = [2, 4]\nit = iter(xs)\nprint(next(it), next(iter(xs)), next(it))",
+      "choices": [
+        "2 4 2",
+        "2 2 4",
+        "2 2 2",
+        "抛出 StopIteration"
+      ],
+      "answer": 1,
+      "oracle_output": "2 2 4",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    },
+    {
+      "item_id": "A07v3-exhaustion_default",
+      "concept_id": "python.iterator_protocol",
+      "facet": "耗尽后的next默认值",
+      "code": "it = iter([7])\nprint(next(it, 0), next(it, 0), next(it, 9))",
+      "choices": [
+        "7 7 7",
+        "7 0 0",
+        "抛出 StopIteration",
+        "7 0 9"
+      ],
+      "answer": 3,
+      "oracle_output": "7 0 9",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    },
+    {
+      "item_id": "A07v3-custom_iterator",
+      "concept_id": "python.iterator_protocol",
+      "facet": "自定义迭代器与停止信号",
+      "code": "class Counter:\n    def __init__(self):\n        self.i = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        self.i += 1\n        if self.i > 2:\n            raise StopIteration\n        return self.i\nprint(list(Counter()))",
+      "choices": [
+        "[1, 2]",
+        "[0, 1, 2]",
+        "[1, 2, 3]",
+        "抛出 TypeError"
+      ],
+      "answer": 0,
+      "oracle_output": "[1, 2]",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    },
+    {
+      "item_id": "A07v3-sequence_fallback",
+      "concept_id": "python.iterator_protocol",
+      "facet": "旧式序列的迭代回退",
+      "code": "class Sequence:\n    def __getitem__(self, index):\n        if index >= 2:\n            raise IndexError\n        return index + 10\nprint(list(Sequence()))",
+      "choices": [
+        "抛出 TypeError",
+        "[10]",
+        "[10, 11]",
+        "[10, 11, 12]"
+      ],
+      "answer": 2,
+      "oracle_output": "[10, 11]",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    },
+    {
+      "item_id": "A07v3-callable_sentinel",
+      "concept_id": "python.iterator_protocol",
+      "facet": "可调用对象与哨兵停止",
+      "code": "source = iter([3, 0, 4])\nprint(list(iter(lambda: next(source), 0)))\nprint(next(source))",
+      "choices": [
+        "[3, 0]\n4",
+        "[3]\n4",
+        "[3]\n0",
+        "[3, 0, 4]\n抛出 StopIteration"
+      ],
+      "answer": 1,
+      "oracle_output": "[3]\n4",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    },
+    {
+      "item_id": "A07v3-iterator_contract",
+      "concept_id": "python.iterator_protocol",
+      "facet": "__iter__返回对象的协议约束",
+      "code": "class Bad:\n    def __iter__(self):\n        return [1, 2]\ntry:\n    iter(Bad())\n    print('OK')\nexcept TypeError:\n    print('TypeError')",
+      "choices": [
+        "OK",
+        "[1, 2]",
+        "TypeError",
+        "StopIteration"
+      ],
+      "answer": 2,
+      "oracle_output": "TypeError",
+      "cost": 1,
+      "cost_unit": "proxy_cost",
+      "independent": true,
+      "independence_scope": "Distinct one-time scored item; statistical independence and calibration not established",
+      "source": "Authored development snippet checked by local Python execution; project-scoped application to fixed boltons iterator interface"
+    }
+  ],
+  "formal_test": false,
+  "history_count": 5,
+  "diagnostic_count": 1,
+  "cap": 6,
+  "intermediate_answers_shown": false
+}

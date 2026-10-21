@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "passed": true,
+      "checks": 90,
+      "status": "DONE",
+      "actor": "agent_browser",
+      "mechanism_case_completed": true,
+      "observed_route_change": true,
+      "real_route_change": false,
+      "completed_preserved": true,
+      "spent": 11,
+      "diagnosis_seconds": 11.639999999999418,
+      "formal_sample": false,
+      "formal_success": null,
+      "statistical_independence_validated": false
+    }
+  ],
+  "formal_G2_passed": false
+}

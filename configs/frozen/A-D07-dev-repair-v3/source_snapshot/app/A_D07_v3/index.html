@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="session-token" content="__TOKEN__"><title>CodeCompass · 开发反馈验证</title><link rel="stylesheet" href="/style.css"></head><body><main>
+<h1>CodeCompass · 开发反馈验证 v0.3</h1>
+<p>本轮只验证证据记录与路线修复，不是正式成绩。固定六题，不重复刷题、不追加追分；不会可选“不会/跳过”。六题非重复，不代表统计独立或能力模型已校准。</p>
+<section id="setup"><label><input id="consent" type="checkbox">我本人自愿参加本次匿名开发补充验证；可暂停或退出，不与他人讨论答案。</label><button id="start">开始本次验证</button></section>
+<section id="session" hidden><div class="bar"><strong id="state"></strong><span id="timer"></span><button id="pause">暂停</button><button id="withdraw">退出</button></div><p id="budget"></p><p id="version"></p>
+<section id="work"><div id="history"><h2>第一步：固定材料与五个独立作答项目</h2><p>先阅读下面的固定源码。它按本流程指定为完成前缀，不是规划器自行选择，也不作为掌握证据。</p><div id="material"></div><label><input id="read" type="checkbox">我已读完以上材料</label></div>
+<div id="diagnosis" hidden><h2>第二步：一个新的诊断项目</h2><p>前五题已封存，以下是不同语义面的新题；本页不提示前题正确性或掌握进度。请独立作答。</p><pre id="before"></pre></div>
+<form id="questions"></form><p id="error" role="alert"></p><button id="send">保存本步并继续</button></section>
+<section id="finished" hidden><h2 id="resultTitle"></h2><p id="resultText"></p><pre id="routes"></pre><p>记录已保存在本机，不计正式样本或学习提升。不要清空记录或重开追分。完成后通知组织者“补充验证已完成”。</p></section></section>
+<footer>代理单位不是分钟；全部题量与源材料费用共同计入100预算。服务端记录实际时间。需要询问组织者时，先点暂停。</footer>
+</main><script src="/app.js"></script></body></html>

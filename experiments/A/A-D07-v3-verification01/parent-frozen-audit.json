@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "errors": [],
+  "checked_files": 43,
+  "runtime_version": "A-D07-runtime-v1",
+  "formal_g2_passed": false,
+  "formal_study_allowed": false,
+  "formal_tag_created": false
+}

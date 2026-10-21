@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "staleRejected": true,
+  "newerAccepted": true,
+  "scope": "isolated accept function, not browser verification"
+}

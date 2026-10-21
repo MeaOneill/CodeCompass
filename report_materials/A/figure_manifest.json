@@ -451,6 +451,20 @@
       "kind": "development routes and actual agent_browser UI",
       "human_n": 0,
       "formal_study_ready": false
+    },
+    {
+      "figure_id": "A-D07-v3-UI",
+      "kind": "native_automated_interface_case",
+      "status": "verified_automated_not_human",
+      "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+      "source_manifest": "configs/frozen/A-D07-dev-repair-v3/manifest.json",
+      "run_id": "A-D07-v3-browser04",
+      "exports": [
+        "report_materials/A/A-D07-v3/UI_automated_final.png"
+      ],
+      "raw": "tmp/A-D07-v3-browser04.sqlite3; actor agent_browser; export audit in verification02/browser-final-audit.json",
+      "plot_entrypoint": "scripts/A/serve_d07_v3.py",
+      "caption": "自动测试，不计真人或正式效果；运行已保存，原生截图未重绘或升采样"
     }
   ],
   "reception_reviews": [

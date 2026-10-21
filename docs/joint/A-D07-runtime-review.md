@@ -8,3 +8,8 @@ A技术复核B v0.2，不代签成员B、评分者或预演者。联合G2继续f
 ## A署名 A-D07独立技术复核收尾 2026-10-21T21:27:17.637700+08:00
 
 继续A-D07，BLOCKED_PROTOCOL_GAP；本日未通过，不进入B-D07或正式实验。独立AI在无真人数据代码克隆上22回归/49hash通过，24个模拟反例反馈路线变化均0；原卡要求与unknown+单题冻结协议冲突。新UI格式提示版本保持原算法/提交处理，额外来源对应记录独立保存，不回填历史事件。解决提案docs/requests/A-D07-protocol-gap-resolution.md尚未授权、未实施。最新门禁experiments/A/A-D07-independent-review01/release_gate.json，审查原始命令/退出状态/反例均同目录。公开同步只含技术资料；参与者背景、同意、原答、会话及备份本机封存、不入Git。主源码588920d，独立审查记录5c684e6已推送；最终文档回执SHA见完成通知。没有新正式结果图，不新增模型付费调用、不合main、不打冻结标签。
+
+
+## A署名 A-D07 v0.3开发扩展已授权 2026-10-21T22:08:02.663780+08:00
+
+用户已授权必要扩展；旧v0.2和负结果保留。独立协议docs/protocol/A-D07-v0.3-development/protocol.md固定5历史+1新诊断、原100代理预算/阈值与规划器不变，完成前缀固定u_positive_int。source_manifest configs/frozen/A-D07-dev-repair-v3/manifest.json；原始九结局和全部负例在A-D07-v3-development02，独立报告A-D07-v3-independent01。缺失不记错，规划失败不回滚已提交答案；来源版本持久入事件。软件准备通过不等于真人机制验证或正式G2，尚不进入下一棒。真人数据只在本机既有忽略目录v3，未运行则不填计划数字。

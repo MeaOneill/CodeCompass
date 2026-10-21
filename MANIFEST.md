@@ -231,3 +231,21 @@
 | 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-recovery-check01/v2-audit.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
 | 2026-10-19T20:49:52.968595+08:00 | experiment-plan | docs/B/sync_receipt_D06_v2.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
 | 2026-10-19T20:49:52.968595+08:00 | experiment-plan | experiments/B/B-D06-v2-verification01/index-byte-check.json | verification | 363-test fresh-clone recovery; task branch synced; human G2 confirmation pending |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | src/codecompass/app/pilot_d07_v3.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | scripts/A/serve_d07_v3.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | app/A_D07_v3/index.html | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | app/A_D07_v3/app.js | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | app/A_D07_v3/style.css | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | benchmarks/dev/A_D07_v3/bank.json | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | benchmarks/dev/A_D07_v3/bank.sha256 | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | scripts/A/audit_d07_v3.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | scripts/A/audit_d07_v3_version.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | scripts/A/run_d07_v3_dev.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | tests/A/test_pilot_d07_v3.py | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | configs/A/D07_v3_development.json | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | docs/protocol/A-D07-v0.3-development/protocol.md | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | CodeCompass计划/refine-logs/A-D07-v3/EXPERIMENT_PLAN.md | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | CodeCompass计划/refine-logs/A-D07-v3/EXPERIMENT_PLAN_20261021_220222.md | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | CodeCompass计划/refine-logs/A-D07-v3/EXPERIMENT_TRACKER.md | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | CodeCompass计划/refine-logs/A-D07-v3/EXPERIMENT_TRACKER_20261021_220222.md | implementation | A-D07单独开发验证材料，无真人结果 |
+| 2026-10-21T22:08:02.663780+08:00 | experiment-plan | configs/frozen/A-D07-dev-repair-v3/manifest.json | implementation | A-D07单独开发验证材料，无真人结果 |

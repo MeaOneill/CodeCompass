@@ -16,7 +16,7 @@
 | D05-B | 2026-10-19 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D06-A | 2026-10-20（10/19执行） | A | 成员A / Codex Agent A / 糯糯 | READY_FOR_REVIEW | codex/A-D06-g2-freeze / 5e6ecb18 | A工程通过，允许同日B-D06；联合G2待依赖/双方确认 |
 | D06-B | 2026-10-20 | B | 待认领 | TODO | 未建立 | 未执行 |
-| D07-A | 2026-10-21 | A | 成员A / Codex Agent A / 糯糯 | BLOCKED_PROTOCOL_GAP | codex/A-D07-smoke / c84e833 | 独立22回归/49hash通过；冻结单题反馈路径验收不可达；待明确授权独立开发协议，不交下一棒 |
+| D07-A | 2026-10-21 | A | 成员A / Codex Agent A / 糯糯 | REAL_V3_VALIDATION_PENDING | codex/A-D07-smoke / c84e833 | v0.3已获授权；402测/独立17通过；等待固定一次真人证据后缀变化，整日尚未通过 |
 | D07-B | 2026-10-21 | B | 待认领 | TODO | 未建立 | 未执行 |
 | D08-A | 2026-10-22 | A | 待认领 | TODO | 未建立 | 未执行 |
 | D08-B | 2026-10-22 | B | 待认领 | TODO | 未建立 | 未执行 |

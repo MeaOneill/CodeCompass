@@ -1,0 +1,14 @@
+{
+  "owner": "A",
+  "kind": "native UI case captures; no result plot",
+  "run_id": "A-D07-v3-browser04",
+  "actor": "agent_browser",
+  "counts_as_real_participant": false,
+  "final_image": "UI_automated_final.png",
+  "native_no_upsampling": true,
+  "source_manifest": "configs/frozen/A-D07-dev-repair-v3/manifest.json",
+  "entrypoint": "scripts/A/serve_d07_v3.py",
+  "raw_fixture_database_local": "tmp/A-D07-v3-browser04.sqlite3",
+  "previous_captures": "UI_automated_fixture* are earlier development builds, not final source proof",
+  "real_result": "NOT_RUN; do not generate placeholder human numbers"
+}

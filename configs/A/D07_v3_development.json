@@ -1,0 +1,29 @@
+{
+  "version": "A-D07-dev-repair-v3",
+  "authorization": "User broad A-D07 extension approval on 2026-10-21",
+  "parent_protocol": "B-D06-v0.2-candidate",
+  "protocol_kind": "separate development mechanism demonstration",
+  "task_id": "task_002",
+  "prefix": "u_positive_int",
+  "threshold": 0.7,
+  "quantile": 0.1,
+  "alpha": 0,
+  "gamma": 0,
+  "budget": 100,
+  "history_items": 5,
+  "new_diagnoses": 1,
+  "total_item_cap": 6,
+  "quiz_cost": 1,
+  "prefix_cost": 5,
+  "search_options": "Unchanged frozen engine defaults; no sweep",
+  "voi_enabled": false,
+  "limit_seconds": 1500,
+  "max_people": 2,
+  "missing": "retain response as missing; no knowledge evidence; still count presentation cost",
+  "retry": false,
+  "claims": [
+    "state transition and accounting only"
+  ],
+  "formal_G2_passed": false,
+  "formal_study_allowed": false
+}

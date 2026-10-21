@@ -1,0 +1,252 @@
+{
+  "passed": true,
+  "cases": 15,
+  "all_skip_zero_ledger": true,
+  "all_skip_spent": 11,
+  "rows": [
+    {
+      "test_directory": "test_diagnosis_clock_excludes_0",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": true,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 7.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser0",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser1",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser2",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser3",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser4",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_each_wrong_item_is_preser5",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_open_gate_is_real_replan_0",
+      "result": {
+        "passed": true,
+        "checks": 90,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": true,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_planning_failure_never_er0",
+      "result": {
+        "passed": true,
+        "checks": 51,
+        "status": "FAILED",
+        "mechanism_case_completed": false,
+        "real_route_change": false
+      }
+    },
+    {
+      "test_directory": "test_planning_failure_never_er1",
+      "result": {
+        "passed": true,
+        "checks": 63,
+        "status": "FAILED",
+        "mechanism_case_completed": false,
+        "real_route_change": false
+      }
+    },
+    {
+      "test_directory": "test_planning_failure_never_er2",
+      "result": {
+        "passed": true,
+        "checks": 51,
+        "status": "FAILED",
+        "mechanism_case_completed": false,
+        "real_route_change": false
+      }
+    },
+    {
+      "test_directory": "test_planning_failure_never_er3",
+      "result": {
+        "passed": true,
+        "checks": 63,
+        "status": "FAILED",
+        "mechanism_case_completed": false,
+        "real_route_change": false
+      }
+    },
+    {
+      "test_directory": "test_protocol_boundaries_and_p0",
+      "result": {
+        "passed": true,
+        "checks": 94,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_skip_is_missing_not_score0",
+      "result": {
+        "passed": true,
+        "checks": 78,
+        "status": "DONE",
+        "actor": "test_fixture",
+        "mechanism_case_completed": true,
+        "observed_route_change": false,
+        "real_route_change": false,
+        "completed_preserved": true,
+        "spent": 11,
+        "diagnosis_seconds": 0.0,
+        "formal_sample": false,
+        "formal_success": null,
+        "statistical_independence_validated": false
+      }
+    },
+    {
+      "test_directory": "test_timeout_does_not_accept_l0",
+      "result": {
+        "passed": true,
+        "checks": 18,
+        "status": "TIMED_OUT",
+        "mechanism_case_completed": false,
+        "real_route_change": false
+      }
+    }
+  ],
+  "tamper_rejected": [
+    {
+      "change": "control_budget",
+      "rejected": true
+    },
+    {
+      "change": "ledger_scope",
+      "rejected": true
+    },
+    {
+      "change": "completed_prefix",
+      "rejected": true
+    }
+  ]
+}

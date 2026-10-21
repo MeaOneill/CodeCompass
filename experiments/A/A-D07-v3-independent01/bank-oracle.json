@@ -1,0 +1,66 @@
+{
+  "hash": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709",
+  "expected_hash": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709",
+  "rows": [
+    {
+      "item_id": "A07v3-fresh_iterator",
+      "code_repr": "'xs = [2, 4]\\nit = iter(xs)\\nprint(next(it), next(iter(xs)), next(it))'",
+      "actual": "2 2 4",
+      "error": null,
+      "expected": "2 2 4",
+      "answer": 1,
+      "answer_text": "2 2 4",
+      "passed": true
+    },
+    {
+      "item_id": "A07v3-exhaustion_default",
+      "code_repr": "'it = iter([7])\\nprint(next(it, 0), next(it, 0), next(it, 9))'",
+      "actual": "7 0 9",
+      "error": null,
+      "expected": "7 0 9",
+      "answer": 3,
+      "answer_text": "7 0 9",
+      "passed": true
+    },
+    {
+      "item_id": "A07v3-custom_iterator",
+      "code_repr": "'class Counter:\\n    def __init__(self):\\n        self.i = 0\\n    def __iter__(self):\\n        return self\\n    def __next__(self):\\n        self.i += 1\\n        if self.i > 2:\\n            raise StopIteration\\n        return self.i\\nprint(list(Counter()))'",
+      "actual": "[1, 2]",
+      "error": null,
+      "expected": "[1, 2]",
+      "answer": 0,
+      "answer_text": "[1, 2]",
+      "passed": true
+    },
+    {
+      "item_id": "A07v3-sequence_fallback",
+      "code_repr": "'class Sequence:\\n    def __getitem__(self, index):\\n        if index >= 2:\\n            raise IndexError\\n        return index + 10\\nprint(list(Sequence()))'",
+      "actual": "[10, 11]",
+      "error": null,
+      "expected": "[10, 11]",
+      "answer": 2,
+      "answer_text": "[10, 11]",
+      "passed": true
+    },
+    {
+      "item_id": "A07v3-callable_sentinel",
+      "code_repr": "'source = iter([3, 0, 4])\\nprint(list(iter(lambda: next(source), 0)))\\nprint(next(source))'",
+      "actual": "[3]\n4",
+      "error": null,
+      "expected": "[3]\n4",
+      "answer": 1,
+      "answer_text": "[3]\n4",
+      "passed": true
+    },
+    {
+      "item_id": "A07v3-iterator_contract",
+      "code_repr": "\"class Bad:\\n    def __iter__(self):\\n        return [1, 2]\\ntry:\\n    iter(Bad())\\n    print('OK')\\nexcept TypeError:\\n    print('TypeError')\"",
+      "actual": "TypeError",
+      "error": null,
+      "expected": "TypeError",
+      "answer": 2,
+      "answer_text": "TypeError",
+      "passed": true
+    }
+  ]
+}

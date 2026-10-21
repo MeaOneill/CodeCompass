@@ -1,0 +1,113 @@
+{
+  "version": "A-D07-dev-repair-v3",
+  "sealed_at": "2026-10-21T22:08:02.663780+08:00",
+  "parent_commit": "9f3c321439d1c8365b199a009f4d54c0503aec52",
+  "parent_runtime": "A-D07-runtime-v1",
+  "parent_protocol": "B-D06-v0.2-candidate",
+  "protocol_extension_authorized": true,
+  "authorization": "User broadly authorized all work necessary for A-D07 including proposed separate development evidence protocol on 2026-10-21",
+  "algorithm_changed": false,
+  "threshold_changed": false,
+  "original_v2_modified": false,
+  "formal_G2_passed": false,
+  "formal_study_allowed": false,
+  "affected_runs": "New opt-in v3 pilot only; previous v0.2 failures unchanged. Development01 missing-as-fail erratum retained; Development02 is final technical evidence. No human v3 case exists at sealing.",
+  "files": [
+    {
+      "path": "src/codecompass/app/pilot_d07_v3.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/src/codecompass/app/pilot_d07_v3.py",
+      "sha256": "7979a81ca3d5cb08c4ee506f1a62403e514384eb43a596a4d7991f7e0c0f4316"
+    },
+    {
+      "path": "scripts/A/serve_d07_v3.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/scripts/A/serve_d07_v3.py",
+      "sha256": "0986ea4e0858defffcb98092311a9c254e3c46c113469ac8db2e1aee6c323ba3"
+    },
+    {
+      "path": "app/A_D07_v3/index.html",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/app/A_D07_v3/index.html",
+      "sha256": "750d2734387ae3faf3ca714be3974386c85cbbf0c8064552e077cefa7f0ecb59"
+    },
+    {
+      "path": "app/A_D07_v3/app.js",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/app/A_D07_v3/app.js",
+      "sha256": "7a612211c9ba8a55cea35e3235930fa4f5878cd6b57fb4669504df004b0c2860"
+    },
+    {
+      "path": "app/A_D07_v3/style.css",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/app/A_D07_v3/style.css",
+      "sha256": "03839cfe004ca2a45ac859bd920317974b9e389fc732df93ce88135a3be6cb44"
+    },
+    {
+      "path": "benchmarks/dev/A_D07_v3/bank.json",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/benchmarks/dev/A_D07_v3/bank.json",
+      "sha256": "e7f0d1681183e923605d15c36ee7d01034976de71275adf6b41ccdc24442f709"
+    },
+    {
+      "path": "benchmarks/dev/A_D07_v3/bank.sha256",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/benchmarks/dev/A_D07_v3/bank.sha256",
+      "sha256": "cb4da7bb04394e65eb02aa942b012c16ce2509aa92a3932eafabc66843ba67a1"
+    },
+    {
+      "path": "scripts/A/audit_d07_v3.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/scripts/A/audit_d07_v3.py",
+      "sha256": "8256568e208e985e6ba2ff754031533d08bc090e1b16043bb8afbee5c00d7cd8"
+    },
+    {
+      "path": "scripts/A/audit_d07_v3_version.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/scripts/A/audit_d07_v3_version.py",
+      "sha256": "70981707b3fb5b31d899991be0c97b2f53c919bbffb4f9d80be1c6475dba39ca"
+    },
+    {
+      "path": "scripts/A/run_d07_v3_dev.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/scripts/A/run_d07_v3_dev.py",
+      "sha256": "db5a0d5c3eeb02fa1d5b1eff83a13a38ed2869811348649060191d9ff60a257b"
+    },
+    {
+      "path": "tests/A/test_pilot_d07_v3.py",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/tests/A/test_pilot_d07_v3.py",
+      "sha256": "00f854b0eee20e363f003c23e3cca6fef87db39ca45450bf3f1a6ae220af2caf"
+    },
+    {
+      "path": "configs/A/D07_v3_development.json",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/configs/A/D07_v3_development.json",
+      "sha256": "da94031100db9bb9cc5e0f7bfeb3399e952954fbb928c64ca9e751e0e44d1201"
+    },
+    {
+      "path": "docs/protocol/A-D07-v0.3-development/protocol.md",
+      "snapshot": "configs/frozen/A-D07-dev-repair-v3/source_snapshot/docs/protocol/A-D07-v0.3-development/protocol.md",
+      "sha256": "7e2ed875c676158e5c9a70b5a7e452e55d223f3154e56d18aa653f2962579e73"
+    }
+  ],
+  "protected_parent_files": {
+    "src/codecompass/planner/adaptive.py": "a3481880313ac6f5e6d938a3be100caa08519a32ac8c36f9c608ac248f2bca74",
+    "src/codecompass/planner/feedback.py": "fe2e4ca533dfc6303e8dcf04fc81fa31c73db9329212557e7ee1525994e4bfe2",
+    "src/codecompass/planner/diagnostics.py": "af44ffd86ab87ffa7a921621679051f19103f315f02de85f4b620039efe76f6b",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "src/codecompass/app/relay_v2.py": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24",
+    "src/codecompass/app/study_d06.py": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f",
+    "scripts/B/serve_relay_v2.py": "969f2677d708f7968eb6b572ac08c36e6b99441cebbf8e9b7710a4170d0d15bd",
+    "scripts/B/comparison/b1.py": "08c4417c3676dd271bcb15bdc3303939241860b0d1cd841f4a3ac74febd74ca2",
+    "configs/B/D06_v2_deepseek.json": "f8768cd81bdc390de2625fa3b7d5f091541cc1bf709c8a0d2341b6e115d997c1",
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "benchmarks/B/frozen/B-D06-v0.2-candidate/manifest.json": "6169cb25261bd06b6fb17a00a591e3833eaaaf0218df64b44e24ccdb954f1084",
+    "configs/frozen/freeze_manifest.json": "facc0534f9347215a121e9e372e625aa28fbdb7e2b8c2a7fd5ef9ecd12c0138e",
+    "configs/frozen/v0.1-candidate.1-supplement/freeze_manifest.json": "7d338a514101c55d1b5a215fae8101c7e127d8bfa2a441e247b240c070cf26ca",
+    "src/codecompass/planner/runtime_d07.py": "79c1bf60c0dfaf2ce04d2da430f293b0cb097f222d17ebbead195d2168466116",
+    "scripts/A/relay_d07.py": "8aa1d3281c28a9dceb9cade675dcf341bf13a7dd15687a7adb0d1d042183467f",
+    "scripts/A/serve_d07.py": "af2ed952c2f45f5d97be981314e92d95690e12cacc1e4ff533737bab2957c643",
+    "scripts/A/run_d07.py": "bfac4f39c2425d5b56c2d3047c6643df5da9b1d8282070cf2128208ff245c375",
+    "scripts/A/audit_d07.py": "2df3447419c992b6414cdd22c2794e3477eefdb1730ce730fe2dbdea9d8cab60",
+    "scripts/A/audit_d07_version.py": "a5e926b4749abaab3acece0042a50e4d24e2411a104ec0f05b77c07fbca5e3b9",
+    "scripts/A/cases_d07.py": "b5e9046d39aa549221f049e7f4f6cde0296a476c01a41a8be9d87266c5a5cf7e",
+    "scripts/A/review_d07_protocol.py": "d4a632e4365442783f3fde4c87d86c7688c030d921ddcaed744cdf372cf3c6a5",
+    "scripts/A/export_d07_browser.py": "9c70de9f1c956ff67079e47a3254529b344c1c0c968a295162a6fcafcfda82cf",
+    "scripts/A/draw_d07.py": "e8a63b120a6780892b857578893fcf947e6d6be6172042276654307de1c6313e",
+    "configs/A/D07_runtime.json": "215e738fa789513e53fe13d6d3c0a437eb056df8bd47f23dd5e64450f3230f78",
+    "app/A_D07/a07.js": "6330e8777e19dc5f5b2300be84640fdc78c84a582bcb741d7e108f19aee60091",
+    "app/A_D07/a07.css": "4ee983cc949fdfabd376d2e4712efe25e3274f6e895daa3818a25bde6db4eba9",
+    "tests/A/test_runtime_d07.py": "beacac11592fe80b460671134015c4ba7928e1db1efc8f1ab9edb24b699a54a5",
+    "tests/A/test_runtime_d07_http.py": "ee08c11c3d7b595158c372a4c6e1f4f3f469efd2f485146df974c7dad2650ce3",
+    "configs/frozen/A-D07-runtime-v1/manifest.json": "349569b71d8b265afb415ed2b6b281a0a63069d430914da642144fc4ec0bf564"
+  }
+}

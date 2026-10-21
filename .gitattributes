@@ -91,6 +91,10 @@
 # A-D07 own source, candidate snapshots and native evidence only.
 /app/A_D07/** text eol=lf
 /app/A_D07_submission_v1/** text eol=lf
+/app/A_D07_v3/** text eol=lf
+/src/codecompass/app/pilot_d07_v3.py text eol=lf
+/tests/A/test_pilot_d07_v3.py text eol=lf
+/configs/frozen/A-D07-dev-repair-v3/source_snapshot/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /configs/frozen/A-D07-submission-ui-v1/source_snapshot/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /configs/frozen/A-D07-runtime-v1/source_snapshot/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /experiments/A/A-D07-*/** -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
