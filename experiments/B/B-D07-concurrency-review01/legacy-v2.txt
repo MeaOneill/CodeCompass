@@ -1,0 +1,13 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+________ test_concurrent_quiz_update_and_profile_read_use_one_snapshot ________
+tests\B\test_journey_d07.py:205: in test_concurrent_quiz_update_and_profile_read_use_one_snapshot
+    snapshot=c.profile(user);worker.join(8)
+             ^^^^^^^^^^^^^^^
+src\codecompass\app\journey_d07.py:225: in profile
+    if prev!=p['last_hash'] or len(events)!=p['revision']:raise ValueError('Profile event count mismatch')
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: Profile event count mismatch
+=========================== short test summary info ===========================
+FAILED tests/B/test_journey_d07.py::test_concurrent_quiz_update_and_profile_read_use_one_snapshot
+1 failed in 3.25s

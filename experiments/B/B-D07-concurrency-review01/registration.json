@@ -1,0 +1,12 @@
+{
+  "legacy_code_commit": "1f75ceb4998dbae20341384f8eae37141f2edfe1",
+  "legacy_expected_exit": 1,
+  "legacy_counterexample_reproduced": true,
+  "fixed_version": "B-D07-development-journey-3",
+  "fixed_targeted_tests": 16,
+  "fixed_tests_exit": 0,
+  "test_file_sha256": "f8420e1f8c17ff4fe2ed06bcf82a5aff958cf51bfcfe172020a8ce7f9217a3d1",
+  "human_records_present_during_maintenance": false,
+  "actual_second_machine": false,
+  "formal_results": false
+}

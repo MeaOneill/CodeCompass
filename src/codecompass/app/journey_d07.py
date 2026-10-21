@@ -20,7 +20,7 @@ from codecompass.learner import initial_state,validate_state,update_evidence,pla
 from codecompass.planner.diagnostics import evidence_for
 from codecompass.issues.candidates import match_issues
 
-VERSION='B-D07-development-journey-2'
+VERSION='B-D07-development-journey-3'
 CROSS_ID='B07_more_chunked'
 SOURCE_FILES=('src/codecompass/app/journey_d07.py','scripts/B/serve_d07.py','app/B_D07/index.html','app/B_D07/app.js','app/B_D07/style.css',
     'scripts/A/relay_d07.py','src/codecompass/planner/runtime_d07.py','src/codecompass/learner/model.py',
@@ -214,6 +214,7 @@ class JourneyCollector(StableRelayCollector):
 
     def profile(self,user):
         with self.connect() as db:
+            db.execute('BEGIN')
             p=self._profile(db,user);sessions=[json.loads(r[0]) for r in db.execute('SELECT value FROM sessions')]
             sessions=[s for s in sessions if s['participant']==user]
             transfers=[json.loads(r[0]) for r in db.execute('SELECT value FROM transfers WHERE user=?',(user,))]

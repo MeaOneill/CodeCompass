@@ -1,0 +1,24 @@
+{
+  "source_files": {
+    "src/codecompass/app/journey_d07.py": "c675ab3601200f613e8192f4c67c8534cd8e78e444486c5c3035beb3b61527be",
+    "scripts/B/serve_d07.py": "7bb0efbbd653584f2bfce951250a5d745cf503e5c3c0fbb60ca4eae6abda6f3b",
+    "app/B_D07/index.html": "88aff8fccfc98db6f18cb8e57de3a6577e36148b4ffb0f151757f7d36551669f",
+    "app/B_D07/app.js": "6fac59caa9726b8db2a138f98484abe91603059f91ec5cfa803b4ce435f2b38e",
+    "app/B_D07/style.css": "fb6e8796f5111cfb6e71b46fb94034a370f908b9a9978179f18a851bc0e51390",
+    "scripts/A/relay_d07.py": "8aa1d3281c28a9dceb9cade675dcf341bf13a7dd15687a7adb0d1d042183467f",
+    "src/codecompass/planner/runtime_d07.py": "79c1bf60c0dfaf2ce04d2da430f293b0cb097f222d17ebbead195d2168466116",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "benchmarks/B/D07/cross_project.json": "1d893c3b3c6c80eec6d15f121aa3aeb3e58e835c4b1de6a95dbb54fa54b935fa",
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "src/codecompass/app/diagnostics_v2.py": "cbe7b7e23207200457f6b35ccca5bede44d3aef3bd14d49e930052ac1abc2df2",
+    "src/codecompass/app/diagnostic_items.py": "a95736435804b926dd874d4eaff8f76b21c933eab79f162a0d1b869fa4249c71",
+    "src/codecompass/app/relay_v2.py": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24",
+    "src/codecompass/app/experiment.py": "df0d55c69db276fe7b90c6e5edd8023438488a688be06509fecb812f2d434950",
+    "src/codecompass/app/study_d06.py": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+  },
+  "source_checkpoint": "1f75ceb4998dbae20341384f8eae37141f2edfe1",
+  "actor": "agent_browser",
+  "version": "B-D07-development-journey-2",
+  "formal_participants": 0,
+  "read_snapshot_patch_pending": true
+}

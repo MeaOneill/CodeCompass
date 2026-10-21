@@ -8,7 +8,7 @@ from urllib.request import Request,urlopen
 from urllib.error import HTTPError
 import pytest
 ROOT=Path(__file__).resolve().parents[2];sys.path[:0]=[str(ROOT),str(ROOT/'src')]
-from codecompass.app.journey_d07 import JourneyCollector,PRETEST,CROSS_ID,cross_data
+from codecompass.app.journey_d07 import JourneyCollector,PRETEST,RETEST,CROSS_ID,cross_data
 from codecompass.learner import mastery_gate,planning_rows
 from scripts.B.serve_d07 import make_server
 from scripts.B.export_d05 import export
@@ -171,7 +171,7 @@ def test_cross_case_has_real_take_helper_and_matching_explanation(c):
     user=enrolled(c);s=c.create(CROSS_ID,participant=user)
     assert 'takewhile' not in ' '.join(s['task']['requirements'])
     assert any(m['source_span']['path']=='more_itertools/recipes.py' and 'def take(' in m['text'] for m in s['source_context'])
-    assert s['protocol_version']=='B-D07-development-journey-2'
+    assert s['protocol_version']=='B-D07-development-journey-3'
 
 
 def test_planner_failure_keeps_original_choice_and_accepted_evidence(c,monkeypatch):
@@ -185,3 +185,32 @@ def test_planner_failure_keeps_original_choice_and_accepted_evidence(c,monkeypat
         original=json.loads(db.execute('SELECT value FROM answers WHERE user=? AND item=?',(user,'B05-iterator-next-v1')).fetchone()[0])
     assert original['choice']==1 and original['outcome']=='pass'
     assert c.traces(sid)[-1]['status']=='PLANNING_ERROR'
+
+
+def test_concurrent_quiz_update_and_profile_read_use_one_snapshot(c,monkeypatch):
+    import time
+    user=enrolled(c);s=c.create(participant=user);sid=s['session_id'];c.action(sid,'complete_reading')
+    reader_ready=threading.Event();writer_started=threading.Event();result=[];errors=[];reader=threading.get_ident();original=c._profile
+    def observed(db,uid):
+        value=original(db,uid)
+        if threading.get_ident()==reader:
+            reader_ready.set();assert writer_started.wait(3);time.sleep(.05)
+        return value
+    monkeypatch.setattr(c,'_profile',observed)
+    def write():
+        try:
+            assert reader_ready.wait(3);writer_started.set();result.append(c.action(sid,'answer',{'choice':1}))
+        except Exception as e:errors.append(type(e).__name__)
+    worker=threading.Thread(target=write);worker.start()
+    snapshot=c.profile(user);worker.join(8)
+    assert not worker.is_alive() and not errors and result[0]['status']=='ACTIVE'
+    assert snapshot['evidence_count']==4 and snapshot['revision']==2
+    assert c.profile(user)['evidence_count']==5
+
+
+@pytest.mark.parametrize('question',[*PRETEST,RETEST],ids=lambda q:q['item_id'])
+def test_question_oracle_matches_independent_python_execution(question):
+    import contextlib,io
+    output=io.StringIO()
+    with contextlib.redirect_stdout(output):exec(question['code'],{})
+    assert output.getvalue().strip()==question['choices'][question['answer']]

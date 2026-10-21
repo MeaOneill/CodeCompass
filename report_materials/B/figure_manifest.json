@@ -762,5 +762,349 @@
         "sha256": "cab558416f6ece7d75488969e16d9c0bdc92bcd7a083f6c23fd0e3edd7443995"
       }
     ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-01",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "共同初测页面",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 1714
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_01_pretest.png",
+        "sha256": "9fd7d9cb8e53045b67d259410aaacc38657f84d78ed0ba01c9424a346088c7b4"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-02",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "真实仓库/任务选择",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 769
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_02_tasks.png",
+        "sha256": "df21457820ffb3f5e963a1ed0b974421e2765c3fd32c0a8efb0e66f628835421"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-03",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "带真实源码跨度的路线",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 1809
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_03_evidence_path.png",
+        "sha256": "63a12f083c0a277968f65fd4d8f0d362f0bb348d53156ee37fc0ff0f6bc0245d"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-04",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "独立反馈与剩余路线（本例不变）",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 870
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_04_feedback.png",
+        "sha256": "fe4bdeea7d0865fe73eeaaa07d153b48e7c7b5639d7694aa342d3e1f3fbb507c"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-05",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "带抓取日期的历史Issue准备",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 1388
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_05_issues.png",
+        "sha256": "d4947f31bc7381c76208c491b498402a3f675730d6c0e7847e71ccb5db5e4661"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-06",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "单一权威画像历史",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 1605
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_06_profile_history.png",
+        "sha256": "8ed1603b0db809a696dc844225ff4baa60ea244b595fe51dcac2102fdae589e7"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-07",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "第二真实仓库chunked及take依赖源码",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 2938
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_07_second_repository_source.png",
+        "sha256": "58ebe0d4f2486cf8c73f8a6e6f83d693250de7b047f77efcc5cb5c98fd3101c3"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
+  },
+  {
+    "figure_id": "F11-B-D07-v3-08",
+    "task_id": "B-D07",
+    "run_id": "B-D07-browser03",
+    "caption": "跨项目引用与独立再测功能案例",
+    "source_version": "B-D07-development-journey-3",
+    "runtime_source_digest": "c7f8eea6860258127e6018e521b3d57fcbf406b85e87eb0a765ee6eb01eda9bb",
+    "evidence_type": "real_UI_with_automated_development_inputs_not_human_effect",
+    "source_base": "2a24ed994a645da1d0494677de09d7780f17928d",
+    "actor": "agent_browser",
+    "human_effect_sample_size": 0,
+    "real_pilot_people_confirmed": null,
+    "units": "UI functional case; no effect metric",
+    "dpi": null,
+    "screenshot_dimensions": {
+      "width": 1265,
+      "height": 1866
+    },
+    "command": "mcp__cua_repl: documented tab.screenshot({fullPage:true}); native unedited PNG",
+    "visual_review": "DOM checkpoints checked; PNG 04 and 08 viewed by Codex Agent B; not independent human review",
+    "files": [
+      {
+        "path": "report_materials/B/B-D07-browser03/F11_08_transfer_retest.png",
+        "sha256": "822a8647bd57be8c6e7f13d5a2b7ba4ca8e901fde3557de49933e14b5608e312"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/source_manifest.json",
+        "sha256": "8c0ae12b6e16a921ec4be7770863f5501e9f7c1b7dd79a594c7e41e3c429aca5"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/ui_actions.json",
+        "sha256": "673984b199cd2074fd5221831a331ed4a2a400b9bb38e94f231ca7e5bd341acd"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/agent_browser/export01/events.json",
+        "sha256": "943a728fe0c699560bd4c04b9b1c9b077882aa0a781c51ae7c7e34e4ee61d8c1"
+      },
+      {
+        "path": "experiments/B/B-D07-browser03/receipt-audit.json",
+        "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
+      }
+    ]
   }
 ]

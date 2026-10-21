@@ -1,0 +1,26 @@
+{
+  "run_id": "B-D07-browser03",
+  "actor": "agent_browser",
+  "protocol": "B-D07-development-journey-3",
+  "real_browser_interaction": true,
+  "checkpoints": [
+    "common pretest saved",
+    "task/repository selection",
+    "source spans and route",
+    "independent quiz and replan",
+    "historical Issue preparation",
+    "persistent profile",
+    "cross-project source references",
+    "different target-repository retest",
+    "pause and page refresh",
+    "final submit",
+    "next-person consent remains unchecked"
+  ],
+  "old_note_cleared_verified_by": "Read-only DOM textarea.value == empty string",
+  "refresh_preserved_status": "PAUSED",
+  "next_person_consent_unchecked": true,
+  "screenshots_edited": false,
+  "human_pilot_people_verified": false,
+  "private_final_answers_read": false,
+  "model_calls": 0
+}

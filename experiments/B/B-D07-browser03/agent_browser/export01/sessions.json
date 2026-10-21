@@ -1,0 +1,46 @@
+[
+  {
+    "session_id": "44dbd5453fffc7b310a2f5fb",
+    "participant": "34a5a877aebd00bfbb893be4",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "agent_browser",
+    "status": "SUBMITTED",
+    "duration_seconds": 38.03100000001723,
+    "observed_seconds": 38.03100000001723,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "dc9cb398119ee77acde43dc7216b05301a2b07ef2b1eec5aac5d7bb506ec1d38",
+    "event_count": 14,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "f3fabfe9322b500e8296552f",
+    "participant": "34a5a877aebd00bfbb893be4",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "agent_browser",
+    "status": "SUBMITTED",
+    "duration_seconds": 105.31200000000536,
+    "observed_seconds": 105.31200000000536,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "72bfdacb4eca328347dc3d10677499a4e9d41e52d8c0caf98f1b9da02cebb72a",
+    "event_count": 13,
+    "source_commit": "4aeb4338ae1407d8da9723e86da99efeb446f719"
+  }
+]

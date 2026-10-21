@@ -22,8 +22,8 @@ def audit(root=ROOT):
         if m[key] is not False:errors.append('UNJUSTIFIED_FORMAL_APPROVAL:'+key)
     return dict(passed=not errors,errors=errors,checked_files=len(m['files']),parent_new_checks=parent['checked_source_snapshot_parent_files'],
         parent_old_checks=parent['old_runtime_audit']['checked_files'],runtime_source_digest=m['runtime_source_digest'],
-        technical_delivery_ready=not errors,two_B07_human_people_verified=False,actual_second_machine_verified=False,
-        whole_B07_day_passed=False,formal_G2_passed=False,formal_study_allowed=False,
+        technical_delivery_ready=not errors,human_rehearsal_evaluated=False,other_machine_evaluated=False,
+        whole_B07_day_passed=None,formal_G2_passed=False,formal_study_allowed=False,
         conclusion='Engineering integrity only; actual pilot/other-machine receipts and cross-review remain separate')
 
 
