@@ -465,6 +465,40 @@
       "raw": "tmp/A-D07-v3-browser04.sqlite3; actor agent_browser; export audit in verification02/browser-final-audit.json",
       "plot_entrypoint": "scripts/A/serve_d07_v3.py",
       "caption": "自动测试，不计真人或正式效果；运行已保存，原生截图未重绘或升采样"
+    },
+    {
+      "figure_id": "F04_v3_private_development",
+      "kind": "local_development_case",
+      "status": "rendered_and_visually_reviewed",
+      "plot_entrypoint": "scripts/A/draw_d07_v3_case.py",
+      "source_checkpoint": "51097b32dbc2e966ca9bbcdbde9f6fe9ae4d05f5",
+      "exports": [],
+      "private_artifacts": "Local ignored archive; see local human evidence index",
+      "formats": [
+        "PNG 300dpi",
+        "SVG",
+        "CSV",
+        "source manifest"
+      ],
+      "formal_result": false,
+      "limitations": "State-decision case only; no learning-gain, superiority or probability-calibration claim"
+    },
+    {
+      "figure_id": "F09_v3_private_development",
+      "kind": "local_development_case",
+      "status": "rendered_and_visually_reviewed",
+      "plot_entrypoint": "scripts/A/draw_d07_v3_case.py",
+      "source_checkpoint": "51097b32dbc2e966ca9bbcdbde9f6fe9ae4d05f5",
+      "exports": [],
+      "private_artifacts": "Local ignored archive; see local human evidence index",
+      "formats": [
+        "PNG 300dpi",
+        "SVG",
+        "CSV",
+        "source manifest"
+      ],
+      "formal_result": false,
+      "limitations": "State-decision case only; no learning-gain, superiority or probability-calibration claim"
     }
   ],
   "reception_reviews": [
