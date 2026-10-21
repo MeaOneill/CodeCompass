@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-21T20:02:55.724634+08:00",
+  "passed": true,
+  "commands": [
+    {
+      "name": "http",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/A/test_submission_ui_d07.py",
+        "tests/A/test_runtime_d07_http.py",
+        "-q",
+        "--basetemp=tmp/A-D07-submission-ui-tests02"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "javascript_syntax",
+      "argv": [
+        "node",
+        "--check",
+        "app/A_D07_submission_v1/submission.js"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "mock_dom",
+      "argv": [
+        "node",
+        "tmp/d07_submission_harness.cjs"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "frozen_parent",
+      "argv": [
+        "C:\\CodeCompass\\CodeCompass-A-D05\\.venv\\Scripts\\python.exe",
+        "scripts/A/audit_d07_version.py",
+        "--output",
+        "C:\\CodeCompass\\CodeCompass-A-D05\\experiments\\A\\A-D07-submission-ui01\\parent-version-audit.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "initial_attempt": "1 failed/1 passed: HTTP test incorrectly assumed addon injection order; actual parent app.js already preceded addon; assertion corrected. No runtime bug hidden.",
+  "browser_verification": "NOT_RUN: CUA documentation request timed out, no human session automated",
+  "mock_dom_not_browser": true
+}

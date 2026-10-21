@@ -1,0 +1,20 @@
+// Mock-DOM regression, not a browser or human observation.
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+let observer;
+const label=()=>({firstChild:{textContent:''}});
+const out={value:'participant original draft',closest:label};
+const refs={value:'participant original references',closest:label};
+const button={before(m){this.message=m;}};
+const error={textContent:''};
+const submission={hidden:false};
+const show={addEventListener(k,fn){this.listener=fn;}};
+const elements={outputs:out,citations:refs,submit:button,error,submission,showSubmit:show};
+const doc={documentElement:{dataset:{}},getElementById(id){return elements[id];},createElement(){return {setAttribute(){},scrollIntoView(){this.scrolled=true;}};}};
+vm.runInNewContext(fs.readFileSync('app/A_D07_submission_v1/submission.js','utf8'),{document:doc,MutationObserver:class{constructor(cb){observer=cb;}observe(){}}});
+error.textContent='Unexpected non-whitespace character after JSON at position 12';observer();
+assert(button.message.textContent.includes('未保存'));assert(button.message.textContent.includes('JSON'));assert(!button.message.hidden);assert(button.message.scrolled);
+assert.equal(out.value,'participant original draft');assert.equal(refs.value,'participant original references');
+error.textContent='源码依据格式为 path:起始行-结束行';observer();assert(button.message.textContent.includes(error.textContent));
+error.textContent='';observer();assert(button.message.hidden);
+assert.equal(doc.documentElement.dataset.submissionUiVersion,'A-D07-submission-ui-v1');
+console.log('PASS: error near button, JSON/citation errors visible to mock DOM, original draft unchanged, cleared error hidden; mock only');

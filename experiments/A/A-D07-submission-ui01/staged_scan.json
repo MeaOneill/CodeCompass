@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "errors": [],
+  "files": 22,
+  "scope": "staged Git blobs in explicitly A-owned paths; private databases, keys and production identities excluded",
+  "items": [
+    {
+      "path": ".gitattributes",
+      "sha256": "12eda04ff5fc3ee7b4374ef5d923a93e6de38d8eeb381fcdeb159bef03e0f3ba"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "76a190b5fc994d0f24954e47fc38e1769dfb57174f36191d2f6043988f924ea4"
+    },
+    {
+      "path": "app/A_D07_submission_v1/submission.js",
+      "sha256": "d1fdea1dffe6c98483199725904773757196fc88aebe77ca994661803c335884"
+    },
+    {
+      "path": "configs/frozen/A-D07-submission-ui-v1/manifest.json",
+      "sha256": "2f9f0e454932697d6e1311583762c7c46cb8805bc7abbca76de4c0fd5c4097dc"
+    },
+    {
+      "path": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/app/A_D07_submission_v1/submission.js",
+      "sha256": "d1fdea1dffe6c98483199725904773757196fc88aebe77ca994661803c335884"
+    },
+    {
+      "path": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/scripts/A/serve_d07_submission_v1.py",
+      "sha256": "f88bfb0ee6f2402ec44c1390f22580e71697340b536abf2fa25c301d5508fe48"
+    },
+    {
+      "path": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/tests/A/test_submission_ui_d07.py",
+      "sha256": "60ce23ba1dbe440b81d4cdd4d95a02a29982a38817d837c3c419dd5d095acf66"
+    },
+    {
+      "path": "docs/requests/A-D07-submission-ui.md",
+      "sha256": "9f705884d8ee1e0c32ca5dcac0123a225c5f38b0c4fed28480fae9066e346dfb"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/deployment-health.json",
+      "sha256": "a9ec9083d4e3f4466c6f270b67c1af185ee87801e02a00b2e14cf8128cfe3ad7"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/frozen_parent.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/frozen_parent.stdout.log",
+      "sha256": "422b3340966ff69db850ff4a22ee591bc1696826f4e21bdf353c823edb0e8494"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/http.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/http.stdout.log",
+      "sha256": "b6709c43e2b8d6d72968f1a4e961ad2246ed2d7c2e4ef17c791eef78f034ac6c"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/javascript_syntax.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/javascript_syntax.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/mock_dom.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/mock_dom.stdout.log",
+      "sha256": "f71fd9a6a4962bb7e5196e393c59156c8b71ac838bc7f49ed3e41301fbc8e597"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/mock_dom_entry.cjs",
+      "sha256": "36733dc6c69e4cf3a19cec20686486b8091282834c6748537242a09d1799be7d"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/parent-version-audit.json",
+      "sha256": "c260f8b368204aa34a2301987342fbc09f1bb3563954bf13dcac09b84f4ba800"
+    },
+    {
+      "path": "experiments/A/A-D07-submission-ui01/verification.json",
+      "sha256": "3dc9b2f0082ea272548f86a14b6382dcfabc2ab12b2ed7cbd40038a0e17e0e72"
+    },
+    {
+      "path": "scripts/A/serve_d07_submission_v1.py",
+      "sha256": "f88bfb0ee6f2402ec44c1390f22580e71697340b536abf2fa25c301d5508fe48"
+    },
+    {
+      "path": "tests/A/test_submission_ui_d07.py",
+      "sha256": "60ce23ba1dbe440b81d4cdd4d95a02a29982a38817d837c3c419dd5d095acf66"
+    }
+  ]
+}

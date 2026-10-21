@@ -1,0 +1,31 @@
+{
+  "version": "A-D07-submission-ui-v1",
+  "recorded_at": "2026-10-21T20:03:48.866839+08:00",
+  "parent_runtime": "A-D07-runtime-v1",
+  "parent_commit": "c3a37355cce998f6cfa1170a14454fb8d255e5e5",
+  "core_search_changed": false,
+  "parameters_changed": false,
+  "submission_acceptance_changed": false,
+  "affected_runs": "Later sessions started with scripts/A/serve_d07_submission_v1.py only. P01 original UI records are not relabeled or invalidated.",
+  "visual_usability": "Error mirrored near submit button; no automatic answer/draft edits. Labels clarify format.",
+  "fairness": "Same format-only assets for every method in new entry; P01/P02 versions differ and no method efficacy comparison permitted.",
+  "formal_G2_passed": false,
+  "files": [
+    {
+      "path": "app/A_D07_submission_v1/submission.js",
+      "sha256": "d1fdea1dffe6c98483199725904773757196fc88aebe77ca994661803c335884",
+      "snapshot": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/app/A_D07_submission_v1/submission.js"
+    },
+    {
+      "path": "scripts/A/serve_d07_submission_v1.py",
+      "sha256": "f88bfb0ee6f2402ec44c1390f22580e71697340b536abf2fa25c301d5508fe48",
+      "snapshot": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/scripts/A/serve_d07_submission_v1.py"
+    },
+    {
+      "path": "tests/A/test_submission_ui_d07.py",
+      "sha256": "60ce23ba1dbe440b81d4cdd4d95a02a29982a38817d837c3c419dd5d095acf66",
+      "snapshot": "configs/frozen/A-D07-submission-ui-v1/source_snapshot/tests/A/test_submission_ui_d07.py"
+    }
+  ],
+  "verification": "experiments/A/A-D07-submission-ui01/verification.json"
+}
