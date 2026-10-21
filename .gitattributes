@@ -105,3 +105,8 @@
 /report_materials/B/B-D06-v2/*.csv -text whitespace=cr-at-eol
 /app/B_D06_v2/style.css -text whitespace=cr-at-eol
 /report_materials/B/B-D06-v2/render_config.json -text whitespace=cr-at-eol
+
+# B-D07 second public repository keeps its upstream bytes intact.
+/benchmarks/sources/more_itertools_B_D07/** -text whitespace=cr-at-eol
+/benchmarks/sources/more_itertools_B_D07_v2/** -text whitespace=cr-at-eol
+/benchmarks/B/D07/issues_snapshot.json -text whitespace=cr-at-eol

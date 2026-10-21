@@ -1,0 +1,14 @@
+{
+  "attempted_at": "2026-10-21T15:03:05.317219+00:00",
+  "mode": "HISTORICAL_FALLBACK_NOT_LIVE",
+  "origin": "experiments/B/B-D03-issues01/snapshot.json",
+  "error": {
+    "type": "HTTPError",
+    "http_status": 403
+  },
+  "captured_at": "2026-10-16T14:59:14.062900+00:00",
+  "snapshot_sha256": "bf19204b5e1e8d4161aaca3e47dd3fa2fdcb512c94acc2f7dbb60a73c8b2b0a7",
+  "current_state_claimed": false,
+  "contribution_submitted": false,
+  "source_is_fixture": false
+}

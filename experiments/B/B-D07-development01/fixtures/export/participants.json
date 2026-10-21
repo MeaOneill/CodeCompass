@@ -1,0 +1,26 @@
+[
+  {
+    "participant": "7d4977bd7e286fc0a6f93727",
+    "sessions": 2,
+    "methods": [
+      "B2"
+    ],
+    "completed_submissions": 2,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  },
+  {
+    "participant": "d6c5fc7f357ef57025b9e2db",
+    "sessions": 2,
+    "methods": [
+      "Ours"
+    ],
+    "completed_submissions": 2,
+    "scored": 0,
+    "success_rate": null,
+    "missing_duration": 0,
+    "formal_participant": false
+  }
+]

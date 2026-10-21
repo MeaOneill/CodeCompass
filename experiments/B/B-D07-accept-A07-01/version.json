@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "errors": [],
+  "checked_source_snapshot_parent_files": 55,
+  "old_runtime_audit": {
+    "passed": true,
+    "errors": [],
+    "checked_files": 43,
+    "runtime_version": "A-D07-runtime-v1",
+    "formal_g2_passed": false,
+    "formal_study_allowed": false,
+    "formal_tag_created": false
+  },
+  "version": "A-D07-dev-repair-v3",
+  "formal_G2_passed": false
+}

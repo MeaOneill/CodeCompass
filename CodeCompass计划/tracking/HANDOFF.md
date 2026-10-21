@@ -176,3 +176,10 @@ Owner成员A / Codex Agent A / 糯糯；codex/A-D07-smoke，base=c84e8334d681a86
 剩余仅是真人新协议作答产生实际路径变化并通过独立重放。六题固定封顶、最多两位既有预演者各一次，不能重试追门，不能用自动案例顶替。入口由Agent启动，不需用户运行测试或修代码。实际结果缺失时不填计划数值。最新门禁experiments/A/A-D07-v3-verification02/release_gate.json，协议docs/protocol/A-D07-v0.3-development/protocol.md，源hash configs/frozen/A-D07-dev-repair-v3/manifest.json。真人记录不进Git。正式G2/正式学习效果未放行。
 
 ---
+
+
+## B-D07开发接管与检查点 2026-10-21T23:39:42.873880+08:00
+
+Owner成员B / Codex Agent B / 机器糯糯。前置A-D07=2a24ed994a645da1d0494677de09d7780f17928d，自己的分支codex/B-D07-loop，不从旧main起步。A新55/旧43来源检查与17测试实际通过。新增稳定接口之上的仓库/初测/路线/源码/反馈/长期画像/跨仓库再测/Issue开发入口；A算法与旧冻结文件不改。14专项测试与4条明确夹具闭环通过（回执232/事件363检查），全套回归和恢复尚在进行。真实B-D07两人预演与另一机器未验，不提前放行。
+
+第一版换题备注未清空、辅助函数术语/源码缺项、原始选择未落盘均保留负版本，修复另立journey-2与v2源包；实际浏览器新版截图在report_materials/B/B-D07-browser02，来源agent_browser，不能当真人。更多仓库只作功能案例、不加正式样本数；在线Issue403明确用10月16日历史快照，无新模型调用。

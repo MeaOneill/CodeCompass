@@ -1,0 +1,25 @@
+{
+  "task_id": "B-D07",
+  "owner": "B",
+  "executor": "Codex Agent B",
+  "machine": "糯糯",
+  "registered_at": "2026-10-21T23:39:42.873880+08:00",
+  "base_commit": "2a24ed994a645da1d0494677de09d7780f17928d",
+  "branch": "codex/B-D07-loop",
+  "commands": [
+    {
+      "command": "python scripts/A/audit_d07_v3_version.py --output experiments/B/B-D07-accept-A07-01/version.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m pytest tests/A/test_pilot_d07_v3.py -q --basetemp=tmp/B-D07-accept-A07-v3-01",
+      "exit_code": 0,
+      "passed": 17
+    }
+  ],
+  "initial_sandbox_python_launcher": "FAILED_TO_CREATE_PROCESS; retried in authorized real-user environment; not counted as pass",
+  "A_handoff_overall_day_passed": true,
+  "A_formal_G2_passed": false,
+  "actual_private_human_records_read": false,
+  "model_calls": 0
+}

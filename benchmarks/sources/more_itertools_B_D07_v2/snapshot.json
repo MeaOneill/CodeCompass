@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "object_type": "RepoSnapshot",
+  "is_fixture": false,
+  "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+  "url": "https://github.com/more-itertools/more-itertools",
+  "commit": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+  "license": "MIT",
+  "retrieved_at": "2026-10-21T15:22:03.465688+00:00",
+  "hash": "1c63b7abcc8fb58a292c826425b45c313e89767ac38e7c855a9c8d3141ca6387",
+  "hash_scope": "selected_files_manifest_sha256",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+      "bytes": 1053,
+      "git_blob": "0a523bece3e50519653c4d7a38399baa487fefa1"
+    },
+    {
+      "path": "more_itertools/more.py",
+      "sha256": "1bdc5f323ea18906436a42268b942d5b4d15ac8b3ff17c1211a59fb192fa068e",
+      "bytes": 175454,
+      "git_blob": "9c56ab37558733ece94d676f71d502d8048bc1d5"
+    },
+    {
+      "path": "more_itertools/recipes.py",
+      "sha256": "468ab191bbb5fd62e8603d741e6983acdfa9d697d0ff9252b0c56ffdd24ca9bc",
+      "bytes": 46417,
+      "git_blob": "4ab172110dbf0f16f9fb39591e677a38fcff8cca"
+    }
+  ],
+  "license_path": "LICENSE",
+  "snapshot_scope": "partial_source_bundle",
+  "complete_checkout_included": false
+}

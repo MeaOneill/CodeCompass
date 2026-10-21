@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "checks": 1,
+  "errors": [
+    "LEGACY_STORAGE_SCHEMA_WITHOUT_ORIGINAL_CHOICE_RECEIPTS"
+  ],
+  "actor": "agent_browser",
+  "actual_human_people_verified": false,
+  "answers_exported": false,
+  "formal_G2_passed": false
+}
