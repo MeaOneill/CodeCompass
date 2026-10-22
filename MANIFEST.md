@@ -489,3 +489,12 @@
 | 2026-10-22T00:44:07.515222+08:00 | experiment-plan | docs/B/贡献记录.md | technical-reviewed | B-D07 423 tests; real people and other physical machine pending |
 | 2026-10-22T00:44:07.515222+08:00 | experiment-plan | docs/joint/B-D07-development-checkpoint.md | technical-reviewed | B-D07 423 tests; real people and other physical machine pending |
 | 2026-10-22T00:44:07.515222+08:00 | experiment-plan | report_materials/B/图表索引.md | technical-reviewed | B-D07 423 tests; real people and other physical machine pending |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/状态.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/开发日志.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/贡献记录.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/handoffs/B-D07.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/B-D07_成果与严格复检.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | CodeCompass计划/tracking/STATUS.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | CodeCompass计划/tracking/HANDOFF.md | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/session_B-D07_pilot_20261022_145715.json | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |
+| 2026-10-22T14:57:15.975889+08:00 | experiment-plan | docs/B/session.json | pilot-confirmation | Two real people confirmed by user; no identities or answers; remaining gates open |

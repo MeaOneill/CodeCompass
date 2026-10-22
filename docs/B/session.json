@@ -5,7 +5,7 @@
   "machine": "糯糯",
   "planned_date": "2026-10-21",
   "actual_date": "2026-10-22",
-  "updated_at": "2026-10-22T00:43:22.267389+08:00",
+  "updated_at": "2026-10-22T14:57:15.975889+08:00",
   "branch": "codex/B-D07-loop",
   "base_commit": "2a24ed994a645da1d0494677de09d7780f17928d",
   "tested_software_commit": "a5b4db7bccb219e0972af191a74080343c92131b",
@@ -28,7 +28,7 @@
   "fixture_event_checks": 363,
   "browser_actor": "agent_browser",
   "browser_formal_participants": 0,
-  "actual_pilot_people_confirmed": null,
+  "actual_pilot_people_confirmed": 2,
   "actual_pilot_90min_verified": false,
   "actual_other_machine_verified": false,
   "independent_A_review": "NOT_REVIEWED",
@@ -37,5 +37,10 @@
   "formal_study_allowed": false,
   "main_merged": false,
   "formal_tag_created": false,
-  "git_sync": "TESTED_SOFTWARE_PUSHED_REMOTE_SHA_EQUALS_HEAD; final documentation commit follows"
+  "git_sync": "Previous software and closeout pushed; this pilot confirmation receipt follows",
+  "pilot_confirmation_source": "Explicit user confirmation of two different real people",
+  "pilot_receipt_audit_passed": true,
+  "pilot_receipt_audit_checks": 293,
+  "pilot_person_to_group_mapping": "NOT_ESTABLISHED",
+  "pilot_90min_burden_review": "NOT_CONFIRMED"
 }
