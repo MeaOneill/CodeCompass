@@ -1,0 +1,57 @@
+{
+  "owner": "B",
+  "executor": "Codex Agent B",
+  "actual_date": "2026-10-22",
+  "runtime_version": "B-D07-development-journey-4",
+  "source_digest": "591593abd41057ee95d51928d6445efaf9d6c2cde9ccccfaff6df4dcca92bffd",
+  "previous_commit": "dcd84d480bb7b8538043a1c903a3dba5e15515ef",
+  "status": "IN_PROGRESS_USABILITY_REWORK",
+  "handoff_allowed": false,
+  "whole_day_passed": false,
+  "formal_G2_passed": false,
+  "usability_passed": false,
+  "new_version_real_pilot": "NOT_RUN",
+  "prior_version_real_pilot": "FAILED_USER_REPORTED_GOAL_AND_SEQUENCE_CONFUSION",
+  "full_tests": {
+    "passed": 425,
+    "exit": 0,
+    "seconds": 252.34,
+    "raw": "full-tests.txt",
+    "scope": "Before final read-only review and automatic step positioning additions"
+  },
+  "final_targeted": {
+    "passed": 24,
+    "exit": 0,
+    "seconds": 12.24,
+    "raw": "final-targeted-tests.txt",
+    "scope": "Current version, including read-only review and starter failure receipts"
+  },
+  "browser_verified": [
+    "task brief first",
+    "four pretest skips retained as missing",
+    "real planner route with descriptive titles",
+    "purpose/action/continuation criteria for each material",
+    "independent quiz after first material",
+    "wrong-answer feedback then remaining route",
+    "review completed material and return to current step",
+    "submission deferred until route complete",
+    "empty patch submission blocked, session remains ACTIVE",
+    "explicit unfinished withdrawal",
+    "profile source reference",
+    "different task in second repository",
+    "plain text learning record without JSON upload",
+    "refresh preserves submitted record"
+  ],
+  "browser_scope": "agent_browser; no humans represented",
+  "model_calls": 0,
+  "second_machine_verified": false,
+  "final_task_grade": null,
+  "screenshot_method": "Native CUA viewport PNG; full-page capture unavailable; screenshots unedited",
+  "prior_intermediate_runs": [
+    "browser01 source guard rejected hot-edited records; retained locally",
+    "browser02/03 intermediate UI checks only; not final source audit"
+  ],
+  "receipt_checks": 103,
+  "event_checks": 170,
+  "raw_human_data_exported": false
+}

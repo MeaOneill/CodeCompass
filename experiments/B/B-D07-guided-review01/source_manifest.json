@@ -1,0 +1,25 @@
+{
+  "runtime_version": "B-D07-development-journey-4",
+  "source_files": {
+    "app/B_D07/guide.js": "cee93d6901d3457e19ecff86721e963ccb703cf8d899c5a78b892d9e97f04523",
+    "scripts/B/starter_d07.py": "1ac9f561af1c130ecaf7da42623838ea93dc7f3db5f43ead2d5569a0c4782bf6",
+    "src/codecompass/app/journey_d07.py": "10020e0ef12c32f2a42d09491c25e47238794c9b36a22e6f3f68cf58243c3aec",
+    "scripts/B/serve_d07.py": "c09bce2a2d35680cdc228c62f476929e80fc14d72968d3b0b34d83547e518d86",
+    "app/B_D07/index.html": "971402fef3e3d10538884b12cbbddac6de5e962d40a05ea1005640ee48b4b1b9",
+    "app/B_D07/app.js": "b8c03edc646cc20155f2f51128505392ea788f56d0911274d0f5e115ff0d6410",
+    "app/B_D07/style.css": "7be999b4354a0ce85ed277aecdf7637a010933fada0c38706977e544d4a7035a",
+    "scripts/A/relay_d07.py": "8aa1d3281c28a9dceb9cade675dcf341bf13a7dd15687a7adb0d1d042183467f",
+    "src/codecompass/planner/runtime_d07.py": "79c1bf60c0dfaf2ce04d2da430f293b0cb097f222d17ebbead195d2168466116",
+    "src/codecompass/learner/model.py": "c868fc7739bae718ea9dbb6af0fbe24db094ba213866fdf24e8ec76536e44d9b",
+    "benchmarks/B/D07/cross_project.json": "1d893c3b3c6c80eec6d15f121aa3aeb3e58e835c4b1de6a95dbb54fa54b935fa",
+    "benchmarks/B/executable-v2/registry.json": "4e736fdcb9534133dc5601a7a43efbec6ccf0900eb87b0a7ffe41e651181dab4",
+    "src/codecompass/app/diagnostics_v2.py": "cbe7b7e23207200457f6b35ccca5bede44d3aef3bd14d49e930052ac1abc2df2",
+    "src/codecompass/app/diagnostic_items.py": "a95736435804b926dd874d4eaff8f76b21c933eab79f162a0d1b869fa4249c71",
+    "src/codecompass/app/relay_v2.py": "a0c7c596ed0f785e5f3d6a3c6f3b3148da1cd82cf5d132c064a2b5cfb0a5fc24",
+    "src/codecompass/app/experiment.py": "df0d55c69db276fe7b90c6e5edd8023438488a688be06509fecb812f2d434950",
+    "src/codecompass/app/study_d06.py": "3a765c3cf0c2c26f470222d2623e18724817f2764b1cb4fcd2dd1e32df0d7c4f"
+  },
+  "source_digest": "591593abd41057ee95d51928d6445efaf9d6c2cde9ccccfaff6df4dcca92bffd",
+  "actor": "agent_browser",
+  "formal_participants": 0
+}

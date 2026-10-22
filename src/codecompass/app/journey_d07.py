@@ -20,9 +20,9 @@ from codecompass.learner import initial_state,validate_state,update_evidence,pla
 from codecompass.planner.diagnostics import evidence_for
 from codecompass.issues.candidates import match_issues
 
-VERSION='B-D07-development-journey-3'
+VERSION='B-D07-development-journey-4'
 CROSS_ID='B07_more_chunked'
-SOURCE_FILES=('src/codecompass/app/journey_d07.py','scripts/B/serve_d07.py','app/B_D07/index.html','app/B_D07/app.js','app/B_D07/style.css',
+SOURCE_FILES=('app/B_D07/guide.js','scripts/B/starter_d07.py','src/codecompass/app/journey_d07.py','scripts/B/serve_d07.py','app/B_D07/index.html','app/B_D07/app.js','app/B_D07/style.css',
     'scripts/A/relay_d07.py','src/codecompass/planner/runtime_d07.py','src/codecompass/learner/model.py',
     'benchmarks/B/D07/cross_project.json','benchmarks/B/executable-v2/registry.json',
     'src/codecompass/app/diagnostics_v2.py','src/codecompass/app/diagnostic_items.py','src/codecompass/app/relay_v2.py',
@@ -186,6 +186,18 @@ class JourneyCollector(StableRelayCollector):
         if s['task_id']==CROSS_ID:v['quiz']=public_question(RETEST) if s['phase']=='quiz' else None;v['patch_task']=False
         v['protocol_version']=VERSION;v['limitation']='B-D07开发闭环候选；长期画像与跨项目来源可恢复；非正式实验。更多仓库案例不属于正式题池。'
         return v
+
+    def review_material(self,sid,unit):
+        # Reading a previously completed source is not new mastery evidence.
+        with self.connect() as db:
+            row=db.execute('SELECT value FROM sessions WHERE id=?',(sid,)).fetchone()
+        if not row:raise ValueError('学习记录不存在')
+        s=json.loads(row[0])
+        if s['phase']=='quiz':raise ValueError('独立小题进行中，请先作答或退出')
+        if unit not in s['completed']:raise ValueError('这里只能回看已经读过的材料')
+        materials=[m for m in s['data']['materials'] if m['unit_id']==unit]
+        if not materials:raise ValueError('当前记录没有这份材料')
+        return dict(unit_id=unit,materials=materials,review_only=True,mastery_granted=False)
 
     def tasks(self):
         rows=super().tasks()

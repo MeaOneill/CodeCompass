@@ -8,6 +8,7 @@ import sys
 from urllib.parse import urlparse,parse_qs
 ROOT=Path(__file__).resolve().parents[2];sys.path[:0]=[str(ROOT),str(ROOT/'src')]
 from codecompass.app.journey_d07 import JourneyCollector
+from scripts.B.starter_d07 import starter
 
 
 def make_server(c,port=8780):
@@ -25,11 +26,13 @@ def make_server(c,port=8780):
             if not self.valid_host():return self.send(403,{})
             u=urlparse(self.path);q=parse_qs(u.query)
             try:
-                if u.path in ('/','/app.js','/style.css'):
-                    name,mime={'/':('index.html','text/html'),'/app.js':('app.js','text/javascript'),'/style.css':('style.css','text/css')}[u.path]
+                if u.path in ('/','/app.js','/guide.js','/style.css'):
+                    name,mime={'/':('index.html','text/html'),'/app.js':('app.js','text/javascript'),'/guide.js':('guide.js','text/javascript'),'/style.css':('style.css','text/css')}[u.path]
                     return self.send(200,(ROOT/'app/B_D07'/name).read_bytes().replace(b'__TOKEN__',token.encode()),mime+'; charset=utf-8')
+                if u.path=='/api/starter':return self.send(200,starter(ROOT,q.get('task',[''])[0]),'application/zip')
                 if u.path=='/api/tasks':return self.send(200,c.tasks())
                 if u.path=='/api/session':return self.send(200,c.get(q.get('id',[''])[0]))
+                if u.path=='/api/material':return self.send(200,c.review_material(q.get('id',[''])[0],q.get('unit',[''])[0]))
                 if u.path=='/api/profile':return self.send(200,c.profile(q.get('user',[''])[0]))
                 if u.path=='/api/issues':return self.send(200,c.issues(q.get('id',[''])[0]))
                 return self.send(404,{})

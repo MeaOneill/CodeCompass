@@ -70,7 +70,7 @@ def audit(database,actor):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--database',type=Path,required=True);p.add_argument('--actor',choices=['test_fixture','agent_browser','human_manual'],required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-    if a.actor=='human_manual' and not a.output.resolve().is_relative_to((ROOT/'experiments/B/B-D07-human-live01').resolve()):raise ValueError('Human receipt audit stays in the ignored local pilot archive')
+    if a.actor=='human_manual' and not any(a.output.resolve().is_relative_to((ROOT/rel).resolve()) for rel in ('experiments/B/B-D07-human-live01','experiments/B/B-D07-human-guided-v4')):raise ValueError('Human receipt audit stays in the ignored local pilot archive')
     result=audit(a.database,a.actor);a.output.parent.mkdir(parents=True,exist_ok=True)
     with a.output.open('x',encoding='utf-8') as f:json.dump(result,f,ensure_ascii=False,indent=2)
     print(json.dumps({k:result[k] for k in ('passed','checks','errors','actor','actual_human_people_verified')}));raise SystemExit(0 if result['passed'] else 1)

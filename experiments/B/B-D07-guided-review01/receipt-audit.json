@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": 103,
+  "errors": [],
+  "actor": "agent_browser",
+  "version": "B-D07-development-journey-4",
+  "profiles": 1,
+  "actual_human_people_verified": false,
+  "formal_participants": 0,
+  "answers_exported": false,
+  "private_final_keys_read": false,
+  "formal_G2_passed": false
+}

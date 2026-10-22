@@ -1,0 +1,46 @@
+[
+  {
+    "session_id": "d17a74b3f39ff6708e5aa4f1",
+    "participant": "0254d9f75cb87f9ad81ce1a7",
+    "task_id": "task_002",
+    "method": "Ours",
+    "actor": "agent_browser",
+    "status": "WITHDRAWN",
+    "duration_seconds": 70.3900000000001,
+    "observed_seconds": 70.3900000000001,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "NOT_SUBMITTED",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "fail",
+    "response_sha256": null,
+    "event_count": 14,
+    "source_commit": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+  },
+  {
+    "session_id": "9ce295126d06f51433487722",
+    "participant": "0254d9f75cb87f9ad81ce1a7",
+    "task_id": "B07_more_chunked",
+    "method": "Ours",
+    "actor": "agent_browser",
+    "status": "SUBMITTED",
+    "duration_seconds": 31.59400000000005,
+    "observed_seconds": 31.59400000000005,
+    "duration_valid": true,
+    "limit_seconds": 1500,
+    "success": null,
+    "score_status": "PENDING_INDEPENDENT_FINAL_SCORING",
+    "missing": [
+      "FINAL_SCORE_MISSING"
+    ],
+    "t_cap_seconds": null,
+    "quiz_outcome": "pass",
+    "response_sha256": "4b99ba1f9da2f00dcfd89d2845471ecce14cd8ea219e1dee221966f92e901ffd",
+    "event_count": 11,
+    "source_commit": "4aeb4338ae1407d8da9723e86da99efeb446f719"
+  }
+]

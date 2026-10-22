@@ -24,6 +24,18 @@ def enrolled(c):
     p=c.enroll(True)['participant'];c.pretest(p,[q['answer'] for q in PRETEST]);return p
 
 
+def test_review_is_read_only_and_unavailable_during_independent_quiz(c):
+    user=enrolled(c);s=c.create('task_002',participant=user);sid=s['session_id'];unit=s['route'][0]
+    c.action(sid,'complete_reading')
+    with pytest.raises(ValueError,match='独立小题'):c.review_material(sid,unit)
+    c.action(sid,'answer',{'choice':0})
+    before=stored(c,sid);profile=c.profile(user)
+    r=c.review_material(sid,unit)
+    assert r['materials'] and r['mastery_granted'] is False
+    assert before==stored(c,sid) and profile['revision']==c.profile(user)['revision']
+    with pytest.raises(ValueError):c.review_material(sid,'../../private')
+
+
 def stored(c,sid):
     with c.connect() as db:return json.loads(db.execute('SELECT value FROM sessions WHERE id=?',(sid,)).fetchone()[0])
 
@@ -171,7 +183,7 @@ def test_cross_case_has_real_take_helper_and_matching_explanation(c):
     user=enrolled(c);s=c.create(CROSS_ID,participant=user)
     assert 'takewhile' not in ' '.join(s['task']['requirements'])
     assert any(m['source_span']['path']=='more_itertools/recipes.py' and 'def take(' in m['text'] for m in s['source_context'])
-    assert s['protocol_version']=='B-D07-development-journey-3'
+    assert s['protocol_version']=='B-D07-development-journey-4'
 
 
 def test_planner_failure_keeps_original_choice_and_accepted_evidence(c,monkeypatch):

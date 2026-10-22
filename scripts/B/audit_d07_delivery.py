@@ -11,7 +11,7 @@ from codecompass.app.experiment import digest
 
 
 def audit(root=ROOT):
-    root=Path(root);m=json.loads((root/'configs/B/B-D07-development-seal/manifest.json').read_text(encoding='utf-8'));errors=[]
+    root=Path(root);m=json.loads((root/'configs/B/B-D07-guided-v4-seal/manifest.json').read_text(encoding='utf-8'));errors=[]
     for row in m['files']:
         p=(root/row['path']).resolve()
         if not p.is_relative_to(root.resolve()) or not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:errors.append('FILE_MISMATCH:'+row['path'])
@@ -22,7 +22,7 @@ def audit(root=ROOT):
         if m[key] is not False:errors.append('UNJUSTIFIED_FORMAL_APPROVAL:'+key)
     return dict(passed=not errors,errors=errors,checked_files=len(m['files']),parent_new_checks=parent['checked_source_snapshot_parent_files'],
         parent_old_checks=parent['old_runtime_audit']['checked_files'],runtime_source_digest=m['runtime_source_digest'],
-        technical_delivery_ready=not errors,human_rehearsal_evaluated=False,other_machine_evaluated=False,
+        technical_delivery_ready=False,integrity_passed=not errors,usability_review_required=True,human_rehearsal_evaluated=False,other_machine_evaluated=False,
         whole_B07_day_passed=None,formal_G2_passed=False,formal_study_allowed=False,
         conclusion='Engineering integrity only; actual pilot/other-machine receipts and cross-review remain separate')
 

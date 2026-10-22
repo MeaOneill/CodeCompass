@@ -50,3 +50,5 @@ secrets*.json
 /docs/B/B-D07_真人预演进行记录.md
 # Do not ignore all experiment logs, CSV/JSON, figures or reports.
 # Review their size, identity data and redistribution rights before staging.
+
+/experiments/B/B-D07-human-guided-v4/

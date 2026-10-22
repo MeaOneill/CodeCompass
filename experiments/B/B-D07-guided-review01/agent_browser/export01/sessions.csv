@@ -1,0 +1,3 @@
+session_id,participant,task_id,method,actor,status,duration_seconds,observed_seconds,duration_valid,limit_seconds,success,score_status,missing,t_cap_seconds,quiz_outcome,response_sha256,event_count,source_commit
+d17a74b3f39ff6708e5aa4f1,0254d9f75cb87f9ad81ce1a7,task_002,Ours,agent_browser,WITHDRAWN,70.3900000000001,70.3900000000001,True,1500,NA,NOT_SUBMITTED,"[""FINAL_SCORE_MISSING""]",NA,fail,NA,14,4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d
+9ce295126d06f51433487722,0254d9f75cb87f9ad81ce1a7,B07_more_chunked,Ours,agent_browser,SUBMITTED,31.59400000000005,31.59400000000005,True,1500,NA,PENDING_INDEPENDENT_FINAL_SCORING,"[""FINAL_SCORE_MISSING""]",NA,pass,4b99ba1f9da2f00dcfd89d2845471ecce14cd8ea219e1dee221966f92e901ffd,11,4aeb4338ae1407d8da9723e86da99efeb446f719

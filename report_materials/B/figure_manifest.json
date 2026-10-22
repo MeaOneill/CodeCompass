@@ -1106,5 +1106,59 @@
         "sha256": "ce2939502a7a69b6cbc03c6d52f37207e6c5a40248ad0d1f286922487b2e54e6"
       }
     ]
+  },
+  {
+    "path": "report_materials/B/B-D07-guided-v4/final04/F11_01_goal.png",
+    "caption": "任务目标、窗口例子与完成标准",
+    "sha256": "bf922fc98822ca0ccfb53260be070883cbf0d3f9b6cd1244b54fc57489565ddd",
+    "pixels": [
+      1265,
+      712
+    ],
+    "source_digest": "591593abd41057ee95d51928d6445efaf9d6c2cde9ccccfaff6df4dcca92bffd",
+    "actor": "agent_browser",
+    "formal_participants": 0,
+    "run_id": "B-D07-guided-browser04",
+    "figure": "F11",
+    "evidence_type": "development_function_case",
+    "dpi": null,
+    "render_entry": "CUA Tab.getScreenshot; unedited viewport screenshot",
+    "not_evidence_of_learning_effect": true
+  },
+  {
+    "path": "report_materials/B/B-D07-guided-v4/final04/F11_02_route.png",
+    "caption": "规划路线与本步目的、阅读动作及继续标准",
+    "sha256": "f6d87041ebfd0ba949e0b8060cb3e7a556e74d2fc9441988d204a0a706e8bd0d",
+    "pixels": [
+      1265,
+      712
+    ],
+    "source_digest": "591593abd41057ee95d51928d6445efaf9d6c2cde9ccccfaff6df4dcca92bffd",
+    "actor": "agent_browser",
+    "formal_participants": 0,
+    "run_id": "B-D07-guided-browser04",
+    "figure": "F11",
+    "evidence_type": "development_function_case",
+    "dpi": null,
+    "render_entry": "CUA Tab.getScreenshot; unedited viewport screenshot",
+    "not_evidence_of_learning_effect": true
+  },
+  {
+    "path": "report_materials/B/B-D07-guided-v4/final04/F11_03_work.png",
+    "caption": "后置作品准备、文件说明与未完成退出",
+    "sha256": "2935b47d96df390fb275566ed7b238561135051fbbd59a4ef0ffcb156665f7ad",
+    "pixels": [
+      1265,
+      712
+    ],
+    "source_digest": "591593abd41057ee95d51928d6445efaf9d6c2cde9ccccfaff6df4dcca92bffd",
+    "actor": "agent_browser",
+    "formal_participants": 0,
+    "run_id": "B-D07-guided-browser04",
+    "figure": "F11",
+    "evidence_type": "development_function_case",
+    "dpi": null,
+    "render_entry": "CUA Tab.getScreenshot; unedited viewport screenshot",
+    "not_evidence_of_learning_effect": true
   }
 ]

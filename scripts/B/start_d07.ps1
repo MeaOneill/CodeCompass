@@ -15,7 +15,7 @@ try {
     }
     $env:PYTHONUTF8 = '1'
     $env:PYTHONPATH = 'src'
-    $databasePath = if ($Actor -eq 'human_manual') { 'experiments/B/B-D07-human-live01/state.sqlite3' } else { 'tmp/B-D07-user-development.sqlite3' }
+    $databasePath = if ($Actor -eq 'human_manual') { 'experiments/B/B-D07-human-guided-v4/state.sqlite3' } else { 'tmp/B-D07-user-guided-v4.sqlite3' }
     & $pythonPath scripts/B/serve_d07.py --port $Port --actor $Actor --database $databasePath
     exit $LASTEXITCODE
 } finally { Pop-Location }
