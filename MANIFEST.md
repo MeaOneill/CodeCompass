@@ -571,3 +571,11 @@
 | 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/session.json | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
 | 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/session_B-D07_before_clarity_acceptance.json | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
 | 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/B-D07_最后两项验收.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/状态.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/开发日志.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/handoffs/B-D07.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/B-D07_最后两项验收.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/session.json | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/session_B-D07_pilot_user_accepted.json | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/自动生成引导的当前边界.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
+| 2026-10-22T20:11:06.581961+08:00 | experiment-plan | docs/B/B-D07_另一台电脑启动.md | pilot-user-accepted | Two-person criterion accepted explicitly by user; no invented raw events; other physical machine remains |
