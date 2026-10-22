@@ -564,3 +564,10 @@
 | 2026-10-22T19:33:06.003557+08:00 | experiment-plan | scripts/B/start_d07.ps1 | WIP-usability-rework | User failed prior experience; handoff permission retracted; new candidate pending real usability review |
 | 2026-10-22T19:33:06.003557+08:00 | experiment-plan | src/codecompass/app/journey_d07.py | WIP-usability-rework | User failed prior experience; handoff permission retracted; new candidate pending real usability review |
 | 2026-10-22T19:33:06.003557+08:00 | experiment-plan | tests/B/test_journey_d07.py | WIP-usability-rework | User failed prior experience; handoff permission retracted; new candidate pending real usability review |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/状态.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/开发日志.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/handoffs/B-D07.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/B-D07_改版验收说明.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/session.json | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/session_B-D07_before_clarity_acceptance.json | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
+| 2026-10-22T20:05:19.379657+08:00 | experiment-plan | docs/B/B-D07_最后两项验收.md | clarity-accepted | User accepts clearer goal/sequence; only real pilot and second-machine evidence still open |
