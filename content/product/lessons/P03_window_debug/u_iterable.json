@@ -1,0 +1,25 @@
+{
+  "unit_id": "u_iterable",
+  "title": "追踪输入如何被消费",
+  "goal": "排错前先分清数据来源和读取位置",
+  "reason": "窗口从输入中逐次取值，先区分类型检查和数据已经被消费的问题。",
+  "explanation": "参数排错不只是在异常信息里寻找一个单词。先确认输入能否逐项读取，再看读取是否已经发生。列表可以重新取得迭代器，同一个迭代器则保留当前位置；next取走的值不会自动回来。窗口函数接收src后将它交给tee，后面为了错开位置还会调用next，因此调试时应观察每一步消耗了什么。这里的is_iterable只尝试iter(obj)，用于识别不可迭代对象，不负责验证窗口大小。把src的问题与size的问题分开，才能说明异常究竟来自哪项约束。",
+  "example": {
+    "code": "it = iter([5, 7, 9])\nprint(next(it))\nprint(list(it))",
+    "output": "5\n[7, 9]"
+  },
+  "completion_criteria": "能区分当前源码表现、任务契约、异常类型与具体使用位置。",
+  "concept_ids": [
+    "python.iterator_protocol"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 61,
+      "end_line": 76,
+      "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+    }
+  ]
+}

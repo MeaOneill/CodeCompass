@@ -1,0 +1,37 @@
+{
+  "unit_id": "task_003__unique_iter",
+  "title": "理解保序去重、key与惰性",
+  "goal": "从真实unique_iter源码解释保序、判重与按需生成",
+  "reason": "当前任务需要用集合记录见过的key，并理解yield何时读取输入。",
+  "explanation": "unique_iter不会先排序再去重，而是按输入顺序逐个检查。seen集合只记录已经见过的key；首次出现时先加入集合，再yield原来的元素，所以输出保留第一次出现的位置。key省略时比较元素本身，提供函数时比较函数结果，但输出仍是原元素。例如按小写字母判重时，A和a相同，只留下最先出现的那个。函数含有yield，调用后得到生成器，只有请求下一个结果时才读取输入；重复项可能在寻找下一个新值时被连续消耗。源码中的key_func、seen.add和yield分别对应判重规则、记忆与按需输出。",
+  "example": {
+    "code": "from boltons.iterutils import unique_iter\nprint(list(unique_iter(['A', 'a', 'B', 'A'], key=str.lower)))",
+    "output": "['A', 'B']"
+  },
+  "question": "seen集合保存什么，yield返回什么？",
+  "completion_criteria": "能解释三个行为题并定位key_func、seen及yield源码。",
+  "concept_ids": [
+    "source.function.iterutils.unique_iter",
+    "python.hash_set",
+    "python.key_function",
+    "python.generator_laziness"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 834,
+      "end_line": 834,
+      "content_hash": "d2ea8421db5f589c1ebf06f63eb6f88476757afd4e111e2185ada9841d3491c4"
+    },
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 851,
+      "end_line": 867,
+      "content_hash": "47ee7d413a63eb939b50e6da3e73bb94019cbd6f3a7c1c3bd67d803ae391e16b"
+    }
+  ],
+  "question_id": "product-20261025-v1-boltons-unique-set"
+}

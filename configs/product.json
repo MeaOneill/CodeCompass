@@ -1,0 +1,19 @@
+{
+  "version": "product-source-route-20261025-v1",
+  "schema_version": "1",
+  "content_version": "product-20261026-v1",
+  "planner_version": "D05-adaptive-v1",
+  "alpha": 0.5,
+  "gamma": 1.0,
+  "threshold": 0.7,
+  "quantile": 0.1,
+  "quiz_cost": 1,
+  "assistant_mode": "auto",
+  "search": {
+    "beam_width": 16,
+    "candidate_limit": 50,
+    "max_expansions": 100000,
+    "time_limit_seconds": 5
+  },
+  "assistant_config": "configs/B/D06_v2_deepseek.json"
+}

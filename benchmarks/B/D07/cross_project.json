@@ -1,0 +1,203 @@
+{
+  "snapshot": {
+    "schema_version": "1.0.0",
+    "object_type": "RepoSnapshot",
+    "is_fixture": false,
+    "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+    "url": "https://github.com/more-itertools/more-itertools",
+    "commit": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+    "license": "MIT",
+    "retrieved_at": "2026-10-21T15:22:03.465688+00:00",
+    "hash": "1c63b7abcc8fb58a292c826425b45c313e89767ac38e7c855a9c8d3141ca6387",
+    "hash_scope": "selected_files_manifest_sha256",
+    "files": [
+      {
+        "path": "LICENSE",
+        "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+        "bytes": 1053,
+        "git_blob": "0a523bece3e50519653c4d7a38399baa487fefa1"
+      },
+      {
+        "path": "more_itertools/more.py",
+        "sha256": "1bdc5f323ea18906436a42268b942d5b4d15ac8b3ff17c1211a59fb192fa068e",
+        "bytes": 175454,
+        "git_blob": "9c56ab37558733ece94d676f71d502d8048bc1d5"
+      },
+      {
+        "path": "more_itertools/recipes.py",
+        "sha256": "468ab191bbb5fd62e8603d741e6983acdfa9d697d0ff9252b0c56ffdd24ca9bc",
+        "bytes": 46417,
+        "git_blob": "4ab172110dbf0f16f9fb39591e677a38fcff8cca"
+      }
+    ],
+    "license_path": "LICENSE",
+    "snapshot_scope": "partial_source_bundle",
+    "complete_checkout_included": false
+  },
+  "source_root": "benchmarks/sources/more_itertools_B_D07_v2",
+  "task_id": "B07_more_chunked",
+  "units": [
+    {
+      "schema_version": "1.1.0",
+      "object_type": "LearningUnit",
+      "is_fixture": false,
+      "id": "B07_more_chunked",
+      "source_spans": [
+        {
+          "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+          "path": "more_itertools/more.py",
+          "start_line": 215,
+          "end_line": 215,
+          "content_hash": "cf026de9b5050e9d19a236e701c5a5aecfd657ef355847709a91d30cb381b970"
+        },
+        {
+          "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+          "path": "more_itertools/more.py",
+          "start_line": 234,
+          "end_line": 250,
+          "content_hash": "31162d6aeaa70ce418792083bae8689f1891d22c11db623500dd2ab73410148e"
+        }
+      ],
+      "concept_ids": [
+        "python.iterator_protocol",
+        "source.function.more_itertools.chunked"
+      ],
+      "prerequisites": [],
+      "provenance": {
+        "kind": "static_source",
+        "evidence": [
+          "https://github.com/more-itertools/more-itertools/blob/4aeb4338ae1407d8da9723e86da99efeb446f719/more_itertools/more.py#L215"
+        ],
+        "proposed_by": "Codex Agent B",
+        "review_status": "pending",
+        "reviewer": null,
+        "confidence": null
+      },
+      "base_cost": 18,
+      "cost_unit": "proxy_cost",
+      "cost_basis": "signature + executable body inclusive lines; functional demo only"
+    }
+  ],
+  "config": {
+    "version": "A-D03-dev-0.1",
+    "cost_unit": "proxy_cost",
+    "cost_policy": "fixed-inclusive-source-lines-v1",
+    "budget": 100,
+    "quantile": 0.1,
+    "threshold": 0.7,
+    "methods": [
+      "B0-pinned-document-prefix",
+      "B2-initial-closure-gain-greedy"
+    ],
+    "routes": {
+      "task_001": [
+        "u_chunked",
+        "u_chunked_iter",
+        "u_iterable"
+      ],
+      "task_002": [
+        "u_windowed_iter",
+        "u_iterable",
+        "u_positive_int"
+      ]
+    },
+    "documentation": {
+      "path": "benchmarks/sources/boltons_B_D02/docs/iterutils.rst",
+      "sha256": "4a1e11f1380a13f798d41fd2a821f1ad8e775e737bf88e7db3bfdfc5f4e294d6"
+    },
+    "undocumented_unit_rule": "Append missing private helper in source-line order; no reordering based on planner result",
+    "diagnostics_implemented": false,
+    "formal_study_ready": false,
+    "human_cost_calibration": null,
+    "unit_costs": {
+      "u_iterable": 16,
+      "u_chunked_iter": 43,
+      "u_chunked": 21,
+      "u_windowed_iter": 39,
+      "u_positive_int": 5
+    }
+  },
+  "materials": [
+    {
+      "unit_id": "B07_more_chunked",
+      "source_span": {
+        "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+        "path": "more_itertools/more.py",
+        "start_line": 215,
+        "end_line": 215,
+        "content_hash": "cf026de9b5050e9d19a236e701c5a5aecfd657ef355847709a91d30cb381b970"
+      },
+      "text": " 215  def chunked(iterable, n, strict=False):"
+    },
+    {
+      "unit_id": "B07_more_chunked",
+      "source_span": {
+        "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+        "path": "more_itertools/more.py",
+        "start_line": 234,
+        "end_line": 250,
+        "content_hash": "31162d6aeaa70ce418792083bae8689f1891d22c11db623500dd2ab73410148e"
+      },
+      "text": " 234      if n is not None and n < 0:\n 235          raise ValueError('n must be at least 0')\n 236  \n 237      iterator = iter(partial(take, n, iter(iterable)), [])\n 238      if strict:\n 239          if n is None:\n 240              raise ValueError('n must not be None when using strict mode.')\n 241  \n 242          def ret():\n 243              for chunk in iterator:\n 244                  if len(chunk) != n:\n 245                      raise ValueError('iterable is not divisible by n.')\n 246                  yield chunk\n 247  \n 248          return ret()\n 249      else:\n 250          return iterator"
+    }
+  ],
+  "source_context": [
+    {
+      "source_span": {
+        "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+        "path": "more_itertools/more.py",
+        "start_line": 9,
+        "end_line": 9,
+        "content_hash": "d427d04299df876e13c006456a6ffe9ed74c5af79ee01c42491426e4bd361205"
+      },
+      "text": "   9  from functools import cached_property, partial, wraps"
+    },
+    {
+      "source_span": {
+        "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+        "path": "more_itertools/more.py",
+        "start_line": 11,
+        "end_line": 27,
+        "content_hash": "3d28caac957ceae9ffd726b86fcd5413caf3a2964b6a1c01b02aaff001b8f592"
+      },
+      "text": "  11  from itertools import (\n  12      chain,\n  13      combinations,\n  14      compress,\n  15      count,\n  16      cycle,\n  17      dropwhile,\n  18      groupby,\n  19      islice,\n  20      permutations,\n  21      repeat,\n  22      starmap,\n  23      takewhile,\n  24      tee,\n  25      zip_longest,\n  26      product,\n  27  )"
+    },
+    {
+      "source_span": {
+        "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+        "path": "more_itertools/recipes.py",
+        "start_line": 113,
+        "end_line": 126,
+        "content_hash": "b570dd814cdab8bf0a669c22c3d0998ac74c05b03fd43216c454144fcf792b91"
+      },
+      "text": " 113  def take(n, iterable):\n 114      \"\"\"Return first *n* items of the *iterable* as a list.\n 115  \n 116          >>> take(3, range(10))\n 117          [0, 1, 2]\n 118  \n 119      If there are fewer than *n* items in the iterable, all of them are\n 120      returned.\n 121  \n 122          >>> take(10, range(3))\n 123          [0, 1, 2]\n 124  \n 125      \"\"\"\n 126      return list(islice(iterable, n))"
+    }
+  ],
+  "target_concept_ids": [
+    "python.iterator_protocol",
+    "source.function.more_itertools.chunked"
+  ],
+  "task": {
+    "task_id": "B07_more_chunked",
+    "repo_commit": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+    "title": "more-itertools跨仓库功能案例：chunked的迭代器消费",
+    "goal": "根据固定源码解释chunked如何消费迭代器，并在新仓库独立再测。仅验证功能，不进正式任务池。",
+    "requirements": [
+      "定位真实chunked函数及源码行号。",
+      "结合提供的take辅助函数，解释iter(callable, sentinel)与partial如何消费迭代器。",
+      "完成一次独立新题；源项目证据不直接复制为目标项目掌握。"
+    ]
+  },
+  "quiz": {
+    "item_id": "B07-more-counter-v1",
+    "concept_id": "python.iterator_protocol",
+    "independent": true,
+    "source": "Independent custom iterator snippet; distinct from boltons quiz",
+    "cost": 1.0,
+    "cost_unit": "proxy_cost",
+    "probability": null
+  },
+  "source_dependencies": "Read-only source excerpt; more.py dependencies are not installed/imported; not a runnable upstream checkout",
+  "formal_task": false,
+  "context_policy": "Supporting take source is common context for every method; not an extra scheduled unit. Actual reading time counts."
+}

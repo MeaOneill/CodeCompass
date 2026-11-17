@@ -1,0 +1,28 @@
+{
+  "b1": {
+    "enabled": true,
+    "model": "deepseek-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "endpoint": "https://api.deepseek.com/responses",
+    "params": {
+      "reasoning": {
+        "effort": "none"
+      }
+    },
+    "max_output_tokens": 1200,
+    "timeout_seconds": 60,
+    "max_repairs": 1,
+    "budget_usd": null,
+    "per_call_reservation_usd": null,
+    "input_usd_per_million": null,
+    "output_usd_per_million": null,
+    "max_response_bytes": 262144,
+    "currency": "CNY",
+    "budget_cny": 5,
+    "per_call_reservation_cny": 0.25,
+    "input_cny_per_million": 2,
+    "output_cny_per_million": 8,
+    "budget_state_path": "tmp/B-D04-deepseek-budget.sqlite3",
+    "max_input_bytes": 80000
+  }
+}

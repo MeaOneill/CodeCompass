@@ -1,0 +1,29 @@
+{
+  "unit_id": "u_windowed_iter",
+  "title": "找到要修改的窗口函数",
+  "goal": "看清窗口大小与相邻输出的关系",
+  "reason": "这是本任务修改的目标函数，需要先保留正常行为。",
+  "explanation": "大小为二的窗口沿着[1,2,3,4]每次移动一格，产生(1,2)、(2,3)、(3,4)，相邻窗口重叠一个元素；分组则通常把数据分成不重叠的块。固定源码第494行第一次使用size：tee(src,size)创建多个可分别前进的视角，再跳过不同数量的开头元素并用zip组合。省略fill时，凑不满窗口就停止；显式fill=None时会在末尾补空值。先定位这两条处理分支，修改参数检查时仍需保留它们的区别。",
+  "example": {
+    "code": "from boltons.iterutils import windowed_iter\nprint(list(windowed_iter([1, 2, 3, 4], 2)))",
+    "output": "[(1, 2), (2, 3), (3, 4)]"
+  },
+  "question": "窗口大小为 3 时，第一个窗口是什么？",
+  "question_status": "首次独立作答可形成对应概念线索；求助后仍可继续练习。",
+  "completion_criteria": "能指出 size 使用位置，并说出正常输入需要保留的行为。",
+  "concept_ids": [
+    "python.tee",
+    "python.keyword_presence"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 472,
+      "end_line": 510,
+      "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+    }
+  ],
+  "question_id": "product-20261024-v1-boltons-window-overlap"
+}

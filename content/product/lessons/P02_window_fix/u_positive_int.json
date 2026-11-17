@@ -1,0 +1,28 @@
+{
+  "unit_id": "u_positive_int",
+  "title": "对照项目里的参数检查",
+  "goal": "区分类型错误与数值错误",
+  "reason": "已有辅助函数是阅读参考，需要逐项对照本任务要求。",
+  "explanation": "参数检查分成两个问题：输入属于什么类型，以及它的值是否在允许范围内。字符串并不是本任务要求的整数，而整数零虽然类型正确，却不满足正数条件。Python 中布尔值与整数存在继承关系，因此只看 isinstance 可能仍然接受 True。项目现有辅助函数可以展示异常处理的风格，但不能假定它满足新的严格要求。请把源码中的每个判断与任务标准逐项比较，先列出边界输入，再决定怎样修改目标函数。",
+  "example": {
+    "code": "print(isinstance(True, int))\nprint(type(True) is int)\nprint(0 > 0)",
+    "output": "True\nFalse\nFalse"
+  },
+  "question": "为什么 True 不能作为本任务的窗口大小？",
+  "question_status": "首次独立作答可形成对应概念线索；求助后仍可继续练习。",
+  "completion_criteria": "能区分 TypeError 与 ValueError，并列出布尔值、零、负数和字符串。",
+  "concept_ids": [
+    "python.type_validation"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 309,
+      "end_line": 313,
+      "content_hash": "8caef359e0d4e99d2c472ea267f3610c1004fa98e8cf89fdd4fed3a45cfaac88"
+    }
+  ],
+  "question_id": "product-20261024-v1-boltons-type-value"
+}

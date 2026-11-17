@@ -1,0 +1,28 @@
+{
+  "unit_id": "u_iterable",
+  "title": "认识“逐个取数据”",
+  "goal": "分清可迭代对象与迭代器",
+  "reason": "窗口函数按顺序读取输入，先理解 iter 和 next。",
+  "explanation": "可迭代对象能交给iter取得迭代器；迭代器记住已经取到哪里，每次next只消耗一个值。列表可以多次取得新的迭代器，而同一个迭代器不会自动回到开头。下面的三个数字中，调用两次next后还剩第三个数。这就是按需读取：不必先把所有数据收集完。源码中的is_iterable只尝试iter(obj)，用TypeError识别无法逐个读取的对象；它不会消费整份输入。阅读完成只记录看过材料，小题结果与掌握证据另行保存。",
+  "example": {
+    "code": "it = iter([10, 20, 30])\nprint(next(it))\nprint(next(it))",
+    "output": "10\n20"
+  },
+  "question": "再调用一次 next(it) 会得到什么？",
+  "question_status": "首次独立作答可形成对应概念线索；求助后仍可继续练习。",
+  "completion_criteria": "能指出 iter(obj) 和 TypeError 的位置，并说明逐次取值。",
+  "concept_ids": [
+    "python.iterator_protocol"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 61,
+      "end_line": 76,
+      "content_hash": "e1779bcbf0cce389c657990670fb93947fa2d01be46955f13ab3cea947d43676"
+    }
+  ],
+  "question_id": "product-20261024-v1-boltons-iterator-next"
+}

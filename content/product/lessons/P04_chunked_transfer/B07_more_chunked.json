@@ -1,0 +1,35 @@
+{
+  "unit_id": "B07_more_chunked",
+  "title": "在新仓库理解chunked与take",
+  "goal": "比较非重叠分组和窗口，识别take如何消费同一迭代器",
+  "reason": "两仓库都使用迭代器，但chunked的分组语义必须在新源码中重新确认。",
+  "explanation": "chunked把连续输入分成互不重叠的组，与每次右移一格的滑动窗口不同。第237行先对输入调用iter，再用partial固定take的参数；iter的双参数形式会反复调用这个函数，直到返回空列表才停止。take的实现位于recipes.py，它通过islice从同一个迭代器取出至多n项，因此取过的数据不会回到下一组。默认strict=False会保留最后不足n项的短组；严格模式才会对不能整分的输入报错。已有窗口学习记录能提示相关概念，但新仓库的边界与行为要靠当前材料和不同新题确认。",
+  "example": {
+    "code": "print(list(chunked([1, 2, 3, 4, 5], 2)))\nprint(take(3, iter([7, 8])))",
+    "output": "[[1, 2], [3, 4], [5]]\n[7, 8]",
+    "execution_context": "pinned_chunked"
+  },
+  "example_context": "本例在下方固定chunked/take源码摘录的上下文中运行，不要求安装完整more-itertools。",
+  "completion_criteria": "能定位chunked第237行及take第126行，并说明短组、停止条件与按需消费。",
+  "concept_ids": [
+    "python.iterator_protocol",
+    "source.function.more_itertools.chunked"
+  ],
+  "source_version": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+  "source_spans": [
+    {
+      "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+      "path": "more_itertools/more.py",
+      "start_line": 215,
+      "end_line": 215,
+      "content_hash": "cf026de9b5050e9d19a236e701c5a5aecfd657ef355847709a91d30cb381b970"
+    },
+    {
+      "snapshot_id": "more-itertools-4aeb4338ae14-v2",
+      "path": "more_itertools/more.py",
+      "start_line": 234,
+      "end_line": 250,
+      "content_hash": "31162d6aeaa70ce418792083bae8689f1891d22c11db623500dd2ab73410148e"
+    }
+  ]
+}

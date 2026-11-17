@@ -1,0 +1,26 @@
+{
+  "unit_id": "u_windowed_iter",
+  "title": "定位size第一次使用",
+  "goal": "区分原函数的实际行为与任务新增契约",
+  "reason": "先定位tee(src, size)，才能判断原有行为和待补校验之间的边界。",
+  "explanation": "固定源码中size第一次出现在第494行的tee调用。它没有先按“内置正整数且排除bool”的新契约校验，所以True可能产生大小为1的窗口，0可能返回空结果，而字符串会在底层调用中失败。它们是当前版本真实行为，不能提前宣称已修复。排错时要分别回答两个问题：现在程序实际上发生了什么，以及根据任务标准应该如何拒绝。后面的fill分支负责短输入和填充值，与size类型检查不是同一件事；不能为了拒绝非法值而破坏正常窗口。",
+  "example": {
+    "code": "from boltons.iterutils import windowed_iter\nfor size in (True, 0, '2'):\n    try: print(repr(size), list(windowed_iter([1, 2], size)))\n    except TypeError: print(repr(size), 'TypeError')",
+    "output": "True [(1,), (2,)]\n0 []\n'2' TypeError"
+  },
+  "completion_criteria": "能区分当前源码表现、任务契约、异常类型与具体使用位置。",
+  "concept_ids": [
+    "python.tee",
+    "python.keyword_presence"
+  ],
+  "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+  "source_spans": [
+    {
+      "snapshot_id": "boltons-4e5faa3d7e40",
+      "path": "boltons/iterutils.py",
+      "start_line": 472,
+      "end_line": 510,
+      "content_hash": "ef49320823735092548826617d71713416bd12a89d8d4d8f060ac9dc06b0e5b8"
+    }
+  ]
+}

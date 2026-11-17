@@ -1,0 +1,13 @@
+.venv/
+venv/
+local_data/
+tmp/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.env.*
+*.key
+*.pem
+*.sqlite*
+*.db

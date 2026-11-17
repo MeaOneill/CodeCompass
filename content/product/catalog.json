@@ -1,0 +1,128 @@
+[
+  {
+    "task_id": "P02_window_fix",
+    "source_task_id": "task_002",
+    "name": "给窗口函数增加输入检查",
+    "goal": "理解滑动窗口，为 size 补上严格的输入检查。",
+    "repository": "https://github.com/mahmoud/boltons",
+    "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "requirements": "需要一点 Python 基础",
+    "outcome_example": "修改代码与简短解释；保留正常窗口输出。",
+    "completion_criteria": [
+      "size 必须是内置正整数；True、False 不算。",
+      "类型不合适时报告 TypeError；零或负整数报告 ValueError。",
+      "正常窗口、空输入及填充值行为保持不变。"
+    ],
+    "submission_type": "code",
+    "unit_ids": [
+      "u_iterable",
+      "u_windowed_iter",
+      "u_positive_int"
+    ],
+    "next_tasks": [
+      "P04_chunked_transfer",
+      "P03_window_debug"
+    ],
+    "available": true,
+    "availability": "完整学习",
+    "unit_titles": {
+      "u_iterable": "认识“逐个取数据”",
+      "u_windowed_iter": "找到要修改的窗口函数",
+      "u_positive_int": "对照项目里的参数检查"
+    }
+  },
+  {
+    "task_id": "P01_unique_read",
+    "source_task_id": "task_003",
+    "name": "读懂保序去重",
+    "goal": "理解重复元素、key 函数和惰性取值。",
+    "repository": "https://github.com/mahmoud/boltons",
+    "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "requirements": "需要一点 Python 基础",
+    "outcome_example": "回答三组行为题并定位源码。",
+    "completion_criteria": [
+      "回答三组行为题并定位源码。"
+    ],
+    "submission_type": "answers",
+    "unit_ids": [
+      "task_003__unique_iter"
+    ],
+    "next_tasks": [
+      "P02_window_fix"
+    ],
+    "available": true,
+    "availability": "完整学习",
+    "unit_titles": {
+      "task_003__unique_iter": "理解保序去重、key与惰性"
+    },
+    "practice_title": "核对保序去重的三种行为",
+    "practice_hint": "每题同时选择输出和源码位置。反思只记录，不等待人工评分。",
+    "practice_button": "核对三组行为与源码",
+    "review_summary": "三组行为题与源码定位已核对，反思已记录；课程完成不等于所有知识已掌握。"
+  },
+  {
+    "task_id": "P03_window_debug",
+    "source_task_id": "task_002",
+    "name": "排查窗口大小错误",
+    "goal": "判断 True、0、字符串调用的问题与异常类型。",
+    "repository": "https://github.com/mahmoud/boltons",
+    "source_version": "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d",
+    "requirements": "需要一点 Python 基础",
+    "outcome_example": "判断True、0、字符串的拒绝理由与异常类型；解释当前源码和严格输入契约的差别。",
+    "completion_criteria": [
+      "区分固定原函数的实际表现与新输入契约。",
+      "正确判断True与字符串应为TypeError，0应为ValueError。",
+      "定位tee(src, size)并记录自己的解释。"
+    ],
+    "submission_type": "answers",
+    "unit_ids": [
+      "u_iterable",
+      "u_windowed_iter",
+      "u_positive_int"
+    ],
+    "next_tasks": [
+      "P02_window_fix",
+      "P04_chunked_transfer"
+    ],
+    "available": true,
+    "availability": "完整学习",
+    "unit_titles": {
+      "u_iterable": "追踪输入如何被消费",
+      "u_windowed_iter": "定位size第一次使用",
+      "u_positive_int": "区分类型错误与取值错误"
+    },
+    "practice_title": "判断三张参数错误卡",
+    "practice_hint": "按任务要求判断拒绝理由与异常类型，区分原函数当前行为和新增契约。",
+    "practice_button": "核对三张错误卡",
+    "review_summary": "True、0与字符串的错误类型和源码位置已核对；解释只作记录。"
+  },
+  {
+    "task_id": "P04_chunked_transfer",
+    "source_task_id": "B07_more_chunked",
+    "name": "比较分组与窗口",
+    "goal": "识别 chunked 和 take，比较重叠窗口与不重叠分组。",
+    "repository": "https://github.com/more-itertools/more-itertools",
+    "source_version": "4aeb4338ae1407d8da9723e86da99efeb446f719",
+    "requirements": "需要一点 Python 基础",
+    "outcome_example": "核对不重叠分组与take消费行为；将新项目练习与已有记录分开回顾。",
+    "completion_criteria": [
+      "定位chunked调用take及可调用迭代器的停止条件。",
+      "完成分组与消费行为练习；新仓库再测可选择不会并补学。",
+      "保留已有相关记录引用，不自动转为新项目掌握。"
+    ],
+    "submission_type": "answers",
+    "unit_ids": [
+      "B07_more_chunked"
+    ],
+    "next_tasks": [],
+    "available": true,
+    "availability": "完整学习",
+    "unit_titles": {
+      "B07_more_chunked": "在新仓库理解chunked与take"
+    },
+    "practice_title": "核对分组与迭代器消费",
+    "practice_hint": "先前的窗口记录只是相关线索。新仓库题目和补学结果分别保存。",
+    "practice_button": "核对分组与消费",
+    "review_summary": "分组与消费练习已核对。新仓库再测结果与已有相关记录分开回顾，不自动授予掌握。"
+  }
+]

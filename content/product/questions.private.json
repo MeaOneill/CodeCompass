@@ -1,0 +1,327 @@
+{
+  "baseline": [
+    {
+      "item_id": "product-20261024-v1-general-base-1",
+      "concept_id": "python.basic_arithmetic",
+      "prompt": "程序打印什么？",
+      "code": "print(2 + 3 * 4)",
+      "choices": [
+        "20",
+        "14",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "先乘后加，结果为14。"
+    },
+    {
+      "item_id": "product-20261024-v1-general-base-2",
+      "concept_id": "python.dict_lookup",
+      "prompt": "程序打印什么？",
+      "code": "print({'red': 2, 'blue': 5}['blue'])",
+      "choices": [
+        "2",
+        "5",
+        "blue"
+      ],
+      "answer": 1,
+      "explanation": "字典通过blue键取到5。"
+    },
+    {
+      "item_id": "product-20261024-v1-general-base-3",
+      "concept_id": "python.conditional",
+      "prompt": "程序打印什么？",
+      "code": "x = 7\nprint('high' if x > 3 else 'low')",
+      "choices": [
+        "high",
+        "low",
+        "7"
+      ],
+      "answer": 0,
+      "explanation": "7大于3，选择high分支。"
+    },
+    {
+      "item_id": "product-20261024-v1-general-base-4",
+      "concept_id": "python.default_argument",
+      "prompt": "程序打印什么？",
+      "code": "def add(a, b=3): return a + b\nprint(add(2))",
+      "choices": [
+        "2",
+        "3",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "缺省参数b为3，因此结果是5。"
+    }
+  ],
+  "P02_window_fix": {
+    "u_iterable": {
+      "item_id": "product-20261024-v1-boltons-iterator-next",
+      "concept_id": "python.iterator_protocol",
+      "prompt": "独立概念短测：下面程序最终打印什么？",
+      "code": "it = iter([2, 4, 6])\nnext(it)\nprint(next(it))",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "[4, 6]"
+      ],
+      "answer": 1,
+      "basis": "Python iterator advances once per next; executable independent snippet",
+      "independent": true,
+      "explanation": "next每调用一次就消耗一个值：先取走2，再打印4。一次作答不能证明所有迭代器知识已掌握。",
+      "supplement": "把迭代器看成沿着数字前进的指针；next不会重新从开头开始。"
+    },
+    "u_windowed_iter": {
+      "item_id": "product-20261024-v1-boltons-window-overlap",
+      "concept_id": "python.tee",
+      "independent": false,
+      "prompt": "大小为2时，相邻窗口如何变化？size在固定源码中第一次用于哪一步？",
+      "code": "list(windowed_iter([1, 2, 3, 4], 2))",
+      "choices": [
+        "不重叠；size首先用于填充值",
+        "重叠一个元素；size首先用于itertools.tee(src, size)",
+        "每次返回整个列表；size没有使用"
+      ],
+      "answer": 1,
+      "explanation": "三个窗口是(1,2)、(2,3)、(3,4)，每次右移一格。固定源码第494行先调用tee(src,size)，之后才处理fill。",
+      "supplement": "tee为同一输入提供多个可分别前进的视角；跳过不同数量的开头元素后，再把它们并排zip起来。"
+    },
+    "u_positive_int": {
+      "item_id": "product-20261024-v1-boltons-type-value",
+      "concept_id": "python.type_validation",
+      "independent": false,
+      "prompt": "某参数只允许内置正整数（不是本任务补丁）。True、0、'2'、2分别属于什么情况？",
+      "code": "print(isinstance(True, int))\nprint(type(True) is int)",
+      "choices": [
+        "有效、有效、类型错误、有效",
+        "类型错误、数值错误、类型错误、有效",
+        "类型错误、类型错误、数值错误、有效"
+      ],
+      "answer": 1,
+      "explanation": "bool是int的子类，但不是内置int本身；0是整数但不为正；字符串类型不合适；2满足两个条件。",
+      "supplement": "先分类型，再判断数值范围。项目已有辅助检查可以参考风格，但不一定满足新要求。"
+    }
+  },
+  "P01_unique_read": {
+    "task_003__unique_iter": {
+      "item_id": "product-20261025-v1-boltons-unique-set",
+      "concept_id": "python.hash_set",
+      "prompt": "先想一想：下面保留哪些元素？",
+      "code": "from boltons.iterutils import unique_iter\nprint(list(unique_iter([4, 2, 4, 1, 2])))",
+      "choices": [
+        "[1, 2, 4]",
+        "[4, 2, 1]",
+        "[4, 2, 4, 1, 2]"
+      ],
+      "answer": 1,
+      "explanation": "seen记录已经出现的值，首次遇到才yield，所以保留4、2、1的原始先后顺序。",
+      "supplement": "结合固定源码第861至866行，分别看key、seen与yield。",
+      "independent": true,
+      "oracle_output": "[4, 2, 1]",
+      "basis": "Authored product item executed against fixed boltons source; item uniqueness is not statistical calibration"
+    }
+  },
+  "P01_unique_read_practice": [
+    {
+      "item_id": "product-20261025-v1-boltons-behavior-repeat",
+      "concept_id": "python.hash_set",
+      "prompt": "行为题1：输出与对应源码位置是哪一组？",
+      "code": "from boltons.iterutils import unique_iter\nprint(list(unique_iter([3, 1, 3, 2, 1])))",
+      "choices": [
+        "[1, 2, 3]；第834行",
+        "[3, 1, 2]；第861至866行seen与yield",
+        "[3, 1, 3, 2, 1]；第851行"
+      ],
+      "answer": 1,
+      "explanation": "集合只作判重，循环保持原顺序。第861行建seen，第864至866行检查、加入并输出。",
+      "supplement": "结合固定源码第861至866行，分别看key、seen与yield。",
+      "independent": true,
+      "oracle_output": "[3, 1, 2]",
+      "basis": "Authored product item executed against fixed boltons source; item uniqueness is not statistical calibration"
+    },
+    {
+      "item_id": "product-20261025-v1-boltons-behavior-key",
+      "concept_id": "python.key_function",
+      "prompt": "行为题2：按长度判重，输出与源码位置是哪一组？",
+      "code": "from boltons.iterutils import unique_iter\nprint(list(unique_iter(['aa', 'B', 'cc', 'D'], key=len)))",
+      "choices": [
+        "['aa', 'B']；第863行算key，第866行返回原元素",
+        "[2, 1]；第865行输出key",
+        "['aa', 'B', 'cc', 'D']；第834行"
+      ],
+      "answer": 0,
+      "explanation": "长度2和1各保留第一次出现的原元素aa与B。key_func(i)只用于seen判重，yield i返回原元素。",
+      "supplement": "结合固定源码第861至866行，分别看key、seen与yield。",
+      "independent": true,
+      "oracle_output": "['aa', 'B']",
+      "basis": "Authored product item executed against fixed boltons source; item uniqueness is not statistical calibration"
+    },
+    {
+      "item_id": "product-20261025-v1-boltons-behavior-lazy",
+      "concept_id": "python.generator_laziness",
+      "prompt": "行为题3：每次取值何时消耗输入，对应哪段源码？",
+      "code": "from boltons.iterutils import unique_iter\nseen = []\ndef source():\n    for x in [2, 2, 5]:\n        seen.append(x)\n        yield x\nit = unique_iter(source())\nprint(seen)\nprint(next(it), seen)\nprint(next(it), seen)",
+      "choices": [
+        "[] / 2 [2] / 5 [2, 2, 5]；第862至866行循环与yield",
+        "[2, 2, 5] / 2 [2, 2, 5] / 5 [2, 2, 5]；第834行立即消耗",
+        "[] / 2 [2] / 2 [2, 2]；第861行"
+      ],
+      "answer": 0,
+      "explanation": "建立生成器不执行函数体。第一次next读到2；第二次next先跳过重复2，再读到5。循环与yield共同决定按需读取。",
+      "supplement": "结合固定源码第861至866行，分别看key、seen与yield。",
+      "independent": true,
+      "oracle_output": "[]\n2 [2]\n5 [2, 2, 5]",
+      "basis": "Authored product item executed against fixed boltons source; item uniqueness is not statistical calibration"
+    }
+  ],
+  "P03_window_debug": {
+    "u_iterable": {
+      "item_id": "product-20261026-v1-boltons-debug-next",
+      "concept_id": "python.iterator_protocol",
+      "prompt": "输入是迭代器时，next会留下什么位置？",
+      "code": "it = iter([8, 10, 12])\nprint(next(it))\nprint(list(it))",
+      "choices": [
+        "8 / [8, 10, 12]",
+        "8 / [10, 12]",
+        "10 / [12]"
+      ],
+      "answer": 1,
+      "explanation": "next消耗首项8，list从当前位置继续得到10和12。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true,
+      "oracle_output": "8\n[10, 12]"
+    },
+    "u_windowed_iter": {
+      "item_id": "product-20261026-v1-boltons-debug-size-use",
+      "concept_id": "python.tee",
+      "prompt": "按固定源码，size第一次用于哪里？遇到0时是否已经有严格拒绝？",
+      "code": "windowed_iter([1, 2], 0)",
+      "choices": [
+        "先进入tee(src, size)，当前原函数不会按新契约抛ValueError",
+        "先填充值，当前原函数一定抛TypeError",
+        "先验证严格正整数，再调用tee"
+      ],
+      "answer": 0,
+      "explanation": "原函数第494行先把size传给tee；没有P02要求的严格正整数检查。0可能返回空结果，不能把该行为写成已经修复。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": false
+    },
+    "u_positive_int": {
+      "item_id": "product-20261026-v1-boltons-debug-bool",
+      "concept_id": "python.type_validation",
+      "prompt": "按“内置正整数且排除bool”的任务契约，False属于哪一种错误？",
+      "code": "print(isinstance(False, int))\nprint(type(False) is int)",
+      "choices": [
+        "有效整数",
+        "类型不合适，应TypeError",
+        "数值为0，应先ValueError"
+      ],
+      "answer": 1,
+      "explanation": "契约先按类型排除bool，False与True都应为TypeError，不能先把它当0只报取值错误。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true,
+      "oracle_output": "True\nFalse"
+    }
+  },
+  "P03_window_debug_practice": [
+    {
+      "item_id": "product-20261026-v1-boltons-debug-true",
+      "concept_id": "python.type_validation",
+      "prompt": "错误卡1：新输入契约应如何处理True？",
+      "code": "windowed_iter([1, 2], True)",
+      "choices": [
+        "允许，True就是1",
+        "拒绝：bool不是内置int，应TypeError",
+        "拒绝：正数范围错误，应ValueError"
+      ],
+      "answer": 1,
+      "explanation": "True是bool，按本任务契约应先拒绝类型。原函数可能产生大小1的窗口，那是现存行为，不是严格检查已经生效。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true
+    },
+    {
+      "item_id": "product-20261026-v1-boltons-debug-zero",
+      "concept_id": "python.type_validation",
+      "prompt": "错误卡2：新输入契约应如何处理0？",
+      "code": "windowed_iter([1, 2], 0)",
+      "choices": [
+        "拒绝：类型错误，应TypeError",
+        "允许，只返回空窗口",
+        "拒绝：内置整数但非正，应ValueError"
+      ],
+      "answer": 2,
+      "explanation": "0的内置整数类型合适，但数值不为正，应ValueError。原函数没有这层契约检查。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true
+    },
+    {
+      "item_id": "product-20261026-v1-boltons-debug-string",
+      "concept_id": "python.type_validation",
+      "prompt": "错误卡3：新输入契约应如何处理字符串，并在哪里定位原始使用？",
+      "code": "windowed_iter([1, 2], '2')",
+      "choices": [
+        "自动转成2；填充分支",
+        "拒绝类型，应TypeError；第494行tee(src, size)",
+        "拒绝数值，应ValueError；yield处"
+      ],
+      "answer": 1,
+      "explanation": "字符串的类型不满足内置正整数契约。固定源码第494行把size交给tee，解释拒绝标准和使用位置应分开。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true
+    }
+  ],
+  "P04_chunked_transfer": {
+    "B07_more_chunked": {
+      "item_id": "product-20261026-v1-more-new-counter",
+      "concept_id": "python.iterator_protocol",
+      "prompt": "新仓库独立再测：已取走一次后，下一次next打印什么？可选择不会补学。",
+      "code": "class Stepper:\n    def __init__(self): self.n = 1\n    def __iter__(self): return self\n    def __next__(self):\n        self.n += 4\n        return self.n\nit = iter(Stepper())\nnext(it)\nprint(next(it))",
+      "choices": [
+        "5",
+        "9",
+        "13"
+      ],
+      "answer": 1,
+      "explanation": "每次next都使n加4：第一次5，第二次9。这道新题只形成more-itertools当前项目线索，不继承boltons通过状态。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true,
+      "oracle_output": "9"
+    }
+  },
+  "P04_chunked_transfer_practice": [
+    {
+      "item_id": "product-20261026-v1-more-groups",
+      "concept_id": "source.function.more_itertools.chunked",
+      "prompt": "分组题：结果和源码依据是哪一组？",
+      "code": "print(list(chunked([1, 2, 3, 4, 5], 2)))",
+      "choices": [
+        "[[1, 2], [2, 3], [3, 4], [4, 5]]；tee",
+        "[[1, 2], [3, 4], [5]]；more.py第237行反复调用take",
+        "[[1, 2], [3, 4]]；所有短组被丢弃"
+      ],
+      "answer": 1,
+      "explanation": "chunked每次从同一个迭代器取走n项，组与组不重叠；默认strict=False保留最后短组。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true,
+      "oracle_output": "[[1, 2], [3, 4], [5]]",
+      "execution_context": "pinned_chunked"
+    },
+    {
+      "item_id": "product-20261026-v1-more-take",
+      "concept_id": "python.iterator_protocol",
+      "prompt": "消费题：两次take与最后剩余值是什么？",
+      "code": "it = iter([3, 6, 9, 12, 15])\nprint(take(2, it))\nprint(take(2, it))\nprint(list(it))",
+      "choices": [
+        "[3, 6] / [3, 6] / [9, 12, 15]",
+        "[3, 6] / [9, 12] / [15]",
+        "[3, 6] / [9, 12] / []"
+      ],
+      "answer": 1,
+      "explanation": "take在recipes.py第126行用islice消费已有迭代器；每次取走两项，最后留下15。",
+      "supplement": "可以回看对应源码，再用一个小例子逐步验证；不会保持未知，不影响继续学习。",
+      "independent": true,
+      "oracle_output": "[3, 6]\n[9, 12]\n[15]",
+      "execution_context": "pinned_chunked"
+    }
+  ]
+}
