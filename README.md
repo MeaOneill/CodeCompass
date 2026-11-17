@@ -29,4 +29,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\start_product.ps1 
 - GitHub 源码导入与分析：`src/codecompass/product/repositories.py`。
 - 阅读计划和重规划：`src/codecompass/product/source_routes.py`、`reading_order.py`、`workspaces.py`。
 - 本地源码讲解和可选模型服务：`src/codecompass/product/source_assistant.py`。
-- 第三方代码仍按相应目录所附许可证使用。团队自有代码的再分发与衍生使用授权请联系团队。
+- 第三方代码仍按相应目录所附许可证使用。团队自有代码采用 MIT 许可证，见根目录 LICENSE。第三方源码快照、依赖及其他第三方材料仍分别适用其原始许可证与版权声明，不因本项目采用 MIT 而变更授权。
